@@ -1017,6 +1017,16 @@ section.tint-diep { background:var(--klei); }
   gap: 3.5rem;
   align-items: start;
 }
+/* Ook de oudere .mockup-kaarten blenden mee. De telefoons niet: dat frame is
+   geen kaart maar een toestel, en op een pagina over het gastenportaal zegt
+   het precies waar de gast dit ziet. */
+.fp-section-inner.breed .mockup {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
 .fp-section-inner.breed .appvenster {
   background: transparent;
   box-shadow: none;
