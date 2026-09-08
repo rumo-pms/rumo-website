@@ -890,6 +890,8 @@ section.tint-diep { background:var(--klei); }
 .ab-balk .v.open { color:#c2762f; }
 
 .ab-sub { display:flex; align-items:center; margin-bottom:0.5rem; }
+.ab-sub + .ab-regel { margin-top:0; }
+.ab-sub:not(:first-of-type) { margin-top:1.1rem; }
 .ab-sub h5 { font-family:'JetBrains Mono', monospace; font-size:0.58rem; letter-spacing:0.1em;
   text-transform:uppercase; color:var(--muted); margin:0; }
 .ab-bewerk { margin-left:auto; font-size:0.74rem; color:var(--muted);
@@ -1023,6 +1025,14 @@ section.tint-diep { background:var(--klei); }
 }
 .as-voet { font-family:'JetBrains Mono', monospace; font-size:0.58rem; letter-spacing:0.07em;
   text-transform:uppercase; color:var(--muted); margin-top:0.7rem; }
+/* De knop die op het echte scherm onderaan staat. Een regel tekst met een
+   punt ervoor las als een voetnoot, terwijl het in de app een knop is. */
+.as-knop { display:inline-flex; align-items:center; gap:0.45rem; margin-top:0.6rem;
+  background:var(--ink); color:var(--paper); border-radius:100px;
+  padding:0.45rem 1rem; font-size:0.8rem; font-weight:500; }
+/* Het plusje hoort bij een knop die iets toevoegt, niet bij "Alles schoon". */
+.as-knop.plus::before { content:'+'; font-family:'JetBrains Mono', monospace; font-size:0.95rem;
+  line-height:1; opacity:0.8; }
 
 /* ── de rij die van status wisselt ── */
 .as-rij.wisselt { animation:asRij 8s ease-in-out infinite; }
