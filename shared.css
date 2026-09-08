@@ -866,6 +866,119 @@ section.tint-diep { background:var(--klei); }
 .toonband.licht .tb-punten li { color:var(--ink-soft); }
 .toonband.licht .tb-punten li::before { background:var(--terra); }
 
+/* ─── APPVENSTER · DOORKLIKKEN ─────────────────────────────────────────────
+   De band ernaast beweert dat het verschil in het aantal klikken zit. Dan
+   moet hij dat ook tonen in plaats van het te beweren. Een muisaanwijzer
+   loopt het menu af en bij elke klik wisselt het scherm: kalender, de
+   reservatie, de rekening, het rapport. Vier stappen in zes seconden, dus
+   het gaat sneller dan je zelf zou klikken.
+
+   Alles is één tijdlijn van 6s: de aanwijzer, de markering in het menu en de
+   vier schermen delen dezelfde duur, zodat ze niet uit elkaar kunnen lopen.
+   Verander je de duur, verander ze dan alle vier. */
+.appvenster.doorklik {
+  display:grid; grid-template-columns:190px 1fr;
+  height:330px; position:relative; overflow:hidden;
+  border-radius:16px 0 0 16px;
+}
+.dk-zij { background:#EFE7DA; border-right:1px solid rgba(27,25,23,0.07); padding:1.1rem 0; position:relative; }
+.dk-logo { display:block; font-family:'Fraunces', Georgia, serif; font-size:1.1rem;
+  color:#7d2233; padding:0 1.2rem; margin-bottom:1.1rem; }
+/* Vaste rijhoogte, want de tijdlijn hieronder rekent in pixels. Zou de rij op
+   een telefoon 36px worden in plaats van 38, dan loopt de markering na vier
+   stappen acht pixels uit de pas met de tekst. */
+.dk-item { display:flex; align-items:center; height:38px; padding:0 1.2rem;
+  font-size:0.85rem; color:var(--ink-soft); position:relative; z-index:1; }
+/* De markering schuift mee met de aanwijzer. */
+.dk-licht { position:absolute; left:0.55rem; right:0.55rem; height:32px; border-radius:8px;
+  background:#fff; box-shadow:0 2px 8px rgba(27,25,23,0.07); z-index:0;
+  animation:dkLicht 6s steps(1,end) infinite; }
+/* De vijf menu-items staan op 64, 102, 140, 178 en 216 pixels, gemeten in de
+   browser en niet geschat. De markering is 32px hoog en de rij 38, vandaar de
+   3px die er telkens bij komt. Het eerste scherm is de kalender, dus de
+   markering begint op het tweede item: anders wijst ze naar Dashboard terwijl
+   de kalender openstaat. */
+@keyframes dkLicht {
+  0%,24.9%   { top:105px }
+  25%,49.9%  { top:143px }
+  50%,74.9%  { top:181px }
+  75%,100%   { top:219px }
+}
+
+.dk-scherm { position:relative; padding:1.2rem 1.4rem; }
+.dk-pagina { position:absolute; inset:1.2rem 1.4rem; opacity:0; animation:dkPagina 6s steps(1,end) infinite; }
+.dk-pagina.p2 { animation-delay:1.5s }
+.dk-pagina.p3 { animation-delay:3s }
+.dk-pagina.p4 { animation-delay:4.5s }
+@keyframes dkPagina { 0%,24.9% { opacity:1 } 25%,100% { opacity:0 } }
+.dk-titel { font-family:'Fraunces', Georgia, serif; font-size:1.05rem; color:#7d2233; margin-bottom:0.7rem; }
+.dk-rij { display:flex; align-items:center; gap:0.6rem; background:#fff; border:1px solid rgba(27,25,23,0.07);
+  border-left:3px solid var(--forest); border-radius:8px; padding:0.45rem 0.7rem;
+  margin-bottom:0.4rem; font-size:0.8rem; color:var(--ink-soft); }
+.dk-rij.oranje { border-left-color:var(--terra); }
+.dk-rij.klei { border-left-color:var(--klei); }
+.dk-rij b { font-weight:600; color:var(--ink); }
+.dk-rij .r { margin-left:auto; font-family:'JetBrains Mono', monospace; font-size:0.72rem; color:var(--ink); }
+.dk-kpi { display:grid; grid-template-columns:repeat(4,1fr); gap:0.5rem; }
+.dk-kpi div { background:#fff; border:1px solid rgba(27,25,23,0.07); border-radius:8px; padding:0.5rem 0.6rem; }
+.dk-kpi .l { font-family:'JetBrains Mono', monospace; font-size:0.52rem; letter-spacing:0.09em;
+  text-transform:uppercase; color:var(--muted); }
+.dk-kpi .v { font-size:0.95rem; font-weight:600; color:var(--ink); margin-top:0.1rem; }
+
+/* De muisaanwijzer. Loopt het menu af en drukt bij elke halte kort in. */
+.dk-cursor { position:absolute; left:150px; width:15px; height:15px; z-index:3;
+  animation:dkCursor 6s cubic-bezier(.5,0,.2,1) infinite; }
+.dk-cursor::before {
+  content:''; position:absolute; inset:0;
+  background:var(--ink); clip-path:polygon(0 0, 0 78%, 26% 60%, 44% 100%, 62% 90%, 44% 52%, 78% 46%);
+  animation:dkKlik 6s ease-out infinite;
+}
+.dk-cursor::after {
+  content:''; position:absolute; left:-9px; top:-9px; width:32px; height:32px;
+  border-radius:50%; border:2px solid var(--terra); opacity:0;
+  animation:dkRing 6s ease-out infinite;
+}
+/* De punt van de aanwijzer staat op het midden van de rij. */
+@keyframes dkCursor {
+  0%,10%    { top:114px }
+  22%,35%   { top:152px }
+  47%,60%   { top:190px }
+  72%,100%  { top:228px }
+}
+@keyframes dkKlik {
+  0%,17%,20%,42%,45%,67%,70%,92%,95%,100% { transform:scale(1) }
+  18.5%,43.5%,68.5%,93.5%                 { transform:scale(0.8) }
+}
+@keyframes dkRing {
+  0%,17%   { opacity:0; transform:scale(0.4) }
+  20%      { opacity:0.7; transform:scale(0.6) }
+  26%      { opacity:0; transform:scale(1) }
+  42%      { opacity:0; transform:scale(0.4) }
+  45%      { opacity:0.7; transform:scale(0.6) }
+  51%      { opacity:0; transform:scale(1) }
+  67%      { opacity:0; transform:scale(0.4) }
+  70%      { opacity:0.7; transform:scale(0.6) }
+  76%      { opacity:0; transform:scale(1) }
+  92%      { opacity:0; transform:scale(0.4) }
+  95%      { opacity:0.7; transform:scale(0.6) }
+  100%     { opacity:0; transform:scale(1) }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dk-licht, .dk-pagina, .dk-cursor, .dk-cursor::before, .dk-cursor::after { animation:none; }
+  .dk-licht { top:105px; }
+  .dk-pagina { opacity:0; }
+  .dk-pagina.p1 { opacity:1; }
+  .dk-cursor { top:114px; }
+  .dk-cursor::after { opacity:0; }
+}
+@media (max-width:700px) {
+  .appvenster.doorklik { grid-template-columns:120px 1fr; height:300px; font-size:12px; }
+  .dk-item { padding:0 0.8rem; font-size:0.76rem; }
+  .dk-cursor { left:92px; }
+  .dk-kpi { grid-template-columns:repeat(2,1fr); }
+}
+
 /* ─── KLEINE BEWEGING IN NAGEBOUWDE SCHERMEN ──────────────────────────────
    Drie klassen die een stilstaand schermpje laten leven. Ze zitten hier en
    niet in de <style> van elke productpagina, want anders staan er straks vijf
