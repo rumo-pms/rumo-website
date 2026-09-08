@@ -866,6 +866,199 @@ section.tint-diep { background:var(--klei); }
 .toonband.licht .tb-punten li { color:var(--ink-soft); }
 .toonband.licht .tb-punten li::before { background:var(--terra); }
 
+/* ─── APPVENSTER · REKENING BEWERKEN ───────────────────────────────────────
+   Het rekeningscherm van een reservatie, met de handeling die laat zien dat
+   een factuurregel van jou is: je klikt op "Bewerk items", klikt op de tekst
+   van een regel, en typt er iets anders. Nagebouwd naar
+   uninvoiced-items-card.tsx, waar het label van elke regel inderdaad een
+   invoerveld wordt zodra je erop klikt (customLabels in de factuuropbouw).
+
+   Eén tijdlijn van 10s. Verander je de duur, verander ze dan overal in dit
+   blok, anders lopen de aanwijzer, het veld en de tekst uit elkaar. */
+.appvenster.bewerk { padding:1.5rem 1.7rem 1.7rem; font-size:13px; position:relative; }
+.ab-kop { display:flex; align-items:baseline; gap:0.6rem; margin-bottom:0.2rem; }
+.ab-kop h4 { font-family:'Fraunces', Georgia, serif; font-weight:400; font-size:1.25rem;
+  color:#7d2233; margin:0; }
+.ab-kop span { font-family:'JetBrains Mono', monospace; font-size:0.6rem; letter-spacing:0.09em;
+  text-transform:uppercase; color:var(--muted); }
+.ab-balk { display:flex; align-items:baseline; gap:1.4rem; flex-wrap:wrap;
+  padding:0.7rem 0; margin-bottom:0.7rem; border-bottom:1px solid rgba(27,25,23,0.08); }
+.ab-balk > div { display:flex; align-items:baseline; gap:0.4rem; }
+.ab-balk .l { font-family:'JetBrains Mono', monospace; font-size:0.55rem; letter-spacing:0.1em;
+  text-transform:uppercase; color:var(--muted); }
+.ab-balk .v { font-size:0.92rem; font-weight:600; color:var(--ink); }
+.ab-balk .v.open { color:#c2762f; }
+
+.ab-sub { display:flex; align-items:center; margin-bottom:0.5rem; }
+.ab-sub h5 { font-family:'JetBrains Mono', monospace; font-size:0.58rem; letter-spacing:0.1em;
+  text-transform:uppercase; color:var(--muted); margin:0; }
+.ab-bewerk { margin-left:auto; font-size:0.74rem; color:var(--muted);
+  border-bottom:1px dashed rgba(27,25,23,0.25); padding-bottom:1px; }
+.ab-bewerk.aan { color:var(--terra-dark); border-bottom-color:var(--terra-dark);
+  animation:abBewerk 10s steps(1,end) infinite; }
+@keyframes abBewerk { 0%,17% { color:var(--muted) } 18%,100% { color:var(--terra-dark) } }
+
+.ab-regel { display:flex; align-items:center; gap:0.65rem; padding:0.5rem 0.7rem;
+  background:#fff; border:1px solid rgba(27,25,23,0.07); border-radius:9px;
+  margin-bottom:0.4rem; font-size:0.85rem; color:var(--ink-soft); }
+.ab-vink { width:15px; height:15px; border-radius:4px; background:var(--forest);
+  flex-shrink:0; position:relative; }
+.ab-vink::after { content:''; position:absolute; left:4px; top:1px; width:4px; height:8px;
+  border:solid #fff; border-width:0 1.8px 1.8px 0; transform:rotate(45deg); }
+.ab-btw { font-family:'JetBrains Mono', monospace; font-size:0.58rem; letter-spacing:0.06em;
+  color:var(--muted); margin-left:auto; }
+.ab-bedrag { font-family:'JetBrains Mono', monospace; font-size:0.79rem; color:var(--ink);
+  min-width:4.4rem; text-align:right; }
+
+/* De regel die bewerkt wordt: het label wordt een invoerveld en de tekst
+   wordt opnieuw ingetypt. */
+/* Vaste breedte: zodra de oude tekst weg is heeft het veld anders geen inhoud
+   meer om breed van te worden, want de nieuwe tekst staat er absoluut in. Een
+   invoerveld dat tot een streepje inkrimpt ziet er kapot uit. */
+.ab-veld { position:relative; display:inline-block; width:17.5rem; padding:0.15rem 0.35rem;
+  border-radius:6px; border:1px solid transparent; animation:abVeld 10s steps(1,end) infinite; }
+@keyframes abVeld {
+  0%,26%   { border-color:transparent; background:transparent }
+  27%,86%  { border-color:var(--terra); background:#fff }
+  87%,100% { border-color:transparent; background:transparent }
+}
+.ab-oud  { animation:abOud 10s steps(1,end) infinite; }
+@keyframes abOud { 0%,29% { opacity:1 } 30%,100% { opacity:0; font-size:0 } }
+.ab-nieuw { position:absolute; left:0.35rem; top:0.15rem; white-space:nowrap;
+  overflow:hidden; width:0; border-right:1.5px solid var(--terra);
+  animation:abTyp 10s steps(34,end) infinite, abCaret 0.7s step-end infinite; }
+@keyframes abTyp {
+  0%,30%   { width:0 }
+  62%,84%  { width:16.5rem }
+  85%,100% { width:0 }
+}
+@keyframes abCaret { 0%,100% { border-color:var(--terra) } 50% { border-color:transparent } }
+
+/* De aanwijzer klikt eerst op "Bewerk items" en daarna op de tekst. */
+.ab-cursor { position:absolute; width:15px; height:15px; z-index:3;
+  animation:abCursor 10s cubic-bezier(.5,0,.2,1) infinite; }
+.ab-cursor::before { content:''; position:absolute; inset:0; background:var(--ink);
+  clip-path:polygon(0 0, 0 78%, 26% 60%, 44% 100%, 62% 90%, 44% 52%, 78% 46%);
+  animation:abKlik 10s ease-out infinite; }
+@keyframes abCursor {
+  0%,8%     { top:52%; right:8%; }
+  15%,20%   { top:31%; right:9%; }
+  26%,100%  { top:47%; right:62%; }
+}
+@keyframes abKlik {
+  0%,16%,19%,26%,29%,100% { transform:scale(1) }
+  17.5%,27.5%             { transform:scale(0.78) }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ab-bewerk.aan, .ab-veld, .ab-oud, .ab-nieuw, .ab-cursor, .ab-cursor::before { animation:none; }
+  .ab-veld { border-color:var(--terra); background:#fff; }
+  .ab-oud { opacity:0; font-size:0; }
+  .ab-nieuw { width:auto; border-right:none; position:static; }
+  .ab-cursor { display:none; }
+}
+@media (max-width:700px) {
+  .appvenster.bewerk { font-size:12px; }
+  .ab-cursor { display:none; }
+  .ab-veld { width:12.8rem; }
+  .ab-bedrag { min-width:3.6rem; }
+  @keyframes abTyp { 0%,30% { width:0 } 62%,84% { width:12.2rem } 85%,100% { width:0 } }
+}
+
+/* ─── APPVENSTER · WERKSCHERM ──────────────────────────────────────────────
+   Housekeeping, F&B en de rapporten zien er in rumo in wezen hetzelfde uit:
+   een kop, een paar tellers, tabbladen, en daaronder rijen met een kleurbalkje
+   links en een status rechts. Vandaar één component in plaats van drie keer
+   hetzelfde, met .as-* als voorvoegsel.
+
+   De beweging is per pagina anders en staat als klasse op de rij die verandert:
+   .as-rij.wordt-schoon (housekeeping), .as-rij.komt-erbij (F&B). De tellers die
+   meetellen dragen .as-teller met een was/wordt-paar erin. Alles loopt op één
+   tijdlijn van 8s. */
+.appvenster.scherm { padding:1.4rem 1.6rem 1.6rem; font-size:13px; }
+.as-kop { display:flex; align-items:baseline; gap:0.6rem; margin-bottom:0.9rem; }
+.as-kop h4 { font-family:'Fraunces', Georgia, serif; font-weight:400; font-size:1.25rem;
+  color:#7d2233; margin:0; }
+.as-kop span { font-family:'JetBrains Mono', monospace; font-size:0.58rem; letter-spacing:0.09em;
+  text-transform:uppercase; color:var(--muted); margin-left:auto; }
+
+.as-tellers { display:flex; gap:0.5rem; margin-bottom:0.85rem; flex-wrap:wrap; }
+.as-tellers > div { background:#fff; border:1px solid rgba(27,25,23,0.07); border-radius:9px;
+  padding:0.45rem 0.75rem; min-width:5.2rem; }
+.as-tellers .l { font-family:'JetBrains Mono', monospace; font-size:0.52rem; letter-spacing:0.09em;
+  text-transform:uppercase; color:var(--muted); }
+.as-tellers .v { font-size:1.05rem; font-weight:600; color:var(--ink); margin-top:0.05rem; }
+.as-tellers .v.oranje { color:#c2762f; }
+.as-tellers .v.groen  { color:var(--forest); }
+
+.as-tabs { display:flex; gap:0.35rem; margin-bottom:0.8rem; flex-wrap:wrap; }
+.as-tabs span { font-size:0.76rem; color:var(--muted); padding:0.25rem 0.65rem;
+  border-radius:100px; white-space:nowrap; }
+.as-tabs span.aan { background:var(--rose-soft); color:#7d2233; }
+
+.as-rij { display:flex; align-items:center; gap:0.7rem; padding:0.5rem 0.75rem;
+  background:#fff; border:1px solid rgba(27,25,23,0.07); border-left:3px solid var(--klei);
+  border-radius:9px; margin-bottom:0.4rem; font-size:0.84rem; color:var(--ink-soft); }
+.as-rij.vuil   { border-left-color:#c2762f; }
+.as-rij.schoon { border-left-color:var(--forest); }
+.as-rij b { font-weight:600; color:var(--ink); }
+.as-rij .sub { font-family:'JetBrains Mono', monospace; font-size:0.6rem; letter-spacing:0.05em;
+  color:var(--muted); }
+.as-rij .chip { margin-left:auto; font-family:'JetBrains Mono', monospace; font-size:0.56rem;
+  letter-spacing:0.08em; text-transform:uppercase; border-radius:100px; padding:0.18rem 0.55rem;
+  white-space:nowrap; border:1px solid rgba(95,122,85,0.35); color:var(--forest); }
+.as-rij .chip.oranje { border-color:rgba(194,118,47,0.45); color:#c2762f; }
+.as-rij .chip.grijs  { border-color:var(--line); color:var(--muted); }
+/* Twee chips over elkaar wanneer de status wisselt. De was/wordt-spans binnen
+   één chip zetten werkte niet: de tweede stond absoluut in een doos met
+   padding, en dan lag de oude tekst er half onder. */
+.as-chips { margin-left:auto; position:relative; display:inline-flex; }
+.as-chips .chip { margin-left:0; }
+.as-chips .chip.wordt { position:absolute; left:0; top:0; }
+.as-chips .chip.was   { animation:asWeg 8s linear infinite; }
+.as-chips .chip.wordt { animation:asKom 8s linear infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .as-chips .chip.was { opacity:0; animation:none; }
+  .as-chips .chip.wordt { opacity:1; animation:none; }
+}
+.as-voet { font-family:'JetBrains Mono', monospace; font-size:0.58rem; letter-spacing:0.07em;
+  text-transform:uppercase; color:var(--muted); margin-top:0.7rem; }
+
+/* ── de rij die van status wisselt ── */
+.as-rij.wisselt { animation:asRij 8s ease-in-out infinite; }
+@keyframes asRij {
+  0%,38%   { border-left-color:#c2762f; background:#fff }
+  46%      { border-left-color:var(--forest); background:var(--forest-soft) }
+  54%,100% { border-left-color:var(--forest); background:#fff }
+}
+/* ── een rij die er onderweg bij komt ── */
+.as-rij.komt-erbij { animation:asKomt 8s ease-in-out infinite; }
+@keyframes asKomt {
+  0%,38%   { opacity:0; transform:translateY(6px) }
+  48%,92%  { opacity:1; transform:translateY(0) }
+  100%     { opacity:0; transform:translateY(6px) }
+}
+/* ── een waarde die meetelt ── */
+.as-wissel { position:relative; display:inline-block; }
+.as-wissel .was   { animation:asWeg 8s linear infinite; }
+.as-wissel .wordt { animation:asKom 8s linear infinite; position:absolute; left:0; top:0;
+  white-space:nowrap; }
+@keyframes asWeg { 0%,40% { opacity:1 } 46%,100% { opacity:0 } }
+@keyframes asKom { 0%,40% { opacity:0 } 46%,100% { opacity:1 } }
+
+@media (prefers-reduced-motion: reduce) {
+  .as-rij.wisselt, .as-rij.komt-erbij, .as-wissel .was, .as-wissel .wordt { animation:none; }
+  .as-rij.wisselt { border-left-color:var(--forest); }
+  .as-rij.komt-erbij { opacity:1; transform:none; }
+  .as-wissel .was { opacity:0; }
+  .as-wissel .wordt { opacity:1; }
+}
+@media (max-width:700px) {
+  .appvenster.scherm { font-size:12px; }
+  .as-tellers > div { min-width:4.4rem; padding:0.4rem 0.6rem; }
+  .as-tabs span { font-size:0.7rem; padding:0.2rem 0.5rem; }
+}
+
 /* ─── KLEINE BEWEGING IN NAGEBOUWDE SCHERMEN ──────────────────────────────
    Drie klassen die een stilstaand schermpje laten leven. Ze zitten hier en
    niet in de <style> van elke productpagina, want anders staan er straks vijf

@@ -45,6 +45,16 @@
     gap: 4.5rem;
     align-items: center;
   }
+  /* Hero zonder schermpje ernaast: één kolom, en de tekst niet over de volle
+     breedte want dan lopen de regels te lang. */
+  .fp-hero-inner.enkel { grid-template-columns: 1fr; }
+  .fp-hero-inner.enkel .fp-hero-text { max-width: 720px; }
+  /* Een sectie waarvan het schermpje meer plaats nodig heeft dan de helft:
+     de tekstkolom wordt smaller en het venster loopt door tot de rand. */
+  .fp-section-inner.breed { grid-template-columns: 0.85fr 1fr; gap: 3rem; }
+  @media (max-width: 1000px) {
+    .fp-section-inner.breed { grid-template-columns: 1fr; }
+  }
   .fp-hero-tag {
     display: inline-flex;
     align-items: center;
@@ -491,7 +501,7 @@
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <section class="fp-hero">
   <div class="wrap">
-    <div class="fp-hero-inner fade-up">
+    <div class="fp-hero-inner enkel fade-up">
       <div class="fp-hero-text">
         <span class="fp-hero-tag">
           <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -501,375 +511,170 @@
         <p class="lead">De kalender, de check-in, de check-out, de factuur. Wat je elke dag doet ligt vooraan, wat je zelden doet zit erop maar niet ervoor.</p>
         <ul class="fp-hero-bullets">
           <li>Drag-and-drop kalender</li>
-          <li>Check-out in één klik</li>
-          <li>Peppol ingebouwd</li>
+          <li>Check-out in één klik, of de factuur op maat</li>
           <li>Zoeken met Ctrl+K</li>
         </ul>
       </div>
-      <div class="fp-hero-visual">
-        <div class="mockup mk-dashboard">
-          <div class="mockup-head">
-            <h5>Dashboard</h5>
-            <span class="badge live leeft">Live</span>
-          </div>
-          <div class="stats">
-            <div>
-              <div class="lbl">Revenue</div>
-              <div class="big">€10.771</div>
-            </div>
-            <div class="mini">
-              <div class="lbl">Occ</div>
-              <div class="big">47%</div>
-            </div>
-            <div class="mini">
-              <div class="lbl">ADR</div>
-              <div class="big">€449</div>
-            </div>
-            <div class="mini">
-              <div class="lbl">Check-ins</div>
-              <div class="big t">2 →</div>
-            </div>
-            <div class="mini">
-              <div class="lbl">Check-outs</div>
-              <div class="big g">4 ←</div>
-            </div>
-          </div>
-          <div class="rooms">Room Status</div>
-          <div class="room-grid">
-            <div class="room">
-              <div class="num">103</div>
-              <div class="guest">Van de Kasseien</div>
-              <div class="tag">← out</div>
-            </div>
-            <div class="room">
-              <div class="num">104</div>
-              <div class="guest">Müller</div>
-              <div class="tag">in-house</div>
-            </div>
-            <div class="room">
-              <div class="num">202</div>
-              <div class="guest">Janssens</div>
-              <div class="tag">→ in</div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ PRODUCTBAND ═══════════════════════ -->
-<section class="toonband">
-  <div class="toonband-inner fade-up" style="position:relative">
-    <div class="toonband-tekst">
-      <span class="kicker" style="color:#a89a89">Zo ziet het eruit</span>
-      <h2>Je hele week op <em>&eacute;&eacute;n</em> scherm.</h2>
-      <p>Kamers onder elkaar, dagen ernaast, en elke boeking als een balk die je versleept. Wie aankomt, wie blijft, welke kamer nog vuil is: je ziet het zonder ergens op te klikken.</p>
-      <ul class="tb-punten">
-        <li>Slepen om te verlengen, te verplaatsen of van kamer te wisselen</li>
-        <li>Filteren op aankomst, vertrek of verblijvend</li>
-        <li>Klik op een gast en je zit in zijn dossier</li>
-      </ul>
-    </div>
-    <span class="kantnoot" style="top:2.5rem; right:3rem">elke balk is een boeking. versleep hem en de prijs herrekent zich.</span>
-    <div class="toonband-beeld">
-      <div class="appvenster" role="img" aria-label="De reservatiekalender in rumo: kamers onder elkaar, dagen ernaast, en boekingen als balken die je van kamer naar kamer sleept.">
-        <div class="av-kop">
-          <h4>Reservaties</h4>
-          <p>Overzicht van alle kamers en komende boekingen</p>
-        </div>
-        <div class="av-balk">
-          <span class="av-chip aan">Alle</span>
-          <span class="av-chip">Aankomend (9)</span>
-          <span class="av-chip">Vertrekkend (4)</span>
-          <span class="av-chip">Verblijvend (21)</span>
-          <span class="av-rek"></span>
-          <span class="av-knop">Week</span>
-          <span class="av-schaar" aria-label="Verblijf in twee knippen"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></span>
-          <span class="av-datum">2 april 2026</span>
-          <span class="av-vandaag">Vandaag</span>
-        </div>
-        <div class="av-raster">
-          <div class="av-dagen">
-            <span></span>
-            <span>wo<b>1</b></span><span class="nu">do<b>2</b></span><span>vr<b>3</b></span>
-            <span>za<b>4</b></span><span>zo<b>5</b></span><span>ma<b>6</b></span><span>di<b>7</b></span>
-          </div>
-
-          <div class="av-rij">
-            <div class="av-kamer"><b>101</b><span class="type">Dubbel</span><i class="vuil" aria-label="Vuil"></i></div>
-            <span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span>
-            <span class="av-boeking" style="left:calc(var(--kamerkol) + var(--k) * 1 + 3px); width:calc(var(--k) * 3 - 6px)">Lucas Hermans<span class="av-status">Ingecheckt</span></span>
-            <span class="av-boeking blauw" style="left:calc(var(--kamerkol) + var(--k) * 4 + 3px); width:calc(var(--k) * 2 - 6px)">Maria Wouters</span>
-          </div>
-
-          <div class="av-rij">
-            <div class="av-kamer"><b>102</b><span class="type">Dubbel</span><i class="vuil" aria-label="Vuil"></i></div>
-            <span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span>
-            <span class="av-boeking blauw" style="left:calc(var(--kamerkol) + var(--k) * 1 + 3px); width:calc(var(--k) * 2 - 6px)">Emily Van Damme<span class="av-status">Aankomend</span></span>
-            <span class="av-boeking terra" style="left:calc(var(--kamerkol) + var(--k) * 3 + 3px); width:calc(var(--k) * 1 - 6px)">Pieter Peeters</span>
-          </div>
-
-          <div class="av-rij">
-            <div class="av-kamer"><b>103</b><span class="type">Twin</span></div>
-            <span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span>
-            <span class="av-boeking grijs" style="left:calc(var(--kamerkol) + var(--k) * 0 + 3px); width:calc(var(--k) * 2 - 6px)">Jan Dubois</span>
-            <span class="av-gat" style="left:calc(var(--kamerkol) + var(--k) * 3 + 3px); width:calc(var(--k) * 2 - 6px)"></span>
-            <span class="av-boeking terra sleept" style="left:calc(var(--kamerkol) + var(--k) * 3 + 3px); width:calc(var(--k) * 2 - 6px)">Marie Sato</span>
-          </div>
-
-          <div class="av-rij">
-            <div class="av-kamer"><b>104</b><span class="type">Twin</span></div>
-            <span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span>
-            <span class="av-boeking blauw" style="left:calc(var(--kamerkol) + var(--k) * 5 + 3px); width:calc(var(--k) * 2 - 6px)">Victor De Smedt</span>
-          </div>
-
-          <div class="av-rij">
-            <div class="av-kamer"><b>105</b><span class="type">Suite</span><i class="vuil" aria-label="Vuil"></i></div>
-            <span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span>
-            <span class="av-boeking" style="left:calc(var(--kamerkol) + var(--k) * 0 + 3px); width:calc(var(--k) * 2 - 6px)">Liam Claes<span class="av-status">Uitgecheckt</span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- ═══════════════════════ SECTIE 2 · QUICK CHECK-OUT ═══════════════════════ -->
-<section class="fp-section alt reverse">
+<!-- ═══════════════════════ FACTURATIE ═══════════════════════ -->
+<section class="fp-section alt">
   <div class="wrap">
-    <div class="fp-section-inner fade-up">
+    <div class="fp-section-inner breed fade-up">
       <div class="fp-section-text">
-        <span class="fp-section-kicker">Quick check-out</span>
-        <h2>Eén klik en alles <em>klikt</em>.</h2>
-        <p class="lead">Eén knop maakt de factuur op en checkt de gast uit. De kamer springt naar vuil en housekeeping weet het.</p>
+        <span class="fp-section-kicker">De rekening</span>
+        <h2>Wat er op de factuur staat, <em>schrijf jij.</em></h2>
+        <p class="lead">Uitchecken kan in één klik: rumo maakt de factuur op, de gast staat uit en de kamer springt naar vuil. Maar niet elke rekening is standaard, en dan moet je erin kunnen.</p>
         <ul class="fp-bullets">
-          <li>Juiste btw-splitsing en jouw eigen nummervolgorde</li>
-          <li>Een openstaand saldo blokkeert niets, dat reken je nadien af</li>
-          <li>De bevestigingsmail vertrekt wanneer jij het zegt</li>
+          <li>Klik op een regel en typ er iets anders. "Overnachting &middot; Standard Double" wordt wat jouw gast moet lezen</li>
+          <li>Vink aan wat mee moet en laat de rest staan, of zet lijnen over naar een andere reservatie</li>
+          <li>Btw per regel gesplitst, ook binnen een arrangement, met de stadstaks al berekend</li>
+          <li>Vanaf 2026 verplicht voor B2B: rumo bouwt de factuur in UBL 2.1 en stuurt ze door via Peppol. Een particulier krijgt een PDF, en welk van de twee het is zoek je niet zelf uit</li>
         </ul>
       </div>
       <div class="fp-section-visual">
-        <div class="mockup mk-steps">
-          <div class="mockup-head">
-            <h5>Quick check-out</h5>
-            <span class="badge live">Live</span>
+        <div class="appvenster bewerk paneel" role="img" aria-label="Het rekeningscherm van een reservatie: iemand klikt op Bewerk items, klikt op de tekst van een factuurregel en typt er een eigen omschrijving in.">
+          <div class="ab-kop">
+            <h4>Rekening</h4>
+            <span>M&uuml;ller &middot; kamer 104</span>
           </div>
-          <div class="step">
-            <div class="check">✓</div>
-            <div>
-              <strong>Factuur aangemaakt</strong>
-              <span>INV-2026-0047 · €1.347,00</span>
-            </div>
+          <div class="ab-balk">
+            <div><span class="l">Totaal</span><span class="v">&euro; 487,00</span></div>
+            <div><span class="l">Betaald</span><span class="v">&euro; 160,00</span></div>
+            <div><span class="l">Openstaand</span><span class="v open">&euro; 327,00</span></div>
           </div>
-          <div class="step">
-            <div class="check">✓</div>
-            <div>
-              <strong>Gast uitgecheckt</strong>
-              <span>Kamer op vuil · housekeeping verwittigd</span>
-            </div>
+          <div class="ab-sub">
+            <h5>Nog niet gefactureerd</h5>
+            <span class="ab-bewerk aan">Bewerk items</span>
           </div>
-          <div class="step">
-            <div class="check">✉</div>
-            <div>
-              <strong>Bevestigingsmail klaar</strong>
-              <span>Jij stuurt, wanneer het past</span>
-            </div>
+          <div class="ab-regel">
+            <span class="ab-vink"></span>
+            <span class="ab-veld">
+              <span class="ab-oud">Overnachting &middot; Standard Double</span>
+              <span class="ab-nieuw">Weekendarrangement Gent &middot; 3 nachten</span>
+            </span>
+            <span class="ab-btw">6%</span>
+            <span class="ab-bedrag">&euro; 390,00</span>
           </div>
+          <div class="ab-regel"><span class="ab-vink"></span>Ontbijt &middot; 2 personen<span class="ab-btw">12%</span><span class="ab-bedrag">&euro; 54,00</span></div>
+          <div class="ab-regel"><span class="ab-vink"></span>Parking<span class="ab-btw">21%</span><span class="ab-bedrag">&euro; 28,00</span></div>
+          <div class="ab-regel"><span class="ab-vink"></span>Stadstaks &middot; 2 pers. &times; 3 nachten<span class="ab-btw">vrij</span><span class="ab-bedrag">&euro; 15,00</span></div>
+          <span class="ab-cursor"></span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ SECTIE 3 · FACTURATIE ═══════════════════════ -->
-<section class="fp-section">
+<!-- ═══════════════════════ HOUSEKEEPING ═══════════════════════ -->
+<section class="fp-section reverse">
   <div class="wrap">
-    <div class="fp-section-inner fade-up">
-      <div class="fp-section-text">
-        <span class="fp-section-kicker">Facturatie</span>
-        <h2>Peppol regelt zichzelf. <em>Jij niet meer.</em></h2>
-        <p class="lead">Vanaf 2026 verplicht voor B2B in België. rumo bouwt de factuur in UBL 2.1 en stuurt ze door. Particulieren krijgen een PDF, en je hoeft zelf niet uit te zoeken welk van de twee het is.</p>
-        <ul class="fp-bullets">
-          <li>Btw per regel gesplitst, ook binnen een arrangement</li>
-          <li>Creditnota's, deelfacturen en voorschotten, met stadstaks al berekend</li>
-          <li>Rechtstreeks naar Octopus, Exact Online of Yuki</li>
-        </ul>
-      </div>
-      <div class="fp-section-visual">
-        <div class="mockup mk-invoice">
-          <div class="mockup-head">
-            <h5>Factuur</h5>
-            <span class="peppol-badge">Peppol</span>
-          </div>
-          <div class="inv-head">
-            <div>
-              <div class="inv-num">INV-2026-0047</div>
-              <div class="inv-date">2026-05-12 · Müller</div>
-            </div>
-          </div>
-          <div class="inv-lines">
-            <div class="inv-line">
-              <div>Overnachting × 3</div>
-              <div class="tax">6%</div>
-              <div class="amt">€420,00</div>
-            </div>
-            <div class="inv-line">
-              <div>Ontbijt × 6</div>
-              <div class="tax">6%</div>
-              <div class="amt">€96,00</div>
-            </div>
-            <div class="inv-line">
-              <div>Minibar</div>
-              <div class="tax">21%</div>
-              <div class="amt">€42,00</div>
-            </div>
-            <div class="inv-line">
-              <div>Stadstaks × 6</div>
-              <div class="tax">0%</div>
-              <div class="amt">€18,00</div>
-            </div>
-          </div>
-          <div class="inv-totals">
-            <div class="row"><span>BTW 6%</span><span>€29,21</span></div>
-            <div class="row"><span>BTW 21%</span><span>€7,29</span></div>
-            <div class="row total"><span>Totaal</span><span>€576,00</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════ SECTIE 5 · HOUSEKEEPING ═══════════════════════ -->
-<section class="fp-section">
-  <div class="wrap">
-    <div class="fp-section-inner fade-up">
+    <div class="fp-section-inner breed fade-up">
       <div class="fp-section-text">
         <span class="fp-section-kicker">Housekeeping</span>
-        <h2>Van vuil naar <em>geïnspecteerd</em>.</h2>
-        <p class="lead">De meeste systemen kennen twee kleuren: schoon en vuil. Met de add-on loopt een kamer van vuil naar schoon naar geïnspecteerd, zodat niemand incheckt op een kamer die nog niet nagekeken is.</p>
+        <h2>Wie moet er vandaag <em>welke kamer</em> doen?</h2>
+        <p class="lead">Eén lijst per dag, met tabbladen voor vertrek, aankomst en wie er blijft. Een kamer wordt vanzelf vuil bij een check-in, bij een check-out, en elke ochtend opnieuw bij wie blijft slapen. Schoon zetten doet housekeeping zelf, per kamer of in één keer voor de hele lijst.</p>
+        <p class="lead">Die status blijft niet op dit scherm: <strong>op je kalender zie je per kamer of ze nog vuil is</strong>, en op je dashboard staat hoeveel er nog te doen zijn. Zo weet de receptie of een vroege gast al naar boven kan zonder eerst te bellen.</p>
         <ul class="fp-bullets">
-          <li>Checklists die per dag verschillen</li>
-          <li>Een timer die meet hoe lang een kamer echt kost</li>
+          <li>Werkt op een tablet op de gang, en er is een printlijst voor wie liever papier heeft</li>
+          <li>Een geblokkeerde kamer staat erbij met de reden, en gaat voor op alles</li>
+          <li>Extra's die housekeeping aangaan komen vanzelf op de kaart: een babybedje, een laat vertrek, een fles op de kamer</li>
         </ul>
+        <p class="lead" style="margin-top:1.6rem"><strong>Met de add-on Advanced Housekeeping</strong> komt er een derde status bij, <em>geïnspecteerd</em>, zodat niemand incheckt op een kamer die nog niet nagekeken is. Je krijgt er ook poetschecklists per kamer bij die per dag verschillen, losse extra taken, een notitie per kamer, en een timer die meet hoe lang een schoonmaak duurt. Die tijd staat niet op het scherm van de poetsvrouw, wel in het rapport van de manager.</p>
       </div>
       <div class="fp-section-visual">
-        <div class="appvenster lijst paneel" role="img" aria-label="Het housekeeping-scherm in rumo: kamer 204 springt van schoon naar geïnspecteerd zodra iemand ze nagekeken heeft.">
-          <div class="al-kop"><h4>Housekeeping</h4><span>Vandaag &middot; 18 kamers</span></div>
-          <div class="al-rij">
-            <div><span class="al-cat">Kamer 201</span><br><b>Vertrek, volledige beurt</b></div>
-            <span class="al-merk open">Vuil</span>
+        <div class="appvenster scherm paneel" role="img" aria-label="Het housekeeping-scherm van rumo: kamer 204 wordt schoon gezet en de tellers boven de lijst tellen mee.">
+          <div class="as-kop"><h4>Housekeeping</h4><span>2 april &middot; 18 kamers</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Vuil</div><div class="v oranje as-wissel"><span class="was">5</span><span class="wordt">4</span></div></div>
+            <div><div class="l">Schoon</div><div class="v groen as-wissel"><span class="was">13</span><span class="wordt">14</span></div></div>
+            <div><div class="l">Vertrek</div><div class="v">4</div></div>
+            <div><div class="l">Blijft</div><div class="v">9</div></div>
           </div>
-          <div class="al-rij wijzigt">
-            <div><span class="al-cat">Kamer 204</span><br><b>Checklist afgewerkt in 14 min</b></div>
-            <span class="al-merken">
-              <span class="al-merk was">Schoon</span>
-              <span class="al-merk wordt">Ge&iuml;nspecteerd</span>
-            </span>
-          </div>
-          <div class="al-rij">
-            <div><span class="al-cat">Kamer 205</span><br><b>Blijft, alleen handdoeken</b></div>
-            <span class="al-merk">Ge&iuml;nspecteerd</span>
-          </div>
-          <div class="al-rij">
-            <div><span class="al-cat">Kamer 302</span><br><b>Vertrek om 11u, nog bezet</b></div>
-            <span class="al-merk open">Wacht</span>
-          </div>
+          <div class="as-tabs"><span class="aan">Alle</span><span>Check-in</span><span>In huis</span><span>Check-out</span><span>Leeg</span></div>
+          <div class="as-rij vuil"><b>201</b> <span class="sub">vertrek &middot; volledige beurt</span><span class="chip oranje">Vuil</span></div>
+          <div class="as-rij wisselt"><b>204</b> <span class="sub">vertrek &middot; babybedje weghalen</span><span class="as-chips"><span class="chip oranje was">Vuil</span><span class="chip wordt">Schoon</span></span></div>
+          <div class="as-rij schoon"><b>205</b> <span class="sub">blijft &middot; alleen handdoeken</span><span class="chip">Schoon</span></div>
+          <div class="as-rij"><b>302</b> <span class="sub">geblokkeerd &middot; lekkende kraan</span><span class="chip grijs">Onderhoud</span></div>
+          <div class="as-voet">Alles schoon &middot; printlijst</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ SECTIE 6 · F&B ═══════════════════════ -->
-<section class="fp-section alt reverse">
+<!-- ═══════════════════════ F&B ═══════════════════════ -->
+<section class="fp-section alt">
   <div class="wrap">
-    <div class="fp-section-inner fade-up">
+    <div class="fp-section-inner breed fade-up">
       <div class="fp-section-text">
-        <span class="fp-section-kicker">F&amp;B</span>
-        <h2>De keuken weet <em>'s ochtends</em> al hoe laat het is.</h2>
-        <p class="lead">Geen kassa, wel het overzicht dat de keuken nodig heeft. Eén pagina per dag telt ontbijt, lunch en diner, en die tellingen volgen de nacht mee.</p>
+        <span class="fp-section-kicker">Ontbijt</span>
+        <h2>De keuken weet 's ochtends al <em>hoe laat het is.</em></h2>
+        <p class="lead">Geen kassa, wel de lijst die de keuken nodig heeft: hoeveel couverts er morgen zijn, welke kamers dat zijn, en wat er per gast bij hoort. De telling volgt de nacht: wie vandaag aankomt ontbijt pas morgen, wie morgen vertrekt ontbijt die ochtend nog wel.</p>
         <ul class="fp-bullets">
-          <li>Allergieën en tags per gast, meteen zichtbaar</li>
-          <li>Walk-ins, aanwezigheid afvinken, printlijsten voor de keuken</li>
+          <li>Allergieën en dieetwensen staan bij de kamer, niet in een apart schriftje</li>
+          <li>Zit het ontbijt in het tarief of is het als extra bijgeboekt? Voor de telling maakt dat niet uit</li>
+          <li>Aanvinken wie er geweest is, en twee mensen die tegelijk werken zien elkaars vinkjes meteen</li>
+          <li>Een printlijst voor wie liever papier op de toog heeft</li>
         </ul>
+        <p class="lead" style="margin-top:1.6rem">En staat er iemand aan tafel die geen ontbijt geboekt had? Dan zet de keuken dat er zelf bij: kamer kiezen, aantal personen, klaar. Het komt meteen als extra op zijn rekening te staan. Daar hoef je niets voor te weten van reservaties of van facturatie.</p>
       </div>
       <div class="fp-section-visual">
-        <div class="mockup mk-steps">
-          <div class="mockup-head">
-            <h5>Covers vandaag</h5>
-            <span class="badge">Keuken</span>
+        <div class="appvenster scherm paneel" role="img" aria-label="Het ontbijtscherm van rumo: de keuken zet een ontbijt bij op kamer 208 en de telling gaat van 34 naar 36 couverts.">
+          <div class="as-kop"><h4>Ontbijt</h4><span>3 april &middot; keuken</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Couverts</div><div class="v as-wissel"><span class="was">34</span><span class="wordt">36</span></div></div>
+            <div><div class="l">Kamers</div><div class="v as-wissel"><span class="was">14</span><span class="wordt">15</span></div></div>
+            <div><div class="l">Allergie&euml;n</div><div class="v oranje">2</div></div>
           </div>
-          <div class="step">
-            <div class="check">✓</div>
-            <div>
-              <strong>Ontbijt</strong>
-              <span>34 couverts · 6 kamers volgen morgen</span>
-            </div>
-          </div>
-          <div class="step">
-            <div class="check">!</div>
-            <div>
-              <strong>Allergieën</strong>
-              <span>2 gemarkeerd · lactose, noten</span>
-            </div>
-          </div>
-          <div class="step">
-            <div class="check">✓</div>
-            <div>
-              <strong>Printlijst</strong>
-              <span>Klaar voor de keuken</span>
-            </div>
-          </div>
+          <div class="as-tabs"><span class="aan">Ontbijt</span><span>Aanwezig 12</span><span>Printlijst</span></div>
+          <div class="as-rij schoon"><b>101</b> <span class="sub">Hermans &middot; 2 pers.</span><span class="chip">Aanwezig</span></div>
+          <div class="as-rij vuil"><b>104</b> <span class="sub">M&uuml;ller &middot; 2 pers.</span><span class="chip oranje">Lactose, noten</span></div>
+          <div class="as-rij"><b>205</b> <span class="sub">Sato &middot; 2 pers.</span><span class="chip grijs">Verwacht</span></div>
+          <div class="as-rij komt-erbij schoon"><b>208</b> <span class="sub">Peeters &middot; 2 pers.</span><span class="chip">Net bijgezet</span></div>
+          <div class="as-voet">Ontbijt bijzetten &middot; kamer kiezen, aantal, klaar</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ SECTIE 7 · RAPPORTEN ═══════════════════════ -->
-<section class="fp-section">
+<!-- ═══════════════════════ RAPPORTEN ═══════════════════════ -->
+<section class="fp-section reverse">
   <div class="wrap">
-    <div class="fp-section-inner fade-up">
+    <div class="fp-section-inner breed fade-up">
       <div class="fp-section-text">
         <span class="fp-section-kicker">Rapporten</span>
-        <h2>Twaalf tabs. <em>Nul</em> exports met de hand.</h2>
-        <p class="lead">Een tab of twaalf, van je boekingscurve tegenover vorig jaar tot je debiteuren. En de wettelijke aangiftes staan er klaar om in te dienen.</p>
+        <h2>Je cijfers staan er al. <em>Je moet ze niet gaan halen.</em></h2>
+        <p class="lead">Kies een periode en je krijgt een stuk of twaalf rapporten over diezelfde dagen. Geen exports die je eerst in Excel moet kneden.</p>
         <ul class="fp-bullets">
-          <li>Politieregister en stadstaks</li>
-          <li>Overheidsstatistiek: Statbel in België, logiesenquête in Nederland</li>
+          <li><em>Omzet:</em> kameropbrengst, gemiddelde kamerprijs, RevPAR en bezetting, opgesplitst per kamertype en per kanaal</li>
+          <li><em>Pace:</em> hoe vol de periode staat vergeleken met hetzelfde moment vorig jaar. Dat is de boekingscurve, geen momentopname: het antwoordt of je voor of achter loopt</li>
+          <li><em>Reservaties:</em> de filterbare lijst van wat er op de boeken staat, per gast, kamer, kanaal en status</li>
+          <li><em>Facturen en debiteuren:</em> wat er uitgestuurd is en wat er nog binnen moet</li>
+          <li><em>Bezetting en nationaliteit,</em> allebei met een vergelijking met vorig jaar</li>
+          <li><em>Online check-in:</em> wie zijn gegevens al ingevuld heeft en wie nog niet</li>
+          <li><em>Ontbijt</em> per dag met de omzet erachter, en met de add-on ook een <em>housekeeping</em>-rapport met de tijd per kamer en per persoon</li>
         </ul>
+        <p class="lead" style="margin-top:1.6rem">En apart daarvan staan de drie wettelijke: het politieregister, de stadstaks per gemeente en de overheidsstatistiek. Statbel in België, de logiesenquête in Nederland. Die worden opgebouwd uit wat je gast zelf invulde, dus je hoeft ze niet te tellen. Indienen blijft jouw handtekening.</p>
       </div>
       <div class="fp-section-visual">
-        <div class="mockup mk-steps">
-          <div class="mockup-head">
-            <h5>Rapporten</h5>
-            <span class="badge">12 tabs</span>
+        <div class="appvenster scherm paneel" role="img" aria-label="Het rapportenscherm van rumo: de periode staat op april en het omzetrapport toont de kengetallen met de vergelijking met vorig jaar.">
+          <div class="as-kop"><h4>Rapporten</h4><span>1 &ndash; 30 april 2026</span></div>
+          <div class="as-tabs"><span class="aan">Omzet</span><span>Pace</span><span>Reservaties</span><span>Facturen</span><span>Bezetting</span><span>Nationaliteit</span><span>Compliance</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Kameromzet</div><div class="v">&euro; 84.320</div></div>
+            <div><div class="l">Gem. prijs</div><div class="v">&euro; 132</div></div>
+            <div><div class="l">RevPAR</div><div class="v">&euro; 96</div></div>
+            <div><div class="l">Bezetting</div><div class="v groen">73%</div></div>
           </div>
-          <div class="step">
-            <div class="check">✓</div>
-            <div>
-              <strong>Pace</strong>
-              <span>+8% vs vorig jaar</span>
-            </div>
-          </div>
-          <div class="step">
-            <div class="check">✓</div>
-            <div>
-              <strong>Politieregister</strong>
-              <span>Export klaar om in te dienen</span>
-            </div>
-          </div>
-          <div class="step">
-            <div class="check">✓</div>
-            <div>
-              <strong>Overheidsstatistiek</strong>
-              <span>Statbel (BE) · logiesenquête (NL)</span>
-            </div>
-          </div>
+          <div class="as-rij schoon"><b>Booking.com</b> <span class="sub">142 nachten &middot; netto na commissie</span><span class="chip">&euro; 31.480</span></div>
+          <div class="as-rij schoon"><b>Eigen boekingspagina</b> <span class="sub">96 nachten &middot; geen commissie</span><span class="chip">&euro; 24.910</span></div>
+          <div class="as-rij"><b>Airbnb</b> <span class="sub">61 nachten</span><span class="chip grijs">&euro; 14.220</span></div>
+          <div class="as-rij vuil"><b>Pace</b> <span class="sub">tegenover 30 april vorig jaar</span><span class="chip oranje">+8%</span></div>
+          <div class="as-voet">Export naar CSV, Excel of PDF</div>
         </div>
       </div>
     </div>
