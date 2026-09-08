@@ -394,13 +394,9 @@
   }
 
   /* ─── sources diagram ─── */
-  .fp-sources {
-    background: var(--paper-panel);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    padding: 2rem;
-    box-shadow: 0 20px 40px rgba(27,25,23,0.06);
-  }
+  /* Geen kaart om het geheel: de rijen staan rechtstreeks op de sectie, net
+     als op de andere productpagina's. Alleen de rijen zelf blijven wit. */
+  .fp-sources { background: none; border: none; padding: 0; box-shadow: none; }
   .fp-sources-inputs {
     display: grid;
     gap: 0.7rem;
@@ -411,9 +407,9 @@
     align-items: center;
     gap: 0.85rem;
     padding: 0.85rem 1rem;
-    border: 1px solid var(--line);
+    border: 1px solid rgba(27,25,23,0.07);
     border-radius: 12px;
-    background: var(--paper);
+    background: #fff;
   }
   .fp-sources-row .ic {
     width: 36px; height: 36px;
