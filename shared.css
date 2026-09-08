@@ -991,6 +991,11 @@ section.tint-diep { background:var(--klei); }
 .fp-hero-inner.enkel .fp-hero-text .lead { max-width:none; margin-bottom:1.1rem; }
 .fp-hero-inner.enkel .fp-hero-text .lead:last-of-type { margin-bottom:2rem; }
 
+/* Dezelfde behandeling voor een sectie zonder schermpje ernaast. */
+.fp-section-inner.enkel { grid-template-columns:1fr; }
+.fp-section-inner.enkel .fp-section-text { max-width:860px; }
+.fp-section-inner.enkel .fp-section-text .lead { max-width:none; }
+
 /* ─── PRODUCTSECTIE · BREED ───────────────────────────────────────────────
    Stond in de <style> van pms.html toen alleen die pagina hem nodig had. De
    vier andere productpagina's krijgen dezelfde behandeling, dus hier. */
