@@ -460,7 +460,10 @@
      leesontwerp voor wat in werkelijkheid een zoekopdracht is: de bezoeker
      scant naar één naam. Vandaar per categorie één regel met alle namen
      erin, uitklapbaar voor wie de uitleg wil. Native <details>, geen JS. */
-  .koppelingen { background:var(--paper-deep); padding:7rem 0; }
+  /* Zelfde papierkleur als de paginakop, in plaats van het diepere beige.
+     De categorieën eronder staan al op var(--paper-panel), dus ze blijven
+     zichtbaar als losse kaarten. */
+  .koppelingen { background:var(--paper); padding:7rem 0; }
   .koppelingen-head { max-width:680px; margin-bottom:3rem; }
   .koppelingen-head h2 em { color:var(--terra-dark); }
   .ig-lijst { display:grid; gap:0.75rem; }
