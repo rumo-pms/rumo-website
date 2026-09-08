@@ -984,7 +984,12 @@ section.tint-diep { background:var(--klei); }
    breedte want dan lopen de regels te lang. De kop en de intro fungeren dan
    als titel van de hele pagina in plaats van als helft van een tweeluik. */
 .fp-hero-inner.enkel { grid-template-columns:1fr; }
-.fp-hero-inner.enkel .fp-hero-text { max-width:720px; }
+.fp-hero-inner.enkel .fp-hero-text { max-width:860px; }
+/* De alinea's staan per pagina op 52 tekens, wat klopt naast een schermpje.
+   Zonder dat schermpje is de kolom breder en mogen de regels dus ook langer:
+   ongeveer tachtig tekens, nog steeds comfortabel om te lezen. */
+.fp-hero-inner.enkel .fp-hero-text .lead { max-width:none; margin-bottom:1.1rem; }
+.fp-hero-inner.enkel .fp-hero-text .lead:last-of-type { margin-bottom:2rem; }
 
 /* ─── PRODUCTSECTIE · BREED ───────────────────────────────────────────────
    Stond in de <style> van pms.html toen alleen die pagina hem nodig had. De
