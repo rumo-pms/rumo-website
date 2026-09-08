@@ -504,6 +504,13 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
    wordt nu bepaald door .toonband-tekst zelf. */
 .toonband.licht .toonband-tekst p { color:var(--ink-soft); max-width:none; }
 .toonband.licht .kicker { color:var(--muted); }
+/* De doorlink staat in botergeel, want die kleur hoort bij de donkere band.
+   Op dit beige is dat niet te lezen; hier hoort terracotta. */
+.toonband.licht .pms-door { color:var(--terra-dark); border-bottom-color:rgba(185,107,74,0.35); }
+.toonband.licht .pms-door:hover { border-bottom-color:var(--terra-dark); }
+/* De tekstkolom staat standaard op 520px, wat voor een korte kop werkt maar
+   deze introalinea in vijf smalle regels hakt. */
+.toonband.licht .toonband-tekst { max-width:900px; }
 .toonband.licht .toonband.licht .appvenster { box-shadow:0 -18px 50px -22px rgba(27,25,23,0.20), 0 0 0 1px rgba(27,25,23,0.07); }
 
 /* Naast-variant: voor een venster dat smal hoort te zijn, zoals een chat.
@@ -710,7 +717,7 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
    is de kernhandeling van een PMS-kalender, dus het toont iets in plaats van
    dat het alleen beweegt. */
 .av-boeking.sleept {
-  animation:avSleep 9s cubic-bezier(.65,0,.35,1) infinite;
+  animation:avSleep 7s cubic-bezier(.65,0,.35,1) infinite;
   z-index:3;
 }
 @keyframes avSleep {
@@ -722,7 +729,7 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
 /* De plek waar hij vandaan komt, licht op terwijl hij weg is. */
 .av-gat { position:absolute; top:6px; height:32px; border-radius:7px;
   border:1px dashed rgba(27,25,23,0.18); opacity:0;
-  animation:avGat 9s linear infinite; }
+  animation:avGat 7s linear infinite; }
 @keyframes avGat { 0%,26% { opacity:0 } 34%,66% { opacity:1 } 74%,100% { opacity:0 } }
 
 @media (prefers-reduced-motion: reduce) {

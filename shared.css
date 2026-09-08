@@ -779,7 +779,7 @@ section.tint-diep { background:var(--klei); }
    is de kernhandeling van een PMS-kalender, dus het toont iets in plaats van
    dat het alleen beweegt. */
 .av-boeking.sleept {
-  animation:avSleep 9s cubic-bezier(.65,0,.35,1) infinite;
+  animation:avSleep 7s cubic-bezier(.65,0,.35,1) infinite;
   z-index:3;
 }
 @keyframes avSleep {
@@ -791,7 +791,7 @@ section.tint-diep { background:var(--klei); }
 /* De plek waar hij vandaan komt, licht op terwijl hij weg is. */
 .av-gat { position:absolute; top:6px; height:32px; border-radius:7px;
   border:1px dashed rgba(27,25,23,0.18); opacity:0;
-  animation:avGat 9s linear infinite; }
+  animation:avGat 7s linear infinite; }
 @keyframes avGat { 0%,26% { opacity:0 } 34%,66% { opacity:1 } 74%,100% { opacity:0 } }
 
 @media (prefers-reduced-motion: reduce) {
