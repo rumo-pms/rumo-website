@@ -498,19 +498,7 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
    wordt nu bepaald door .toonband-tekst zelf. */
 .toonband.licht .toonband-tekst p { color:var(--ink-soft); max-width:none; }
 .toonband.licht .kicker { color:var(--muted); }
-.toonband.licht .pms-punten li { color:var(--ink-soft); }
-.toonband.licht .pms-punten li::before { background:var(--terra); }
-.toonband.licht .pms-door { color:var(--terra-dark); border-bottom-color:rgba(185,107,74,0.35); }
-.toonband.licht .pms-door:hover { border-bottom-color:var(--terra-dark); }
-/* De tekstkolom staat standaard op 520px, wat voor een korte kop werkt maar
-   deze introalinea in acht smalle regels hakt. Hier ruimer: ongeveer zeventig
-   tekens per regel, nog steeds comfortabel om te lezen. */
-.toonband.licht .toonband-tekst { max-width:900px; }
-.toonband.licht .toonband-beeld { box-shadow:0 -24px 60px -24px rgba(27,25,23,0.22); }
-.toonband.licht:not(.naast) .toonband-beeld::after {
-  background:linear-gradient(to bottom, rgba(245,238,226,0), var(--paper) 92%);
-}
-.toonband.licht .appvenster { box-shadow:0 -18px 50px -22px rgba(27,25,23,0.20), 0 0 0 1px rgba(27,25,23,0.07); }
+.toonband.licht .toonband.licht .appvenster { box-shadow:0 -18px 50px -22px rgba(27,25,23,0.20), 0 0 0 1px rgba(27,25,23,0.07); }
 
 /* Naast-variant: voor een venster dat smal hoort te zijn, zoals een chat.
    Uitgerekt tot 1500px staan de bubbels verloren in de leegte. */
@@ -743,22 +731,7 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
   .av-status { display:none; }
 }
 
-/* Puntenlijst en doorlink in de PMS-band. */
-/* Specifieker dan .toonband-tekst p, anders wint diens margin:0 en plakt deze
-   regel tegen de alinea erboven. */
-.toonband-tekst p.pms-vertrek {
-  font-family:'Fraunces', serif; font-size:1.2rem; letter-spacing:-0.015em;
-  color:var(--ink); margin:1.9rem 0 0;
-}
-.pms-punten { list-style:none; padding:0; margin:0.9rem 0 0; }
-.pms-punten li {
-  position:relative; padding-left:1.4rem; margin-bottom:0.6rem;
-  font-size:0.95rem; line-height:1.55; color:#d9cfc0;
-}
-.pms-punten li::before {
-  content:''; position:absolute; left:0; top:0.6em;
-  width:6px; height:6px; border-radius:50%; background:var(--butter);
-}
+/* Doorlink in de PMS-band. */
 .pms-door {
   display:inline-flex; align-items:center; gap:0.45em; margin-top:1.5rem;
   font-family:'JetBrains Mono', monospace; font-size:0.68rem;
@@ -1053,12 +1026,11 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
 /* ─── PERSONAS ─── */
 /* ─── TRUST ─── */
 .trust {
-  /* Staat nu direct onder de donkere PMS-band. Met 4rem plakte hij tegen de
-     kalender aan en las het als één rommelig geheel; en de bovenrand voegde
-     daar nog een streep aan toe die er niet meer bij hoort. */
+  /* Staat onder het overstapblok, waar vroeger de veelgestelde vragen stonden.
+     Dat blok heeft zelf al een onderrand, dus hier geen extra streep bovenaan;
+     de donkere slotband eronder sluit het geheel af. */
   background:var(--paper-deep);
   padding:4.5rem 0;
-  border-bottom:1px solid var(--line);
 }
 .trust-grid {
   display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem;
@@ -1130,58 +1102,6 @@ a.trust-item:hover p strong .arr { opacity:1; transform:translateX(3px); }
   .overstap-inner { grid-template-columns:1fr; gap:2rem; }
 }
 
-.faq {
-  background:var(--paper-deep);
-  padding:7rem 0;
-}
-.faq-inner { max-width:780px; margin:0 auto; padding:0 2rem; }
-.faq h2 em { color:var(--terra-dark); }
-.faq-list { margin-top:2.5rem; }
-.faq-list details {
-  background:var(--paper-panel);
-  border-radius:12px;
-  margin-bottom:0.6rem;
-  border:1px solid var(--line);
-  overflow:hidden;
-}
-.faq-list details[open] { box-shadow:0 10px 24px rgba(27,25,23,0.08); }
-.faq-list summary {
-  padding:1.15rem 1.4rem;
-  font-family:'Fraunces', serif;
-  font-weight:400;
-  font-size:1.08rem;
-  letter-spacing:-0.01em;
-  cursor:pointer;
-  list-style:none;
-  display:flex; justify-content:space-between; align-items:center;
-}
-.faq-list summary::-webkit-details-marker { display:none; }
-.faq-list summary::after {
-  content:'+';
-  font-family:'JetBrains Mono', monospace;
-  font-size:1.35rem;
-  color:var(--terra-dark);
-  transition:transform 0.2s;
-  margin-left:1rem;
-}
-.faq-list details[open] summary::after { content:'−'; }
-.faq-list details p {
-  padding:0 1.4rem 1.2rem;
-  font-size:0.96rem;
-  color:var(--ink-soft);
-  line-height:1.65;
-  max-width:62ch;
-}
-.faq-link {
-  display:inline-flex;
-  margin-top:2rem;
-  font-size:0.95rem;
-  font-weight:500;
-  color:var(--terra-dark);
-  text-decoration:none;
-  border-bottom:1.5px solid var(--terra-dark);
-  padding-bottom:2px;
-}
 
 /* ─── FINAL ─── */
 .final {
@@ -1397,12 +1317,6 @@ footer {
       <span class="kicker">00 / Intro</span>
       <h2>Wat is <em>rumo</em> nu juist?</h2>
       <p>Awel, we zijn hotelsoftware. Maar niet zoals je denkt. Geen enterprise platform van tweeduizend euro per maand waar je dan nog eens drie weken opleiding voor nodig hebt. Gewoon <em>&eacute;&eacute;n</em> systeem dat doet wat het moet doen. Je opent het 's morgens en je weet wat er vandaag moet gebeuren.</p>
-      <p class="pms-vertrek">We vertrekken vanuit de kalender.</p>
-      <ul class="pms-punten">
-        <li>Sleep een boeking, en de nieuwe prijs ligt voor je klaar.</li>
-        <li>Check uit, en de factuur volgt.</li>
-        <li>Pas iets aan, en het staat op je kanalen.</li>
-      </ul>
       <a href="pms.html" class="pms-door">Alles over de PMS <span>&rarr;</span></a>
     </div>
     <div class="toonband-beeld">
@@ -1474,40 +1388,6 @@ footer {
   </div>
 </section>
 
-<!-- ══════════════════ TRUST ══════════════════ -->
-<div class="trust">
-  <div class="wrap">
-    <div class="trust-grid">
-      <div class="trust-item fade-up">
-        <div class="ic">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-          </svg>
-        </div>
-        <p><strong>Peppol e-facturatie</strong>Downloaden als PDF of UBL 2.1 zit standaard in. Versturen via het Peppol-netwerk is een upgrade.</p>
-      </div>
-      <div class="trust-item fade-up" style="transition-delay:0.1s">
-        <div class="ic">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          </svg>
-        </div>
-        <p><strong>Belgisch product</strong>Gemaakt in Gent. Support in NL, FR en EN.</p>
-      </div>
-      <a class="trust-item fade-up" href="veiligheid.html" style="transition-delay:0.2s">
-        <div class="ic">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <rect x="3" y="11" width="18" height="11" rx="2"/>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-          </svg>
-        </div>
-        <p><strong>GDPR &amp; EU-hosting<span class="arr">→</span></strong>Data blijft binnen Europa, en je ziet zelf wie er aan je gastgegevens kan.</p>
-      </a>
-    </div>
-  </div>
-</div>
-
 <!-- ══════════════════ HMM OKÉ ══════════════════ -->
 <section class="wie" id="wie">
   <div class="wrap">
@@ -1543,28 +1423,39 @@ footer {
   </div>
 </section>
 
-<!-- ══════════════════ FAQ ══════════════════ -->
-<section class="faq">
-  <div class="faq-inner fade-up">
-    <span class="kicker">Vraag of twijfel?</span>
-    <h2>En dan nog <em>drie</em><br>dingen die je je afvraagt.</h2>
-    <div class="faq-list">
-      <details>
-        <summary>Moet ik iets installeren?</summary>
-        <p>Nee. Gewoon je browser openen en gaan. Geen installatie, geen IT-afdeling nodig. Werkt op je computer, tablet en telefoon. Als je browser niet uit 2003 komt, zit je goed.</p>
-      </details>
-      <details>
-        <summary>Ik heb maar 6 kamers. Is rumo niet overkill?</summary>
-        <p>Integendeel. rumo is precies gebouwd voor hotels van 5 tot 55 kamers. De grote systemen kunnen overkill voor jou zijn. rumo geeft je wat je nodig hebt, zonder al die dingen die je <em>niet</em> nodig hebt.</p>
-      </details>
-      <details>
-        <summary>Werkt rumo enkel voor hotels, of ook voor B&amp;B's?</summary>
-        <p>Voor beide. Of je nu een B&amp;B van 6 kamers hebt of een boutique hotel van 35 kamers, rumo schaalt mee. De interface is zo opgezet dat ook een eigenaar die alles zelf doet er vlot mee kan werken.</p>
-      </details>
+<!-- ══════════════════ TRUST ══════════════════ -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-item fade-up">
+        <div class="ic">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+          </svg>
+        </div>
+        <p><strong>Peppol e-facturatie</strong>Downloaden als PDF of UBL 2.1 zit standaard in. Versturen via het Peppol-netwerk is een upgrade.</p>
+      </div>
+      <div class="trust-item fade-up" style="transition-delay:0.1s">
+        <div class="ic">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          </svg>
+        </div>
+        <p><strong>Belgisch product</strong>Gemaakt in Gent. Support in NL, FR en EN.</p>
+      </div>
+      <a class="trust-item fade-up" href="veiligheid.html" style="transition-delay:0.2s">
+        <div class="ic">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <rect x="3" y="11" width="18" height="11" rx="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <p><strong>GDPR &amp; EU-hosting<span class="arr">→</span></strong>Data blijft binnen Europa, en je ziet zelf wie er aan je gastgegevens kan.</p>
+      </a>
     </div>
-    <a href="faq.html" class="faq-link">Alle veelgestelde vragen →</a>
   </div>
-</section>
+</div>
 
 <!-- ══════════════════ FINAL ══════════════════ -->
 <section class="final" id="demo">

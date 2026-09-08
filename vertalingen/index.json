@@ -27,22 +27,6 @@
   "en": "Well, we are hotel software. But not the kind you are thinking of. Not an enterprise platform at two thousand a month that then needs three weeks of training. Just <em>one</em> system that does what it should. You open it in the morning and you know what today looks like.",
   "fr": "Eh bien, nous sommes un logiciel hôtelier. Mais pas celui que vous imaginez. Pas une plateforme d'entreprise à deux mille euros par mois qui demande ensuite trois semaines de formation. Juste <em>un</em> système qui fait ce qu'il doit faire. Vous l'ouvrez le matin et vous savez ce qui vous attend."
  },
- "We vertrekken vanuit de kalender.": {
-  "en": "We start from the calendar.",
-  "fr": "Nous partons du planning."
- },
- "Sleep een boeking, en de nieuwe prijs ligt voor je klaar.": {
-  "en": "Drag a booking and the new price is waiting for you.",
-  "fr": "Faites glisser une réservation et le nouveau prix est prêt."
- },
- "Check uit, en de factuur volgt.": {
-  "en": "Check someone out and the invoice follows.",
-  "fr": "Faites un départ et la facture suit."
- },
- "Pas iets aan, en het staat op je kanalen.": {
-  "en": "Change something and it is on your channels.",
-  "fr": "Modifiez quelque chose et c'est sur vos canaux."
- },
  "Alles over de PMS": {
   "en": "Everything about the PMS",
   "fr": "Tout sur le PMS"
@@ -175,38 +159,6 @@
   "en": "<strong>It costs nothing.</strong> No setup fee, no migration package, not even if you have a lot of rooms.",
   "fr": "<strong>Ça ne coûte rien.</strong> Pas de frais d'installation, pas de forfait de migration, même avec beaucoup de chambres."
  },
- "<span class=\"kicker\">Vraag of twijfel?</span>": {
-  "en": "<span class=\"kicker\">Question or doubt?</span>",
-  "fr": "<span class=\"kicker\">Une question, un doute&nbsp;?</span>"
- },
- "Moet ik iets installeren?": {
-  "en": "Do I have to install anything?",
-  "fr": "Dois-je installer quelque chose&nbsp;?"
- },
- "Nee. Gewoon je browser openen en gaan. Geen installatie, geen IT-afdeling nodig. Werkt op je computer, tablet en telefoon. Als je browser niet uit 2003 komt, zit je goed.": {
-  "en": "No. Just open your browser and go. No install, no IT department. Works on your computer, tablet and phone. As long as your browser is not from 2003, you are fine.",
-  "fr": "Non. Ouvrez votre navigateur et c'est parti. Aucune installation, aucun service informatique. Fonctionne sur ordinateur, tablette et téléphone. Tant que votre navigateur ne date pas de 2003, tout va bien."
- },
- "Ik heb maar 6 kamers. Is rumo niet overkill?": {
-  "en": "I only have 6 rooms. Is rumo not overkill?",
-  "fr": "Je n'ai que 6 chambres. rumo n'est-il pas surdimensionné&nbsp;?"
- },
- "Integendeel. rumo is precies gebouwd voor hotels van 5 tot 55 kamers. De grote systemen kunnen overkill voor jou zijn. rumo geeft je wat je nodig hebt, zonder al die dingen die je <em>niet</em> nodig hebt.": {
-  "en": "On the contrary. rumo is built precisely for hotels of 5 to 55 rooms. The big systems may well be overkill for you. rumo gives you what you need, without all the things you do <em>not</em> need.",
-  "fr": "Au contraire. rumo est conçu précisément pour les hôtels de 5 à 55 chambres. Ce sont les grands systèmes qui risquent d'être surdimensionnés. rumo vous donne ce dont vous avez besoin, sans tout ce dont vous n'avez <em>pas</em> besoin."
- },
- "Werkt rumo enkel voor hotels, of ook voor B&amp;B's?": {
-  "en": "Does rumo only work for hotels, or for B&amp;Bs too?",
-  "fr": "rumo fonctionne-t-il seulement pour les hôtels, ou aussi pour les chambres d'hôtes&nbsp;?"
- },
- "Voor beide. Of je nu een B&amp;B van 6 kamers hebt of een boutique hotel van 35 kamers, rumo schaalt mee. De interface is zo opgezet dat ook een eigenaar die alles zelf doet er vlot mee kan werken.": {
-  "en": "Both. Whether you have a 6-room B&amp;B or a 35-room boutique hotel, rumo scales with you. The interface is set up so an owner who does everything themselves gets along with it fine.",
-  "fr": "Les deux. Que vous ayez une maison d'hôtes de 6 chambres ou un hôtel de charme de 35 chambres, rumo suit. L'interface est pensée pour qu'un propriétaire qui fait tout lui-même s'y retrouve sans peine."
- },
- "Alle veelgestelde vragen →": {
-  "en": "All frequently asked questions →",
-  "fr": "Toutes les questions fréquentes →"
- },
  "<span class=\"kicker\">Ben je niet zo'n babbelaar?</span>": {
   "en": "<span class=\"kicker\">Not much of a talker?</span>",
   "fr": "<span class=\"kicker\">Pas très bavard&nbsp;?</span>"
@@ -230,10 +182,6 @@
  "<strong>GDPR &amp; EU-hosting<span class=\"arr\">→</span></strong>": {
   "en": "<strong>GDPR &amp; EU hosting<span class=\"arr\">→</span></strong>",
   "fr": "<strong>RGPD et hébergement européen<span class=\"arr\">→</span></strong>"
- },
- "<h2>En dan nog <em>drie</em><br>dingen die je je afvraagt.</h2>": {
-  "en": "<h2>And then <em>three</em><br>things you are wondering.</h2>",
-  "fr": "<h2>Et puis <em>trois</em><br>choses que vous vous demandez.</h2>"
  },
  "<title>rumo · hotelsoftware zonder gedoe</title>": {
   "en": "<title>rumo · hotel software without the hassle</title>",
