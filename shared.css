@@ -1001,20 +1001,38 @@ section.tint-diep { background:var(--klei); }
   gap: 3.5rem;
   align-items: start;
 }
-/* Het gespreksvenster van Rudy houdt zijn eigen donkere achtergrond: een
-   chatvenster hoort een venster te zijn. De werkschermen niet, die staan
-   rechtstreeks op de sectie. */
-.fp-section-inner.breed .appvenster:not(.gesprek) {
+.fp-section-inner.breed .appvenster {
   background: transparent;
   box-shadow: none;
   border-radius: 0;
   padding: 0;
   overflow: visible;
 }
-.fp-section-inner.breed .appvenster.gesprek {
-  border-radius: 16px;
-  box-shadow: 0 20px 44px -26px rgba(27,25,23,0.45);
+
+/* Het gesprek van Rudy is elders donker, want daar staat het in een donkere
+   band. In een lichte sectie moet het mee blenden zoals de werkschermen, dus
+   krijgen de bellen hier hun eigen kleuren: de vraag in het wit met een randje,
+   het antwoord in het botergeel dat Rudy overal draagt. */
+.fp-section-inner.breed .gesprek .ag-kop {
+  border-bottom-color: rgba(27,25,23,0.10);
 }
+.fp-section-inner.breed .gesprek .ag-kop b { color: #7d2233; font-family:'Fraunces', Georgia, serif;
+  font-weight:400; font-size:1.15rem; }
+.fp-section-inner.breed .gesprek .ag-meta { color: var(--muted); }
+.fp-section-inner.breed .gesprek .ag-bel.ik {
+  background: #fff; color: var(--ink); border: 1px solid rgba(27,25,23,0.08);
+}
+.fp-section-inner.breed .gesprek .ag-bel.hij { background: var(--butter); color: var(--ink); }
+.fp-section-inner.breed .gesprek .ag-tikt { background: var(--butter); }
+.fp-section-inner.breed .gesprek .ag-feiten {
+  background: #fff; border-color: rgba(27,25,23,0.08);
+}
+.fp-section-inner.breed .gesprek .ag-feiten div { color: var(--muted); }
+.fp-section-inner.breed .gesprek .ag-feiten div span:last-child { color: var(--ink); }
+.fp-section-inner.breed .gesprek .ag-knoppen span { border-color: var(--line); color: var(--muted); }
+.fp-section-inner.breed .gesprek .ag-knoppen span.aan { background: var(--ink); border-color: var(--ink);
+  color: var(--paper); }
+.fp-section-inner.breed .gesprek .ag-bron { color: var(--muted); border-color: var(--line); }
 @media (max-width: 1000px) {
   .fp-section-inner.breed { grid-template-columns: 1fr; gap: 2.5rem; }
 }
