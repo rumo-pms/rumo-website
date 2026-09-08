@@ -119,10 +119,6 @@
   "en": "<p class=\"lead\">Five more things hang off it: the handbook, Rudy, your security, your channels and your guest's portal. All six are there from day one, and they know what the others are doing.</p>",
   "fr": "<p class=\"lead\">Cinq autres éléments y sont accrochés&nbsp;: le manuel, Rudy, votre sécurité, vos canaux et le portail de votre client. Les six sont là dès le premier jour, et chacun sait ce que font les autres.</p>"
  },
- "<p class=\"ph-sprong\"><a href=\"#integraties\">Werkt het met mijn kanaal of mijn boekhouder? &rarr;</a></p>": {
-  "en": "<p class=\"ph-sprong\"><a href=\"#integraties\">Does it work with my channel or my accountant? &rarr;</a></p>",
-  "fr": "<p class=\"ph-sprong\"><a href=\"#integraties\">Est-ce compatible avec mon canal ou mon comptable&nbsp;? &rarr;</a></p>"
- },
  "<p>Kalender, check-out in één klik, Peppol-facturatie, dashboard. Het hart van rumo, zonder 47 menu's diep.</p>": {
   "en": "<p>Calendar, one-click check-out, Peppol invoicing, dashboard. The heart of rumo, without 47 menus to dig through.</p>",
   "fr": "<p>Planning, départ en un clic, facturation Peppol, tableau de bord. Le cœur de rumo, sans 47 menus imbriqués.</p>"
@@ -418,5 +414,9 @@
  "<h3>De <em>PMS</em></h3>": {
   "en": "<h3>The <em>PMS</em></h3>",
   "fr": "<h3>Le <em>PMS</em></h3>"
+ },
+ "<p class=\"ph-sprong\"><a href=\"#integraties\">Werkt het met mijn bestaande OTA's of mijn boekhouder? &rarr;</a></p>": {
+  "en": "<p class=\"ph-sprong\"><a href=\"#integraties\">Does it work with my existing OTAs or my accountant? &rarr;</a></p>",
+  "fr": "<p class=\"ph-sprong\"><a href=\"#integraties\">Est-ce compatible avec mes OTA actuelles ou mon comptable&nbsp;? &rarr;</a></p>"
  }
 }
