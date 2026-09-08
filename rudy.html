@@ -585,15 +585,36 @@
 
 <!-- ═══════════════════════ STATEMENT · VEEL, NIET ALLES ═══════════════════════ -->
 <style>
-  .fp-claim { background: var(--paper-deep); padding: 5.5rem 0; text-align: center; }
-  .fp-claim-inner { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+  /* Donker, met dezelfde warme gloed als de productband onderaan de pagina.
+     Dat blok is de plek waar de pagina even stilstaat bij wat hij wel en niet
+     kan; op papierkleur liep dat gewoon mee met de rest. */
+  .fp-claim {
+    background: var(--ink);
+    padding: 6.5rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .fp-claim::after {
+    content: '';
+    position: absolute; top: -35%; left: -8%; width: 55%; height: 130%;
+    background: radial-gradient(circle, rgba(244,217,143,0.12), transparent 65%);
+    pointer-events: none;
+  }
+  .fp-claim::before {
+    content: '';
+    position: absolute; right: -10%; bottom: -40%; width: 45%; height: 120%;
+    background: radial-gradient(circle, rgba(214,143,111,0.10), transparent 65%);
+    pointer-events: none;
+  }
+  .fp-claim-inner { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; }
   .fp-claim h2 {
     font-family: 'Fraunces', serif; font-weight: 400;
     font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.08;
-    color: var(--ink); margin: 0 0 1.5rem;
+    color: var(--paper); margin: 0 0 1.5rem;
   }
-  .fp-claim h2 em { color: var(--terra-dark); font-style: italic; }
-  .fp-claim p { font-size: 1.05rem; line-height: 1.75; color: var(--ink-soft); max-width: 600px; margin: 0 auto; }
+  .fp-claim h2 em { color: var(--butter); font-style: italic; font-weight: 300; }
+  .fp-claim p { font-size: 1.05rem; line-height: 1.75; color: #d9cfc0; max-width: 600px; margin: 0 auto; }
 </style>
 <section class="fp-claim">
   <div class="wrap">
