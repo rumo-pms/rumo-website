@@ -843,6 +843,19 @@ section.tint-diep { background:var(--klei); }
   0%,18%   { opacity:0; transform:translateY(6px) }
   26%,100% { opacity:1; transform:translateY(0) }
 }
+/* Onder een voorstel toont Rudy wat er echt geboekt staat, zodat een aanbod
+   dat hij besprak maar nooit uitvoerde niet ongemerkt in een mail belandt.
+   Staat zo in docs/public/functional/rudy.md. */
+.ag-feiten { align-self:flex-start; max-width:82%; margin-top:-0.15rem;
+  background:rgba(245,238,226,0.06); border:1px solid rgba(245,238,226,0.12);
+  border-radius:12px; padding:0.6rem 0.85rem; display:grid; gap:0.3rem; }
+.ag-feiten div { display:flex; gap:0.6rem; font-size:0.78rem; color:#c9bfb3; }
+.ag-feiten div span:last-child { margin-left:auto; color:var(--paper); font-weight:500;
+  font-family:'JetBrains Mono', monospace; font-size:0.74rem; }
+.ag-knoppen { display:flex; gap:0.4rem; align-self:flex-start; margin-top:0.2rem; flex-wrap:wrap; }
+.ag-knoppen span { font-size:0.76rem; padding:0.35rem 0.8rem; border-radius:100px;
+  border:1px solid rgba(245,238,226,0.22); color:#c9bfb3; }
+.ag-knoppen span.aan { background:var(--butter); border-color:var(--butter); color:var(--ink); font-weight:500; }
 .ag-bron {
   align-self:flex-start; display:inline-flex; align-items:center; gap:0.45em;
   font-family:'JetBrains Mono', monospace; font-size:0.56rem; letter-spacing:0.08em;
@@ -965,6 +978,45 @@ section.tint-diep { background:var(--klei); }
   .ab-veld { width:12.8rem; }
   .ab-bedrag { min-width:3.6rem; }
   @keyframes abTyp { 0%,30% { width:0 } 62%,84% { width:12.2rem } 85%,100% { width:0 } }
+}
+
+/* ─── PRODUCTSECTIE · BREED ───────────────────────────────────────────────
+   Stond in de <style> van pms.html toen alleen die pagina hem nodig had. De
+   vier andere productpagina's krijgen dezelfde behandeling, dus hier. */
+/* Een sectie waarvan het schermpje meer plaats nodig heeft dan de helft.
+
+   Het schermpje zat eerst in een afgeronde kaart met een schaduw, verticaal
+   gecentreerd. Dat zweefde: een kader van driehonderd pixels midden in een
+   tekstkolom van achthonderd leest als een plaatje dat er los bij hangt, en
+   het kader hoort ook nergens bij, want het is even hoog als zijn inhoud en
+   niet als de tekst ernaast.
+
+   Daarom geen kader meer. De kop, de tellers, de tabbladen en de rijen staan
+   rechtstreeks op de achtergrond van de sectie, met alleen de rijen zelf in
+   het wit. Dan is er niets meer dat te klein of te groot kan staan. En het
+   geheel lijnt bovenaan uit met de kop ernaast in plaats van in het midden
+   te hangen. */
+.fp-section-inner.breed {
+  grid-template-columns: 0.9fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+/* Het gespreksvenster van Rudy houdt zijn eigen donkere achtergrond: een
+   chatvenster hoort een venster te zijn. De werkschermen niet, die staan
+   rechtstreeks op de sectie. */
+.fp-section-inner.breed .appvenster:not(.gesprek) {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+}
+.fp-section-inner.breed .appvenster.gesprek {
+  border-radius: 16px;
+  box-shadow: 0 20px 44px -26px rgba(27,25,23,0.45);
+}
+@media (max-width: 1000px) {
+  .fp-section-inner.breed { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 
 /* ─── APPVENSTER · WERKSCHERM ──────────────────────────────────────────────

@@ -49,34 +49,6 @@
      breedte want dan lopen de regels te lang. */
   .fp-hero-inner.enkel { grid-template-columns: 1fr; }
   .fp-hero-inner.enkel .fp-hero-text { max-width: 720px; }
-  /* Een sectie waarvan het schermpje meer plaats nodig heeft dan de helft.
-
-     Het schermpje zat eerst in een afgeronde kaart met een schaduw, verticaal
-     gecentreerd. Dat zweefde: een kader van driehonderd pixels midden in een
-     tekstkolom van achthonderd leest als een plaatje dat er los bij hangt, en
-     het kader hoort ook nergens bij, want het is even hoog als zijn inhoud en
-     niet als de tekst ernaast.
-
-     Daarom geen kader meer. De kop, de tellers, de tabbladen en de rijen staan
-     rechtstreeks op de achtergrond van de sectie, met alleen de rijen zelf in
-     het wit. Dan is er niets meer dat te klein of te groot kan staan. En het
-     geheel lijnt bovenaan uit met de kop ernaast in plaats van in het midden
-     te hangen. */
-  .fp-section-inner.breed {
-    grid-template-columns: 0.9fr 1fr;
-    gap: 3.5rem;
-    align-items: start;
-  }
-  .fp-section-inner.breed .appvenster {
-    background: transparent;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    overflow: visible;
-  }
-  @media (max-width: 1000px) {
-    .fp-section-inner.breed { grid-template-columns: 1fr; gap: 2.5rem; }
-  }
   .fp-hero-tag {
     display: inline-flex;
     align-items: center;
