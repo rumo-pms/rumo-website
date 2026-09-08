@@ -49,11 +49,33 @@
      breedte want dan lopen de regels te lang. */
   .fp-hero-inner.enkel { grid-template-columns: 1fr; }
   .fp-hero-inner.enkel .fp-hero-text { max-width: 720px; }
-  /* Een sectie waarvan het schermpje meer plaats nodig heeft dan de helft:
-     de tekstkolom wordt smaller en het venster loopt door tot de rand. */
-  .fp-section-inner.breed { grid-template-columns: 0.85fr 1fr; gap: 3rem; }
+  /* Een sectie waarvan het schermpje meer plaats nodig heeft dan de helft.
+
+     Het schermpje zat eerst in een afgeronde kaart met een schaduw, verticaal
+     gecentreerd. Dat zweefde: een kader van driehonderd pixels midden in een
+     tekstkolom van achthonderd leest als een plaatje dat er los bij hangt, en
+     het kader hoort ook nergens bij, want het is even hoog als zijn inhoud en
+     niet als de tekst ernaast.
+
+     Daarom geen kader meer. De kop, de tellers, de tabbladen en de rijen staan
+     rechtstreeks op de achtergrond van de sectie, met alleen de rijen zelf in
+     het wit. Dan is er niets meer dat te klein of te groot kan staan. En het
+     geheel lijnt bovenaan uit met de kop ernaast in plaats van in het midden
+     te hangen. */
+  .fp-section-inner.breed {
+    grid-template-columns: 0.9fr 1fr;
+    gap: 3.5rem;
+    align-items: start;
+  }
+  .fp-section-inner.breed .appvenster {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+  }
   @media (max-width: 1000px) {
-    .fp-section-inner.breed { grid-template-columns: 1fr; }
+    .fp-section-inner.breed { grid-template-columns: 1fr; gap: 2.5rem; }
   }
   .fp-hero-tag {
     display: inline-flex;
@@ -535,7 +557,7 @@
         </ul>
       </div>
       <div class="fp-section-visual">
-        <div class="appvenster bewerk paneel" role="img" aria-label="Het rekeningscherm van een reservatie: iemand klikt op Bewerk items, klikt op de tekst van een factuurregel en typt er een eigen omschrijving in.">
+        <div class="appvenster bewerk" role="img" aria-label="Het rekeningscherm van een reservatie: iemand klikt op Bewerk items, klikt op de tekst van een factuurregel en typt er een eigen omschrijving in.">
           <div class="ab-kop">
             <h4>Rekening</h4>
             <span>M&uuml;ller &middot; kamer 104</span>
@@ -585,7 +607,7 @@
         <p class="lead" style="margin-top:1.6rem"><strong>Met de add-on Advanced Housekeeping</strong> komt er een derde status bij, <em>geïnspecteerd</em>, zodat niemand incheckt op een kamer die nog niet nagekeken is. Je krijgt er ook poetschecklists per kamer bij die per dag verschillen, losse extra taken, een notitie per kamer, en een timer die meet hoe lang een schoonmaak duurt. Die tijd staat niet op het scherm van de poetsvrouw, wel in het rapport van de manager.</p>
       </div>
       <div class="fp-section-visual">
-        <div class="appvenster scherm paneel" role="img" aria-label="Het housekeeping-scherm van rumo: kamer 204 wordt schoon gezet en de tellers boven de lijst tellen mee.">
+        <div class="appvenster scherm" role="img" aria-label="Het housekeeping-scherm van rumo: kamer 204 wordt schoon gezet en de tellers boven de lijst tellen mee.">
           <div class="as-kop"><h4>Housekeeping</h4><span>2 april &middot; 18 kamers</span></div>
           <div class="as-tellers">
             <div><div class="l">Vuil</div><div class="v oranje as-wissel"><span class="was">5</span><span class="wordt">4</span></div></div>
@@ -622,7 +644,7 @@
         <p class="lead" style="margin-top:1.6rem">En staat er iemand aan tafel die geen ontbijt geboekt had? Dan zet de keuken dat er zelf bij: kamer kiezen, aantal personen, klaar. Het komt meteen als extra op zijn rekening te staan. Daar hoef je niets voor te weten van reservaties of van facturatie.</p>
       </div>
       <div class="fp-section-visual">
-        <div class="appvenster scherm paneel" role="img" aria-label="Het ontbijtscherm van rumo: de keuken zet een ontbijt bij op kamer 208 en de telling gaat van 34 naar 36 couverts.">
+        <div class="appvenster scherm" role="img" aria-label="Het ontbijtscherm van rumo: de keuken zet een ontbijt bij op kamer 208 en de telling gaat van 34 naar 36 couverts.">
           <div class="as-kop"><h4>Ontbijt</h4><span>3 april &middot; keuken</span></div>
           <div class="as-tellers">
             <div><div class="l">Couverts</div><div class="v as-wissel"><span class="was">34</span><span class="wordt">36</span></div></div>
@@ -661,7 +683,7 @@
         <p class="lead" style="margin-top:1.6rem">En apart daarvan staan de drie wettelijke: het politieregister, de stadstaks per gemeente en de overheidsstatistiek. Statbel in België, de logiesenquête in Nederland. Die worden opgebouwd uit wat je gast zelf invulde, dus je hoeft ze niet te tellen. Indienen blijft jouw handtekening.</p>
       </div>
       <div class="fp-section-visual">
-        <div class="appvenster scherm paneel" role="img" aria-label="Het rapportenscherm van rumo: de periode staat op april en het omzetrapport toont de kengetallen met de vergelijking met vorig jaar.">
+        <div class="appvenster scherm" role="img" aria-label="Het rapportenscherm van rumo: de periode staat op april en het omzetrapport toont de kengetallen met de vergelijking met vorig jaar.">
           <div class="as-kop"><h4>Rapporten</h4><span>1 &ndash; 30 april 2026</span></div>
           <div class="as-tabs"><span class="aan">Omzet</span><span>Pace</span><span>Reservaties</span><span>Facturen</span><span>Bezetting</span><span>Nationaliteit</span><span>Compliance</span></div>
           <div class="as-tellers">
