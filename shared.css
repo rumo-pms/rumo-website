@@ -980,6 +980,12 @@ section.tint-diep { background:var(--klei); }
   @keyframes abTyp { 0%,30% { width:0 } 62%,84% { width:12.2rem } 85%,100% { width:0 } }
 }
 
+/* Hero zonder schermpje ernaast: één kolom, en de tekst niet over de volle
+   breedte want dan lopen de regels te lang. De kop en de intro fungeren dan
+   als titel van de hele pagina in plaats van als helft van een tweeluik. */
+.fp-hero-inner.enkel { grid-template-columns:1fr; }
+.fp-hero-inner.enkel .fp-hero-text { max-width:720px; }
+
 /* ─── PRODUCTSECTIE · BREED ───────────────────────────────────────────────
    Stond in de <style> van pms.html toen alleen die pagina hem nodig had. De
    vier andere productpagina's krijgen dezelfde behandeling, dus hier. */
