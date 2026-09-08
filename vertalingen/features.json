@@ -115,10 +115,6 @@
   "en": "<span class=\"kicker\">What do we do?</span>",
   "fr": "<span class=\"kicker\">Que faisons-nous&nbsp;?</span>"
  },
- "<h1>De kalender is maar <em>het begin.</em></h1>": {
-  "en": "<h1>The calendar is only <em>the start.</em></h1>",
-  "fr": "<h1>Le planning n'est <em>qu'un début.</em></h1>"
- },
  "<p class=\"lead\">Er hangen nog vijf dingen aan: het handboek, Rudy, je veiligheid, je kanalen en de portal van je gast. Alle zes zitten erin vanaf dag één, en ze weten van elkaar wat er gebeurt.</p>": {
   "en": "<p class=\"lead\">Five more things hang off it: the handbook, Rudy, your security, your channels and your guest's portal. All six are there from day one, and they know what the others are doing.</p>",
   "fr": "<p class=\"lead\">Cinq autres éléments y sont accrochés&nbsp;: le manuel, Rudy, votre sécurité, vos canaux et le portail de votre client. Les six sont là dès le premier jour, et chacun sait ce que font les autres.</p>"
@@ -126,10 +122,6 @@
  "<p class=\"ph-sprong\"><a href=\"#integraties\">Werkt het met mijn kanaal of mijn boekhouder? &rarr;</a></p>": {
   "en": "<p class=\"ph-sprong\"><a href=\"#integraties\">Does it work with my channel or my accountant? &rarr;</a></p>",
   "fr": "<p class=\"ph-sprong\"><a href=\"#integraties\">Est-ce compatible avec mon canal ou mon comptable&nbsp;? &rarr;</a></p>"
- },
- "<h3>Het <em>PMS</em></h3>": {
-  "en": "<h3>The <em>PMS</em></h3>",
-  "fr": "<h3>Le <em>PMS</em></h3>"
  },
  "<p>Kalender, check-out in één klik, Peppol-facturatie, dashboard. Het hart van rumo, zonder 47 menu's diep.</p>": {
   "en": "<p>Calendar, one-click check-out, Peppol invoicing, dashboard. The heart of rumo, without 47 menus to dig through.</p>",
@@ -418,5 +410,13 @@
  "<meta name=\"description\" content=\"Alles wat rumo kan: de PMS, het handboek, Rudy, de channel manager, het guest portal en veiligheid. Plus de kleinere onderdelen en waar rumo mee koppelt.\">": {
   "en": "<meta name=\"description\" content=\"Everything rumo does: the PMS, the handbook, Rudy, the channel manager, the guest portal and security. Plus the smaller parts and what rumo connects to.\">",
   "fr": "<meta name=\"description\" content=\"Tout ce que fait rumo : le PMS, le manuel, Rudy, le channel manager, le portail client et la sécurité. Plus les éléments secondaires et ce à quoi rumo se connecte.\">"
+ },
+ "<h1>De PMS is maar <em>het begin.</em></h1>": {
+  "en": "<h1>The PMS is only <em>the start.</em></h1>",
+  "fr": "<h1>Le PMS n'est <em>qu'un début.</em></h1>"
+ },
+ "<h3>De <em>PMS</em></h3>": {
+  "en": "<h3>The <em>PMS</em></h3>",
+  "fr": "<h3>Le <em>PMS</em></h3>"
  }
 }
