@@ -489,7 +489,13 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
    Dezelfde band, maar op papier in plaats van op ink. Gebruikt op de homepage,
    waar de PMS-uitleg de intro van de pagina is en dus niet als donker blok mag
    binnenvallen. Alleen de kleuren wisselen; de opbouw blijft gelijk. */
-.toonband.licht { background:var(--paper); }
+/* De band loopt onderaan naar beige. Daar dooft de kalender in uit, en pas
+   daarna begint het donkere blok. Liet je hem in papierkleur eindigen, dan
+   viel de kalender rechtstreeks in het zwart en las dat als een gat. */
+.toonband.licht { background:linear-gradient(180deg, var(--paper) 0%, var(--paper) 58%, var(--paper-deep) 100%); }
+.toonband.licht:not(.naast) .toonband-beeld::after {
+  background:linear-gradient(to bottom, rgba(232,220,198,0), var(--paper-deep) 92%);
+}
 .toonband.licht::after { display:none; }
 .toonband.licht .toonband-tekst h2 { color:var(--ink); }
 .toonband.licht .toonband-tekst h2 em { color:var(--terra-dark); }
@@ -1395,7 +1401,7 @@ footer {
       <div class="fade-up">
         <span class="kicker">Qui nous sommes</span>
         <h2>Bon, mais qui sont ces gens de <em>rumo</em>&nbsp;?</h2>
-        <p>Nous sommes nous-mêmes hôteliers. Nous exploitons nos propres hôtels en Belgique. Nous savons ce que c'est quand le système ne fonctionne pas comme votre tête. Un PMS où une simple manipulation, répétée jour après jour, coûte beaucoup trop de temps. Nous connaissons la difficulté de diriger une équipe sans être vraiment sûr que chacun sait comment, quand et quoi.</p>
+        <p>Nous sommes nous-mêmes hôteliers. Nous exploitons nos propres hôtels à Gand. Nous savons ce que c'est quand le système ne fonctionne pas comme votre tête. Un PMS où une simple manipulation, répétée jour après jour, coûte beaucoup trop de temps. Nous connaissons la difficulté de diriger une équipe sans être vraiment sûr que chacun sait comment, quand et quoi.</p>
         <p>Au fond, il ne s'agit pas seulement du confort de vos <strong>clients</strong>, mais aussi du vôtre et de celui de <strong>votre équipe</strong>. Nous avons donc construit ce que nous cherchions depuis des années.</p>
         <a href="a-propos.html" class="btn-paper">En savoir plus sur nous <span>→</span></a>
       </div>

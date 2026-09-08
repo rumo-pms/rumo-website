@@ -489,7 +489,13 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
    Dezelfde band, maar op papier in plaats van op ink. Gebruikt op de homepage,
    waar de PMS-uitleg de intro van de pagina is en dus niet als donker blok mag
    binnenvallen. Alleen de kleuren wisselen; de opbouw blijft gelijk. */
-.toonband.licht { background:var(--paper); }
+/* De band loopt onderaan naar beige. Daar dooft de kalender in uit, en pas
+   daarna begint het donkere blok. Liet je hem in papierkleur eindigen, dan
+   viel de kalender rechtstreeks in het zwart en las dat als een gat. */
+.toonband.licht { background:linear-gradient(180deg, var(--paper) 0%, var(--paper) 58%, var(--paper-deep) 100%); }
+.toonband.licht:not(.naast) .toonband-beeld::after {
+  background:linear-gradient(to bottom, rgba(232,220,198,0), var(--paper-deep) 92%);
+}
 .toonband.licht::after { display:none; }
 .toonband.licht .toonband-tekst h2 { color:var(--ink); }
 .toonband.licht .toonband-tekst h2 em { color:var(--terra-dark); }
@@ -1395,7 +1401,7 @@ footer {
       <div class="fade-up">
         <span class="kicker">Wie zijn we</span>
         <h2>Hmm oké, maar wie zijn die van <em>rumo</em> nu?</h2>
-        <p>We zijn zelf hoteliers. We runnen onze eigen hotels in België. We weten hoe het voelt als je systeem niet werkt zoals het in jouw hoofd werkt. Een PMS waar één simpele handeling, die je dag in dag uit herhaalt, veel te veel tijd kost. We kennen de uitdaging om een team aan te sturen en toch maar half zeker te zijn dat iedereen weet hoe, wanneer en wat.</p>
+        <p>We zijn zelf hoteliers. We runnen onze eigen hotels in Gent. We weten hoe het voelt als je systeem niet werkt zoals het in jouw hoofd werkt. Een PMS waar één simpele handeling, die je dag in dag uit herhaalt, veel te veel tijd kost. We kennen de uitdaging om een team aan te sturen en toch maar half zeker te zijn dat iedereen weet hoe, wanneer en wat.</p>
         <p>Uiteindelijk draait het niet alleen om het comfort van je <strong>gasten</strong>, maar ook om dat van <strong>jou en je team</strong>. Dus bouwden we wat we zelf al jaren zochten.</p>
         <a href="over-ons.html" class="btn-paper">Meer over ons <span>→</span></a>
       </div>

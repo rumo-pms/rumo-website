@@ -115,10 +115,6 @@
   "en": "<h2>Hmm okay, but who are these <em>rumo</em> people?</h2>",
   "fr": "<h2>Bon, mais qui sont ces gens de <em>rumo</em>&nbsp;?</h2>"
  },
- "We zijn zelf hoteliers. We runnen onze eigen hotels in België. We weten hoe het voelt als je systeem niet werkt zoals het in jouw hoofd werkt. Een PMS waar één simpele handeling, die je dag in dag uit herhaalt, veel te veel tijd kost. We kennen de uitdaging om een team aan te sturen en toch maar half zeker te zijn dat iedereen weet hoe, wanneer en wat.": {
-  "en": "We are hoteliers ourselves. We run our own hotels in Belgium. We know how it feels when your system does not work the way your head works. A PMS where one simple thing, repeated day in day out, costs far too much time. We know what it is to run a team and still only be half sure that everyone knows how, when and what.",
-  "fr": "Nous sommes nous-mêmes hôteliers. Nous exploitons nos propres hôtels en Belgique. Nous savons ce que c'est quand le système ne fonctionne pas comme votre tête. Un PMS où une simple manipulation, répétée jour après jour, coûte beaucoup trop de temps. Nous connaissons la difficulté de diriger une équipe sans être vraiment sûr que chacun sait comment, quand et quoi."
- },
  "Uiteindelijk draait het niet alleen om het comfort van je <strong>gasten</strong>, maar ook om dat van <strong>jou en je team</strong>. Dus bouwden we wat we zelf al jaren zochten.": {
   "en": "In the end it is not only about the comfort of your <strong>guests</strong>, but also about yours and <strong>your team's</strong>. So we built what we had been looking for ourselves for years.",
   "fr": "Au fond, il ne s'agit pas seulement du confort de vos <strong>clients</strong>, mais aussi du vôtre et de celui de <strong>votre équipe</strong>. Nous avons donc construit ce que nous cherchions depuis des années."
@@ -190,5 +186,9 @@
  "<meta name=\"description\" content=\"rumo is hotelsoftware voor onafhankelijke hotels en B&B's. PMS, channel manager, facturatie, handboek en een AI-assistent. Zonder gedoe.\">": {
   "en": "<meta name=\"description\" content=\"rumo is hotel software for independent hotels and B&Bs. PMS, channel manager, invoicing, handbook and an AI assistant. Without the hassle.\">",
   "fr": "<meta name=\"description\" content=\"rumo est un logiciel hôtelier pour hôtels et maisons d'hôtes indépendants. PMS, channel manager, facturation, manuel et un assistant IA. Sans complications.\">"
+ },
+ "We zijn zelf hoteliers. We runnen onze eigen hotels in Gent. We weten hoe het voelt als je systeem niet werkt zoals het in jouw hoofd werkt. Een PMS waar één simpele handeling, die je dag in dag uit herhaalt, veel te veel tijd kost. We kennen de uitdaging om een team aan te sturen en toch maar half zeker te zijn dat iedereen weet hoe, wanneer en wat.": {
+  "en": "We are hoteliers ourselves. We run our own hotels in Ghent. We know how it feels when your system does not work the way your head works. A PMS where one simple thing, repeated day in day out, costs far too much time. We know what it is to run a team and still only be half sure that everyone knows how, when and what.",
+  "fr": "Nous sommes nous-mêmes hôteliers. Nous exploitons nos propres hôtels à Gand. Nous savons ce que c'est quand le système ne fonctionne pas comme votre tête. Un PMS où une simple manipulation, répétée jour après jour, coûte beaucoup trop de temps. Nous connaissons la difficulté de diriger une équipe sans être vraiment sûr que chacun sait comment, quand et quoi."
  }
 }
