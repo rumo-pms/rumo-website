@@ -558,35 +558,95 @@
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <section class="fp-hero">
   <div class="wrap">
-    <div class="fp-hero-inner fade-up">
+    <div class="fp-hero-inner enkel fade-up">
       <div class="fp-hero-text">
         <span class="fp-hero-tag">
           <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
           Channel manager
         </span>
-        <h1>Eén wijziging,<br><em>alle OTA's</em>.</h1>
+        <h1>Eén wijziging,<br><em>alle OTA's.</em></h1>
         <p class="lead">Jij verandert een prijs in rumo, en binnen seconden staat hij op Booking, Airbnb, Expedia en de rest. Komt er een boeking binnen, dan staat ze meteen op je kalender. Eén abonnement bij ons, geen aparte rekening voor de koppeling, en de eerste aansluiting doen we samen.</p>
-        <ul class="fp-hero-bullets">
-          <li>Realtime sync</li>
-          <li>Een honderdtal kanalen</li>
-          <li>Overboekingen voorkomen</li>
+        <p class="lead">Wat je hier instelt geldt voor je hele huis. Elk kanaal krijgt dezelfde prijzen en dezelfde restricties, op de opslag na die je per kanaal kan zetten. <strong>En je eigen boekingspagina doet mee.</strong> Dat moet ook: dat is het enige kanaal zonder channel manager ervoor, dus een nacht die je overal dichtzet zou daar anders gewoon te koop blijven staan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ WAT ER HEEN EN WEER GAAT ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Heen en weer</span>
+        <h2>Alles wat ze <em>moeten weten.</em></h2>
+        <p class="lead">Naar de kanalen toe gaan je prijzen, je beschikbaarheid en je restricties. Terug komen de boekingen en de annuleringen, zodra het kanaal ze meldt. Meestal binnen een handvol seconden, soms een halve minuut als Booking weer een dipje heeft.</p>
+        <p class="lead"><strong>Restricties horen bij een kamertype én een tariefplan</strong>, net als prijzen. Twee tarieven van dezelfde kamer kunnen op dezelfde nacht andere regels dragen: drie nachten minimum op je logies-only, één nacht op je ontbijtformule. Sluit je één tariefplan, dan blijven de andere open. Wil je de kamer echt dicht, vink ze dan alle drie aan.</p>
+        <p class="lead">Voor een hele periode is er een bulkbewerking, eventueel beperkt tot bepaalde weekdagen, kamertypes of tarieven. Die is <strong>voorbereid, niet verstuurd</strong>: je bevestigt hem, ziet hem in het raster staan, en pas als je bewaart vertrekt hij. Zo kan je er verschillende na elkaar klaarzetten en ze samen wegsturen.</p>
+        <ul class="fp-bullets">
+          <li>Een aparte prijs per bezetting, en per kanaal een eigen opslag</li>
+          <li>Een statuslog per wijziging: vertrokken, doorgestuurd, aangekomen</li>
+          <li>Annuleringen, no-shows en prijswijzigingen na boeking doe je in het extranet van de OTA. Die aanvaarden dat type wijziging gewoon niet van buitenaf</li>
         </ul>
       </div>
-      <div class="fp-hero-visual">
-        <div class="mockup mk-flow">
-          <div class="mockup-head">
-            <h5>Hoe het werkt</h5>
-            <span class="badge live">Live</span>
+      <div class="fp-section-visual">
+        <div class="appvenster lijst" role="img" aria-label="Een prijswijziging in rumo die na elkaar naar Booking.com, Airbnb, Expedia en de eigen boekingspagina vertrekt.">
+          <div class="al-kop"><h4>Tarieven</h4><span>Standard double &middot; za 4 april</span></div>
+          <span class="al-prijs">Nachtprijs <b><span class="oud">&euro;&nbsp;139</span><span class="nieuw">&euro;&nbsp;155</span></b></span>
+          <div class="al-rij">
+            <div><span class="al-cat">Kanaal</span><br><b>Booking.com</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was">Wacht</span>
+              <span class="al-merk wordt">Bijgewerkt</span>
+            </span>
           </div>
-          <div class="flow-node rumo">
-            <strong>rumo</strong>
-            <span>Jouw front-office</span>
+          <div class="al-rij">
+            <div><span class="al-cat">Kanaal</span><br><b>Airbnb</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag1">Wacht</span>
+              <span class="al-merk wordt traag1">Bijgewerkt</span>
+            </span>
           </div>
-          <div class="flow-arrow zakt">↓</div>
-          <div class="flow-otas">
-            <div class="flow-ota"><span class="dot licht"></span>Booking</div>
-            <div class="flow-ota"><span class="dot licht" style="animation-delay:.25s"></span>Airbnb</div>
-            <div class="flow-ota"><span class="dot licht" style="animation-delay:.5s"></span>Expedia</div>
+          <div class="al-rij">
+            <div><span class="al-cat">Kanaal</span><br><b>Expedia</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag2">Wacht</span>
+              <span class="al-merk wordt traag2">Bijgewerkt</span>
+            </span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Eigen</span><br><b>Je eigen boekingspagina</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag3">Wacht</span>
+              <span class="al-merk wordt traag3">Bijgewerkt</span>
+            </span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Kanaal</span><br><b>Agoda</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag3">Wacht</span>
+              <span class="al-merk wordt traag3">Bijgewerkt</span>
+            </span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Kanaal</span><br><b>Hotelbeds</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag3">Wacht</span>
+              <span class="al-merk wordt traag3">Bijgewerkt</span>
+            </span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Restrictie</span><br><b>Minimum 2 nachten</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag2">Wacht</span>
+              <span class="al-merk wordt traag2">Bijgewerkt</span>
+            </span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Beschikbaarheid</span><br><b>Nog 3 van 6 kamers</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag1">Wacht</span>
+              <span class="al-merk wordt traag1">Bijgewerkt</span>
+            </span>
           </div>
         </div>
       </div>
@@ -594,41 +654,74 @@
   </div>
 </section>
 
-<!-- ═══════════════════════ SECTIE 2 · WAT SYNCED ═══════════════════════ -->
-<section class="fp-section alt reverse">
+<!-- ═══════════════════════ AUTO CLOSE ═══════════════════════ -->
+<section class="fp-section reverse">
   <div class="wrap">
-    <div class="fp-section-inner fade-up">
+    <div class="fp-section-inner breed fade-up">
       <div class="fp-section-text">
-        <span class="fp-section-kicker">Wat over de draad gaat</span>
-        <h2>Alles wat ze moeten <em>weten</em>.</h2>
-        <p class="lead">Prijzen, beschikbaarheid en restricties gaan naar de kanalen, hun boekingen komen meteen terug. Meestal binnen een handvol seconden, soms een halve minuut als Booking weer een dipje heeft.</p>
+        <span class="fp-section-kicker">Auto close</span>
+        <h2>Is je receptie dicht, dan is <em>de nacht dicht.</em></h2>
+        <p class="lead">Stel in hoe laat je receptie sluit en hoeveel tijd daarvoor je wil stoppen met verkopen. rumo zet die nacht dan vanzelf op stop-sell, voor elk kamertype, elk tariefplan en elk kanaal tegelijk, inclusief je eigen boekingspagina. Er is niets om op te drukken.</p>
+        <p class="lead">Het is één regel voor je hele huis, niet iets dat je per kanaal instelt. Is je receptie toe, dan is ze toe voor Booking en voor Expedia. En het sluit alleen díé nacht: morgen en later blijven gewoon te koop, dus een gast kan nog altijd vooruit boeken terwijl er niemand aan de balie staat.</p>
+        <p class="lead">Wat een gast ziet is precies hetzelfde als een volgeboekte nacht: uitverkocht in de lijst, doorstreept in de kalender. Dat is met opzet. Je sluit een nacht om een reden, en geen van die redenen is een uitnodiging tot een telefoontje. <strong>Vertrekken op die ochtend kan wel</strong>, want een vertrek kost je die nacht niets.</p>
         <ul class="fp-bullets">
-          <li>Restricties horen erbij: min-stay, max-stay, gesloten bij aankomst of vertrek</li>
-          <li>Een aparte prijs per bezetting, en per kanaal een eigen opslag</li>
-          <li>Een statuslog per wijziging: vertrokken, doorgestuurd, aangekomen</li>
+          <li>Twee dingen blijven: je receptie mag met de hand nog altijd een boeking aannemen, en een verblijf dat al geboekt is houdt zijn kamer</li>
+          <li>Een kamer die alleen door een minimumverblijf wegvalt, zegt wél hoeveel nachten ze nodig heeft. Wie er twee zocht boekt er graag drie</li>
         </ul>
       </div>
       <div class="fp-section-visual">
-        <div class="mockup mk-flow">
-          <div class="mockup-head">
-            <h5>Tweerichtingsverkeer</h5>
-            <span class="badge">Bidirectional</span>
+        <div class="appvenster scherm" role="img" aria-label="Het tarievenraster van rumo: de nacht van vandaag gaat op stop-sell zodra de receptie sluit.">
+          <div class="as-kop"><h4>Tarieven en beschikbaarheid</h4><span data-datum="vandaag">2 april</span></div>
+          <div class="as-tabs"><span class="aan">Basistarieven</span><span>Booking.com</span><span>Airbnb</span><span>Expedia</span></div>
+          <div class="as-rij wisselt"><div><span class="sub">Standard double &middot; logies</span><br><b>Vannacht</b></div><span class="as-chips"><span class="chip was">Te koop</span><span class="chip oranje wordt">Stop-sell</span></span></div>
+          <div class="as-rij schoon"><div><span class="sub">Standard double &middot; logies</span><br><b>Morgen &middot; &euro; 139</b></div><span class="chip">Te koop</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Standard double &middot; ontbijt</span><br><b>Morgen &middot; &euro; 155</b></div><span class="chip">Te koop</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Deluxe double &middot; logies</span><br><b>Morgen &middot; &euro; 169</b></div><span class="chip">Min. 2 nachten</span></div>
+          <div class="as-rij"><div><span class="sub">Junior suite &middot; alle tarieven</span><br><b>Za 12 april</b></div><span class="chip grijs">Gesloten bij aankomst</span></div>
+          <div class="as-voet" style="margin:1rem 0 0.5rem">Auto close</div>
+          <div class="as-rij"><div><span class="sub">Receptie sluit om 22u00</span><br><b>Stoppen met verkopen om 20u00</b></div><span class="chip grijs">Aan</span></div>
+          <div class="as-rij"><div><span class="sub">Geldt voor</span><br><b>Elk kanaal en je eigen boekingspagina</b></div><span class="chip grijs">Hele huis</span></div>
+          <div class="as-rij"><div><span class="sub">Wat een gast ziet</span><br><b>Uitverkocht, net als een volle nacht</b></div><span class="chip grijs">Met opzet</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Uitzondering</span><br><b>Vertrekken op die ochtend kan wel</b></div><span class="chip">Blijft open</span></div>
+          <div class="as-voet">Alleen vannacht. Morgen blijft te koop</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ LOOPT HET NOG ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Loopt het nog?</span>
+        <h2>Niet alleen <em>verstuurd</em>, ook <em>aangekomen.</em></h2>
+        <p class="lead">Het overzicht is je gezondheidscheck: ben je verbonden, wanneer kwam de laatste boeking binnen, wanneer is er voor het laatst iets vertrokken, en is er onlangs iets misgelopen. Daaronder staan je kamertypes en tariefplannen met een stipje of ze wel gekoppeld zijn.</p>
+        <p class="lead"><strong>Elke nacht wordt er vergeleken.</strong> Niet of rumo iets verstuurd heeft, maar of de kanalen het ook echt vasthouden. Normaal lees je dat alles overeenkwam, met de datum van de laatste controle. Blijft een verschil de volgende nacht staan, dan zegt het paneel om hoeveel nachten het gaat en sinds wanneer. Dat is het moment om te kijken, want een verschil dat een correctie overleeft is meestal een instelling en geen hik.</p>
+        <p class="lead">Een kamertype of tariefplan dat je ná het aansluiten toevoegt, krijgt niet vanzelf een tegenhanger bij de channel manager. De kanalen blijven dan gewoon verkopen wat ze al kenden, stilletjes, want een kamer waarover niemand iets verteld heeft duikt nergens op. Het paneel noemt bij naam wat er ontbreekt en wat je eraan doet.</p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="Het overzicht van de channel manager in rumo: verbindingsstatus, de nachtelijke vergelijking en de koppeling van je kamertypes.">
+          <div class="as-kop"><h4>Overzicht</h4><span data-datum="vandaag">2 april</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Verbonden</div><div class="v groen">Ja</div></div>
+            <div><div class="l">Laatste boeking</div><div class="v">14 min</div></div>
+            <div><div class="l">Laatste push</div><div class="v">3 min</div></div>
+            <div><div class="l">Mislukt (24u)</div><div class="v groen">0</div></div>
           </div>
-          <div class="flow-node rumo">
-            <strong>Wijziging in rumo</strong>
-            <span>Prijs · Beschikbaarheid · Min-stay</span>
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="flow-otas">
-            <div class="flow-ota"><span class="dot"></span>Booking</div>
-            <div class="flow-ota"><span class="dot"></span>Airbnb</div>
-            <div class="flow-ota"><span class="dot"></span>Expedia</div>
-          </div>
-          <div class="flow-arrow">↑</div>
-          <div class="flow-node rumo" style="background:var(--forest); border-color:var(--forest);">
-            <strong>Nieuwe boeking</strong>
-            <span style="color:rgba(245,238,226,0.7);">In rumo binnen seconden</span>
-          </div>
+          <div class="as-voet" style="margin:0 0 0.5rem">Nachtelijke vergelijking</div>
+          <div class="as-rij schoon"><div><span class="sub">Vannacht gecontroleerd</span><br><b>Alles kwam overeen</b></div><span class="chip">In orde</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Twee nachten op rij</span><br><b>3 nachten wijken af op Expedia</b></div><span class="chip oranje">Kijk hier eens</span></div>
+          <div class="as-voet" style="margin:1rem 0 0.5rem">Kamertypes en tarieven</div>
+          <div class="as-rij schoon"><div><span class="sub">Standard double</span><br><b>Logies &middot; ontbijt &middot; niet-terugbetaalbaar</b></div><span class="chip">Gekoppeld</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Deluxe double</span><br><b>Logies &middot; ontbijt</b></div><span class="chip">Gekoppeld</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Familiekamer &middot; na het aansluiten toegevoegd</span><br><b>Nog niet bij de channel manager bekend</b></div><span class="chip oranje">Opnieuw verbinden</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Junior suite</span><br><b>Logies &middot; ontbijt</b></div><span class="chip">Gekoppeld</span></div>
+          <div class="as-voet" style="margin:1rem 0 0.5rem">Kanalen</div>
+          <div class="as-rij schoon"><div><span class="sub">Booking.com</span><br><b>Verbonden sinds 12 januari</b></div><span class="chip">Actief</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Airbnb</span><br><b>Verbonden sinds 3 februari</b></div><span class="chip">Actief</span></div>
+          <div class="as-voet">De kanalen verkopen wat ze kennen, niet wat je nog niet doorgaf</div>
         </div>
       </div>
     </div>
@@ -691,44 +784,6 @@
   </div>
 </section>
 
-<!-- ═══════════════════════ SECTIE 3 · CONFLICTEN ═══════════════════════ -->
-<section class="fp-section">
-  <div class="wrap">
-    <div class="fp-section-inner fade-up">
-      <div class="fp-section-text">
-        <span class="fp-section-kicker">Overboekingen voorkomen</span>
-        <h2>Een <em>dubbele</em> boeking? Liever niet.</h2>
-        <p class="lead">Zodra je laatste kamer verkocht is, staat de beschikbaarheid binnen seconden op nul bij elk kanaal. Boek je er zelf nog een in die al bezet is, dan weigert rumo dat of markeert hij het. Je ziet het meteen, niet pas bij de check-in.</p>
-        <ul class="fp-bullets">
-          <li>Verkocht is verkocht, op elk kanaal tegelijk</li>
-          <li>Een handmatige boeking die botst, wordt geweigerd of gemarkeerd</li>
-        </ul>
-      </div>
-      <div class="fp-section-visual">
-        <div class="mockup mk-conflict">
-          <div class="mockup-head">
-            <h5>Handmatige boeking</h5>
-            <span class="badge">Geweigerd</span>
-          </div>
-          <div class="conflict-head">Kamer 104 · 12-15 mei is al bezet</div>
-          <div class="conflict-rooms">
-            <div class="conflict-room">
-              <div class="src">Bestaand · Booking</div>
-              <strong>Familie Müller</strong>
-              <span>12-15 mei · bevestigd</span>
-            </div>
-            <div class="conflict-room">
-              <div class="src">Nieuw · handmatig</div>
-              <strong>Geblokkeerd</strong>
-              <span>botst met een bestaande boeking</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ═══════════════════════ SECTIE 4 · OTA'S ═══════════════════════ -->
 <section class="fp-section alt reverse">
   <div class="wrap">
@@ -783,52 +838,6 @@
 </section>
 
 <!-- ═══════════════════════ ANDERE FEATURES ═══════════════════════ -->
-<!-- ═══════════════════════ PRODUCTBAND ═══════════════════════ -->
-<section class="toonband naast">
-  <div class="toonband-inner fade-up" style="position:relative">
-    <div class="toonband-tekst">
-      <span class="kicker" style="color:#a89a89">Zo ziet het eruit</span>
-      <h2>Eén prijs, <em>overal</em> tegelijk.</h2>
-      <p>Je past de nachtprijs aan in rumo. De koppeling geeft hem door aan elk kanaal dat aanstaat, en aan je eigen boekingspagina. Geen extranet, geen tweede systeem.</p>
-      <p class="kantnoot rechts" style="position:relative; margin:1.7rem 0 0; max-width:19rem">annuleringen gaan niet deze kant op. die doe je bij de OTA zelf.</p>
-    </div>
-    <div class="toonband-beeld">
-        <div class="appvenster lijst" role="img" aria-label="Een prijswijziging in rumo die na elkaar naar Booking.com, Airbnb, Expedia en de eigen boekingspagina vertrekt.">
-          <div class="al-kop"><h4>Tarieven</h4><span>Standard double &middot; za 4 april</span></div>
-          <span class="al-prijs">Nachtprijs <b><span class="oud">&euro;&nbsp;139</span><span class="nieuw">&euro;&nbsp;155</span></b></span>
-          <div class="al-rij">
-            <div><span class="al-cat">Kanaal</span><br><b>Booking.com</b></div>
-            <span class="al-merken">
-              <span class="al-merk open was">Wacht</span>
-              <span class="al-merk wordt">Bijgewerkt</span>
-            </span>
-          </div>
-          <div class="al-rij">
-            <div><span class="al-cat">Kanaal</span><br><b>Airbnb</b></div>
-            <span class="al-merken">
-              <span class="al-merk open was traag1">Wacht</span>
-              <span class="al-merk wordt traag1">Bijgewerkt</span>
-            </span>
-          </div>
-          <div class="al-rij">
-            <div><span class="al-cat">Kanaal</span><br><b>Expedia</b></div>
-            <span class="al-merken">
-              <span class="al-merk open was traag2">Wacht</span>
-              <span class="al-merk wordt traag2">Bijgewerkt</span>
-            </span>
-          </div>
-          <div class="al-rij">
-            <div><span class="al-cat">Eigen</span><br><b>Je eigen boekingspagina</b></div>
-            <span class="al-merken">
-              <span class="al-merk open was traag3">Wacht</span>
-              <span class="al-merk wordt traag3">Bijgewerkt</span>
-            </span>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-
 <section class="fp-others">
   <div class="wrap">
     <div class="fp-others-head fade-up">
