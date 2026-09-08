@@ -17,6 +17,7 @@
 </script>
 <script src="gate.js"></script>
 <script src="demo-form.js?v=2" defer></script>
+<script src="datums.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Preventie &amp; welzijn · rumo</title>
 <meta name="robots" content="noindex, nofollow">
@@ -439,286 +440,152 @@
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <section class="fp-hero">
   <div class="wrap">
-    <div class="fp-hero-inner fade-up">
+    <div class="fp-hero-inner enkel fade-up">
       <div class="fp-hero-text">
         <span class="fp-hero-tag">
           <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           Preventie &amp; welzijn
         </span>
-        <span class="fp-hero-addon">Add-on · €29/maand</span>
-        <h1>Brandpreventie. Legionella. EHBO.<br>Eindelijk <em>onder controle</em>.</h1>
-        <p class="lead">Elke hotelier kent het gevoel: ergens in een kast ligt een map met keuringen, checklists en veiligheidsplannen. Niemand weet zeker of alles nog geldig is. Tot er een inspectie komt. rumo vervangt die kast door een levend systeem dat meedenkt, herinnert en documenteert.</p>
-        <ul class="fp-hero-bullets">
-          <li>Vervaldatums bewaakt</li>
-          <li>Inspectie-klaar</li>
-          <li>Checklists op de telefoon</li>
+        <span class="fp-hero-addon">Add-on &middot; &euro;29/maand</span>
+        <h1>Brandpreventie. Legionella. EHBO.<br><em>Eindelijk onder controle.</em></h1>
+        <p class="lead">Elke hotelier kent het gevoel: ergens in een kast ligt een map met keuringen, checklists en veiligheidsplannen. Niemand weet zeker of alles nog geldig is. Tot er een inspectie komt.</p>
+        <p class="lead">Een hotel is namelijk ook een gebouw, en dat gebouw heeft zijn eigen administratie. De brandhaspels, de blustoestellen, de noodverlichting, de lift, de laagspanning, de gasketel, de rookkoepel, de dampkap in de keuken. Elk met een eigen firma, een eigen termijn en een eigen papiertje. Niemand houdt dat in zijn hoofd, en wie beweert van wel houdt in werkelijkheid de twee bij waar hij ooit een probleem mee gehad heeft.</p>
+        <p class="lead">Het is dus geen technisch probleem maar een <strong>documentenprobleem</strong>. En dat los je op zoals je elk documentenprobleem oplost: één plek, één vervaldatum per stuk, en een waarschuwing ruim voordat het te laat is.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ INSTALLATIES ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Installaties</span>
+        <h2>Elke installatie heeft <em>zijn eigen klok.</em></h2>
+        <p class="lead">Per installatie leg je vast wat het is, hoeveel je er hebt, wanneer ze het laatst gekeurd is, tot wanneer het huidige attest geldt, wie ze onderhoudt en wie ze keurt. Dat laatste zijn met opzet twee aparte namen, want dat is de vraag die je binnen een jaar stelt en waarop je dan geen antwoord hebt.</p>
+        <p class="lead">De status stel je niet in, die volgt uit de vervaldatum: vervallen, binnen dertig dagen, of nog ruim de tijd. Een installatie zonder datum krijgt geen status, en dat is <strong>niet hetzelfde als in orde</strong>. Zet er dus ook een datum bij als je hem moet schatten: een geschatte vervaldatum wordt bewaakt, een leeg veld nooit.</p>
+        <p class="lead">Wat het uitdrukkelijk niet doet: rumo kent de wettelijke termijn van jouw installatie niet. Er zit geen tabel in die weet hoe vaak een lift of een blustoestel gekeurd moet worden. Wat jij als vervaldatum invult, is waarmee gewerkt wordt, en die haal je van het attest dat je in handen hebt.</p>
+        <ul class="fp-bullets">
+          <li>Een vervallen attest blokkeert niets in rumo. De rekening ligt elders, bij je verzekeraar</li>
+          <li>Naast de installaties staat een adresboek van je firma's, met wie wat doet en wie je belt</li>
         </ul>
       </div>
-      <div class="fp-hero-visual">
-        <div class="mockup mk-notif">
-          <div class="mockup-head">
-            <h5>Preventie &amp; welzijn</h5>
-            <span class="badge">Notificaties</span>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="Het installatieregister in rumo: elke installatie met zijn vervaldatum en de status die daaruit volgt.">
+          <div class="as-kop"><h4>Installaties</h4><span data-datum="vandaag">2 april</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Vervallen</div><div class="v oranje">1</div></div>
+            <div><div class="l">Binnen 30 d</div><div class="v oranje">3</div></div>
+            <div><div class="l">In orde</div><div class="v groen">14</div></div>
+            <div><div class="l">Zonder datum</div><div class="v">2</div></div>
           </div>
-          <div class="notif warn">
-            <div class="ic">!</div>
-            <div>
-              <strong>2 documenten vervallen binnenkort</strong>
-              <span>Keuringsattest blusser · legionella-analyse</span>
-            </div>
-          </div>
-          <div class="notif ok">
-            <div class="ic">✓</div>
-            <div>
-              <strong>Veiligheidsronde voltooid</strong>
-              <span>7/7 items OK · vandaag 09:15</span>
-            </div>
-          </div>
-          <div class="notif red">
-            <div class="ic">△</div>
-            <div>
-              <strong>Nieuw incident gemeld</strong>
-              <span>Near miss · keuken · open</span>
-            </div>
-          </div>
-          <div class="notif info">
-            <div class="ic">i</div>
-            <div>
-              <strong>Incident opgevolgd</strong>
-              <span>Near miss keuken · afgehandeld</span>
-            </div>
-          </div>
+          <div class="as-tabs"><span class="aan">Alle</span><span>Brand</span><span>Elektrisch</span><span>Water</span><span>Lift</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Keuringsorganisme &middot; laagspanning</span><br><b>Elektrische installatie</b></div><span class="chip oranje">Vervallen</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Liftfirma &middot; risicoanalyse</span><br><b>Personenlift</b></div><span class="chip oranje">Nog 12 dagen</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Brandbeveiliger &middot; 14 stuks</span><br><b>Blustoestellen</b></div><span class="chip oranje">Nog 21 dagen</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Brandbeveiliger &middot; 6 stuks</span><br><b>Brandhaspels</b></div><span class="chip">In orde</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Installateur &middot; jaarlijks onderhoud</span><br><b>Gasketel</b></div><span class="chip">In orde</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Brandbeveiliger</span><br><b>Noodverlichting</b></div><span class="chip">In orde</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Eigen onderhoud &middot; zelf te attesteren</span><br><b>Dampkap keuken</b></div><span class="chip">In orde</span></div>
+          <div class="as-rij"><div><span class="sub">Geen vervaldatum ingevuld</span><br><b>Rookkoepel</b></div><span class="chip grijs">Wordt niet bewaakt</span></div>
+          <div class="as-voet">Onderhoud en keuring staan als aparte firma's</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ SECTIE 1 · DE DOSSIERS ═══════════════════════ -->
-<section class="fp-section">
+<!-- ═══════════════════════ WAARSCHUWINGEN ═══════════════════════ -->
+<section class="fp-section reverse">
   <div class="wrap">
-    <div class="fp-section-inner fade-up">
+    <div class="fp-section-inner breed fade-up">
       <div class="fp-section-text">
-        <span class="fp-section-kicker">De dossiers</span>
-        <h2>Wat <em>rumo bewaakt</em>.</h2>
-        <p class="lead">Geen losse Excel-bestanden per onderwerp. Eén dossier per installatie of plan, met vervaldatum, verantwoordelijke, en alles wat erbij hoort aan documenten en certificaten. Klik op een blusser, je ziet zijn keuringshistoriek. Klik op je legionellabeheersplan, je ziet de logboek-data van de laatste zes weken.</p>
-        <ul class="fp-bullets">
-          <li><em>Brandpreventie:</em> blussers, detectie, noodverlichting, rookluiken</li>
-          <li><em>Legionella:</em> temperatuurmetingen, spoelingen, logboek</li>
-          <li><em>EHBO &amp; AED:</em> materiaal, opleidingen, vervaldatums</li>
-          <li><em>Chemische producten:</em> veiligheidsfiches, opslaglocaties</li>
-          <li><em>Evacuatieoefeningen:</em> plannen, registreren, evalueren</li>
-        </ul>
-        <p style="margin-top:1.4rem"><a href="uitgelegd/gebouwbeheer.html">Wie onderhoudt je gasketel, en wanneer was dat de laatste keer? &rarr;</a></p>
+        <span class="fp-section-kicker">Op tijd</span>
+        <h2>Je ziet het <em>voor iemand ernaar vraagt.</em></h2>
+        <p class="lead">Een keuring die volgende week vervalt kan je niet volgende week regelen. Bij een laagspanningskeuring komt er meestal eerst een elektricien langs om te herstellen wat de vorige keuring had opgemerkt, en pas daarna het keuringsorganisme. Twee agenda's, twee wachttijden.</p>
+        <p class="lead">Daarom waarschuwt rumo dertig, veertien, zeven en één dag voor een document vervalt. En in de bel staat live wat er aandacht vraagt: installaties die binnen de maand vervallen, taken die openstaan, checklists die aan de beurt zijn, een evacuatieoefening ouder dan een jaar, open incidenten, en documenten die nog op bevestiging wachten.</p>
+        <p class="lead"><strong>Drie dingen die we er eerlijk bij zeggen.</strong> Die waarschuwingen komen in de app en niet in je mailbox: er moet iemand rumo openen. Het nachtelijke werk kijkt alleen naar documenten, niet naar installaties of taken. En de bel telt ook op wat allang vervallen is, dus lees dat getal als "vraagt aandacht" en niet als "vervalt binnenkort".</p>
+        <p class="lead">De bel is voor managers en admins. Andere rollen zien er niets van.</p>
       </div>
       <div class="fp-section-visual">
-        <div class="mockup mk-dossier">
-          <div class="mockup-head">
-            <h5>Brandpreventie</h5>
-            <span class="badge">12 items</span>
-          </div>
-          <div class="dossier-row">
-            <div class="ic" style="background:var(--rose-soft); color:var(--terra-dark);">
-              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v6a2 2 0 0 0 2 2h0V2"/><path d="M14 2v6a2 2 0 0 1-2 2"/><path d="M6 14v8h12v-8"/><path d="M6 14h12"/></svg>
-            </div>
-            <div>
-              <strong>Brandblusser · hal</strong>
-              <div class="meta">Volgende keuring · 14 nov 2026</div>
-            </div>
-            <div class="status">Geldig</div>
-          </div>
-          <div class="dossier-row warn">
-            <div class="ic" style="background:#FCEDBD; color:#8a6b1a;">
-              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21v-4a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v4"/><path d="M5 18l3-3 3 3"/></svg>
-            </div>
-            <div>
-              <strong>HVAC-filter · keuken</strong>
-              <div class="meta">Vervalt over · 18 dagen</div>
-            </div>
-            <div class="status">Bijna</div>
-          </div>
-          <div class="dossier-row">
-            <div class="ic" style="background:var(--forest-soft); color:var(--forest);">
-              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <div>
-              <strong>Noodverlichting · gang 1ste</strong>
-              <div class="meta">Maandelijkse controle · vandaag</div>
-            </div>
-            <div class="status">Geldig</div>
-          </div>
+        <div class="appvenster scherm" role="img" aria-label="De meldingenbel in rumo: wat er vandaag aandacht vraagt aan keuringen, taken en documenten.">
+          <div class="as-kop"><h4>Wat vraagt aandacht</h4><span data-datum="vandaag">2 april</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Vervallen</span><br><b>Keuringsattest laagspanning</b></div><span class="chip oranje">Sinds 9 dagen</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Binnen 30 dagen</span><br><b>Risicoanalyse lift</b></div><span class="chip oranje">Nog 12 dagen</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Binnen 30 dagen</span><br><b>Attest blustoestellen</b></div><span class="chip oranje">Nog 21 dagen</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">Taken en checklists</div>
+          <div class="as-rij vuil"><div><span class="sub">Wekelijks</span><br><b>Noodverlichting testen</b></div><span class="chip oranje">2 dagen te laat</span></div>
+          <div class="as-rij"><div><span class="sub">Maandelijks</span><br><b>Spoelen van zelden gebruikte kranen</b></div><span class="chip grijs">Vandaag</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Jaarlijks</span><br><b>Evacuatieoefening</b></div><span class="chip oranje">14 maanden geleden</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">Wacht op jou</div>
+          <div class="as-rij"><div><span class="sub">Inbox</span><br><b>3 attesten door Rudy klaargezet</b></div><span class="chip grijs">Bevestigen</span></div>
+          <div class="as-rij"><div><span class="sub">Open incident</span><br><b>Lekkage kamer 302</b></div><span class="chip grijs">Opvolging</span></div>
+          <div class="as-voet">In de app, niet in je mailbox</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ SECTIE 2 · HERINNERINGEN ═══════════════════════ -->
-<section class="fp-section alt reverse">
+<!-- ═══════════════════════ DOCUMENTEN ═══════════════════════ -->
+<section class="fp-section alt">
   <div class="wrap">
-    <div class="fp-section-inner fade-up">
+    <div class="fp-section-inner breed fade-up">
       <div class="fp-section-text">
-        <span class="fp-section-kicker">Vervaldatums</span>
-        <h2>Niet meer <em>vergeten</em>.</h2>
-        <p class="lead">Een keuringsattest van een brandblusser dat volgend jaar december vervalt? rumo waarschuwt je 30, 14, 7 en 1 dag voor de vervaldatum. In rumo zelf, niet in een aparte tool die je toch nooit opent. (Zolang het document niet vernieuwd is, blijft de herinnering terugkomen.)</p>
-        <ul class="fp-bullets">
-          <li>Per document een automatische vervaldatum-bewaking</li>
-          <li>Waarschuwingen 30, 14, 7 en 1 dag voor de vervaldatum van een document</li>
-          <li>In rumo zelf, als melding. Geen mail, geen push, dus iemand moet rumo openen</li>
-          <li>Een verantwoordelijke per dossier toewijzen (eigenaar, technicus, externe firma)</li>
-          <li>Geschiedenis van keuringen en onderhoud, zwart op wit</li>
-        </ul>
+        <span class="fp-section-kicker">Het dossier</span>
+        <h2>Een dossier dat <em>kant-en-klaar ligt.</em></h2>
+        <p class="lead">De attesten, keuringsverslagen, vergunningen, verzekeringspolissen, risicoanalyses en plannen zelf. Tot 25 MB per bestand, met per document wie het uitschreef, wanneer, en tot wanneer het geldt.</p>
+        <p class="lead"><strong>Documenten worden bijgehouden in versies, niet overschreven.</strong> Laad je een nieuwe versie op, dan kies je of ze de oude vervangt. In dat geval wordt de oude gearchiveerd en blijft de ketting compleet. Een bestand dat byte voor byte gelijk is aan iets dat er al staat, wordt geweigerd.</p>
+        <p class="lead">Per document zet je wie het mag zien: alleen managers en admins, of iedereen. Rudy zoekt erin en houdt zich aan diezelfde regel. Stuur hem een stapel attesten en hij leest ze uit en zet ze klaar, maar hij archiveert nooit zelf. Alles belandt in een wachtrij waar een mens het bevestigt, en dat is met opzet: een verkeerd gelezen vervaldatum op een brandattest ontdek je liever niet tijdens een controle.</p>
       </div>
       <div class="fp-section-visual">
-        <div class="mockup mk-notif">
-          <div class="mockup-head">
-            <h5>Wat staat eraan te komen</h5>
-            <span class="badge">Volgende 90 dagen</span>
-          </div>
-          <div class="notif warn">
-            <div class="ic">!</div>
-            <div>
-              <strong>HVAC-filter keuken vervangen</strong>
-              <span>18 dagen · technicus aanvragen</span>
-            </div>
-          </div>
-          <div class="notif warn">
-            <div class="ic">!</div>
-            <div>
-              <strong>Legionella-spoeling badkamers</strong>
-              <span>32 dagen · housekeeping</span>
-            </div>
-          </div>
-          <div class="notif info">
-            <div class="ic">i</div>
-            <div>
-              <strong>Evacuatieoefening Q2</strong>
-              <span>45 dagen · plan inboeken</span>
-            </div>
-          </div>
-          <div class="notif info">
-            <div class="ic">i</div>
-            <div>
-              <strong>EHBO-opleiding 2 medewerkers</strong>
-              <span>68 dagen · Rode Kruis</span>
-            </div>
-          </div>
+        <div class="appvenster scherm" role="img" aria-label="Het documentendossier in rumo: attesten met hun versies en een wachtrij met wat Rudy heeft klaargezet.">
+          <div class="as-kop"><h4>Documenten</h4><span>48 stuks</span></div>
+          <div class="as-tabs"><span class="aan">Alle</span><span>Attesten</span><span>Verslagen</span><span>Plannen</span><span>Polissen</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Brandbeveiliger &middot; versie 4</span><br><b>Keuringsattest blustoestellen</b></div><span class="chip">Geldig tot 23/04</span></div>
+          <div class="as-rij"><div><span class="sub">Versie 3 &middot; gearchiveerd</span><br><b>Keuringsattest blustoestellen</b></div><span class="chip grijs">Bewaard</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Keuringsorganisme &middot; versie 2</span><br><b>Verslag laagspanning</b></div><span class="chip">Iedereen</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Preventieadviseur</span><br><b>Risicoanalyse gebouw</b></div><span class="chip">Alleen managers</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Architect &middot; pdf 4,2 MB</span><br><b>Evacuatieplan verdiepingen</b></div><span class="chip">Iedereen</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">Wacht op bevestiging</div>
+          <div class="as-rij komt-erbij"><div><span class="sub">Door Rudy uitgelezen</span><br><b>Attest noodverlichting &middot; vervalt 12/11</b></div><span class="chip grijs">Bevestigen</span></div>
+          <div class="as-rij"><div><span class="sub">Door Rudy uitgelezen</span><br><b>Onderhoud gasketel &middot; vervalt 03/03</b></div><span class="chip grijs">Bevestigen</span></div>
+          <div class="as-voet">Rudy zet klaar, jij bevestigt</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════ SECTIE 3 · INSPECTIE ═══════════════════════ -->
-<section class="fp-section">
+<!-- ═══════════════════════ REGISTERS ═══════════════════════ -->
+<section class="fp-section reverse">
   <div class="wrap">
-    <div class="fp-section-inner fade-up">
+    <div class="fp-section-inner breed fade-up">
       <div class="fp-section-text">
-        <span class="fp-section-kicker">Bij controle</span>
-        <h2>Een dossier dat <em>kant-en-klaar</em> ligt.</h2>
-        <p class="lead">Brandweer aan de deur? Inspectie van de gemeente? FAVV op bezoek? Open één tab, exporteer een PDF, klaar. Audit trail van wie wat wanneer veranderde, certificaten van de externe firma's, foto's en handtekeningen van checklists. (Geen "ik moet even zoeken" meer.)</p>
-        <ul class="fp-bullets">
-          <li>Eén PDF-export per dossier, ondertekend en gedateerd</li>
-          <li>Audit log van alle wijzigingen, niet wisbaar</li>
-          <li>Certificaten en attesten als bijlage bij het juiste item</li>
-          <li>Geschiedenis van checklists met foto's als bewijs</li>
-          <li>Snelle filter "wat verviel het laatste jaar" voor inspectie-overzicht</li>
-        </ul>
+        <span class="fp-section-kicker">Registers en checklists</span>
+        <h2>Checklists die <em>écht gebeuren.</em></h2>
+        <p class="lead">Naast de techniek loopt er een tweede spoor dat niets met keuringen te maken heeft en dat mensen vaak helemaal vergeten: de registers. Incidenten, EHBO, psychosociale feiten, evacuatieoefeningen, legionella en waterkwaliteit, chemische producten, je brandpreventiedossier, en wie er in het gebouw is komen werken.</p>
+        <p class="lead">Die haken in elkaar waar dat hoort. Vink je bij een incident aan dat het een licht arbeidsongeval was, dan wordt de bijhorende EHBO-regel vanzelf aangemaakt, zodat hetzelfde voorval niet twee keer ingetikt moet worden.</p>
+        <p class="lead"><strong>Het verschil tussen een taak en een checklist zit in het bewijs.</strong> Een taak onthoudt alleen wanneer ze het laatst gedaan is. Een checklist laat een spoor na: wie ze uitvoerde, wat er per punt uitkwam, en een handtekening. Zo'n afgewerkte ronde wordt vanzelf een pdf en belandt bij je documenten. Moet je kunnen aantonen dát je iets gedaan hebt, gebruik dan een checklist.</p>
+        <p class="lead">Een aannemer hoeft niet door de receptie ingetikt te worden: er is een aanmeldlink met QR-code voor je site. Hang die aan de dienstingang of stuur hem mee met de werkbon, en hij registreert zichzelf en tekent voor de sitegegevens die hij gezien heeft. <strong>Zonder rumo-login.</strong> Die bezoekregistraties worden na twee jaar automatisch gewist, en dat staat vast: wil je iets bewaren, exporteer het dan op tijd.</p>
       </div>
       <div class="fp-section-visual">
-        <div class="mockup mk-audit">
-          <div class="mockup-head">
-            <h5>Audit log · brandblusser hal</h5>
-            <span class="badge">Onveranderbaar</span>
-          </div>
-          <div class="audit-item">
-            <div class="audit-dot"></div>
-            <div class="audit-text">
-              <strong>Keuring uitgevoerd</strong>
-              <span>2026-04-12 · 14:22 · Sicli BV</span>
-              <p>Visuele controle, druktest. Certificaat #SIC-2026-4471 opgeladen.</p>
-            </div>
-          </div>
-          <div class="audit-item">
-            <div class="audit-dot"></div>
-            <div class="audit-text">
-              <strong>Plaatsing nieuwe blusser</strong>
-              <span>2024-11-08 · 10:15 · Sicli BV</span>
-              <p>6 kg ABC-poeder, vervanging na vervaldatum. Foto's bewaard.</p>
-            </div>
-          </div>
-          <div class="audit-item">
-            <div class="audit-dot"></div>
-            <div class="audit-text">
-              <strong>Maandelijkse visuele check</strong>
-              <span>2024-10-01 · 09:30 · Jeffrey</span>
-              <p>Slang OK, drukmeter OK, plombe intact.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════ SECTIE 4 · MOBIEL ═══════════════════════ -->
-<section class="fp-section alt reverse">
-  <div class="wrap">
-    <div class="fp-section-inner fade-up">
-      <div class="fp-section-text">
-        <span class="fp-section-kicker">Checklists</span>
-        <h2>Checklists die <em>écht</em> gebeuren.</h2>
-        <p class="lead">Dagelijkse veiligheidsronde? Wekelijkse legionella-spoeling? Maandelijkse evacuatieoefening? Receptie of manager vinkt af op de telefoon, met foto erbij als bewijs. Jij ziet in één oogopslag wat gebeurde en wat niet. (Preventie is voorbehouden aan receptie, managers en beheerders. Housekeeping en F&amp;B hebben geen toegang.)</p>
-        <ul class="fp-bullets">
-          <li>Checklists per shift, per dag, per week of per maand</li>
-          <li>Afvinken op de telefoon, foto's en handtekening optioneel</li>
-          <li>Notificatie als een verplichte checklist niet werd afgevinkt</li>
-          <li>Incidenten en near-misses melden, met status van melding tot afhandeling</li>
-          <li>Voorbehouden aan receptie, managers en beheerders (niet housekeeping of F&amp;B)</li>
-        </ul>
-      </div>
-      <div class="fp-section-visual">
-        <div class="mockup mk-checklist">
-          <div class="mockup-head">
-            <h5>Veiligheidsronde · vandaag</h5>
-            <span class="badge">7/7</span>
-          </div>
-          <div class="check-item done">
-            <div class="check-box done">✓</div>
-            <div>Nooduitgangen vrij en verlicht</div>
-            <div class="meta">07:42</div>
-          </div>
-          <div class="check-item done">
-            <div class="check-box done">✓</div>
-            <div>Brandblussers op hun plek</div>
-            <div class="meta">07:48</div>
-          </div>
-          <div class="check-item done">
-            <div class="check-box done">✓</div>
-            <div>Noodverlichting getest</div>
-            <div class="meta">07:55</div>
-          </div>
-          <div class="check-item done">
-            <div class="check-box done">✓</div>
-            <div>Rookmelders gecontroleerd</div>
-            <div class="meta">08:30</div>
-          </div>
-          <div class="check-item done">
-            <div class="check-box done">✓</div>
-            <div>Legionella-spoeling gelogd</div>
-            <div class="meta">09:05</div>
-          </div>
-          <div class="check-item done">
-            <div class="check-box done">✓</div>
-            <div>EHBO-kit compleet</div>
-            <div class="meta">09:10</div>
-          </div>
-          <div class="check-item done">
-            <div class="check-box done">✓</div>
-            <div>Brandblusserplek vrij</div>
-            <div class="meta">09:15</div>
-          </div>
-          <div class="checklist-summary">Voltooid om 09:15 door de receptie · ondertekend</div>
+        <div class="appvenster scherm" role="img" aria-label="De veiligheidsregisters in rumo, met een checklist die net afgetekend is en als pdf bij de documenten belandt.">
+          <div class="as-kop"><h4>Veiligheid</h4><span data-datum="vandaag">2 april</span></div>
+          <div class="as-tabs"><span class="aan">Registers</span><span>Checklists</span><span>Aannemers</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Incidenten</span><br><b>3 dit jaar &middot; 1 open</b></div><span class="chip">Bijgehouden</span></div>
+          <div class="as-rij schoon"><div><span class="sub">EHBO</span><br><b>Verstrekte zorg</b></div><span class="chip">Bijgehouden</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Psychosociaal</span><br><b>Agressie en grensoverschrijdend gedrag</b></div><span class="chip">Bijgehouden</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Evacuatieoefening</span><br><b>Laatste 14 maanden geleden</b></div><span class="chip oranje">Verwacht</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Legionella</span><br><b>Spoellogboek &middot; 6 kranen</b></div><span class="chip">Deze week</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">Checklist net afgetekend</div>
+          <div class="as-rij wisselt"><div><span class="sub">Maandelijkse brandronde &middot; An</span><br><b>18 punten &middot; 1 opmerking</b></div><span class="as-chips"><span class="chip oranje was">Bezig</span><span class="chip wordt">Getekend</span></span></div>
+          <div class="as-rij komt-erbij schoon"><div><span class="sub">Automatisch bij je documenten</span><br><b>Brandronde &middot; pdf met handtekening</b></div><span class="chip">Bewaard</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">Aannemers op de site</div>
+          <div class="as-rij schoon"><div><span class="sub">Vandaag &middot; getekend via QR</span><br><b>Liftfirma &middot; jaarlijkse keuring</b></div><span class="chip">Aangemeld</span></div>
+          <div class="as-rij"><div><span class="sub">Gisteren</span><br><b>Loodgieter &middot; lekkage 302</b></div><span class="chip grijs">Afgemeld</span></div>
+          <div class="as-voet">Een taak onthoudt de datum, een checklist laat bewijs na</div>
         </div>
       </div>
     </div>
@@ -726,42 +593,6 @@
 </section>
 
 <!-- ═══════════════════════ ANDERE FEATURES ═══════════════════════ -->
-<!-- ═══════════════════════ PRODUCTBAND ═══════════════════════ -->
-<section class="toonband naast">
-  <div class="toonband-inner fade-up" style="position:relative">
-    <div class="toonband-tekst">
-      <span class="kicker" style="color:#a89a89">Zo ziet het eruit</span>
-      <h2>Je ziet het <em>voor</em> iemand ernaar vraagt.</h2>
-      <p>Elke installatie heeft een vervaldatum, en de status volgt daar vanzelf uit. Binnen dertig dagen kleurt hij op, zodat je nog een afspraak kan maken in plaats van een boete kan incasseren.</p>
-      <p class="kantnoot rechts" style="position:relative; margin:1.7rem 0 0; max-width:19rem">rumo kent de wettelijke termijn niet. wat jij invult, bewaakt hij.</p>
-    </div>
-    <div class="toonband-beeld">
-        <div class="appvenster lijst" role="img" aria-label="Installaties in rumo met hun keuringsdata: een attest dat binnen dertig dagen vervalt springt vanzelf op oranje.">
-          <div class="al-kop"><h4>Installaties</h4><span>14 dossiers</span></div>
-          <div class="al-rij">
-            <div><span class="al-cat">Gas</span><br><b>Verwarmingsketel</b></div>
-            <span class="al-merk">Geldig tot 12/03/2028</span>
-          </div>
-          <div class="al-rij wijzigt">
-            <div><span class="al-cat">Brand</span><br><b>Gasklep op de brandcentrale</b></div>
-            <span class="al-merken">
-              <span class="al-merk was">Geldig tot 28/09/2026</span>
-              <span class="al-merk open wordt">Vervalt over 29 dagen</span>
-            </span>
-          </div>
-          <div class="al-rij">
-            <div><span class="al-cat">Elektriciteit</span><br><b>Laagspanningsinstallatie</b></div>
-            <span class="al-merk">Geldig tot 06/2029</span>
-          </div>
-          <div class="al-rij">
-            <div><span class="al-cat">Lift</span><br><b>Personenlift</b></div>
-            <span class="al-merk">Geldig tot 04/2027</span>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-
 <section class="fp-others">
   <div class="wrap">
     <div class="fp-others-head fade-up">
