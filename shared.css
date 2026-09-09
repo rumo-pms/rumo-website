@@ -563,8 +563,20 @@ section.tint-diep { background:var(--klei); }
 .toonband.licht .kicker { color:var(--muted); }
 .toonband.licht .pms-punten li { color:var(--ink-soft); }
 .toonband.licht .pms-punten li::before { background:var(--terra); }
-.toonband.licht .pms-door { color:var(--terra-dark); border-bottom-color:rgba(185,107,74,0.35); }
-.toonband.licht .pms-door:hover { border-bottom-color:var(--terra-dark); }
+/* De doorlink in de PMS-band. De basisregel staat hier voluit, want
+   index.html laadt dit bestand niet en heeft er een eigen kopie van; een
+   losse kleurregel zonder achtergrond zou op elke andere pagina witte tekst
+   op beige geven. */
+.pms-door {
+  display:inline-flex; align-items:center; gap:0.5em; margin-top:1.75rem;
+  padding:0.95rem 1.6rem; border-radius:100px;
+  font-family:'Inter', sans-serif; font-weight:500; font-size:0.98rem;
+  background:var(--ink); color:var(--paper); text-decoration:none; border:none;
+  transition:all 0.2s ease;
+}
+.pms-door span { display:inline-block; transition:transform 0.25s; }
+.pms-door:hover { background:var(--terra-dark); transform:translateY(-1px); color:var(--paper); }
+.pms-door:hover span { transform:translateX(3px); }
 /* De tekstkolom staat standaard op 520px, wat voor een korte kop werkt maar
    deze introalinea in acht smalle regels hakt. Hier ruimer: ongeveer zeventig
    tekens per regel, nog steeds comfortabel om te lezen. */

@@ -507,8 +507,9 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
 .toonband.licht .kicker { color:var(--muted); }
 /* De doorlink staat in botergeel, want die kleur hoort bij de donkere band.
    Op dit beige is dat niet te lezen; hier hoort terracotta. */
-.toonband.licht .pms-door { color:var(--terra-dark); border-bottom-color:rgba(185,107,74,0.35); }
-.toonband.licht .pms-door:hover { border-bottom-color:var(--terra-dark); }
+/* Op de lichte band blijft het dezelfde knop: donker op beige leest het
+   duidelijkst. Alleen de hover verschilt niet meer van de donkere band. */
+.toonband.licht .pms-door { color:var(--paper); }
 /* De tekstkolom staat standaard op 520px, wat voor een korte kop werkt maar
    deze introalinea in vijf smalle regels hakt. */
 .toonband.licht .toonband-tekst { max-width:900px; }
@@ -745,15 +746,20 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
   .av-status { display:none; }
 }
 
-/* Doorlink in de PMS-band. */
+/* Doorlink in de PMS-band. Dit was een klein mono-linkje met een streepje
+   eronder; op de beige band viel dat weg tussen de tekst. Het is nu dezelfde
+   knop als de hoofdknop in de hero, want het is ook een hoofdknop: dit is de
+   enige weg van de startpagina naar de PMS-pagina. */
 .pms-door {
-  display:inline-flex; align-items:center; gap:0.45em; margin-top:1.5rem;
-  font-family:'JetBrains Mono', monospace; font-size:0.68rem;
-  letter-spacing:0.1em; text-transform:uppercase;
-  color:var(--butter); text-decoration:none;
-  border-bottom:1px solid rgba(244,217,143,0.35); padding-bottom:2px;
+  display:inline-flex; align-items:center; gap:0.5em; margin-top:1.75rem;
+  padding:0.95rem 1.6rem; border-radius:100px;
+  font-family:'Inter', sans-serif; font-weight:500; font-size:0.98rem;
+  background:var(--ink); color:var(--paper); text-decoration:none; border:none;
+  transition:all 0.2s ease;
 }
-.pms-door:hover { border-bottom-color:var(--butter); }
+.pms-door span { display:inline-block; transition:transform 0.25s; }
+.pms-door:hover { background:var(--terra-dark); transform:translateY(-1px); }
+.pms-door:hover span { transform:translateX(3px); }
 
 
 
