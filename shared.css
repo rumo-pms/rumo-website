@@ -913,9 +913,9 @@ section.tint-diep { background:var(--klei); }
   animation:abBewerk 10s steps(1,end) infinite; }
 @keyframes abBewerk { 0%,17% { color:var(--muted) } 18%,100% { color:var(--terra-dark) } }
 
-.ab-regel { display:flex; align-items:center; gap:0.65rem; padding:0.5rem 0.7rem;
-  background:#fff; border:1px solid rgba(27,25,23,0.07); border-radius:9px;
-  margin-bottom:0.4rem; font-size:0.85rem; color:var(--ink-soft); }
+.ab-regel { display:flex; align-items:center; gap:0.85rem; padding:0.9rem 1.1rem;
+  background:#fff; border:1px solid rgba(27,25,23,0.05); border-radius:13px;
+  margin-bottom:0.55rem; font-size:0.9rem; color:var(--ink-soft); line-height:1.45; }
 .ab-vink { width:15px; height:15px; border-radius:4px; background:var(--forest);
   flex-shrink:0; position:relative; }
 .ab-vink::after { content:''; position:absolute; left:4px; top:1px; width:4px; height:8px;
@@ -1074,7 +1074,7 @@ section.tint-diep { background:var(--klei); }
    meetellen dragen .as-teller met een was/wordt-paar erin. Alles loopt op één
    tijdlijn van 8s. */
 .appvenster.scherm { padding:1.4rem 1.6rem 1.6rem; font-size:13px; }
-.as-kop { display:flex; align-items:baseline; gap:0.6rem; margin-bottom:0.9rem; }
+.as-kop { display:flex; align-items:baseline; gap:0.6rem; margin-bottom:1.2rem; }
 .as-kop h4 { font-family:'Fraunces', Georgia, serif; font-weight:400; font-size:1.25rem;
   color:#7d2233; margin:0; }
 .as-kop { flex-wrap:wrap; }
@@ -1086,30 +1086,35 @@ section.tint-diep { background:var(--klei); }
 .as-kop > .as-knop { margin-left:0.9rem; margin-top:0; text-transform:none;
   letter-spacing:0; font-family:'Inter', sans-serif; font-size:0.78rem; color:var(--paper); }
 
-.as-tellers { display:flex; gap:0.5rem; margin-bottom:0.85rem; flex-wrap:wrap; }
-.as-tellers > div { background:#fff; border:1px solid rgba(27,25,23,0.07); border-radius:9px;
-  padding:0.45rem 0.75rem; min-width:5.2rem; }
+.as-tellers { display:flex; gap:0.6rem; margin-bottom:1.1rem; flex-wrap:wrap; }
+.as-tellers > div { background:#fff; border:1px solid rgba(27,25,23,0.05); border-radius:13px;
+  padding:0.7rem 1rem; min-width:6rem; }
 .as-tellers .l { font-family:'JetBrains Mono', monospace; font-size:0.52rem; letter-spacing:0.09em;
   text-transform:uppercase; color:var(--muted); }
 .as-tellers .v { font-size:1.05rem; font-weight:600; color:var(--ink); margin-top:0.05rem; }
 .as-tellers .v.oranje { color:#c2762f; }
 .as-tellers .v.groen  { color:var(--forest); }
 
-.as-tabs { display:flex; gap:0.35rem; margin-bottom:0.8rem; flex-wrap:wrap; }
-.as-tabs span { font-size:0.76rem; color:var(--muted); padding:0.25rem 0.65rem;
+.as-tabs { display:flex; gap:0.45rem; margin-bottom:1.1rem; flex-wrap:wrap; }
+.as-tabs span { font-size:0.8rem; color:var(--muted); padding:0.35rem 0.8rem;
   border-radius:100px; white-space:nowrap; }
 .as-tabs span.aan { background:var(--rose-soft); color:#7d2233; }
 
-.as-rij { display:flex; align-items:center; gap:0.7rem; padding:0.5rem 0.75rem;
-  background:#fff; border:1px solid rgba(27,25,23,0.07); border-left:3px solid var(--klei);
-  border-radius:9px; margin-bottom:0.4rem; font-size:0.84rem; color:var(--ink-soft); }
+/* Ruimer dan eerst. Een scherm met veertien krappe regeltjes leest als een
+   spreadsheet en maakt de pagina druk; met minder regels en meer lucht per
+   regel leest het als een scherm. De randen zijn ook zachter: één dunne lijn
+   in plaats van een lijn plus een schaduw. */
+.as-rij { display:flex; align-items:center; gap:0.85rem; padding:0.95rem 1.15rem;
+  background:#fff; border:1px solid rgba(27,25,23,0.05); border-left:3px solid var(--klei);
+  border-radius:13px; margin-bottom:0.55rem; font-size:0.9rem; color:var(--ink-soft);
+  line-height:1.45; }
 .as-rij.vuil   { border-left-color:#c2762f; }
 .as-rij.schoon { border-left-color:var(--forest); }
 .as-rij b { font-weight:600; color:var(--ink); }
-.as-rij .sub { font-family:'JetBrains Mono', monospace; font-size:0.6rem; letter-spacing:0.05em;
+.as-rij .sub { font-family:'JetBrains Mono', monospace; font-size:0.64rem; letter-spacing:0.05em;
   color:var(--muted); }
-.as-rij .chip { margin-left:auto; font-family:'JetBrains Mono', monospace; font-size:0.56rem;
-  letter-spacing:0.08em; text-transform:uppercase; border-radius:100px; padding:0.18rem 0.55rem;
+.as-rij .chip { margin-left:auto; font-family:'JetBrains Mono', monospace; font-size:0.58rem;
+  letter-spacing:0.08em; text-transform:uppercase; border-radius:100px; padding:0.28rem 0.7rem;
   white-space:nowrap; border:1px solid rgba(95,122,85,0.35); color:var(--forest); }
 .as-rij .chip.oranje { border-color:rgba(194,118,47,0.45); color:#c2762f; }
 .as-rij .chip.grijs  { border-color:var(--line); color:var(--muted); }
@@ -1224,10 +1229,10 @@ section.tint-diep { background:var(--klei); }
 .al-kop span { font-family:'JetBrains Mono', monospace; font-size:0.58rem; letter-spacing:0.1em;
   text-transform:uppercase; color:var(--muted); margin-left:auto; }
 .al-rij {
-  display:flex; align-items:center; gap:0.75rem;
-  padding:0.7rem 0.9rem; border-radius:10px;
-  background:#fff; border:1px solid rgba(27,25,23,0.07);
-  margin-bottom:0.5rem; font-size:0.86rem;
+  display:flex; align-items:center; gap:0.9rem;
+  padding:0.95rem 1.15rem; border-radius:13px;
+  background:#fff; border:1px solid rgba(27,25,23,0.05);
+  margin-bottom:0.55rem; font-size:0.9rem; line-height:1.45;
 }
 .al-rij b { font-weight:500; }
 .al-rij .al-cat { font-family:'JetBrains Mono', monospace; font-size:0.56rem; letter-spacing:0.08em;
