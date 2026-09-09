@@ -111,39 +111,6 @@
 /* ─── HERKOMST (uitgelegd/index.html) ─── */
 /* Carlton en Chamade horen hier, niet bij de klanten op de homepage: ze zijn
    van ons, en dat is precies waarom dit de plek is waar ze iets betekenen. */
-.herkomst { background:var(--paper-deep); padding:6rem 0; }
-.herkomst-inner {
-  max-width:1200px; margin:0 auto; padding:0 2rem;
-  display:grid; grid-template-columns:1fr 0.85fr; gap:3.5rem; align-items:start;
-}
-.herkomst h2 {
-  font-family:'Fraunces', Georgia, serif; font-weight:400;
-  font-size:clamp(1.8rem, 3.4vw, 2.6rem); letter-spacing:-0.03em;
-  line-height:1.05; color:var(--ink); margin:0 0 1.1rem;
-}
-.herkomst h2 em { font-style:italic; color:var(--terra-dark); font-weight:300; }
-.herkomst p { font-size:1.05rem; line-height:1.7; color:var(--ink-soft); margin:0 0 1.1rem; }
-.herkomst p:last-child { margin-bottom:0; }
-.huizen { display:grid; gap:1.25rem; }
-.huis {
-  background:var(--paper-panel); border:1px solid var(--line);
-  border-radius:18px; overflow:hidden;
-}
-.huis-foto {
-  height:150px; background-size:cover; background-position:center;
-  border-bottom:1px solid var(--line);
-}
-.huis-body { padding:1.1rem 1.4rem 1.3rem; }
-.huis-naam {
-  font-family:'Fraunces', Georgia, serif; font-size:1.15rem;
-  color:var(--ink); margin-bottom:0.3rem;
-}
-.huis-meta {
-  font-family:'JetBrains Mono', monospace; font-size:0.66rem; letter-spacing:0.12em;
-  text-transform:uppercase; color:var(--muted);
-}
-.huis-meta span + span::before { content:'·'; margin:0 0.5em; color:var(--terra); }
-@media (max-width:900px) { .herkomst-inner { grid-template-columns:1fr; gap:2rem; } }
 .huis-tekst {
   font-size:0.88rem; line-height:1.55; color:var(--ink-soft);
   margin:0.6rem 0 0;
