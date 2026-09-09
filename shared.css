@@ -393,12 +393,13 @@ footer {
 .js .fade-up.visible { opacity:1; transform:translateY(0); }
 
 /* ─── Het menu klapt eerder dicht dan de rest ───
-   Het menu telt zes items plus de taalknopjes, en de Franse labels zijn de
-   langste ("Et euh, ça coûte combien ?"). Op 1130 px past dat niet meer op
+   Het menu telt vijf items plus de taalknopjes, en de Franse labels zijn de
+   langste ("Et euh, ça coûte combien ?"). Op 1040 px past dat niet meer op
    één regel en viel het menu in twee stukken uiteen. De rest van de pagina
    heeft die ruimte pas op 960 px nodig, dus staat het menu in een eigen
-   breekpunt: hier de hamburger, verderop de rest. */
-@media (max-width:1150px) {
+   breekpunt: hier de hamburger, verderop de rest. Meet opnieuw als er een
+   menu-item bij komt of af gaat. */
+@media (max-width:1060px) {
   .nav-toggle { display:flex; }
   .nav-links {
     display:none;

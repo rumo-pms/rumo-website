@@ -11,10 +11,6 @@
   "en": "<li><a href=\"prijzen.html\">And erm, what does it cost?</a></li>",
   "fr": "<li><a href=\"prijzen.html\">Et euh, ça coûte combien&nbsp;?</a></li>"
  },
- "<li><a href=\"over-ons.html\">Over ons</a></li>": {
-  "en": "<li><a href=\"over-ons.html\">About us</a></li>",
-  "fr": "<li><a href=\"over-ons.html\">À propos</a></li>"
- },
  "<li><a href=\"index.html#demo\" class=\"nav-cta\">Probeer gratis →</a></li>": {
   "en": "<li><a href=\"index.html#demo\" class=\"nav-cta\">Try it free →</a></li>",
   "fr": "<li><a href=\"index.html#demo\" class=\"nav-cta\">Essai gratuit →</a></li>"
@@ -178,5 +174,9 @@
  "<li><a href=\"uitgelegd/index.html\" class=\"active\">Uitgelegd</a></li>": {
   "en": "<li><a href=\"uitgelegd/index.html\" class=\"active\">Explained</a></li>",
   "fr": "<li><a href=\"uitgelegd/index.html\" class=\"active\">Expliqué</a></li>"
+ },
+ "<li><a href=\"over-ons.html\">Over ons</a></li>": {
+  "en": "<li><a href=\"over-ons.html\">About us</a></li>",
+  "fr": "<li><a href=\"over-ons.html\">À propos</a></li>"
  }
 }
