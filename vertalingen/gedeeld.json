@@ -64,8 +64,8 @@
   "fr": "<li><a href=\"uitgelegd/index.html\">Expliqué</a></li>"
  },
  "<li><a href=\"overstappen.html\">Overstappen</a></li>": {
-  "en": "<li><a href=\"overstappen.html\">Switching over (in Dutch)</a></li>",
-  "fr": "<li><a href=\"overstappen.html\">Migration (en néerlandais)</a></li>"
+  "en": "<li><a href=\"overstappen.html\">Switching over</a></li>",
+  "fr": "<li><a href=\"overstappen.html\">Migration</a></li>"
  },
  "<li><a href=\"mailto:hello@rumo.eu\">Stuur ons een mailtje</a></li>": {
   "en": "<li><a href=\"mailto:hello@rumo.eu\">Send us an email</a></li>",
@@ -144,12 +144,12 @@
   "fr": ">Ce qui nous anime</a>"
  },
  ">Uitgelegd</a>": {
-  "en": ">Explained (in Dutch)</a>",
-  "fr": ">Expliqué (en néerlandais)</a>"
+  "en": ">Explained</a>",
+  "fr": ">Expliqué</a>"
  },
  ">Overstappen</a>": {
-  "en": ">Switching over (in Dutch)</a>",
-  "fr": ">Migration (en néerlandais)</a>"
+  "en": ">Switching over</a>",
+  "fr": ">Migration</a>"
  },
  ">En euh, wat kost dat?</a>": {
   "en": ">And erm, what does it cost?</a>",
