@@ -60,8 +60,8 @@
   "fr": "<div class=\"footer-label\">Rumo</div>"
  },
  "<li><a href=\"uitgelegd/index.html\">Uitgelegd</a></li>": {
-  "en": "<li><a href=\"uitgelegd/index.html\">Explained (in Dutch)</a></li>",
-  "fr": "<li><a href=\"uitgelegd/index.html\">Expliqué (en néerlandais)</a></li>"
+  "en": "<li><a href=\"uitgelegd/index.html\">Explained</a></li>",
+  "fr": "<li><a href=\"uitgelegd/index.html\">Expliqué</a></li>"
  },
  "<li><a href=\"overstappen.html\">Overstappen</a></li>": {
   "en": "<li><a href=\"overstappen.html\">Switching over (in Dutch)</a></li>",
@@ -174,5 +174,9 @@
  "<li><a href=\"#demo\" class=\"nav-cta\">Probeer gratis →</a></li>": {
   "en": "<li><a href=\"#demo\" class=\"nav-cta\">Try it free →</a></li>",
   "fr": "<li><a href=\"#demo\" class=\"nav-cta\">Essai gratuit →</a></li>"
+ },
+ "<li><a href=\"uitgelegd/index.html\" class=\"active\">Uitgelegd</a></li>": {
+  "en": "<li><a href=\"uitgelegd/index.html\" class=\"active\">Explained</a></li>",
+  "fr": "<li><a href=\"uitgelegd/index.html\" class=\"active\">Expliqué</a></li>"
  }
 }
