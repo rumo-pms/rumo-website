@@ -1,0 +1,266 @@
+{
+  "Privacy · rumo": {
+    "en": "Privacy · rumo",
+    "fr": "Vie privée · rumo"
+  },
+  "Hoe rumo en het hotel waar je geboekt hebt met jouw gegevens omgaan. In gewone taal. Wat we verzamelen, waarom, met wie we delen, en wat jij ermee kan doen.": {
+    "en": "How rumo and the hotel you booked with handle your data. In plain language. What we collect, why, who we share it with, and what you can do about it.",
+    "fr": "Comment rumo et l'hôtel où vous avez réservé traitent vos données. En langage courant. Ce que nous collectons, pourquoi, avec qui nous partageons, et ce que vous pouvez en faire."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "Hoe wij met jouw <em>gegevens</em> omgaan.": {
+    "en": "How we handle your <em>data</em>.",
+    "fr": "Comment nous traitons vos <em>données</em>."
+  },
+  "In gewone taal. Wat we verzamelen, waarom, met wie we delen, en wat jij ermee kan doen.": {
+    "en": "In plain language. What we collect, why, who we share it with, and what you can do about it.",
+    "fr": "En langage courant. Ce que nous collectons, pourquoi, avec qui nous partageons, et ce que vous pouvez en faire."
+  },
+  "Versie<br> <strong>17 mei 2026</strong>": {
+    "en": "Version<br> <strong>17 May 2026</strong>",
+    "fr": "Version<br> <strong>17 mai 2026</strong>"
+  },
+  "<span>AVG / GDPR</span> <span>ePrivacy</span> <span>Belgisch recht</span>": {
+    "en": "<span>GDPR</span> <span>ePrivacy</span> <span>Belgian law</span>",
+    "fr": "<span>RGPD</span> <span>ePrivacy</span> <span>Droit belge</span>"
+  },
+  "Laatst bijgewerkt · 17 mei 2026": {
+    "en": "Last updated · 17 May 2026",
+    "fr": "Dernière mise à jour · 17 mai 2026"
+  },
+  "1. Wie is verantwoordelijk?": {
+    "en": "1. Who is responsible?",
+    "fr": "1. Qui est responsable ?"
+  },
+  "Een hotelreservatie raakt twee partijen: <strong>het hotel</strong> waar je verblijft, en <strong>rumo</strong>, de software waar dat hotel mee werkt. Wij hebben elk een andere rol.": {
+    "en": "A hotel booking involves two parties: <strong>the hotel</strong> where you stay, and <strong>rumo</strong>, the software that hotel works with. We each have a different role.",
+    "fr": "Une réservation d'hôtel concerne deux parties : <strong>l'hôtel</strong> où vous séjournez, et <strong>rumo</strong>, le logiciel avec lequel cet hôtel travaille. Nous avons chacun un rôle différent."
+  },
+  "<strong>Het hotel</strong> (<span class=\"legal-controller\" id=\"controller-name\">het hotel waar je geboekt hebt</span>) is <strong>verwerkingsverantwoordelijke</strong>. Zij beslissen welke gegevens nodig zijn, hoe lang die bewaard worden, en met wie ze gedeeld worden buiten rumo om.": {
+    "en": "<strong>The hotel</strong> (<span class=\"legal-controller\" id=\"controller-name\">the hotel you booked with</span>) is the <strong>controller</strong>. They decide which data is needed, how long it is kept, and who it is shared with outside rumo.",
+    "fr": "<strong>L'hôtel</strong> (<span class=\"legal-controller\" id=\"controller-name\">l'hôtel où vous avez réservé</span>) est le <strong>responsable du traitement</strong>. C'est lui qui décide quelles données sont nécessaires, combien de temps elles sont conservées et avec qui elles sont partagées en dehors de rumo."
+  },
+  "<strong>Rumo</strong> (Rumo BV, Gent, België) is <strong>verwerker</strong>. Wij leveren de software, hosten de servers en zorgen dat alles draait. We doen niks met jouw gegevens behalve wat het hotel ons vraagt te doen, vastgelegd in een verwerkersovereenkomst.": {
+    "en": "<strong>Rumo</strong> (Rumo BV, Ghent, Belgium) is the <strong>processor</strong>. We supply the software, host the servers and make sure everything runs. We do nothing with your data except what the hotel asks us to do, laid down in a data processing agreement.",
+    "fr": "<strong>Rumo</strong> (Rumo BV, Gand, Belgique) est le <strong>sous-traitant</strong>. Nous fournissons le logiciel, hébergeons les serveurs et veillons à ce que tout tourne. Nous ne faisons rien de vos données en dehors de ce que l'hôtel nous demande, ce qui est fixé dans un accord de traitement."
+  },
+  "Heb je een vraag over jouw boeking of jouw gegevens? <strong>Contacteer eerst het hotel.</strong> Die heeft het volledige overzicht en kan je het snelst helpen. Wij springen bij waar nodig.": {
+    "en": "Do you have a question about your booking or your data? <strong>Contact the hotel first.</strong> They have the full picture and can help you fastest. We step in where needed.",
+    "fr": "Vous avez une question sur votre réservation ou vos données ? <strong>Contactez d'abord l'hôtel.</strong> Il a la vue d'ensemble et peut vous aider le plus vite. Nous intervenons si nécessaire."
+  },
+  "2. Wat we van je weten": {
+    "en": "2. What we know about you",
+    "fr": "2. Ce que nous savons de vous"
+  },
+  "Als je een kamer boekt": {
+    "en": "When you book a room",
+    "fr": "Quand vous réservez une chambre"
+  },
+  "Naam, e-mailadres, telefoonnummer en adres": {
+    "en": "Name, email address, phone number and address",
+    "fr": "Nom, adresse mail, numéro de téléphone et adresse"
+  },
+  "De data van je verblijf, het kamertype en eventuele opmerkingen die je achterlaat": {
+    "en": "The dates of your stay, the room type and any remarks you leave",
+    "fr": "Les dates de votre séjour, le type de chambre et les remarques éventuelles que vous laissez"
+  },
+  "Betaalgegevens, die gaan rechtstreeks naar onze betaalpartner Stripe, we zien zelf nooit je volledige kaartnummer": {
+    "en": "Payment details, which go straight to our payment partner Stripe; we never see your full card number ourselves",
+    "fr": "Les données de paiement, qui vont directement à notre partenaire de paiement Stripe ; nous ne voyons jamais nous-mêmes votre numéro de carte complet"
+  },
+  "Bij je aankomst en tijdens je verblijf": {
+    "en": "On arrival and during your stay",
+    "fr": "À votre arrivée et pendant votre séjour"
+  },
+  "Identiteitsgegevens uit je identiteitskaart of paspoort (verplicht volgens het KB van 27 april 2007 voor hotelgasten in België)": {
+    "en": "Identity details from your identity card or passport (compulsory under the Royal Decree of 27 April 2007 for hotel guests in Belgium)",
+    "fr": "Les données d'identité de votre carte d'identité ou de votre passeport (obligatoire selon l'arrêté royal du 27 avril 2007 pour les clients d'hôtel en Belgique)"
+  },
+  "De handtekening op je registratiekaart, als het hotel die digitaal afneemt": {
+    "en": "The signature on your registration card, if the hotel takes it digitally",
+    "fr": "La signature sur votre fiche d'enregistrement, si l'hôtel la recueille de façon numérique"
+  },
+  "Wat je consumeert in het hotel en de bijhorende facturatie": {
+    "en": "What you consume in the hotel and the invoicing that goes with it",
+    "fr": "Ce que vous consommez dans l'hôtel et la facturation qui va avec"
+  },
+  "Wat we <em>niet</em> doen": {
+    "en": "What we do <em>not</em> do",
+    "fr": "Ce que nous <em>ne</em> faisons <em>pas</em>"
+  },
+  "Geen advertentiepixels, geen Google Analytics, geen Facebook-pixel, geen \"gepersonaliseerde reclame\". Op onze website telt een cookieloze Europese teller hoeveel bezoekers er langskomen; die bouwt geen profiel op (zie <a href=\"cookies.html\">Cookies</a>)": {
+    "en": "No advertising pixels, no Google Analytics, no Facebook pixel, no \"personalised advertising\". On our website a cookieless European counter records how many visitors come by; it builds no profile (see <a href=\"cookies.html\">Cookies</a>)",
+    "fr": "Pas de pixels publicitaires, pas de Google Analytics, pas de pixel Facebook, pas de « publicité personnalisée ». Sur notre site, un compteur européen sans cookies enregistre combien de visiteurs passent ; il ne construit aucun profil (voir <a href=\"cookies.html\">Cookies</a>)"
+  },
+  "Geen verkoop of doorgifte van je gegevens aan derden buiten wat hieronder bij \"verwerkers\" staat": {
+    "en": "No sale or passing on of your data to third parties beyond what is listed under \"processors\" below",
+    "fr": "Pas de vente ni de transmission de vos données à des tiers au-delà de ce qui figure ci-dessous sous « sous-traitants »"
+  },
+  "Geen automatische profilering die rechtsgevolgen heeft voor jou": {
+    "en": "No automated profiling with legal consequences for you",
+    "fr": "Pas de profilage automatisé produisant des effets juridiques à votre égard"
+  },
+  "3. Waarom we het hebben": {
+    "en": "3. Why we have it",
+    "fr": "3. Pourquoi nous les avons"
+  },
+  "De wet (artikel 6 AVG) vraagt voor elk stukje data een geldige reden. Voor ons komt dat neer op:": {
+    "en": "The law (article 6 GDPR) requires a valid reason for every piece of data. For us that comes down to:",
+    "fr": "La loi (article 6 du RGPD) exige une raison valable pour chaque donnée. Pour nous, cela revient à :"
+  },
+  "<strong>Uitvoering van je boekingsovereenkomst.</strong> Naam, contactgegevens, verblijfsdata. Zonder die kunnen we je gewoon geen kamer geven.": {
+    "en": "<strong>Performance of your booking contract.</strong> Name, contact details, dates of stay. Without those we simply cannot give you a room.",
+    "fr": "<strong>L'exécution de votre contrat de réservation.</strong> Nom, coordonnées, dates de séjour. Sans cela, nous ne pouvons tout simplement pas vous donner de chambre."
+  },
+  "<strong>Wettelijke verplichting.</strong> ID-gegevens (KB 27 april 2007), facturatie en btw-administratie (Belgisch BTW-wetboek, 7 jaar), aangiftes aan de politiediensten waar verplicht.": {
+    "en": "<strong>Legal obligation.</strong> ID details (Royal Decree of 27 April 2007), invoicing and VAT records (Belgian VAT Code, 7 years), declarations to the police services where compulsory.",
+    "fr": "<strong>Une obligation légale.</strong> Données d'identité (AR du 27 avril 2007), facturation et administration TVA (Code belge de la TVA, 7 ans), déclarations aux services de police là où elles sont obligatoires."
+  },
+  "<strong>Gerechtvaardigd belang.</strong> Beveiliging van de systemen, fraudepreventie, klachtenbehandeling. Altijd afgewogen tegen jouw belangen.": {
+    "en": "<strong>Legitimate interest.</strong> Securing the systems, fraud prevention, handling complaints. Always weighed against your interests.",
+    "fr": "<strong>Un intérêt légitime.</strong> Sécurisation des systèmes, prévention de la fraude, traitement des plaintes. Toujours mis en balance avec vos intérêts."
+  },
+  "<strong>Toestemming.</strong> Marketing-mails of nieuwsbrieven van het hotel, alleen als je daar expliciet ja op zegt, en je kan dat altijd weer intrekken.": {
+    "en": "<strong>Consent.</strong> Marketing mails or newsletters from the hotel, only if you explicitly say yes, and you can always withdraw that again.",
+    "fr": "<strong>Votre consentement.</strong> Les mails marketing ou les newsletters de l'hôtel, uniquement si vous dites explicitement oui, et vous pouvez toujours le retirer."
+  },
+  "4. Met wie we delen": {
+    "en": "4. Who we share with",
+    "fr": "4. Avec qui nous partageons"
+  },
+  "Rumo schakelt een aantal andere bedrijven in om de dienst te laten werken. Dat zijn onze <strong>sub-verwerkers</strong>. Allemaal met een verwerkersovereenkomst, allemaal binnen de EU of onder een geldig overdrachtsmechanisme.": {
+    "en": "Rumo brings in a number of other companies to make the service work. Those are our <strong>sub-processors</strong>. All with a data processing agreement, all inside the EU or under a valid transfer mechanism.",
+    "fr": "Rumo fait appel à quelques autres entreprises pour faire fonctionner le service. Ce sont nos <strong>sous-traitants ultérieurs</strong>. Tous avec un accord de traitement, tous dans l'UE ou sous un mécanisme de transfert valable."
+  },
+  "<strong>Scaleway</strong> (FR), hosting van de servers en de databank": {
+    "en": "<strong>Scaleway</strong> (FR), hosting of the servers and the database",
+    "fr": "<strong>Scaleway</strong> (FR), hébergement des serveurs et de la base de données"
+  },
+  "<strong>Stripe</strong> (IE/US), betaalverwerking, kaartopslag": {
+    "en": "<strong>Stripe</strong> (IE/US), payment processing, card storage",
+    "fr": "<strong>Stripe</strong> (IE/US), traitement des paiements, conservation des cartes"
+  },
+  "<strong>Channex</strong> (UK), koppeling met Booking.com, Expedia, Airbnb en andere distributiekanalen": {
+    "en": "<strong>Channex</strong> (UK), connection with Booking.com, Expedia, Airbnb and other distribution channels",
+    "fr": "<strong>Channex</strong> (UK), connexion avec Booking.com, Expedia, Airbnb et d'autres canaux de distribution"
+  },
+  "<strong>Brevo</strong> (FR), transactionele e-mails (bevestigingen, herinneringen)": {
+    "en": "<strong>Brevo</strong> (FR), transactional emails (confirmations, reminders)",
+    "fr": "<strong>Brevo</strong> (FR), mails transactionnels (confirmations, rappels)"
+  },
+  "<strong>Mistral</strong> (FR, via Scaleway), AI-functies wanneer je hotel die gebruikt (bv. document-classificatie of een interne assistent voor het personeel). Wordt nooit gebruikt om gastdata te trainen.": {
+    "en": "<strong>Mistral</strong> (FR, via Scaleway), AI features when your hotel uses them (e.g. document classification or an internal assistant for staff). Never used to train on guest data.",
+    "fr": "<strong>Mistral</strong> (FR, via Scaleway), fonctions d'IA lorsque votre hôtel les utilise (par ex. classement de documents ou assistant interne pour le personnel). Jamais utilisé pour entraîner un modèle sur des données clients."
+  },
+  "Daarnaast kan het hotel zelf andere systemen aan rumo koppelen die we niet kiezen, bijvoorbeeld een boekhoudpakket, een kassasysteem of een sleutelsysteem. Die staan in hun eigen privacy-verklaring vermeld.": {
+    "en": "In addition, the hotel can connect other systems to rumo that we do not choose, for example an accounting package, a till system or a key system. Those are listed in their own privacy statement.",
+    "fr": "Par ailleurs, l'hôtel peut lui-même relier à rumo d'autres systèmes que nous ne choisissons pas, par exemple un logiciel comptable, une caisse ou un système de clés. Ceux-là sont mentionnés dans leur propre déclaration de confidentialité."
+  },
+  "5. Hoe lang we het bewaren": {
+    "en": "5. How long we keep it",
+    "fr": "5. Combien de temps nous les conservons"
+  },
+  "<strong>Facturen en boekhoudkundige stukken</strong>: 7 jaar (Belgisch BTW-wetboek)": {
+    "en": "<strong>Invoices and accounting records</strong>: 7 years (Belgian VAT Code)",
+    "fr": "<strong>Factures et pièces comptables</strong> : 7 ans (Code belge de la TVA)"
+  },
+  "<strong>Gastregister met identiteitsgegevens</strong>: minstens tot het einde van het volgende kalenderjaar (KB 27 april 2007), in de praktijk vaak 5 jaar": {
+    "en": "<strong>Guest register with identity details</strong>: at least until the end of the following calendar year (Royal Decree of 27 April 2007), in practice often 5 years",
+    "fr": "<strong>Registre des clients avec données d'identité</strong> : au moins jusqu'à la fin de l'année civile suivante (AR du 27 avril 2007), en pratique souvent 5 ans"
+  },
+  "<strong>Reservatiehistoriek en correspondentie</strong>: zolang nuttig voor de hotelrelatie, daarna gewist of geanonimiseerd": {
+    "en": "<strong>Booking history and correspondence</strong>: as long as useful for the hotel relationship, then deleted or anonymised",
+    "fr": "<strong>Historique des réservations et correspondance</strong> : aussi longtemps que c'est utile à la relation avec l'hôtel, puis effacé ou anonymisé"
+  },
+  "<strong>Tokenized betaalkaart</strong>: tot de boeking volledig afgehandeld is, daarna verwijderd, tenzij je hem expliciet bewaart voor een volgend verblijf": {
+    "en": "<strong>Tokenised payment card</strong>: until the booking is fully settled, then removed, unless you explicitly keep it for a future stay",
+    "fr": "<strong>Carte de paiement tokenisée</strong> : jusqu'à ce que la réservation soit entièrement réglée, puis supprimée, sauf si vous la conservez explicitement pour un prochain séjour"
+  },
+  "<strong>Marketing-toestemming</strong>: tot je ze intrekt": {
+    "en": "<strong>Marketing consent</strong>: until you withdraw it",
+    "fr": "<strong>Consentement marketing</strong> : jusqu'à ce que vous le retiriez"
+  },
+  "6. Wat jij kan doen": {
+    "en": "6. What you can do",
+    "fr": "6. Ce que vous pouvez faire"
+  },
+  "De AVG geeft jou zes concrete rechten. Klink chic, betekent vooral: je hebt zeggenschap.": {
+    "en": "The GDPR gives you six concrete rights. Sounds grand; mainly it means you have a say.",
+    "fr": "Le RGPD vous donne six droits concrets. Cela sonne solennel ; cela signifie surtout que vous avez votre mot à dire."
+  },
+  "<strong>Inzage</strong>: vragen welke gegevens we van je hebben": {
+    "en": "<strong>Access</strong>: ask which data we hold about you",
+    "fr": "<strong>Accès</strong> : demander quelles données nous avons sur vous"
+  },
+  "<strong>Correctie</strong>: fouten laten rechtzetten": {
+    "en": "<strong>Rectification</strong>: have mistakes corrected",
+    "fr": "<strong>Rectification</strong> : faire corriger des erreurs"
+  },
+  "<strong>Verwijdering</strong>: vragen om alles te wissen, behalve wat we wettelijk moeten bijhouden": {
+    "en": "<strong>Erasure</strong>: ask for everything to be deleted, except what we are legally required to keep",
+    "fr": "<strong>Effacement</strong> : demander que tout soit effacé, sauf ce que nous devons légalement conserver"
+  },
+  "<strong>Beperking</strong>: vragen om verwerking tijdelijk stop te zetten": {
+    "en": "<strong>Restriction</strong>: ask for processing to be paused",
+    "fr": "<strong>Limitation</strong> : demander la suspension temporaire du traitement"
+  },
+  "<strong>Overdraagbaarheid</strong>: een kopie krijgen in een herbruikbaar formaat": {
+    "en": "<strong>Portability</strong>: get a copy in a reusable format",
+    "fr": "<strong>Portabilité</strong> : obtenir une copie dans un format réutilisable"
+  },
+  "<strong>Bezwaar</strong>: verzet aantekenen tegen verwerking op basis van gerechtvaardigd belang": {
+    "en": "<strong>Objection</strong>: object to processing based on legitimate interest",
+    "fr": "<strong>Opposition</strong> : vous opposer à un traitement fondé sur l'intérêt légitime"
+  },
+  "Vraag dat eerst bij <span class=\"legal-controller\" id=\"controller-name-2\">het hotel waar je geboekt hebt</span>. Zij kunnen het in rumo voor jou regelen. Lukt dat niet binnen een redelijke termijn, of gaat het over rumo zelf (bijvoorbeeld onze software-infrastructuur), mail dan <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a>.": {
+    "en": "Ask <span class=\"legal-controller\" id=\"controller-name-2\">the hotel you booked with</span> first. They can arrange it for you in rumo. If that does not work within a reasonable time, or if it concerns rumo itself (our software infrastructure, for instance), mail <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a>.",
+    "fr": "Adressez-vous d'abord à <span class=\"legal-controller\" id=\"controller-name-2\">l'hôtel où vous avez réservé</span>. Il peut le régler pour vous dans rumo. Si cela n'aboutit pas dans un délai raisonnable, ou s'il s'agit de rumo lui-même (notre infrastructure logicielle par exemple), écrivez à <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a>."
+  },
+  "Niet tevreden? Je kan altijd klacht indienen bij de <a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Gegevensbeschermingsautoriteit</a> in Brussel.": {
+    "en": "Not satisfied? You can always lodge a complaint with the <a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Data Protection Authority</a> in Brussels.",
+    "fr": "Pas satisfait ? Vous pouvez toujours introduire une plainte auprès de l'<a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Autorité de protection des données</a> à Bruxelles."
+  },
+  "7. Contact": {
+    "en": "7. Contact",
+    "fr": "7. Contact"
+  },
+  "<strong>Rumo BV</strong><br> Gent, België<br> <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a> · <a href=\"mailto:hello@rumo.eu\">hello@rumo.eu</a>": {
+    "en": "<strong>Rumo BV</strong><br> Ghent, Belgium<br> <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a> · <a href=\"mailto:hello@rumo.eu\">hello@rumo.eu</a>",
+    "fr": "<strong>Rumo BV</strong><br> Gand, Belgique<br> <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a> · <a href=\"mailto:hello@rumo.eu\">hello@rumo.eu</a>"
+  },
+  "Heb je een vraag over deze tekst, of vind je dat iets onduidelijk staat? Stuur ons een mailtje. We passen aan waar het kan.": {
+    "en": "Do you have a question about this text, or do you find something unclear? Send us an email. We adjust where we can.",
+    "fr": "Vous avez une question sur ce texte, ou vous trouvez quelque chose peu clair ? Envoyez-nous un mail. Nous adaptons là où c'est possible."
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  }
+}

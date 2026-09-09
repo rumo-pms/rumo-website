@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../../gate.js"></script>
+<script src="../../demo-form.js?v=2" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comment savez-vous qui a lu la nouvelle procédure ? · expliqué par rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Vous modifiez votre procédure incendie. Qui, dans votre équipe, connaît maintenant l'ancienne version et qui la nouvelle ? Sur les confirmations de lecture, la photo comme norme, et pourquoi une procédure modifiée est plus délicate qu'une nouvelle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared.css">
+<link rel="stylesheet" href="../../uitgelegd/artikel.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="../features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="../ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="../tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../a-propos.html">À propos</a></li>
+    <li><a href="../index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../../uitgelegd/draaiboek.html">NL</a>
+      <a href="../../en/explained/handbook.html">EN</a>
+      <a href="manuel.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <a href="index.html" class="terug">← Expliqué</a>
+      <span class="kicker">Votre équipe</span>
+      <h1>Comment savez-vous qui a <em>lu la nouvelle procédure ?</em></h1>
+      <p class="lead">Vous modifiez votre procédure incendie parce que quelque chose a changé. La moitié de votre équipe a lu l'ancienne version et ne va donc pas revérifier : ces gens pensent savoir. C'est la forme la plus délicate de ne pas savoir, et il existe un moyen simple d'isoler précisément ces personnes.</p>
+    </div>
+    <div class="ph-side-illus">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- Een opengeslagen boek waar drie mensen naar kijken -->
+        <path d="M18,44 Q34,36 50,44 L50,82 Q34,74 18,82 Z"/>
+        <path d="M50,44 Q66,36 82,44 L82,82 Q66,74 50,82 Z"/>
+        <line x1="50" y1="44" x2="50" y2="82"/>
+        <circle cx="26" cy="24" r="6"/>
+        <circle cx="50" cy="20" r="6"/>
+        <circle cx="74" cy="24" r="6"/>
+        <line x1="10" y1="96" x2="110" y2="96"/>
+        <path d="M92,58 L104,58" stroke-dasharray="3 3"/>
+      </svg>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>Lecture 3 minutes</span> <span>Pour qui dirige une équipe</span> <span>Vaut aussi sans rumo</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ARTIKEL ═══════════════════════ -->
+<section class="artikel">
+  <div class="artikel-inner fade-up">
+
+    <h2>Un hôtel est trop grand pour <em>une seule tête</em></h2>
+    <p>Avec quelle société de taxis travaillons-nous. Où sont les serviettes de réserve. Que faire quand l'alarme incendie se déclenche, et si elle est manifestement fausse. Qui appeler un dimanche soir quand l'ascenseur est bloqué. La plupart de ces situations se présentent rarement, et c'est précisément pour cela que personne ne les retient.</p>
+    <p>Le réflexe est de l'expliquer encore une fois. Mais vous l'avez déjà expliqué. <strong>Le problème n'est pas que cela n'a pas été dit, c'est que ce n'est écrit nulle part.</strong></p>
+
+    <h2>Il y a trois sortes de <em>savoir</em></h2>
+    <p>C'est la raison pour laquelle un gros classeur de procédures ne fonctionne jamais : il contient trois problèmes différents.</p>
+    <ul>
+      <li><strong>Des faits que l'on cherche.</strong> Le numéro du taxi, l'armoire aux serviettes. Ceux-là, il ne faut pas les retenir, il faut pouvoir les <em>trouver</em>. Retenir est même ici la mauvaise ambition : cette société de taxis change.</li>
+      <li><strong>Des gestes qu'il faut savoir faire.</strong> Ils figurent bien dans un texte, mais personne ne les apprend dans un texte. C'est le sujet d'<a href="formation.html">un autre article</a>.</li>
+      <li><strong>Des accords sur lesquels les gens ne sont pas d'accord.</strong> Le plus difficile, car cela ne ressemble pas à un problème de connaissance.</li>
+    </ul>
+
+    <h2>Le <em>problème des serviettes</em></h2>
+    <p>Une femme de chambre suspend la serviette comme ceci, l'autre ne trouve pas cela joli. Chacune a un avis, chacune a une bonne raison. Ce ne sont pas deux têtues : c'est un <strong>accord qui n'a jamais été pris</strong>. Tant que personne n'a écrit laquelle des deux a raison, personne n'a tort non plus, et c'est la personnalité la plus forte du service qui l'emporte. Cela change d'un jour à l'autre, et votre client le voit.</p>
+    <p>Les mots ne résolvent pas cela. Écrivez « suspendre les serviettes proprement » dans votre manuel et vous n'avez rien décidé, car chacune trouve sa propre manière propre.</p>
+
+    <div class="kader">
+      <p><strong>Ici, une photo n'est pas une décoration.</strong> Une phrase décrit une norme. Une photo <em>est</em> la norme. Cela vous épargne une demi-heure de discussion par nouveau collègue, chaque fois.</p>
+      <p>S'il s'agit d'un geste plutôt que d'un résultat final, une vidéo fait ce qu'une photo ne peut pas. Règle empirique : <strong>un état final se photographie, un geste se filme.</strong> Écrivez toujours quelques phrases à côté, car on ne peut pas chercher dans une vidéo.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="uitroep">
+  <div class="uitroep-inner fade-up">
+    <p>Une procédure que vous avez modifiée est <em>moins fiable</em> qu'une que vous n'aviez jamais écrite.</p>
+    <span class="uitroep-bij">Car celui qui connaissait l'ancienne version ne va pas revérifier</span>
+  </div>
+</section>
+
+<section class="artikel" style="padding-top:4rem">
+  <div class="artikel-inner fade-up">
+
+    <h2>« Lu » doit porter une <em>date</em></h2>
+    <p>Vous modifiez votre procédure incendie. Sept de vos douze personnes ont lu l'ancienne version et pensent savoir : elles ne vont donc pas chercher. Une procédure modifiée est ainsi moins fiable qu'une que vous n'aviez jamais écrite.</p>
+    <p>Faites confirmer article par article que la personne l'a lu, et attachez cette confirmation à la <em>version</em> qu'elle a lue. Modifiez l'article et il repasse en non lu chez ces personnes exactement. Non pas comme punition, mais parce que c'est vrai. Conservez l'ancienne confirmation : c'est votre preuve qu'elles connaissaient bien la version précédente.</p>
+
+    <h2>Le vrai test, c'est <em>23h15</em></h2>
+    <p>Un manuel n'est pas réussi parce qu'il est écrit, mais parce que quelqu'un y retrouve quelque chose à onze heures et quart du soir avec un client devant lui. Et là, il se heurte à un fait : <strong>personne ne feuillette un manuel.</strong> Les gens demandent au collègue à côté d'eux, et sinon à vous. Le dimanche. La facilité à retrouver pèse donc plus lourd que la structure.</p>
+    <p>Le meilleur signal vient d'une réponse vide. Si quelqu'un cherche une chose qui n'y figure pas, votre équipe vous désigne les trous, gratuitement, simplement en faisant son travail.</p>
+
+    <div class="artikel-slot">
+      <p>Dans rumo, c'est le manuel : vos propres procédures dans des catégories que vous pouvez fermer par rôle, avec des photos et des pièces jointes, et une confirmation de lecture qui fonctionne comme décrit plus haut. Modifiez un article et il revient en non lu chez tous ceux qui avaient confirmé l'ancienne version, et l'ancienne confirmation est conservée.</p>
+      <p>Rudy cherche dans ce manuel quand quelqu'un pose une question sur votre façon de travailler, et répond avec un lien vers l'article dont il tire sa réponse. S'il ne trouve rien, il le dit au lieu de deviner. Les vidéos s'ajoutent sous forme de lien vers YouTube ou Vimeo ; elles se lisent dans l'article, mais ne sont donc pas stockées dans rumo.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Encore une chose comprise ?</span>
+    <h2>Nous préférons l'<em>expliquer</em><br>plutôt que de le vendre.</h2>
+    <p>Ce qui vient avec la gestion d'un hôtel : contrôles, allotements, commissions, formation. Nous avons dû le comprendre nous-mêmes et nous écrivons ce que nous avons trouvé.</p>
+    <a href="index.html" class="btn-paper">Tout ce que nous expliquons <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="../migration.html">Migration des données offerte</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="../features.html">Fonctionnalités</a></li>
+        <li><a href="../features.html#integraties">Intégrations</a></li>
+        <li><a href="../securite.html">Sécurité</a></li>
+        <li><a href="../tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="../kb.html">Centre d'aide</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="../ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="index.html">Expliqué</a></li>
+        <li><a href="../migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="../a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="../features.html#integraties">Booking.com</a></li>
+        <li><a href="../features.html#integraties">Airbnb</a></li>
+        <li><a href="../features.html#integraties">Exact Online</a></li>
+        <li><a href="../features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="../privacy.html">Confidentialité</a> · <a href="../cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

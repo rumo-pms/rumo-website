@@ -1,0 +1,78 @@
+1|Rudy · rumo
+2|Rudy est l'assistant IA de rumo. Il connaît votre hôtel, vos procédures et vos données, et exécute des tâches en langage courant. Pas de menus, pas de syntaxe.
+3|<a href="faq.html">FAQ</a>
+4|Rudy · assistant IA
+5|Un collègue qui ne prend<br><em>jamais</em> congé.
+6|Rudy connaît votre hôtel, vos procédures et vos clients. Posez une question dans votre langue et il répond. Demandez-lui quelque chose et il le propose, c'est vous qui approuvez. (Et oui, en polonais aussi s'il le faut.)
+7|Il vit dans le même rumo que vous : il voit vos réservations, vos tarifs, vos clients et votre propre manuel. Et il ne peut rien de plus que la personne qui lui parle.
+8|Rudy sait beaucoup. Pas tout.<br>Mais <em>vraiment</em> beaucoup.
+9|Rudy n'est pas un magicien et ne fait pas semblant de l'être. Ce qui vous revient, il vous le laisse. Mais le reste n'est pas une petite liste : créer des réservations, rédiger des devis, remplir des listes de groupe, chercher dans votre manuel, importer un Excel, préparer des réponses.
+10|Ce qu'il fait
+11|Les <em>gestes</em> du quotidien.
+12|C'est la routine qu'il vous enlève : les centaines de petites actions qui découpent votre journée. Ce qui est réversible, il le fait tout de suite ; pour ce qui ne l'est pas, il attend votre oui.
+13|Chercher ce qui se passe : chambres libres, arrivées, solde d'une réservation
+14|Lire une demande que vous collez et en faire une réservation
+15|Expliquer comment faire quelque chose dans rumo, parce qu'il connaît le manuel
+16|Sous une proposition figure ce qui serait réellement réservé, au prix de vos propres tarifs. Ainsi, une proposition dont il a parlé mais qu'il n'a jamais exécutée ne part pas discrètement chez votre client.
+17|<span class="ag-bol"></span><b>Rudy</b><span class="ag-meta">Réception &middot; <span data-datum="dag-vandaag">je</span> <span data-datum="vandaag">2 avril</span></span>
+18|Ce mail vient d'arriver : « Une deluxe double au nom de Janssens, du 12 au 15 mai, nous sommes deux. » Fais-en une réservation.
+19|Ce que j'en lis : deluxe double, trois nuits, deux adultes. Le petit-déjeuner est compris dans ce tarif. Je remplis les données du client tout de suite. Voici à quoi elle ressemble avant que je l'enregistre :
+20|<span>Chambre</span><span>Deluxe double</span>
+21|<span>Séjour</span><span>12 &rarr; 15 mai &middot; 3 nuits</span>
+22|<span>Clients</span><span>2 adultes</span>
+23|<span>Tarif</span><span>Flexible &middot; petit-déjeuner compris</span>
+24|<span>Total</span><span>&euro; 447,00</span>
+25|<span class="aan">Approuver</span><span>Modifier</span><span>Annuler</span>
+26|Prix issu de vos propres tarifs
+27|Ce qu'il laisse de côté
+28|Honnête sur ce que <em>vous décidez.</em>
+29|Certaines choses, il ne les fait volontairement pas. Non pas parce qu'il en est incapable, mais parce que ce sont des décisions qui ont des suites.
+30|Pas de notes de crédit ni de remboursements de sa propre initiative. Il le signale avec une proposition
+31|Pas de politique tarifaire. Il montre où changer un tarif, il ne décide pas
+32|Pas de chat interne, et aucun autre hôtel que le vôtre
+33|Comment lui demander
+34|Du français, tout simplement.<br><em>Pas de syntaxe.</em>
+35|Tapez ou dites ce que vous voulez, dans la langue dans laquelle vous pensez. Rudy regarde votre contexte (quel hôtel, quelle date, quel client) et propose une action. Un doute ? Il pose la question. Il ne peut pas ? Il le dit, sans tourner autour du pot.
+36|Vous demandez
+37|Ce que Rudy fait
+38|« Colle la demande et dis : fais-en une réservation »
+39|Lit le mail, compose la réservation, remplit le client. <em>Vous approuvez.</em>
+40|"Combien de chambres sont libres demain ?"
+41|<em>Réponse en français.</em> Pas de bouton de langue à cocher, il suit la langue de la question.
+42|« Quel était mon chiffre d'affaires la semaine dernière, par canal ? »
+43|Affiche un tableau. Aucune action nécessaire.
+44|"Write a reply about parking, in English"
+45|Drafts the answer for the guest chat. <em>Reception sends it.</em>
+46|« Que dit notre manuel sur la procédure en cas de no-show ? »
+47|Cite le bon passage de votre manuel, avec la source.
+48|« Rembourse 80 € au client Janssens »
+49|<em>Il ne le fait pas lui-même.</em> Il envoie une notification à votre réceptionniste avec la proposition.
+50|Voyez l'aide-mémoire complet avec 15 exemples dans le <a href="kb.html#rudy" style="color:var(--terra-dark); text-decoration:underline;">helpdesk</a>.
+51|Ses connaissances
+52|D'où viennent les <em>réponses</em> de Rudy.
+53|Il vit dans votre rumo et joint l'article dont il tire sa réponse, pour que vous puissiez vérifier. Si la réponse ne se trouve nulle part, il le dit.
+54|<strong>Données en direct</strong> <span>Réservations, chambres, tarifs, disponibilité</span>
+55|<strong>Votre manuel</strong> <span>Procédures, règlement, plans d'urgence</span>
+56|<strong>Rudy</strong> <span>Renvoie toujours à la source</span>
+57|Autres fonctionnalités
+58|Rudy est une <em>couche</em>.<br>Il y a autre chose en dessous.
+59|Le PMS, le manuel, la prévention, le channel manager, le portail client. Tout dans le même rumo. (Et partout Rudy qui lit par-dessus votre épaule.)
+60|Le <em>PMS</em>
+61|Lire la suite →
+62|Le <em>manuel</em>
+63|<em>Prévention</em> &amp; bien-être
+64|<em>Channel</em> manager
+65|<em>Portail client</em> &amp; moteur de réservation
+66|Essayer vous-même
+67|Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.
+68|Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations, Rudy compris. Cela ne vous convient pas ? Alors il disparaît sans bruit.
+69|Essayez 14 jours gratuitement <span>→</span>
+70|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="overstappen.html">Migration des données offerte</a>
+71|<a href="https://wa.me/32485382828">WhatsApp</a>
+72|<a href="features.html#integraties">Booking.com</a>
+73|<a href="features.html#integraties">Airbnb</a>
+74|<a href="features.html#integraties">Exact Online</a>
+75|<a href="features.html#integraties">Peppol</a>
+76|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+77|Menu
+78|Une conversation avec Rudy : il propose une réservation, montre en dessous ce qui serait réservé, et attend l'approbation.

@@ -1,0 +1,155 @@
+1|Security &amp; privacy · rumo
+2|Passkeys, shielded guest data, an alarm on unusual reading behaviour, decoys, and an incident file that prepares the notification to the data protection authority for you. Included, not an add-on.
+3|<a href="faq.html">FAQ</a>
+4|Security &amp; privacy
+5|Included · not an add-on
+6|Who can get at <em>your guest list</em>?
+7|Most software assumes that whoever is inside belongs there. rumo does not. You log in with your finger, you see no guest data by default, and before money or a user moves you have to confirm again that it is you.
+8|If something does go wrong, the letter to your guests and the notification to the authorities are ready before you have properly started looking.
+9|Log in with your finger
+10|Alarm on unusual behaviour
+11|Notification ready within 72 hours
+12|Notifications
+13|Today
+14|<strong>Unusually many reservations opened</strong> <span>Nathalie · 10 minutes · reception account</span>
+15|<strong>Someone is guessing reservation numbers</strong> <span>Decoy shown · review account</span>
+16|<strong>Refund confirmed with a passkey</strong> <span>€ 240,00 · Tom · 14:02</span>
+17|<strong>Dormant account switched off</strong> <span>Last login · 94 days ago</span>
+18|The front door
+19|A password alone is <em>not a lock</em>.
+20|rumo works with passkeys: you confirm with your finger, your face or the code of your own device. There is nothing to look over your shoulder at and nothing to reuse.
+21|<em>Second factor compulsory</em> for everyone, through Google or Microsoft too
+22|<em>Automatic sign-out</em> after a while of doing nothing. Half an hour is the maximum
+23|<em>Dormant accounts</em> switch off by themselves after 90 days. So last summer's intern no longer has a key
+24|Users
+25|7 people
+26|Nathalie · reception
+27|Passkey · finger or face
+28|In order
+29|Tom · manager
+30|Password · second factor requested
+31|Almost
+32|Jonas · student
+33|94 days without logging in
+34|Switched off
+35|If someone does get in
+36|The real work starts <em>after that</em>.
+37|A stolen account looks from the outside like an ordinary colleague. So rumo does not look at who logs in, but at what that person does.
+38|<em>Reading alarm</em> when unusually many guests are opened in a short time. Where the limit lies is set by us, not by the hotel
+39|<em>Decoys:</em> whoever sits guessing reservation numbers runs into a made-up reservation. Open it and you give yourself away
+40|<em>Finger on the button</em> for money and for people: refunds, roles, exports
+41|Security alarms
+42|Last 7 days
+43|<strong>Many profiles opened in a short time</strong> <span>Reception account 2 · Tuesday 03:41</span>
+44|<strong>Decoy shown</strong> <span>After 3 non-existent reservation numbers</span>
+45|<strong>Refund refused</strong> <span>Passkey not confirmed · nothing carried out</span>
+46|Guest data
+47|Housekeeping does not need <em>phone numbers</em>.
+48|Email addresses, phone numbers, dates of birth: those are shielded by default. Not only on your screen, but on the way there too.
+49|Openable per field, and every opening is logged with a name and a time
+50|Housekeeping and F&amp;B are not sent them at all
+51|Mailing a guest is done by the server. Your screen never needs that address
+52|Reservation · BK-4821
+53|Reception
+54|<span class="lbl">Name</span> <span class="val">Marie Dubois</span> <span class="tag">Visible</span>
+55|<span class="lbl">Email</span> <span class="val hid">m•••@•••.be</span> <span class="tag">Hidden</span>
+56|<span class="lbl">Phone</span> <span class="val">+32 470 12 34 56</span> <span class="tag open">Shown · logged</span>
+57|<span class="lbl">Birth</span> <span class="val hid">••/••/••••</span> <span class="tag">Hidden</span>
+58|<span class="lbl">Identity</span> <span class="val hid">not sent along</span> <span class="tag nooit">Housekeeping</span>
+59|14:06 · Tom showed Marie Dubois's phone number
+60|The log
+61|Who opened <em>that</em>?
+62|Every login, every export, every phone number clicked open, every alarm and every euro that moves: it is in there. Searchable by text, type, person and date.
+63|Exporting asks for your passkey too, and then lands in the log itself
+64|You decide how long everything stays. The clean-up leaves a trail as well
+65|Log
+66|Filter · guest data
+67|Phone number shown
+68|Tom · today 14:06
+69|Reservation BK-4821 · guest Marie Dubois
+70|Export of reservations
+71|Nathalie · yesterday 17:22
+72|412 rows · CSV · confirmed with a passkey
+73|Role changed
+74|Jeffrey · Monday 09:04
+75|Tom was given manager rights · confirmed with a passkey
+76|And what about us?
+77|Can we look inside <em>your hotel</em>?
+78|Fair question, because a supplier who can quietly get at everything is exactly what you should be afraid of. The answer: only if you ask, and only to look.
+79|<em>Per question, not per hotel.</em> The permission hangs on one support conversation and ends with it
+80|<em>Look, do not touch.</em> We cannot save, change or delete anything
+81|<em>Nobody's account borrowed.</em> Your log shows who at our end looked, by name
+82|Withdrawing works on the very next click, not tomorrow
+83|Filter · rumo looked along
+84|Permission given
+85|Jeffrey · Tuesday 10:12
+86|Question "invoice shows the wrong VAT" · this conversation only
+87|Seba (rumo) viewed Invoicing
+88|Tuesday 10:19
+89|Read only · own account, no borrowed login
+90|Permission expired
+91|Tuesday 11:04
+92|Question closed · access gone at once
+93|If it does go wrong
+94|72 hours. That is <em>the whole margin</em>.
+95|If something goes wrong with guest data, the law gives you 72 hours to report it. That clock starts the moment you know, not when you have finished working it out.
+96|<em>The list:</em> rumo lines up who was staying with you in that period
+97|<em>The warning:</em> one button mails those guests, each in their own language, from your hotel
+98|<em>The bank:</em> a letter on your letterhead for anyone who has lost money
+99|<em>The notification:</em> the article 33 form, filled in with what the file holds
+100|The 72-hour clock is there the whole time, counting down.
+101|Incident · phishing January
+102|Open
+103|Affected guests collected
+104|Warning sent
+105|128 · 3 languages
+106|Letter for the bank
+107|4 guests
+108|Notification DPA · draft ready
+109|review
+110|61 hours left within the notification period
+111|Under the bonnet
+112|The things you <em>never see</em>.
+113|Briefly, because nobody gets cheerful from this. But it is the part where things usually go wrong elsewhere.
+114|Your hotel's data is kept separate from every other hotel's
+115|Your data sits in Europe and stays in Europe
+116|Card numbers never enter our database. Only the type, the expiry date and the last four digits
+117|Everything coming in from outside is checked on its signature
+118|Every link to the guest portal is valid for one booking
+119|Foundation
+120|Always on
+121|Separated per hotel
+122|Your data apart from the rest
+123|Active
+124|Data in Europe
+125|Hosting inside the EU
+126|A signature on every message
+127|The secret replaces itself daily
+128|Honestly now
+129|What we do <em>not</em> claim.
+130|A page about security with only good news on it is not a page about security.
+131|We do not hang an ISO certificate on the wall. We do not have one. Do you need one from your insurer or your chain? Say so and we will talk about it, rather than buying a logo for it.
+132|We cannot promise that nobody on your team will ever click a bad link again. Nobody can. What we do is make sure it yields as little as possible afterwards.
+133|The alarms are tripwires, not locks. They stop nothing; they make noise and write things down. That is deliberate: a lock set too strictly simply blocks someone on a busy Saturday.
+134|And what you store with us stays yours. If you ever leave, you take everything with you in an export. Without having to ring anyone for it.
+135|Other features
+136|Security is <em>not a module</em>.<br>It is in everything.
+137|The PMS, Rudy, the handbook, channel manager, guest portal. All in the same rumo, all under the same rules.
+138|The <em>PMS</em>
+139|Read more →
+140|<em>Rudy</em>
+141|<em>Prevention</em> &amp; wellbeing
+142|<em>Channel</em> manager
+143|Guest <em>portal &amp; booking engine</em>
+144|Try it yourself
+145|No demo call.<br>Just <em>14 days</em> to play.
+146|No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.
+147|Try it free for 14 days <span>→</span>
+148|No credit card · Cancellable monthly after 6 months · <a href="overstappen.html">Free data migration</a>
+149|<a href="https://wa.me/32485382828">WhatsApp</a>
+150|<a href="features.html#integraties">Booking.com</a>
+151|<a href="features.html#integraties">Airbnb</a>
+152|<a href="features.html#integraties">Exact Online</a>
+153|<a href="features.html#integraties">Peppol</a>
+154|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+155|Menu

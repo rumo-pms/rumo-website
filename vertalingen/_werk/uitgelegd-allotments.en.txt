@@ -1,0 +1,46 @@
+1|Does this request belong to the conference or not? · explained by rumo
+2|Holding rooms for a conference or a company looks simple until you forget the expiry date. What an allotment really is, where it goes wrong, and what it costs you.
+3|<a href="../faq.html">FAQ</a>
+4|← Explained
+5|Groups and allotments
+6|"Does this request belong to the conference, <em>or not?</em>"
+7|There is a conference nearby, an organiser has had twenty rooms held, and in comes a mail from someone saying they are with that conference. Are they in the block or not? On that one question hangs whether you give them the agreed rate, and whether you have sold twenty rooms or twenty-five.
+8|<span>3 minute read</span> <span>For whoever works with groups</span> <span>Applies without rumo too</span>
+9|An allotment is <em>not a block of rooms</em>
+10|That is the first mistake in thinking, and all the others follow from it. Many hotels close off twenty nights in the calendar, stick a reminder in Outlook next to it, and carry on in good faith.
+11|But an allotment is a <strong>promise with an expiry date</strong>: a number of rooms of a certain type, at an agreed rate, until a certain day. Whatever is not booked by that day comes back to you. Three things, then, and closing off rooms only settles one of them.
+12|The question the organiser <em>is going to ask</em>
+13|Halfway through, the organiser rings, and he does not ask how many rooms you have held. He knows that. He asks <strong>how many have actually been booked in the meantime</strong>.
+14|That is your pickup, and it is the only figure that matters here. It decides whether he still has to push, whether you can still release something, and whether you will do business again next year. Anyone keeping their allotment in a closed-off calendar can only answer that question by counting reservations and hoping it is right. Watch one detail: a cancellation or a no-show has <em>not</em> used up your block and therefore does not count.
+15|The most expensive thing to forget: the <em>cut-off</em>
+16|The cut-off is the day the agreement stops and unsold rooms go back on the open market. Forget it and precisely nothing happens. No error message, no double booking, no angry guest. You simply hold eight rooms for a group that is not going to book them, on exactly the days there is a conference in town.
+17|<strong>And then the reverse.</strong> Whoever does put their rooms back by hand has to do it in two places: in their own planning and in the availability that goes out to Booking.com and the rest. Do only the first and those rooms are free in your calendar but stay closed on the channels. The same oversight, but invisible, because on your own screen everything looks right.
+18|An allotment is not a block of rooms. It is a promise with <em>an expiry date.</em>
+19|Three things, and all three run out differently
+20|Back to the <em>mail</em>
+21|At a conference like that, two streams run through each other. Participants booking through the organiser belong in the block, at the agreed rate. Participants sorting it out themselves have nothing to do with that travel agency and pay your normal rate. From the outside those two mails cannot be told apart: both mention the conference.
+22|The only structural solution is to stop asking the question: let the participant book themselves through a channel tied to the contract. Whoever comes in that way is in the block; whoever comes through the ordinary front door is not. One exception you should know: a booking coming in through an OTA never attaches itself to an allotment, not even when it is clearly the same company. Someone links that by hand, or your pickup is wrong.
+23|Who gets the <em>bill?</em>
+24|With groups there are nearly always two payers, and the line runs not along the guest but along the item. The room goes to the company, the breakfast maybe too, but his minibar and his parking are his. The question is not "who pays this booking" but "who pays this <strong>line</strong>".
+25|For the city tax there is no generally right answer: some companies take it into the central invoice, others consider it a personal cost. That is an agreement you make. But you do have to have made it.
+26|What to do about it, software or not
+27|<strong>Put the cut-off in a diary that goes off</strong>, a week earlier than the real date, so you can still do something with those rooms.
+28|<strong>Agree who pays what per item</strong>, not per booking. Room, breakfast, city tax, extras.
+29|<strong>Give groups their own booking route</strong> instead of a mail address.
+30|<strong>Count your pickup without the cancellations</strong>, or you tell the organiser a figure that is too good.
+31|In rumo this is the allotment module. You record the blocks per room type with their own rate and a cut-off, and those rooms are automatically deducted from what goes to Booking.com and the other channels and from what your own booking page still offers. Only someone booking through the group's own link may use up the block; that is what it is for, after all. On the cut-off the unsold rooms come back into sale by themselves, on the channels too, with a note in the history; you can also release them earlier by hand. A booking that would exceed the block is refused at the moment of saving, so two people cannot both take the last room.
+32|The participants get their own booking link with a random key in it, tied to the booking engine, in which they see only the block and the agreed rate. Did that link end up with the wrong people? Then you make a new one and the old one stops working. You can enforce payment or a card guarantee on that link. And the central invoice can send the rooms to the company while the extras that were not marked stay on the guest's bill.
+33|What rumo does not do: link that OTA booking above after all. That stays handwork.
+34|Worked something else out?
+35|We would rather <em>explain</em> it<br>than sell it.
+36|The things that come with running a hotel: inspections, allotments, commissions, training people. We had to work them out ourselves and we write down what we found.
+37|Everything we explain <span>→</span>
+38|No credit card · Cancellable monthly after 6 months · <a href="../overstappen.html">Free data migration</a>
+39|<a href="index.html">Explained</a>
+40|<a href="https://wa.me/32485382828">WhatsApp</a>
+41|<a href="../features.html#integraties">Booking.com</a>
+42|<a href="../features.html#integraties">Airbnb</a>
+43|<a href="../features.html#integraties">Exact Online</a>
+44|<a href="../features.html#integraties">Peppol</a>
+45|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+46|Menu

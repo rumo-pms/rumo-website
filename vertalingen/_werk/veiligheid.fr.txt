@@ -1,0 +1,155 @@
+1|Sécurité &amp; vie privée · rumo
+2|Passkeys, données clients masquées, alerte en cas de lecture inhabituelle, leurres, et un dossier d'incident qui prépare pour vous la notification à l'Autorité de protection des données. Compris, pas un add-on.
+3|<a href="faq.html">FAQ</a>
+4|Sécurité &amp; vie privée
+5|Compris · pas un add-on
+6|Qui peut accéder à <em>votre liste de clients</em> ?
+7|La plupart des logiciels partent du principe que celui qui est entré a le droit d'y être. Pas rumo. Vous vous connectez avec votre doigt, vous ne voyez par défaut aucune donnée client, et avant qu'un montant ou un utilisateur ne bouge, vous devez confirmer à nouveau que c'est bien vous.
+8|Si quelque chose tourne mal malgré tout, la lettre à vos clients et la notification aux autorités sont prêtes avant même que vous ayez vraiment commencé à chercher.
+9|Se connecter avec son doigt
+10|Alerte en cas de comportement inhabituel
+11|Notification prête en 72 heures
+12|Notifications
+13|Aujourd'hui
+14|<strong>Un nombre inhabituel de réservations ouvertes</strong> <span>Nathalie · 10 minutes · compte réception</span>
+15|<strong>Quelqu'un devine des numéros de réservation</strong> <span>Leurre affiché · examiner le compte</span>
+16|<strong>Remboursement confirmé par passkey</strong> <span>€ 240,00 · Tom · 14:02</span>
+17|<strong>Compte dormant désactivé</strong> <span>Dernière connexion · il y a 94 jours</span>
+18|La porte d'entrée
+19|Un mot de passe seul <em>n'est pas une serrure</em>.
+20|rumo fonctionne avec des passkeys : vous confirmez avec votre doigt, votre visage ou le code de votre propre appareil. Il n'y a rien à observer par-dessus l'épaule et rien à réutiliser.
+21|<em>Deuxième facteur obligatoire</em> pour tout le monde, via Google ou Microsoft également
+22|<em>Déconnexion automatique</em> après un moment d'inactivité. Une demi-heure au maximum
+23|<em>Les comptes dormants</em> s'éteignent d'eux-mêmes après 90 jours. Le stagiaire de l'été dernier n'a donc plus de clé
+24|Utilisateurs
+25|7 personnes
+26|Nathalie · réception
+27|Passkey · doigt ou visage
+28|En ordre
+29|Tom · manager
+30|Mot de passe · deuxième facteur demandé
+31|Presque
+32|Jonas · étudiant
+33|94 jours sans connexion
+34|Désactivé
+35|Si quelqu'un entre malgré tout
+36|Le vrai travail commence <em>après</em>.
+37|Un compte volé ressemble de l'extérieur à un collègue ordinaire. rumo ne regarde donc pas qui se connecte, mais ce que cette personne fait.
+38|<em>Alerte de lecture</em> quand un nombre inhabituel de clients est ouvert en peu de temps. C'est nous qui fixons la limite, pas l'hôtel
+39|<em>Leurres :</em> celui qui devine des numéros de réservation tombe sur une réservation inventée. Qui l'ouvre se trahit
+40|<em>Le doigt sur le bouton</em> pour l'argent et pour les personnes : remboursements, rôles, exports
+41|Alertes de sécurité
+42|7 derniers jours
+43|<strong>Beaucoup de profils ouverts en peu de temps</strong> <span>Compte réception 2 · mardi 03:41</span>
+44|<strong>Leurre affiché</strong> <span>Après 3 numéros de réservation inexistants</span>
+45|<strong>Remboursement refusé</strong> <span>Passkey non confirmée · rien n'a été exécuté</span>
+46|Données clients
+47|Le housekeeping n'a pas besoin des <em>numéros de téléphone</em>.
+48|Adresses mail, numéros de téléphone, dates de naissance : ils sont masqués par défaut. Pas seulement à l'écran, mais aussi sur le chemin.
+49|À ouvrir champ par champ, et chaque ouverture est journalisée avec un nom et une heure
+50|Le housekeeping et le F&amp;B ne les reçoivent tout simplement pas
+51|C'est le serveur qui envoie le mail au client. Votre écran n'a jamais besoin de cette adresse
+52|Réservation · BK-4821
+53|Réception
+54|<span class="lbl">Nom</span> <span class="val">Marie Dubois</span> <span class="tag">Visible</span>
+55|<span class="lbl">E-mail</span> <span class="val hid">m•••@•••.be</span> <span class="tag">Masqué</span>
+56|<span class="lbl">Téléphone</span> <span class="val">+32 470 12 34 56</span> <span class="tag open">Affiché · journalisé</span>
+57|<span class="lbl">Naissance</span> <span class="val hid">••/••/••••</span> <span class="tag">Masquée</span>
+58|<span class="lbl">Identité</span> <span class="val hid">non transmise</span> <span class="tag nooit">Housekeeping</span>
+59|14:06 · Tom a affiché le numéro de téléphone de Marie Dubois
+60|Le journal
+61|Qui a <em>ouvert</em> cela ?
+62|Chaque connexion, chaque export, chaque numéro de téléphone ouvert, chaque alerte et chaque euro qui bouge : tout y figure. Consultable par texte, par type, par personne et par date.
+63|L'export demande lui aussi votre passkey, et atterrit ensuite dans le journal
+64|C'est vous qui décidez combien de temps tout reste. Le nettoyage laisse lui aussi une trace
+65|Journal
+66|Filtre · données clients
+67|Numéro de téléphone affiché
+68|Tom · aujourd'hui 14:06
+69|Réservation BK-4821 · cliente Marie Dubois
+70|Export de réservations
+71|Nathalie · hier 17:22
+72|412 lignes · CSV · confirmé par passkey
+73|Rôle modifié
+74|Jeffrey · lundi 09:04
+75|Tom a reçu les droits de manager · confirmé par passkey
+76|Et nous alors ?
+77|Pouvons-nous regarder dans <em>votre hôtel</em> ?
+78|Question légitime, car un fournisseur qui peut accéder discrètement à tout est exactement ce dont il faut se méfier. La réponse : uniquement si vous le demandez, et uniquement pour regarder.
+79|<em>Par question, pas par hôtel.</em> L'autorisation est liée à une seule conversation de support et se termine avec elle
+80|<em>Regarder, pas toucher.</em> Nous ne pouvons rien enregistrer, modifier ni supprimer
+81|<em>Le compte de personne n'est emprunté.</em> Votre journal indique qui, chez nous, a regardé, avec son nom
+82|Le retrait prend effet au clic suivant, pas demain
+83|Filtre · rumo a regardé
+84|Autorisation donnée
+85|Jeffrey · mardi 10:12
+86|Question « la facture affiche la mauvaise TVA » · cette conversation uniquement
+87|Seba (rumo) a consulté Facturation
+88|mardi 10:19
+89|Lecture seule · compte propre, pas de login emprunté
+90|Autorisation expirée
+91|mardi 11:04
+92|Question clôturée · accès retiré aussitôt
+93|Si cela tourne mal quand même
+94|72 heures. C'est <em>toute la marge</em>.
+95|Si quelque chose tourne mal avec des données clients, la loi vous donne 72 heures pour le déclarer. Cette horloge démarre au moment où vous le savez, pas quand vous avez fini d'enquêter.
+96|<em>La liste :</em> rumo rassemble qui séjournait chez vous pendant cette période
+97|<em>L'avertissement :</em> un bouton envoie un mail à ces clients, chacun dans sa langue, depuis votre hôtel
+98|<em>La banque :</em> une lettre à votre en-tête pour ceux qui ont perdu de l'argent
+99|<em>La notification :</em> le formulaire de l'article 33, rempli avec ce que contient le dossier
+100|L'horloge des 72 heures est affichée en permanence, et elle décompte.
+101|Incident · phishing janvier
+102|Ouvert
+103|Clients concernés rassemblés
+104|Avertissement envoyé
+105|128 · 3 langues
+106|Lettre pour la banque
+107|4 clients
+108|Notification APD · projet prêt
+109|à relire
+110|Encore 61 heures dans le délai de notification
+111|Sous le capot
+112|Les choses que vous <em>ne voyez jamais</em>.
+113|Ce sera bref, parce que cela ne réjouit personne. Mais c'est la partie où, ailleurs, cela se passe généralement mal.
+114|Les données de votre hôtel sont séparées de celles de tout autre hôtel
+115|Vos données sont en Europe et restent en Europe
+116|Les numéros de carte n'entrent pas dans notre base de données. Seulement le type, la date d'expiration et les quatre derniers chiffres
+117|Tout ce qui arrive de l'extérieur est vérifié sur sa signature
+118|Chaque lien vers le portail client vaut pour une seule réservation
+119|Fondations
+120|Toujours actif
+121|Séparé par hôtel
+122|Vos données à part du reste
+123|Actif
+124|Données en Europe
+125|Hébergement dans l'UE
+126|Une signature sur chaque message
+127|Le secret se remplace chaque jour
+128|Soyons honnêtes
+129|Ce que nous <em>ne</em> prétendons pas.
+130|Une page sur la sécurité où il n'y a que de bonnes nouvelles n'est pas une page sur la sécurité.
+131|Nous n'accrochons pas de certificat ISO au mur. Nous n'en avons pas. Il vous en faut un pour votre assureur ou votre chaîne ? Dites-le et nous en parlerons, plutôt que d'acheter un logo.
+132|Nous ne pouvons pas promettre que personne dans votre équipe ne cliquera plus jamais sur un mauvais lien. Personne ne le peut. Ce que nous faisons, c'est veiller à ce que cela rapporte le moins possible ensuite.
+133|Les alertes sont des fils tendus, pas des serrures. Elles n'arrêtent rien : elles font du bruit et prennent note. C'est voulu : une serrure trop stricte bloque simplement quelqu'un un samedi chargé.
+134|Et ce que vous stockez chez nous reste à vous. Si vous partez un jour, vous emportez tout dans un export. Sans devoir téléphoner pour l'obtenir.
+135|Autres fonctionnalités
+136|La sécurité <em>n'est pas un module</em>.<br>Elle est partout.
+137|Le PMS, Rudy, le manuel, le channel manager, le portail client. Tout dans le même rumo, tout sous les mêmes règles.
+138|Le <em>PMS</em>
+139|Lire la suite →
+140|<em>Rudy</em>
+141|<em>Prévention</em> &amp; bien-être
+142|<em>Channel</em> manager
+143|<em>Portail client</em> &amp; moteur de réservation
+144|Essayer vous-même
+145|Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.
+146|Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit.
+147|Essayez 14 jours gratuitement <span>→</span>
+148|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="overstappen.html">Migration des données offerte</a>
+149|<a href="https://wa.me/32485382828">WhatsApp</a>
+150|<a href="features.html#integraties">Booking.com</a>
+151|<a href="features.html#integraties">Airbnb</a>
+152|<a href="features.html#integraties">Exact Online</a>
+153|<a href="features.html#integraties">Peppol</a>
+154|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+155|Menu

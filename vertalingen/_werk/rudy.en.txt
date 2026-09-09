@@ -1,0 +1,78 @@
+1|Rudy · rumo
+2|Rudy is the AI assistant inside rumo. He knows your hotel, your procedures and your data, and carries out tasks in plain language. No menus, no syntax.
+3|<a href="faq.html">FAQ</a>
+4|Rudy · AI assistant
+5|A colleague who<br><em>never</em> takes a day off.
+6|Rudy knows your hotel, your procedures and your guests. Ask a question in your own language and he answers. Ask him to do something and he proposes it, you approve. (And yes, in Polish too if that is what it takes.)
+7|He sits in the same rumo as you: he sees your reservations, your rates, your guests and your own handbook. And he can do no more than the person talking to him.
+8|Rudy knows a lot. Not everything.<br>But <em>really</em> a lot.
+9|Rudy is no wizard and he does not pretend to be one. What is yours to decide, he leaves to you. But the rest is not a short list: creating reservations, drawing up quotes, filling in group lists, searching your handbook, importing Excel, drafting replies.
+10|What he does
+11|The daily <em>handling.</em>
+12|The routine is what he takes off your hands: the hundreds of small actions that click your day to pieces. What can be undone he does straight away; for what cannot, he waits for your yes.
+13|Looking up what is going on: free rooms, arrivals, the balance on a booking
+14|Reading a request you paste in and turning it into a reservation
+15|Explaining how to do something in rumo, because he knows the manual
+16|Under a proposal you see what would actually be booked, at the price from your own rates. So a proposal he discussed but never carried out does not quietly reach your guest.
+17|<span class="ag-bol"></span><b>Rudy</b><span class="ag-meta">Reception &middot; <span data-datum="dag-vandaag">Th</span> <span data-datum="vandaag">2 April</span></span>
+18|This mail just came in: "A deluxe double under the name Janssens please, from 12 to 15 May, there are two of us." Turn it into a reservation.
+19|What I read: deluxe double, three nights, two adults. Breakfast is included in that rate. I am filling in the guest details straight away. This is what it looks like before I save it:
+20|<span>Room</span><span>Deluxe double</span>
+21|<span>Stay</span><span>12 &rarr; 15 May &middot; 3 nights</span>
+22|<span>Guests</span><span>2 adults</span>
+23|<span>Rate</span><span>Flexible &middot; breakfast included</span>
+24|<span>Total</span><span>&euro; 447,00</span>
+25|<span class="aan">Approve</span><span>Adjust</span><span>Cancel</span>
+26|Price from your own rates
+27|What he leaves alone
+28|Honest about what <em>you decide.</em>
+29|Some things he deliberately does not do. Not because he cannot, but because they are decisions with a tail.
+30|No credit notes or refunds on his own. He flags it with a proposal
+31|No pricing policy. He points at where you change a rate, he does not decide
+32|No internal team chat, and no hotel other than yours
+33|How you ask him
+34|Just English.<br><em>No syntax.</em>
+35|Type or say what you want, in the language you think in. Rudy looks at your context (which hotel, which date, which guest) and proposes an action. Unsure? He asks. Cannot do something? He says so, without dancing around it.
+36|You ask
+37|What Rudy does
+38|"Paste the request in and say: turn this into a reservation"
+39|Reads the mail, puts the booking together, fills in the guest. <em>You approve.</em>
+40|"Combien de chambres sont libres demain ?"
+41|<em>Réponse en français.</em> No language button to tick, he switches along with the question.
+42|"What was my revenue last week per channel?"
+43|Shows a table. No action needed.
+44|"Write a reply about parking, in English"
+45|Drafts the answer for the guest chat. <em>Reception sends it.</em>
+46|"What does our handbook say about the no-show procedure?"
+47|Quotes the right passage from your handbook, with the source.
+48|"Give guest Janssens a refund of €80"
+49|<em>He does not do that himself.</em> Sends a notification to your receptionist with the proposal.
+50|See the full cheatsheet with 15 examples in the <a href="kb.html#rudy" style="color:var(--terra-dark); text-decoration:underline;">helpdesk</a>.
+51|His knowledge
+52|Where Rudy's <em>answers</em> come from.
+53|He lives in your rumo and adds the article he took it from, so you can check it. If the answer is nowhere, he says so.
+54|<strong>Live data</strong> <span>Reservations, rooms, rates, availability</span>
+55|<strong>Your handbook</strong> <span>Procedures, house rules, emergency plans</span>
+56|<strong>Rudy</strong> <span>Always quotes back to the source</span>
+57|Other features
+58|Rudy is one <em>layer</em>.<br>There is more underneath.
+59|The PMS, the handbook, prevention, channel manager, guest portal. All in the same rumo. (And all with Rudy reading along.)
+60|The <em>PMS</em>
+61|Read more →
+62|The <em>handbook</em>
+63|<em>Prevention</em> &amp; wellbeing
+64|<em>Channel</em> manager
+65|Guest <em>portal &amp; booking engine</em>
+66|Try it yourself
+67|No demo call.<br>Just <em>14 days</em> to play.
+68|No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations, with Rudy in it. Not for you? Then it quietly disappears.
+69|Try it free for 14 days <span>→</span>
+70|No credit card · Cancellable monthly after 6 months · <a href="overstappen.html">Free data migration</a>
+71|<a href="https://wa.me/32485382828">WhatsApp</a>
+72|<a href="features.html#integraties">Booking.com</a>
+73|<a href="features.html#integraties">Airbnb</a>
+74|<a href="features.html#integraties">Exact Online</a>
+75|<a href="features.html#integraties">Peppol</a>
+76|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+77|Menu
+78|A conversation with Rudy: he proposes a reservation, shows underneath what would be booked, and waits for approval.

@@ -1,0 +1,102 @@
+1|Prevention &amp; wellbeing · rumo
+2|Fire prevention, legionella, first aid, checklists, incidents. At last in one living file that thinks along, reminds and documents.
+3|<a href="faq.html">FAQ</a>
+4|Prevention &amp; wellbeing
+5|Add-on &middot; &euro;29/month
+6|Fire prevention. Legionella. First aid.<br><em>Under control at last.</em>
+7|Every hotelier knows the feeling: somewhere in a cupboard there is a folder with inspections, checklists and safety plans. Nobody is quite sure whether it is all still valid. Until an inspector turns up.
+8|Because a hotel is also a building, and that building has its own paperwork. Fifteen installations, each with its own company, its own interval and its own certificate. That is not a technical problem but a <strong>document problem</strong>.
+9|Installations
+10|Every installation has <em>its own clock.</em>
+11|Per installation you record what it is, until when the certificate is valid, who maintains it and who inspects it. Those last two are deliberately separate names, because that is the question you ask a year from now.
+12|You do not set the status; it follows from the expiry date
+13|An installation without a date gets no status. That is <em>not</em> the same as being in order
+14|rumo does not know the statutory interval. What you fill in is what it works with
+15|2 April
+16|Expired
+17|Within 30 d
+18|In order
+19|No date
+20|<span class="aan">All</span><span>Fire</span><span>Electrical</span><span>Water</span><span>Lift</span>
+21|<span class="sub">Inspection body &middot; low voltage</span><br><b>Electrical installation</b>
+22|<span class="sub">Lift company &middot; risk analysis</span><br><b>Passenger lift</b>
+23|12 days left
+24|<span class="sub">Fire safety company &middot; 14 units</span><br><b>Extinguishers</b>
+25|21 days left
+26|Maintenance and inspection are listed as separate companies
+27|On time
+28|You see it <em>before anyone asks.</em>
+29|An inspection that expires next week cannot be arranged next week. First an electrician comes to repair what the previous inspection noted, and only then the inspection body. Two diaries, two waiting times.
+30|That is why rumo warns thirty, fourteen, seven and one day ahead. The bell shows live what needs attention: expiring inspections, open tasks, an evacuation drill older than a year.
+31|Those warnings come in the app, not in your mailbox. Someone has to open rumo
+32|The bell is for managers and admins
+33|What needs attention
+34|<span class="sub">Expired</span><br><b>Low-voltage inspection certificate</b>
+35|For 9 days
+36|<span class="sub">Within 30 days</span><br><b>Extinguisher certificate</b>
+37|<span class="sub">Yearly &middot; expected</span><br><b>Evacuation drill</b>
+38|14 months ago
+39|<span class="sub">Within 30 days</span><br><b>Lift risk analysis</b>
+40|Tasks and checklists
+41|<span class="sub">Yearly</span><br><b>Evacuation drill</b>
+42|In the app, not in your mailbox
+43|The file
+44|A file that is <em>ready and waiting.</em>
+45|The certificates, reports, permits and plans themselves, up to 25 MB per file. With, per document, who wrote it out and until when it is valid.
+46|Versions instead of overwriting: the old one is archived, the chain stays complete
+47|Per document you choose who may see it. Rudy sticks to that same rule
+48|Send him a stack of certificates and he lines them up, but he never files them himself
+49|Documents
+50|48 items
+51|<span class="aan">All</span><span>Certificates</span><span>Reports</span><span>Plans</span><span>Policies</span>
+52|<span class="sub">Fire safety company &middot; version 4</span><br><b>Extinguisher inspection certificate</b>
+53|Valid until 23/04
+54|<span class="sub">Prevention adviser</span><br><b>Building risk analysis</b>
+55|Managers only
+56|<span class="sub">Version 3 &middot; archived</span><br><b>Extinguisher inspection certificate</b>
+57|Kept
+58|Waiting for confirmation
+59|Rudy lines it up, you confirm
+60|Registers and checklists
+61|Checklists that <em>actually happen.</em>
+62|Alongside the technical side runs a second track: incidents, first aid, psychosocial facts, evacuation drills, legionella, chemical products, and who came to work in the building.
+63|<strong>The difference between a task and a checklist is the proof.</strong> A task only remembers when it was last done. A checklist leaves a trail: who carried it out, what came out per point, and a signature. That becomes a PDF with your documents by itself.
+64|A contractor signs in with a QR code, without a rumo login
+65|Those visitor registrations are deleted after two years. If you want to keep something, export it in time
+66|<span class="aan">Registers</span><span>Checklists</span><span>Contractors</span>
+67|<span class="sub">Incidents</span><br><b>3 this year &middot; 1 open</b>
+68|Kept up
+69|<span class="sub">Legionella</span><br><b>Flushing log &middot; 6 taps</b>
+70|This week
+71|<span class="sub">Evacuation drill</span><br><b>Last one 14 months ago</b>
+72|Expected
+73|Checklist just signed off
+74|<span class="sub">Monthly fire round &middot; An</span><br><b>18 points &middot; 1 remark</b>
+75|<span class="chip oranje was">In progress
+76|Signed
+77|A task remembers the date; a checklist leaves proof
+78|Other features
+79|Prevention is <em>one layer</em>.<br>There is more around it.
+80|The PMS, Rudy, the handbook, channel manager, guest portal. All in the same rumo, all one system together.
+81|The <em>PMS</em>
+82|Read more →
+83|<em>Rudy</em>
+84|The <em>handbook</em>
+85|<em>Channel</em> manager
+86|Guest <em>portal &amp; booking engine</em>
+87|Try it yourself
+88|No demo call.<br>Just <em>14 days</em> to play.
+89|No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.
+90|Try it free for 14 days <span>→</span>
+91|No credit card · Cancellable monthly after 6 months · <a href="overstappen.html">Free data migration</a>
+92|<a href="https://wa.me/32485382828">WhatsApp</a>
+93|<a href="features.html#integraties">Booking.com</a>
+94|<a href="features.html#integraties">Airbnb</a>
+95|<a href="features.html#integraties">Exact Online</a>
+96|<a href="features.html#integraties">Peppol</a>
+97|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+98|Menu
+99|The installation register in rumo: every installation with its expiry date and the status that follows from it.
+100|The notification bell in rumo: what needs attention today in inspections, tasks and documents.
+101|The document file in rumo: certificates with their versions and a queue with what Rudy has lined up.
+102|The safety registers in rumo, with a checklist just signed off that lands as a PDF with the documents.

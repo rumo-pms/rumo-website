@@ -17,6 +17,7 @@
 </script>
 <script src="../gate.js"></script>
 <script src="../demo-form.js?v=2" defer></script>
+<script src="../datums.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>rumo · hotel software without the hassle</title>
 <meta name="robots" content="noindex, nofollow">
@@ -506,8 +507,9 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
 .toonband.licht .kicker { color:var(--muted); }
 /* De doorlink staat in botergeel, want die kleur hoort bij de donkere band.
    Op dit beige is dat niet te lezen; hier hoort terracotta. */
-.toonband.licht .pms-door { color:var(--terra-dark); border-bottom-color:rgba(185,107,74,0.35); }
-.toonband.licht .pms-door:hover { border-bottom-color:var(--terra-dark); }
+/* Op de lichte band blijft het dezelfde knop: donker op beige leest het
+   duidelijkst. Alleen de hover verschilt niet meer van de donkere band. */
+.toonband.licht .pms-door { color:var(--paper); }
 /* De tekstkolom staat standaard op 520px, wat voor een korte kop werkt maar
    deze introalinea in vijf smalle regels hakt. */
 .toonband.licht .toonband-tekst { max-width:900px; }
@@ -744,15 +746,20 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
   .av-status { display:none; }
 }
 
-/* Doorlink in de PMS-band. */
+/* Doorlink in de PMS-band. Dit was een klein mono-linkje met een streepje
+   eronder; op de beige band viel dat weg tussen de tekst. Het is nu dezelfde
+   knop als de hoofdknop in de hero, want het is ook een hoofdknop: dit is de
+   enige weg van de startpagina naar de PMS-pagina. */
 .pms-door {
-  display:inline-flex; align-items:center; gap:0.45em; margin-top:1.5rem;
-  font-family:'JetBrains Mono', monospace; font-size:0.68rem;
-  letter-spacing:0.1em; text-transform:uppercase;
-  color:var(--butter); text-decoration:none;
-  border-bottom:1px solid rgba(244,217,143,0.35); padding-bottom:2px;
+  display:inline-flex; align-items:center; gap:0.5em; margin-top:1.75rem;
+  padding:0.95rem 1.6rem; border-radius:100px;
+  font-family:'Inter', sans-serif; font-weight:500; font-size:0.98rem;
+  background:var(--ink); color:var(--paper); text-decoration:none; border:none;
+  transition:all 0.2s ease;
 }
-.pms-door:hover { border-bottom-color:var(--butter); }
+.pms-door span { display:inline-block; transition:transform 0.25s; }
+.pms-door:hover { background:var(--terra-dark); transform:translateY(-1px); }
+.pms-door:hover span { transform:translateX(3px); }
 
 
 
@@ -1303,7 +1310,7 @@ footer {
 <!-- ══════════════════ HERO · FILMIC VIDEO ══════════════════ -->
 <section class="hero">
   <video class="hero-video" autoplay loop muted playsinline preload="auto">
-    <source src="img/sfeer.mp4" type="video/mp4">
+    <source src="../img/sfeer.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-grain"></div>
@@ -1330,10 +1337,10 @@ footer {
       <span class="kicker">00 / Intro</span>
       <h2>So what is <em>rumo</em>, exactly?</h2>
       <p>Well, we are hotel software. But not the kind you are thinking of. Not an enterprise platform at two thousand a month that then needs three weeks of training. Just <em>one</em> system that does what it should. You open it in the morning and you know what today looks like.</p>
-      <a href="../pms.html" class="pms-door">Everything about the PMS <span>&rarr;</span></a>
+      <a href="pms.html" class="pms-door">Everything about the PMS <span>&rarr;</span></a>
     </div>
     <div class="toonband-beeld">
-      <div class="appvenster" role="img" aria-label="De reservatiekalender in rumo: kamers onder elkaar, dagen ernaast, en boekingen als balken die je van kamer naar kamer sleept.">
+      <div class="appvenster" role="img" aria-label="The reservation calendar in rumo: rooms down the side, days across the top, and bookings as bars you drag from room to room.">
         <div class="av-kop">
           <h4>Reservations</h4>
           <p>An overview of every room and the bookings ahead</p>
@@ -1346,13 +1353,13 @@ footer {
           <span class="av-rek"></span>
           <span class="av-knop">Week</span>
           <span class="av-schaar" aria-label="Split a stay in two"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></span>
-          <span class="av-datum">2 April 2026</span>
+          <span class="av-datum" data-datum="vandaag-jaar">2 april 2026</span>
           <span class="av-vandaag">Today</span>
         </div>
         <div class="av-raster">
-          <div class="av-dagen">
+          <div class="av-dagen" data-kalender>
             <span></span>
-            <span>Wed<b>1</b></span><span class="nu">Thu<b>2</b></span><span>Fri<b>3</b></span>
+                        <span>Wed<b>1</b></span><span class="nu">Thu<b>2</b></span><span>Fri<b>3</b></span>
             <span>Sat<b>4</b></span><span>Sun<b>5</b></span><span>Mon<b>6</b></span><span>Tue<b>7</b></span>
           </div>
 
@@ -1423,7 +1430,7 @@ footer {
       <span class="kicker">Yes, but what about my current system?</span>
       <h2>You get to know rumo and set it up while your old system <em>simply keeps running.</em></h2>
       <p class="overstap-copy">Your old PMS keeps working while you set rumo up, and you only switch Booking.com over once everything is right. All your history and your future reservations come across in the meantime.</p>
-      <a href="../overstappen.html" class="btn-ink">How the switch works <span>&rarr;</span></a>
+      <a href="switching.html" class="btn-ink">How the switch works <span>&rarr;</span></a>
     </div>
     <div>
       <ul class="overstap-punten">
@@ -1457,7 +1464,7 @@ footer {
         </div>
         <p><strong>Belgian product</strong>Built in Ghent. Support in Dutch, French and English.</p>
       </div>
-      <a class="trust-item fade-up" href="../veiligheid.html" style="transition-delay:0.2s">
+      <a class="trust-item fade-up" href="security.html" style="transition-delay:0.2s">
         <div class="ic">
           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
             <rect x="3" y="11" width="18" height="11" rx="2"/>
@@ -1477,7 +1484,7 @@ footer {
     <h2>No demo call.<br>Just <em>14 days</em> to play.</h2>
     <p>No credit card, no obligations, no "account manager" ringing you every week. You leave your details, we set up your environment full of made-up reservations and email you the keys. Usually within the working day. Not for you? Then it quietly disappears. No hard feelings.</p>
     <a href="#demo" class="btn-paper">Try it free for 14 days <span>→</span></a>
-    <p class="final-fine">No credit card · Cancellable monthly after 6 months · <a href="../overstappen.html">Free data migration</a></p>
+    <p class="final-fine">No credit card · Cancellable monthly after 6 months · <a href="switching.html">Free data migration</a></p>
   </div>
 </section>
 
@@ -1498,17 +1505,17 @@ footer {
         <li><a href="features.html#facturatie">Invoicing &amp; Peppol</a></li>
         <li><a href="features.html#housekeeping">Housekeeping</a></li>
         <li><a href="features.html#rapporten">Reports</a></li>
-        <li><a href="../veiligheid.html">Security</a></li>
+        <li><a href="security.html">Security</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-label">Rumo</div>
       <ul class="footer-links">
         <li><a href="what-drives-us.html">What drives us?</a></li>
-        <li><a href="../uitgelegd/index.html">Explained (in Dutch)</a></li>
-        <li><a href="../overstappen.html">Switching over (in Dutch)</a></li>
+        <li><a href="explained/index.html">Explained (in Dutch)</a></li>
+        <li><a href="switching.html">Switching over (in Dutch)</a></li>
         <li><a href="pricing.html">And erm, what does it cost?</a></li>
-        <li><a href="../kb.html">Help centre</a></li>
+        <li><a href="kb.html">Help centre</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
         <li><a href="mailto:hello@rumo.eu">Send us an email</a></li>
@@ -1528,7 +1535,7 @@ footer {
   </div>
   <div class="footer-bottom">
     <span>© 2026 Rumo · Gent, BE</span>
-    <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+    <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
   </div>
 </footer>
 

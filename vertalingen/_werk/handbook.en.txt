@@ -1,0 +1,96 @@
+1|The handbook · rumo
+2|Reception procedures, house rules and emergency plans in one searchable place. Everyone works the same way, new colleagues included. And Rudy reads along.
+3|<a href="faq.html">FAQ</a>
+4|The handbook
+5|One place for<br>everything you <em>know</em>.
+6|Procedures, house rules and emergency plans in one searchable place instead of scattered across Word, WhatsApp and the shoebox behind the desk. On the phone of whoever needs it, during the shift.
+7|It holds <em>your</em> knowledge, not ours. Everyone reads; writing is for managers and admins.
+8|Who sees what
+9|Not everything is <em>for everyone.</em>
+10|You make your own categories and shield them per role. That matters more than it sounds: a housekeeper looking at forty reception articles also scrolls past the four that are meant for her.
+11|A shielded category is not in her list, and Rudy does not quote from it to her
+12|You drag articles into the order you want, on a phone too
+13|Attachments up to 25 MB. PDFs and photos open in the screen itself
+14|Handbook
+15|36 articles &middot; 12 colleagues
+16|<span class="aan">All</span><span>Reception</span><span>Housekeeping</span><span>Kitchen</span><span>Safety</span><span>Notices</span>
+17|<span class="sub">Reception</span><br><b>Check-in on a late arrival</b>
+18|Read by 12
+19|<span class="sub">Housekeeping</span><br><b>Preparing a room for arrival</b>
+20|<span class="sub">Reception &middot; shielded</span><br><b>Safe and cash procedure</b>
+21|Reception only
+22|Drag to change the order
+23|Read
+24|Change a procedure and it is <em>unread again.</em>
+25|Someone confirms per article that they have read it, and that confirmation hangs on the version that stood there at the time. Change the article and it comes back on the list of exactly those people.
+26|Not as a punishment, but because it is true: they read something that is no longer there. And that is the most dangerous kind of not-knowing, because whoever knew the old version will not go back and look on their own.
+27|The old confirmation is kept. That is your proof that they did know the previous version.
+28|Reception &middot; 12 colleagues
+29|<span class="al-cat">Breakfast</span><br><b>Gluten-free and other allergies</b>
+30|<span class="al-cat">Safety</span><br><b>What to do when the fire alarm goes off</b>
+31|<span class="al-merk was">Read by 12
+32|Unread for 12
+33|<span class="al-cat">Reception</span><br><b>Late check-out and extensions</b>
+34|Read by 11
+35|<span class="al-cat">Housekeeping</span><br><b>Preparing a room for arrival</b>
+36|Finding it back
+37|The real test is <em>quarter past eleven at night.</em>
+38|A handbook is not a success because it has been written. It is a success when someone finds something in it at quarter past eleven with a guest standing in front of them.
+39|Searches inside the text of your attached PDFs too
+40|Works on a phone, without a separate app
+41|A search with no result points you at a gap in your procedures
+42|Search
+43|3 results
+44|<b>late check-in</b><span class="chip grijs">Ctrl+K</span>
+45|Articles
+46|<span class="sub">Reception &middot; 4 steps</span><br><b>Check-in on a late arrival</b>
+47|Open
+48|<span class="sub">Reception &middot; 2 steps</span><br><b>Sending a door code through the portal</b>
+49|<span class="sub">Safety &middot; PDF, page 3</span><br><b>Night procedure &middot; outside office hours</b>
+50|Works on the phone, no separate app
+51|Writing
+52|Write it in rumo itself. <em>Not somewhere else.</em>
+53|No Word file to import. You type it straight in, with photos in the text and a video as a link to YouTube or Vimeo.
+54|<strong>A photo is not decoration here.</strong> A sentence describes a standard, a photo <em>is</em> the standard. That saves you half an hour of discussion per new colleague.
+55|That video sits at YouTube, not with us. If someone sets it to private, your procedure is empty without you noticing
+56|Edit article
+57|<b>Preparing a room for arrival</b><span class="chip grijs">Version 3</span>
+58|Contents
+59|<span class="sub">Text</span><br><b>Six steps, in order</b>
+60|Done
+61|<span class="sub">Photo</span><br><b>This is how the bed looks when it is finished</b>
+62|In the text
+63|<span class="sub">Video</span><br><b>Making the bed &middot; link to YouTube</b>
+64|Plays here
+65|Publish
+66|Everyone reads; writing is for managers and admins
+67|Source for Rudy
+68|What you write, <em>Rudy knows.</em>
+69|If someone asks about the way you work, Rudy searches the handbook and adds the article he took it from. He respects the same shielding per role.
+70|If the answer is nowhere, he says so and offers to write an article about it. That is the cheapest signal you will get about a gap in your own procedures.
+71|About rumo itself he answers from the manual. Ask how the calendar works and that comes from us; ask what you do when the fire alarm goes off and that comes from you.
+72|Other features
+73|The handbook is <em>one layer</em>.<br>There is more around it.
+74|The PMS, Rudy, prevention, channel manager, guest portal. All in the same rumo, all one system together.
+75|The <em>PMS</em>
+76|Read more →
+77|<em>Rudy</em>
+78|<em>Prevention</em> &amp; wellbeing
+79|<em>Channel</em> manager
+80|Guest <em>portal &amp; booking engine</em>
+81|Try it yourself
+82|No demo call.<br>Just <em>14 days</em> to play.
+83|No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations, and a handbook you can start filling straight away. Not for you? Then it quietly disappears.
+84|Try it free for 14 days <span>→</span>
+85|No credit card · Cancellable monthly after 6 months · <a href="overstappen.html">Free data migration</a>
+86|<a href="https://wa.me/32485382828">WhatsApp</a>
+87|<a href="features.html#integraties">Booking.com</a>
+88|<a href="features.html#integraties">Airbnb</a>
+89|<a href="features.html#integraties">Exact Online</a>
+90|<a href="features.html#integraties">Peppol</a>
+91|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+92|Menu
+93|The handbook in rumo: categories with their articles, where the Reception category is shielded from housekeeping.
+94|The handbook in rumo: a changed fire procedure jumps back to unread for the colleagues who had confirmed the previous version.
+95|Searching the handbook: three results for late check-in, one of them from the text of an attached PDF.
+96|Writing an article in rumo: text, a photo as the standard and a video as a link.

@@ -1,0 +1,66 @@
+1|Vie privée · rumo
+2|Comment rumo et l'hôtel où vous avez réservé traitent vos données. En langage courant. Ce que nous collectons, pourquoi, avec qui nous partageons, et ce que vous pouvez en faire.
+3|<a href="faq.html">FAQ</a>
+4|Comment nous traitons vos <em>données</em>.
+5|En langage courant. Ce que nous collectons, pourquoi, avec qui nous partageons, et ce que vous pouvez en faire.
+6|Version<br> <strong>17 mai 2026</strong>
+7|<span>RGPD</span> <span>ePrivacy</span> <span>Droit belge</span>
+8|Dernière mise à jour · 17 mai 2026
+9|1. Qui est responsable ?
+10|Une réservation d'hôtel concerne deux parties : <strong>l'hôtel</strong> où vous séjournez, et <strong>rumo</strong>, le logiciel avec lequel cet hôtel travaille. Nous avons chacun un rôle différent.
+11|<strong>L'hôtel</strong> (<span class="legal-controller" id="controller-name">l'hôtel où vous avez réservé</span>) est le <strong>responsable du traitement</strong>. C'est lui qui décide quelles données sont nécessaires, combien de temps elles sont conservées et avec qui elles sont partagées en dehors de rumo.
+12|<strong>Rumo</strong> (Rumo BV, Gand, Belgique) est le <strong>sous-traitant</strong>. Nous fournissons le logiciel, hébergeons les serveurs et veillons à ce que tout tourne. Nous ne faisons rien de vos données en dehors de ce que l'hôtel nous demande, ce qui est fixé dans un accord de traitement.
+13|Vous avez une question sur votre réservation ou vos données ? <strong>Contactez d'abord l'hôtel.</strong> Il a la vue d'ensemble et peut vous aider le plus vite. Nous intervenons si nécessaire.
+14|2. Ce que nous savons de vous
+15|Quand vous réservez une chambre
+16|Nom, adresse mail, numéro de téléphone et adresse
+17|Les dates de votre séjour, le type de chambre et les remarques éventuelles que vous laissez
+18|Les données de paiement, qui vont directement à notre partenaire de paiement Stripe ; nous ne voyons jamais nous-mêmes votre numéro de carte complet
+19|À votre arrivée et pendant votre séjour
+20|Les données d'identité de votre carte d'identité ou de votre passeport (obligatoire selon l'arrêté royal du 27 avril 2007 pour les clients d'hôtel en Belgique)
+21|La signature sur votre fiche d'enregistrement, si l'hôtel la recueille de façon numérique
+22|Ce que vous consommez dans l'hôtel et la facturation qui va avec
+23|Ce que nous <em>ne</em> faisons <em>pas</em>
+24|Pas de pixels publicitaires, pas de Google Analytics, pas de pixel Facebook, pas de « publicité personnalisée ». Sur notre site, un compteur européen sans cookies enregistre combien de visiteurs passent ; il ne construit aucun profil (voir <a href="cookies.html">Cookies</a>)
+25|Pas de vente ni de transmission de vos données à des tiers au-delà de ce qui figure ci-dessous sous « sous-traitants »
+26|Pas de profilage automatisé produisant des effets juridiques à votre égard
+27|3. Pourquoi nous les avons
+28|La loi (article 6 du RGPD) exige une raison valable pour chaque donnée. Pour nous, cela revient à :
+29|<strong>L'exécution de votre contrat de réservation.</strong> Nom, coordonnées, dates de séjour. Sans cela, nous ne pouvons tout simplement pas vous donner de chambre.
+30|<strong>Une obligation légale.</strong> Données d'identité (AR du 27 avril 2007), facturation et administration TVA (Code belge de la TVA, 7 ans), déclarations aux services de police là où elles sont obligatoires.
+31|<strong>Un intérêt légitime.</strong> Sécurisation des systèmes, prévention de la fraude, traitement des plaintes. Toujours mis en balance avec vos intérêts.
+32|<strong>Votre consentement.</strong> Les mails marketing ou les newsletters de l'hôtel, uniquement si vous dites explicitement oui, et vous pouvez toujours le retirer.
+33|4. Avec qui nous partageons
+34|Rumo fait appel à quelques autres entreprises pour faire fonctionner le service. Ce sont nos <strong>sous-traitants ultérieurs</strong>. Tous avec un accord de traitement, tous dans l'UE ou sous un mécanisme de transfert valable.
+35|<strong>Scaleway</strong> (FR), hébergement des serveurs et de la base de données
+36|<strong>Stripe</strong> (IE/US), traitement des paiements, conservation des cartes
+37|<strong>Channex</strong> (UK), connexion avec Booking.com, Expedia, Airbnb et d'autres canaux de distribution
+38|<strong>Brevo</strong> (FR), mails transactionnels (confirmations, rappels)
+39|<strong>Mistral</strong> (FR, via Scaleway), fonctions d'IA lorsque votre hôtel les utilise (par ex. classement de documents ou assistant interne pour le personnel). Jamais utilisé pour entraîner un modèle sur des données clients.
+40|Par ailleurs, l'hôtel peut lui-même relier à rumo d'autres systèmes que nous ne choisissons pas, par exemple un logiciel comptable, une caisse ou un système de clés. Ceux-là sont mentionnés dans leur propre déclaration de confidentialité.
+41|5. Combien de temps nous les conservons
+42|<strong>Factures et pièces comptables</strong> : 7 ans (Code belge de la TVA)
+43|<strong>Registre des clients avec données d'identité</strong> : au moins jusqu'à la fin de l'année civile suivante (AR du 27 avril 2007), en pratique souvent 5 ans
+44|<strong>Historique des réservations et correspondance</strong> : aussi longtemps que c'est utile à la relation avec l'hôtel, puis effacé ou anonymisé
+45|<strong>Carte de paiement tokenisée</strong> : jusqu'à ce que la réservation soit entièrement réglée, puis supprimée, sauf si vous la conservez explicitement pour un prochain séjour
+46|<strong>Consentement marketing</strong> : jusqu'à ce que vous le retiriez
+47|6. Ce que vous pouvez faire
+48|Le RGPD vous donne six droits concrets. Cela sonne solennel ; cela signifie surtout que vous avez votre mot à dire.
+49|<strong>Accès</strong> : demander quelles données nous avons sur vous
+50|<strong>Rectification</strong> : faire corriger des erreurs
+51|<strong>Effacement</strong> : demander que tout soit effacé, sauf ce que nous devons légalement conserver
+52|<strong>Limitation</strong> : demander la suspension temporaire du traitement
+53|<strong>Portabilité</strong> : obtenir une copie dans un format réutilisable
+54|<strong>Opposition</strong> : vous opposer à un traitement fondé sur l'intérêt légitime
+55|Adressez-vous d'abord à <span class="legal-controller" id="controller-name-2">l'hôtel où vous avez réservé</span>. Il peut le régler pour vous dans rumo. Si cela n'aboutit pas dans un délai raisonnable, ou s'il s'agit de rumo lui-même (notre infrastructure logicielle par exemple), écrivez à <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>.
+56|Pas satisfait ? Vous pouvez toujours introduire une plainte auprès de l'<a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">Autorité de protection des données</a> à Bruxelles.
+57|7. Contact
+58|<strong>Rumo BV</strong><br> Gand, Belgique<br> <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a> · <a href="mailto:hello@rumo.eu">hello@rumo.eu</a>
+59|Vous avez une question sur ce texte, ou vous trouvez quelque chose peu clair ? Envoyez-nous un mail. Nous adaptons là où c'est possible.
+60|<a href="https://wa.me/32485382828">WhatsApp</a>
+61|<a href="features.html#integraties">Booking.com</a>
+62|<a href="features.html#integraties">Airbnb</a>
+63|<a href="features.html#integraties">Exact Online</a>
+64|<a href="features.html#integraties">Peppol</a>
+65|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+66|Menu

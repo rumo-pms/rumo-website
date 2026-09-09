@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../../gate.js"></script>
+<script src="../../demo-form.js?v=2" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vous formez plus souvent, des gens qui sont là moins souvent · expliqué par rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Il y a de plus en plus d'étudiants et de flexi-jobs derrière votre comptoir, ils restent moins longtemps, et comme ils travaillent moins souvent il faut plus de temps avant qu'un geste soit vraiment acquis. Sur ce qui s'écrit une fois et ce qui doit s'exercer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared.css">
+<link rel="stylesheet" href="../../uitgelegd/artikel.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="../features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="../ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="../tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../a-propos.html">À propos</a></li>
+    <li><a href="../index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../../uitgelegd/opleiden.html">NL</a>
+      <a href="../../en/explained/training.html">EN</a>
+      <a href="formation.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <a href="index.html" class="terug">← Expliqué</a>
+      <span class="kicker">Formation</span>
+      <h1>Vous formez plus souvent, des gens qui sont là <em>moins souvent.</em></h1>
+      <p class="lead">Un collaborateur fixe, vous le formez une fois et vous en profitez des années. Mais il y a de plus en plus d'étudiants et de flexi-jobs derrière votre comptoir, ils restent moins longtemps, et comme ils travaillent moins souvent il faut aussi plus de temps avant qu'un geste soit vraiment acquis.</p>
+    </div>
+    <div class="ph-side-illus">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- Een scherm met daarin een gestippelde kopie, en twee mensen ervoor -->
+        <rect x="18" y="20" width="84" height="56" rx="4"/>
+        <rect x="30" y="30" width="60" height="36" rx="3" stroke-dasharray="4 4"/>
+        <line x1="60" y1="76" x2="60" y2="86"/>
+        <line x1="42" y1="86" x2="78" y2="86"/>
+        <circle cx="34" cy="102" r="7"/>
+        <circle cx="86" cy="102" r="7"/>
+        <path d="M46,102 L74,102" stroke-dasharray="3 3"/>
+      </svg>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>Lecture 3 minutes</span> <span>Pour qui forme des gens</span> <span>Vaut aussi sans rumo</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ARTIKEL ═══════════════════════ -->
+<section class="artikel">
+  <div class="artikel-inner fade-up">
+
+    <h2>Deux choses qui se produisent <em>en même temps</em></h2>
+    <p>La première est une question de nombre. Là où vous formiez autrefois un réceptionniste fixe, il y a maintenant un étudiant pour les week-ends, un flexi pour les mois chargés et quelqu'un qui vient essayer une saison. Plus de personnes, et chacune reste moins longtemps. La même explication sort donc plus souvent.</p>
+    <p>La seconde est moins visible et pèse davantage. <strong>Qui travaille moins souvent apprend plus lentement.</strong> Non pas parce qu'il comprend moins bien, mais parce qu'un geste s'acquiert par la répétition. Un collaborateur fixe fait un check-out cinq fois par semaine et le fait les yeux fermés après un mois. Celui qui travaille un samedi sur deux fera peut-être ce check-out vingt fois dans le même semestre, et recommence un peu à zéro à chaque service.</p>
+    <p>Vous formez donc plus souvent, des gens chez qui cela prend plus de temps. Ces deux facteurs se multiplient.</p>
+
+    <h2>La répétition est précisément ce qui a <em>disparu</em></h2>
+    <p>La formation classique compte tacitement sur la répétition. Vous expliquez une chose une fois, le nouveau la revoit ensuite chaque jour, et après deux semaines c'est acquis. Cela fonctionne tant que cette personne est là tous les jours.</p>
+    <p>Supprimez cette répétition et toute la construction s'écroule. Et quelque chose prend sa place, que vous ne voulez pas : le collègue qui assume en plus. Quelques questions à chaque service, à qui se trouve à côté. Cela coûte du temps à deux personnes au lieu d'une, et cela ne se voit nulle part.</p>
+
+    <h2>La moitié ne peut <em>pas</em> s'écrire</h2>
+    <p>Une formation contient deux sortes de choses.</p>
+    <ul>
+      <li><strong>Des choses que quelqu'un doit savoir.</strong> Où sont les clés de réserve, avec quelle société de taxis vous travaillez, quelle est la règle d'annulation. Cela peut s'écrire, et vous n'avez alors plus jamais à le dire.</li>
+      <li><strong>Des choses que quelqu'un doit savoir faire.</strong> Enregistrer un groupe, faire une note de crédit, traiter un no-show.</li>
+    </ul>
+    <p>Cette seconde liste, personne ne l'acquiert en lisant. Vous pouvez l'écrire parfaitement, avec des captures d'écran et des flèches sur les bons boutons, et cette personne transpirera quand même la première fois que cela devra vraiment se faire. Et moins elle travaille souvent, plus cette première fois est éloignée de l'explication.</p>
+
+  </div>
+</section>
+
+<section class="uitroep">
+  <div class="uitroep-inner fade-up">
+    <p>Une formation n'est pas réussie parce qu'elle a été <em>donnée</em>.</p>
+    <span class="uitroep-bij">Elle est réussie quand le geste qui suit est juste</span>
+  </div>
+</section>
+
+<section class="artikel" style="padding-top:4rem">
+  <div class="artikel-inner fade-up">
+
+    <h2>Et on ne peut s'exercer que dans le <em>vrai</em> système</h2>
+    <p>C'est là que le nœud se trouve. Le seul endroit où quelqu'un peut faire une vraie facture, c'est votre vrai hôtel. Avec un vrai client, de l'argent réel et une comptabilité qui retient tout. Les nouveaux apprennent donc les gestes difficiles <strong>le jour où cela tourne mal</strong> : sous pression, avec quelqu'un qui attend.</p>
+    <p>La solution habituelle est une réservation d'essai au nom de « Test Test ». Un check-in s'y exerce très bien. Mais dès qu'il est question d'argent, cette facture entre dans votre numérotation et cette note de crédit dans votre comptabilité. Et puis il y a autre chose que l'on oublie systématiquement.</p>
+
+    <div class="kader">
+      <p><strong>Le courrier est la partie la plus dangereuse.</strong> Un check-in d'exercice envoie une confirmation. Une annulation d'exercice envoie une annulation. Un lien de paiement d'exercice est un vrai lien de paiement, avec un vrai montant dessus.</p>
+      <p>C'est la première question à poser sur tout environnement d'entraînement : <em>qu'est-ce qui peut sortir d'ici ?</em> À côté du courrier, ce sont vos canaux, vos paiements et vos serrures.</p>
+    </div>
+
+    <h2>Ce que vous pouvez faire dès demain, <em>même sans</em> logiciel</h2>
+    <ul>
+      <li><strong>Écrivez ce que vous avez dit deux fois.</strong> C'est la deuxième fois qui est le signal, pas la sixième. Cinq phrases qui existent valent mieux qu'un chapitre que vous comptez écrire.</li>
+      <li><strong>Faites une liste de dix gestes</strong> qu'un nouveau doit savoir faire. Dix, pas trente. Qui doit apprendre trente choses n'en apprend aucune.</li>
+      <li><strong>Convenez, geste par geste, de ce à quoi ressemble « bien »</strong>, en une phrase, avant de laisser quelqu'un s'exercer. Regardez le résultat et non les clics : il y a presque toujours plus d'un bon chemin.</li>
+      <li><strong>Faites parcourir vos procédures à quelqu'un la veille de son premier service.</strong> Non pas pour les connaître, mais pour savoir qu'elles existent.</li>
+    </ul>
+
+    <div class="artikel-slot">
+      <p>Dans rumo, il existe une copie d'entraînement pour cela : l'hôtel de formation. Gratuit, et il ne compte pas comme un deuxième hôtel. On y trouve la configuration de votre propre hôtel avec des clients inventés, et les quatre fils vers l'extérieur sont coupés : le courrier ne part pas, il n'y a pas de liaison avec les canaux, aucune carte n'est jamais débitée et les serrures ne sont pas reprises.</p>
+      <p>L'exercice lui-même est une conversation avec Rudy : il donne une consigne à la fois, vous l'exécutez dans l'application, et ensuite il regarde dans les données si c'est réellement là. Il ne juge donc pas lui-même. Votre progression est privée, y compris pour le manager, et une fois par semaine tout est vidé et rempli à nouveau.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Encore une chose comprise ?</span>
+    <h2>Nous préférons l'<em>expliquer</em><br>plutôt que de le vendre.</h2>
+    <p>Ce qui vient avec la gestion d'un hôtel : contrôles, allotements, commissions, formation. Nous avons dû le comprendre nous-mêmes et nous écrivons ce que nous avons trouvé.</p>
+    <a href="index.html" class="btn-paper">Tout ce que nous expliquons <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="../migration.html">Migration des données offerte</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="../features.html">Fonctionnalités</a></li>
+        <li><a href="../features.html#integraties">Intégrations</a></li>
+        <li><a href="../securite.html">Sécurité</a></li>
+        <li><a href="../tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="../kb.html">Centre d'aide</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="../ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="index.html">Expliqué</a></li>
+        <li><a href="../migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="../a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="../features.html#integraties">Booking.com</a></li>
+        <li><a href="../features.html#integraties">Airbnb</a></li>
+        <li><a href="../features.html#integraties">Exact Online</a></li>
+        <li><a href="../features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="../privacy.html">Confidentialité</a> · <a href="../cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

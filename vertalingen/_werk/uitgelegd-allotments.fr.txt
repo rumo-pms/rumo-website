@@ -1,0 +1,46 @@
+1|Cette demande fait-elle partie du congrès ou pas ? · expliqué par rumo
+2|Garder des chambres pour un congrès ou une entreprise paraît simple jusqu'à ce que vous oubliiez la date d'échéance. Ce qu'est réellement un allotement, où cela dérape, et ce que cela vous coûte.
+3|<a href="../faq.html">FAQ</a>
+4|← Expliqué
+5|Groupes et allotements
+6|« Cette demande fait-elle partie du congrès, <em>ou pas ?</em> »
+7|Il y a un congrès dans le coin, un organisateur a fait réserver vingt chambres, et un mail arrive de quelqu'un qui dit faire partie de ce congrès. Est-il dans le bloc ou non ? De cette seule question dépendent le tarif convenu que vous lui accordez ou non, et le fait d'avoir vendu vingt chambres ou vingt-cinq.
+8|<span>Lecture 3 minutes</span> <span>Pour qui travaille avec des groupes</span> <span>Vaut aussi sans rumo</span>
+9|Un allotement <em>n'est pas un bloc de chambres</em>
+10|C'est la première erreur de raisonnement, et toutes les autres en découlent. Beaucoup d'hôtels ferment vingt nuits dans le calendrier, y collent un rappel dans Outlook, et poursuivent en confiance.
+11|Mais un allotement est une <strong>promesse avec une date d'échéance</strong> : un nombre de chambres d'un certain type, à un tarif convenu, jusqu'à un jour donné. Ce qui n'est pas réservé à cette date revient chez vous. Trois choses donc, et fermer des chambres n'en règle qu'une.
+12|La question que l'organisateur <em>va poser</em>
+13|À mi-parcours, l'organisateur appelle, et il ne demande pas combien de chambres vous avez gardées. Il le sait. Il demande <strong>combien ont effectivement été réservées entre-temps</strong>.
+14|C'est votre pickup, et c'est le seul chiffre qui compte ici. Il détermine s'il doit encore relancer, si vous pouvez encore libérer quelque chose, et si vous referez affaire l'an prochain. Qui tient son contingent dans un calendrier fermé ne peut répondre à cette question qu'en comptant des réservations et en espérant que cela colle. Attention à un détail : une annulation ou un no-show n'a <em>pas</em> consommé votre bloc et ne compte donc pas.
+15|L'oubli le plus cher : le <em>cut-off</em>
+16|Le cut-off est le jour où l'accord s'arrête et où les chambres invendues repartent sur le marché ordinaire. Si vous l'oubliez, il ne se passe précisément rien. Pas de message d'erreur, pas de double réservation, pas de client fâché. Vous gardez simplement huit chambres pour un groupe qui ne va plus les réserver, précisément les jours où il y a un congrès en ville.
+17|<strong>Et puis l'inverse.</strong> Celui qui remet bien ses chambres en vente à la main doit le faire à deux endroits : dans son propre planning et dans la disponibilité qui part vers Booking.com et les autres. Si vous ne faites que le premier, ces chambres sont libres dans votre calendrier mais restent fermées sur les canaux. Le même oubli, mais invisible, car sur votre écran tout paraît correct.
+18|Un allotement n'est pas un bloc de chambres. C'est une promesse avec <em>une date d'échéance.</em>
+19|Trois choses, et toutes les trois expirent différemment
+20|Retour au <em>mail</em>
+21|Lors d'un tel congrès, deux flux se mélangent. Les participants qui réservent via l'organisateur appartiennent au bloc, au tarif convenu. Ceux qui s'organisent eux-mêmes n'ont rien à voir avec cette agence et paient votre tarif normal. De l'extérieur, ces deux mails sont indiscernables : tous deux citent le congrès.
+22|La seule solution structurelle est de ne plus poser la question : laissez le participant réserver lui-même via un canal rattaché au contrat. Qui entre par là est dans le bloc, qui passe par la porte d'entrée ordinaire n'y est pas. Une exception à connaître : une réservation qui arrive par une OTA ne se rattache jamais d'elle-même à un contingent, même s'il s'agit manifestement de la même firme. Quelqu'un la relie à la main, sinon votre pickup est faux.
+23|Qui reçoit la <em>note ?</em>
+24|Avec des groupes, il y a presque toujours deux payeurs, et la limite ne passe pas par le client mais par le poste. La chambre va à l'entreprise, le petit-déjeuner peut-être aussi, mais son minibar et son parking sont à lui. La question n'est pas « qui paie cette réservation » mais « qui paie cette <strong>ligne</strong> ».
+25|Pour la taxe de séjour, il n'existe pas de réponse universellement juste : certaines entreprises la reprennent dans la facture centrale, d'autres estiment que c'est un frais personnel. C'est un accord que vous prenez. Mais encore faut-il l'avoir pris.
+26|Qu'en faire, même sans logiciel
+27|<strong>Mettez le cut-off dans un agenda qui sonne</strong>, une semaine avant la vraie date, pour pouvoir encore faire quelque chose de ces chambres.
+28|<strong>Convenez qui paie quoi par poste</strong>, pas par réservation. Chambre, petit-déjeuner, taxe de séjour, extras.
+29|<strong>Donnez aux groupes leur propre voie de réservation</strong> plutôt qu'une adresse mail.
+30|<strong>Comptez votre pickup sans les annulations</strong>, sinon vous annoncez à l'organisateur un chiffre trop beau.
+31|Dans rumo, c'est le module allotements. Vous fixez les blocs par type de chambre avec leur tarif et un cut-off, et ces chambres sont automatiquement retirées de ce qui part vers Booking.com et les autres canaux &eacute;galement de ce que votre propre page de réservation propose encore. Seul celui qui réserve via le lien propre au groupe peut entamer le bloc ; c'est bien à cela qu'il sert. Au cut-off, les chambres invendues repartent d'elles-mêmes en vente, sur les canaux aussi, avec une mention dans l'historique ; vous pouvez également les libérer plus tôt à la main. Une réservation qui dépasserait le bloc est refusée au moment de l'enregistrement : deux personnes ne peuvent donc pas prendre toutes deux la dernière chambre.
+32|Les participants reçoivent un lien de réservation propre contenant une clé aléatoire, relié au moteur de réservation, dans lequel ils ne voient que le bloc et le tarif convenu. Ce lien a atterri chez les mauvaises personnes ? Vous en créez un nouveau et l'ancien cesse de fonctionner. Vous pouvez imposer un paiement ou une garantie par carte sur ce lien. Et la facture centrale peut envoyer les chambres à l'entreprise tandis que les extras non désignés restent sur la note du client.
+33|Ce que rumo ne fait pas : rattacher malgré tout la réservation OTA évoquée plus haut. Cela reste du travail manuel.
+34|Encore une chose comprise ?
+35|Nous préférons l'<em>expliquer</em><br>plutôt que de le vendre.
+36|Ce qui vient avec la gestion d'un hôtel : contrôles, allotements, commissions, formation. Nous avons dû le comprendre nous-mêmes et nous écrivons ce que nous avons trouvé.
+37|Tout ce que nous expliquons <span>→</span>
+38|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="../overstappen.html">Migration des données offerte</a>
+39|<a href="index.html">Expliqué</a>
+40|<a href="https://wa.me/32485382828">WhatsApp</a>
+41|<a href="../features.html#integraties">Booking.com</a>
+42|<a href="../features.html#integraties">Airbnb</a>
+43|<a href="../features.html#integraties">Exact Online</a>
+44|<a href="../features.html#integraties">Peppol</a>
+45|<span>© 2026 Rumo · Gand, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+46|Menu

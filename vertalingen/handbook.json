@@ -1,0 +1,386 @@
+{
+  "Het handboek · rumo": {
+    "en": "The handbook · rumo",
+    "fr": "Le manuel · rumo"
+  },
+  "Receptieprocedures, huisregels, noodplannen op één doorzoekbare plek. Iedereen werkt op dezelfde manier, ook nieuwe medewerkers. En Rudy leest mee.": {
+    "en": "Reception procedures, house rules and emergency plans in one searchable place. Everyone works the same way, new colleagues included. And Rudy reads along.",
+    "fr": "Procédures de réception, règlement intérieur et plans d'urgence au même endroit, dans un texte que l'on peut chercher. Tout le monde travaille de la même façon, les nouveaux compris. Et Rudy lit par-dessus."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "Het handboek": {
+    "en": "The handbook",
+    "fr": "Le manuel"
+  },
+  "Eén plek voor<br>alles wat je <em>weet</em>.": {
+    "en": "One place for<br>everything you <em>know</em>.",
+    "fr": "Un seul endroit pour<br>tout ce que vous <em>savez</em>."
+  },
+  "Procedures, huisregels en noodplannen op één doorzoekbare plek in plaats van verspreid over Word, WhatsApp en de schoenendoos achter de balie. Op de telefoon van wie het nodig heeft, tijdens de shift.": {
+    "en": "Procedures, house rules and emergency plans in one searchable place instead of scattered across Word, WhatsApp and the shoebox behind the desk. On the phone of whoever needs it, during the shift.",
+    "fr": "Procédures, règlement et plans d'urgence au même endroit, au lieu d'être éparpillés entre Word, WhatsApp et la boîte à chaussures derrière le comptoir. Sur le téléphone de celui qui en a besoin, pendant son service."
+  },
+  "Het houdt <em>jouw</em> kennis bij, niet de onze. Iedereen leest, schrijven is voor managers en admins.": {
+    "en": "It holds <em>your</em> knowledge, not ours. Everyone reads; writing is for managers and admins.",
+    "fr": "Il retient <em>votre</em> savoir, pas le nôtre. Tout le monde lit ; écrire est réservé aux managers et aux admins."
+  },
+  "Wie ziet wat": {
+    "en": "Who sees what",
+    "fr": "Qui voit quoi"
+  },
+  "Niet alles hoort <em>voor iedereen.</em>": {
+    "en": "Not everything is <em>for everyone.</em>",
+    "fr": "Tout n'est pas <em>pour tout le monde.</em>"
+  },
+  "Je maakt je eigen categorieën en schermt ze af per rol. Dat is belangrijker dan het klinkt: een housekeeper die veertig receptieartikels ziet staan, scrollt ook voorbij de vier die wél voor haar zijn.": {
+    "en": "You make your own categories and shield them per role. That matters more than it sounds: a housekeeper looking at forty reception articles also scrolls past the four that are meant for her.",
+    "fr": "Vous créez vos propres catégories et vous les fermez par rôle. C'est plus important qu'il n'y paraît : une femme de chambre qui voit quarante articles de réception passe aussi à côté des quatre qui la concernent."
+  },
+  "Een afgeschermde categorie staat niet in haar lijst, en Rudy citeert er bij haar niet uit": {
+    "en": "A shielded category is not in her list, and Rudy does not quote from it to her",
+    "fr": "Une catégorie fermée n'apparaît pas dans sa liste, et Rudy ne la cite pas chez elle"
+  },
+  "Artikels sleep je zelf op volgorde, ook op een telefoon": {
+    "en": "You drag articles into the order you want, on a phone too",
+    "fr": "Vous faites glisser les articles dans l'ordre voulu, sur un téléphone aussi"
+  },
+  "Bijlagen tot 25 MB. Pdf's en foto's gaan open in het scherm zelf": {
+    "en": "Attachments up to 25 MB. PDFs and photos open in the screen itself",
+    "fr": "Pièces jointes jusqu'à 25 Mo. Les PDF et les photos s'ouvrent dans l'écran même"
+  },
+  "Handboek": {
+    "en": "Handbook",
+    "fr": "Manuel"
+  },
+  "36 artikels &middot; 12 collega's": {
+    "en": "36 articles &middot; 12 colleagues",
+    "fr": "36 articles &middot; 12 collègues"
+  },
+  "<span class=\"aan\">Alles</span><span>Receptie</span><span>Housekeeping</span><span>Keuken</span><span>Veiligheid</span><span>Mededelingen</span>": {
+    "en": "<span class=\"aan\">All</span><span>Reception</span><span>Housekeeping</span><span>Kitchen</span><span>Safety</span><span>Notices</span>",
+    "fr": "<span class=\"aan\">Tout</span><span>Réception</span><span>Housekeeping</span><span>Cuisine</span><span>Sécurité</span><span>Annonces</span>"
+  },
+  "<span class=\"sub\">Receptie</span><br><b>Check-in bij een late aankomst</b>": {
+    "en": "<span class=\"sub\">Reception</span><br><b>Check-in on a late arrival</b>",
+    "fr": "<span class=\"sub\">Réception</span><br><b>Check-in lors d'une arrivée tardive</b>"
+  },
+  "Gelezen door 12": {
+    "en": "Read by 12",
+    "fr": "Lu par 12"
+  },
+  "<span class=\"sub\">Housekeeping</span><br><b>Kamer klaarzetten voor aankomst</b>": {
+    "en": "<span class=\"sub\">Housekeeping</span><br><b>Preparing a room for arrival</b>",
+    "fr": "<span class=\"sub\">Housekeeping</span><br><b>Préparer une chambre pour une arrivée</b>"
+  },
+  "<span class=\"sub\">Receptie &middot; afgeschermd</span><br><b>Kluis en kassaprocedure</b>": {
+    "en": "<span class=\"sub\">Reception &middot; shielded</span><br><b>Safe and cash procedure</b>",
+    "fr": "<span class=\"sub\">Réception &middot; fermé</span><br><b>Procédure coffre et caisse</b>"
+  },
+  "Alleen receptie": {
+    "en": "Reception only",
+    "fr": "Réception uniquement"
+  },
+  "Slepen om de volgorde te wijzigen": {
+    "en": "Drag to change the order",
+    "fr": "Faites glisser pour changer l'ordre"
+  },
+  "Gelezen": {
+    "en": "Read",
+    "fr": "Lu"
+  },
+  "Wijzig je een procedure, dan is ze <em>weer ongelezen.</em>": {
+    "en": "Change a procedure and it is <em>unread again.</em>",
+    "fr": "Modifiez une procédure et elle est <em>de nouveau non lue.</em>"
+  },
+  "Iemand bevestigt per artikel dat hij het gelezen heeft, en die bevestiging hangt aan de versie die er toen stond. Pas je het artikel aan, dan komt het terug op de lijst van precies die mensen.": {
+    "en": "Someone confirms per article that they have read it, and that confirmation hangs on the version that stood there at the time. Change the article and it comes back on the list of exactly those people.",
+    "fr": "Chacun confirme article par article qu'il l'a lu, et cette confirmation est attachée à la version qui existait à ce moment-là. Modifiez l'article et il revient dans la liste de ces personnes-là exactement."
+  },
+  "Niet als straf, maar omdat het waar is: ze hebben iets gelezen dat er niet meer staat. En dat is de gevaarlijkste vorm van niet-weten, want wie de oude versie kende gaat niet uit zichzelf opnieuw kijken.": {
+    "en": "Not as a punishment, but because it is true: they read something that is no longer there. And that is the most dangerous kind of not-knowing, because whoever knew the old version will not go back and look on their own.",
+    "fr": "Non pas comme une punition, mais parce que c'est vrai : elles ont lu quelque chose qui n'existe plus. Et c'est la forme la plus dangereuse de ne pas savoir, car celui qui connaissait l'ancienne version ne va pas revérifier de lui-même."
+  },
+  "De oude bevestiging blijft bewaard. Dat is je bewijs dat ze de vórige versie kenden.": {
+    "en": "The old confirmation is kept. That is your proof that they did know the previous version.",
+    "fr": "L'ancienne confirmation est conservée. C'est votre preuve qu'elles connaissaient bien la version précédente."
+  },
+  "Receptie &middot; 12 collega's": {
+    "en": "Reception &middot; 12 colleagues",
+    "fr": "Réception &middot; 12 collègues"
+  },
+  "<span class=\"al-cat\">Ontbijt</span><br><b>Glutenvrij en andere allergie&euml;n</b>": {
+    "en": "<span class=\"al-cat\">Breakfast</span><br><b>Gluten-free and other allergies</b>",
+    "fr": "<span class=\"al-cat\">Petit-déjeuner</span><br><b>Sans gluten et autres allergies</b>"
+  },
+  "<span class=\"al-cat\">Veiligheid</span><br><b>Wat te doen bij brandalarm</b>": {
+    "en": "<span class=\"al-cat\">Safety</span><br><b>What to do when the fire alarm goes off</b>",
+    "fr": "<span class=\"al-cat\">Sécurité</span><br><b>Que faire en cas d'alarme incendie</b>"
+  },
+  "<span class=\"al-merk was\">Gelezen door 12": {
+    "en": "<span class=\"al-merk was\">Read by 12",
+    "fr": "<span class=\"al-merk was\">Lu par 12"
+  },
+  "Ongelezen bij 12": {
+    "en": "Unread for 12",
+    "fr": "Non lu chez 12"
+  },
+  "<span class=\"al-cat\">Receptie</span><br><b>Late check-out en verlengingen</b>": {
+    "en": "<span class=\"al-cat\">Reception</span><br><b>Late check-out and extensions</b>",
+    "fr": "<span class=\"al-cat\">Réception</span><br><b>Départ tardif et prolongations</b>"
+  },
+  "Gelezen door 11": {
+    "en": "Read by 11",
+    "fr": "Lu par 11"
+  },
+  "<span class=\"al-cat\">Housekeeping</span><br><b>Kamer klaarzetten voor aankomst</b>": {
+    "en": "<span class=\"al-cat\">Housekeeping</span><br><b>Preparing a room for arrival</b>",
+    "fr": "<span class=\"al-cat\">Housekeeping</span><br><b>Préparer une chambre pour une arrivée</b>"
+  },
+  "Terugvinden": {
+    "en": "Finding it back",
+    "fr": "Retrouver"
+  },
+  "De echte test is <em>kwart over elf 's avonds.</em>": {
+    "en": "The real test is <em>quarter past eleven at night.</em>",
+    "fr": "Le vrai test, c'est <em>onze heures et quart du soir.</em>"
+  },
+  "Een handboek is niet geslaagd omdat het geschreven is. Het is geslaagd als iemand er om kwart over elf iets in terugvindt terwijl er een gast voor hem staat.": {
+    "en": "A handbook is not a success because it has been written. It is a success when someone finds something in it at quarter past eleven with a guest standing in front of them.",
+    "fr": "Un manuel n'est pas réussi parce qu'il est écrit. Il est réussi quand quelqu'un y retrouve quelque chose à onze heures et quart, avec un client devant lui."
+  },
+  "Zoekt ook in de tekst van je bijgevoegde pdf's": {
+    "en": "Searches inside the text of your attached PDFs too",
+    "fr": "Cherche aussi dans le texte de vos PDF joints"
+  },
+  "Werkt op een telefoon, zonder aparte app": {
+    "en": "Works on a phone, without a separate app",
+    "fr": "Fonctionne sur un téléphone, sans application séparée"
+  },
+  "Een zoekopdracht zonder resultaat wijst je een gat in je procedures aan": {
+    "en": "A search with no result points you at a gap in your procedures",
+    "fr": "Une recherche sans résultat vous désigne un trou dans vos procédures"
+  },
+  "Zoeken": {
+    "en": "Search",
+    "fr": "Rechercher"
+  },
+  "3 resultaten": {
+    "en": "3 results",
+    "fr": "3 résultats"
+  },
+  "<b>late check-in</b><span class=\"chip grijs\">Ctrl+K</span>": {
+    "en": "<b>late check-in</b><span class=\"chip grijs\">Ctrl+K</span>",
+    "fr": "<b>check-in tardif</b><span class=\"chip grijs\">Ctrl+K</span>"
+  },
+  "Artikels": {
+    "en": "Articles",
+    "fr": "Articles"
+  },
+  "<span class=\"sub\">Receptie &middot; 4 stappen</span><br><b>Check-in bij een late aankomst</b>": {
+    "en": "<span class=\"sub\">Reception &middot; 4 steps</span><br><b>Check-in on a late arrival</b>",
+    "fr": "<span class=\"sub\">Réception &middot; 4 étapes</span><br><b>Check-in lors d'une arrivée tardive</b>"
+  },
+  "Openen": {
+    "en": "Open",
+    "fr": "Ouvrir"
+  },
+  "<span class=\"sub\">Receptie &middot; 2 stappen</span><br><b>Deurcode versturen via de portal</b>": {
+    "en": "<span class=\"sub\">Reception &middot; 2 steps</span><br><b>Sending a door code through the portal</b>",
+    "fr": "<span class=\"sub\">Réception &middot; 2 étapes</span><br><b>Envoyer un code de porte via le portail</b>"
+  },
+  "<span class=\"sub\">Veiligheid &middot; pdf, pagina 3</span><br><b>Nachtprocedure &middot; buiten de uren</b>": {
+    "en": "<span class=\"sub\">Safety &middot; PDF, page 3</span><br><b>Night procedure &middot; outside office hours</b>",
+    "fr": "<span class=\"sub\">Sécurité &middot; PDF, page 3</span><br><b>Procédure de nuit &middot; en dehors des heures</b>"
+  },
+  "Werkt op de telefoon, geen aparte app": {
+    "en": "Works on the phone, no separate app",
+    "fr": "Fonctionne sur le téléphone, sans application séparée"
+  },
+  "Schrijven": {
+    "en": "Writing",
+    "fr": "Écrire"
+  },
+  "Schrijf het in rumo zelf. <em>Niet ergens anders.</em>": {
+    "en": "Write it in rumo itself. <em>Not somewhere else.</em>",
+    "fr": "Écrivez-le dans rumo même. <em>Pas ailleurs.</em>"
+  },
+  "Geen Word-bestand om te importeren. Je tikt het rechtstreeks in, met foto's in de tekst en een filmpje als link naar YouTube of Vimeo.": {
+    "en": "No Word file to import. You type it straight in, with photos in the text and a video as a link to YouTube or Vimeo.",
+    "fr": "Pas de fichier Word à importer. Vous le tapez directement, avec des photos dans le texte et une vidéo sous forme de lien vers YouTube ou Vimeo."
+  },
+  "<strong>Een foto is hier geen versiering.</strong> Een zin beschrijft een norm, een foto <em>is</em> de norm. Dat scheelt je een half uur discussie per nieuwe medewerker.": {
+    "en": "<strong>A photo is not decoration here.</strong> A sentence describes a standard, a photo <em>is</em> the standard. That saves you half an hour of discussion per new colleague.",
+    "fr": "<strong>Ici, une photo n'est pas une décoration.</strong> Une phrase décrit une norme, une photo <em>est</em> la norme. Cela vous épargne une demi-heure de discussion par nouveau collègue."
+  },
+  "Dat filmpje staat bij YouTube, niet bij ons. Zet iemand het op privé, dan is je procedure leeg zonder dat je het merkt": {
+    "en": "That video sits at YouTube, not with us. If someone sets it to private, your procedure is empty without you noticing",
+    "fr": "Cette vidéo est chez YouTube, pas chez nous. Si quelqu'un la met en privé, votre procédure est vide sans que vous le remarquiez"
+  },
+  "Artikel bewerken": {
+    "en": "Edit article",
+    "fr": "Modifier l'article"
+  },
+  "<b>Kamer klaarzetten voor aankomst</b><span class=\"chip grijs\">Versie 3</span>": {
+    "en": "<b>Preparing a room for arrival</b><span class=\"chip grijs\">Version 3</span>",
+    "fr": "<b>Préparer une chambre pour une arrivée</b><span class=\"chip grijs\">Version 3</span>"
+  },
+  "Inhoud": {
+    "en": "Contents",
+    "fr": "Contenu"
+  },
+  "<span class=\"sub\">Tekst</span><br><b>Zes stappen, in volgorde</b>": {
+    "en": "<span class=\"sub\">Text</span><br><b>Six steps, in order</b>",
+    "fr": "<span class=\"sub\">Texte</span><br><b>Six étapes, dans l'ordre</b>"
+  },
+  "Klaar": {
+    "en": "Done",
+    "fr": "Terminé"
+  },
+  "<span class=\"sub\">Foto</span><br><b>Zo ligt het bed als het af is</b>": {
+    "en": "<span class=\"sub\">Photo</span><br><b>This is how the bed looks when it is finished</b>",
+    "fr": "<span class=\"sub\">Photo</span><br><b>Voici le lit quand il est fait</b>"
+  },
+  "In de tekst": {
+    "en": "In the text",
+    "fr": "Dans le texte"
+  },
+  "<span class=\"sub\">Filmpje</span><br><b>Bed opmaken &middot; link naar YouTube</b>": {
+    "en": "<span class=\"sub\">Video</span><br><b>Making the bed &middot; link to YouTube</b>",
+    "fr": "<span class=\"sub\">Vidéo</span><br><b>Faire le lit &middot; lien vers YouTube</b>"
+  },
+  "Speelt hier af": {
+    "en": "Plays here",
+    "fr": "Se lit ici"
+  },
+  "Publiceren": {
+    "en": "Publish",
+    "fr": "Publier"
+  },
+  "Iedereen leest, schrijven is voor managers en admins": {
+    "en": "Everyone reads; writing is for managers and admins",
+    "fr": "Tout le monde lit ; écrire est réservé aux managers et aux admins"
+  },
+  "Bron voor Rudy": {
+    "en": "Source for Rudy",
+    "fr": "Source pour Rudy"
+  },
+  "Wat je schrijft, <em>weet Rudy.</em>": {
+    "en": "What you write, <em>Rudy knows.</em>",
+    "fr": "Ce que vous écrivez, <em>Rudy le sait.</em>"
+  },
+  "Vraagt iemand iets over jullie manier van werken, dan zoekt Rudy in het handboek en zet hij het artikel erbij waar hij het uit haalt. Hij houdt zich aan dezelfde afscherming per rol.": {
+    "en": "If someone asks about the way you work, Rudy searches the handbook and adds the article he took it from. He respects the same shielding per role.",
+    "fr": "Si quelqu'un pose une question sur votre façon de travailler, Rudy cherche dans le manuel et joint l'article dont il tire sa réponse. Il respecte le même cloisonnement par rôle."
+  },
+  "Staat het antwoord nergens, dan zegt hij dat en biedt hij aan er een artikel over te schrijven. Dat is het goedkoopste signaal dat je krijgt over een gat in je eigen procedures.": {
+    "en": "If the answer is nowhere, he says so and offers to write an article about it. That is the cheapest signal you will get about a gap in your own procedures.",
+    "fr": "Si la réponse ne se trouve nulle part, il le dit et propose d'écrire un article à ce sujet. C'est le signal le moins cher que vous recevrez sur un trou dans vos propres procédures."
+  },
+  "Over rumo zelf antwoordt hij uit de handleiding. Vraag hoe de kalender werkt en dat komt van ons; vraag wat jullie doen bij een brandalarm en dat komt van jullie.": {
+    "en": "About rumo itself he answers from the manual. Ask how the calendar works and that comes from us; ask what you do when the fire alarm goes off and that comes from you.",
+    "fr": "Sur rumo lui-même, il répond à partir du mode d'emploi. Demandez comment fonctionne le calendrier et cela vient de nous ; demandez ce que vous faites en cas d'alarme incendie et cela vient de vous."
+  },
+  "Andere features": {
+    "en": "Other features",
+    "fr": "Autres fonctionnalités"
+  },
+  "Het handboek is <em>één laag</em>.<br>Daar omheen ligt nog wat.": {
+    "en": "The handbook is <em>one layer</em>.<br>There is more around it.",
+    "fr": "Le manuel est <em>une couche</em>.<br>Il y a autre chose autour."
+  },
+  "De PMS, Rudy, preventie, channel manager, guest portal. Allemaal in dezelfde rumo, allemaal samen één systeem.": {
+    "en": "The PMS, Rudy, prevention, channel manager, guest portal. All in the same rumo, all one system together.",
+    "fr": "Le PMS, Rudy, la prévention, le channel manager, le portail client. Tout dans le même rumo, tout ensemble un seul système."
+  },
+  "De <em>PMS</em>": {
+    "en": "The <em>PMS</em>",
+    "fr": "Le <em>PMS</em>"
+  },
+  "Lees meer →": {
+    "en": "Read more →",
+    "fr": "Lire la suite →"
+  },
+  "<em>Rudy</em>": {
+    "en": "<em>Rudy</em>",
+    "fr": "<em>Rudy</em>"
+  },
+  "<em>Preventie</em> &amp; welzijn": {
+    "en": "<em>Prevention</em> &amp; wellbeing",
+    "fr": "<em>Prévention</em> &amp; bien-être"
+  },
+  "<em>Channel</em> manager": {
+    "en": "<em>Channel</em> manager",
+    "fr": "<em>Channel</em> manager"
+  },
+  "Guest <em>portal &amp; booking engine</em>": {
+    "en": "Guest <em>portal &amp; booking engine</em>",
+    "fr": "<em>Portail client</em> &amp; moteur de réservation"
+  },
+  "Zelf proberen": {
+    "en": "Try it yourself",
+    "fr": "Essayer vous-même"
+  },
+  "Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.": {
+    "en": "No demo call.<br>Just <em>14 days</em> to play.",
+    "fr": "Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer."
+  },
+  "Geen creditcard, geen verplichtingen, geen \"account manager\" die je elke week opbelt. Een demo-omgeving vol nepreservaties, en een handboek dat je meteen kan vullen. Bevalt het niet? Dan verdwijnt het stilletjes.": {
+    "en": "No credit card, no obligations, no \"account manager\" ringing you every week. A demo environment full of made-up reservations, and a handbook you can start filling straight away. Not for you? Then it quietly disappears.",
+    "fr": "Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations, et un manuel que vous pouvez remplir tout de suite. Cela ne vous convient pas ? Alors il disparaît sans bruit."
+  },
+  "Probeer 14 dagen gratis <span>→</span>": {
+    "en": "Try it free for 14 days <span>→</span>",
+    "fr": "Essayez 14 jours gratuitement <span>→</span>"
+  },
+  "Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href=\"overstappen.html\">Gratis datamigratie</a>": {
+    "en": "No credit card · Cancellable monthly after 6 months · <a href=\"overstappen.html\">Free data migration</a>",
+    "fr": "Sans carte de crédit · Résiliable au mois après 6 mois · <a href=\"overstappen.html\">Migration des données offerte</a>"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  },
+  "Het handboek in rumo: categorieën met hun artikels, waarbij de categorie Receptie afgeschermd is voor housekeeping.": {
+    "en": "The handbook in rumo: categories with their articles, where the Reception category is shielded from housekeeping.",
+    "fr": "Le manuel dans rumo : les catégories avec leurs articles, la catégorie Réception étant fermée au housekeeping."
+  },
+  "Het handboek in rumo: een aangepaste brandprocedure springt terug op ongelezen bij de collega's die de vorige versie bevestigd hadden.": {
+    "en": "The handbook in rumo: a changed fire procedure jumps back to unread for the colleagues who had confirmed the previous version.",
+    "fr": "Le manuel dans rumo : une procédure incendie modifiée revient en non lue chez les collègues qui avaient confirmé la version précédente."
+  },
+  "Zoeken in het handboek: drie resultaten op late check-in, waarvan één uit de tekst van een bijgevoegde pdf.": {
+    "en": "Searching the handbook: three results for late check-in, one of them from the text of an attached PDF.",
+    "fr": "Recherche dans le manuel : trois résultats pour check-in tardif, dont un issu du texte d'un PDF joint."
+  },
+  "Een artikel schrijven in rumo: tekst, een foto als norm en een filmpje als link.": {
+    "en": "Writing an article in rumo: text, a photo as the standard and a video as a link.",
+    "fr": "Écrire un article dans rumo : du texte, une photo comme norme et une vidéo sous forme de lien."
+  }
+}

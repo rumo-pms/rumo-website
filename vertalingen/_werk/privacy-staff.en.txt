@@ -1,0 +1,74 @@
+1|Privacy for hotel staff · rumo
+2|What rumo records about the hotel staff who use the PMS. Which data, why, how long, and what you can do about it.
+3|<a href="faq.html">FAQ</a>
+4|Privacy · Hotel staff
+5|What we record about <em>you</em>.
+6|For the staff who work in rumo. Here rumo itself is the controller. No hotel in between, no confusing roles.
+7|Version<br> <strong>17 May 2026</strong>
+8|<span>GDPR</span> <span>Rumo BV as controller</span> <span>Belgian law</span>
+9|Last updated · 17 May 2026
+10|1. First, some framing
+11|There are two kinds of data in rumo. <strong>Guest data</strong> (bookings, ID cards, invoices) belongs to the hotel; that explanation is on the <a href="privacy.html">general privacy page</a>. There the hotel is the controller and rumo the processor.
+12|<strong>Staff data</strong> is something else. When you log in to rumo as a receptionist, manager or housekeeper, we are recording your account, your login history and your actions. There <strong>rumo itself is the controller</strong>. We cannot put that role with the hotel, because it is our software that makes and keeps the logs.
+13|This is the explanation of that second part.
+14|2. What we know about you
+15|Your account
+16|First name, surname and email address, used to log in and to show you in the software
+17|Your role in the hotel (admin, reception, housekeeping, F&amp;B, ...), which decides what you can see and do in rumo
+18|Your password (hashed, never stored in plain text) and possibly a second factor if that is switched on
+19|Optionally: a profile photo you uploaded yourself
+20|How and when you log in
+21|For every login we record:
+22|Time
+23|IP address
+24|Browser and operating system (the "user agent")
+25|That sits in the <code style="font-family:'JetBrains Mono',monospace;font-size:0.85em;background:var(--sand);padding:0.1em 0.35em;border-radius:4px;">login_log</code> table and is needed to detect suspicious sign-ins. For instance: someone logs in at 3 a.m. from another country while you are asleep in Ghent.
+26|What you do in rumo
+27|<strong>Audit logs</strong> on sensitive actions: price changes, validating or charging payments, refunds, credit notes, guest registration. We keep who did what when, plus the old and the new value.
+28|<strong>Staff messaging</strong>: messages you send in internal channels or DMs, with any attachments.
+29|A general activity log at hotel level: who opened, changed or cancelled which reservation.
+30|Support contact
+31|Emails you send to <a href="mailto:hello@rumo.eu">hello@rumo.eu</a> or <a href="mailto:support@rumo.eu">support@rumo.eu</a>, plus our replies
+32|Any screenshots or examples you send along to illustrate a problem
+33|What we do <em>not</em> do
+34|No keystroke tracking, no mouse heatmaps, no session replay
+35|No profiling based on your work pattern ("this receptionist is slow")
+36|No sale of employee data to third parties
+37|No tracking pixels in our emails to see whether you open them
+38|3. Why we have it
+39|<strong>Performance of the agreement between rumo and your hotel.</strong> You have an account because the hotel gives you access as a member of staff. Without account data we cannot deliver that.
+40|<strong>Legitimate interest, security and accountability.</strong> Login logs and audit logs are there for fraud prevention (someone entering suspicious refunds, say), for incident response (something odd happens and we have to be able to reconstruct it), and for the hotel itself, which has to be able to check its own staff where needed.
+41|<strong>Legal obligation.</strong> Audit trails on financial actions are required by accounting legislation and for fighting fraud.
+42|<strong>Consent.</strong> Product updates or newsletters from rumo itself, only if you explicitly say yes, with the right to withdraw.
+43|4. Who we share with
+44|We run rumo at a handful of other companies. All inside the EU or under a valid transfer mechanism. All with a data processing agreement:
+45|<strong>Scaleway</strong> (FR), hosts the servers and the database your data sits on
+46|<strong>Brevo</strong> (FR), sends transactional emails such as "someone has invited you", password resets, login notifications
+47|<strong>Mistral</strong> (FR, via Scaleway), if your hotel uses Rudy (the AI assistant), your question to Rudy and the context of your role can go to Mistral. Not used to train the models.
+48|<strong>Not</strong> at Google, not at Microsoft, not at OpenAI, not at Meta. No Sentry connection at this time. On our <em>website</em> rumo.eu there is a cookieless visitor counter (Plausible, EU-hosted). That only counts visits to the marketing pages and does not touch the software you work in: nothing about you as a member of staff passes through it. See <a href="cookies.html">Cookies</a>.
+49|5. How long we keep it
+50|<strong>Your account</strong>: as long as you are an active user. If your access is withdrawn by your hotel, we set the account to inactive; full deletion after 30 days unless there is a legal retention duty (financial audit trails, for instance).
+51|<strong>Login logs</strong>: 90 days, then deleted automatically. Long enough to spot recent anomalies, short enough not to build years of surveillance.
+52|<strong>Audit logs on financial actions</strong>: 7 years (VAT Code). No different from paper cash books.
+53|<strong>Staff messages</strong>: according to the retention policy the hotel sets itself (typically 30-365 days, adjustable per hotel).
+54|<strong>Support correspondence</strong>: two years, then deleted unless a matter is still running.
+55|6. What you can do
+56|The same six rights as any EU citizen:
+57|<strong>Access</strong>: ask for a copy of what we hold about you
+58|<strong>Rectification</strong>: have mistakes corrected (a typo in your name, a wrong email address)
+59|<strong>Erasure</strong>: ask for everything to be deleted, except what we are legally required to keep
+60|<strong>Restriction</strong>: ask for processing to be paused
+61|<strong>Portability</strong>: get a copy in a reusable format (JSON/CSV)
+62|<strong>Objection</strong>: object to processing based on legitimate interest
+63|For account matters in rumo itself: ask your hotel administrator first. They can change a good deal for you in Settings, or delete your account.
+64|For everything rumo itself keeps (login logs, support mails, etc.): send an email to <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>. We reply within 30 days, usually sooner.
+65|Not satisfied? You can always complain to the <a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">Data Protection Authority</a> in Brussels.
+66|7. Contact
+67|<strong>Rumo BV</strong><br> Ghent, Belgium<br> <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a> · <a href="mailto:hello@rumo.eu">hello@rumo.eu</a>
+68|<a href="https://wa.me/32485382828">WhatsApp</a>
+69|<a href="features.html#integraties">Booking.com</a>
+70|<a href="features.html#integraties">Airbnb</a>
+71|<a href="features.html#integraties">Exact Online</a>
+72|<a href="features.html#integraties">Peppol</a>
+73|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+74|Menu

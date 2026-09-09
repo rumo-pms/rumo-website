@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../../gate.js"></script>
+<script src="../../demo-form.js?v=2" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why do you get no commission invoice from Expedia? · explained by rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Booking.com sends you a commission invoice. Expedia Collect does not, because there the commission is already deducted before the money reaches you. What that does to your channel report, explained.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared.css">
+<link rel="stylesheet" href="../../uitgelegd/artikel.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="../features.html">What do we do?</a></li>
+    <li><a href="../what-drives-us.html">What drives us?</a></li>
+    <li><a href="../pricing.html">And erm, what does it cost?</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../about.html">About us</a></li>
+    <li><a href="../index.html#demo" class="nav-cta">Try it free →</a></li>
+    <li class="nav-lang">
+      <a href="../../uitgelegd/ota-commissie.html">NL</a>
+      <a href="ota-commission.html" class="active">EN</a>
+      <a href="../../fr/explique/commission-ota.html">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <a href="index.html" class="terug">← Explained</a>
+      <span class="kicker">Channels and commission</span>
+      <h1>Why do you get no <em>commission invoice</em> from Expedia?</h1>
+      <p class="lead">Two bookings of a hundred euros, both through an OTA, both at fifteen per cent commission. And still they may not sit in your books the same way. This is one of those things nobody explains to you until your accountant trips over it.</p>
+    </div>
+    <div class="ph-side-illus">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- Twee routes van gast naar hotel: een via een tussenpersoon, een via een wederverkoper -->
+        <circle cx="20" cy="60" r="8"/>
+        <circle cx="100" cy="60" r="8"/>
+        <path d="M28,52 Q60,26 92,52"/>
+        <rect x="52" y="20" width="16" height="14" rx="2"/>
+        <path d="M28,68 Q60,94 92,68"/>
+        <rect x="52" y="86" width="16" height="14" rx="2"/>
+        <line x1="60" y1="34" x2="60" y2="46"/>
+        <line x1="60" y1="74" x2="60" y2="86"/>
+      </svg>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>3 minute read</span> <span>For whoever reviews their own channel mix</span> <span>Applies without rumo too</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ARTIKEL ═══════════════════════ -->
+<section class="artikel">
+  <div class="artikel-inner fade-up">
+
+    <h2>The short version</h2>
+    <p>There are two ways an OTA sells a room, and from the outside they look identical. In the one case the OTA is a <strong>broker</strong>: it brings you a guest and afterwards sends you an invoice for its commission. In the other it is a <strong>reseller</strong>: it buys your room, sells it on, keeps its share and pays you the rest.</p>
+    <p>Booking.com is always the first, Expedia Collect the second. That difference decides who your customer is, who makes the invoice for the room, and whether a commission invoice ever lands in your letterbox.</p>
+
+    <h2>Question one: who <em>sold</em> the room?</h2>
+    <p>With the <strong>broker</strong>, the OTA is an intermediary and the guest is your customer. The room belongs on their bill, together with the city tax and their two bottles of water. The commission is a separate matter between you and Booking.com.</p>
+    <p>That stays true when the booking is paid in advance with a virtual card. That feels counterintuitive, because the money clearly comes from Booking.com. But a virtual card is a <strong>means of payment</strong>, not a different kind of sale.</p>
+    <p>With the <strong>reseller</strong>, the guest pays Expedia, and gets their invoice for the room from Expedia too. So that room does not belong on their bill: you would be making them pay for something they have already paid for, to someone else. You invoice it to the channel.</p>
+
+    <div class="kader">
+      <p><strong>This is where it goes wrong in practice.</strong> A guest checks out on a merchant booking, the receptionist sees an outstanding amount and asks them to pay. They are right to get angry: they have already done that.</p>
+      <p>What can still be outstanding is their breakfast, their parking and their city tax. Adding those two amounts together and making one question of it, that is the mistake. Two customers, two bills.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="uitroep">
+  <div class="uitroep-inner fade-up">
+    <p>A virtual card is a <em>means of payment</em>, not a different kind of sale.</p>
+    <span class="uitroep-bij">And that is why the guest stays your customer</span>
+  </div>
+</section>
+
+<section class="artikel" style="padding-top:4rem">
+  <div class="artikel-inner fade-up">
+
+    <h2>Question two: how much commission did you <em>pay?</em></h2>
+    <p>Most systems let you fill in one percentage per channel and calculate everything with it. That percentage is nearly always the wrong answer, for two reasons.</p>
+    <p><strong>With the broker you know it exactly.</strong> Booking.com and Airbnb send the real commission amount along with every booking, including the cases where a deviating rate applied. A system that still uses your percentage there throws away an exact figure for an estimated one. Other channels send nothing along, and there your percentage is all you have. It is a fallback, not a general truth.</p>
+    <p><strong>With the reseller there is nothing to count.</strong> No commission invoice comes, because money never went from you to Expedia. What appears in your account is already the net amount.</p>
+
+    <div class="reken">
+      <div class="reken-kaart">
+        <span class="reken-label">Broker · Booking.com</span>
+        <div class="reken-rij"><span>Guest pays</span><span>€ 100,00</span></div>
+        <div class="reken-rij"><span>You receive</span><span>€ 100,00</span></div>
+        <div class="reken-rij"><span>Commission invoice</span><span>− € 15,00</span></div>
+        <div class="reken-rij"><span>Net for you</span><span>€ 85,00</span></div>
+      </div>
+      <div class="reken-kaart">
+        <span class="reken-label">Reseller · Expedia Collect</span>
+        <div class="reken-rij"><span>Guest pays Expedia</span><span>€ 100,00</span></div>
+        <div class="reken-rij"><span>You receive</span><span>€ 85,00</span></div>
+        <div class="reken-rij"><span>Commission invoice</span><span>none</span></div>
+        <div class="reken-rij"><span>Net for you</span><span>€ 85,00</span></div>
+      </div>
+    </div>
+
+    <p>At the bottom it says the same thing twice. That is exactly why it seems to go well for so long. It goes wrong in the row above: on the right the amount coming in is already net, and on the left it is not. Put fifteen per cent on that anyway and you deduct that commission a second time.</p>
+
+    <h2>What this does to your <em>channel mix</em></h2>
+    <p>Lay one percentage over everything and your merchant channels look structurally more expensive than they are. And that is precisely the figure on which you decide whether to carry on with a channel. It is also the reason many hoteliers answer "which channel costs me the most" on gut feeling: they once noticed the figures were wrong and stopped looking at them.</p>
+
+    <h2>What to do about it, rumo or not</h2>
+    <ul>
+      <li><strong>Find out per channel which model you are on.</strong> With Expedia that is a setting per connection, not a property of the channel. You can perfectly well be on the broker model there.</li>
+      <li><strong>Check whether your system uses the real commission amount</strong> when the channel sends one along.</li>
+      <li><strong>Check that merchant bookings show zero commission</strong> in your report, not a calculated amount.</li>
+      <li><strong>Look at how your system puts a merchant room on the guest bill.</strong> If it simply sits in among the rest, it is only a matter of time before someone asks the guest to pay it.</li>
+    </ul>
+
+    <div class="artikel-slot">
+      <p>In rumo this is built in: where a channel sends the real amount, that is what is used; merchant bookings count as zero commission; and such a room cannot end up on the guest's bill. But it is not a rumo rule. It is simply how those two models work, and you are entitled to know that before you judge a channel.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Worked something else out?</span>
+    <h2>We would rather <em>explain</em> it<br>than sell it.</h2>
+    <p>The things that come with running a hotel: inspections, allotments, commissions, training people. We had to work them out ourselves and we write down what we found.</p>
+    <a href="index.html" class="btn-paper">Everything we explain <span>→</span></a>
+    <p class="final-fine">No credit card · Cancellable monthly after 6 months · <a href="../switching.html">Free data migration</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Hotel software for independent hoteliers. Without the fuss.</p>
+    </div>
+    <div>
+      <div class="footer-label">Product</div>
+      <ul class="footer-links">
+        <li><a href="../features.html">Features</a></li>
+        <li><a href="../features.html#integraties">Integrations</a></li>
+        <li><a href="../security.html">Security</a></li>
+        <li><a href="../pricing.html">And erm, what does it cost?</a></li>
+        <li><a href="../kb.html">Help centre</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="../what-drives-us.html">What drives us?</a></li>
+        <li><a href="index.html">Explained</a></li>
+        <li><a href="../switching.html">Switching over (in Dutch)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Send us an email</a></li>
+        <li><a href="../about.html">About us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Integrations</div>
+      <ul class="footer-links">
+        <li><a href="../features.html#integraties">Booking.com</a></li>
+        <li><a href="../features.html#integraties">Airbnb</a></li>
+        <li><a href="../features.html#integraties">Exact Online</a></li>
+        <li><a href="../features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Ghent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

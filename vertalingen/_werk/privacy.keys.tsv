@@ -1,0 +1,66 @@
+1	Privacy · rumo
+2	Hoe rumo en het hotel waar je geboekt hebt met jouw gegevens omgaan. In gewone taal. Wat we verzamelen, waarom, met wie we delen, en wat jij ermee kan doen.
+3	<a href="faq.html">FAQ</a>
+4	Hoe wij met jouw <em>gegevens</em> omgaan.
+5	In gewone taal. Wat we verzamelen, waarom, met wie we delen, en wat jij ermee kan doen.
+6	Versie<br> <strong>17 mei 2026</strong>
+7	<span>AVG / GDPR</span> <span>ePrivacy</span> <span>Belgisch recht</span>
+8	Laatst bijgewerkt · 17 mei 2026
+9	1. Wie is verantwoordelijk?
+10	Een hotelreservatie raakt twee partijen: <strong>het hotel</strong> waar je verblijft, en <strong>rumo</strong>, de software waar dat hotel mee werkt. Wij hebben elk een andere rol.
+11	<strong>Het hotel</strong> (<span class="legal-controller" id="controller-name">het hotel waar je geboekt hebt</span>) is <strong>verwerkingsverantwoordelijke</strong>. Zij beslissen welke gegevens nodig zijn, hoe lang die bewaard worden, en met wie ze gedeeld worden buiten rumo om.
+12	<strong>Rumo</strong> (Rumo BV, Gent, België) is <strong>verwerker</strong>. Wij leveren de software, hosten de servers en zorgen dat alles draait. We doen niks met jouw gegevens behalve wat het hotel ons vraagt te doen, vastgelegd in een verwerkersovereenkomst.
+13	Heb je een vraag over jouw boeking of jouw gegevens? <strong>Contacteer eerst het hotel.</strong> Die heeft het volledige overzicht en kan je het snelst helpen. Wij springen bij waar nodig.
+14	2. Wat we van je weten
+15	Als je een kamer boekt
+16	Naam, e-mailadres, telefoonnummer en adres
+17	De data van je verblijf, het kamertype en eventuele opmerkingen die je achterlaat
+18	Betaalgegevens, die gaan rechtstreeks naar onze betaalpartner Stripe, we zien zelf nooit je volledige kaartnummer
+19	Bij je aankomst en tijdens je verblijf
+20	Identiteitsgegevens uit je identiteitskaart of paspoort (verplicht volgens het KB van 27 april 2007 voor hotelgasten in België)
+21	De handtekening op je registratiekaart, als het hotel die digitaal afneemt
+22	Wat je consumeert in het hotel en de bijhorende facturatie
+23	Wat we <em>niet</em> doen
+24	Geen advertentiepixels, geen Google Analytics, geen Facebook-pixel, geen "gepersonaliseerde reclame". Op onze website telt een cookieloze Europese teller hoeveel bezoekers er langskomen; die bouwt geen profiel op (zie <a href="cookies.html">Cookies</a>)
+25	Geen verkoop of doorgifte van je gegevens aan derden buiten wat hieronder bij "verwerkers" staat
+26	Geen automatische profilering die rechtsgevolgen heeft voor jou
+27	3. Waarom we het hebben
+28	De wet (artikel 6 AVG) vraagt voor elk stukje data een geldige reden. Voor ons komt dat neer op:
+29	<strong>Uitvoering van je boekingsovereenkomst.</strong> Naam, contactgegevens, verblijfsdata. Zonder die kunnen we je gewoon geen kamer geven.
+30	<strong>Wettelijke verplichting.</strong> ID-gegevens (KB 27 april 2007), facturatie en btw-administratie (Belgisch BTW-wetboek, 7 jaar), aangiftes aan de politiediensten waar verplicht.
+31	<strong>Gerechtvaardigd belang.</strong> Beveiliging van de systemen, fraudepreventie, klachtenbehandeling. Altijd afgewogen tegen jouw belangen.
+32	<strong>Toestemming.</strong> Marketing-mails of nieuwsbrieven van het hotel, alleen als je daar expliciet ja op zegt, en je kan dat altijd weer intrekken.
+33	4. Met wie we delen
+34	Rumo schakelt een aantal andere bedrijven in om de dienst te laten werken. Dat zijn onze <strong>sub-verwerkers</strong>. Allemaal met een verwerkersovereenkomst, allemaal binnen de EU of onder een geldig overdrachtsmechanisme.
+35	<strong>Scaleway</strong> (FR), hosting van de servers en de databank
+36	<strong>Stripe</strong> (IE/US), betaalverwerking, kaartopslag
+37	<strong>Channex</strong> (UK), koppeling met Booking.com, Expedia, Airbnb en andere distributiekanalen
+38	<strong>Brevo</strong> (FR), transactionele e-mails (bevestigingen, herinneringen)
+39	<strong>Mistral</strong> (FR, via Scaleway), AI-functies wanneer je hotel die gebruikt (bv. document-classificatie of een interne assistent voor het personeel). Wordt nooit gebruikt om gastdata te trainen.
+40	Daarnaast kan het hotel zelf andere systemen aan rumo koppelen die we niet kiezen, bijvoorbeeld een boekhoudpakket, een kassasysteem of een sleutelsysteem. Die staan in hun eigen privacy-verklaring vermeld.
+41	5. Hoe lang we het bewaren
+42	<strong>Facturen en boekhoudkundige stukken</strong>: 7 jaar (Belgisch BTW-wetboek)
+43	<strong>Gastregister met identiteitsgegevens</strong>: minstens tot het einde van het volgende kalenderjaar (KB 27 april 2007), in de praktijk vaak 5 jaar
+44	<strong>Reservatiehistoriek en correspondentie</strong>: zolang nuttig voor de hotelrelatie, daarna gewist of geanonimiseerd
+45	<strong>Tokenized betaalkaart</strong>: tot de boeking volledig afgehandeld is, daarna verwijderd, tenzij je hem expliciet bewaart voor een volgend verblijf
+46	<strong>Marketing-toestemming</strong>: tot je ze intrekt
+47	6. Wat jij kan doen
+48	De AVG geeft jou zes concrete rechten. Klink chic, betekent vooral: je hebt zeggenschap.
+49	<strong>Inzage</strong>: vragen welke gegevens we van je hebben
+50	<strong>Correctie</strong>: fouten laten rechtzetten
+51	<strong>Verwijdering</strong>: vragen om alles te wissen, behalve wat we wettelijk moeten bijhouden
+52	<strong>Beperking</strong>: vragen om verwerking tijdelijk stop te zetten
+53	<strong>Overdraagbaarheid</strong>: een kopie krijgen in een herbruikbaar formaat
+54	<strong>Bezwaar</strong>: verzet aantekenen tegen verwerking op basis van gerechtvaardigd belang
+55	Vraag dat eerst bij <span class="legal-controller" id="controller-name-2">het hotel waar je geboekt hebt</span>. Zij kunnen het in rumo voor jou regelen. Lukt dat niet binnen een redelijke termijn, of gaat het over rumo zelf (bijvoorbeeld onze software-infrastructuur), mail dan <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>.
+56	Niet tevreden? Je kan altijd klacht indienen bij de <a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">Gegevensbeschermingsautoriteit</a> in Brussel.
+57	7. Contact
+58	<strong>Rumo BV</strong><br> Gent, België<br> <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a> · <a href="mailto:hello@rumo.eu">hello@rumo.eu</a>
+59	Heb je een vraag over deze tekst, of vind je dat iets onduidelijk staat? Stuur ons een mailtje. We passen aan waar het kan.
+60	<a href="https://wa.me/32485382828">WhatsApp</a>
+61	<a href="features.html#integraties">Booking.com</a>
+62	<a href="features.html#integraties">Airbnb</a>
+63	<a href="features.html#integraties">Exact Online</a>
+64	<a href="features.html#integraties">Peppol</a>
+65	<span>© 2026 Rumo · Gent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+66	Menu

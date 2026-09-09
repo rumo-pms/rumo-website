@@ -134,5 +134,9 @@
  "Je eigen procedures staan in rumo, en <strong>Rudy</strong> zoekt erin met de vraag zoals ze gesteld wordt. Hij verwijst naar het artikel waar het antwoord vandaan komt, zodat er niets verzonnen wordt.": {
   "en": "Your own procedures live in rumo, and <strong>Rudy</strong> searches them with the question as it was asked. He points at the article the answer came from, so nothing gets made up.",
   "fr": "Vos propres procédures se trouvent dans rumo, et <strong>Rudy</strong> y cherche avec la question telle qu'elle est posée. Il renvoie à l'article d'où vient la réponse, pour que rien ne soit inventé."
+ },
+ "Waarom we rumo bouwen: de dingen die in een hotel elke week terugkomen en waar bestaande software geen antwoord op geeft. Geen advies, wel herkenning.": {
+  "en": "Why we build rumo: the things that come back every week in a hotel and that existing software has no answer for. No advice, just recognition.",
+  "fr": "Pourquoi nous construisons rumo : ce qui revient chaque semaine dans un hôtel et auquel les logiciels existants n'apportent aucune réponse. Pas de conseils, juste de la reconnaissance."
  }
 }

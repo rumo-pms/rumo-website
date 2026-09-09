@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="../demo-form.js?v=2" defer></script>
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookies · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="rumo only uses essential cookies to make the software work. No tracking, no advertising, no surprises.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* ─── LEGAL PROSE ─── (zelfde als privacy.html) */
+  .legal {
+    background:var(--paper);
+    padding:4rem 0 6rem;
+  }
+  .legal-wrap {
+    max-width:740px;
+    margin:0 auto;
+    padding:0 2rem;
+  }
+  .legal h2 {
+    font-size:clamp(1.6rem, 3vw, 2.1rem);
+    margin-top:3rem;
+    margin-bottom:1rem;
+  }
+  .legal h2:first-of-type { margin-top:0; }
+  .legal h3 {
+    font-size:1.15rem;
+    font-family:'Inter', sans-serif;
+    font-weight:600;
+    letter-spacing:0;
+    color:var(--ink);
+    margin-top:1.75rem;
+    margin-bottom:0.5rem;
+    line-height:1.4;
+  }
+  .legal p {
+    font-size:1rem;
+    color:var(--ink-soft);
+    line-height:1.7;
+    max-width:none;
+    margin-bottom:1rem;
+  }
+  .legal ul {
+    margin:0.5rem 0 1.25rem;
+    padding-left:1.25rem;
+  }
+  .legal li {
+    font-size:1rem;
+    color:var(--ink-soft);
+    line-height:1.7;
+    margin-bottom:0.4rem;
+  }
+  .legal a {
+    color:var(--terra-dark);
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+  .legal a:hover { color:var(--ink); }
+  .legal strong { color:var(--ink); font-weight:600; }
+  .legal-meta {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:2.5rem;
+    padding-bottom:1.5rem;
+    border-bottom:1px solid var(--line);
+  }
+  .legal-callout {
+    /* Stond op paper-panel, en dat verschilt nauwelijks van de pagina zelf.
+       Op een lap tekst van vier schermen hoog is dit het enige wat het oog
+       even vasthoudt, dus mag het ook echt te zien zijn. Wel binnen de warme
+       reeks: roze viel uit de huisstijl. */
+    background:var(--sand);
+    border:1px solid transparent;
+    border-radius:12px;
+    padding:1.25rem 1.5rem;
+    margin:1.5rem 0;
+  }
+  .legal-callout p:last-child { margin-bottom:0; }
+  /* Cookie-tabel */
+  .cookie-table {
+    width:100%;
+    border-collapse:collapse;
+    margin:1rem 0 1.5rem;
+    font-size:0.92rem;
+  }
+  .cookie-table th, .cookie-table td {
+    text-align:left;
+    padding:0.85rem 1rem;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+  }
+  .cookie-table th {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.7rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:500;
+    background:var(--paper-panel);
+  }
+  .cookie-table td code {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.82rem;
+    color:var(--ink);
+    background:var(--sand);
+    padding:0.15rem 0.4rem;
+    border-radius:4px;
+  }
+  @media (max-width:600px) {
+    .cookie-table { font-size:0.85rem; }
+    .cookie-table th, .cookie-table td { padding:0.6rem 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">What do we do?</a></li>
+    <li><a href="what-drives-us.html">What drives us?</a></li>
+    <li><a href="pricing.html">And erm, what does it cost?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Try it free →</a></li>
+    <li class="nav-lang">
+      <a href="../cookies.html">NL</a>
+      <a href="cookies.html" class="active">EN</a>
+      <a href="../fr/cookies.html">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <span class="kicker">Cookies</span>
+      <h1>Only what is <em>strictly needed</em>.</h1>
+      <p class="lead">No tracking, no advertising pixels, no "we share your behaviour with 247 partners". Just the three or four things the software needs in order to work.</p>
+    </div>
+    <div class="page-header-side">
+      Version<br> <strong>17 May 2026</strong>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>ePrivacy Directive</span> <span>No consent needed</span> <span>Essential only</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ LEGAL CONTENT ═══════════════════════ -->
+<section class="legal">
+  <div class="legal-wrap fade-up">
+
+    <div class="legal-meta">
+      Last updated · 17 May 2026
+    </div>
+
+    <h2>What is a cookie?</h2>
+    <p>
+      A cookie is a small file a website stores in your browser so that it can recognise you later. Some are needed to make the site work (for example: remembering that you are logged in). Others are there to follow your behaviour for advertising.
+    </p>
+    <p>
+      <strong>We only use the first kind.</strong>
+    </p>
+
+    <h2>Which cookies (and cookie-like things) we set</h2>
+    <p>
+      Strictly speaking we do not use classic browser cookies, but we do use a few items in <code>localStorage</code>. That is technically the same story, a small file in your browser, and it falls under the same rules.
+    </p>
+
+    <table class="cookie-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>What for</th>
+          <th>How long</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>rumo_hotel_id</code><br><code>rumo_hotel_name</code><br><code>rumo_tenant_id</code></td>
+          <td>Remembering which hotel you belong to. Without this the software does not know which rooms, prices or reservations to show.</td>
+          <td>Until you log out or clear your browser</td>
+        </tr>
+        <tr>
+          <td><code>rumo_last_user_id</code></td>
+          <td>When logging in on a shared workstation: knowing which user was last active, so that we can restore the right session.</td>
+          <td>Until you log out or another user logs in</td>
+        </tr>
+        <tr>
+          <td><code>rumo_cookie_ack</code></td>
+          <td>Remembering that you have seen the cookie notice, so that it does not come back every time.</td>
+          <td>Until you clear your browser</td>
+        </tr>
+        <tr>
+          <td>Keycloak session cookies</td>
+          <td>Keeping your login session safe (anti-CSRF, session identifier). Strictly necessary to stay logged in.</td>
+          <td>Duration of your session</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="legal-callout">
+      <p>
+        <strong>All essential.</strong> That means: under the ePrivacy Directive (and the Belgian Electronic Communications Act) we do not need prior consent to place them. A banner with "accept / refuse" is therefore not legally required. We do show a short notice the first time you visit rumo, for clarity.
+      </p>
+    </div>
+
+    <h2>Visitor statistics on this website</h2>
+    <p>
+      On <strong>rumo.eu</strong> (the website you are on now, not the software itself) we count how many people come by. We do that with <strong>Plausible</strong>, a European counter that needs no cookie for it and leaves nothing in your browser. So there is no extra row in the table above, because there is nothing to add.
+    </p>
+    <p>
+      What we see of it: which pages are viewed, which site someone arrives from, from which country, and whether it is a phone or a laptop. All added together, never per person. No profile of you is built, not on this site and certainly not beyond it. Come back tomorrow and the counter does not know it is you.
+    </p>
+    <p>
+      We also count a handful of <strong>actions</strong>: that someone opens the trial form, that they send it, or that sending failed. Without that last one we would not notice a request disappearing on the way. Nothing there is tied to a person either; we only see numbers.
+    </p>
+    <p>
+      Because nothing is stored on your device, no consent banner is needed for this. And because it is a form of measuring all the same, it is written out here rather than tucked into a footnote.
+    </p>
+
+    <h2>What we do <em>not</em> do</h2>
+    <ul>
+      <li>No Google Analytics and no Google Tag Manager. Just the cookieless counter above, and nothing else</li>
+      <li>No Facebook Pixel, no LinkedIn Insight, no TikTok pixel</li>
+      <li>No Hotjar, Mixpanel, Segment or other session-replay tools</li>
+      <li>No advertising cookies, no retargeting, no cross-site tracking</li>
+      <li>No sale or passing on of browsing behaviour to third parties</li>
+    </ul>
+    <p>
+      If that ever changes (because a hotel wants its own booking pixel, for instance), a real cookie banner will appear with an accept and a refuse button. Until then: not needed.
+    </p>
+
+    <h2>How to delete them</h2>
+    <p>
+      In every browser you can clear cookies and localStorage by hand. You usually find it under <strong>Settings → Privacy → Clear browsing data</strong>. Per browser:
+    </p>
+    <ul>
+      <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Chrome</a></li>
+      <li><a href="https://support.mozilla.org/nl/kb/cookies-verwijderen-gegevens-wissen-websites-opgeslagen" target="_blank" rel="noopener noreferrer">Firefox</a></li>
+      <li><a href="https://support.apple.com/nl-be/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+      <li><a href="https://support.microsoft.com/nl-nl/microsoft-edge/cookies-verwijderen-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Edge</a></li>
+    </ul>
+    <p>
+      Clear everything? Then you have to log in again, and the software forgets which hotel you belong to. That is all that happens.
+    </p>
+
+    <h2>Want to know more?</h2>
+    <p>
+      Read our <a href="privacy.html">privacy page</a> for the bigger picture: which data we hold about you, why, who we share it with, and what rights you have.
+    </p>
+    <p>
+      Questions or remarks? <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>.
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Hotel software for independent hoteliers. Without the fuss.</p>
+    </div>
+    <div>
+      <div class="footer-label">Product</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="features.html#integraties">Integrations</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="pricing.html">And erm, what does it cost?</a></li>
+        <li><a href="kb.html">Help centre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="what-drives-us.html">What drives us?</a></li>
+        <li><a href="explained/index.html">Explained (in Dutch)</a></li>
+        <li><a href="switching.html">Switching over (in Dutch)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Send us an email</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Integrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

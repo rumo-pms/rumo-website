@@ -1,0 +1,47 @@
+1|Vous formez plus souvent, des gens qui sont là moins souvent · expliqué par rumo
+2|Il y a de plus en plus d'étudiants et de flexi-jobs derrière votre comptoir, ils restent moins longtemps, et comme ils travaillent moins souvent il faut plus de temps avant qu'un geste soit vraiment acquis. Sur ce qui s'écrit une fois et ce qui doit s'exercer.
+3|<a href="../faq.html">FAQ</a>
+4|← Expliqué
+5|Formation
+6|Vous formez plus souvent, des gens qui sont là <em>moins souvent.</em>
+7|Un collaborateur fixe, vous le formez une fois et vous en profitez des années. Mais il y a de plus en plus d'étudiants et de flexi-jobs derrière votre comptoir, ils restent moins longtemps, et comme ils travaillent moins souvent il faut aussi plus de temps avant qu'un geste soit vraiment acquis.
+8|<span>Lecture 3 minutes</span> <span>Pour qui forme des gens</span> <span>Vaut aussi sans rumo</span>
+9|Deux choses qui se produisent <em>en même temps</em>
+10|La première est une question de nombre. Là où vous formiez autrefois un réceptionniste fixe, il y a maintenant un étudiant pour les week-ends, un flexi pour les mois chargés et quelqu'un qui vient essayer une saison. Plus de personnes, et chacune reste moins longtemps. La même explication sort donc plus souvent.
+11|La seconde est moins visible et pèse davantage. <strong>Qui travaille moins souvent apprend plus lentement.</strong> Non pas parce qu'il comprend moins bien, mais parce qu'un geste s'acquiert par la répétition. Un collaborateur fixe fait un check-out cinq fois par semaine et le fait les yeux fermés après un mois. Celui qui travaille un samedi sur deux fera peut-être ce check-out vingt fois dans le même semestre, et recommence un peu à zéro à chaque service.
+12|Vous formez donc plus souvent, des gens chez qui cela prend plus de temps. Ces deux facteurs se multiplient.
+13|La répétition est précisément ce qui a <em>disparu</em>
+14|La formation classique compte tacitement sur la répétition. Vous expliquez une chose une fois, le nouveau la revoit ensuite chaque jour, et après deux semaines c'est acquis. Cela fonctionne tant que cette personne est là tous les jours.
+15|Supprimez cette répétition et toute la construction s'écroule. Et quelque chose prend sa place, que vous ne voulez pas : le collègue qui assume en plus. Quelques questions à chaque service, à qui se trouve à côté. Cela coûte du temps à deux personnes au lieu d'une, et cela ne se voit nulle part.
+16|La moitié ne peut <em>pas</em> s'écrire
+17|Une formation contient deux sortes de choses.
+18|<strong>Des choses que quelqu'un doit savoir.</strong> Où sont les clés de réserve, avec quelle société de taxis vous travaillez, quelle est la règle d'annulation. Cela peut s'écrire, et vous n'avez alors plus jamais à le dire.
+19|<strong>Des choses que quelqu'un doit savoir faire.</strong> Enregistrer un groupe, faire une note de crédit, traiter un no-show.
+20|Cette seconde liste, personne ne l'acquiert en lisant. Vous pouvez l'écrire parfaitement, avec des captures d'écran et des flèches sur les bons boutons, et cette personne transpirera quand même la première fois que cela devra vraiment se faire. Et moins elle travaille souvent, plus cette première fois est éloignée de l'explication.
+21|Une formation n'est pas réussie parce qu'elle a été <em>donnée</em>.
+22|Elle est réussie quand le geste qui suit est juste
+23|Et on ne peut s'exercer que dans le <em>vrai</em> système
+24|C'est là que le nœud se trouve. Le seul endroit où quelqu'un peut faire une vraie facture, c'est votre vrai hôtel. Avec un vrai client, de l'argent réel et une comptabilité qui retient tout. Les nouveaux apprennent donc les gestes difficiles <strong>le jour où cela tourne mal</strong> : sous pression, avec quelqu'un qui attend.
+25|La solution habituelle est une réservation d'essai au nom de « Test Test ». Un check-in s'y exerce très bien. Mais dès qu'il est question d'argent, cette facture entre dans votre numérotation et cette note de crédit dans votre comptabilité. Et puis il y a autre chose que l'on oublie systématiquement.
+26|<strong>Le courrier est la partie la plus dangereuse.</strong> Un check-in d'exercice envoie une confirmation. Une annulation d'exercice envoie une annulation. Un lien de paiement d'exercice est un vrai lien de paiement, avec un vrai montant dessus.
+27|C'est la première question à poser sur tout environnement d'entraînement : <em>qu'est-ce qui peut sortir d'ici ?</em> À côté du courrier, ce sont vos canaux, vos paiements et vos serrures.
+28|Ce que vous pouvez faire dès demain, <em>même sans</em> logiciel
+29|<strong>Écrivez ce que vous avez dit deux fois.</strong> C'est la deuxième fois qui est le signal, pas la sixième. Cinq phrases qui existent valent mieux qu'un chapitre que vous comptez écrire.
+30|<strong>Faites une liste de dix gestes</strong> qu'un nouveau doit savoir faire. Dix, pas trente. Qui doit apprendre trente choses n'en apprend aucune.
+31|<strong>Convenez, geste par geste, de ce à quoi ressemble « bien »</strong>, en une phrase, avant de laisser quelqu'un s'exercer. Regardez le résultat et non les clics : il y a presque toujours plus d'un bon chemin.
+32|<strong>Faites parcourir vos procédures à quelqu'un la veille de son premier service.</strong> Non pas pour les connaître, mais pour savoir qu'elles existent.
+33|Dans rumo, il existe une copie d'entraînement pour cela : l'hôtel de formation. Gratuit, et il ne compte pas comme un deuxième hôtel. On y trouve la configuration de votre propre hôtel avec des clients inventés, et les quatre fils vers l'extérieur sont coupés : le courrier ne part pas, il n'y a pas de liaison avec les canaux, aucune carte n'est jamais débitée et les serrures ne sont pas reprises.
+34|L'exercice lui-même est une conversation avec Rudy : il donne une consigne à la fois, vous l'exécutez dans l'application, et ensuite il regarde dans les données si c'est réellement là. Il ne juge donc pas lui-même. Votre progression est privée, y compris pour le manager, et une fois par semaine tout est vidé et rempli à nouveau.
+35|Encore une chose comprise ?
+36|Nous préférons l'<em>expliquer</em><br>plutôt que de le vendre.
+37|Ce qui vient avec la gestion d'un hôtel : contrôles, allotements, commissions, formation. Nous avons dû le comprendre nous-mêmes et nous écrivons ce que nous avons trouvé.
+38|Tout ce que nous expliquons <span>→</span>
+39|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="../overstappen.html">Migration des données offerte</a>
+40|<a href="index.html">Expliqué</a>
+41|<a href="https://wa.me/32485382828">WhatsApp</a>
+42|<a href="../features.html#integraties">Booking.com</a>
+43|<a href="../features.html#integraties">Airbnb</a>
+44|<a href="../features.html#integraties">Exact Online</a>
+45|<a href="../features.html#integraties">Peppol</a>
+46|<span>© 2026 Rumo · Gand, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+47|Menu

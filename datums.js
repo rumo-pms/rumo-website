@@ -27,9 +27,28 @@
  * niet in datums. Verschuif je de week, dan kloppen de boekingen niet meer.
  */
 (function () {
-  var MAANDEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni',
-                 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
-  var DAGEN = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
+  /* De taal komt uit <html lang>. Zonder dit stond er "september" op de
+     Engelse en de Franse pagina, want dit bestand wordt gedeeld. */
+  var NAMEN = {
+    nl: {
+      maanden: ['januari', 'februari', 'maart', 'april', 'mei', 'juni',
+                'juli', 'augustus', 'september', 'oktober', 'november', 'december'],
+      dagen: ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za']
+    },
+    en: {
+      maanden: ['January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'],
+      dagen: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
+    },
+    fr: {
+      maanden: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin',
+                'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+      dagen: ['di', 'lu', 'ma', 'me', 'je', 've', 'sa']
+    }
+  };
+  var TAAL = (document.documentElement.lang || 'nl').slice(0, 2);
+  var MAANDEN = (NAMEN[TAAL] || NAMEN.nl).maanden;
+  var DAGEN = (NAMEN[TAAL] || NAMEN.nl).dagen;
 
   function plus(d, n) {
     var x = new Date(d.getTime());

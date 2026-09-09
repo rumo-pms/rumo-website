@@ -1,0 +1,54 @@
+1|Pourquoi Expedia ne vous envoie-t-il pas de facture de commission ? · expliqué par rumo
+2|Booking.com vous envoie une facture de commission. Expedia Collect non, car la commission y est déjà retenue avant que l'argent ne vous parvienne. Ce que cela fait à votre rapport par canal, expliqué.
+3|<a href="../faq.html">FAQ</a>
+4|← Expliqué
+5|Canaux et commission
+6|Pourquoi Expedia ne vous envoie-t-il pas de <em>facture de commission ?</em>
+7|Deux réservations de cent euros, toutes deux via une OTA, toutes deux à quinze pour cent de commission. Et pourtant elles ne peuvent pas figurer de la même façon dans vos comptes. C'est une de ces choses que personne ne vous explique jusqu'à ce que votre comptable bute dessus.
+8|<span>Lecture 3 minutes</span> <span>Pour qui analyse lui-même son mix de canaux</span> <span>Vaut aussi sans rumo</span>
+9|La version courte
+10|Une OTA vend une chambre de deux manières, et de l'extérieur elles sont identiques. Dans un cas, l'OTA est un <strong>intermédiaire</strong> : elle vous amène un client et vous envoie ensuite une facture pour sa commission. Dans l'autre, elle est <strong>revendeur</strong> : elle achète votre chambre, la revend, garde sa part et vous verse le reste.
+11|Booking.com relève toujours du premier cas, Expedia Collect du second. Cette différence détermine qui est votre client, qui établit la facture de la chambre, et si une facture de commission arrivera un jour dans votre boîte.
+12|Question une : qui a <em>vendu</em> la chambre ?
+13|Chez l'<strong>intermédiaire</strong>, l'OTA est un tiers et le client est votre client. La chambre figure sur sa note, avec la taxe de séjour et ses deux bouteilles d'eau. La commission est une affaire distincte entre vous et Booking.com.
+14|Cela reste vrai si la réservation est payée d'avance avec une carte virtuelle. Cela paraît contre-intuitif, car l'argent vient manifestement de Booking.com. Mais une carte virtuelle est un <strong>moyen de paiement</strong>, pas un autre type de vente.
+15|Chez le <strong>revendeur</strong>, le client paie Expedia, et reçoit aussi sa facture de chambre d'Expedia. Cette chambre n'a donc rien à faire sur sa note : vous lui feriez payer une chose qu'il a déjà payée, à quelqu'un d'autre. Vous la facturez au canal.
+16|<strong>C'est ici que cela dérape en pratique.</strong> Un client part sur une réservation merchant, la réceptionniste voit un montant ouvert et lui demande de payer. Il a raison de se fâcher : il l'a déjà fait.
+17|Ce qui peut encore être ouvert, c'est son petit-déjeuner, son parking et sa taxe de séjour. Additionner ces deux montants et n'en faire qu'une seule question, voilà l'erreur. Deux clients, deux notes.
+18|Une carte virtuelle est un <em>moyen de paiement</em>, pas un autre type de vente.
+19|Et c'est pourquoi le client reste votre client
+20|Question deux : combien de commission avez-vous <em>payée ?</em>
+21|La plupart des systèmes vous laissent encoder un pourcentage par canal et calculent tout avec. Ce pourcentage est presque toujours la mauvaise réponse, pour deux raisons.
+22|<strong>Chez l'intermédiaire, vous le savez exactement.</strong> Booking.com et Airbnb transmettent le montant réel de la commission avec chaque réservation, y compris dans les cas où un tarif différent s'appliquait. Un système qui utilise malgré tout votre pourcentage jette un chiffre exact au profit d'une estimation. D'autres canaux ne transmettent rien, et là votre pourcentage est tout ce que vous avez. C'est une solution de repli, pas une vérité générale.
+23|<strong>Chez le revendeur, il n'y a rien à compter.</strong> Aucune facture de commission n'arrive, car jamais d'argent n'est allé de vous vers Expedia. Ce qui apparaît sur votre compte est déjà le montant net.
+24|Intermédiaire · Booking.com
+25|<span>Le client paie</span><span>€ 100,00</span>
+26|<span>Vous recevez</span><span>€ 100,00</span>
+27|<span>Facture de commission</span><span>− € 15,00</span>
+28|<span>Net pour vous</span><span>€ 85,00</span>
+29|Revendeur · Expedia Collect
+30|<span>Le client paie Expedia</span><span>€ 100,00</span>
+31|<span>Vous recevez</span><span>€ 85,00</span>
+32|<span>Facture de commission</span><span>aucune</span>
+33|En bas, c'est deux fois la même chose. C'est précisément pour cela que cela semble bien se passer si longtemps. Cela coince à la ligne du dessus : à droite, le montant qui rentre est déjà net, à gauche pas encore. Si vous y appliquez quand même quinze pour cent, vous déduisez cette commission une seconde fois.
+34|Ce que cela fait à votre <em>mix de canaux</em>
+35|Appliquez un seul pourcentage à tout et vos canaux merchant paraissent structurellement plus chers qu'ils ne le sont. Or c'est justement le chiffre sur lequel vous décidez de continuer ou non avec un canal. C'est aussi la raison pour laquelle beaucoup d'hôteliers répondent au feeling à la question « quel canal me coûte le plus » : ils ont un jour constaté que les chiffres ne collaient pas et ont cessé de les regarder.
+36|Qu'en faire, avec ou sans rumo
+37|<strong>Cherchez, canal par canal, dans quel modèle vous êtes.</strong> Chez Expedia, c'est un réglage par connexion, pas une propriété du canal. Vous pouvez très bien y être dans le modèle intermédiaire.
+38|<strong>Vérifiez si votre système utilise le montant réel de la commission</strong> quand le canal en transmet un.
+39|<strong>Contrôlez que les réservations merchant affichent zéro commission</strong> dans votre rapport, et pas un montant calculé.
+40|<strong>Regardez comment votre système place une chambre merchant sur la note du client.</strong> Si elle figure simplement parmi les autres, ce n'est qu'une question de temps avant qu'on la lui fasse payer.
+41|Dans rumo, c'est intégré : là où un canal transmet le montant réel, c'est celui-là qui est utilisé ; les réservations merchant comptent pour zéro commission ; et une telle chambre ne peut pas atterrir sur la note du client. Mais ce n'est pas une règle rumo. C'est simplement le fonctionnement de ces deux modèles, et vous avez le droit de le savoir avant de juger un canal.
+42|Encore une chose comprise ?
+43|Nous préférons l'<em>expliquer</em><br>plutôt que de le vendre.
+44|Ce qui vient avec la gestion d'un hôtel : contrôles, allotements, commissions, formation. Nous avons dû le comprendre nous-mêmes et nous écrivons ce que nous avons trouvé.
+45|Tout ce que nous expliquons <span>→</span>
+46|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="../overstappen.html">Migration des données offerte</a>
+47|<a href="index.html">Expliqué</a>
+48|<a href="https://wa.me/32485382828">WhatsApp</a>
+49|<a href="../features.html#integraties">Booking.com</a>
+50|<a href="../features.html#integraties">Airbnb</a>
+51|<a href="../features.html#integraties">Exact Online</a>
+52|<a href="../features.html#integraties">Peppol</a>
+53|<span>© 2026 Rumo · Gand, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+54|Menu

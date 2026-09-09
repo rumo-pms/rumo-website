@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../gate.js"></script>
+<script src="../demo-form.js?v=2" defer></script>
+<script src="../datums.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portail client &amp; moteur de réservation · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Réserver via votre propre site sans commission, et un portail où chaque client fait lui-même son pré-check-in. Sur son téléphone, dans sa langue, quand il veut.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  .fp-hero {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .fp-hero-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 4.5rem;
+    align-items: center;
+  }
+  .fp-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--forest);
+    background: var(--forest-soft);
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .fp-hero-tag svg { width: 14px; height: 14px; stroke-width: 1.8; fill: none; }
+  .fp-hero-text h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2.4rem, 4.8vw, 3.6rem);
+    letter-spacing: -0.028em;
+    line-height: 1.04;
+    margin-bottom: 1.4rem;
+  }
+  .fp-hero-text h1 em { color: var(--terra-dark); font-style: italic; }
+  .fp-hero-text .lead {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 52ch;
+    margin-bottom: 2rem;
+  }
+  .fp-hero-bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .fp-hero-bullets li::before { content: '·'; color: var(--terra); margin-right: 0.5em; }
+
+  .fp-section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .fp-section.alt { background: var(--paper-deep); }
+  .fp-section-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .fp-section.reverse .fp-section-inner > .fp-section-visual { order: -1; }
+  .fp-section-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-bottom: 0.9rem;
+    display: inline-block;
+  }
+  .fp-section-text h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+    margin-bottom: 1.3rem;
+  }
+  .fp-section-text h2 em { color: var(--terra-dark); font-style: italic; }
+  .fp-section-text .lead {
+    color: var(--ink-soft);
+    line-height: 1.65;
+    max-width: 52ch;
+    font-size: 1.02rem;
+    margin-bottom: 1.3rem;
+  }
+  .fp-bullets {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  .fp-bullets li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .fp-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.65em;
+    width: 8px; height: 1.5px;
+    background: var(--terra);
+  }
+  .fp-bullets li em { color: var(--terra-dark); font-style: italic; }
+
+  /* Phone mockup wrapper */
+  .phone {
+    width: 280px;
+    margin: 0 auto;
+    background: var(--ink);
+    border-radius: 36px;
+    padding: 12px;
+    box-shadow: 0 30px 60px rgba(27,25,23,0.16);
+  }
+  .phone-screen {
+    background: var(--paper);
+    border-radius: 26px;
+    padding: 1.3rem 1.2rem;
+    min-height: 480px;
+  }
+  .phone-statusbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+  }
+  .phone-brand {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--terra-dark);
+    text-align: center;
+    margin-bottom: 0.4rem;
+  }
+  .phone-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+    text-align: center;
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+  }
+  .phone-field {
+    background: var(--paper-deep);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.65rem 0.85rem;
+    margin-bottom: 0.6rem;
+  }
+  .phone-field .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.58rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.15rem;
+  }
+  .phone-field .val {
+    font-size: 0.86rem;
+    color: var(--ink);
+  }
+  .phone-cta {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 100px;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 0.88rem;
+    font-weight: 500;
+    margin-top: 0.85rem;
+  }
+
+  /* Booking engine widget */
+  .mockup {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1.4rem;
+    box-shadow: 0 20px 40px rgba(27,25,23,0.08);
+  }
+  .mockup-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mockup-head h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .mockup-head .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    background: var(--forest-soft);
+    color: var(--forest);
+  }
+
+  /* Mockup · Booking engine */
+  .mk-booking .dates {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.85rem;
+  }
+  .mk-booking .date-field {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.7rem 0.85rem;
+  }
+  .mk-booking .date-field .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.15rem;
+  }
+  .mk-booking .date-field .val {
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    color: var(--ink);
+  }
+  .mk-booking .room-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-bottom: 0.85rem;
+  }
+  .mk-booking .room-option {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mk-booking .room-option.selected { border-color: var(--terra); background: var(--rose-soft); }
+  .mk-booking .room-option strong { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--ink); display: block; margin-bottom: 0.15rem; }
+  .mk-booking .room-option span { font-size: 0.74rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+  .mk-booking .room-option .price {
+    font-family: 'Fraunces', serif;
+    font-size: 1.1rem;
+    color: var(--terra-dark);
+  }
+  .mk-booking .footer {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 100px;
+    padding: 0.85rem;
+    text-align: center;
+    font-size: 0.92rem;
+    font-weight: 500;
+  }
+  .mk-booking .commission-note {
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    color: var(--forest);
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  /* Mockup · Offerte */
+  .mk-offer .offer-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mk-offer .offer-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-bottom: 0.35rem;
+  }
+  .mk-offer .offer-title {
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem;
+    color: var(--ink);
+    line-height: 1.25;
+  }
+  .mk-offer .offer-lines {
+    margin-bottom: 1rem;
+  }
+  .mk-offer .offer-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.88rem;
+    color: var(--ink);
+  }
+  .mk-offer .offer-line:last-of-type { border-bottom: none; }
+  .mk-offer .offer-line .amt {
+    font-family: 'Fraunces', serif;
+    color: var(--ink);
+  }
+  .mk-offer .offer-total {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .mk-offer .offer-total strong { font-size: 0.95rem; color: var(--ink); }
+  .mk-offer .offer-total .price {
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    color: var(--terra-dark);
+  }
+  .mk-offer .offer-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .mk-offer .offer-btn {
+    flex: 1;
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.86rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink-soft);
+  }
+  .mk-offer .offer-btn.primary {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+
+  /* Mockup · Police export */
+  .mk-police .police-row {
+    display: grid;
+    grid-template-columns: 1fr 90px;
+    gap: 0.7rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--line);
+    align-items: center;
+    font-size: 0.88rem;
+  }
+  .mk-police .police-row:last-of-type { border-bottom: none; }
+  .mk-police .police-row strong { display: block; font-size: 0.88rem; color: var(--ink); margin-bottom: 0.1rem; }
+  .mk-police .police-row span { font-size: 0.72rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+  .mk-police .police-row .status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.55rem;
+    border-radius: 100px;
+    text-align: center;
+    background: var(--forest-soft);
+    color: var(--forest);
+  }
+  .mk-police .police-export {
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .mk-police .police-export::before { content: '↓ '; }
+
+  /* ─── andere features strip ─── */
+  .fp-others {
+    background: var(--paper-deep);
+    padding: 5rem 0 6rem;
+    border-top: 1px solid var(--line);
+  }
+  .fp-others-head {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fp-others-head h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0.6rem 0 0.8rem;
+  }
+  .fp-others-head h3 em { color: var(--terra-dark); font-style: italic; }
+  .fp-others-head p { color: var(--ink-soft); font-size: 0.98rem; }
+  .fp-others-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .fp-others-card {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  }
+  .fp-others-card:hover {
+    box-shadow: 0 14px 28px rgba(27,25,23,0.08);
+    transform: translateY(-3px);
+    border-color: var(--terra);
+  }
+  .fp-others-ic {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fp-others-ic svg { width: 16px; height: 16px; stroke-width: 1.8; fill: none; }
+  .fp-others-card h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .fp-others-card h4 em { color: var(--terra-dark); font-style: italic; font-weight: 300; }
+  .fp-others-card .arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-top: auto;
+  }
+
+  @media (max-width: 880px) {
+    .fp-hero { padding: 4rem 0; }
+    .fp-hero-inner, .fp-section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .fp-section.reverse .fp-section-inner > .fp-section-visual { order: 0; }
+    .fp-section { padding: 4rem 0; }
+    .fp-others-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .fp-others-grid { grid-template-columns: 1fr; }
+    .phone { width: 240px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../guest-portal.html">NL</a>
+      <a href="../en/guest-portal.html">EN</a>
+      <a href="guest-portal.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="fp-hero">
+  <div class="wrap">
+    <div class="fp-hero-inner enkel fade-up">
+      <div class="fp-hero-text">
+        <span class="fp-hero-tag">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Portail client &amp; moteur de réservation
+        </span>
+        <h1>Réserver et s'enregistrer<br>depuis <em>leur téléphone</em>.</h1>
+        <p class="lead">Une page de réservation sans commission, et un portail où le client s'enregistre, confirme un devis ou récupère sa facture. Sur son téléphone, dans sa langue.</p>
+        <p class="lead">Pas de compte, pas de mot de passe. Un lien personnel dans son mail de confirmation, qui expire deux semaines après son départ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 1 · BOOKING ENGINE ═══════════════════════ -->
+<section class="fp-section">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Réservations directes</span>
+        <h2>Des réservations via <em>votre site</em>. Sans commission.</h2>
+        <p class="lead">Une fenêtre de réservation que vous placez dans votre site, avec les mêmes prix et la même disponibilité que votre calendrier. La même réservation vous rapporte ici jusqu'à 22 % de plus, puisqu'aucune commission n'est retirée.</p>
+        <ul class="fp-bullets">
+          <li>Obéit aux mêmes restrictions que vos canaux</li>
+          <li>Une carte en garantie, sans que rien ne soit débité</li>
+          <li>Le client annule lui-même, selon vos conditions</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-booking">
+          <div class="mockup-head">
+            <h5>Widget de réservation · votre site</h5>
+            <span class="badge">En direct</span>
+          </div>
+          <div class="dates">
+            <div class="date-field">
+              <div class="lbl">Arrivée</div>
+              <div class="val">14 mai 2026</div>
+            </div>
+            <div class="date-field">
+              <div class="lbl">Départ</div>
+              <div class="val">17 mai 2026</div>
+            </div>
+          </div>
+          <div class="room-options">
+            <div class="room-option selected">
+              <div>
+                <strong>Junior Suite</strong> <span>2 personnes · 3 nuits</span>
+              </div>
+              <div class="price">€420</div>
+            </div>
+            <div class="room-option">
+              <div>
+                <strong>Deluxe Double</strong> <span>2 personnes · 3 nuits</span>
+              </div>
+              <div class="price">€336</div>
+            </div>
+          </div>
+          <div class="footer">Réservez maintenant, sans commission →</div>
+          <div class="commission-note">22 % moins cher que sur Booking</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 2 · PRE-CHECKIN ═══════════════════════ -->
+<section class="fp-section alt reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Avant l'arrivée</span>
+        <h2>Le travail qui se faisait <em>autrefois</em> au comptoir.</h2>
+        <p class="lead">Identité, adresse, heure d'arrivée, régime : le client le remplit lui-même sur son téléphone. Au comptoir, c'est alors un coup d'œil et un clic, au lieu de quelqu'un qui épelle le nom de sa rue.</p>
+        <ul class="fp-bullets">
+          <li>Dans un groupe, chaque chambre s'enregistre séparément, et la chambre 205 ne voit pas les autres</li>
+          <li>Vous décidez de ce que vous demandez, et le client peut le remplir en plusieurs fois</li>
+          <li>Changer les dates ou annuler une réservation OTA, le portail ne le fait volontairement pas</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-statusbar">
+              <span>9:41</span>
+              <span>● ● ●</span>
+            </div>
+            <div class="phone-brand">rumo<em>.</em></div>
+            <div class="phone-title">Qui voyage avec vous ?</div>
+            <div class="phone-field">
+              <div class="lbl">Client principal</div>
+              <div class="val">Anna Janssens</div>
+            </div>
+            <div class="phone-field">
+              <div class="lbl">Carte d'identité</div>
+              <div class="val">✓ Téléversée</div>
+            </div>
+            <div class="phone-field tikt-aan">
+              <div class="lbl">Régime ou allergies</div>
+              <div class="val">Végétarien, sans fruits à coque</div>
+            </div>
+            <div class="phone-cta">Confirmer et continuer →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE · GUEST CHAT ═══════════════════════ -->
+<section class="fp-section">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Chat avec la réception</span>
+        <h2>Une seule conversation, de la <em>réservation</em> au départ.</h2>
+        <p class="lead">Des messages dans les deux sens, toujours au même endroit. Dans l'autre sens aussi : la réception ouvre la conversation quand c'est nécessaire.</p>
+        <ul class="fp-bullets">
+          <li>Si le client ne regarde pas, il reçoit un mail. Un seul, pas une avalanche</li>
+          <li>Arrive dans la même boîte que votre chat interne, avec une réponse préparée par Rudy</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-statusbar">
+              <span>9:41</span>
+              <span>● ● ●</span>
+            </div>
+            <div class="phone-brand">rumo<em>.</em></div>
+            <div class="phone-title">Chat avec la réception</div>
+            <div class="phone-field">
+              <div class="lbl">Réception</div>
+              <div class="val">Bonjour Anna, petite info : il y a des travaux dans notre rue. Le plus simple pour se garer est de passer par la Kerkstraat.</div>
+            </div>
+            <div class="phone-field komt-op">
+              <div class="lbl">Tom · chambre 206</div>
+              <div class="val">Pourrions-nous avoir deux serviettes supplémentaires ?</div>
+            </div>
+            <div class="phone-cta">Tapez un message →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE · DIGITALE SLEUTEL ═══════════════════════ -->
+<section class="fp-section alt reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Arrivée</span>
+        <h2>Entrer sans <em>clé</em>, sans comptoir.</h2>
+        <p class="lead">Relié à vos serrures Salto, le client reçoit ses codes pour la porte d'entrée, le parking et la chambre. S'il arrive à minuit, personne ne doit être au comptoir.</p>
+        <p class="lead"><strong>Le code n'arrive que si tout est en ordre.</strong> S'il reste un solde ouvert ou si le check-in n'est pas fait, cela reste fermé. Si cela ne se règle pas et que le client arrive aujourd'hui, la cloche le signale à votre réception.</p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-statusbar">
+              <span>9:41</span>
+              <span>● ● ●</span>
+            </div>
+            <div class="phone-brand">rumo<em>.</em></div>
+            <div class="phone-title">Vos codes d'accès</div>
+            <div class="phone-field">
+              <div class="lbl">Porte d'entrée du bâtiment</div>
+              <div class="val">4 8 2 7</div>
+            </div>
+            <div class="phone-field">
+              <div class="lbl">Chambre 205</div>
+              <div class="val">6 5 5 1</div>
+            </div>
+            <div class="phone-field">
+              <div class="lbl">Valable</div>
+              <div class="val">14 mai 15:00 → 17 mai 11:00</div>
+            </div>
+            <div class="phone-cta">Envoyer aussi les codes par mail →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 3 · TIJDENS HET VERBLIJF ═══════════════════════ -->
+<section class="fp-section">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Entre l'arrivée et le départ</span>
+        <h2>Devis, paiement, <em>facture</em>.</h2>
+        <p class="lead">Vous envoyez un devis sous forme de lien et le client confirme ou refuse. Un solde ouvert, il le paie lui-même. Et il récupère la facture jusqu'à deux semaines après son départ.</p>
+        <ul class="fp-bullets">
+          <li>Bancontact, Visa, Mastercard ou Apple Pay</li>
+          <li>Un lien de paiement pour une partie du montant, pratique quand une entreprise paie une part</li>
+          <li>Ventes additionnelles et surclassements avant l'arrivée, en add-on séparé</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-offer">
+          <div class="offer-header">
+            <div class="offer-kicker">Devis de Hotel Sfeer</div>
+            <div class="offer-title">Week-end romantique avec dîner</div>
+          </div>
+          <div class="offer-lines">
+            <div class="offer-line">
+              <div>2 nuits en Junior Suite</div>
+              <div class="amt">€280</div>
+            </div>
+            <div class="offer-line">
+              <div>Petit-déjeuner × 4</div>
+              <div class="amt">€64</div>
+            </div>
+            <div class="offer-line">
+              <div>Dîner 4 services × 2</div>
+              <div class="amt">€140</div>
+            </div>
+          </div>
+          <div class="offer-total">
+            <strong>Total</strong>
+            <div class="price">€484</div>
+          </div>
+          <div class="offer-actions">
+            <div class="offer-btn primary">Confirmer</div>
+            <div class="offer-btn">Des questions ?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 4 · POLITIE ═══════════════════════ -->
+<section class="fp-section alt reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Conformité</span>
+        <h2><em>Déclaration</em> à la police, automatiquement.</h2>
+        <p class="lead">Ce que le client a rempli lui-même remplit d'un coup trois obligations : l'enregistrement policier, la taxe de séjour sur sa facture et les statistiques officielles.</p>
+        <p class="lead">Celui qui tape tout cela au comptoir le recompte ensuite trois fois. Ici, cela vient de la source. Le dépôt reste votre signature ; le comptage, non.</p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-police">
+          <div class="mockup-head">
+            <h5>Export police · <span data-datum="maand-naam">avril 2026</span></h5>
+            <span class="badge">142 enregistrements</span>
+          </div>
+          <div class="police-row">
+            <div>
+              <strong>Müller, Hans</strong> <span>DE · 12 – 15 · chambre 104</span>
+            </div>
+            <div class="status">Complet</div>
+          </div>
+          <div class="police-row">
+            <div>
+              <strong>Janssens, Anna</strong> <span>BE · 14 – 17 · chambre 103</span>
+            </div>
+            <div class="status">Complet</div>
+          </div>
+          <div class="police-row">
+            <div>
+              <strong>Dupont, Marie</strong> <span>FR · 18 – 20 · chambre 102</span>
+            </div>
+            <div class="status">Complet</div>
+          </div>
+          <div class="police-row">
+            <div>
+              <strong>+ 139 autres enregistrements</strong> <span>Nationalité, pièce d'identité, adresse, dates</span>
+            </div>
+            <div class="status">Complet</div>
+          </div>
+          <div class="police-export">Exporter au format police</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ANDERE FEATURES ═══════════════════════ -->
+<section class="fp-others">
+  <div class="wrap">
+    <div class="fp-others-head fade-up">
+      <span class="kicker">Autres fonctionnalités</span>
+      <h3>Le portail client est <em>une couche</em>.<br>Il y a autre chose autour.</h3>
+      <p>Le PMS, Rudy, le manuel, la prévention, le channel manager. Tout dans le même rumo, tout ensemble un seul système.</p>
+    </div>
+    <div class="fp-others-grid fade-up">
+
+      <a class="fp-others-card" href="pms.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h4>Le <em>PMS</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="rudy.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4><em>Rudy</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="handbook.html">
+        <div class="fp-others-ic" style="background:#DCE4F3; color:#4a7fb5;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h6M8 11h8"/></svg>
+        </div>
+        <h4>Le <em>manuel</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="prevention.html">
+        <div class="fp-others-ic" style="background:#FCEDBD; color:#8a6b1a;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4><em>Prévention</em> &amp; bien-être</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="channel-manager.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
+        </div>
+        <h4><em>Channel</em> manager</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Essayer vous-même</span>
+    <h2>Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.</h2>
+    <p>Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations, avec un portail client qui fonctionne. Cela ne vous convient pas ? Alors il disparaît sans bruit.</p>
+    <a href="index.html#demo" class="btn-paper">Essayez 14 jours gratuitement <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="migration.html">Migration des données offerte</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+// threshold 0, niet 0.1: een blok hoger dan tien keer het scherm haalde die
+// drempel nooit, en bleef onzichtbaar op een telefoon.
+}, { threshold: 0 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.documentElement.dataset.fadeReady = '1';
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../gate.js"></script>
+<script src="../demo-form.js?v=2" defer></script>
+<script src="../datums.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security &amp; privacy · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Passkeys, shielded guest data, an alarm on unusual reading behaviour, decoys, and an incident file that prepares the notification to the data protection authority for you. Included, not an add-on.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* ─── HERO ─── */
+  .fp-hero {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .fp-hero-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 4.5rem;
+    align-items: center;
+  }
+  .fp-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8a6b1a;
+    background: #FCEDBD;
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .fp-hero-tag svg { width: 14px; height: 14px; stroke-width: 1.8; fill: none; }
+  .fp-hero-addon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--forest);
+    background: var(--forest-soft);
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
+    margin-left: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .fp-hero-addon::before {
+    content: '';
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--forest);
+  }
+  .fp-hero-text h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2.4rem, 4.8vw, 3.6rem);
+    letter-spacing: -0.028em;
+    line-height: 1.04;
+    margin-bottom: 1.4rem;
+  }
+  .fp-hero-text h1 em { color: var(--terra-dark); font-style: italic; }
+  .fp-hero-text .lead {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 52ch;
+    margin-bottom: 2rem;
+  }
+  .fp-hero-bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .fp-hero-bullets li::before {
+    content: '·';
+    color: var(--terra);
+    margin-right: 0.5em;
+  }
+
+  /* ─── SECTIONS ─── */
+  .fp-section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .fp-section.alt { background: var(--paper-deep); }
+  .fp-section-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .fp-section.reverse .fp-section-inner > .fp-section-visual { order: -1; }
+  .fp-section-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-bottom: 0.9rem;
+    display: inline-block;
+  }
+  .fp-section-text h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+    margin-bottom: 1.3rem;
+  }
+  .fp-section-text h2 em { color: var(--terra-dark); font-style: italic; }
+  .fp-section-text .lead {
+    color: var(--ink-soft);
+    line-height: 1.65;
+    max-width: 52ch;
+    font-size: 1.02rem;
+    margin-bottom: 1.3rem;
+  }
+  .fp-note {
+    margin-top: 1.2rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.15rem;
+    color: var(--terra-dark);
+  }
+  .fp-bullets {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  .fp-bullets li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .fp-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.65em;
+    width: 8px; height: 1.5px;
+    background: var(--terra);
+  }
+  .fp-bullets li em { color: var(--terra-dark); font-style: italic; }
+
+  /* ─── mockup wrapper ─── */
+  .mockup {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1.4rem;
+    box-shadow: 0 20px 40px rgba(27,25,23,0.08);
+  }
+  .mockup-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mockup-head h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .mockup-head .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    background: var(--sand);
+    color: var(--ink);
+  }
+
+  /* Mockup · Notifications */
+  .mk-notif .notif {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left-width: 3px;
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.55rem;
+  }
+  .mk-notif .notif:last-child { margin-bottom: 0; }
+  .mk-notif .notif.warn { border-left-color: #d8a437; }
+  .mk-notif .notif.ok { border-left-color: var(--forest); }
+  .mk-notif .notif.red { border-left-color: var(--terra-dark); }
+  .mk-notif .notif.info { border-left-color: #4a7fb5; }
+  .mk-notif .notif .ic {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .mk-notif .notif.warn .ic { background: #FCEDBD; color: #8a6b1a; }
+  .mk-notif .notif.ok .ic { background: var(--forest-soft); color: var(--forest); }
+  .mk-notif .notif.red .ic { background: var(--rose-soft); color: var(--terra-dark); }
+  .mk-notif .notif.info .ic { background: #DCE4F3; color: #4a7fb5; }
+  .mk-notif .notif strong { display: block; font-size: 0.92rem; color: var(--ink); margin-bottom: 0.1rem; }
+  .mk-notif .notif span { font-size: 0.74rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+
+  /* Mockup · Dossier rows */
+  .mk-dossier .dossier-row {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--paper);
+    margin-bottom: 0.55rem;
+  }
+  .mk-dossier .dossier-row:last-child { margin-bottom: 0; }
+  .mk-dossier .dossier-row .ic {
+    width: 36px; height: 36px;
+    border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .mk-dossier .dossier-row .ic svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+  .mk-dossier .dossier-row strong { display: block; font-size: 0.94rem; color: var(--ink); margin-bottom: 0.15rem; }
+  .mk-dossier .dossier-row .meta { font-size: 0.72rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+  .mk-dossier .dossier-row .status {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.55rem;
+    border-radius: 100px;
+    background: var(--forest-soft);
+    color: var(--forest);
+  }
+  .mk-dossier .dossier-row.warn .status { background: #FCEDBD; color: #8a6b1a; }
+
+  /* Mockup · Afgeschermde velden */
+  .mk-mask .row {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.75rem 0.4rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.92rem;
+  }
+  .mk-mask .row:last-child { border-bottom: none; }
+  .mk-mask .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    width: 96px;
+    flex-shrink: 0;
+  }
+  .mk-mask .val { color: var(--ink); }
+  .mk-mask .val.hid { font-family: 'JetBrains Mono', monospace; color: var(--muted); letter-spacing: 0.06em; }
+  .mk-mask .tag {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.55rem;
+    border-radius: 100px;
+    background: var(--sand);
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .mk-mask .tag.open { background: var(--rose-soft); color: var(--terra-dark); }
+  .mk-mask .tag.nooit { background: #EDEAE4; color: var(--muted); }
+  .mk-mask .mask-foot {
+    margin-top: 0.9rem;
+    padding: 0.8rem 1rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* Mockup · Checklist */
+  .mk-checklist .check-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.7rem 0.4rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.92rem;
+  }
+  .mk-checklist .check-item:last-child { border-bottom: none; }
+  .mk-checklist .check-box {
+    width: 20px; height: 20px;
+    border: 2px solid var(--line);
+    border-radius: 5px;
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem;
+  }
+  .mk-checklist .check-box.done { background: var(--forest); border-color: var(--forest); color: var(--paper); }
+  .mk-checklist .check-item.done { color: var(--muted); }
+  .mk-checklist .check-item .meta {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .mk-checklist .checklist-summary {
+    margin-top: 0.85rem;
+    padding: 0.85rem 1rem;
+    background: #FCEDBD;
+    border-radius: 10px;
+    color: #8a6b1a;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  /* Mockup · Audit timeline */
+  .mk-audit .audit-item {
+    display: flex;
+    gap: 0.85rem;
+    padding-bottom: 0.85rem;
+    margin-bottom: 0.85rem;
+    border-bottom: 1px dashed var(--line);
+  }
+  .mk-audit .audit-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .mk-audit .audit-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--terra);
+    margin-top: 0.4em;
+    flex-shrink: 0;
+  }
+  .mk-audit .audit-text strong { display: block; font-size: 0.92rem; color: var(--ink); margin-bottom: 0.15rem; }
+  .mk-audit .audit-text span { font-size: 0.74rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; display: block; margin-bottom: 0.2rem; }
+  .mk-audit .audit-text p { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.5; }
+
+  /* ─── eerlijk blok ─── */
+  .fp-honest {
+    background: var(--paper);
+    padding: 5.5rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .fp-honest-inner { max-width: 720px; margin: 0 auto; }
+  .fp-honest-card {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 2.2rem 2.4rem;
+  }
+  .fp-honest h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0.5rem 0 1rem;
+  }
+  .fp-honest h3 em { color: var(--terra-dark); font-style: italic; }
+  .fp-honest p { color: var(--ink-soft); font-size: 1rem; max-width: 58ch; }
+
+  /* ─── andere features strip ─── */
+  .fp-others {
+    background: var(--paper-deep);
+    padding: 5rem 0 6rem;
+    border-top: 1px solid var(--line);
+  }
+  .fp-others-head {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fp-others-head h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0.6rem 0 0.8rem;
+  }
+  .fp-others-head h3 em { color: var(--terra-dark); font-style: italic; }
+  .fp-others-head p { color: var(--ink-soft); font-size: 0.98rem; }
+  .fp-others-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .fp-others-card {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  }
+  .fp-others-card:hover {
+    box-shadow: 0 14px 28px rgba(27,25,23,0.08);
+    transform: translateY(-3px);
+    border-color: var(--terra);
+  }
+  .fp-others-ic {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fp-others-ic svg { width: 16px; height: 16px; stroke-width: 1.8; fill: none; }
+  .fp-others-card h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .fp-others-card h4 em { color: var(--terra-dark); font-style: italic; font-weight: 300; }
+  .fp-others-card .arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-top: auto;
+  }
+
+  @media (max-width: 880px) {
+    .fp-hero { padding: 4rem 0; }
+    .fp-hero-inner, .fp-section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .fp-section.reverse .fp-section-inner > .fp-section-visual { order: 0; }
+    .fp-section { padding: 4rem 0; }
+    .fp-others-grid { grid-template-columns: repeat(2, 1fr); }
+    .fp-honest-card { padding: 1.6rem 1.5rem; }
+  }
+  @media (max-width: 600px) {
+    .fp-others-grid { grid-template-columns: 1fr; }
+    .mk-mask .lbl { width: 78px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">What do we do?</a></li>
+    <li><a href="what-drives-us.html">What drives us?</a></li>
+    <li><a href="pricing.html">And erm, what does it cost?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Try it free →</a></li>
+    <li class="nav-lang">
+      <a href="../veiligheid.html">NL</a>
+      <a href="security.html" class="active">EN</a>
+      <a href="../fr/securite.html">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="fp-hero">
+  <div class="wrap">
+    <div class="fp-hero-inner fade-up">
+      <div class="fp-hero-text">
+        <span class="fp-hero-tag">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Security &amp; privacy
+        </span>
+        <span class="fp-hero-addon">Included · not an add-on</span>
+        <h1>Who can get at <em>your guest list</em>?</h1>
+        <p class="lead">Most software assumes that whoever is inside belongs there. rumo does not. You log in with your finger, you see no guest data by default, and before money or a user moves you have to confirm again that it is you.</p>
+        <p class="lead">If something does go wrong, the letter to your guests and the notification to the authorities are ready before you have properly started looking.</p>
+        <ul class="fp-hero-bullets">
+          <li>Log in with your finger</li>
+          <li>Alarm on unusual behaviour</li>
+          <li>Notification ready within 72 hours</li>
+        </ul>
+      </div>
+      <div class="fp-hero-visual">
+        <div class="mockup mk-notif">
+          <div class="mockup-head">
+            <h5>Notifications</h5>
+            <span class="badge">Today</span>
+          </div>
+          <div class="notif warn">
+            <div class="ic">!</div>
+            <div>
+              <strong>Unusually many reservations opened</strong> <span>Nathalie · 10 minutes · reception account</span>
+            </div>
+          </div>
+          <div class="notif red">
+            <div class="ic">△</div>
+            <div>
+              <strong>Someone is guessing reservation numbers</strong> <span>Decoy shown · review account</span>
+            </div>
+          </div>
+          <div class="notif info">
+            <div class="ic">i</div>
+            <div>
+              <strong>Refund confirmed with a passkey</strong> <span>€ 240,00 · Tom · 14:02</span>
+            </div>
+          </div>
+          <div class="notif ok">
+            <div class="ic">✓</div>
+            <div>
+              <strong>Dormant account switched off</strong> <span>Last login · 94 days ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 1 · DE VOORDEUR ═══════════════════════ -->
+<section class="fp-section">
+  <div class="wrap">
+    <div class="fp-section-inner fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">The front door</span>
+        <h2>A password alone is <em>not a lock</em>.</h2>
+        <p class="lead">rumo works with passkeys: you confirm with your finger, your face or the code of your own device. There is nothing to look over your shoulder at and nothing to reuse.</p>
+        <ul class="fp-bullets">
+          <li><em>Second factor compulsory</em> for everyone, through Google or Microsoft too</li>
+          <li><em>Automatic sign-out</em> after a while of doing nothing. Half an hour is the maximum</li>
+          <li><em>Dormant accounts</em> switch off by themselves after 90 days. So last summer's intern no longer has a key</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-dossier">
+          <div class="mockup-head">
+            <h5>Users</h5>
+            <span class="badge">7 people</span>
+          </div>
+          <div class="dossier-row">
+            <div class="ic" style="background:var(--forest-soft); color:var(--forest);">
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <div>
+              <strong>Nathalie · reception</strong>
+              <div class="meta">Passkey · finger or face</div>
+            </div>
+            <div class="status">In order</div>
+          </div>
+          <div class="dossier-row warn">
+            <div class="ic" style="background:#FCEDBD; color:#8a6b1a;">
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <div>
+              <strong>Tom · manager</strong>
+              <div class="meta">Password · second factor requested</div>
+            </div>
+            <div class="status">Almost</div>
+          </div>
+          <div class="dossier-row">
+            <div class="ic" style="background:#EDEAE4; color:var(--muted);">
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Jonas · student</strong>
+              <div class="meta">94 days without logging in</div>
+            </div>
+            <div class="status" style="background:#EDEAE4;color:var(--muted);">Switched off</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 2 · BINNEN DE MUREN ═══════════════════════ -->
+<section class="fp-section alt reverse">
+  <div class="wrap">
+    <div class="fp-section-inner fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">If someone does get in</span>
+        <h2>The real work starts <em>after that</em>.</h2>
+        <p class="lead">A stolen account looks from the outside like an ordinary colleague. So rumo does not look at who logs in, but at what that person does.</p>
+        <ul class="fp-bullets">
+          <li><em>Reading alarm</em> when unusually many guests are opened in a short time. Where the limit lies is set by us, not by the hotel</li>
+          <li><em>Decoys:</em> whoever sits guessing reservation numbers runs into a made-up reservation. Open it and you give yourself away</li>
+          <li><em>Finger on the button</em> for money and for people: refunds, roles, exports</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-notif">
+          <div class="mockup-head">
+            <h5>Security alarms</h5>
+            <span class="badge">Last 7 days</span>
+          </div>
+          <div class="notif warn">
+            <div class="ic">!</div>
+            <div>
+              <strong>Many profiles opened in a short time</strong> <span>Reception account 2 · Tuesday 03:41</span>
+            </div>
+          </div>
+          <div class="notif red">
+            <div class="ic">△</div>
+            <div>
+              <strong>Decoy shown</strong> <span>After 3 non-existent reservation numbers</span>
+            </div>
+          </div>
+          <div class="notif info">
+            <div class="ic">i</div>
+            <div>
+              <strong>Refund refused</strong> <span>Passkey not confirmed · nothing carried out</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 3 · GASTGEGEVENS ═══════════════════════ -->
+<section class="fp-section">
+  <div class="wrap">
+    <div class="fp-section-inner fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Guest data</span>
+        <h2>Housekeeping does not need <em>phone numbers</em>.</h2>
+        <p class="lead">Email addresses, phone numbers, dates of birth: those are shielded by default. Not only on your screen, but on the way there too.</p>
+        <ul class="fp-bullets">
+          <li>Openable per field, and every opening is logged with a name and a time</li>
+          <li>Housekeeping and F&amp;B are not sent them at all</li>
+          <li>Mailing a guest is done by the server. Your screen never needs that address</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-mask">
+          <div class="mockup-head">
+            <h5>Reservation · BK-4821</h5>
+            <span class="badge">Reception</span>
+          </div>
+          <div class="row">
+            <span class="lbl">Name</span> <span class="val">Marie Dubois</span> <span class="tag">Visible</span>
+          </div>
+          <div class="row">
+            <span class="lbl">Email</span> <span class="val hid">m•••@•••.be</span> <span class="tag">Hidden</span>
+          </div>
+          <div class="row">
+            <span class="lbl">Phone</span> <span class="val">+32 470 12 34 56</span> <span class="tag open">Shown · logged</span>
+          </div>
+          <div class="row">
+            <span class="lbl">Birth</span> <span class="val hid">••/••/••••</span> <span class="tag">Hidden</span>
+          </div>
+          <div class="row">
+            <span class="lbl">Identity</span> <span class="val hid">not sent along</span> <span class="tag nooit">Housekeeping</span>
+          </div>
+          <div class="mask-foot">14:06 · Tom showed Marie Dubois's phone number</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 4 · LOGBOEK ═══════════════════════ -->
+<section class="fp-section alt reverse">
+  <div class="wrap">
+    <div class="fp-section-inner fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">The log</span>
+        <h2>Who opened <em>that</em>?</h2>
+        <p class="lead">Every login, every export, every phone number clicked open, every alarm and every euro that moves: it is in there. Searchable by text, type, person and date.</p>
+        <ul class="fp-bullets">
+          <li>Exporting asks for your passkey too, and then lands in the log itself</li>
+          <li>You decide how long everything stays. The clean-up leaves a trail as well</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-audit">
+          <div class="mockup-head">
+            <h5>Log</h5>
+            <span class="badge">Filter · guest data</span>
+          </div>
+          <div class="audit-item">
+            <div class="audit-dot"></div>
+            <div class="audit-text">
+              <strong>Phone number shown</strong>
+              <span>Tom · today 14:06</span>
+              <p>Reservation BK-4821 · guest Marie Dubois</p>
+            </div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-dot"></div>
+            <div class="audit-text">
+              <strong>Export of reservations</strong>
+              <span>Nathalie · yesterday 17:22</span>
+              <p>412 rows · CSV · confirmed with a passkey</p>
+            </div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-dot"></div>
+            <div class="audit-text">
+              <strong>Role changed</strong>
+              <span>Jeffrey · Monday 09:04</span>
+              <p>Tom was given manager rights · confirmed with a passkey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 5 · RUMO ZELF ═══════════════════════ -->
+<section class="fp-section">
+  <div class="wrap">
+    <div class="fp-section-inner fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">And what about us?</span>
+        <h2>Can we look inside <em>your hotel</em>?</h2>
+        <p class="lead">Fair question, because a supplier who can quietly get at everything is exactly what you should be afraid of. The answer: only if you ask, and only to look.</p>
+        <ul class="fp-bullets">
+          <li><em>Per question, not per hotel.</em> The permission hangs on one support conversation and ends with it</li>
+          <li><em>Look, do not touch.</em> We cannot save, change or delete anything</li>
+          <li><em>Nobody's account borrowed.</em> Your log shows who at our end looked, by name</li>
+          <li>Withdrawing works on the very next click, not tomorrow</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-audit">
+          <div class="mockup-head">
+            <h5>Log</h5>
+            <span class="badge">Filter · rumo looked along</span>
+          </div>
+          <div class="audit-item">
+            <div class="audit-dot"></div>
+            <div class="audit-text">
+              <strong>Permission given</strong>
+              <span>Jeffrey · Tuesday 10:12</span>
+              <p>Question "invoice shows the wrong VAT" · this conversation only</p>
+            </div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-dot"></div>
+            <div class="audit-text">
+              <strong>Seba (rumo) viewed Invoicing</strong>
+              <span>Tuesday 10:19</span>
+              <p>Read only · own account, no borrowed login</p>
+            </div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-dot"></div>
+            <div class="audit-text">
+              <strong>Permission expired</strong>
+              <span>Tuesday 11:04</span>
+              <p>Question closed · access gone at once</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 6 · INCIDENT ═══════════════════════ -->
+<section class="fp-section alt reverse">
+  <div class="wrap">
+    <div class="fp-section-inner fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">If it does go wrong</span>
+        <h2>72 hours. That is <em>the whole margin</em>.</h2>
+        <p class="lead">If something goes wrong with guest data, the law gives you 72 hours to report it. That clock starts the moment you know, not when you have finished working it out.</p>
+        <ul class="fp-bullets">
+          <li><em>The list:</em> rumo lines up who was staying with you in that period</li>
+          <li><em>The warning:</em> one button mails those guests, each in their own language, from your hotel</li>
+          <li><em>The bank:</em> a letter on your letterhead for anyone who has lost money</li>
+          <li><em>The notification:</em> the article 33 form, filled in with what the file holds</li>
+        </ul>
+        <p class="lead" style="margin-top:1.4rem">The 72-hour clock is there the whole time, counting down.</p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-checklist">
+          <div class="mockup-head">
+            <h5>Incident · phishing January</h5>
+            <span class="badge">Open</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-box done">✓</div>
+            <span>Affected guests collected</span>
+            <span class="meta">128</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-box done">✓</div>
+            <span>Warning sent</span>
+            <span class="meta">128 · 3 languages</span>
+          </div>
+          <div class="check-item done">
+            <div class="check-box done">✓</div>
+            <span>Letter for the bank</span>
+            <span class="meta">4 guests</span>
+          </div>
+          <div class="check-item">
+            <div class="check-box"></div>
+            <span>Notification DPA · draft ready</span>
+            <span class="meta">review</span>
+          </div>
+          <div class="checklist-summary">61 hours left within the notification period</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 7 · FUNDAMENT ═══════════════════════ -->
+<section class="fp-section">
+  <div class="wrap">
+    <div class="fp-section-inner fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Under the bonnet</span>
+        <h2>The things you <em>never see</em>.</h2>
+        <p class="lead">Briefly, because nobody gets cheerful from this. But it is the part where things usually go wrong elsewhere.</p>
+        <ul class="fp-bullets">
+          <li>Your hotel's data is kept separate from every other hotel's</li>
+          <li>Your data sits in Europe and stays in Europe</li>
+          <li>Card numbers never enter our database. Only the type, the expiry date and the last four digits</li>
+          <li>Everything coming in from outside is checked on its signature</li>
+          <li>Every link to the guest portal is valid for one booking</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-dossier">
+          <div class="mockup-head">
+            <h5>Foundation</h5>
+            <span class="badge">Always on</span>
+          </div>
+          <div class="dossier-row">
+            <div class="ic" style="background:var(--forest-soft); color:var(--forest);">
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+            </div>
+            <div>
+              <strong>Separated per hotel</strong>
+              <div class="meta">Your data apart from the rest</div>
+            </div>
+            <div class="status">Active</div>
+          </div>
+          <div class="dossier-row">
+            <div class="ic" style="background:#DCE4F3; color:#4a7fb5;">
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+            </div>
+            <div>
+              <strong>Data in Europe</strong>
+              <div class="meta">Hosting inside the EU</div>
+            </div>
+            <div class="status">Active</div>
+          </div>
+          <div class="dossier-row">
+            <div class="ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12h6"/></svg>
+            </div>
+            <div>
+              <strong>A signature on every message</strong>
+              <div class="meta">The secret replaces itself daily</div>
+            </div>
+            <div class="status">Active</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ EERLIJK ═══════════════════════ -->
+<section class="fp-honest">
+  <div class="wrap">
+    <div class="fp-honest-inner fade-up">
+      <div class="fp-honest-card">
+        <span class="kicker">Honestly now</span>
+        <h3>What we do <em>not</em> claim.</h3>
+        <p>A page about security with only good news on it is not a page about security.</p>
+        <ul class="fp-bullets">
+          <li>We do not hang an ISO certificate on the wall. We do not have one. Do you need one from your insurer or your chain? Say so and we will talk about it, rather than buying a logo for it.</li>
+          <li>We cannot promise that nobody on your team will ever click a bad link again. Nobody can. What we do is make sure it yields as little as possible afterwards.</li>
+          <li>The alarms are tripwires, not locks. They stop nothing; they make noise and write things down. That is deliberate: a lock set too strictly simply blocks someone on a busy Saturday.</li>
+          <li>And what you store with us stays yours. If you ever leave, you take everything with you in an export. Without having to ring anyone for it.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ANDERE FEATURES ═══════════════════════ -->
+<section class="fp-others">
+  <div class="wrap">
+    <div class="fp-others-head fade-up">
+      <span class="kicker">Other features</span>
+      <h3>Security is <em>not a module</em>.<br>It is in everything.</h3>
+      <p>The PMS, Rudy, the handbook, channel manager, guest portal. All in the same rumo, all under the same rules.</p>
+    </div>
+    <div class="fp-others-grid fade-up">
+
+      <a class="fp-others-card" href="pms.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h4>The <em>PMS</em></h4>
+        <span class="arrow">Read more →</span>
+      </a>
+
+      <a class="fp-others-card" href="rudy.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4><em>Rudy</em></h4>
+        <span class="arrow">Read more →</span>
+      </a>
+
+      <a class="fp-others-card" href="prevention.html">
+        <div class="fp-others-ic" style="background:#FCEDBD; color:#8a6b1a;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4><em>Prevention</em> &amp; wellbeing</h4>
+        <span class="arrow">Read more →</span>
+      </a>
+
+      <a class="fp-others-card" href="channel-manager.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
+        </div>
+        <h4><em>Channel</em> manager</h4>
+        <span class="arrow">Read more →</span>
+      </a>
+
+      <a class="fp-others-card" href="guest-portal.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h4>Guest <em>portal &amp; booking engine</em></h4>
+        <span class="arrow">Read more →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Try it yourself</span>
+    <h2>No demo call.<br>Just <em>14 days</em> to play.</h2>
+    <p>No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.</p>
+    <a href="index.html#demo" class="btn-paper">Try it free for 14 days <span>→</span></a>
+    <p class="final-fine">No credit card · Cancellable monthly after 6 months · <a href="switching.html">Free data migration</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Hotel software for independent hoteliers. Without the fuss.</p>
+    </div>
+    <div>
+      <div class="footer-label">Product</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="features.html#integraties">Integrations</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="pricing.html">And erm, what does it cost?</a></li>
+        <li><a href="kb.html">Help centre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="what-drives-us.html">What drives us?</a></li>
+        <li><a href="explained/index.html">Explained (in Dutch)</a></li>
+        <li><a href="switching.html">Switching over (in Dutch)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Send us an email</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Integrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+// threshold 0, niet 0.1: een blok hoger dan tien keer het scherm haalde die
+// drempel nooit, en bleef onzichtbaar op een telefoon.
+}, { threshold: 0 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.documentElement.dataset.fadeReady = '1';
+</script>
+
+</body>
+</html>

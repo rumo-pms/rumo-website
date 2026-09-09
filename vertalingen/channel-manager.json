@@ -1,0 +1,522 @@
+{
+  "Channel manager · rumo": {
+    "en": "Channel manager · rumo",
+    "fr": "Channel manager · rumo"
+  },
+  "Eén wijziging in rumo, binnen seconden op Booking, Airbnb, Expedia en de rest. Realtime, in twee richtingen, met bewaking op dubbele boekingen.": {
+    "en": "One change in rumo, on Booking, Airbnb, Expedia and the rest within seconds. Real time, both ways, with a watch on double bookings.",
+    "fr": "Une modification dans rumo, sur Booking, Airbnb, Expedia et les autres en quelques secondes. En temps réel, dans les deux sens, avec une surveillance des doubles réservations."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "Eén wijziging,<br><em>alle OTA's.</em>": {
+    "en": "One change,<br><em>every OTA.</em>",
+    "fr": "Une modification,<br><em>toutes les OTA.</em>"
+  },
+  "Jij verandert een prijs in rumo, en binnen seconden staat hij op Booking, Airbnb, Expedia en de rest. Komt er een boeking binnen, dan staat ze meteen op je kalender. Eén abonnement bij ons, geen aparte rekening voor de koppeling.": {
+    "en": "You change a price in rumo and within seconds it is on Booking, Airbnb, Expedia and the rest. A booking comes in and it is on your calendar straight away. One subscription with us, no separate bill for the connection.",
+    "fr": "Vous changez un prix dans rumo et quelques secondes plus tard il est sur Booking, Airbnb, Expedia et les autres. Une réservation arrive et elle est aussitôt dans votre calendrier. Un seul abonnement chez nous, pas de facture séparée pour la connexion."
+  },
+  "Wat je hier instelt geldt voor je hele huis, <strong>ook voor je eigen boekingspagina</strong>. Dat moet ook: dat is het enige kanaal zonder channel manager ervoor.": {
+    "en": "What you set here applies to your whole house, <strong>including your own booking page</strong>. It has to: that is the one channel with no channel manager in front of it.",
+    "fr": "Ce que vous réglez ici vaut pour toute la maison, <strong>y compris votre propre page de réservation</strong>. C'est nécessaire : c'est le seul canal sans channel manager devant lui."
+  },
+  "Heen en weer": {
+    "en": "Back and forth",
+    "fr": "Aller et retour"
+  },
+  "Alles wat ze <em>moeten weten.</em>": {
+    "en": "Everything they <em>need to know.</em>",
+    "fr": "Tout ce qu'ils <em>doivent savoir.</em>"
+  },
+  "Naar de kanalen gaan je prijzen, je beschikbaarheid en je restricties. Terug komen de boekingen en de annuleringen. Meestal binnen een handvol seconden.": {
+    "en": "Out to the channels go your rates, your availability and your restrictions. Back come the bookings and the cancellations. Usually within a handful of seconds.",
+    "fr": "Vers les canaux partent vos tarifs, votre disponibilité et vos restrictions. En retour arrivent les réservations et les annulations. En général en quelques secondes."
+  },
+  "<strong>Restricties horen bij een kamertype én een tariefplan.</strong> Sluit je er één, dan blijven de andere open": {
+    "en": "<strong>Restrictions belong to a room type and a rate plan.</strong> Close one and the others stay open",
+    "fr": "<strong>Les restrictions appartiennent à un type de chambre et à un plan tarifaire.</strong> Fermez-en un et les autres restent ouverts"
+  },
+  "Een bulkbewerking is voorbereid, niet verstuurd: pas bij bewaren vertrekt ze": {
+    "en": "A bulk edit is prepared, not sent: it only leaves when you save",
+    "fr": "Une modification en masse est préparée, pas envoyée : elle ne part qu'à l'enregistrement"
+  },
+  "Annuleringen en prijswijzigingen na boeking doe je in het extranet van de OTA": {
+    "en": "Cancellations and price changes after booking you do in the OTA's extranet",
+    "fr": "Les annulations et les changements de prix après réservation se font dans l'extranet de l'OTA"
+  },
+  "Tarieven": {
+    "en": "Rates",
+    "fr": "Tarifs"
+  },
+  "Standard double &middot; za 4 april": {
+    "en": "Standard double &middot; Sat 4 April",
+    "fr": "Standard double &middot; sam 4 avril"
+  },
+  "Nachtprijs <b><span class=\"oud\">&euro;&nbsp;139": {
+    "en": "Nightly rate <b><span class=\"oud\">&euro;&nbsp;139",
+    "fr": "Prix de la nuit <b><span class=\"oud\">&euro;&nbsp;139"
+  },
+  "&euro;&nbsp;155": {
+    "en": "&euro;&nbsp;155",
+    "fr": "&euro;&nbsp;155"
+  },
+  "<span class=\"al-cat\">Kanaal</span><br><b>Booking.com</b>": {
+    "en": "<span class=\"al-cat\">Channel</span><br><b>Booking.com</b>",
+    "fr": "<span class=\"al-cat\">Canal</span><br><b>Booking.com</b>"
+  },
+  "<span class=\"al-merk open was\">Wacht": {
+    "en": "<span class=\"al-merk open was\">Waiting",
+    "fr": "<span class=\"al-merk open was\">En attente"
+  },
+  "Bijgewerkt": {
+    "en": "Updated",
+    "fr": "Mis à jour"
+  },
+  "<span class=\"al-cat\">Kanaal</span><br><b>Airbnb</b>": {
+    "en": "<span class=\"al-cat\">Channel</span><br><b>Airbnb</b>",
+    "fr": "<span class=\"al-cat\">Canal</span><br><b>Airbnb</b>"
+  },
+  "<span class=\"al-merk open was traag1\">Wacht": {
+    "en": "<span class=\"al-merk open was traag1\">Waiting",
+    "fr": "<span class=\"al-merk open was traag1\">En attente"
+  },
+  "<span class=\"al-cat\">Kanaal</span><br><b>Expedia</b>": {
+    "en": "<span class=\"al-cat\">Channel</span><br><b>Expedia</b>",
+    "fr": "<span class=\"al-cat\">Canal</span><br><b>Expedia</b>"
+  },
+  "<span class=\"al-merk open was traag2\">Wacht": {
+    "en": "<span class=\"al-merk open was traag2\">Waiting",
+    "fr": "<span class=\"al-merk open was traag2\">En attente"
+  },
+  "<span class=\"al-cat\">Eigen</span><br><b>Je eigen boekingspagina</b>": {
+    "en": "<span class=\"al-cat\">Own</span><br><b>Your own booking page</b>",
+    "fr": "<span class=\"al-cat\">Propre</span><br><b>Votre page de réservation</b>"
+  },
+  "<span class=\"al-merk open was traag3\">Wacht": {
+    "en": "<span class=\"al-merk open was traag3\">Waiting",
+    "fr": "<span class=\"al-merk open was traag3\">En attente"
+  },
+  "Auto close": {
+    "en": "Auto close",
+    "fr": "Auto close"
+  },
+  "Is je receptie dicht, dan is <em>de nacht dicht.</em>": {
+    "en": "If your desk is closed, <em>the night is closed.</em>",
+    "fr": "Réception fermée, <em>nuit fermée.</em>"
+  },
+  "Stel in hoe laat je receptie sluit. rumo zet die nacht dan vanzelf op stop-sell, op elk kanaal en op je eigen boekingspagina tegelijk. Er is niets om op te drukken.": {
+    "en": "Set what time your reception closes. rumo then puts that night on stop-sell by itself, on every channel and on your own booking page at the same time. There is nothing to press.",
+    "fr": "Indiquez l'heure de fermeture de votre réception. rumo met alors cette nuit-là en stop-sell tout seul, sur chaque canal et sur votre propre page de réservation en même temps. Il n'y a rien à actionner."
+  },
+  "Het sluit alleen díé nacht. Morgen blijft te koop, dus een gast kan nog vooruit boeken terwijl er niemand aan de balie staat.": {
+    "en": "It closes only that night. Tomorrow stays on sale, so a guest can still book ahead while there is nobody at the desk.",
+    "fr": "Cela ne ferme que cette nuit-là. Demain reste en vente, un client peut donc encore réserver à l'avance alors que personne n'est au comptoir."
+  },
+  "Een gast ziet het als uitverkocht, niet als gesloten. Met opzet": {
+    "en": "A guest sees it as sold out, not as closed. On purpose",
+    "fr": "Le client voit « complet », pas « fermé ». C'est voulu"
+  },
+  "Vertrekken op die ochtend kan wel, want dat kost je die nacht niets": {
+    "en": "Departing that morning is still possible, because it costs you nothing that night",
+    "fr": "Un départ le matin même reste possible, cela ne vous coûte pas cette nuit"
+  },
+  "Je receptie mag met de hand nog altijd een boeking aannemen": {
+    "en": "Your reception can still take a booking by hand",
+    "fr": "Votre réception peut toujours accepter une réservation à la main"
+  },
+  "Tarieven en beschikbaarheid": {
+    "en": "Rates and availability",
+    "fr": "Tarifs et disponibilité"
+  },
+  "2 april": {
+    "en": "2 April",
+    "fr": "2 avril"
+  },
+  "<span class=\"aan\">Basistarieven</span><span>Booking.com</span><span>Airbnb</span><span>Expedia</span>": {
+    "en": "<span class=\"aan\">Base rates</span><span>Booking.com</span><span>Airbnb</span><span>Expedia</span>",
+    "fr": "<span class=\"aan\">Tarifs de base</span><span>Booking.com</span><span>Airbnb</span><span>Expedia</span>"
+  },
+  "<span class=\"sub\">Standard double &middot; logies</span><br><b>Vannacht</b>": {
+    "en": "<span class=\"sub\">Standard double &middot; room only</span><br><b>Tonight</b>",
+    "fr": "<span class=\"sub\">Standard double &middot; nuit seule</span><br><b>Cette nuit</b>"
+  },
+  "<span class=\"chip was\">Te koop": {
+    "en": "<span class=\"chip was\">On sale",
+    "fr": "<span class=\"chip was\">En vente"
+  },
+  "Stop-sell": {
+    "en": "Stop-sell",
+    "fr": "Stop-sell"
+  },
+  "<span class=\"sub\">Standard double &middot; logies</span><br><b>Morgen &middot; &euro; 139</b>": {
+    "en": "<span class=\"sub\">Standard double &middot; room only</span><br><b>Tomorrow &middot; &euro; 139</b>",
+    "fr": "<span class=\"sub\">Standard double &middot; nuit seule</span><br><b>Demain &middot; &euro; 139</b>"
+  },
+  "Te koop": {
+    "en": "On sale",
+    "fr": "En vente"
+  },
+  "<span class=\"sub\">Standard double &middot; ontbijt</span><br><b>Morgen &middot; &euro; 155</b>": {
+    "en": "<span class=\"sub\">Standard double &middot; breakfast</span><br><b>Tomorrow &middot; &euro; 155</b>",
+    "fr": "<span class=\"sub\">Standard double &middot; petit-déjeuner</span><br><b>Demain &middot; &euro; 155</b>"
+  },
+  "<span class=\"sub\">Receptie sluit om 22u00</span><br><b>Stoppen met verkopen om 20u00</b>": {
+    "en": "<span class=\"sub\">Reception closes at 22:00</span><br><b>Stop selling at 20:00</b>",
+    "fr": "<span class=\"sub\">La réception ferme à 22h00</span><br><b>Arrêter la vente à 20h00</b>"
+  },
+  "Auto close aan": {
+    "en": "Auto close on",
+    "fr": "Auto close activé"
+  },
+  "Aan": {
+    "en": "On",
+    "fr": "Activé"
+  },
+  "Alleen vannacht. Morgen blijft te koop": {
+    "en": "Tonight only. Tomorrow stays on sale",
+    "fr": "Cette nuit seulement. Demain reste en vente"
+  },
+  "Loopt het nog?": {
+    "en": "Is it still running?",
+    "fr": "Est-ce que ça tourne ?"
+  },
+  "Niet alleen <em>verstuurd</em>, ook <em>aangekomen.</em>": {
+    "en": "Not only <em>sent</em>, but <em>arrived.</em>",
+    "fr": "Pas seulement <em>envoyé</em>, aussi <em>arrivé.</em>"
+  },
+  "Het overzicht is je gezondheidscheck: ben je verbonden, wanneer kwam de laatste boeking binnen, en is er onlangs iets misgelopen.": {
+    "en": "The overview is your health check: are you connected, when did the last booking come in, and did anything go wrong recently.",
+    "fr": "L'aperçu est votre bilan de santé : êtes-vous connecté, quand est arrivée la dernière réservation, et est-ce que quelque chose a récemment mal tourné."
+  },
+  "<strong>Elke nacht wordt er vergeleken.</strong> Niet of rumo iets verstuurd heeft, maar of de kanalen het ook echt vasthouden. Blijft een verschil de volgende nacht staan, dan is het meestal een instelling en geen hik.": {
+    "en": "<strong>Every night there is a comparison.</strong> Not whether rumo sent something, but whether the channels are actually holding it. If a difference is still there the next night, it is usually a setting and not a hiccup.",
+    "fr": "<strong>Chaque nuit, une comparaison est faite.</strong> Non pas pour savoir si rumo a envoyé quelque chose, mais si les canaux le retiennent réellement. Si un écart est encore là la nuit suivante, c'est en général un réglage et pas un hoquet."
+  },
+  "Een kamertype dat je later toevoegt, raakt niet vanzelf bekend bij de kanalen. Het paneel noemt bij naam wat ontbreekt": {
+    "en": "A room type you add later does not become known to the channels by itself. The panel names what is missing",
+    "fr": "Un type de chambre ajouté plus tard n'est pas connu des canaux pour autant. Le panneau nomme ce qui manque"
+  },
+  "Overzicht": {
+    "en": "Overview",
+    "fr": "Aperçu"
+  },
+  "Verbonden": {
+    "en": "Connected",
+    "fr": "Connecté"
+  },
+  "Ja": {
+    "en": "Yes",
+    "fr": "Oui"
+  },
+  "Laatste boeking": {
+    "en": "Last booking",
+    "fr": "Dernière réservation"
+  },
+  "14 min": {
+    "en": "14 min",
+    "fr": "14 min"
+  },
+  "Laatste push": {
+    "en": "Last push",
+    "fr": "Dernier envoi"
+  },
+  "3 min": {
+    "en": "3 min",
+    "fr": "3 min"
+  },
+  "Mislukt (24u)": {
+    "en": "Failed (24h)",
+    "fr": "Échecs (24h)"
+  },
+  "Nachtelijke vergelijking": {
+    "en": "Nightly comparison",
+    "fr": "Comparaison nocturne"
+  },
+  "<span class=\"sub\">Vannacht gecontroleerd</span><br><b>Alles kwam overeen</b>": {
+    "en": "<span class=\"sub\">Checked tonight</span><br><b>Everything matched</b>",
+    "fr": "<span class=\"sub\">Contrôlé cette nuit</span><br><b>Tout correspondait</b>"
+  },
+  "In orde": {
+    "en": "All good",
+    "fr": "En ordre"
+  },
+  "<span class=\"sub\">Twee nachten op rij</span><br><b>3 nachten wijken af op Expedia</b>": {
+    "en": "<span class=\"sub\">Two nights running</span><br><b>3 nights differ on Expedia</b>",
+    "fr": "<span class=\"sub\">Deux nuits d'affilée</span><br><b>3 nuits diffèrent sur Expedia</b>"
+  },
+  "Kijk hier eens": {
+    "en": "Take a look",
+    "fr": "Jetez-y un œil"
+  },
+  "<span class=\"sub\">Na het aansluiten toegevoegd</span><br><b>Familiekamer nog niet bekend</b>": {
+    "en": "<span class=\"sub\">Added after connecting</span><br><b>Family room not known yet</b>",
+    "fr": "<span class=\"sub\">Ajouté après la connexion</span><br><b>Chambre familiale pas encore connue</b>"
+  },
+  "Opnieuw verbinden": {
+    "en": "Reconnect",
+    "fr": "Reconnecter"
+  },
+  "<span class=\"sub\">Familiekamer &middot; na het aansluiten toegevoegd</span><br><b>Nog niet bij de channel manager bekend</b>": {
+    "en": "<span class=\"sub\">Family room &middot; added after connecting</span><br><b>Not known to the channel manager yet</b>",
+    "fr": "<span class=\"sub\">Chambre familiale &middot; ajoutée après la connexion</span><br><b>Pas encore connue du channel manager</b>"
+  },
+  "De kanalen verkopen wat ze kennen, niet wat je nog niet doorgaf": {
+    "en": "The channels sell what they know, not what you have not passed on",
+    "fr": "Les canaux vendent ce qu'ils connaissent, pas ce que vous n'avez pas transmis"
+  },
+  "Meer dan sync": {
+    "en": "More than sync",
+    "fr": "Plus qu'une synchro"
+  },
+  "Wat rumo nog met de OTA's <em>doet</em>.": {
+    "en": "What else rumo <em>does</em> with the OTAs.",
+    "fr": "Ce que rumo <em>fait</em> encore avec les OTA."
+  },
+  "Prijzen en beschikbaarheid doorsturen is het begin. Achter de schermen regelt rumo nog een pak dingen die je anders manueel bij Booking of Airbnb zou moeten uitzoeken.": {
+    "en": "Sending rates and availability is the beginning. Behind the scenes rumo settles a good deal more that you would otherwise have to sort out by hand at Booking or Airbnb.",
+    "fr": "Transmettre les prix et la disponibilité n'est qu'un début. En coulisses, rumo règle bien d'autres choses que vous devriez sinon démêler à la main chez Booking ou Airbnb."
+  },
+  "Booking.com": {
+    "en": "Booking.com",
+    "fr": "Booking.com"
+  },
+  "Ongeldige kaart? <em>Booking</em> lost het op.": {
+    "en": "Invalid card? <em>Booking</em> sorts it out.",
+    "fr": "Carte invalide ? <em>Booking</em> s'en occupe."
+  },
+  "Blijkt een gastkaart dood, dan meldt rumo dat terug aan Booking.com. Booking vraagt de gast om een nieuwe kaart en geeft jou annuleringsrecht als het niet lukt.": {
+    "en": "If a guest card turns out to be dead, rumo reports that back to Booking.com. Booking asks the guest for a new card and gives you the right to cancel if it does not work out.",
+    "fr": "Si une carte client se révèle morte, rumo le signale à Booking.com. Booking demande une nouvelle carte au client et vous donne le droit d'annuler si cela ne se règle pas."
+  },
+  "Inbox + Rudy": {
+    "en": "Inbox + Rudy",
+    "fr": "Boîte de réception + Rudy"
+  },
+  "Gastberichten van de OTA's, <em>op één plek</em>.": {
+    "en": "Guest messages from the OTAs, <em>in one place</em>.",
+    "fr": "Les messages clients des OTA, <em>au même endroit</em>."
+  },
+  "Berichten van Booking.com en Airbnb komen binnen in rumo, Rudy schrijft het antwoord voor en de receptie verstuurt. Expedia doet hier niet aan mee. Deze koppeling neem je apart bij, de rest van deze pagina zit in je pakket.": {
+    "en": "Messages from Booking.com and Airbnb arrive in rumo, Rudy drafts the answer and reception sends it. Expedia does not take part in this. You take this connection separately; the rest of this page is in your package.",
+    "fr": "Les messages de Booking.com et d'Airbnb arrivent dans rumo, Rudy prépare la réponse et la réception l'envoie. Expedia ne participe pas à cela. Cette connexion se prend à part ; le reste de cette page est compris dans votre formule."
+  },
+  "Virtuele kaarten": {
+    "en": "Virtual cards",
+    "fr": "Cartes virtuelles"
+  },
+  "Kaartafhandeling <em>per kanaal</em>, automatisch.": {
+    "en": "Card handling <em>per channel</em>, automatically.",
+    "fr": "Traitement des cartes <em>par canal</em>, automatiquement."
+  },
+  "Verifiëren, pre-autoriseren of automatisch afboeken, per kanaal ingesteld. Een virtuele kaart van Booking wordt vaak pas vlak voor aankomst geldig, dus rumo probeert niet te vroeg en herprobeert vanzelf.": {
+    "en": "Verify, pre-authorise or charge automatically, set per channel. A virtual card from Booking often only becomes valid shortly before arrival, so rumo does not try too early and retries by itself.",
+    "fr": "Vérifier, préautoriser ou débiter automatiquement, réglé par canal. Une carte virtuelle de Booking ne devient souvent valable que peu avant l'arrivée : rumo n'essaie donc pas trop tôt et réessaie tout seul."
+  },
+  "Netto-omzet": {
+    "en": "Net revenue",
+    "fr": "Chiffre d'affaires net"
+  },
+  "De <em>echte</em> commissie, per boeking.": {
+    "en": "The <em>real</em> commission, per booking.",
+    "fr": "La <em>vraie</em> commission, par réservation."
+  },
+  "rumo leest het commissiebedrag dat bij elke boeking meekomt. Je netto-omzet per reservatie klopt dus, in plaats van giswerk met een gemiddeld percentage.": {
+    "en": "rumo reads the commission amount that comes along with every booking. So your net revenue per reservation is right, instead of guesswork with an average percentage.",
+    "fr": "rumo lit le montant de commission qui accompagne chaque réservation. Votre CA net par réservation est donc juste, au lieu d'être estimé avec un pourcentage moyen."
+  },
+  "Optionele add-on": {
+    "en": "Optional add-on",
+    "fr": "Add-on optionnel"
+  },
+  "<em>Smart Pricing</em>, ingebouwd.": {
+    "en": "<em>Smart Pricing</em>, built in.",
+    "fr": "<em>Smart Pricing</em>, intégré."
+  },
+  "Prijzen die meebewegen met je bezetting, in stappen die je zelf instelt en meteen naar je kanalen geduwd. Geen externe tool nodig.": {
+    "en": "Prices that move with your occupancy, in steps you set yourself and pushed straight to your channels. No external tool needed.",
+    "fr": "Des prix qui suivent votre taux d'occupation, par paliers que vous réglez vous-même et poussés directement vers vos canaux. Pas d'outil externe nécessaire."
+  },
+  "Ontdubbeling": {
+    "en": "Deduplication",
+    "fr": "Dédoublonnage"
+  },
+  "Geen <em>dubbele</em> imports.": {
+    "en": "No <em>double</em> imports.",
+    "fr": "Pas d'imports <em>en double</em>."
+  },
+  "Stuurt een kanaal dezelfde boeking twee keer door, dan herkent rumo dat en houdt hij de dubbel tegen.": {
+    "en": "If a channel sends the same booking twice, rumo recognises it and holds the duplicate back.",
+    "fr": "Si un canal envoie deux fois la même réservation, rumo le reconnaît et retient le doublon."
+  },
+  "Statuspaneel": {
+    "en": "Status panel",
+    "fr": "Panneau d'état"
+  },
+  "Zie in één oogopslag of de <em>sync loopt</em>.": {
+    "en": "See at a glance whether the <em>sync is running</em>.",
+    "fr": "Voyez d'un coup d'œil si la <em>synchro tourne</em>."
+  },
+  "Laatste boeking binnen, laatste wijziging verstuurd, en wat er misliep. Staat er iets vast, dan duw je het met de hand opnieuw.": {
+    "en": "Last booking in, last change sent, and what went wrong. If something is stuck, you push it again by hand.",
+    "fr": "Dernière réservation reçue, dernière modification envoyée, et ce qui a échoué. Si quelque chose est bloqué, vous le renvoyez à la main."
+  },
+  "De lijst": {
+    "en": "The list",
+    "fr": "La liste"
+  },
+  "Booking, Airbnb, Expedia, <em>en een honderdtal anderen</em>.": {
+    "en": "Booking, Airbnb, Expedia, <em>and a hundred or so others</em>.",
+    "fr": "Booking, Airbnb, Expedia, <em>et une centaine d'autres</em>."
+  },
+  "Een honderdtal kanalen is bereikbaar. De grote drie staan klaar, voor de exotischere helpen we met de eerste aansluiting. Hou je het bij de grote drie? Dat doen de meeste hotels.": {
+    "en": "A hundred or so channels are reachable. The big three are ready to go; for the more exotic ones we help with the first connection. Sticking to the big three? That is what most hotels do.",
+    "fr": "Une centaine de canaux sont accessibles. Les trois grands sont prêts ; pour les plus exotiques, nous aidons à la première connexion. Vous vous en tenez aux trois grands ? C'est ce que font la plupart des hôtels."
+  },
+  "<em>Staat klaar:</em> Booking, Airbnb, Expedia, Hotelbeds, Agoda": {
+    "en": "<em>Ready to go:</em> Booking, Airbnb, Expedia, Hotelbeds, Agoda",
+    "fr": "<em>Prêts :</em> Booking, Airbnb, Expedia, Hotelbeds, Agoda"
+  },
+  "<em>Op aanvraag:</em> HotelsCombined, Hostelworld, Despegar, lokale OTA's": {
+    "en": "<em>On request:</em> HotelsCombined, Hostelworld, Despegar, local OTAs",
+    "fr": "<em>Sur demande :</em> HotelsCombined, Hostelworld, Despegar, OTA locales"
+  },
+  "Plus je eigen boekingspagina, waar geen commissie op zit": {
+    "en": "Plus your own booking page, which carries no commission",
+    "fr": "Plus votre propre page de réservation, sans commission"
+  },
+  "Gekoppelde kanalen": {
+    "en": "Connected channels",
+    "fr": "Canaux connectés"
+  },
+  "5 actief": {
+    "en": "5 active",
+    "fr": "5 actifs"
+  },
+  "<strong>Booking.com</strong> <span class=\"status\">Verbonden</span>": {
+    "en": "<strong>Booking.com</strong> <span class=\"status\">Connected</span>",
+    "fr": "<strong>Booking.com</strong> <span class=\"status\">Connecté</span>"
+  },
+  "<strong>Airbnb</strong> <span class=\"status\">Verbonden</span>": {
+    "en": "<strong>Airbnb</strong> <span class=\"status\">Connected</span>",
+    "fr": "<strong>Airbnb</strong> <span class=\"status\">Connecté</span>"
+  },
+  "<strong>Expedia</strong> <span class=\"status\">Verbonden</span>": {
+    "en": "<strong>Expedia</strong> <span class=\"status\">Connected</span>",
+    "fr": "<strong>Expedia</strong> <span class=\"status\">Connecté</span>"
+  },
+  "<strong>Hotelbeds</strong> <span class=\"status\">Verbonden</span>": {
+    "en": "<strong>Hotelbeds</strong> <span class=\"status\">Connected</span>",
+    "fr": "<strong>Hotelbeds</strong> <span class=\"status\">Connecté</span>"
+  },
+  "<strong>Agoda</strong> <span class=\"status\">Verbonden</span>": {
+    "en": "<strong>Agoda</strong> <span class=\"status\">Connected</span>",
+    "fr": "<strong>Agoda</strong> <span class=\"status\">Connecté</span>"
+  },
+  "<strong>Eigen website</strong> <span class=\"status\">Verbonden</span>": {
+    "en": "<strong>Own website</strong> <span class=\"status\">Connected</span>",
+    "fr": "<strong>Site propre</strong> <span class=\"status\">Connecté</span>"
+  },
+  "+ een honderdtal kanalen": {
+    "en": "+ a hundred or so channels",
+    "fr": "+ une centaine de canaux"
+  },
+  "Andere features": {
+    "en": "Other features",
+    "fr": "Autres fonctionnalités"
+  },
+  "Channel manager is <em>één laag</em>.<br>Daar omheen ligt nog wat.": {
+    "en": "The channel manager is <em>one layer</em>.<br>There is more around it.",
+    "fr": "Le channel manager est <em>une couche</em>.<br>Il y a autre chose autour."
+  },
+  "De PMS, Rudy, het handboek, preventie, guest portal. Allemaal in dezelfde rumo, allemaal samen één systeem.": {
+    "en": "The PMS, Rudy, the handbook, prevention, guest portal. All in the same rumo, all one system together.",
+    "fr": "Le PMS, Rudy, le manuel, la prévention, le portail client. Tout dans le même rumo, tout ensemble un seul système."
+  },
+  "De <em>PMS</em>": {
+    "en": "The <em>PMS</em>",
+    "fr": "Le <em>PMS</em>"
+  },
+  "Lees meer →": {
+    "en": "Read more →",
+    "fr": "Lire la suite →"
+  },
+  "<em>Rudy</em>": {
+    "en": "<em>Rudy</em>",
+    "fr": "<em>Rudy</em>"
+  },
+  "Het <em>handboek</em>": {
+    "en": "The <em>handbook</em>",
+    "fr": "Le <em>manuel</em>"
+  },
+  "<em>Preventie</em> &amp; welzijn": {
+    "en": "<em>Prevention</em> &amp; wellbeing",
+    "fr": "<em>Prévention</em> &amp; bien-être"
+  },
+  "Guest <em>portal &amp; booking engine</em>": {
+    "en": "Guest <em>portal &amp; booking engine</em>",
+    "fr": "<em>Portail client</em> &amp; moteur de réservation"
+  },
+  "Zelf proberen": {
+    "en": "Try it yourself",
+    "fr": "Essayer vous-même"
+  },
+  "Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.": {
+    "en": "No demo call.<br>Just <em>14 days</em> to play.",
+    "fr": "Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer."
+  },
+  "Geen creditcard, geen verplichtingen, geen \"account manager\" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.": {
+    "en": "No credit card, no obligations, no \"account manager\" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.",
+    "fr": "Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit."
+  },
+  "Probeer 14 dagen gratis <span>→</span>": {
+    "en": "Try it free for 14 days <span>→</span>",
+    "fr": "Essayez 14 jours gratuitement <span>→</span>"
+  },
+  "Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href=\"overstappen.html\">Gratis datamigratie</a>": {
+    "en": "No credit card · Cancellable monthly after 6 months · <a href=\"overstappen.html\">Free data migration</a>",
+    "fr": "Sans carte de crédit · Résiliable au mois après 6 mois · <a href=\"overstappen.html\">Migration des données offerte</a>"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  },
+  "Een prijswijziging in rumo die na elkaar naar Booking.com, Airbnb, Expedia en de eigen boekingspagina vertrekt.": {
+    "en": "A price change in rumo leaving one after the other for Booking.com, Airbnb, Expedia and the own booking page.",
+    "fr": "Une modification de prix dans rumo qui part l'une après l'autre vers Booking.com, Airbnb, Expedia et la page de réservation propre."
+  },
+  "Het tarievenraster van rumo: de nacht van vandaag gaat op stop-sell zodra de receptie sluit.": {
+    "en": "The rate grid in rumo: tonight goes to stop-sell as soon as reception closes.",
+    "fr": "La grille tarifaire de rumo : la nuit d'aujourd'hui passe en stop-sell dès que la réception ferme."
+  },
+  "Het overzicht van de channel manager in rumo: verbindingsstatus, de nachtelijke vergelijking en de koppeling van je kamertypes.": {
+    "en": "The channel manager overview in rumo: connection status, the nightly comparison and the linking of your room types.",
+    "fr": "L'aperçu du channel manager dans rumo : état des connexions, comparaison nocturne et rattachement de vos types de chambres."
+  }
+}

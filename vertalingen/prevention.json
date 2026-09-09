@@ -1,0 +1,410 @@
+{
+  "Preventie &amp; welzijn · rumo": {
+    "en": "Prevention &amp; wellbeing · rumo",
+    "fr": "Prévention &amp; bien-être · rumo"
+  },
+  "Brandpreventie, legionella, EHBO, checklists, incidenten. Eindelijk in één levend dossier dat meedenkt, herinnert en documenteert.": {
+    "en": "Fire prevention, legionella, first aid, checklists, incidents. At last in one living file that thinks along, reminds and documents.",
+    "fr": "Prévention incendie, légionelle, premiers secours, checklists, incidents. Enfin dans un dossier vivant qui suit, rappelle et documente."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "Preventie &amp; welzijn": {
+    "en": "Prevention &amp; wellbeing",
+    "fr": "Prévention &amp; bien-être"
+  },
+  "Add-on &middot; &euro;29/maand": {
+    "en": "Add-on &middot; &euro;29/month",
+    "fr": "Add-on &middot; 29 &euro;/mois"
+  },
+  "Brandpreventie. Legionella. EHBO.<br><em>Eindelijk onder controle.</em>": {
+    "en": "Fire prevention. Legionella. First aid.<br><em>Under control at last.</em>",
+    "fr": "Prévention incendie. Légionelle. Premiers secours.<br><em>Enfin sous contrôle.</em>"
+  },
+  "Elke hotelier kent het gevoel: ergens in een kast ligt een map met keuringen, checklists en veiligheidsplannen. Niemand weet zeker of alles nog geldig is. Tot er een inspectie komt.": {
+    "en": "Every hotelier knows the feeling: somewhere in a cupboard there is a folder with inspections, checklists and safety plans. Nobody is quite sure whether it is all still valid. Until an inspector turns up.",
+    "fr": "Tout hôtelier connaît ce sentiment : quelque part dans une armoire se trouve un classeur avec des contrôles, des checklists et des plans de sécurité. Personne ne sait avec certitude si tout est encore valable. Jusqu'à ce qu'une inspection arrive."
+  },
+  "Een hotel is namelijk ook een gebouw, en dat gebouw heeft zijn eigen administratie. Vijftien installaties, elk met een eigen firma, een eigen termijn en een eigen papiertje. Dat is geen technisch probleem maar een <strong>documentenprobleem</strong>.": {
+    "en": "Because a hotel is also a building, and that building has its own paperwork. Fifteen installations, each with its own company, its own interval and its own certificate. That is not a technical problem but a <strong>document problem</strong>.",
+    "fr": "Un hôtel est aussi un bâtiment, et ce bâtiment a sa propre administration. Quinze installations, chacune avec sa firme, son délai et son papier. Ce n'est pas un problème technique mais un <strong>problème de documents</strong>."
+  },
+  "Installaties": {
+    "en": "Installations",
+    "fr": "Installations"
+  },
+  "Elke installatie heeft <em>zijn eigen klok.</em>": {
+    "en": "Every installation has <em>its own clock.</em>",
+    "fr": "Chaque installation a <em>sa propre horloge.</em>"
+  },
+  "Per installatie leg je vast wat het is, tot wanneer het attest geldt, wie ze onderhoudt en wie ze keurt. Die laatste twee zijn met opzet aparte namen, want dat is de vraag die je binnen een jaar stelt.": {
+    "en": "Per installation you record what it is, until when the certificate is valid, who maintains it and who inspects it. Those last two are deliberately separate names, because that is the question you ask a year from now.",
+    "fr": "Par installation, vous notez ce que c'est, jusqu'à quand l'attestation vaut, qui l'entretient et qui la contrôle. Ces deux derniers sont volontairement des noms distincts, car c'est la question que vous poserez dans un an."
+  },
+  "De status stel je niet in, die volgt uit de vervaldatum": {
+    "en": "You do not set the status; it follows from the expiry date",
+    "fr": "Vous ne réglez pas le statut : il découle de la date d'échéance"
+  },
+  "Een installatie zonder datum krijgt geen status. Dat is <em>niet</em> hetzelfde als in orde": {
+    "en": "An installation without a date gets no status. That is <em>not</em> the same as being in order",
+    "fr": "Une installation sans date n'a pas de statut. Ce n'est <em>pas</em> la même chose qu'être en ordre"
+  },
+  "rumo kent de wettelijke termijn niet. Wat jij invult, is waarmee gewerkt wordt": {
+    "en": "rumo does not know the statutory interval. What you fill in is what it works with",
+    "fr": "rumo ne connaît pas le délai légal. Ce que vous encodez est ce avec quoi il travaille"
+  },
+  "2 april": {
+    "en": "2 April",
+    "fr": "2 avril"
+  },
+  "Vervallen": {
+    "en": "Expired",
+    "fr": "Échue"
+  },
+  "Binnen 30 d": {
+    "en": "Within 30 d",
+    "fr": "Sous 30 j"
+  },
+  "In orde": {
+    "en": "In order",
+    "fr": "En ordre"
+  },
+  "Zonder datum": {
+    "en": "No date",
+    "fr": "Sans date"
+  },
+  "<span class=\"aan\">Alle</span><span>Brand</span><span>Elektrisch</span><span>Water</span><span>Lift</span>": {
+    "en": "<span class=\"aan\">All</span><span>Fire</span><span>Electrical</span><span>Water</span><span>Lift</span>",
+    "fr": "<span class=\"aan\">Toutes</span><span>Incendie</span><span>Électricité</span><span>Eau</span><span>Ascenseur</span>"
+  },
+  "<span class=\"sub\">Keuringsorganisme &middot; laagspanning</span><br><b>Elektrische installatie</b>": {
+    "en": "<span class=\"sub\">Inspection body &middot; low voltage</span><br><b>Electrical installation</b>",
+    "fr": "<span class=\"sub\">Organisme de contrôle &middot; basse tension</span><br><b>Installation électrique</b>"
+  },
+  "<span class=\"sub\">Liftfirma &middot; risicoanalyse</span><br><b>Personenlift</b>": {
+    "en": "<span class=\"sub\">Lift company &middot; risk analysis</span><br><b>Passenger lift</b>",
+    "fr": "<span class=\"sub\">Ascensoriste &middot; analyse de risques</span><br><b>Ascenseur</b>"
+  },
+  "Nog 12 dagen": {
+    "en": "12 days left",
+    "fr": "Encore 12 jours"
+  },
+  "<span class=\"sub\">Brandbeveiliger &middot; 14 stuks</span><br><b>Blustoestellen</b>": {
+    "en": "<span class=\"sub\">Fire safety company &middot; 14 units</span><br><b>Extinguishers</b>",
+    "fr": "<span class=\"sub\">Société incendie &middot; 14 pièces</span><br><b>Extincteurs</b>"
+  },
+  "Nog 21 dagen": {
+    "en": "21 days left",
+    "fr": "Encore 21 jours"
+  },
+  "Onderhoud en keuring staan als aparte firma's": {
+    "en": "Maintenance and inspection are listed as separate companies",
+    "fr": "L'entretien et le contrôle figurent comme deux firmes distinctes"
+  },
+  "Op tijd": {
+    "en": "On time",
+    "fr": "À temps"
+  },
+  "Je ziet het <em>voor iemand ernaar vraagt.</em>": {
+    "en": "You see it <em>before anyone asks.</em>",
+    "fr": "Vous le voyez <em>avant qu'on ne le demande.</em>"
+  },
+  "Een keuring die volgende week vervalt kan je niet volgende week regelen. Er komt eerst een elektricien om te herstellen wat de vorige keuring opmerkte, en pas daarna het keuringsorganisme. Twee agenda's, twee wachttijden.": {
+    "en": "An inspection that expires next week cannot be arranged next week. First an electrician comes to repair what the previous inspection noted, and only then the inspection body. Two diaries, two waiting times.",
+    "fr": "Un contrôle qui échoit la semaine prochaine ne se règle pas la semaine prochaine. Un électricien passe d'abord réparer ce que le contrôle précédent avait relevé, et l'organisme de contrôle ensuite seulement. Deux agendas, deux délais."
+  },
+  "Daarom waarschuwt rumo dertig, veertien, zeven en één dag vooraf. In de bel staat live wat aandacht vraagt: vervallende keuringen, openstaande taken, een evacuatieoefening ouder dan een jaar.": {
+    "en": "That is why rumo warns thirty, fourteen, seven and one day ahead. The bell shows live what needs attention: expiring inspections, open tasks, an evacuation drill older than a year.",
+    "fr": "C'est pourquoi rumo prévient trente, quatorze, sept et un jour à l'avance. La cloche montre en direct ce qui demande de l'attention : contrôles qui échoient, tâches ouvertes, un exercice d'évacuation vieux de plus d'un an."
+  },
+  "Die waarschuwingen komen in de app, niet in je mailbox. Er moet iemand rumo openen": {
+    "en": "Those warnings come in the app, not in your mailbox. Someone has to open rumo",
+    "fr": "Ces avertissements arrivent dans l'application, pas dans votre boîte mail. Quelqu'un doit ouvrir rumo"
+  },
+  "De bel is voor managers en admins": {
+    "en": "The bell is for managers and admins",
+    "fr": "La cloche est réservée aux managers et aux admins"
+  },
+  "Wat vraagt aandacht": {
+    "en": "What needs attention",
+    "fr": "Ce qui demande de l'attention"
+  },
+  "<span class=\"sub\">Vervallen</span><br><b>Keuringsattest laagspanning</b>": {
+    "en": "<span class=\"sub\">Expired</span><br><b>Low-voltage inspection certificate</b>",
+    "fr": "<span class=\"sub\">Échu</span><br><b>Attestation de contrôle basse tension</b>"
+  },
+  "Sinds 9 dagen": {
+    "en": "For 9 days",
+    "fr": "Depuis 9 jours"
+  },
+  "<span class=\"sub\">Binnen 30 dagen</span><br><b>Attest blustoestellen</b>": {
+    "en": "<span class=\"sub\">Within 30 days</span><br><b>Extinguisher certificate</b>",
+    "fr": "<span class=\"sub\">Sous 30 jours</span><br><b>Attestation extincteurs</b>"
+  },
+  "<span class=\"sub\">Jaarlijks &middot; verwacht</span><br><b>Evacuatieoefening</b>": {
+    "en": "<span class=\"sub\">Yearly &middot; expected</span><br><b>Evacuation drill</b>",
+    "fr": "<span class=\"sub\">Annuel &middot; attendu</span><br><b>Exercice d'évacuation</b>"
+  },
+  "14 maanden geleden": {
+    "en": "14 months ago",
+    "fr": "Il y a 14 mois"
+  },
+  "<span class=\"sub\">Binnen 30 dagen</span><br><b>Risicoanalyse lift</b>": {
+    "en": "<span class=\"sub\">Within 30 days</span><br><b>Lift risk analysis</b>",
+    "fr": "<span class=\"sub\">Sous 30 jours</span><br><b>Analyse de risques ascenseur</b>"
+  },
+  "Taken en checklists": {
+    "en": "Tasks and checklists",
+    "fr": "Tâches et checklists"
+  },
+  "<span class=\"sub\">Jaarlijks</span><br><b>Evacuatieoefening</b>": {
+    "en": "<span class=\"sub\">Yearly</span><br><b>Evacuation drill</b>",
+    "fr": "<span class=\"sub\">Annuel</span><br><b>Exercice d'évacuation</b>"
+  },
+  "In de app, niet in je mailbox": {
+    "en": "In the app, not in your mailbox",
+    "fr": "Dans l'application, pas dans votre boîte mail"
+  },
+  "Het dossier": {
+    "en": "The file",
+    "fr": "Le dossier"
+  },
+  "Een dossier dat <em>kant-en-klaar ligt.</em>": {
+    "en": "A file that is <em>ready and waiting.</em>",
+    "fr": "Un dossier <em>prêt à être montré.</em>"
+  },
+  "De attesten, verslagen, vergunningen en plannen zelf, tot 25 MB per bestand. Met per document wie het uitschreef en tot wanneer het geldt.": {
+    "en": "The certificates, reports, permits and plans themselves, up to 25 MB per file. With, per document, who wrote it out and until when it is valid.",
+    "fr": "Les attestations, rapports, autorisations et plans eux-mêmes, jusqu'à 25 Mo par fichier. Avec, par document, qui l'a délivré et jusqu'à quand il vaut."
+  },
+  "Versies in plaats van overschrijven: de oude wordt gearchiveerd, de ketting blijft compleet": {
+    "en": "Versions instead of overwriting: the old one is archived, the chain stays complete",
+    "fr": "Des versions plutôt qu'un écrasement : l'ancienne est archivée, la chaîne reste complète"
+  },
+  "Per document kies je wie het mag zien. Rudy houdt zich aan diezelfde regel": {
+    "en": "Per document you choose who may see it. Rudy sticks to that same rule",
+    "fr": "Par document, vous choisissez qui peut le voir. Rudy respecte la même règle"
+  },
+  "Stuur hem een stapel attesten en hij zet ze klaar, maar hij archiveert nooit zelf": {
+    "en": "Send him a stack of certificates and he lines them up, but he never files them himself",
+    "fr": "Envoyez-lui une pile d'attestations et il les prépare, mais il n'archive jamais lui-même"
+  },
+  "Documenten": {
+    "en": "Documents",
+    "fr": "Documents"
+  },
+  "48 stuks": {
+    "en": "48 items",
+    "fr": "48 pièces"
+  },
+  "<span class=\"aan\">Alle</span><span>Attesten</span><span>Verslagen</span><span>Plannen</span><span>Polissen</span>": {
+    "en": "<span class=\"aan\">All</span><span>Certificates</span><span>Reports</span><span>Plans</span><span>Policies</span>",
+    "fr": "<span class=\"aan\">Tous</span><span>Attestations</span><span>Rapports</span><span>Plans</span><span>Polices</span>"
+  },
+  "<span class=\"sub\">Brandbeveiliger &middot; versie 4</span><br><b>Keuringsattest blustoestellen</b>": {
+    "en": "<span class=\"sub\">Fire safety company &middot; version 4</span><br><b>Extinguisher inspection certificate</b>",
+    "fr": "<span class=\"sub\">Société incendie &middot; version 4</span><br><b>Attestation de contrôle extincteurs</b>"
+  },
+  "Geldig tot 23/04": {
+    "en": "Valid until 23/04",
+    "fr": "Valable jusqu'au 23/04"
+  },
+  "<span class=\"sub\">Preventieadviseur</span><br><b>Risicoanalyse gebouw</b>": {
+    "en": "<span class=\"sub\">Prevention adviser</span><br><b>Building risk analysis</b>",
+    "fr": "<span class=\"sub\">Conseiller en prévention</span><br><b>Analyse de risques du bâtiment</b>"
+  },
+  "Alleen managers": {
+    "en": "Managers only",
+    "fr": "Managers uniquement"
+  },
+  "<span class=\"sub\">Versie 3 &middot; gearchiveerd</span><br><b>Keuringsattest blustoestellen</b>": {
+    "en": "<span class=\"sub\">Version 3 &middot; archived</span><br><b>Extinguisher inspection certificate</b>",
+    "fr": "<span class=\"sub\">Version 3 &middot; archivée</span><br><b>Attestation de contrôle extincteurs</b>"
+  },
+  "Bewaard": {
+    "en": "Kept",
+    "fr": "Conservée"
+  },
+  "Wacht op bevestiging": {
+    "en": "Waiting for confirmation",
+    "fr": "En attente de confirmation"
+  },
+  "Rudy zet klaar, jij bevestigt": {
+    "en": "Rudy lines it up, you confirm",
+    "fr": "Rudy prépare, vous confirmez"
+  },
+  "Registers en checklists": {
+    "en": "Registers and checklists",
+    "fr": "Registres et checklists"
+  },
+  "Checklists die <em>écht gebeuren.</em>": {
+    "en": "Checklists that <em>actually happen.</em>",
+    "fr": "Des checklists qui <em>se font vraiment.</em>"
+  },
+  "Naast de techniek loopt er een tweede spoor: incidenten, EHBO, psychosociale feiten, evacuatieoefeningen, legionella, chemische producten, en wie er in het gebouw kwam werken.": {
+    "en": "Alongside the technical side runs a second track: incidents, first aid, psychosocial facts, evacuation drills, legionella, chemical products, and who came to work in the building.",
+    "fr": "À côté de la technique court une seconde piste : incidents, premiers secours, faits psychosociaux, exercices d'évacuation, légionelle, produits chimiques, et qui est venu travailler dans le bâtiment."
+  },
+  "<strong>Het verschil tussen een taak en een checklist zit in het bewijs.</strong> Een taak onthoudt alleen wanneer ze het laatst gedaan is. Een checklist laat een spoor na: wie ze uitvoerde, wat er per punt uitkwam, en een handtekening. Die wordt vanzelf een pdf bij je documenten.": {
+    "en": "<strong>The difference between a task and a checklist is the proof.</strong> A task only remembers when it was last done. A checklist leaves a trail: who carried it out, what came out per point, and a signature. That becomes a PDF with your documents by itself.",
+    "fr": "<strong>La différence entre une tâche et une checklist, c'est la preuve.</strong> Une tâche retient seulement quand elle a été faite pour la dernière fois. Une checklist laisse une trace : qui l'a exécutée, ce que chaque point a donné, et une signature. Elle devient toute seule un PDF dans vos documents."
+  },
+  "Een aannemer meldt zichzelf aan met een QR-code, zonder rumo-login": {
+    "en": "A contractor signs in with a QR code, without a rumo login",
+    "fr": "Un entrepreneur s'annonce lui-même avec un code QR, sans login rumo"
+  },
+  "Die bezoekregistraties worden na twee jaar gewist. Wil je iets bewaren, exporteer het op tijd": {
+    "en": "Those visitor registrations are deleted after two years. If you want to keep something, export it in time",
+    "fr": "Ces enregistrements de visite sont effacés après deux ans. Si vous voulez en garder, exportez à temps"
+  },
+  "<span class=\"aan\">Registers</span><span>Checklists</span><span>Aannemers</span>": {
+    "en": "<span class=\"aan\">Registers</span><span>Checklists</span><span>Contractors</span>",
+    "fr": "<span class=\"aan\">Registres</span><span>Checklists</span><span>Entrepreneurs</span>"
+  },
+  "<span class=\"sub\">Incidenten</span><br><b>3 dit jaar &middot; 1 open</b>": {
+    "en": "<span class=\"sub\">Incidents</span><br><b>3 this year &middot; 1 open</b>",
+    "fr": "<span class=\"sub\">Incidents</span><br><b>3 cette année &middot; 1 ouvert</b>"
+  },
+  "Bijgehouden": {
+    "en": "Kept up",
+    "fr": "Tenu à jour"
+  },
+  "<span class=\"sub\">Legionella</span><br><b>Spoellogboek &middot; 6 kranen</b>": {
+    "en": "<span class=\"sub\">Legionella</span><br><b>Flushing log &middot; 6 taps</b>",
+    "fr": "<span class=\"sub\">Légionelle</span><br><b>Carnet de rinçage &middot; 6 robinets</b>"
+  },
+  "Deze week": {
+    "en": "This week",
+    "fr": "Cette semaine"
+  },
+  "<span class=\"sub\">Evacuatieoefening</span><br><b>Laatste 14 maanden geleden</b>": {
+    "en": "<span class=\"sub\">Evacuation drill</span><br><b>Last one 14 months ago</b>",
+    "fr": "<span class=\"sub\">Exercice d'évacuation</span><br><b>Le dernier il y a 14 mois</b>"
+  },
+  "Verwacht": {
+    "en": "Expected",
+    "fr": "Attendu"
+  },
+  "Checklist net afgetekend": {
+    "en": "Checklist just signed off",
+    "fr": "Checklist tout juste signée"
+  },
+  "<span class=\"sub\">Maandelijkse brandronde &middot; An</span><br><b>18 punten &middot; 1 opmerking</b>": {
+    "en": "<span class=\"sub\">Monthly fire round &middot; An</span><br><b>18 points &middot; 1 remark</b>",
+    "fr": "<span class=\"sub\">Ronde incendie mensuelle &middot; An</span><br><b>18 points &middot; 1 remarque</b>"
+  },
+  "<span class=\"chip oranje was\">Bezig": {
+    "en": "<span class=\"chip oranje was\">In progress",
+    "fr": "<span class=\"chip oranje was\">En cours"
+  },
+  "Getekend": {
+    "en": "Signed",
+    "fr": "Signée"
+  },
+  "Een taak onthoudt de datum, een checklist laat bewijs na": {
+    "en": "A task remembers the date; a checklist leaves proof",
+    "fr": "Une tâche retient la date, une checklist laisse une preuve"
+  },
+  "Andere features": {
+    "en": "Other features",
+    "fr": "Autres fonctionnalités"
+  },
+  "Preventie is <em>één laag</em>.<br>Daar omheen ligt nog wat.": {
+    "en": "Prevention is <em>one layer</em>.<br>There is more around it.",
+    "fr": "La prévention est <em>une couche</em>.<br>Il y a autre chose autour."
+  },
+  "De PMS, Rudy, het handboek, channel manager, guest portal. Allemaal in dezelfde rumo, allemaal samen één systeem.": {
+    "en": "The PMS, Rudy, the handbook, channel manager, guest portal. All in the same rumo, all one system together.",
+    "fr": "Le PMS, Rudy, le manuel, le channel manager, le portail client. Tout dans le même rumo, tout ensemble un seul système."
+  },
+  "De <em>PMS</em>": {
+    "en": "The <em>PMS</em>",
+    "fr": "Le <em>PMS</em>"
+  },
+  "Lees meer →": {
+    "en": "Read more →",
+    "fr": "Lire la suite →"
+  },
+  "<em>Rudy</em>": {
+    "en": "<em>Rudy</em>",
+    "fr": "<em>Rudy</em>"
+  },
+  "Het <em>handboek</em>": {
+    "en": "The <em>handbook</em>",
+    "fr": "Le <em>manuel</em>"
+  },
+  "<em>Channel</em> manager": {
+    "en": "<em>Channel</em> manager",
+    "fr": "<em>Channel</em> manager"
+  },
+  "Guest <em>portal &amp; booking engine</em>": {
+    "en": "Guest <em>portal &amp; booking engine</em>",
+    "fr": "<em>Portail client</em> &amp; moteur de réservation"
+  },
+  "Zelf proberen": {
+    "en": "Try it yourself",
+    "fr": "Essayer vous-même"
+  },
+  "Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.": {
+    "en": "No demo call.<br>Just <em>14 days</em> to play.",
+    "fr": "Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer."
+  },
+  "Geen creditcard, geen verplichtingen, geen \"account manager\" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.": {
+    "en": "No credit card, no obligations, no \"account manager\" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.",
+    "fr": "Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit."
+  },
+  "Probeer 14 dagen gratis <span>→</span>": {
+    "en": "Try it free for 14 days <span>→</span>",
+    "fr": "Essayez 14 jours gratuitement <span>→</span>"
+  },
+  "Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href=\"overstappen.html\">Gratis datamigratie</a>": {
+    "en": "No credit card · Cancellable monthly after 6 months · <a href=\"overstappen.html\">Free data migration</a>",
+    "fr": "Sans carte de crédit · Résiliable au mois après 6 mois · <a href=\"overstappen.html\">Migration des données offerte</a>"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  },
+  "Het installatieregister in rumo: elke installatie met zijn vervaldatum en de status die daaruit volgt.": {
+    "en": "The installation register in rumo: every installation with its expiry date and the status that follows from it.",
+    "fr": "Le registre des installations dans rumo : chaque installation avec sa date d'échéance et le statut qui en découle."
+  },
+  "De meldingenbel in rumo: wat er vandaag aandacht vraagt aan keuringen, taken en documenten.": {
+    "en": "The notification bell in rumo: what needs attention today in inspections, tasks and documents.",
+    "fr": "La cloche de notifications dans rumo : ce qui demande de l'attention aujourd'hui côté contrôles, tâches et documents."
+  },
+  "Het documentendossier in rumo: attesten met hun versies en een wachtrij met wat Rudy heeft klaargezet.": {
+    "en": "The document file in rumo: certificates with their versions and a queue with what Rudy has lined up.",
+    "fr": "Le dossier documentaire dans rumo : des attestations avec leurs versions et une file d'attente avec ce que Rudy a préparé."
+  },
+  "De veiligheidsregisters in rumo, met een checklist die net afgetekend is en als pdf bij de documenten belandt.": {
+    "en": "The safety registers in rumo, with a checklist just signed off that lands as a PDF with the documents.",
+    "fr": "Les registres de sécurité dans rumo, avec une checklist tout juste signée qui atterrit en PDF dans les documents."
+  }
+}

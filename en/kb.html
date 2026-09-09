@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../gate.js"></script>
+<script src="../demo-form.js?v=2" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helpdesk · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Helpdesk for rumo hotel software. Short pieces of explanation about reservations, channel manager, invoicing, Belgian compliance and Rudy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* ─── KB LAYOUT (mirrors faq pattern) ─── */
+  .kb-main {
+    background:var(--paper);
+    padding:5rem 0 7rem;
+  }
+  .kb-layout {
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:4rem;
+    align-items:start;
+  }
+  /* Zonder min-width:0 krimpt een rasterkind niet onder zijn langste woord, en
+     dan schuift de hele pagina zijwaarts op een telefoon. */
+  .kb-layout > * { min-width:0; }
+  .kb-nav {
+    position:sticky;
+    top:7rem;
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.75rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  .kb-nav-title {
+    color:var(--muted);
+    letter-spacing:0.15em;
+    font-size:0.7rem;
+    margin-bottom:1rem;
+  }
+  .kb-nav ul { list-style:none; }
+  .kb-nav li { margin-bottom:0.4rem; }
+  .kb-nav a {
+    color:var(--ink-soft);
+    text-decoration:none;
+    opacity:0.65;
+    transition:opacity 0.2s, color 0.2s;
+    display:block;
+    padding:0.35rem 0;
+    border-left:2px solid transparent;
+    padding-left:0.8rem;
+  }
+  .kb-nav a:hover { opacity:1; color:var(--terra-dark); }
+  .kb-nav a.active {
+    opacity:1;
+    color:var(--terra-dark);
+    border-left-color:var(--terra-dark);
+  }
+
+  .kb-group {
+    margin-bottom:3.5rem;
+    scroll-margin-top:7rem;
+  }
+  /* De hele kennisbank was één band van 18.000 pixels in dezelfde kleur: 88%
+     van de pagina. Een band over de volle breedte kan hier niet, want dat
+     breekt de vastgezette zijbalk. Vandaar ritme in de groepen zelf: om de
+     twee een eigen vlak, met wisselende tint. Scroll-margin blijft gelijk
+     zodat de ankers uit de zijnavigatie op dezelfde plek uitkomen. */
+  .kb-group:nth-of-type(even) {
+    /* Niet paper-panel: dat is exact de kleur van de kaartjes erin, dus dan
+       zie je het verschil niet. Een echte tint uit het palet wel. */
+    background:var(--paper-deep);
+    border-radius:22px;
+    padding:2.25rem 2.25rem 1.5rem;
+    margin-left:-2.25rem;
+    margin-right:-2.25rem;
+    scroll-margin-top:5rem;
+  }
+  .kb-group:nth-of-type(4n) { background:var(--klei); }
+  @media (max-width:900px) {
+    .kb-group:nth-of-type(even) {
+      margin-left:0; margin-right:0; padding:1.5rem 1.5rem 1rem;
+    }
+  }
+  .kb-group-title {
+    font-family:'Fraunces', serif;
+    font-weight:400;
+    font-size:1.75rem;
+    letter-spacing:-0.02em;
+    margin-bottom:0.4rem;
+    display:inline-flex;
+    align-items:center;
+    gap:0.6em;
+    /* Zonder wrap blijft een titel met een lang cursief woord op één regel
+       staan en duwt hij de pagina zijwaarts op een telefoon. */
+    flex-wrap:wrap;
+    max-width:100%;
+  }
+  .kb-group-title::before {
+    content:'';
+    width:24px; height:1.5px;
+    background:var(--terra);
+  }
+  .kb-group-title em { color:var(--terra-dark); font-style:italic; font-weight:300; }
+  .kb-group-intro {
+    color:var(--muted);
+    font-size:0.92rem;
+    margin:0.2rem 0 1.5rem 2.1rem;
+    max-width:60ch;
+  }
+
+  .kb-articles {
+    display:grid;
+    gap:0.9rem;
+  }
+  .kb-article {
+    background:var(--paper-panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:1.4rem 1.6rem;
+    transition:box-shadow 0.2s, transform 0.2s;
+  }
+  .kb-article:hover {
+    box-shadow:0 12px 28px rgba(27,25,23,0.06);
+  }
+  .kb-article-kicker {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.66rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:0.35rem;
+  }
+  .kb-article-title {
+    font-family:'Fraunces', serif;
+    font-weight:400;
+    font-size:1.15rem;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+    margin-bottom:0.55rem;
+  }
+  .kb-article-title em { color:var(--terra-dark); font-style:italic; font-weight:300; }
+  .kb-article-body p {
+    font-size:0.94rem;
+    line-height:1.65;
+    color:var(--ink-soft);
+    max-width:62ch;
+    margin-bottom:0.65rem;
+  }
+  .kb-article-body p:last-child { margin-bottom:0; }
+  .kb-article-body em { color:var(--terra-dark); font-style:italic; }
+  .kb-article-body strong { font-weight:600; color:var(--ink); }
+  .kb-article-body ul {
+    margin:0.4rem 0 0.6rem 0;
+    padding-left:1.2rem;
+    font-size:0.94rem;
+    line-height:1.65;
+    color:var(--ink-soft);
+  }
+  .kb-article-body li { margin-bottom:0.25rem; }
+
+  /* Kaart die doorverwijst naar een uitgeschreven artikel op een eigen pagina. */
+  .kb-verder {
+    display:inline-flex; align-items:center; gap:0.4em;
+    font-size:0.92rem; font-weight:500; color:var(--terra-dark);
+    text-decoration:none; border-bottom:1px solid rgba(185,107,74,0.35);
+    padding-bottom:1px; transition:border-color 0.2s;
+  }
+  .kb-verder:hover { border-bottom-color:var(--terra-dark); }
+
+  .kb-stub {
+    opacity:0.55;
+    border-style:dashed;
+  }
+  .kb-stub .kb-article-kicker { color:var(--terra); }
+
+  /* sidebar article counter */
+  .kb-nav-count {
+    display:inline-block;
+    margin-left:0.4em;
+    font-size:0.62rem;
+    color:var(--muted);
+    opacity:0.7;
+  }
+  .kb-nav a.active .kb-nav-count { color:var(--terra-dark); opacity:0.9; }
+
+  /* in de pijplijn footer per categorie */
+  .kb-pipeline {
+    margin-top:1.4rem;
+    padding:1rem 0 0;
+    border-top:1px dashed var(--line);
+  }
+  .kb-pipeline-label {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.65rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:0.7rem;
+  }
+  .kb-pipeline-list {
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.5rem;
+  }
+  .kb-pipeline-list li {
+    font-size:0.82rem;
+    color:var(--ink-soft);
+    background:var(--paper-panel);
+    border:1px dashed var(--line);
+    border-radius:999px;
+    padding:0.3rem 0.9rem;
+    opacity:0.8;
+  }
+
+  /* Rudy cheatsheet table */
+  .kb-cheat-table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:0.6rem;
+    font-size:0.9rem;
+  }
+  .kb-cheat-table thead th {
+    text-align:left;
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.66rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:500;
+    padding:0.5rem 0.8rem;
+    border-bottom:1px solid var(--line);
+  }
+  .kb-cheat-table tbody td {
+    padding:0.7rem 0.8rem;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+    line-height:1.55;
+  }
+  .kb-cheat-table tbody tr:last-child td { border-bottom:none; }
+  .kb-cheat-table td.ask {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.82rem;
+    color:var(--ink);
+    width:44%;
+  }
+  .kb-cheat-table td.does { color:var(--ink-soft); }
+  .kb-cheat-table td.does em { color:var(--terra-dark); font-style:italic; }
+  @media (max-width:600px) {
+    .kb-cheat-table, .kb-cheat-table tbody, .kb-cheat-table tr, .kb-cheat-table td { display:block; width:100%; }
+    .kb-cheat-table thead { display:none; }
+    .kb-cheat-table tr { padding:0.7rem 0; border-bottom:1px solid var(--line); }
+    .kb-cheat-table tr:last-child { border-bottom:none; }
+    .kb-cheat-table td { padding:0.2rem 0; border:none; }
+    .kb-cheat-table td.ask { margin-bottom:0.3rem; }
+  }
+
+  /* meta strip onder titel */
+  .kb-meta {
+    background:var(--paper-deep);
+    padding:2.5rem 0;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .kb-meta-grid {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:2rem;
+    max-width:900px;
+    margin:0 auto;
+  }
+  .kb-meta-item {
+    text-align:center;
+  }
+  .kb-meta-num {
+    font-family:'Fraunces', serif;
+    font-size:2rem;
+    color:var(--terra-dark);
+    font-style:italic;
+    font-weight:300;
+    line-height:1;
+  }
+  .kb-meta-label {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.7rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-top:0.5rem;
+  }
+
+  /* contact block (zelfde als faq-sfeer) */
+  .contact {
+    background:var(--paper-deep);
+    padding:5rem 0;
+  }
+  .contact-card {
+    max-width:860px;
+    margin:0 auto;
+    background:var(--paper-panel);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:3rem;
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:2.5rem;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .contact-card::before {
+    content:'';
+    position:absolute;
+    right:-15%; top:-15%;
+    width:50%; height:130%;
+    background:radial-gradient(circle, var(--butter) 0%, transparent 65%);
+    opacity:0.5;
+    filter:blur(12px);
+    pointer-events:none;
+  }
+  .contact-card > * { position:relative; z-index:2; }
+  .contact-card h3 {
+    font-family:'Fraunces', serif;
+    font-weight:400;
+    font-size:1.8rem;
+    letter-spacing:-0.02em;
+    margin-bottom:0.6rem;
+    line-height:1.1;
+  }
+  .contact-card h3 em { color:var(--terra-dark); }
+  .contact-card p {
+    max-width:42ch;
+    color:var(--ink-soft);
+    font-size:1rem;
+  }
+
+  /* responsive */
+  @media (max-width:880px) {
+    .kb-layout { grid-template-columns:1fr; gap:2rem; }
+    .kb-nav { position:static; top:auto; }
+    .kb-nav ul { display:flex; flex-wrap:wrap; gap:0.4rem; }
+    .kb-nav li { margin-bottom:0; }
+    .kb-nav a {
+      border-left:none;
+      padding:0.4rem 0.8rem;
+      background:var(--paper-panel);
+      border-radius:999px;
+      font-size:0.7rem;
+    }
+    .kb-nav a.active {
+      background:var(--terra-dark);
+      color:var(--paper);
+      border-left:none;
+    }
+    .kb-meta-grid { grid-template-columns:1fr; }
+    .contact-card {
+      grid-template-columns:1fr;
+      padding:2rem;
+      text-align:left;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">What do we do?</a></li>
+    <li><a href="what-drives-us.html">What drives us?</a></li>
+    <li><a href="pricing.html">And erm, what does it cost?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Try it free →</a></li>
+    <li class="nav-lang">
+      <a href="../kb.html">NL</a>
+      <a href="kb.html" class="active">EN</a>
+      <a href="../fr/kb.html">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <span class="kicker">Helpdesk</span>
+      <h1>How do you do that <em>again?</em></h1>
+      <p class="lead">Not 300 articles you cannot find. Short pieces that tell you what you want to know, and say honestly when rumo hands the job back to you. Written so that <em>Rudy</em> knows exactly what he may carry out on your behalf.</p>
+      <p class="lead" style="margin-top:1rem;font-size:1rem;">This is how you do something <strong>in rumo</strong>. Looking for how the trade itself works, whatever software you use? That is <a href="explained/index.html">Explained</a>.</p>
+    </div>
+    <div class="page-header-side">
+      12 categories<br> <strong>53 pieces</strong>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>Shorter than a manual</span> <span>Honest about what Rudy may do</span> <span>Belgian compliance included</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ META STRIP ═══════════════════════ -->
+<section class="kb-meta">
+  <div class="wrap">
+    <div class="kb-meta-grid fade-up">
+      <div class="kb-meta-item">
+        <div class="kb-meta-num">1×</div>
+        <div class="kb-meta-label">One page, one scroll</div>
+      </div>
+      <div class="kb-meta-item">
+        <div class="kb-meta-num">2×</div>
+        <div class="kb-meta-label">For you and for Rudy</div>
+      </div>
+      <div class="kb-meta-item">
+        <div class="kb-meta-num">0</div>
+        <div class="kb-meta-label">Screenshots that no longer match</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ KB ═══════════════════════ -->
+<section class="kb-main">
+  <div class="wrap">
+    <div class="kb-layout">
+
+      <aside class="kb-nav">
+        <div class="kb-nav-title">Categories</div>
+        <ul>
+          <li><a href="#aan-de-slag" class="active">Getting started<span class="kb-nav-count">4</span></a></li>
+          <li><a href="#reservaties">Reservations<span class="kb-nav-count">10</span></a></li>
+          <li><a href="#housekeeping">Housekeeping<span class="kb-nav-count">4</span></a></li>
+          <li><a href="#channels">Channel manager<span class="kb-nav-count">5</span></a></li>
+          <li><a href="#tarieven">Rates<span class="kb-nav-count">5</span></a></li>
+          <li><a href="#facturatie">Invoicing &amp; Peppol<span class="kb-nav-count">7</span></a></li>
+          <li><a href="#statistieken">Statistics<span class="kb-nav-count">4</span></a></li>
+          <li><a href="#belgie">Belgian compliance<span class="kb-nav-count">4</span></a></li>
+          <li><a href="#privacy">Privacy &amp; data<span class="kb-nav-count">3</span></a></li>
+          <li><a href="#gebruikers">Users &amp; roles<span class="kb-nav-count">3</span></a></li>
+          <li><a href="#troubleshooting">Troubleshooting<span class="kb-nav-count">5</span></a></li>
+          <li><a href="#rudy">Rudy<span class="kb-nav-count">7</span></a></li>
+        </ul>
+      </aside>
+
+      <div class="kb-groups">
+
+        <!-- ─────────────── AAN DE SLAG ─────────────── -->
+        <div class="kb-group" id="aan-de-slag">
+          <h2 class="kb-group-title">Getting <em>started</em></h2>
+          <p class="kb-group-intro">The first week. Logging in, setting up rooms, booking your first reservation, connecting your first OTA. No two-hour onboarding call. Just do it, and ring us if you get stuck.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">First login</div>
+              <h3 class="kb-article-title">Logging in to rumo for the first time</h3>
+              <div class="kb-article-body">
+                <p>You get a mail from us with a personal link. Click, choose a password, done. No separate hotel ID, no "ask your administrator". If you are the owner yourself, you are the administrator too.</p>
+                <p><em>Do not forget:</em> two-factor is on by default for new accounts. Your phone hangs on your rumo, not the other way round.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Setup</div>
+              <h3 class="kb-article-title"><em>Setting up</em> your rooms and room types</h3>
+              <div class="kb-article-body">
+                <p>Room types first (Standard, Deluxe, Junior Suite, …), then individual rooms. A room type has a rate and a maximum occupancy; an individual room hangs on such a type. The same pattern Booking.com and the other OTAs expect.</p>
+                <p>Tip: keep room types <strong>limited</strong>. Three or four is usually enough. Twenty room types gives you twenty synchronisation problems.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Demo data</div>
+              <h3 class="kb-article-title">Playing with made-up reservations</h3>
+              <div class="kb-article-body">
+                <p>Your starting environment is full of dummy reservations by default so that you can click without breaking anything. Ready to start for real? One click on "Reset data" and everything is empty. Your own rooms stay.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Migration</div>
+              <h3 class="kb-article-title">Coming from another PMS</h3>
+              <div class="kb-article-body">
+                <p>You pull an export out of your current system and read it into your own rumo. Existing reservations, guest profiles and your history come along, and your old system keeps running in the meantime until you switch over. So your file stays with you: we need to receive nothing of it. Most hotels are fully across within a few days, without double entry.</p>
+                <p>Coming from a dog-eared notebook? That is fine too: then you start with an empty calendar and put the coming bookings in. Just ask and we will go through it together.</p>
+                <p><a class="kb-verder" href="switching.html">How the switch works, step by step <span>&rarr;</span></a></p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── RESERVATIES ─────────────── -->
+        <div class="kb-group" id="reservaties">
+          <h2 class="kb-group-title">Reservations &amp; <em>guest portal</em></h2>
+          <p class="kb-group-intro">The part you are in every day. Creating, changing, checking in and out, invoicing. Plus the guest portal: the link your guest gets to fill in their own pre-check-in.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Creating</div>
+              <h3 class="kb-article-title">Creating a reservation at the <em>desk</em></h3>
+              <div class="kb-article-body">
+                <p>Walk-in, phone, mail: press <strong>+ New</strong> or drag an empty strip on the calendar. Choose room type, dates, number of people. rumo pulls the modifier price for that period automatically; you can adjust it. Guest details can follow later through the pre-check-in link, or straight away by typing them in.</p>
+                <p>For a walk-in: tick <em>"check in immediately"</em> and the guest is in-house at once and the room status jumps to <strong>occupied</strong>.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Daily</div>
+              <h3 class="kb-article-title">Checking in and <em>checking out</em></h3>
+              <div class="kb-article-body">
+                <p><strong>Checking in:</strong> open today's arrivals list. Click a reservation open, check whether the pre-check-in is complete, assign a room if that has not happened yet, status to <em>checked in</em>. Done.</p>
+                <p><strong>Checking out:</strong> open the departures list, add the outstanding items (minibar, breakfasts, extras), take payment, the invoice follows automatically. rumo warns you explicitly if there is still an outstanding balance before you actually check out.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Groups</div>
+              <h3 class="kb-article-title">A group of several <em>rooms at once</em></h3>
+              <div class="kb-article-body">
+                <p>Create one main reservation and add several rooms to it. All under the same booking reference. Dates can differ per room (a wedding where the couple stays one night longer, for instance).</p>
+                <p>For invoicing you choose: one collective invoice in the organiser's name, or separate invoices per room or guest. Both are possible, without having to enter the booking again.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Changing</div>
+              <h3 class="kb-article-title">Changing, splitting or <em>moving</em> a reservation</h3>
+              <div class="kb-article-body">
+                <p>Shifting dates or swapping a room is simply a matter of dragging on the calendar. Drag between rooms within the same type, or between types. rumo recalculates the price and proposes a new line. You decide whether it may go through.</p>
+                <p>Cost items (minibar, breakfasts, extras) can be <strong>moved between reservations</strong> by searching for a booking reference. No date filter, no restrictions: just find the right reservation and drag the line.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Identity</div>
+              <h3 class="kb-article-title"><em>Scanning</em> an ID or passport at check-in</h3>
+              <div class="kb-article-body">
+                <p>If the guest did not fill in their details beforehand, you scan their identity card or passport at the desk and name, date of birth and nationality land in the file straight away.</p>
+                <p>That is the same input as the one from the guest portal, so it also feeds the police registration and the government statistics. Typed once, used three times.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Online check-in</div>
+              <h3 class="kb-article-title">The guest portal for your guest</h3>
+              <div class="kb-article-body">
+                <p>Every guest gets a personal link in the confirmation mail. With it they fill in themselves:</p>
+                <ul>
+                  <li>Pre-check-in details (ID, address, date of birth)</li>
+                  <li>Confirming or declining a quote</li>
+                  <li>Paying online or leaving a card as a guarantee</li>
+                </ul>
+                <p>The link is valid <em>until 2 weeks after check-out</em>, in case a guest still has to add something or wants to download the invoice.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Cancellations</div>
+              <h3 class="kb-article-title"><em>Cancelling</em> a reservation: direct vs. OTA</h3>
+              <div class="kb-article-body">
+                <p><strong>Booked directly:</strong> cancel in rumo. You decide yourself whether a cancellation fee is charged and whether a credit note is made.</p>
+                <p><strong>Booked through an OTA:</strong> the cancellation has to happen at the OTA (Booking.com, Airbnb, Expedia). rumo synchronises the status automatically as soon as the OTA passes it on. That is a choice by the OTAs, not a shortcoming of rumo. They do not let PMSs write their cancellations back directly.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Quotes</div>
+              <h3 class="kb-article-title">Sending a quote and having it confirmed</h3>
+              <div class="kb-article-body">
+                <p>Create a reservation with status <em>option</em>, give it an expiry date, and send the guest a link through the guest portal. The guest confirms online and possibly pays right away. Only then does it become a real reservation. No more yes/no/maybe mails.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Calendar</div>
+              <h3 class="kb-article-title">What you can do on the <em>calendar</em></h3>
+              <div class="kb-article-body">
+                <p>The calendar shows your rooms one under the other and the days alongside. You choose whether you look at one day, a week or a date range of your own.</p>
+                <p>Dragging does three things, depending on where to: pulling at the edge extends or shortens a stay, moving to another row moves the booking to another room, and left or right shifts the dates. Every booking also has a pair of scissors to cut a stay in two.</p>
+                <p>The colours stand for the room status: in house, clean, still to be cleaned, blocked. Click a name and you are in the guest file.</p>
+                <p>Full but you do not want to lose the request? Then you put it on the waiting list instead of refusing it.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">No-show</div>
+              <h3 class="kb-article-title">What to do with a no-show</h3>
+              <div class="kb-article-body">
+                <p>You mark the reservation as a no-show. rumo keeps the room day in the occupancy statistics (so your revenue is right) and proposes charging the standard no-show fee. Or not: that stays your choice, not the system's.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── HOUSEKEEPING ─────────────── -->
+        <div class="kb-group" id="housekeeping">
+          <h2 class="kb-group-title">Housekeeping &amp; <em>room status</em></h2>
+          <p class="kb-group-intro">The bridge between what the guest sees and what the team does. The status of every room, the cleaning schedule, blocks for maintenance. All on one screen, usable on a tablet in the corridor too.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Status</div>
+              <h3 class="kb-article-title">The four <em>room statuses</em></h3>
+              <div class="kb-article-body">
+                <p>Four core statuses, not fifteen.</p>
+                <ul>
+                  <li><strong>Dirty:</strong> to be cleaned, after a check-out or on request during a stay</li>
+                  <li><strong>Clean:</strong> ready for the next guest</li>
+                  <li><strong>In-house:</strong> occupied by a guest</li>
+                  <li><strong>Blocked:</strong> not available (maintenance, own use)</li>
+                </ul>
+                <p>rumo sets the status to dirty automatically on every check-out. Housekeeping marks clean from the mobile view in the corridor, no separate app.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Planning</div>
+              <h3 class="kb-article-title">A <em>cleaning list</em> for the team</h3>
+              <div class="kb-article-body">
+                <p>Every morning rumo generates a cleaning list based on check-outs, stay-overs and special requests (extra towels, allergy pillows, early check-in). You can drag rooms to adjust the order or the priority.</p>
+                <p>The list can be printed or shown on a tablet. Tickable while the team works, with progress visible live at the desk. That way you know which rooms you can give your early guests without ringing first.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Add-on</div>
+              <h3 class="kb-article-title">What <em>Advanced Housekeeping</em> adds</h3>
+              <div class="kb-article-body">
+                <p>Without the add-on a room has four statuses. With the add-on <strong>inspected</strong> is added, between clean and ready for the guest. That way nobody checks anyone into a room that has not been looked over.</p>
+                <p>You also get cleaning checklists that can differ per day, separate extra tasks and a note per room, and a timer that measures how long a clean really takes. That last one comes back in a time report per person and per room.</p>
+                <p>Switch the add-on off and the basics keep working: clean and dirty do fine without it.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Blocks</div>
+              <h3 class="kb-article-title">Blocking a room for <em>maintenance</em></h3>
+              <div class="kb-article-body">
+                <p>Drag a block on the calendar, choose <em>block</em>, and give a reason (leak, renovation, own use). The room is taken out of the pool for OTA sale during that period. You see the block as a striped zone on the calendar.</p>
+                <p>You block a room yourself on the calendar. Rudy does not line this up for you, but he can explain in plain language where you have to be and what happens then.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── CHANNEL MANAGER ─────────────── -->
+        <div class="kb-group" id="channels">
+          <h2 class="kb-group-title">Channel <em>manager</em></h2>
+          <p class="kb-group-intro">How rumo and the OTAs talk to each other, so that one change at your end goes neatly to Booking, Expedia, Airbnb and the rest. Below is what you need to know about it.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">How it works</div>
+              <h3 class="kb-article-title">What goes <em>back and forth</em></h3>
+              <div class="kb-article-body">
+                <p>Out to the channels go your prices, your availability, your restrictions (min-stay, max-stay, closed on arrival or departure) and the link between your room types and the channel's. Back come new bookings and cancellations, as soon as the OTA reports them.</p>
+                <p>In practice: you change a price in rumo and within seconds it is on every connected channel. A new booking on Booking.com is in your calendar just as fast. Every change has its own status line: sent, forwarded, arrived.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Setup</div>
+              <h3 class="kb-article-title"><em>Connecting</em> a new OTA</h3>
+              <div class="kb-article-body">
+                <p>For every channel there is a fixed path: allow rumo as a provider in the OTA's extranet, pass on your property ID, and then link your room types to the channel's in rumo. With Airbnb that goes through a login connection, with Booking through an agreement they have to activate.</p>
+                <p>We do the first connection <strong>together</strong>. From the second on it usually goes by itself. Rudy points out the steps, but choices in an OTA's extranet (a Genius promo, a Mobile Rate, your listing text) he leaves to you: those are decisions, not actions.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Sync</div>
+              <h3 class="kb-article-title">When is a change visible at the OTA?</h3>
+              <div class="kb-article-body">
+                <p>Usually within <em>a few seconds</em>. In busy periods it can take half a minute. If it takes longer, it is down to the channel itself, and you see that in your status log. If something is stuck, you can push it again by hand.</p>
+                <p>One important nuance: <strong>cancellations, no-shows and price changes after booking</strong> you do not send back to the OTA from rumo. Most OTAs simply do not accept that type of change. You do it in their extranet, and the status then comes back to rumo by itself.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Commission</div>
+              <h3 class="kb-article-title">Why you get no <em>commission invoice</em> from Expedia</h3>
+              <div class="kb-article-body">
+                <p>Booking.com is a broker: the guest is your customer and the commission comes afterwards as an invoice. Expedia Collect is a reseller: it keeps its share before the money reaches you, so there is never a commission invoice and there is nothing to deduct.</p>
+                <p>Put your fixed percentage on that anyway and you deduct that same commission a second time, and the channel looks more expensive than it is.</p>
+                <p><a class="kb-verder" href="explained/ota-commission.html">The whole story, with a worked example <span>&rarr;</span></a></p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Conflicts</div>
+              <h3 class="kb-article-title">A double booking, now what?</h3>
+              <div class="kb-article-body">
+                <p>Theoretically impossible thanks to real-time sync, but in practice it happens once in a while (two OTAs selling the last room at the same time). rumo warns you immediately. You decide which guest you upgrade and which you move, not the algorithms.</p>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="kb-pipeline">
+            <div class="kb-pipeline-label">In the pipeline</div>
+            <ul class="kb-pipeline-list">
+              <li>Per OTA: Booking.com, Airbnb, Expedia</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ─────────────── TARIEVEN ─────────────── -->
+        <div class="kb-group" id="tarieven">
+          <h2 class="kb-group-title">Rates &amp; <em>packages</em></h2>
+          <p class="kb-group-intro">One base rate, and the rest is derived. No entering four different rate plans by hand for one room. No 23 screens to set a weekend price.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Base model</div>
+              <h3 class="kb-article-title">How rumo models prices</h3>
+              <div class="kb-article-body">
+                <p>You start from a <em>base rate</em> per room type. On top come modifiers: occupancy (1, 2, 3 people), child price, length of stay, channel uplift, season. You adjust the modifier, not the four derived rates.</p>
+                <p>That is different from most channel managers, where you have to maintain a separate line for every occupancy. We think that is unnecessary work.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Occupancy</div>
+              <h3 class="kb-article-title">Rates per occupancy (1, 2, 3 people)</h3>
+              <div class="kb-article-body">
+                <p>For a room where 1, 2 or 3 people can stay: set one base rate and two modifiers. For example <em>−€30 for single occupancy</em> and <em>+€40 for the third guest</em>. rumo works out the three rates and sends them all to the OTAs.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Packages</div>
+              <h3 class="kb-article-title">Building a <em>package</em> (room + breakfast + dinner)</h3>
+              <div class="kb-article-body">
+                <p>A package is a rate with extras included. "Romantic weekend" = room + breakfast + four-course menu, for one price. On the invoice the three items are split out neatly (handy for VAT); on the OTA rate guests see one amount.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Periods</div>
+              <h3 class="kb-article-title">Season and weekend prices</h3>
+              <div class="kb-article-body">
+                <p>Select a date range on the calendar, choose the modifier ("+15% for the summer season"), done. Works on all room types at once or on one. Can also be per weekday: a different price on Friday/Saturday than on Monday/Tuesday.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Worked example</div>
+              <h3 class="kb-article-title">How a price on <em>Booking.com</em> comes about</h3>
+              <div class="kb-article-body">
+                <p>Concretely, with figures. Junior Suite, base rate €140 per night for 2 people. A guest books 2 nights Saturday-Sunday, with 3 people, through Booking.com:</p>
+                <ul>
+                  <li>Base rate: <strong>€140</strong></li>
+                  <li>+ Weekend (+10%): <strong>€154</strong></li>
+                  <li>+ Third person (+€40): <strong>€194</strong></li>
+                  <li>+ OTA uplift Booking (+12%): <strong>€217</strong></li>
+                  <li>× 2 nights: <strong>€434</strong></li>
+                </ul>
+                <p>That is what the guest sees on Booking. rumo shows you the same stacking when you hover over a price in the calendar. So you always know <em>why</em> a rate is what it is, and which modifier to adjust if you want to change it.</p>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="kb-pipeline">
+            <div class="kb-pipeline-label">In the pipeline</div>
+            <ul class="kb-pipeline-list">
+              <li>Discount per channel &amp; promo codes</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ─────────────── FACTURATIE ─────────────── -->
+        <div class="kb-group" id="facturatie">
+          <h2 class="kb-group-title">Invoicing &amp; <em>Peppol</em></h2>
+          <p class="kb-group-intro">Accounting-correct invoicing without you having to think about it. VAT split per line, every invoice as UBL or PDF, and Peppol sending for B2B through the Peppol add-on.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Peppol</div>
+              <h3 class="kb-article-title">How Peppol works in rumo</h3>
+              <div class="kb-article-body">
+                <p>Compulsory for B2B invoices in Belgium from 2026. As standard, rumo turns every invoice into a UBL file or a PDF you can download and forward. Automatically <em>sending</em> over the Peppol network, to your customer's Peppol ID, is in the <strong>Peppol add-on</strong>. With that add-on on it happens without a separate tool and without manual sending.</p>
+                <p>Private individuals simply get a PDF by mail. rumo recognises the difference and does the right thing.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">VAT</div>
+              <h3 class="kb-article-title">VAT split 6% hospitality / 21%</h3>
+              <div class="kb-article-body">
+                <p>The right rate per invoice line: room and breakfast at 6%, alcohol and other services at 21%. With packages the split is applied automatically to the composed lines.</p>
+                <p>At the end of the month or the quarter you export a VAT report for your accountant. With base, VAT amount and totals per rate.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Credit notes</div>
+              <h3 class="kb-article-title">Making a credit note</h3>
+              <div class="kb-article-body">
+                <p>Invoices in rumo cannot be deleted; nor should they be, and that is exactly what your accountant likes. Want to correct something? Make a credit note. rumo automatically links it to the original invoice. Audit trail complete.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Documents</div>
+              <h3 class="kb-article-title">Which document rumo picks <em>itself</em></h3>
+              <div class="kb-article-body">
+                <p>rumo makes four kinds of document: an invoice, a proforma, a credit note and a receipt for private individuals. You do not have to work out which type it becomes: that follows from who pays and whether a company number is known.</p>
+                <p>A credit note always hangs on the invoice it corrects, so that you can see later which two belong together.</p>
+                <p>Lines of the bill can be moved to another reservation. That is what you need with a group where the organiser pays the rooms and every guest their own consumptions.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Boekhouding</div>
+              <h3 class="kb-article-title">Passing on to Octopus, Exact Online, Yuki</h3>
+              <div class="kb-article-body">
+                <p>A direct connection with the three most used accounting packages in BE/NL. Invoices, credit notes and payments land in your bookkeeping automatically. From now on your accountant gets fewer mails from you, and that is pleasant for both of you.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Paying</div>
+              <h3 class="kb-article-title">Which <em>payment methods</em> rumo supports</h3>
+              <div class="kb-article-body">
+                <ul>
+                  <li><strong>Stripe</strong> for card and Bancontact, both online (through a payment link) and on a connected card terminal. Stripe also covers keeping a card on file and charging it later.</li>
+                  <li><strong>Cash</strong> you register manually as a cash payment on the booking</li>
+                  <li><strong>Bank transfer</strong> you register manually, and you confirm it as soon as the money is actually in your account</li>
+                  <li><strong>Pre-authorisation</strong> (card guarantee without charging right away) through Stripe, for late arrivals or OTA bookings without a deposit</li>
+                </ul>
+                <p>Every payment lands on the booking immediately and is settled automatically against the right invoice line. No more manual matching.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Deposits</div>
+              <h3 class="kb-article-title">Deposits and <em>partial invoices</em></h3>
+              <div class="kb-article-body">
+                <p>You collect a deposit through a payment link (Stripe) or register it manually after a transfer. rumo puts it on the booking as <em>"received, still to be settled"</em>. At check-out it is deducted from the final amount automatically.</p>
+                <p>For longer stays, packages or groups you can send partial invoices (50% on booking, 50% on arrival, for instance). Every partial invoice is a real invoice, with its own number and its own Peppol sending. At check-out the final invoice is drawn up for the remaining balance.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── STATISTIEKEN & RAPPORTEN ─────────────── -->
+        <div class="kb-group" id="statistieken">
+          <h2 class="kb-group-title">Statistics &amp; <em>reports</em></h2>
+          <p class="kb-group-intro">The figures you base decisions on. Occupancy, revenue, channel mix, comparison with last year. Clickable down to reservation level, exportable for your accountant or for your own analysis.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">KPIs</div>
+              <h3 class="kb-article-title"><em>Reading</em> occupancy, ADR and RevPAR</h3>
+              <div class="kb-article-body">
+                <p>Three figures every hotelier should know. rumo shows them per day, week, month, year, with a comparison to the same period last year.</p>
+                <ul>
+                  <li><strong>Occupancy:</strong> room nights sold / room nights available</li>
+                  <li><strong>ADR</strong> (Average Daily Rate): room revenue / nights sold</li>
+                  <li><strong>RevPAR</strong> (Revenue per Available Room): occupancy × ADR, or room revenue per available room night</li>
+                </ul>
+                <p>Hover over a figure for the arithmetic. Click to drill down to the individual reservations that make it up.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Rapporten</div>
+              <h3 class="kb-article-title">Running monthly and <em>yearly reports</em></h3>
+              <div class="kb-article-body">
+                <p>One click on <em>period report</em> gives you: revenue per channel, revenue per room type, occupancy per day, daily cash flow, VAT split per rate, average length of stay. Export as PDF for your insurer or accountant, or as XLS for further analysis in Excel or Google Sheets.</p>
+                <p>For the monthly close: one page you can print, sign and put in the cupboard for the tax office. No more manual summaries.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Pace</div>
+              <h3 class="kb-article-title">Your <em>booking curve</em> against last year</h3>
+              <div class="kb-article-body">
+                <p>Pace puts side by side how much you had already booked on this day last year and how much now. That says something different from your occupancy: it is about the <em>speed</em> at which a period fills up, not about how full it eventually gets.</p>
+                <p>Next to Pace there are tabs for your debtors (who still has to pay) and for the nationality of your guests. Does your hotel also serve food? Then there is a separate F&amp;B revenue report.</p>
+                <p>Everything can be exported to CSV, Excel or PDF.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Channel mix</div>
+              <h3 class="kb-article-title">Which OTA brings you the most <em>net</em>?</h3>
+              <div class="kb-article-body">
+                <p>Per channel: number of bookings, average rate, average length of stay and the share of cancellations. Plus the commission, which at Booking and Airbnb comes along with the booking and therefore does not have to be estimated. So you see <em>net yield per channel</em>, not only gross revenue.</p>
+                <p>Often an eye-opener: an OTA with a lot of volume but 22% commission sometimes yields less than your own website at 0%. With that figure in hand you can decide where your marketing euro lands best.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── BELGISCHE COMPLIANCE ─────────────── -->
+        <div class="kb-group" id="belgie">
+          <h2 class="kb-group-title">Belgian <em>compliance</em></h2>
+          <p class="kb-group-intro">The part where most international PMSs drop the ball. Municipal tax, police registration, the Brussels accommodation levy. We do it, because we live here.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">City tax</div>
+              <h3 class="kb-article-title">Municipal tax / city tax</h3>
+              <div class="kb-article-body">
+                <p>A different rate per municipality, sometimes per night, sometimes per guest, sometimes exempt below a certain age. rumo knows the rule for your municipality and applies it automatically to every reservation. Visible on the invoice as a separate line, which is how your guest wants to see it.</p>
+                <p>At the end of the year you get an export per municipality, ready to file. No more counting by hand.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Police registration</div>
+              <h3 class="kb-article-title">Guest registration for the police</h3>
+              <div class="kb-article-body">
+                <p>Since the law on guest registration you are obliged to record a number of details for every guest: name, date of birth, ID number, address. The guest portal asks your guest for those details during the pre-check-in, before they arrive. You have to type nothing.</p>
+                <p>The export to the police is in your rumo. Monthly or on request, in the right format.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Statbel</div>
+              <h3 class="kb-article-title">Monthly <em>FPS Statbel</em> declaration</h3>
+              <div class="kb-article-body">
+                <p>Belgium requires a monthly declaration for all commercial accommodation above a certain size. rumo automatically counts overnight stays per nationality, average length of stay, number of arrivals and the number of guests. One click and the declaration is ready in the Statbel format.</p>
+                <p>Filing stays your responsibility. But the counting, the right format, the split per country of origin: that has already happened.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">VAT return</div>
+              <h3 class="kb-article-title">What rumo does for your <em>VAT return</em></h3>
+              <div class="kb-article-body">
+                <p>Honestly: rumo does not file your VAT return itself and does not make a ready-made return file for it either. That stays the work of you or your accountant. What rumo does do is keep the basis right: every invoice line gets the correct rate (6% accommodation, 21% for the rest), and the figures and invoices are ready to hand over.</p>
+                <p>If you work with the Scrada add-on, your invoices and payments land in your bookkeeping automatically, which is where the return starts. Without that connection you pass the PDFs or the UBL invoices to your accountant. In both cases the rates are already split correctly, so there is nothing left to untangle.</p>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="kb-pipeline">
+            <div class="kb-pipeline-label">In the pipeline</div>
+            <ul class="kb-pipeline-list">
+              <li>Brussels accommodation levy &amp; annual report</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ─────────────── PRIVACY & GEGEVENS ─────────────── -->
+        <div class="kb-group" id="privacy">
+          <h2 class="kb-group-title">Privacy &amp; <em>data</em></h2>
+          <p class="kb-group-intro">Where your guest data sits, for how long, and who can get at it. Questions your guest is going to ask you one day, and that the GDPR supervisor already wants answered.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Hosting</div>
+              <h3 class="kb-article-title">Where is my <em>guest data</em></h3>
+              <div class="kb-article-body">
+                <p>rumo runs on servers inside the EU (Frankfurt). No American cloud, no data transfer outside the EEA. GDPR-compliant by design, not as an afterthought.</p>
+                <p>Backups are encrypted and sit at a second EU location. Should the main data centre be unreachable, your rumo is back within the hour, with data at most five minutes old.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Retention</div>
+              <h3 class="kb-article-title">How long data is <em>kept</em></h3>
+              <div class="kb-article-body">
+                <ul>
+                  <li><strong>Invoice and accounting data:</strong> 10 years (VAT and company law)</li>
+                  <li><strong>Guest registration data:</strong> according to police regulations, usually 5 years</li>
+                  <li><strong>Marketing consent:</strong> until withdrawn by the guest</li>
+                  <li><strong>Other personal data:</strong> up to 2 years after the last stay</li>
+                </ul>
+                <p>After the retention period personal data is anonymised automatically. The accounting figures stay (compulsory), the name and details disappear.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">GDPR</div>
+              <h3 class="kb-article-title">A guest asks for their data to be <em>erased</em></h3>
+              <div class="kb-article-body">
+                <p>GDPR right to be forgotten. Find the guest in rumo, click <em>anonymise</em>. Personal data is replaced by a hash. Financial records stay (legally required for 10 years) but can no longer be traced to a person.</p>
+                <p>For data portability: one click generates a ZIP with all that guest's data, ready to send on to the guest themselves.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── GEBRUIKERS & ROLLEN ─────────────── -->
+        <div class="kb-group" id="gebruikers">
+          <h2 class="kb-group-title">Users &amp; <em>roles</em></h2>
+          <p class="kb-group-intro">Who may do what in rumo. Four roles, not fifty tick boxes. Enough to give a receptionist, housekeeping and an accountant each their own rumo, without an afternoon of explaining.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Roles</div>
+              <h3 class="kb-article-title">The four <em>roles</em> in rumo</h3>
+              <div class="kb-article-body">
+                <ul>
+                  <li><strong>Owner:</strong> everything. Rates, invoicing, user management, integrations, KPIs</li>
+                  <li><strong>Receptionist:</strong> reservations, checking in and out, invoicing. No rates, no user management, no integration choices</li>
+                  <li><strong>Housekeeping:</strong> room status and cleaning list only. No prices, no guest data beyond a name</li>
+                  <li><strong>Accountant:</strong> read-only rights on invoice data, VAT reports, exports</li>
+                </ul>
+                <p>No 47 tick boxes to combine. Four roles that work in practice. Want something outside that? Send us a message and we will look at whether it fits.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Inviting</div>
+              <h3 class="kb-article-title"><em>Inviting</em> a colleague</h3>
+              <div class="kb-article-body">
+                <p>Settings → users → <em>+ invite</em>. Enter an email, choose a role. Your colleague gets a mail, chooses their own password, 2FA is on by default. Withdrawing access again is one click.</p>
+                <p>An external accountant who wants to look in now and then? Give them the <em>Accountant</em> role and set expiry to six months. They cannot break anything and drop away automatically after the term.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Audit</div>
+              <h3 class="kb-article-title">Who did what: the <em>audit log</em></h3>
+              <div class="kb-article-body">
+                <p>Every change that matters (cancellation, price adjustment, refund, user creation, invoice change) is logged with the time, the user and the old/new value. Unchangeable, not even by the owner.</p>
+                <p>Handy for internal questions ("who gave that discount?"), fraud checks, or when the accountant wants to trace something. And it protects you against false claims, because you can always look back.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── TROUBLESHOOTING ─────────────── -->
+        <div class="kb-group" id="troubleshooting">
+          <h2 class="kb-group-title">Troubleshooting</h2>
+          <p class="kb-group-intro">When something does not work. Not "open a ticket and wait three days", but "click here, look there, and if it is still odd you ring us".</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Sync</div>
+              <h3 class="kb-article-title">My price change is not on <em>Booking</em></h3>
+              <div class="kb-article-body">
+                <p>Three checks, in this order:</p>
+                <ol>
+                  <li><strong>rumo status log:</strong> has the change left? If not, it is at your end (browser conflict, not saved)</li>
+                  <li><strong>Sending status:</strong> has the change been forwarded? If not, it is in the connection itself (mapping or access)</li>
+                  <li><strong>Booking extranet:</strong> arrived? If so, all is well and it is in the OTA cache (a few minutes' patience)</li>
+                </ol>
+                <p>Click the change in the status log and you get the exact error: mapping not found, OTA token expired, price below min rate, or something else. Not solved in five minutes? Send a WhatsApp and we will look straight away.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">City tax</div>
+              <h3 class="kb-article-title">The <em>city tax</em> on the invoice is wrong</h3>
+              <div class="kb-article-body">
+                <p>The three most common causes:</p>
+                <ul>
+                  <li>The age rule is not applied correctly (some municipalities: no tax under 12 or 18, date of birth missing or wrong)</li>
+                  <li>The wrong municipality assigned to your hotel (rare, but it happens after a move or a merger)</li>
+                  <li>The municipal rule has changed and we have not patched it yet</li>
+                </ul>
+                <p>Open the booking, click the tax line, and you get the calculation details (rule, base, age, number of nights). Is the rule itself out of date? Give us a shout. We update municipal rules centrally for all rumo hotels, not per hotel.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Correction</div>
+              <h3 class="kb-article-title">I have <em>charged</em> a wrong night or price</h3>
+              <div class="kb-article-body">
+                <p><strong>Before the invoice has been sent:</strong> open the booking, adjust the price line, rumo recalculates automatically. The change is in the audit log with the old and the new value.</p>
+                <p><strong>After the invoice:</strong> make a credit note for the wrong amount and then a new invoice for the right amount. Both hang together in the audit trail; your accountant sees the correction neatly without you having to explain anything.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">OTA</div>
+              <h3 class="kb-article-title">The connection with an OTA is <em>broken</em></h3>
+              <div class="kb-article-body">
+                <p>Symptom: new bookings do not come in, prices do not synchronise, or you get a red warning in rumo. Open <em>settings → channels</em> and look at the coloured dot next to each OTA.</p>
+                <p>Red = connection broken (often an expired token or a credential changed in the OTA extranet). Click the OTA, choose <em>reconnect</em>. With OAuth channels (Airbnb, some Booking set-ups) you have to log in to the OTA again and authorise. Two minutes' work, no support ticket needed.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Status</div>
+              <h3 class="kb-article-title">rumo is slow or <em>unreachable</em></h3>
+              <div class="kb-article-body">
+                <p>First reflex: check <a href="https://status.rumo.eu" style="color:var(--terra-dark);">status.rumo.eu</a>. That is where we see outages before we report them. No outage visible but it does not work for you? Hard refresh (Ctrl+Shift+R / Cmd+Shift+R), another tab, another browser, another network connection.</p>
+                <p>Still not working? Send us a WhatsApp with a screenshot of what you see. No queue, no ticket system, just a message and we will look.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── RUDY ─────────────── -->
+        <div class="kb-group" id="rudy">
+          <h2 class="kb-group-title">Rudy, your <em>AI assistant</em></h2>
+          <p class="kb-group-intro">No chatbot. No FAQ search. A real assistant who carries out a number of concrete tasks for you in rumo, explains how the rest works, and says honestly what you have to do yourself. Rudy works alongside the receptionist, not with the guest: he never talks to your guests directly.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">What is Rudy?</div>
+              <h3 class="kb-article-title">What <em>Rudy</em> can do, in one paragraph</h3>
+              <div class="kb-article-body">
+                <p>Rudy reads these articles, your handbook and your documents, and knows rumo from the inside. Concretely he takes a handful of time-consuming things off your hands: creating a reservation, making a quote out of a request mail from a guest, putting a group list with names into the right rooms, and importing a list of guests or bookings from an Excel or a PDF. He also looks things up (your figures, a procedure in the handbook), explains how something in rumo works, and drafts an answer to a guest message that you then send.</p>
+                <p>You simply ask in your own language. He proposes, you check and confirm. What he cannot do himself, he says honestly.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">What he does</div>
+              <h3 class="kb-article-title">What Rudy concretely <em>does for you</em></h3>
+              <div class="kb-article-body">
+                <p>A defined list, not a magic wand. Concretely:</p>
+                <ul>
+                  <li>Creating a reservation (guest, room, dates)</li>
+                  <li>Making a quote out of a request mail: he lines it up as an option with a confirmation link for the guest, and drafts a reply mail with it</li>
+                  <li>Filling a pasted group or rooming list into the right rooms (a preview first; only after your OK does he write)</li>
+                  <li>Importing guests, bookers, companies or bookings from an Excel or a PDF</li>
+                  <li>Reading in inspection certificates and prevention documents and lining them up in a queue, so that all you have to do is confirm them</li>
+                  <li>Looking up your figures (revenue, occupancy, city tax, outstanding amounts) and answering a question about them</li>
+                  <li>Drafting an answer to a guest message in the Inbox; you send it</li>
+                </ul>
+                <p>With everything he writes away he shows you a preview first and waits for your confirmation. He never invents figures or facts: if he does not know something, he says so.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">What he does <em>not</em> do</div>
+              <h3 class="kb-article-title">What Rudy does <em>not</em> do</h3>
+              <div class="kb-article-body">
+                <p>Two kinds. First, things he <strong>could do but deliberately leaves alone</strong>, because it is not work for an assistant:</p>
+                <ul>
+                  <li>No automatic credit notes, refunds or penalty charges; he reports those to you (or your receptionist), with a proposal</li>
+                  <li>No pricing policy: he does not decide whether your price is too high or too low</li>
+                </ul>
+                <p>Second, things he simply <strong>cannot</strong> do, and that you therefore do yourself:</p>
+                <ul>
+                  <li>No stop-sell or open-sell, no min-stay, max-stay, CTA or CTD. You set restrictions to the OTAs yourself in the channel manager.</li>
+                  <li>No adjusting prices or pushing them to the OTAs, and no bulk price changes</li>
+                  <li>No sending payment links to guests; you do that from the payment screen of the booking</li>
+                  <li>No talking to the guest directly: he drafts an answer, you press send</li>
+                  <li>No actions in the OTA extranets (Genius promo, Mobile Rate, listing content)</li>
+                </ul>
+                <p>The idea: Rudy does the time-consuming preparation, you keep the buttons that matter.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Import</div>
+              <h3 class="kb-article-title">Letting Rudy read a <em>file</em></h3>
+              <div class="kb-article-body">
+                <p>Rudy can read an Excel or PDF file and pull bookings, guests, companies or rates out of it. He shows what he found and you approve before anything is written away.</p>
+                <p>The same goes for a pasted group list: he links every name to a room, you check. And prevention documents that come in he sorts into the right folder of your file.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">How to ask</div>
+              <h3 class="kb-article-title">How you ask Rudy something</h3>
+              <div class="kb-article-body">
+                <p>Just plain language. "Make a quote for this request" (with the mail pasted in), "put this group list into the right rooms", "what was my revenue last week per channel", "what is our procedure for a late arrival". No command syntax. No menus to remember.</p>
+                <p>If he is unsure or the question is ambiguous, he asks. If he cannot do something, he says so.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Train Rudy</div>
+              <h3 class="kb-article-title">Giving him short <em>hotel facts</em></h3>
+              <div class="kb-article-body">
+                <p>Next to your handbook there is a list of short facts you fill in yourself: the breakfast hours, where the parking is, whether there is a lift. Handy for what is too short to write a handbook article about.</p>
+                <p>Per fact you choose whether Rudy may also use it when he drafts an answer for a guest. That way internal information stays internal.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Cheatsheet</div>
+              <h3 class="kb-article-title">Try asking <em>Rudy</em> this</h3>
+              <div class="kb-article-body">
+                <p>A series of examples Rudy can handle. Plain language, no syntax. With everything he writes away he proposes first and you approve.</p>
+                <table class="kb-cheat-table">
+                  <thead>
+                    <tr><th>You ask</th><th>What Rudy does</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td class="ask">"Book room 12 for Janssens from 3 to 5 May"</td><td class="does">Creates the reservation with the right price. You check.</td></tr>
+                    <tr><td class="ask">"Make a quote for this request" (mail pasted in)</td><td class="does">Lines up an option with a confirmation link, and drafts the reply mail in the guest's language.</td></tr>
+                    <tr><td class="ask">"Put this rooming list into the right rooms"</td><td class="does">Shows a preview first: who in which room. Only after your OK does he write it away.</td></tr>
+                    <tr><td class="ask">"Import this Excel with guests"</td><td class="does">Reads the file, shows what he recognises, imports after confirmation.</td></tr>
+                    <tr><td class="ask">"Here are 10 inspection certificates"</td><td class="does">Reads them in and lines them up in the queue; you confirm.</td></tr>
+                    <tr><td class="ask">"What was my revenue last week per channel?"</td><td class="does">Shows a table. No action needed.</td></tr>
+                    <tr><td class="ask">"Compare my occupancy this month with last year"</td><td class="does">Two percentages plus the difference.</td></tr>
+                    <tr><td class="ask">"What was my city tax in March?"</td><td class="does">The amount, taken from the report.</td></tr>
+                    <tr><td class="ask">"Which invoices are still open?"</td><td class="does">The list of outstanding amounts from the debtors report.</td></tr>
+                    <tr><td class="ask">"What is our procedure for a late arrival?"</td><td class="does">Looks it up in your handbook and quotes the right article.</td></tr>
+                    <tr><td class="ask">"Draft an answer to this Booking.com message"</td><td class="does">Proposes an answer in the guest's language. You send it.</td></tr>
+                    <tr><td class="ask">"Send a payment link to booking BR-1234"</td><td class="does"><em>He does not do that himself.</em> Explains where you do that on the booking.</td></tr>
+                    <tr><td class="ask">"Give guest Janssens a refund of €80"</td><td class="does"><em>He does not do that himself.</em> Sends a notification to your receptionist with the proposal.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+<section class="contact">
+  <div class="wrap">
+    <div class="contact-card fade-up">
+      <div>
+        <span class="kicker">Something unclear?</span>
+        <h3>Missing a <em>piece of explanation?</em></h3>
+        <p>Send us a message. We add to it, and you get an answer straight away: no queue, no ticket system.</p>
+      </div>
+      <a href="mailto:hello@rumo.eu" class="btn-ink">Send us an email <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Try it yourself</span>
+    <h2>No demo call.<br>Just <em>14 days</em> to play.</h2>
+    <p>No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.</p>
+    <a href="index.html#demo" class="btn-paper">Try it free for 14 days <span>→</span></a>
+    <p class="final-fine">No credit card · Cancellable monthly after 6 months · <a href="switching.html">Free data migration</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Hotel software for independent hoteliers. Without the fuss.</p>
+    </div>
+    <div>
+      <div class="footer-label">Product</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="features.html#integraties">Integrations</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="pricing.html">And erm, what does it cost?</a></li>
+        <li><a href="kb.html">Help centre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="what-drives-us.html">What drives us?</a></li>
+        <li><a href="explained/index.html">Explained (in Dutch)</a></li>
+        <li><a href="switching.html">Switching over (in Dutch)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Send us an email</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Integrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// fade-up observer (zelfde patroon als andere -sfeer paginas)
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+// threshold 0, niet 0.1: een blok hoger dan tien keer het scherm haalde die
+// drempel nooit, en bleef onzichtbaar op een telefoon.
+}, { threshold: 0 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+/* De tellertjes in het zijmenu stonden met de hand in de HTML en liepen uit
+   de pas zodra er een artikel bijkwam. Ze worden nu uit de pagina zelf
+   afgeleid; de waarde in de HTML is alleen nog het antwoord voor wie geen
+   JavaScript heeft. */
+document.querySelectorAll('.kb-nav a[href^="#"]').forEach(function (a) {
+  var groep = document.getElementById(a.getAttribute('href').slice(1));
+  var teller = a.querySelector('.kb-nav-count');
+  if (groep && teller) teller.textContent = groep.querySelectorAll('.kb-article').length;
+});
+
+document.documentElement.dataset.fadeReady = '1';
+
+// active section in sticky nav
+const navLinks = document.querySelectorAll('.kb-nav a');
+const groups = document.querySelectorAll('.kb-group');
+const groupObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+groups.forEach(g => groupObserver.observe(g));
+</script>
+
+</body>
+</html>

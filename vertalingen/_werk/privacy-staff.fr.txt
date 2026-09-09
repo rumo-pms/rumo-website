@@ -1,0 +1,74 @@
+1|Vie privée pour le personnel hôtelier · rumo
+2|Ce que rumo conserve sur le personnel hôtelier qui utilise le PMS. Quelles données, pourquoi, combien de temps, et ce que vous pouvez en faire.
+3|<a href="faq.html">FAQ</a>
+4|Vie privée · Personnel hôtelier
+5|Ce que nous conservons sur <em>vous</em>.
+6|Pour le personnel qui travaille dans rumo. Ici, c'est rumo lui-même qui est responsable du traitement. Pas d'hôtel intermédiaire, pas de rôles confus.
+7|Version<br> <strong>17 mai 2026</strong>
+8|<span>RGPD</span> <span>Rumo BV comme responsable</span> <span>Droit belge</span>
+9|Dernière mise à jour · 17 mai 2026
+10|1. D'abord, le cadre
+11|Il y a deux sortes de données dans rumo. Les <strong>données clients</strong> (réservations, cartes d'identité, factures) appartiennent à l'hôtel ; cette explication figure sur la <a href="privacy.html">page vie privée générale</a>. Là, l'hôtel est responsable du traitement et rumo sous-traitant.
+12|Les <strong>données du personnel</strong>, c'est autre chose. Quand vous vous connectez à rumo comme réceptionniste, manager ou femme de chambre, nous conservons votre compte, votre historique de connexion et vos actions. Là, <strong>rumo est lui-même responsable du traitement</strong>. Nous ne pouvons pas confier ce rôle à l'hôtel, car c'est notre logiciel qui crée et conserve les journaux.
+13|Ceci est l'explication de cette seconde partie.
+14|2. Ce que nous savons de vous
+15|Votre compte
+16|Prénom, nom et adresse mail, utilisés pour vous connecter et vous afficher dans le logiciel
+17|Votre rôle dans l'hôtel (admin, réception, housekeeping, F&amp;B, ...), qui détermine ce que vous pouvez voir et faire dans rumo
+18|Votre mot de passe (haché, jamais conservé en clair) et éventuellement un deuxième facteur s'il est activé
+19|En option : une photo de profil que vous avez téléversée vous-même
+20|Comment et quand vous vous connectez
+21|Pour chaque connexion, nous conservons :
+22|L'heure
+23|L'adresse IP
+24|Le navigateur et le système d'exploitation (le « user-agent »)
+25|Cela figure dans la table <code style="font-family:'JetBrains Mono',monospace;font-size:0.85em;background:var(--sand);padding:0.1em 0.35em;border-radius:4px;">login_log</code> et sert à détecter des connexions suspectes. Par exemple : quelqu'un se connecte à 3 h du matin depuis un autre pays alors que vous dormez à Gand.
+26|Ce que vous faites dans rumo
+27|Des <strong>journaux d'audit</strong> sur les actions sensibles : changements de prix, validation ou débit de paiements, remboursements, notes de crédit, enregistrement des clients. Nous conservons qui a fait quoi et quand, plus l'ancienne et la nouvelle valeur.
+28|Le <strong>chat interne</strong> : les messages que vous envoyez dans les canaux internes ou en privé, avec leurs éventuelles pièces jointes.
+29|Un journal d'activité général au niveau de l'hôtel : qui a ouvert, modifié ou annulé quelle réservation.
+30|Contacts avec le support
+31|Les mails que vous envoyez à <a href="mailto:hello@rumo.eu">hello@rumo.eu</a> ou <a href="mailto:support@rumo.eu">support@rumo.eu</a>, ainsi que nos réponses
+32|Les captures d'écran ou exemples que vous joignez pour illustrer un problème
+33|Ce que nous <em>ne</em> faisons <em>pas</em>
+34|Pas d'enregistrement des frappes, pas de cartes de chaleur de souris, pas de rejeu de session
+35|Pas de profilage sur la base de votre rythme de travail (« cette réceptionniste est lente »)
+36|Pas de vente de données de collaborateurs à des tiers
+37|Pas de pixels de pistage dans nos mails pour voir si vous les ouvrez
+38|3. Pourquoi nous les avons
+39|<strong>L'exécution du contrat entre rumo et votre hôtel.</strong> Vous avez un compte parce que l'hôtel vous donne accès en tant que membre du personnel. Sans données de compte, nous ne pouvons pas le fournir.
+40|<strong>L'intérêt légitime, la sécurité et la traçabilité.</strong> Les journaux de connexion et d'audit servent à la prévention de la fraude (par ex. quelqu'un qui encode des remboursements suspects), à la réponse aux incidents (quelque chose d'étrange se produit et nous devons pouvoir reconstituer), et à l'hôtel lui-même, qui doit pouvoir contrôler son propre personnel là où c'est nécessaire.
+41|<strong>Une obligation légale.</strong> Les pistes d'audit sur les opérations financières sont exigées par la législation comptable et la lutte contre la fraude.
+42|<strong>Votre consentement.</strong> Les mises à jour produit ou newsletters de rumo lui-même, uniquement si vous dites explicitement oui, avec droit de retrait.
+43|4. Avec qui nous partageons
+44|Nous faisons tourner rumo chez une poignée d'autres entreprises. Toutes dans l'UE ou sous un mécanisme de transfert valable. Toutes avec un accord de traitement :
+45|<strong>Scaleway</strong> (FR), héberge les serveurs et la base de données où se trouvent vos données
+46|<strong>Brevo</strong> (FR), envoie les mails transactionnels du type « quelqu'un vous a invité », réinitialisation de mot de passe, alertes de connexion
+47|<strong>Mistral</strong> (FR, via Scaleway) : si votre hôtel utilise Rudy (l'assistant IA), votre question à Rudy et le contexte de votre rôle peuvent aller chez Mistral. Non utilisé pour entraîner les modèles.
+48|<strong>Pas</strong> chez Google, pas chez Microsoft, pas chez OpenAI, pas chez Meta. Aucune connexion Sentry à ce jour. Sur notre <em>site</em> rumo.eu se trouve bien un compteur de visites sans cookies (Plausible, hébergé dans l'UE). Il ne compte que les visites des pages marketing et ne touche pas au logiciel dans lequel vous travaillez : rien de vous en tant que collaborateur n'y passe. Voir <a href="cookies.html">Cookies</a>.
+49|5. Combien de temps nous les conservons
+50|<strong>Votre compte</strong> : tant que vous êtes un utilisateur actif. Si votre accès est retiré par votre hôtel, nous mettons le compte en inactif ; suppression complète après 30 jours, sauf obligation légale de conservation (pistes d'audit financières, par exemple).
+51|<strong>Journaux de connexion</strong> : 90 jours, puis effacés automatiquement. Assez longtemps pour repérer des anomalies récentes, assez court pour ne pas construire des années de surveillance.
+52|<strong>Journaux d'audit sur les opérations financières</strong> : 7 ans (Code de la TVA). Pas différent des livres de caisse papier.
+53|<strong>Messages internes</strong> : selon la politique de conservation que l'hôtel règle lui-même (typiquement 30 à 365 jours, réglable par hôtel).
+54|<strong>Correspondance avec le support</strong> : deux ans, puis effacée sauf si une question est encore en cours.
+55|6. Ce que vous pouvez faire
+56|Les mêmes six droits que tout citoyen de l'UE :
+57|<strong>Accès</strong> : demander une copie de ce que nous avons sur vous
+58|<strong>Rectification</strong> : faire corriger des erreurs (une faute dans votre nom, une mauvaise adresse mail)
+59|<strong>Effacement</strong> : demander que tout soit effacé, sauf ce que nous devons légalement conserver
+60|<strong>Limitation</strong> : demander la suspension temporaire du traitement
+61|<strong>Portabilité</strong> : obtenir une copie dans un format réutilisable (JSON/CSV)
+62|<strong>Opposition</strong> : vous opposer à un traitement fondé sur l'intérêt légitime
+63|Pour les questions de compte dans rumo même : adressez-vous d'abord à votre administrateur d'hôtel. Il peut adapter beaucoup de choses pour vous dans les paramètres, ou supprimer votre compte.
+64|Pour tout ce que rumo conserve lui-même (journaux de connexion, mails de support, etc.) : envoyez un mail à <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>. Nous répondons dans les 30 jours, en général plus vite.
+65|Pas satisfait ? Une plainte est toujours possible auprès de l'<a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">Autorité de protection des données</a> à Bruxelles.
+66|7. Contact
+67|<strong>Rumo BV</strong><br> Gand, Belgique<br> <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a> · <a href="mailto:hello@rumo.eu">hello@rumo.eu</a>
+68|<a href="https://wa.me/32485382828">WhatsApp</a>
+69|<a href="features.html#integraties">Booking.com</a>
+70|<a href="features.html#integraties">Airbnb</a>
+71|<a href="features.html#integraties">Exact Online</a>
+72|<a href="features.html#integraties">Peppol</a>
+73|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+74|Menu

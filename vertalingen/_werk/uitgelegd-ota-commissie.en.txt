@@ -1,0 +1,54 @@
+1|Why do you get no commission invoice from Expedia? · explained by rumo
+2|Booking.com sends you a commission invoice. Expedia Collect does not, because there the commission is already deducted before the money reaches you. What that does to your channel report, explained.
+3|<a href="../faq.html">FAQ</a>
+4|← Explained
+5|Channels and commission
+6|Why do you get no <em>commission invoice</em> from Expedia?
+7|Two bookings of a hundred euros, both through an OTA, both at fifteen per cent commission. And still they may not sit in your books the same way. This is one of those things nobody explains to you until your accountant trips over it.
+8|<span>3 minute read</span> <span>For whoever reviews their own channel mix</span> <span>Applies without rumo too</span>
+9|The short version
+10|There are two ways an OTA sells a room, and from the outside they look identical. In the one case the OTA is a <strong>broker</strong>: it brings you a guest and afterwards sends you an invoice for its commission. In the other it is a <strong>reseller</strong>: it buys your room, sells it on, keeps its share and pays you the rest.
+11|Booking.com is always the first, Expedia Collect the second. That difference decides who your customer is, who makes the invoice for the room, and whether a commission invoice ever lands in your letterbox.
+12|Question one: who <em>sold</em> the room?
+13|With the <strong>broker</strong>, the OTA is an intermediary and the guest is your customer. The room belongs on their bill, together with the city tax and their two bottles of water. The commission is a separate matter between you and Booking.com.
+14|That stays true when the booking is paid in advance with a virtual card. That feels counterintuitive, because the money clearly comes from Booking.com. But a virtual card is a <strong>means of payment</strong>, not a different kind of sale.
+15|With the <strong>reseller</strong>, the guest pays Expedia, and gets their invoice for the room from Expedia too. So that room does not belong on their bill: you would be making them pay for something they have already paid for, to someone else. You invoice it to the channel.
+16|<strong>This is where it goes wrong in practice.</strong> A guest checks out on a merchant booking, the receptionist sees an outstanding amount and asks them to pay. They are right to get angry: they have already done that.
+17|What can still be outstanding is their breakfast, their parking and their city tax. Adding those two amounts together and making one question of it, that is the mistake. Two customers, two bills.
+18|A virtual card is a <em>means of payment</em>, not a different kind of sale.
+19|And that is why the guest stays your customer
+20|Question two: how much commission did you <em>pay?</em>
+21|Most systems let you fill in one percentage per channel and calculate everything with it. That percentage is nearly always the wrong answer, for two reasons.
+22|<strong>With the broker you know it exactly.</strong> Booking.com and Airbnb send the real commission amount along with every booking, including the cases where a deviating rate applied. A system that still uses your percentage there throws away an exact figure for an estimated one. Other channels send nothing along, and there your percentage is all you have. It is a fallback, not a general truth.
+23|<strong>With the reseller there is nothing to count.</strong> No commission invoice comes, because money never went from you to Expedia. What appears in your account is already the net amount.
+24|Broker · Booking.com
+25|<span>Guest pays</span><span>€ 100,00</span>
+26|<span>You receive</span><span>€ 100,00</span>
+27|<span>Commission invoice</span><span>− € 15,00</span>
+28|<span>Net for you</span><span>€ 85,00</span>
+29|Reseller · Expedia Collect
+30|<span>Guest pays Expedia</span><span>€ 100,00</span>
+31|<span>You receive</span><span>€ 85,00</span>
+32|<span>Commission invoice</span><span>none</span>
+33|At the bottom it says the same thing twice. That is exactly why it seems to go well for so long. It goes wrong in the row above: on the right the amount coming in is already net, and on the left it is not. Put fifteen per cent on that anyway and you deduct that commission a second time.
+34|What this does to your <em>channel mix</em>
+35|Lay one percentage over everything and your merchant channels look structurally more expensive than they are. And that is precisely the figure on which you decide whether to carry on with a channel. It is also the reason many hoteliers answer "which channel costs me the most" on gut feeling: they once noticed the figures were wrong and stopped looking at them.
+36|What to do about it, rumo or not
+37|<strong>Find out per channel which model you are on.</strong> With Expedia that is a setting per connection, not a property of the channel. You can perfectly well be on the broker model there.
+38|<strong>Check whether your system uses the real commission amount</strong> when the channel sends one along.
+39|<strong>Check that merchant bookings show zero commission</strong> in your report, not a calculated amount.
+40|<strong>Look at how your system puts a merchant room on the guest bill.</strong> If it simply sits in among the rest, it is only a matter of time before someone asks the guest to pay it.
+41|In rumo this is built in: where a channel sends the real amount, that is what is used; merchant bookings count as zero commission; and such a room cannot end up on the guest's bill. But it is not a rumo rule. It is simply how those two models work, and you are entitled to know that before you judge a channel.
+42|Worked something else out?
+43|We would rather <em>explain</em> it<br>than sell it.
+44|The things that come with running a hotel: inspections, allotments, commissions, training people. We had to work them out ourselves and we write down what we found.
+45|Everything we explain <span>→</span>
+46|No credit card · Cancellable monthly after 6 months · <a href="../overstappen.html">Free data migration</a>
+47|<a href="index.html">Explained</a>
+48|<a href="https://wa.me/32485382828">WhatsApp</a>
+49|<a href="../features.html#integraties">Booking.com</a>
+50|<a href="../features.html#integraties">Airbnb</a>
+51|<a href="../features.html#integraties">Exact Online</a>
+52|<a href="../features.html#integraties">Peppol</a>
+53|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+54|Menu

@@ -1,0 +1,66 @@
+1|Privacy · rumo
+2|How rumo and the hotel you booked with handle your data. In plain language. What we collect, why, who we share it with, and what you can do about it.
+3|<a href="faq.html">FAQ</a>
+4|How we handle your <em>data</em>.
+5|In plain language. What we collect, why, who we share it with, and what you can do about it.
+6|Version<br> <strong>17 May 2026</strong>
+7|<span>GDPR</span> <span>ePrivacy</span> <span>Belgian law</span>
+8|Last updated · 17 May 2026
+9|1. Who is responsible?
+10|A hotel booking involves two parties: <strong>the hotel</strong> where you stay, and <strong>rumo</strong>, the software that hotel works with. We each have a different role.
+11|<strong>The hotel</strong> (<span class="legal-controller" id="controller-name">the hotel you booked with</span>) is the <strong>controller</strong>. They decide which data is needed, how long it is kept, and who it is shared with outside rumo.
+12|<strong>Rumo</strong> (Rumo BV, Ghent, Belgium) is the <strong>processor</strong>. We supply the software, host the servers and make sure everything runs. We do nothing with your data except what the hotel asks us to do, laid down in a data processing agreement.
+13|Do you have a question about your booking or your data? <strong>Contact the hotel first.</strong> They have the full picture and can help you fastest. We step in where needed.
+14|2. What we know about you
+15|When you book a room
+16|Name, email address, phone number and address
+17|The dates of your stay, the room type and any remarks you leave
+18|Payment details, which go straight to our payment partner Stripe; we never see your full card number ourselves
+19|On arrival and during your stay
+20|Identity details from your identity card or passport (compulsory under the Royal Decree of 27 April 2007 for hotel guests in Belgium)
+21|The signature on your registration card, if the hotel takes it digitally
+22|What you consume in the hotel and the invoicing that goes with it
+23|What we do <em>not</em> do
+24|No advertising pixels, no Google Analytics, no Facebook pixel, no "personalised advertising". On our website a cookieless European counter records how many visitors come by; it builds no profile (see <a href="cookies.html">Cookies</a>)
+25|No sale or passing on of your data to third parties beyond what is listed under "processors" below
+26|No automated profiling with legal consequences for you
+27|3. Why we have it
+28|The law (article 6 GDPR) requires a valid reason for every piece of data. For us that comes down to:
+29|<strong>Performance of your booking contract.</strong> Name, contact details, dates of stay. Without those we simply cannot give you a room.
+30|<strong>Legal obligation.</strong> ID details (Royal Decree of 27 April 2007), invoicing and VAT records (Belgian VAT Code, 7 years), declarations to the police services where compulsory.
+31|<strong>Legitimate interest.</strong> Securing the systems, fraud prevention, handling complaints. Always weighed against your interests.
+32|<strong>Consent.</strong> Marketing mails or newsletters from the hotel, only if you explicitly say yes, and you can always withdraw that again.
+33|4. Who we share with
+34|Rumo brings in a number of other companies to make the service work. Those are our <strong>sub-processors</strong>. All with a data processing agreement, all inside the EU or under a valid transfer mechanism.
+35|<strong>Scaleway</strong> (FR), hosting of the servers and the database
+36|<strong>Stripe</strong> (IE/US), payment processing, card storage
+37|<strong>Channex</strong> (UK), connection with Booking.com, Expedia, Airbnb and other distribution channels
+38|<strong>Brevo</strong> (FR), transactional emails (confirmations, reminders)
+39|<strong>Mistral</strong> (FR, via Scaleway), AI features when your hotel uses them (e.g. document classification or an internal assistant for staff). Never used to train on guest data.
+40|In addition, the hotel can connect other systems to rumo that we do not choose, for example an accounting package, a till system or a key system. Those are listed in their own privacy statement.
+41|5. How long we keep it
+42|<strong>Invoices and accounting records</strong>: 7 years (Belgian VAT Code)
+43|<strong>Guest register with identity details</strong>: at least until the end of the following calendar year (Royal Decree of 27 April 2007), in practice often 5 years
+44|<strong>Booking history and correspondence</strong>: as long as useful for the hotel relationship, then deleted or anonymised
+45|<strong>Tokenised payment card</strong>: until the booking is fully settled, then removed, unless you explicitly keep it for a future stay
+46|<strong>Marketing consent</strong>: until you withdraw it
+47|6. What you can do
+48|The GDPR gives you six concrete rights. Sounds grand; mainly it means you have a say.
+49|<strong>Access</strong>: ask which data we hold about you
+50|<strong>Rectification</strong>: have mistakes corrected
+51|<strong>Erasure</strong>: ask for everything to be deleted, except what we are legally required to keep
+52|<strong>Restriction</strong>: ask for processing to be paused
+53|<strong>Portability</strong>: get a copy in a reusable format
+54|<strong>Objection</strong>: object to processing based on legitimate interest
+55|Ask <span class="legal-controller" id="controller-name-2">the hotel you booked with</span> first. They can arrange it for you in rumo. If that does not work within a reasonable time, or if it concerns rumo itself (our software infrastructure, for instance), mail <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>.
+56|Not satisfied? You can always lodge a complaint with the <a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">Data Protection Authority</a> in Brussels.
+57|7. Contact
+58|<strong>Rumo BV</strong><br> Ghent, Belgium<br> <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a> · <a href="mailto:hello@rumo.eu">hello@rumo.eu</a>
+59|Do you have a question about this text, or do you find something unclear? Send us an email. We adjust where we can.
+60|<a href="https://wa.me/32485382828">WhatsApp</a>
+61|<a href="features.html#integraties">Booking.com</a>
+62|<a href="features.html#integraties">Airbnb</a>
+63|<a href="features.html#integraties">Exact Online</a>
+64|<a href="features.html#integraties">Peppol</a>
+65|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+66|Menu

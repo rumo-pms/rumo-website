@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../../gate.js"></script>
+<script src="../../demo-form.js?v=2" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Does this request belong to the conference or not? · explained by rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Holding rooms for a conference or a company looks simple until you forget the expiry date. What an allotment really is, where it goes wrong, and what it costs you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared.css">
+<link rel="stylesheet" href="../../uitgelegd/artikel.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="../features.html">What do we do?</a></li>
+    <li><a href="../what-drives-us.html">What drives us?</a></li>
+    <li><a href="../pricing.html">And erm, what does it cost?</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../about.html">About us</a></li>
+    <li><a href="../index.html#demo" class="nav-cta">Try it free →</a></li>
+    <li class="nav-lang">
+      <a href="../../uitgelegd/allotments.html">NL</a>
+      <a href="allotments.html" class="active">EN</a>
+      <a href="../../fr/explique/allotements.html">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <a href="index.html" class="terug">← Explained</a>
+      <span class="kicker">Groups and allotments</span>
+      <h1>"Does this request belong to the conference, <em>or not?</em>"</h1>
+      <p class="lead">There is a conference nearby, an organiser has had twenty rooms held, and in comes a mail from someone saying they are with that conference. Are they in the block or not? On that one question hangs whether you give them the agreed rate, and whether you have sold twenty rooms or twenty-five.</p>
+    </div>
+    <div class="ph-side-illus">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- Een blok kamers apart gezet, met een zandloper: het blok heeft een vervaldatum -->
+        <rect x="16" y="30" width="18" height="14" rx="2"/>
+        <rect x="16" y="50" width="18" height="14" rx="2"/>
+        <rect x="16" y="70" width="18" height="14" rx="2"/>
+        <rect x="44" y="30" width="18" height="14" rx="2" stroke-dasharray="4 3"/>
+        <rect x="44" y="50" width="18" height="14" rx="2" stroke-dasharray="4 3"/>
+        <path d="M82,26 L106,26 L106,36 L94,50 L106,64 L106,74 L82,74 L82,64 L94,50 L82,36 Z"/>
+        <line x1="76" y1="90" x2="112" y2="90"/>
+      </svg>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>3 minute read</span> <span>For whoever works with groups</span> <span>Applies without rumo too</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ARTIKEL ═══════════════════════ -->
+<section class="artikel">
+  <div class="artikel-inner fade-up">
+
+    <h2>An allotment is <em>not a block of rooms</em></h2>
+    <p>That is the first mistake in thinking, and all the others follow from it. Many hotels close off twenty nights in the calendar, stick a reminder in Outlook next to it, and carry on in good faith.</p>
+    <p>But an allotment is a <strong>promise with an expiry date</strong>: a number of rooms of a certain type, at an agreed rate, until a certain day. Whatever is not booked by that day comes back to you. Three things, then, and closing off rooms only settles one of them.</p>
+
+    <h2>The question the organiser <em>is going to ask</em></h2>
+    <p>Halfway through, the organiser rings, and he does not ask how many rooms you have held. He knows that. He asks <strong>how many have actually been booked in the meantime</strong>.</p>
+    <p>That is your pickup, and it is the only figure that matters here. It decides whether he still has to push, whether you can still release something, and whether you will do business again next year. Anyone keeping their allotment in a closed-off calendar can only answer that question by counting reservations and hoping it is right. Watch one detail: a cancellation or a no-show has <em>not</em> used up your block and therefore does not count.</p>
+
+    <h2>The most expensive thing to forget: the <em>cut-off</em></h2>
+    <p>The cut-off is the day the agreement stops and unsold rooms go back on the open market. Forget it and precisely nothing happens. No error message, no double booking, no angry guest. You simply hold eight rooms for a group that is not going to book them, on exactly the days there is a conference in town.</p>
+
+    <div class="kader">
+      <p><strong>And then the reverse.</strong> Whoever does put their rooms back by hand has to do it in two places: in their own planning and in the availability that goes out to Booking.com and the rest. Do only the first and those rooms are free in your calendar but stay closed on the channels. The same oversight, but invisible, because on your own screen everything looks right.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="uitroep">
+  <div class="uitroep-inner fade-up">
+    <p>An allotment is not a block of rooms. It is a promise with <em>an expiry date.</em></p>
+    <span class="uitroep-bij">Three things, and all three run out differently</span>
+  </div>
+</section>
+
+<section class="artikel" style="padding-top:4rem">
+  <div class="artikel-inner fade-up">
+
+    <h2>Back to the <em>mail</em></h2>
+    <p>At a conference like that, two streams run through each other. Participants booking through the organiser belong in the block, at the agreed rate. Participants sorting it out themselves have nothing to do with that travel agency and pay your normal rate. From the outside those two mails cannot be told apart: both mention the conference.</p>
+    <p>The only structural solution is to stop asking the question: let the participant book themselves through a channel tied to the contract. Whoever comes in that way is in the block; whoever comes through the ordinary front door is not. One exception you should know: a booking coming in through an OTA never attaches itself to an allotment, not even when it is clearly the same company. Someone links that by hand, or your pickup is wrong.</p>
+
+    <h2>Who gets the <em>bill?</em></h2>
+    <p>With groups there are nearly always two payers, and the line runs not along the guest but along the item. The room goes to the company, the breakfast maybe too, but his minibar and his parking are his. The question is not "who pays this booking" but "who pays this <strong>line</strong>".</p>
+    <p>For the city tax there is no generally right answer: some companies take it into the central invoice, others consider it a personal cost. That is an agreement you make. But you do have to have made it.</p>
+
+    <h2>What to do about it, software or not</h2>
+    <ul>
+      <li><strong>Put the cut-off in a diary that goes off</strong>, a week earlier than the real date, so you can still do something with those rooms.</li>
+      <li><strong>Agree who pays what per item</strong>, not per booking. Room, breakfast, city tax, extras.</li>
+      <li><strong>Give groups their own booking route</strong> instead of a mail address.</li>
+      <li><strong>Count your pickup without the cancellations</strong>, or you tell the organiser a figure that is too good.</li>
+    </ul>
+
+    <div class="artikel-slot">
+      <p>In rumo this is the allotment module. You record the blocks per room type with their own rate and a cut-off, and those rooms are automatically deducted from what goes to Booking.com and the other channels and from what your own booking page still offers. Only someone booking through the group's own link may use up the block; that is what it is for, after all. On the cut-off the unsold rooms come back into sale by themselves, on the channels too, with a note in the history; you can also release them earlier by hand. A booking that would exceed the block is refused at the moment of saving, so two people cannot both take the last room.</p>
+      <p>The participants get their own booking link with a random key in it, tied to the booking engine, in which they see only the block and the agreed rate. Did that link end up with the wrong people? Then you make a new one and the old one stops working. You can enforce payment or a card guarantee on that link. And the central invoice can send the rooms to the company while the extras that were not marked stay on the guest's bill.</p>
+      <p>What rumo does not do: link that OTA booking above after all. That stays handwork.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Worked something else out?</span>
+    <h2>We would rather <em>explain</em> it<br>than sell it.</h2>
+    <p>The things that come with running a hotel: inspections, allotments, commissions, training people. We had to work them out ourselves and we write down what we found.</p>
+    <a href="index.html" class="btn-paper">Everything we explain <span>→</span></a>
+    <p class="final-fine">No credit card · Cancellable monthly after 6 months · <a href="../switching.html">Free data migration</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Hotel software for independent hoteliers. Without the fuss.</p>
+    </div>
+    <div>
+      <div class="footer-label">Product</div>
+      <ul class="footer-links">
+        <li><a href="../features.html">Features</a></li>
+        <li><a href="../features.html#integraties">Integrations</a></li>
+        <li><a href="../security.html">Security</a></li>
+        <li><a href="../pricing.html">And erm, what does it cost?</a></li>
+        <li><a href="../kb.html">Help centre</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="../what-drives-us.html">What drives us?</a></li>
+        <li><a href="index.html">Explained</a></li>
+        <li><a href="../switching.html">Switching over (in Dutch)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Send us an email</a></li>
+        <li><a href="../about.html">About us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Integrations</div>
+      <ul class="footer-links">
+        <li><a href="../features.html#integraties">Booking.com</a></li>
+        <li><a href="../features.html#integraties">Airbnb</a></li>
+        <li><a href="../features.html#integraties">Exact Online</a></li>
+        <li><a href="../features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Ghent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

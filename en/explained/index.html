@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../../gate.js"></script>
+<script src="../../demo-form.js?v=2" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explained · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="What we had to work out ourselves in order to build hotel software: building inspections, allotments, OTA commissions, procedures and training staff. Written down in plain language.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared.css">
+<link rel="stylesheet" href="../../uitgelegd/artikel.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="../features.html">What do we do?</a></li>
+    <li><a href="../what-drives-us.html">What drives us?</a></li>
+    <li><a href="../pricing.html">And erm, what does it cost?</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../about.html">About us</a></li>
+    <li><a href="../index.html#demo" class="nav-cta">Try it free →</a></li>
+    <li class="nav-lang">
+      <a href="../../uitgelegd/index.html">NL</a>
+      <a href="index.html" class="active">EN</a>
+      <a href="../../fr/explique/index.html">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <span class="kicker">Uitgelegd</span>
+      <h1>What we had to <em>work out ourselves.</em></h1>
+      <p class="lead">To build this software we first had to understand how it really works. When an inspection on your building expires, how an allotment quietly drains away, why Expedia sends no commission invoice, why training a new receptionist takes just as long every time. What we learned along the way is here.</p>
+    </div>
+    <div class="ph-side-illus">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- Een blad papier met een leeslamp erboven -->
+        <path d="M34,34 L34,100 L86,100 L86,50 L70,34 Z"/>
+        <path d="M70,34 L70,50 L86,50"/>
+        <line x1="44" y1="62" x2="76" y2="62"/>
+        <line x1="44" y1="74" x2="76" y2="74"/>
+        <line x1="44" y1="86" x2="64" y2="86"/>
+        <path d="M46,22 Q60,10 74,22"/>
+        <line x1="60" y1="14" x2="60" y2="24"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ DE REEKS ═══════════════════════ -->
+<section class="reeks">
+  <div class="reeks-inner">
+    <div class="reeks-lijst fade-up">
+
+      <a class="reeks-item" href="training.html">
+        <span class="reeks-kicker">Training</span>
+        <h2>You train more often, for people who are <em>there less often.</em></h2>
+        <p>More students and flexi-workers behind your desk, staying for less time and learning more slowly because they work less often. About what you can write down once, what you can only learn by doing, and why an practice environment starts with a look at the mail.</p>
+        <div class="reeks-meta"><span>3 minutes</span><span>Staff</span></div>
+      </a>
+
+      <a class="reeks-item" href="handbook.html">
+        <span class="reeks-kicker">Your team</span>
+        <h2>How do you know who has <em>read the new procedure?</em></h2>
+        <p>You change your fire procedure, and half your team has read the old version. About read confirmations tied to a version, photos as the standard, and why a changed procedure is trickier than a new one.</p>
+        <div class="reeks-meta"><span>3 minutes</span><span>Staff</span></div>
+      </a>
+
+      <a class="reeks-item" href="building.html">
+        <span class="reeks-kicker">The building</span>
+        <h2>Who maintains your gas boiler, and when was <em>the last time?</em></h2>
+        <p>A hotel is also a building, and that building has paperwork: fifteen installations, as many intervals, and four kinds of paper all called "a certificate". Why the inspection is rarely the problem and the paper afterwards almost always is.</p>
+        <div class="reeks-meta"><span>3 minutes</span><span>Prevention</span></div>
+      </a>
+
+      <a class="reeks-item" href="allotments.html">
+        <span class="reeks-kicker">Groups and allotments</span>
+        <h2>"Does this request belong to the conference, <em>or not?</em>"</h2>
+        <p>Holding rooms for a group is a promise with an expiry date, not a block in your calendar. About pickup, the cut-off that costs you money without anyone noticing, and who pays which line of the bill.</p>
+        <div class="reeks-meta"><span>3 minutes</span><span>Groups</span></div>
+      </a>
+
+      <a class="reeks-item" href="ota-commission.html">
+        <span class="reeks-kicker">OTAs and commission</span>
+        <h2>Why do you get no <em>commission invoice</em> from Expedia?</h2>
+        <p>Two bookings of a hundred euros, both at fifteen per cent commission, and still they may not sit in your books the same way. With a worked example in which both columns come out the same at the bottom.</p>
+        <div class="reeks-meta"><span>3 minutes</span><span>Channels</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Something nobody ever explained to you?</span>
+    <h2>Tell us what you <em>trip over.</em></h2>
+    <p>Do you run into the same thing every month without finding a decent explanation anywhere? Send it in and we will put it on the list. Even if the answer is that rumo can do nothing about it.</p>
+    <a href="mailto:hello@rumo.eu" class="btn-paper">Send us an email <span>→</span></a>
+    <p class="final-fine">No credit card · Cancellable monthly after 6 months · <a href="../switching.html">Free data migration</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Hotel software for independent hoteliers. Without the fuss.</p>
+    </div>
+    <div>
+      <div class="footer-label">Product</div>
+      <ul class="footer-links">
+        <li><a href="../features.html">Features</a></li>
+        <li><a href="../features.html#integraties">Integrations</a></li>
+        <li><a href="../security.html">Security</a></li>
+        <li><a href="../pricing.html">And erm, what does it cost?</a></li>
+        <li><a href="../kb.html">Help centre</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="../what-drives-us.html">What drives us?</a></li>
+        <li><a href="index.html">Explained</a></li>
+        <li><a href="../switching.html">Switching over (in Dutch)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Send us an email</a></li>
+        <li><a href="../about.html">About us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Integrations</div>
+      <ul class="footer-links">
+        <li><a href="../features.html#integraties">Booking.com</a></li>
+        <li><a href="../features.html#integraties">Airbnb</a></li>
+        <li><a href="../features.html#integraties">Exact Online</a></li>
+        <li><a href="../features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Ghent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

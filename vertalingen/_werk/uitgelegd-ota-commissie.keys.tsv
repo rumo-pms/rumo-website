@@ -1,0 +1,54 @@
+1	Waarom krijg je van Expedia geen commissiefactuur? · uitgelegd door rumo
+2	Booking.com stuurt je een commissiefactuur. Expedia Collect niet, want daar is de commissie al afgehouden voor het geld bij je toekomt. Wat dat doet met je kanaalrapport, uitgelegd.
+3	<a href="../faq.html">FAQ</a>
+4	← Uitgelegd
+5	Kanalen en commissie
+6	Waarom krijg je van Expedia geen <em>commissiefactuur?</em>
+7	Twee boekingen van honderd euro, allebei via een OTA, allebei met vijftien procent commissie. En toch mogen ze niet op dezelfde manier in je boeken staan. Dit is een van die dingen die niemand je uitlegt tot je boekhouder erover valt.
+8	<span>Leestijd 3 minuten</span> <span>Voor wie zelf zijn kanaalmix bekijkt</span> <span>Geldt ook zonder rumo</span>
+9	De korte versie
+10	Er zijn twee manieren waarop een OTA een kamer verkoopt, en ze zien er aan de buitenkant identiek uit. In het ene geval is de OTA een <strong>makelaar</strong>: hij brengt je een gast en stuurt jou achteraf een factuur voor zijn commissie. In het andere geval is hij een <strong>wederverkoper</strong>: hij koopt je kamer, verkoopt ze door, houdt zijn deel in en stort je de rest.
+11	Booking.com is altijd het eerste, Expedia Collect het tweede. Dat verschil beslist wie je klant is, wie de factuur voor de kamer maakt, en of er ooit een commissiefactuur in je bus valt.
+12	Vraag één: wie heeft de kamer <em>verkocht?</em>
+13	Bij de <strong>makelaar</strong> is de OTA een tussenpersoon en is de gast je klant. De kamer hoort op zijn rekening, samen met de stadstaks en zijn twee flesjes water. De commissie is een aparte zaak tussen jou en Booking.com.
+14	Dat blijft zo als de boeking op voorhand betaald is met een virtuele kaart. Dat voelt tegennatuurlijk, want het geld komt duidelijk van Booking.com. Maar een virtuele kaart is een <strong>betaalmiddel</strong>, geen ander soort verkoop.
+15	Bij de <strong>wederverkoper</strong> betaalt de gast aan Expedia, en krijgt hij zijn factuur voor de kamer ook van Expedia. Die kamer hoort dus niet op zijn rekening: je zou hem laten betalen voor iets waar hij al voor betaald heeft, aan iemand anders. Je factureert ze aan het kanaal.
+16	<strong>Hier gaat het in de praktijk mis.</strong> Een gast checkt uit bij een merchant-boeking, de receptioniste ziet een openstaand bedrag staan en vraagt hem om te betalen. Hij heeft gelijk als hij kwaad wordt: hij heeft dat al gedaan.
+17	Wat er wél nog open kan staan is zijn ontbijt, zijn parking en zijn stadstaks. Die twee bedragen bij elkaar optellen en er één vraag van maken, dat is de fout. Twee klanten, twee rekeningen.
+18	Een virtuele kaart is een <em>betaalmiddel</em>, geen ander soort verkoop.
+19	En daarom blijft de gast je klant
+20	Vraag twee: hoeveel commissie heb je <em>betaald?</em>
+21	De meeste systemen laten je één percentage per kanaal invullen en rekenen daar alles mee uit. Dat percentage is bijna altijd het verkeerde antwoord, om twee redenen.
+22	<strong>Bij de makelaar weet je het exact.</strong> Booking.com en Airbnb sturen het echte commissiebedrag mee met elke boeking, inclusief de gevallen waarin er een afwijkend tarief gold. Een systeem dat dan nog altijd jouw percentage gebruikt, gooit een exact cijfer weg voor een geschat. Andere kanalen sturen niets mee, en dáár is je percentage het enige wat je hebt. Het is een terugvaloptie, geen algemene waarheid.
+23	<strong>Bij de wederverkoper is er niets te tellen.</strong> Er komt geen commissiefactuur, want er is nooit geld van jou naar Expedia gegaan. Wat op je rekening verschijnt is al het nettobedrag.
+24	Makelaar · Booking.com
+25	<span>Gast betaalt</span><span>€ 100,00</span>
+26	<span>Jij ontvangt</span><span>€ 100,00</span>
+27	<span>Commissiefactuur</span><span>− € 15,00</span>
+28	<span>Netto voor jou</span><span>€ 85,00</span>
+29	Wederverkoper · Expedia Collect
+30	<span>Gast betaalt Expedia</span><span>€ 100,00</span>
+31	<span>Jij ontvangt</span><span>€ 85,00</span>
+32	<span>Commissiefactuur</span><span>geen</span>
+33	Onderaan staat twee keer hetzelfde. Dat is precies waarom het zo lang goed lijkt te gaan. Het loopt mis in de rij erboven: rechts is het bedrag dat binnenkomt al netto, en links nog niet. Reken je er dan alsnog vijftien procent op, dan trek je die commissie een tweede keer af.
+34	Wat dit doet met je <em>kanaalmix</em>
+35	Leg je één percentage over alles, dan zien je merchant-kanalen er structureel duurder uit dan ze zijn. En dat is net het cijfer waarop je beslist of je met een kanaal doorgaat. Het is meteen de reden dat veel hoteliers "welk kanaal kost mij het meest" op gevoel beantwoorden: ze hebben ooit gemerkt dat de cijfers niet klopten en zijn er niet meer naar gaan kijken.
+36	Wat je hiermee doet, ook zonder rumo
+37	<strong>Zoek per kanaal uit welk model je hebt.</strong> Bij Expedia is dat een instelling per koppeling, geen eigenschap van het kanaal. Je kan er perfect in het makelaarsmodel zitten.
+38	<strong>Kijk of je systeem het echte commissiebedrag gebruikt</strong> wanneer het kanaal er een meestuurt.
+39	<strong>Controleer of merchant-boekingen op nul commissie staan</strong> in je rapport, niet op een berekend bedrag.
+40	<strong>Bekijk hoe je systeem een merchant-kamer op de gastenrekening zet.</strong> Staat hij daar gewoon tussen, dan is het wachten tot iemand hem laat betalen.
+41	In rumo is dit ingebouwd: waar een kanaal het echte bedrag meestuurt wordt dat gebruikt, merchant-boekingen tellen voor nul commissie, en zo'n kamer kan niet op de rekening van de gast belanden. Maar het is geen rumo-regel. Het is gewoon hoe die twee modellen werken, en je hebt er recht op dat te weten voor je een kanaal beoordeelt.
+42	Nog zoiets uitgezocht?
+43	We leggen het liever <em>uit</em><br>dan dat we het verkopen.
+44	De dingen die je erbij krijgt als je een hotel runt: keuringen, contingenten, commissies, mensen opleiden. Wij hebben ze zelf moeten uitzoeken en schrijven op wat we gevonden hebben.
+45	Alles wat we uitleggen <span>→</span>
+46	Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href="../overstappen.html">Gratis datamigratie</a>
+47	<a href="index.html">Uitgelegd</a>
+48	<a href="https://wa.me/32485382828">WhatsApp</a>
+49	<a href="../features.html#integraties">Booking.com</a>
+50	<a href="../features.html#integraties">Airbnb</a>
+51	<a href="../features.html#integraties">Exact Online</a>
+52	<a href="../features.html#integraties">Peppol</a>
+53	<span>© 2026 Rumo · Gent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+54	Menu

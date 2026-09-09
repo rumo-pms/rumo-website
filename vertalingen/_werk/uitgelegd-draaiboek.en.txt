@@ -1,0 +1,44 @@
+1|How do you know who has read the new procedure? · explained by rumo
+2|You change your fire procedure. Who on your team now knows the old version and who the new one? About read confirmations, photos as the standard, and why a changed procedure is trickier than a new one.
+3|<a href="../faq.html">FAQ</a>
+4|← Explained
+5|Your team
+6|How do you know who has <em>read the new procedure?</em>
+7|You change your fire procedure because something has changed. Half your team has read the old version and will not look again: they think they know it. That is the trickiest kind of not-knowing, and there is a simple way to pick out exactly those people.
+8|<span>3 minute read</span> <span>For whoever runs a team</span> <span>Applies without rumo too</span>
+9|A hotel is too big for <em>one head</em>
+10|Which taxi firm do we work with. Where are the spare towels. What do you do when the fire alarm goes off, and what if it is clearly false. Who do you ring on a Sunday evening when the lift is stuck. Most of that comes up rarely, and that is exactly why nobody remembers it.
+11|The reflex is to explain it once more. But you have already explained it. <strong>The problem is not that it was not said, it is that it is written down nowhere.</strong>
+12|There are three kinds of <em>knowing</em>
+13|That is why one big folder of procedures never works: there are three different problems in it.
+14|<strong>Facts you look up.</strong> The taxi number, the cupboard with the towels. You do not have to remember those, you have to be able to <em>find</em> them. Remembering is even the wrong ambition here: that taxi firm changes.
+15|<strong>Tasks you have to be able to do.</strong> Those are in a text all right, but nobody learns them from a text. <a href="opleiden.html">Another article</a> is about that.
+16|<strong>Agreements people disagree about.</strong> The hardest one, because it does not look like a knowledge problem.
+17|The <em>towel problem</em>
+18|One housekeeper hangs the towel like this, the other does not find that pretty. Both have an opinion, both have a good reason. These are not two stubborn people: it is an <strong>agreement that was never made</strong>. As long as nobody has written down which of the two is right, nobody is wrong either, and the strongest personality on that shift wins. That changes by the day, and your guest sees it.
+19|Words do not solve this. Write "hang the towels neatly" in your handbook and you have decided nothing, because both housekeepers find their own way neat.
+20|<strong>Here a photo is not decoration.</strong> A sentence describes a standard. A photo <em>is</em> the standard. That saves you half an hour of discussion per new colleague, every time again.
+21|If it is about a task rather than an end result, a video does what a photo cannot. Rule of thumb: <strong>photograph an end state, film a task.</strong> Do always write a few sentences with it, because you cannot search inside a video.
+22|A procedure you have changed is <em>less reliable</em> than one you had never written.
+23|Because whoever knew the old version will not look again
+24|"Read" has to have a <em>date</em>
+25|You change your fire procedure. Seven of your twelve people have read the old version and think they know it, so they will not look it up. A changed procedure is therefore less reliable than one you had never written.
+26|Let people confirm per article that they have read it, and hang that confirmation on the <em>version</em> they read. Change the article and it jumps back to unread for exactly those people. Not as a punishment, but because it is true. Keep the old confirmation: that is your proof that they did know the previous version.
+27|The real test is <em>23:15</em>
+28|A handbook is not a success because it has been written, but because someone finds something in it at quarter past eleven at night with a guest standing in front of them. And there it runs into one fact: <strong>nobody leafs through a handbook.</strong> People ask the colleague standing next to them, and otherwise you. On a Sunday. So findability weighs more heavily than structure.
+29|The best signal comes from an empty answer. If someone searches for something that is not in there, your team points out the gaps to you, free of charge, simply by doing its work.
+30|In rumo this is the handbook: your own procedures in categories you can shield per role, with photos and attachments, and a read confirmation that works as described above. Change an article and it comes back as unread for everyone who had confirmed the old version, and the old confirmation is kept.
+31|Rudy searches that handbook when someone asks about the way you work, and answers with a link to the article he took it from. If he finds nothing, he says so instead of guessing. Videos you add as a link to YouTube or Vimeo; they play in the article, but they are not stored in rumo.
+32|Worked something else out?
+33|We would rather <em>explain</em> it<br>than sell it.
+34|The things that come with running a hotel: inspections, allotments, commissions, training people. We had to work them out ourselves and we write down what we found.
+35|Everything we explain <span>→</span>
+36|No credit card · Cancellable monthly after 6 months · <a href="../overstappen.html">Free data migration</a>
+37|<a href="index.html">Explained</a>
+38|<a href="https://wa.me/32485382828">WhatsApp</a>
+39|<a href="../features.html#integraties">Booking.com</a>
+40|<a href="../features.html#integraties">Airbnb</a>
+41|<a href="../features.html#integraties">Exact Online</a>
+42|<a href="../features.html#integraties">Peppol</a>
+43|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+44|Menu

@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat OuivaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../gate.js"></script>
+<script src="../demo-form.js?v=2" defer></script>
+<script src="../datums.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Channel manager · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Une modification dans rumo, sur Booking, Airbnb, Expedia et les autres en quelques secondes. En temps réel, dans les deux sens, avec une surveillance des doubles réservations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  .fp-hero {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .fp-hero-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 4.5rem;
+    align-items: center;
+  }
+  .fp-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    background: var(--rose-soft);
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .fp-hero-tag svg { width: 14px; height: 14px; stroke-width: 1.8; fill: none; }
+  .fp-hero-text h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2.6rem, 5.2vw, 3.8rem);
+    letter-spacing: -0.028em;
+    line-height: 1.04;
+    margin-bottom: 1.4rem;
+  }
+  .fp-hero-text h1 em { color: var(--terra-dark); font-style: italic; }
+  .fp-hero-text .lead {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 52ch;
+    margin-bottom: 2rem;
+  }
+  .fp-hero-bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .fp-hero-bullets li::before { content: '·'; color: var(--terra); margin-right: 0.5em; }
+
+  .fp-section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .fp-section.alt { background: var(--paper-deep); }
+  .fp-section-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  /* Een rasterkind krimpt standaard niet onder zijn langste woord. Eén lange
+     term in een opsomming duwde de kolom daardoor breder dan het scherm, en
+     dan schuift de hele pagina zijwaarts. */
+  .fp-section-inner > * { min-width: 0; }
+  .fp-bullets li { overflow-wrap: anywhere; }
+  .fp-section.reverse .fp-section-inner > .fp-section-visual { order: -1; }
+  .fp-section-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-bottom: 0.9rem;
+    display: inline-block;
+  }
+  .fp-section-text h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+    margin-bottom: 1.3rem;
+  }
+  .fp-section-text h2 em { color: var(--terra-dark); font-style: italic; }
+  .fp-section-text .lead {
+    color: var(--ink-soft);
+    line-height: 1.65;
+    max-width: 52ch;
+    font-size: 1.02rem;
+    margin-bottom: 1.3rem;
+  }
+  .fp-bullets {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  .fp-bullets li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .fp-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.65em;
+    width: 8px; height: 1.5px;
+    background: var(--terra);
+  }
+  .fp-bullets li em { color: var(--terra-dark); font-style: italic; }
+
+  .mockup {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1.4rem;
+    box-shadow: 0 20px 40px rgba(27,25,23,0.08);
+  }
+  .mockup-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mockup-head h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .mockup-head .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    background: var(--sand);
+    color: var(--ink);
+  }
+  .mockup-head .badge.live { background: var(--terra); color: var(--paper); }
+  .mockup-head .badge.live::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--paper); display:inline-block; margin-right:0.35em; }
+
+  /* Mockup · Sync flow */
+  .mk-flow .flow-node {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .mk-flow .flow-node.rumo {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .mk-flow .flow-node strong {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  .mk-flow .flow-node span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .mk-flow .flow-node.rumo span { color: var(--butter); }
+  /* De pijl zakt en de bolletjes lichten na elkaar op: dat is de sync die
+     de tekst ernaast beschrijft, in plaats van een stilstaand schema. */
+  .mk-flow .flow-arrow.zakt { animation: flowZakt 3s ease-in-out infinite; }
+  @keyframes flowZakt { 0%, 55%, 100% { transform: translateY(0); opacity: 0.5 } 25% { transform: translateY(4px); opacity: 1 } }
+  .mk-flow .flow-ota .dot.licht { animation: flowLicht 3s ease-in-out infinite; }
+  @keyframes flowLicht { 0%, 20%, 100% { opacity: 0.35 } 40%, 70% { opacity: 1 } }
+  @media (prefers-reduced-motion: reduce) {
+    .mk-flow .flow-arrow.zakt, .mk-flow .flow-ota .dot.licht { animation: none; opacity: 1; }
+  }
+  .mk-flow .flow-arrow {
+    text-align: center;
+    color: var(--terra);
+    font-size: 1.1rem;
+    line-height: 1;
+    margin: 0.2rem 0;
+  }
+  .mk-flow .flow-otas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  .mk-flow .flow-ota {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.6rem 0.5rem;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 0.85rem;
+    color: var(--ink);
+  }
+  .mk-flow .flow-ota .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--forest);
+    display: inline-block;
+    margin-right: 0.3em;
+    vertical-align: middle;
+  }
+
+  /* Mockup · Sync log */
+  .mk-log .log-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 70px;
+    gap: 0.7rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--line);
+    align-items: center;
+    font-size: 0.86rem;
+  }
+  .mk-log .log-item:last-child { border-bottom: none; }
+  .mk-log .log-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .mk-log .log-text strong { display: block; font-size: 0.88rem; color: var(--ink); margin-bottom: 0.1rem; }
+  .mk-log .log-text span { font-size: 0.72rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+  .mk-log .log-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 100px;
+    text-align: center;
+  }
+  .mk-log .log-status.ok { background: var(--forest-soft); color: var(--forest); }
+  .mk-log .log-status.sync { background: var(--rose-soft); color: var(--terra-dark); }
+
+  /* Mockup · Conflict */
+  .mk-conflict .conflict-head {
+    background: var(--rose-soft);
+    color: var(--terra-dark);
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .mk-conflict .conflict-head::before { content: '!  '; }
+  .mk-conflict .conflict-rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-bottom: 0.85rem;
+  }
+  .mk-conflict .conflict-room {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.85rem;
+  }
+  .mk-conflict .conflict-room .src {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+  .mk-conflict .conflict-room strong {
+    font-family: 'Fraunces', serif;
+    font-size: 0.98rem;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  .mk-conflict .conflict-room span { font-size: 0.78rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+  .mk-conflict .conflict-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .mk-conflict .conflict-btn {
+    flex: 1;
+    padding: 0.65rem;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.84rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink-soft);
+  }
+  .mk-conflict .conflict-btn.primary {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+
+  /* Mockup · OTAs grid */
+  .mk-otas .ota-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+  .mk-otas .ota-tile { min-width: 0; }
+  .mk-otas .ota-tile .status { overflow: hidden; text-overflow: ellipsis; }
+  .mk-otas .ota-tile {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mk-otas .ota-tile.connected { border-left: 3px solid var(--forest); }
+  .mk-otas .ota-tile strong { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--ink); }
+  .mk-otas .ota-tile .status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--forest);
+  }
+  .mk-otas .ota-tile .status::before {
+    content: '';
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--forest);
+    margin-right: 0.4em;
+    vertical-align: middle;
+  }
+  .mk-otas .ota-more {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 0.85rem;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* ─── OTA-superkrachten kaarten ─── */
+  .fp-power {
+    padding: 6rem 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .fp-power-head { max-width: 620px; margin-bottom: 3rem; }
+  .fp-power-head h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+    margin: 0.7rem 0 1rem;
+  }
+  .fp-power-head h2 em { color: var(--terra-dark); font-style: italic; }
+  .fp-power-head p { color: var(--ink-soft); line-height: 1.65; font-size: 1.02rem; }
+  .fp-power-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+  }
+  .fp-power-card {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .fp-power-card .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+  }
+  .fp-power-card h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .fp-power-card h4 em { color: var(--terra-dark); font-style: italic; font-weight: 300; }
+  .fp-power-card p { font-size: 0.9rem; color: var(--ink-soft); line-height: 1.55; margin: 0; }
+  @media (max-width: 880px) { .fp-power-grid { grid-template-columns: 1fr; } }
+
+  /* ─── andere features strip ─── */
+  .fp-others {
+    background: var(--paper-deep);
+    padding: 5rem 0 6rem;
+    border-top: 1px solid var(--line);
+  }
+  .fp-others-head {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fp-others-head h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0.6rem 0 0.8rem;
+  }
+  .fp-others-head h3 em { color: var(--terra-dark); font-style: italic; }
+  .fp-others-head p { color: var(--ink-soft); font-size: 0.98rem; }
+  .fp-others-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .fp-others-card {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  }
+  .fp-others-card:hover {
+    box-shadow: 0 14px 28px rgba(27,25,23,0.08);
+    transform: translateY(-3px);
+    border-color: var(--terra);
+  }
+  .fp-others-ic {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fp-others-ic svg { width: 16px; height: 16px; stroke-width: 1.8; fill: none; }
+  .fp-others-card h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .fp-others-card h4 em { color: var(--terra-dark); font-style: italic; font-weight: 300; }
+  .fp-others-card .arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-top: auto;
+  }
+
+  @media (max-width: 880px) {
+    .fp-hero { padding: 4rem 0; }
+    .fp-hero-inner, .fp-section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .fp-section.reverse .fp-section-inner > .fp-section-visual { order: 0; }
+    .fp-section { padding: 4rem 0; }
+    .fp-others-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .fp-others-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../channel-manager.html">NL</a>
+      <a href="../en/channel-manager.html">EN</a>
+      <a href="channel-manager.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="fp-hero">
+  <div class="wrap">
+    <div class="fp-hero-inner enkel fade-up">
+      <div class="fp-hero-text">
+        <span class="fp-hero-tag">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
+          Channel manager
+        </span>
+        <h1>Une modification,<br><em>toutes les OTA.</em></h1>
+        <p class="lead">Vous changez un prix dans rumo et quelques secondes plus tard il est sur Booking, Airbnb, Expedia et les autres. Une réservation arrive et elle est aussitôt dans votre calendrier. Un seul abonnement chez nous, pas de facture séparée pour la connexion.</p>
+        <p class="lead">Ce que vous réglez ici vaut pour toute la maison, <strong>y compris votre propre page de réservation</strong>. C'est nécessaire : c'est le seul canal sans channel manager devant lui.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ WAT ER HEEN EN WEER GAAT ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Aller et retour</span>
+        <h2>Tout ce qu'ils <em>doivent savoir.</em></h2>
+        <p class="lead">Vers les canaux partent vos tarifs, votre disponibilité et vos restrictions. En retour arrivent les réservations et les annulations. En général en quelques secondes.</p>
+        <ul class="fp-bullets">
+          <li><strong>Les restrictions appartiennent à un type de chambre et à un plan tarifaire.</strong> Fermez-en un et les autres restent ouverts</li>
+          <li>Une modification en masse est préparée, pas envoyée : elle ne part qu'à l'enregistrement</li>
+          <li>Les annulations et les changements de prix après réservation se font dans l'extranet de l'OTA</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster lijst" role="img" aria-label="Une modification de prix dans rumo qui part l'une après l'autre vers Booking.com, Airbnb, Expedia et la page de réservation propre.">
+          <div class="al-kop"><h4>Tarifs</h4><span>Standard double &middot; sam 4 avril</span></div>
+          <span class="al-prijs">Prix de la nuit <b><span class="oud">&euro;&nbsp;139</span><span class="nieuw">&euro;&nbsp;155</span></b></span>
+          <div class="al-rij">
+            <div><span class="al-cat">Canal</span><br><b>Booking.com</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was">En attente</span>
+              <span class="al-merk wordt">Mis à jour</span>
+            </span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Canal</span><br><b>Airbnb</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag1">En attente</span>
+              <span class="al-merk wordt traag1">Mis à jour</span>
+            </span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Canal</span><br><b>Expedia</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag2">En attente</span>
+              <span class="al-merk wordt traag2">Mis à jour</span>
+            </span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Propre</span><br><b>Votre page de réservation</b></div>
+            <span class="al-merken">
+              <span class="al-merk open was traag3">En attente</span>
+              <span class="al-merk wordt traag3">Mis à jour</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ AUTO CLOSE ═══════════════════════ -->
+<section class="fp-section reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Auto close</span>
+        <h2>Réception fermée, <em>nuit fermée.</em></h2>
+        <p class="lead">Indiquez l'heure de fermeture de votre réception. rumo met alors cette nuit-là en stop-sell tout seul, sur chaque canal et sur votre propre page de réservation en même temps. Il n'y a rien à actionner.</p>
+        <p class="lead">Cela ne ferme que cette nuit-là. Demain reste en vente, un client peut donc encore réserver à l'avance alors que personne n'est au comptoir.</p>
+        <ul class="fp-bullets">
+          <li>Le client voit « complet », pas « fermé ». C'est voulu</li>
+          <li>Un départ le matin même reste possible, cela ne vous coûte pas cette nuit</li>
+          <li>Votre réception peut toujours accepter une réservation à la main</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="La grille tarifaire de rumo : la nuit d'aujourd'hui passe en stop-sell dès que la réception ferme.">
+          <div class="as-kop"><h4>Tarifs et disponibilité</h4><span data-datum="vandaag">2 avril</span></div>
+          <div class="as-tabs"><span class="aan">Tarifs de base</span><span>Booking.com</span><span>Airbnb</span><span>Expedia</span></div>
+          <div class="as-rij wisselt"><div><span class="sub">Standard double &middot; nuit seule</span><br><b>Cette nuit</b></div><span class="as-chips"><span class="chip was">En vente</span><span class="chip oranje wordt">Stop-sell</span></span></div>
+          <div class="as-rij schoon"><div><span class="sub">Standard double &middot; nuit seule</span><br><b>Demain &middot; &euro; 139</b></div><span class="chip">En vente</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Standard double &middot; petit-déjeuner</span><br><b>Demain &middot; &euro; 155</b></div><span class="chip">En vente</span></div>
+          <div class="as-rij"><div><span class="sub">La réception ferme à 22h00</span><br><b>Arrêter la vente à 20h00</b></div><span class="chip grijs">Auto close activé</span></div>
+          <div class="as-rij"><div><span class="sub">La réception ferme à 22h00</span><br><b>Arrêter la vente à 20h00</b></div><span class="chip grijs">Activé</span></div>
+          <div class="as-voet">Cette nuit seulement. Demain reste en vente</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ LOOPT HET NOG ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Est-ce que ça tourne ?</span>
+        <h2>Pas seulement <em>envoyé</em>, aussi <em>arrivé.</em></h2>
+        <p class="lead">L'aperçu est votre bilan de santé : êtes-vous connecté, quand est arrivée la dernière réservation, et est-ce que quelque chose a récemment mal tourné.</p>
+        <p class="lead"><strong>Chaque nuit, une comparaison est faite.</strong> Non pas pour savoir si rumo a envoyé quelque chose, mais si les canaux le retiennent réellement. Si un écart est encore là la nuit suivante, c'est en général un réglage et pas un hoquet.</p>
+        <ul class="fp-bullets">
+          <li>Un type de chambre ajouté plus tard n'est pas connu des canaux pour autant. Le panneau nomme ce qui manque</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="L'aperçu du channel manager dans rumo : état des connexions, comparaison nocturne et rattachement de vos types de chambres.">
+          <div class="as-kop"><h4>Aperçu</h4><span data-datum="vandaag">2 avril</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Connecté</div><div class="v groen">Oui</div></div>
+            <div><div class="l">Dernière réservation</div><div class="v">14 min</div></div>
+            <div><div class="l">Dernier envoi</div><div class="v">3 min</div></div>
+            <div><div class="l">Échecs (24h)</div><div class="v groen">0</div></div>
+          </div>
+          <div class="as-voet" style="margin:0 0 0.5rem">Comparaison nocturne</div>
+          <div class="as-rij schoon"><div><span class="sub">Contrôlé cette nuit</span><br><b>Tout correspondait</b></div><span class="chip">En ordre</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Deux nuits d'affilée</span><br><b>3 nuits diffèrent sur Expedia</b></div><span class="chip oranje">Jetez-y un œil</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Ajouté après la connexion</span><br><b>Chambre familiale pas encore connue</b></div><span class="chip oranje">Reconnecter</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Chambre familiale &middot; ajoutée après la connexion</span><br><b>Pas encore connue du channel manager</b></div><span class="chip oranje">Reconnecter</span></div>
+          <div class="as-voet">Les canaux vendent ce qu'ils connaissent, pas ce que vous n'avez pas transmis</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ OTA-SUPERKRACHTEN ═══════════════════════ -->
+<section class="fp-power">
+  <div class="wrap">
+    <div class="fp-power-head fade-up">
+      <span class="fp-section-kicker">Plus qu'une synchro</span>
+      <h2>Ce que rumo <em>fait</em> encore avec les OTA.</h2>
+      <p>Transmettre les prix et la disponibilité n'est qu'un début. En coulisses, rumo règle bien d'autres choses que vous devriez sinon démêler à la main chez Booking ou Airbnb.</p>
+    </div>
+    <div class="fp-power-grid fade-up">
+
+      <div class="fp-power-card">
+        <span class="tag">Booking.com</span>
+        <h4>Carte invalide ? <em>Booking</em> s'en occupe.</h4>
+        <p>Si une carte client se révèle morte, rumo le signale à Booking.com. Booking demande une nouvelle carte au client et vous donne le droit d'annuler si cela ne se règle pas.</p>
+      </div>
+
+      <div class="fp-power-card">
+        <span class="tag">Boîte de réception + Rudy</span>
+        <h4>Les messages clients des OTA, <em>au même endroit</em>.</h4>
+        <p>Les messages de Booking.com et d'Airbnb arrivent dans rumo, Rudy prépare la réponse et la réception l'envoie. Expedia ne participe pas à cela. Cette connexion se prend à part ; le reste de cette page est compris dans votre formule.</p>
+      </div>
+
+      <div class="fp-power-card">
+        <span class="tag">Cartes virtuelles</span>
+        <h4>Traitement des cartes <em>par canal</em>, automatiquement.</h4>
+        <p>Vérifier, préautoriser ou débiter automatiquement, réglé par canal. Une carte virtuelle de Booking ne devient souvent valable que peu avant l'arrivée : rumo n'essaie donc pas trop tôt et réessaie tout seul.</p>
+      </div>
+
+      <div class="fp-power-card">
+        <span class="tag">Chiffre d'affaires net</span>
+        <h4>La <em>vraie</em> commission, par réservation.</h4>
+        <p>rumo lit le montant de commission qui accompagne chaque réservation. Votre CA net par réservation est donc juste, au lieu d'être estimé avec un pourcentage moyen.</p>
+      </div>
+
+      <div class="fp-power-card">
+        <span class="tag">Add-on optionnel</span>
+        <h4><em>Smart Pricing</em>, intégré.</h4>
+        <p>Des prix qui suivent votre taux d'occupation, par paliers que vous réglez vous-même et poussés directement vers vos canaux. Pas d'outil externe nécessaire.</p>
+      </div>
+
+      <div class="fp-power-card">
+        <span class="tag">Dédoublonnage</span>
+        <h4>Pas d'imports <em>en double</em>.</h4>
+        <p>Si un canal envoie deux fois la même réservation, rumo le reconnaît et retient le doublon.</p>
+      </div>
+
+      <div class="fp-power-card">
+        <span class="tag">Panneau d'état</span>
+        <h4>Voyez d'un coup d'œil si la <em>synchro tourne</em>.</h4>
+        <p>Dernière réservation reçue, dernière modification envoyée, et ce qui a échoué. Si quelque chose est bloqué, vous le renvoyez à la main.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 4 · OTA'S ═══════════════════════ -->
+<section class="fp-section alt reverse">
+  <div class="wrap">
+    <div class="fp-section-inner fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">La liste</span>
+        <h2>Booking, Airbnb, Expedia, <em>et une centaine d'autres</em>.</h2>
+        <p class="lead">Une centaine de canaux sont accessibles. Les trois grands sont prêts ; pour les plus exotiques, nous aidons à la première connexion. Vous vous en tenez aux trois grands ? C'est ce que font la plupart des hôtels.</p>
+        <ul class="fp-bullets">
+          <li><em>Prêts :</em> Booking, Airbnb, Expedia, Hotelbeds, Agoda</li>
+          <li><em>Sur demande :</em> HotelsCombined, Hostelworld, Despegar, OTA locales</li>
+          <li>Plus votre propre page de réservation, sans commission</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="mockup mk-otas">
+          <div class="mockup-head">
+            <h5>Canaux connectés</h5>
+            <span class="badge">5 actifs</span>
+          </div>
+          <div class="ota-grid">
+            <div class="ota-tile connected">
+              <strong>Booking.com</strong> <span class="status">Connecté</span>
+            </div>
+            <div class="ota-tile connected">
+              <strong>Airbnb</strong> <span class="status">Connecté</span>
+            </div>
+            <div class="ota-tile connected">
+              <strong>Expedia</strong> <span class="status">Connecté</span>
+            </div>
+            <div class="ota-tile connected">
+              <strong>Hotelbeds</strong> <span class="status">Connecté</span>
+            </div>
+            <div class="ota-tile connected">
+              <strong>Agoda</strong> <span class="status">Connecté</span>
+            </div>
+            <div class="ota-tile">
+              <strong>Site propre</strong> <span class="status">Connecté</span>
+            </div>
+            <div class="ota-more">+ une centaine de canaux</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ANDERE FEATURES ═══════════════════════ -->
+<section class="fp-others">
+  <div class="wrap">
+    <div class="fp-others-head fade-up">
+      <span class="kicker">Autres fonctionnalités</span>
+      <h3>Le channel manager est <em>une couche</em>.<br>Il y a autre chose autour.</h3>
+      <p>Le PMS, Rudy, le manuel, la prévention, le portail client. Tout dans le même rumo, tout ensemble un seul système.</p>
+    </div>
+    <div class="fp-others-grid fade-up">
+
+      <a class="fp-others-card" href="pms.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h4>Le <em>PMS</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="rudy.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4><em>Rudy</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="handbook.html">
+        <div class="fp-others-ic" style="background:#DCE4F3; color:#4a7fb5;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h6M8 11h8"/></svg>
+        </div>
+        <h4>Le <em>manuel</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="prevention.html">
+        <div class="fp-others-ic" style="background:#FCEDBD; color:#8a6b1a;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4><em>Prévention</em> &amp; bien-être</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="guest-portal.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h4><em>Portail client</em> &amp; moteur de réservation</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Essayer vous-même</span>
+    <h2>Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.</h2>
+    <p>Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit.</p>
+    <a href="index.html#demo" class="btn-paper">Essayez 14 jours gratuitement <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="migration.html">Migration des données offerte</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+// threshold 0, niet 0.1: een blok hoger dan tien keer het scherm haalde die
+// drempel nooit, en bleef onzichtbaar op een telefoon.
+}, { threshold: 0 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.documentElement.dataset.fadeReady = '1';
+</script>
+
+</body>
+</html>

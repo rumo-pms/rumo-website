@@ -17,6 +17,7 @@
 </script>
 <script src="../gate.js"></script>
 <script src="../demo-form.js?v=2" defer></script>
+<script src="../datums.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>rumo · un logiciel hôtelier sans complications</title>
 <meta name="robots" content="noindex, nofollow">
@@ -506,8 +507,9 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
 .toonband.licht .kicker { color:var(--muted); }
 /* De doorlink staat in botergeel, want die kleur hoort bij de donkere band.
    Op dit beige is dat niet te lezen; hier hoort terracotta. */
-.toonband.licht .pms-door { color:var(--terra-dark); border-bottom-color:rgba(185,107,74,0.35); }
-.toonband.licht .pms-door:hover { border-bottom-color:var(--terra-dark); }
+/* Op de lichte band blijft het dezelfde knop: donker op beige leest het
+   duidelijkst. Alleen de hover verschilt niet meer van de donkere band. */
+.toonband.licht .pms-door { color:var(--paper); }
 /* De tekstkolom staat standaard op 520px, wat voor een korte kop werkt maar
    deze introalinea in vijf smalle regels hakt. */
 .toonband.licht .toonband-tekst { max-width:900px; }
@@ -744,15 +746,20 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
   .av-status { display:none; }
 }
 
-/* Doorlink in de PMS-band. */
+/* Doorlink in de PMS-band. Dit was een klein mono-linkje met een streepje
+   eronder; op de beige band viel dat weg tussen de tekst. Het is nu dezelfde
+   knop als de hoofdknop in de hero, want het is ook een hoofdknop: dit is de
+   enige weg van de startpagina naar de PMS-pagina. */
 .pms-door {
-  display:inline-flex; align-items:center; gap:0.45em; margin-top:1.5rem;
-  font-family:'JetBrains Mono', monospace; font-size:0.68rem;
-  letter-spacing:0.1em; text-transform:uppercase;
-  color:var(--butter); text-decoration:none;
-  border-bottom:1px solid rgba(244,217,143,0.35); padding-bottom:2px;
+  display:inline-flex; align-items:center; gap:0.5em; margin-top:1.75rem;
+  padding:0.95rem 1.6rem; border-radius:100px;
+  font-family:'Inter', sans-serif; font-weight:500; font-size:0.98rem;
+  background:var(--ink); color:var(--paper); text-decoration:none; border:none;
+  transition:all 0.2s ease;
 }
-.pms-door:hover { border-bottom-color:var(--butter); }
+.pms-door span { display:inline-block; transition:transform 0.25s; }
+.pms-door:hover { background:var(--terra-dark); transform:translateY(-1px); }
+.pms-door:hover span { transform:translateX(3px); }
 
 
 
@@ -1303,7 +1310,7 @@ footer {
 <!-- ══════════════════ HERO · FILMIC VIDEO ══════════════════ -->
 <section class="hero">
   <video class="hero-video" autoplay loop muted playsinline preload="auto">
-    <source src="img/sfeer.mp4" type="video/mp4">
+    <source src="../img/sfeer.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-grain"></div>
@@ -1330,10 +1337,10 @@ footer {
       <span class="kicker">00 / Intro</span>
       <h2>Mais qu'est-ce que <em>rumo</em>, au juste&nbsp;?</h2>
       <p>Eh bien, nous sommes un logiciel hôtelier. Mais pas celui que vous imaginez. Pas une plateforme d'entreprise à deux mille euros par mois qui demande ensuite trois semaines de formation. Juste <em>un</em> système qui fait ce qu'il doit faire. Vous l'ouvrez le matin et vous savez ce qui vous attend.</p>
-      <a href="../pms.html" class="pms-door">Tout sur le PMS <span>&rarr;</span></a>
+      <a href="pms.html" class="pms-door">Tout sur le PMS <span>&rarr;</span></a>
     </div>
     <div class="toonband-beeld">
-      <div class="appvenster" role="img" aria-label="De reservatiekalender in rumo: kamers onder elkaar, dagen ernaast, en boekingen als balken die je van kamer naar kamer sleept.">
+      <div class="appvenster" role="img" aria-label="Le calendrier des réservations dans rumo : les chambres en colonne, les jours en ligne, et les réservations sous forme de barres que vous faites glisser d'une chambre à l'autre.">
         <div class="av-kop">
           <h4>Réservations</h4>
           <p>Vue d'ensemble des chambres et des réservations à venir</p>
@@ -1346,13 +1353,13 @@ footer {
           <span class="av-rek"></span>
           <span class="av-knop">Semaine</span>
           <span class="av-schaar" aria-label="Diviser un séjour en deux"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></span>
-          <span class="av-datum">2 avril 2026</span>
+          <span class="av-datum" data-datum="vandaag-jaar">2 april 2026</span>
           <span class="av-vandaag">Aujourd'hui</span>
         </div>
         <div class="av-raster">
-          <div class="av-dagen">
+          <div class="av-dagen" data-kalender>
             <span></span>
-            <span>mer<b>1</b></span><span class="nu">jeu<b>2</b></span><span>ven<b>3</b></span>
+                        <span>mer<b>1</b></span><span class="nu">jeu<b>2</b></span><span>ven<b>3</b></span>
             <span>sam<b>4</b></span><span>dim<b>5</b></span><span>lun<b>6</b></span><span>mar<b>7</b></span>
           </div>
 
@@ -1423,7 +1430,7 @@ footer {
       <span class="kicker">Oui, mais mon système actuel&nbsp;?</span>
       <h2>Vous découvrez rumo et le configurez pendant que votre ancien système <em>continue de tourner.</em></h2>
       <p class="overstap-copy">Votre ancien PMS continue de fonctionner pendant que vous configurez rumo, et vous ne basculez Booking.com que lorsque tout est correct. Tout votre historique et vos réservations à venir sont importés entre-temps.</p>
-      <a href="../overstappen.html" class="btn-ink">Comment se passe la migration <span>&rarr;</span></a>
+      <a href="migration.html" class="btn-ink">Comment se passe la migration <span>&rarr;</span></a>
     </div>
     <div>
       <ul class="overstap-punten">
@@ -1457,7 +1464,7 @@ footer {
         </div>
         <p><strong>Produit belge</strong>Conçu à Gand. Assistance en néerlandais, français et anglais.</p>
       </div>
-      <a class="trust-item fade-up" href="../veiligheid.html" style="transition-delay:0.2s">
+      <a class="trust-item fade-up" href="securite.html" style="transition-delay:0.2s">
         <div class="ic">
           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
             <rect x="3" y="11" width="18" height="11" rx="2"/>
@@ -1477,7 +1484,7 @@ footer {
     <h2>Pas de démo au téléphone.<br>Juste <em>14 jours</em> pour essayer.</h2>
     <p>Pas de carte de crédit, pas d'engagement, pas d'«&nbsp;account manager&nbsp;» qui vous appelle chaque semaine. Vous laissez vos coordonnées, nous préparons votre environnement rempli de fausses réservations et nous vous envoyons les clés. Généralement dans la journée. Ça ne vous convient pas&nbsp;? Ça disparaît sans bruit. Sans rancune.</p>
     <a href="#demo" class="btn-paper">Essayez 14 jours gratuitement <span>→</span></a>
-    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="../overstappen.html">Migration des données offerte</a></p>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="migration.html">Migration des données offerte</a></p>
   </div>
 </section>
 
@@ -1498,17 +1505,17 @@ footer {
         <li><a href="features.html#facturatie">Facturation et Peppol</a></li>
         <li><a href="features.html#housekeeping">Housekeeping</a></li>
         <li><a href="features.html#rapporten">Rapports</a></li>
-        <li><a href="../veiligheid.html">Sécurité</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-label">Rumo</div>
       <ul class="footer-links">
         <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
-        <li><a href="../uitgelegd/index.html">Expliqué (en néerlandais)</a></li>
-        <li><a href="../overstappen.html">Migration (en néerlandais)</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
         <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
-        <li><a href="../kb.html">Centre d'aide</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
         <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
@@ -1528,7 +1535,7 @@ footer {
   </div>
   <div class="footer-bottom">
     <span>© 2026 Rumo · Gent, BE</span>
-    <span><a href="../privacy.html">Confidentialité</a> · <a href="../cookies.html">Cookies</a></span>
+    <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
   </div>
 </footer>
 

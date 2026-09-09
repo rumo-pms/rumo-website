@@ -1,0 +1,1502 @@
+{
+  "Helpdesk · rumo": {
+    "en": "Helpdesk · rumo",
+    "fr": "Helpdesk · rumo"
+  },
+  "Helpdesk voor rumo hotelsoftware. Korte stukjes uitleg over reservaties, channel manager, facturatie, Belgische compliance en Rudy.": {
+    "en": "Helpdesk for rumo hotel software. Short pieces of explanation about reservations, channel manager, invoicing, Belgian compliance and Rudy.",
+    "fr": "Helpdesk du logiciel hôtelier rumo. De courtes explications sur les réservations, le channel manager, la facturation, la conformité belge et Rudy."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "Hoe doe je dat <em>ook alweer?</em>": {
+    "en": "How do you do that <em>again?</em>",
+    "fr": "Comment fait-on ça, <em>déjà ?</em>"
+  },
+  "Geen 300 artikels die je niet vindt. Korte stukjes die je vertellen wat je wil weten, en eerlijk zeggen wanneer rumo het even van jou overneemt. Ook geschreven zodat <em>Rudy</em> precies weet wat hij mag uitvoeren namens jou.": {
+    "en": "Not 300 articles you cannot find. Short pieces that tell you what you want to know, and say honestly when rumo hands the job back to you. Written so that <em>Rudy</em> knows exactly what he may carry out on your behalf.",
+    "fr": "Pas 300 articles que vous ne trouvez pas. De courts passages qui vous disent ce que vous voulez savoir, et qui disent honnêtement quand rumo vous rend la main. Écrits aussi pour que <em>Rudy</em> sache exactement ce qu'il peut exécuter en votre nom."
+  },
+  "Hier staat hoe je iets <strong>in rumo</strong> doet. Zoek je hoe het vak zelf in elkaar zit, los van welke software je gebruikt, dan is dat <a href=\"uitgelegd/index.html\">Uitgelegd</a>.": {
+    "en": "This is how you do something <strong>in rumo</strong>. Looking for how the trade itself works, whatever software you use? That is <a href=\"uitgelegd/index.html\">Explained</a>.",
+    "fr": "Ici, vous trouvez comment faire quelque chose <strong>dans rumo</strong>. Vous cherchez comment le métier fonctionne, quel que soit le logiciel ? C'est <a href=\"uitgelegd/index.html\">Expliqué</a>."
+  },
+  "12 categorieën<br> <strong>53 stukjes</strong>": {
+    "en": "12 categories<br> <strong>53 pieces</strong>",
+    "fr": "12 catégories<br> <strong>53 passages</strong>"
+  },
+  "<span>Korter dan een handleiding</span> <span>Eerlijk wat Rudy mag</span> <span>Belgische compliance erin</span>": {
+    "en": "<span>Shorter than a manual</span> <span>Honest about what Rudy may do</span> <span>Belgian compliance included</span>",
+    "fr": "<span>Plus court qu'un mode d'emploi</span> <span>Honnête sur ce que Rudy peut faire</span> <span>Conformité belge incluse</span>"
+  },
+  "Eén pagina, één scrollbeweging": {
+    "en": "One page, one scroll",
+    "fr": "Une page, un seul défilement"
+  },
+  "Voor jou én voor Rudy": {
+    "en": "For you and for Rudy",
+    "fr": "Pour vous et pour Rudy"
+  },
+  "Schermafdrukken die niet meer kloppen": {
+    "en": "Screenshots that no longer match",
+    "fr": "Des captures d'écran qui ne correspondent plus"
+  },
+  "Categorieën": {
+    "en": "Categories",
+    "fr": "Catégories"
+  },
+  "<a href=\"#aan-de-slag\" class=\"active\">Aan de slag<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#aan-de-slag\" class=\"active\">Getting started<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#aan-de-slag\" class=\"active\">Démarrer<span class=\"kb-nav-count\">4</span></a>"
+  },
+  "<a href=\"#reservaties\">Reservaties<span class=\"kb-nav-count\">10</span></a>": {
+    "en": "<a href=\"#reservaties\">Reservations<span class=\"kb-nav-count\">10</span></a>",
+    "fr": "<a href=\"#reservaties\">Réservations<span class=\"kb-nav-count\">10</span></a>"
+  },
+  "<a href=\"#housekeeping\">Housekeeping<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#housekeeping\">Housekeeping<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#housekeeping\">Housekeeping<span class=\"kb-nav-count\">4</span></a>"
+  },
+  "<a href=\"#channels\">Channel manager<span class=\"kb-nav-count\">5</span></a>": {
+    "en": "<a href=\"#channels\">Channel manager<span class=\"kb-nav-count\">5</span></a>",
+    "fr": "<a href=\"#channels\">Channel manager<span class=\"kb-nav-count\">5</span></a>"
+  },
+  "<a href=\"#tarieven\">Tarieven<span class=\"kb-nav-count\">5</span></a>": {
+    "en": "<a href=\"#tarieven\">Rates<span class=\"kb-nav-count\">5</span></a>",
+    "fr": "<a href=\"#tarieven\">Tarifs<span class=\"kb-nav-count\">5</span></a>"
+  },
+  "<a href=\"#facturatie\">Facturatie &amp; Peppol<span class=\"kb-nav-count\">7</span></a>": {
+    "en": "<a href=\"#facturatie\">Invoicing &amp; Peppol<span class=\"kb-nav-count\">7</span></a>",
+    "fr": "<a href=\"#facturatie\">Facturation &amp; Peppol<span class=\"kb-nav-count\">7</span></a>"
+  },
+  "<a href=\"#statistieken\">Statistieken<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#statistieken\">Statistics<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#statistieken\">Statistiques<span class=\"kb-nav-count\">4</span></a>"
+  },
+  "<a href=\"#belgie\">Belgische compliance<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#belgie\">Belgian compliance<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#belgie\">Conformité belge<span class=\"kb-nav-count\">4</span></a>"
+  },
+  "<a href=\"#privacy\">Privacy &amp; gegevens<span class=\"kb-nav-count\">3</span></a>": {
+    "en": "<a href=\"#privacy\">Privacy &amp; data<span class=\"kb-nav-count\">3</span></a>",
+    "fr": "<a href=\"#privacy\">Vie privée &amp; données<span class=\"kb-nav-count\">3</span></a>"
+  },
+  "<a href=\"#gebruikers\">Gebruikers &amp; rollen<span class=\"kb-nav-count\">3</span></a>": {
+    "en": "<a href=\"#gebruikers\">Users &amp; roles<span class=\"kb-nav-count\">3</span></a>",
+    "fr": "<a href=\"#gebruikers\">Utilisateurs &amp; rôles<span class=\"kb-nav-count\">3</span></a>"
+  },
+  "<a href=\"#troubleshooting\">Troubleshooting<span class=\"kb-nav-count\">5</span></a>": {
+    "en": "<a href=\"#troubleshooting\">Troubleshooting<span class=\"kb-nav-count\">5</span></a>",
+    "fr": "<a href=\"#troubleshooting\">Dépannage<span class=\"kb-nav-count\">5</span></a>"
+  },
+  "<a href=\"#rudy\">Rudy<span class=\"kb-nav-count\">7</span></a>": {
+    "en": "<a href=\"#rudy\">Rudy<span class=\"kb-nav-count\">7</span></a>",
+    "fr": "<a href=\"#rudy\">Rudy<span class=\"kb-nav-count\">7</span></a>"
+  },
+  "Aan de <em>slag</em>": {
+    "en": "Getting <em>started</em>",
+    "fr": "<em>Démarrer</em>"
+  },
+  "De eerste week. Inloggen, kamers opzetten, eerste reservatie boeken, eerste OTA koppelen. Geen onboarding-call van twee uur. Gewoon doen, en bellen als je vastloopt.": {
+    "en": "The first week. Logging in, setting up rooms, booking your first reservation, connecting your first OTA. No two-hour onboarding call. Just do it, and ring us if you get stuck.",
+    "fr": "La première semaine. Se connecter, créer les chambres, encoder la première réservation, connecter la première OTA. Pas d'appel d'onboarding de deux heures. On fait, et on appelle si on bloque."
+  },
+  "Eerste login": {
+    "en": "First login",
+    "fr": "Première connexion"
+  },
+  "De eerste keer inloggen op rumo": {
+    "en": "Logging in to rumo for the first time",
+    "fr": "Se connecter à rumo pour la première fois"
+  },
+  "Je krijgt van ons een mail met een persoonlijke link. Klikken, wachtwoord kiezen, klaar. Geen apart hotel-id, geen \"vraag het aan je beheerder\". Als je zelf de eigenaar bent, ben jij ook de beheerder.": {
+    "en": "You get a mail from us with a personal link. Click, choose a password, done. No separate hotel ID, no \"ask your administrator\". If you are the owner yourself, you are the administrator too.",
+    "fr": "Vous recevez de nous un mail avec un lien personnel. Vous cliquez, vous choisissez un mot de passe, c'est fait. Pas d'identifiant d'hôtel séparé, pas de « demandez à votre administrateur ». Si vous êtes le propriétaire, vous êtes aussi l'administrateur."
+  },
+  "<em>Vergeet niet:</em> twee-factor staat standaard aan voor nieuwe accounts. Je telefoon hangt aan je rumo, niet andersom.": {
+    "en": "<em>Do not forget:</em> two-factor is on by default for new accounts. Your phone hangs on your rumo, not the other way round.",
+    "fr": "<em>N'oubliez pas :</em> le deuxième facteur est activé par défaut pour les nouveaux comptes. Votre téléphone dépend de votre rumo, pas l'inverse."
+  },
+  "Setup": {
+    "en": "Setup",
+    "fr": "Configuration"
+  },
+  "Je kamers en kamertypes <em>opzetten</em>": {
+    "en": "<em>Setting up</em> your rooms and room types",
+    "fr": "<em>Créer</em> vos chambres et types de chambres"
+  },
+  "Eerst kamertypes (Standard, Deluxe, Junior Suite, …), dan individuele kamers. Een kamertype heeft een tarief en een maximum bezetting; een individuele kamer hangt aan zo'n type. Hetzelfde patroon dat Booking.com en de andere OTA's verwachten.": {
+    "en": "Room types first (Standard, Deluxe, Junior Suite, …), then individual rooms. A room type has a rate and a maximum occupancy; an individual room hangs on such a type. The same pattern Booking.com and the other OTAs expect.",
+    "fr": "D'abord les types de chambres (Standard, Deluxe, Junior Suite, …), ensuite les chambres individuelles. Un type de chambre a un tarif et une occupation maximale ; une chambre individuelle dépend d'un type. C'est le même schéma que celui attendu par Booking.com et les autres OTA."
+  },
+  "Tip: hou kamertypes <strong>beperkt</strong>. Drie of vier is meestal genoeg. Twintig kamertypes geeft je twintig synchronisatie-problemen.": {
+    "en": "Tip: keep room types <strong>limited</strong>. Three or four is usually enough. Twenty room types gives you twenty synchronisation problems.",
+    "fr": "Conseil : gardez un nombre <strong>limité</strong> de types de chambres. Trois ou quatre suffisent en général. Vingt types de chambres, c'est vingt problèmes de synchronisation."
+  },
+  "Demo-data": {
+    "en": "Demo data",
+    "fr": "Données de démo"
+  },
+  "Spelen met nepreservaties": {
+    "en": "Playing with made-up reservations",
+    "fr": "Jouer avec de fausses réservations"
+  },
+  "Je startomgeving zit standaard vol met dummy-reservaties zodat je kan klikken zonder iets stuk te maken. Klaar om écht te beginnen? Eén klik op \"Reset data\" en alles is leeg. Je eigen kamers blijven staan.": {
+    "en": "Your starting environment is full of dummy reservations by default so that you can click without breaking anything. Ready to start for real? One click on \"Reset data\" and everything is empty. Your own rooms stay.",
+    "fr": "Votre environnement de départ est rempli par défaut de réservations fictives pour que vous puissiez cliquer sans rien casser. Prêt à commencer pour de vrai ? Un clic sur « Reset data » et tout est vide. Vos propres chambres restent."
+  },
+  "Migratie": {
+    "en": "Migration",
+    "fr": "Migration"
+  },
+  "Komen vanuit een ander PMS": {
+    "en": "Coming from another PMS",
+    "fr": "Venir d'un autre PMS"
+  },
+  "Je haalt een export uit je huidige systeem en leest die in je eigen rumo in. Bestaande reservaties, gastprofielen en je historiek gaan mee, en je oude systeem blijft ondertussen draaien tot jij omschakelt. Je bestand blijft dus bij jou: wij hoeven er niets van door te krijgen. De meeste hotels zijn binnen een paar dagen volledig over, zonder dubbele invoer.": {
+    "en": "You pull an export out of your current system and read it into your own rumo. Existing reservations, guest profiles and your history come along, and your old system keeps running in the meantime until you switch over. So your file stays with you: we need to receive nothing of it. Most hotels are fully across within a few days, without double entry.",
+    "fr": "Vous sortez un export de votre système actuel et vous l'importez dans votre rumo. Les réservations existantes, les profils clients et votre historique suivent, et votre ancien système continue de tourner jusqu'à ce que vous basculiez. Votre fichier reste donc chez vous : nous n'avons rien à en recevoir. La plupart des hôtels sont complètement passés en quelques jours, sans double encodage."
+  },
+  "Komt het uit een schrift met ezelsoren? Ook prima, dan start je met een lege kalender en zet je de komende boekingen erin. Vraag het gerust, dan lopen we het samen door.": {
+    "en": "Coming from a dog-eared notebook? That is fine too: then you start with an empty calendar and put the coming bookings in. Just ask and we will go through it together.",
+    "fr": "Cela vient d'un cahier aux coins cornés ? C'est très bien aussi : vous démarrez avec un calendrier vide et vous y placez les réservations à venir. Demandez-nous, nous le parcourons ensemble."
+  },
+  "<a class=\"kb-verder\" href=\"overstappen.html\">Zo verloopt de overstap, stap voor stap <span>&rarr;</span></a>": {
+    "en": "<a class=\"kb-verder\" href=\"overstappen.html\">How the switch works, step by step <span>&rarr;</span></a>",
+    "fr": "<a class=\"kb-verder\" href=\"overstappen.html\">Comment se passe la migration, étape par étape <span>&rarr;</span></a>"
+  },
+  "Reservaties &amp; <em>guest portal</em>": {
+    "en": "Reservations &amp; <em>guest portal</em>",
+    "fr": "Réservations &amp; <em>portail client</em>"
+  },
+  "Het deel waar je elke dag in zit. Aanmaken, wijzigen, in- en uitchecken, factureren. Plus het guest portal: de link die je gast krijgt om zelf zijn pre-checkin in te vullen.": {
+    "en": "The part you are in every day. Creating, changing, checking in and out, invoicing. Plus the guest portal: the link your guest gets to fill in their own pre-check-in.",
+    "fr": "La partie dans laquelle vous êtes tous les jours. Créer, modifier, enregistrer les arrivées et les départs, facturer. Plus le portail client : le lien que votre client reçoit pour remplir lui-même son pré-check-in."
+  },
+  "Aanmaken": {
+    "en": "Creating",
+    "fr": "Créer"
+  },
+  "Een reservatie aan de <em>balie</em> aanmaken": {
+    "en": "Creating a reservation at the <em>desk</em>",
+    "fr": "Créer une réservation au <em>comptoir</em>"
+  },
+  "Walk-in, telefoon, mail: druk op <strong>+ Nieuw</strong> of sleep een lege strook op de kalender. Kies kamertype, datums, aantal personen. rumo trekt automatisch de modifier-prijs voor die periode, jij kan ze aanpassen. Gastgegevens kunnen later via de pre-checkin-link, of meteen door ze in te tikken.": {
+    "en": "Walk-in, phone, mail: press <strong>+ New</strong> or drag an empty strip on the calendar. Choose room type, dates, number of people. rumo pulls the modifier price for that period automatically; you can adjust it. Guest details can follow later through the pre-check-in link, or straight away by typing them in.",
+    "fr": "Walk-in, téléphone, mail : appuyez sur <strong>+ Nouveau</strong> ou tirez une bande vide sur le calendrier. Choisissez le type de chambre, les dates, le nombre de personnes. rumo applique automatiquement le prix modifié pour cette période, vous pouvez l'ajuster. Les données du client peuvent suivre via le lien de pré-check-in, ou être encodées tout de suite."
+  },
+  "Bij een walk-in: vink <em>\"direct inchecken\"</em> aan, dan staat de gast meteen op in-house en springt de kamerstatus naar <strong>bezet</strong>.": {
+    "en": "For a walk-in: tick <em>\"check in immediately\"</em> and the guest is in-house at once and the room status jumps to <strong>occupied</strong>.",
+    "fr": "Pour un walk-in : cochez <em>« enregistrer directement »</em> et le client est aussitôt en maison, le statut de la chambre passant à <strong>occupée</strong>."
+  },
+  "Dagelijks": {
+    "en": "Daily",
+    "fr": "Au quotidien"
+  },
+  "Inchecken en <em>uitchecken</em>": {
+    "en": "Checking in and <em>checking out</em>",
+    "fr": "Arrivées et <em>départs</em>"
+  },
+  "<strong>Inchecken:</strong> open de arrivals-lijst van vandaag. Klik een reservatie open, controleer of de pre-checkin compleet is, ken een kamer toe als dat nog niet gebeurd is, status op <em>ingecheckt</em>. Klaar.": {
+    "en": "<strong>Checking in:</strong> open today's arrivals list. Click a reservation open, check whether the pre-check-in is complete, assign a room if that has not happened yet, status to <em>checked in</em>. Done.",
+    "fr": "<strong>Arrivée :</strong> ouvrez la liste des arrivées du jour. Ouvrez une réservation, vérifiez si le pré-check-in est complet, attribuez une chambre si ce n'est pas encore fait, statut sur <em>arrivé</em>. Terminé."
+  },
+  "<strong>Uitchecken:</strong> open de departures-lijst, neem de openstaande posten erbij (minibar, ontbijten, extra's), ontvang betaling, factuur volgt automatisch. rumo waarschuwt expliciet als er nog een openstaand saldo is voor je effectief uitcheckt.": {
+    "en": "<strong>Checking out:</strong> open the departures list, add the outstanding items (minibar, breakfasts, extras), take payment, the invoice follows automatically. rumo warns you explicitly if there is still an outstanding balance before you actually check out.",
+    "fr": "<strong>Départ :</strong> ouvrez la liste des départs, ajoutez les postes ouverts (minibar, petits-déjeuners, extras), encaissez, la facture suit automatiquement. rumo vous avertit explicitement s'il reste un solde ouvert avant que vous ne validiez le départ."
+  },
+  "Groepen": {
+    "en": "Groups",
+    "fr": "Groupes"
+  },
+  "Een groep van meerdere <em>kamers tegelijk</em>": {
+    "en": "A group of several <em>rooms at once</em>",
+    "fr": "Un groupe de plusieurs <em>chambres à la fois</em>"
+  },
+  "Maak één hoofdreservatie aan en voeg er meerdere kamers aan toe. Allemaal onder dezelfde booking-referentie. Datums per kamer kunnen verschillen (bv. een bruiloft waar het bruidspaar één nacht langer blijft).": {
+    "en": "Create one main reservation and add several rooms to it. All under the same booking reference. Dates can differ per room (a wedding where the couple stays one night longer, for instance).",
+    "fr": "Créez une réservation principale et ajoutez-y plusieurs chambres. Toutes sous la même référence de réservation. Les dates peuvent différer par chambre (un mariage où les mariés restent une nuit de plus, par exemple)."
+  },
+  "Bij facturatie kies je: één verzamelfactuur op de naam van de organisator, of aparte facturen per kamer of gast. Beide kunnen, zonder de boeking opnieuw te moeten ingeven.": {
+    "en": "For invoicing you choose: one collective invoice in the organiser's name, or separate invoices per room or guest. Both are possible, without having to enter the booking again.",
+    "fr": "Pour la facturation, vous choisissez : une facture globale au nom de l'organisateur, ou des factures séparées par chambre ou par client. Les deux sont possibles, sans devoir réencoder la réservation."
+  },
+  "Wijzigen": {
+    "en": "Changing",
+    "fr": "Modifier"
+  },
+  "Een reservatie wijzigen, splitsen of <em>verplaatsen</em>": {
+    "en": "Changing, splitting or <em>moving</em> a reservation",
+    "fr": "Modifier, scinder ou <em>déplacer</em> une réservation"
+  },
+  "Datums verschuiven of een kamer wisselen kan gewoon door te slepen op de kalender. Sleep tussen kamers binnen hetzelfde type, of tussen types. rumo herrekent de prijs en stelt een nieuwe lijn voor. Jij beslist of die door mag.": {
+    "en": "Shifting dates or swapping a room is simply a matter of dragging on the calendar. Drag between rooms within the same type, or between types. rumo recalculates the price and proposes a new line. You decide whether it may go through.",
+    "fr": "Décaler des dates ou changer de chambre se fait simplement en glissant sur le calendrier. Glissez entre chambres d'un même type, ou entre types. rumo recalcule le prix et propose une nouvelle ligne. C'est vous qui décidez si elle passe."
+  },
+  "Kostenposten (minibar, ontbijten, extra's) kan je <strong>tussen reservaties verschuiven</strong> via een booking-referentie zoeken. Geen datumfilter, geen restricties: gewoon de juiste reservatie vinden en de lijn slepen.": {
+    "en": "Cost items (minibar, breakfasts, extras) can be <strong>moved between reservations</strong> by searching for a booking reference. No date filter, no restrictions: just find the right reservation and drag the line.",
+    "fr": "Les postes (minibar, petits-déjeuners, extras) peuvent être <strong>déplacés entre réservations</strong> en cherchant une référence de réservation. Pas de filtre de date, pas de restriction : trouvez la bonne réservation et glissez la ligne."
+  },
+  "Identiteit": {
+    "en": "Identity",
+    "fr": "Identité"
+  },
+  "Een ID of paspoort <em>scannen</em> bij check-in": {
+    "en": "<em>Scanning</em> an ID or passport at check-in",
+    "fr": "<em>Scanner</em> une pièce d'identité ou un passeport à l'arrivée"
+  },
+  "Vulde de gast zijn gegevens niet vooraf in, dan scan je zijn identiteitskaart of paspoort aan de balie en komen naam, geboortedatum en nationaliteit meteen in het dossier terecht.": {
+    "en": "If the guest did not fill in their details beforehand, you scan their identity card or passport at the desk and name, date of birth and nationality land in the file straight away.",
+    "fr": "Si le client n'a pas rempli ses données à l'avance, vous scannez sa carte d'identité ou son passeport au comptoir et le nom, la date de naissance et la nationalité arrivent aussitôt dans le dossier."
+  },
+  "Dat is dezelfde invoer als die uit het gastenportaal, en ze voedt dus ook de politieregistratie en de overheidsstatistiek. Eén keer intikken, drie keer gebruikt.": {
+    "en": "That is the same input as the one from the guest portal, so it also feeds the police registration and the government statistics. Typed once, used three times.",
+    "fr": "C'est le même encodage que celui du portail client : il alimente donc aussi l'enregistrement policier et les statistiques officielles. Tapé une fois, utilisé trois fois."
+  },
+  "Online check-in": {
+    "en": "Online check-in",
+    "fr": "Check-in en ligne"
+  },
+  "Het guest portal voor je gast": {
+    "en": "The guest portal for your guest",
+    "fr": "Le portail client pour votre client"
+  },
+  "Elke gast krijgt een persoonlijke link in de bevestigingsmail. Daarmee vult hij zelf in:": {
+    "en": "Every guest gets a personal link in the confirmation mail. With it they fill in themselves:",
+    "fr": "Chaque client reçoit un lien personnel dans le mail de confirmation. Il y remplit lui-même :"
+  },
+  "Pre-checkin gegevens (ID, adres, geboortedatum)": {
+    "en": "Pre-check-in details (ID, address, date of birth)",
+    "fr": "Les données de pré-check-in (pièce d'identité, adresse, date de naissance)"
+  },
+  "Een offerte bevestigen of weigeren": {
+    "en": "Confirming or declining a quote",
+    "fr": "La confirmation ou le refus d'un devis"
+  },
+  "Online betalen of een kaart als garantie achterlaten": {
+    "en": "Paying online or leaving a card as a guarantee",
+    "fr": "Le paiement en ligne ou le dépôt d'une carte en garantie"
+  },
+  "De link is geldig <em>tot 2 weken na check-out</em>, voor het geval een gast nog iets moet aanvullen of de factuur wil downloaden.": {
+    "en": "The link is valid <em>until 2 weeks after check-out</em>, in case a guest still has to add something or wants to download the invoice.",
+    "fr": "Le lien est valable <em>jusqu'à 2 semaines après le départ</em>, au cas où un client doit encore compléter quelque chose ou veut télécharger la facture."
+  },
+  "Annuleringen": {
+    "en": "Cancellations",
+    "fr": "Annulations"
+  },
+  "Een reservatie <em>annuleren</em>: direct vs. OTA": {
+    "en": "<em>Cancelling</em> a reservation: direct vs. OTA",
+    "fr": "<em>Annuler</em> une réservation : directe ou OTA"
+  },
+  "<strong>Direct geboekt:</strong> annuleer in rumo. Je beslist zelf of er een annuleringsfee aangerekend wordt en of er een credit nota gemaakt wordt.": {
+    "en": "<strong>Booked directly:</strong> cancel in rumo. You decide yourself whether a cancellation fee is charged and whether a credit note is made.",
+    "fr": "<strong>Réservée en direct :</strong> annulez dans rumo. Vous décidez vous-même si des frais d'annulation sont appliqués et si une note de crédit est créée."
+  },
+  "<strong>Via een OTA geboekt:</strong> de annulering moet bij de OTA gebeuren (Booking.com, Airbnb, Expedia). rumo synchroniseert de status automatisch zodra de OTA hem doorgeeft. Dat is een keuze van de OTA's, geen tekortkoming van rumo. Ze laten PMS'en hun cancellaties niet rechtstreeks terugschrijven.": {
+    "en": "<strong>Booked through an OTA:</strong> the cancellation has to happen at the OTA (Booking.com, Airbnb, Expedia). rumo synchronises the status automatically as soon as the OTA passes it on. That is a choice by the OTAs, not a shortcoming of rumo. They do not let PMSs write their cancellations back directly.",
+    "fr": "<strong>Réservée via une OTA :</strong> l'annulation doit se faire chez l'OTA (Booking.com, Airbnb, Expedia). rumo synchronise le statut automatiquement dès que l'OTA le transmet. C'est un choix des OTA, pas une lacune de rumo. Elles ne laissent pas les PMS réécrire leurs annulations directement."
+  },
+  "Offertes": {
+    "en": "Quotes",
+    "fr": "Devis"
+  },
+  "Een offerte versturen en laten bevestigen": {
+    "en": "Sending a quote and having it confirmed",
+    "fr": "Envoyer un devis et le faire confirmer"
+  },
+  "Maak een reservatie aan met status <em>optie</em>, geef ze een vervaldatum, en stuur de gast een link via het guest portal. De gast bevestigt online en betaalt eventueel meteen. Pas dan wordt het een echte reservatie. Geen ja/nee/misschien-mailtjes meer.": {
+    "en": "Create a reservation with status <em>option</em>, give it an expiry date, and send the guest a link through the guest portal. The guest confirms online and possibly pays right away. Only then does it become a real reservation. No more yes/no/maybe mails.",
+    "fr": "Créez une réservation au statut <em>option</em>, donnez-lui une date d'échéance, et envoyez au client un lien via le portail. Le client confirme en ligne et paie éventuellement tout de suite. Ce n'est qu'alors que cela devient une vraie réservation. Fini les mails oui/non/peut-être."
+  },
+  "Kalender": {
+    "en": "Calendar",
+    "fr": "Calendrier"
+  },
+  "Wat je op de <em>kalender</em> kan": {
+    "en": "What you can do on the <em>calendar</em>",
+    "fr": "Ce que vous pouvez faire sur le <em>calendrier</em>"
+  },
+  "De kalender toont je kamers onder elkaar en de dagen ernaast. Je kiest zelf of je één dag, een week of een eigen datumreeks bekijkt.": {
+    "en": "The calendar shows your rooms one under the other and the days alongside. You choose whether you look at one day, a week or a date range of your own.",
+    "fr": "Le calendrier montre vos chambres les unes sous les autres et les jours à côté. Vous choisissez d'afficher un jour, une semaine ou une plage de dates à vous."
+  },
+  "Slepen doet drie dingen, afhankelijk van waarheen: aan de rand trekken verlengt of verkort een verblijf, naar een andere rij verplaatst de boeking naar een andere kamer, en naar links of rechts verschuift de datums. Elke boeking heeft ook een schaar om een verblijf in twee te knippen.": {
+    "en": "Dragging does three things, depending on where to: pulling at the edge extends or shortens a stay, moving to another row moves the booking to another room, and left or right shifts the dates. Every booking also has a pair of scissors to cut a stay in two.",
+    "fr": "Le glissement fait trois choses selon la destination : tirer sur le bord allonge ou raccourcit un séjour, déplacer vers une autre ligne change la chambre, et glisser à gauche ou à droite décale les dates. Chaque réservation a aussi une paire de ciseaux pour couper un séjour en deux."
+  },
+  "De kleuren staan voor de kamerstatus: in huis, schoon, nog te kuisen, geblokkeerd. Klik op een naam en je zit in het gastdossier.": {
+    "en": "The colours stand for the room status: in house, clean, still to be cleaned, blocked. Click a name and you are in the guest file.",
+    "fr": "Les couleurs indiquent le statut de la chambre : en maison, propre, encore à nettoyer, bloquée. Cliquez sur un nom et vous êtes dans le dossier du client."
+  },
+  "Zit je vol maar wil je de vraag niet verliezen, dan zet je ze op de wachtlijst in plaats van ze te weigeren.": {
+    "en": "Full but you do not want to lose the request? Then you put it on the waiting list instead of refusing it.",
+    "fr": "Vous êtes complet mais vous ne voulez pas perdre la demande ? Mettez-la sur la liste d'attente au lieu de la refuser."
+  },
+  "No-show": {
+    "en": "No-show",
+    "fr": "No-show"
+  },
+  "Wat te doen bij een no-show": {
+    "en": "What to do with a no-show",
+    "fr": "Que faire en cas de no-show"
+  },
+  "Je markeert de reservatie als no-show. rumo houdt de kamerdag in de bezettingsstatistiek (zodat je revenue klopt) en stelt voor om de standaard no-show fee aan te rekenen. Of niet, dat blijft jouw keuze, niet die van het systeem.": {
+    "en": "You mark the reservation as a no-show. rumo keeps the room day in the occupancy statistics (so your revenue is right) and proposes charging the standard no-show fee. Or not: that stays your choice, not the system's.",
+    "fr": "Vous marquez la réservation comme no-show. rumo garde la nuitée dans les statistiques d'occupation (pour que votre chiffre d'affaires soit juste) et propose d'appliquer les frais de no-show standard. Ou non : cela reste votre choix, pas celui du système."
+  },
+  "Housekeeping &amp; <em>kamerstatus</em>": {
+    "en": "Housekeeping &amp; <em>room status</em>",
+    "fr": "Housekeeping &amp; <em>statut des chambres</em>"
+  },
+  "De brug tussen wat de gast ziet en wat het team doet. Status van elke kamer, planning van de kuis, blokkades voor onderhoud. Allemaal op één scherm, ook bruikbaar op een tablet op de gang.": {
+    "en": "The bridge between what the guest sees and what the team does. The status of every room, the cleaning schedule, blocks for maintenance. All on one screen, usable on a tablet in the corridor too.",
+    "fr": "Le pont entre ce que le client voit et ce que l'équipe fait. Le statut de chaque chambre, la planification du nettoyage, les blocages pour entretien. Tout sur un écran, utilisable aussi sur une tablette dans le couloir."
+  },
+  "Status": {
+    "en": "Status",
+    "fr": "Statut"
+  },
+  "De vier <em>kamerstatussen</em>": {
+    "en": "The four <em>room statuses</em>",
+    "fr": "Les quatre <em>statuts de chambre</em>"
+  },
+  "Vier kernstatussen, geen vijftien.": {
+    "en": "Four core statuses, not fifteen.",
+    "fr": "Quatre statuts de base, pas quinze."
+  },
+  "<strong>Vuil:</strong> uit te kuisen, na een uitcheck of op vraag tijdens een verblijf": {
+    "en": "<strong>Dirty:</strong> to be cleaned, after a check-out or on request during a stay",
+    "fr": "<strong>Sale :</strong> à nettoyer, après un départ ou sur demande pendant un séjour"
+  },
+  "<strong>Schoon:</strong> klaar voor de volgende gast": {
+    "en": "<strong>Clean:</strong> ready for the next guest",
+    "fr": "<strong>Propre :</strong> prête pour le client suivant"
+  },
+  "<strong>In-house:</strong> bezet door een gast": {
+    "en": "<strong>In-house:</strong> occupied by a guest",
+    "fr": "<strong>En maison :</strong> occupée par un client"
+  },
+  "<strong>Blocked:</strong> niet beschikbaar (onderhoud, eigen gebruik)": {
+    "en": "<strong>Blocked:</strong> not available (maintenance, own use)",
+    "fr": "<strong>Bloquée :</strong> indisponible (entretien, usage propre)"
+  },
+  "rumo zet de status automatisch op vuil bij elke uitcheck. Housekeeping markeert schoon vanuit de mobiele weergave op de gang, geen aparte app.": {
+    "en": "rumo sets the status to dirty automatically on every check-out. Housekeeping marks clean from the mobile view in the corridor, no separate app.",
+    "fr": "rumo met le statut sur sale automatiquement à chaque départ. Le housekeeping marque propre depuis l'affichage mobile dans le couloir, sans application séparée."
+  },
+  "Planning": {
+    "en": "Planning",
+    "fr": "Planification"
+  },
+  "Een <em>kuislijst</em> voor het team": {
+    "en": "A <em>cleaning list</em> for the team",
+    "fr": "Une <em>liste de nettoyage</em> pour l'équipe"
+  },
+  "Elke ochtend genereert rumo een kuislijst op basis van check-outs, stay-overs en speciale verzoeken (extra handdoeken, allergiekussens, vroege check-in). Je kan kamers verslepen om volgorde of prioriteit aan te passen.": {
+    "en": "Every morning rumo generates a cleaning list based on check-outs, stay-overs and special requests (extra towels, allergy pillows, early check-in). You can drag rooms to adjust the order or the priority.",
+    "fr": "Chaque matin, rumo génère une liste de nettoyage sur la base des départs, des séjours en cours et des demandes particulières (serviettes supplémentaires, oreillers anti-allergiques, arrivée anticipée). Vous pouvez glisser les chambres pour ajuster l'ordre ou la priorité."
+  },
+  "De lijst is printbaar of toonbaar op tablet. Doorvinkbaar terwijl het team werkt, met live zichtbare voortgang aan de receptie. Zo weet je welke kamers je vroege gasten kan geven zonder eerst te bellen.": {
+    "en": "The list can be printed or shown on a tablet. Tickable while the team works, with progress visible live at the desk. That way you know which rooms you can give your early guests without ringing first.",
+    "fr": "La liste s'imprime ou s'affiche sur tablette. Elle se coche pendant que l'équipe travaille, avec l'avancement visible en direct à la réception. Vous savez ainsi quelles chambres vous pouvez donner à vos clients matinaux sans devoir téléphoner."
+  },
+  "Add-on": {
+    "en": "Add-on",
+    "fr": "Add-on"
+  },
+  "Wat <em>Advanced Housekeeping</em> erbij doet": {
+    "en": "What <em>Advanced Housekeeping</em> adds",
+    "fr": "Ce qu'<em>Advanced Housekeeping</em> ajoute"
+  },
+  "Zonder de add-on kent een kamer vier statussen. Met de add-on komt daar <strong>geïnspecteerd</strong> bij, tussen schoon en klaar voor de gast in. Zo checkt niemand iemand in op een kamer die nog niet nagekeken is.": {
+    "en": "Without the add-on a room has four statuses. With the add-on <strong>inspected</strong> is added, between clean and ready for the guest. That way nobody checks anyone into a room that has not been looked over.",
+    "fr": "Sans l'add-on, une chambre a quatre statuts. Avec l'add-on s'y ajoute <strong>inspectée</strong>, entre propre et prête pour le client. Ainsi, personne n'installe quelqu'un dans une chambre qui n'a pas été revue."
+  },
+  "Verder krijg je poetschecklists die per dag kunnen verschillen, losse extra taken en een notitie per kamer, en een timer die meet hoe lang een schoonmaak echt duurt. Dat laatste komt terug in een tijdrapport per persoon en per kamer.": {
+    "en": "You also get cleaning checklists that can differ per day, separate extra tasks and a note per room, and a timer that measures how long a clean really takes. That last one comes back in a time report per person and per room.",
+    "fr": "Vous recevez en plus des checklists de nettoyage qui peuvent varier par jour, des tâches supplémentaires isolées et une note par chambre, ainsi qu'un chronomètre qui mesure la durée réelle d'un nettoyage. Ce dernier se retrouve dans un rapport de temps par personne et par chambre."
+  },
+  "Zet je de add-on af, dan blijft de basis gewoon werken: schoon en vuil doen het ook zonder.": {
+    "en": "Switch the add-on off and the basics keep working: clean and dirty do fine without it.",
+    "fr": "Si vous désactivez l'add-on, la base continue de fonctionner : propre et sale s'en sortent sans lui."
+  },
+  "Blokkades": {
+    "en": "Blocks",
+    "fr": "Blocages"
+  },
+  "Een kamer blokkeren voor <em>onderhoud</em>": {
+    "en": "Blocking a room for <em>maintenance</em>",
+    "fr": "Bloquer une chambre pour <em>entretien</em>"
+  },
+  "Sleep een blok op de kalender, kies <em>blokkeer</em>, en geef een reden mee (lekkage, renovatie, eigen gebruik). De kamer wordt uit de pool gehaald voor OTA-verkoop tijdens die periode. Je ziet de blokkade als gestreepte zone op de kalender.": {
+    "en": "Drag a block on the calendar, choose <em>block</em>, and give a reason (leak, renovation, own use). The room is taken out of the pool for OTA sale during that period. You see the block as a striped zone on the calendar.",
+    "fr": "Tirez un bloc sur le calendrier, choisissez <em>bloquer</em>, et indiquez une raison (fuite, rénovation, usage propre). La chambre est retirée du pool de vente OTA pendant cette période. Vous voyez le blocage sous forme de zone hachurée sur le calendrier."
+  },
+  "Een kamer blokkeren doe je zelf op de kalender. Rudy zet dit niet voor je klaar, maar hij kan je wel in gewone taal uitleggen waar je moet zijn en wat er dan gebeurt.": {
+    "en": "You block a room yourself on the calendar. Rudy does not line this up for you, but he can explain in plain language where you have to be and what happens then.",
+    "fr": "Bloquer une chambre, vous le faites vous-même sur le calendrier. Rudy ne le prépare pas pour vous, mais il peut vous expliquer en langage courant où aller et ce qui se passe ensuite."
+  },
+  "Channel <em>manager</em>": {
+    "en": "Channel <em>manager</em>",
+    "fr": "Channel <em>manager</em>"
+  },
+  "Hoe rumo en de OTA's met elkaar praten, zodat één wijziging bij jou netjes naar Booking, Expedia, Airbnb en de rest gaat. Hieronder wat je daarvan moet weten.": {
+    "en": "How rumo and the OTAs talk to each other, so that one change at your end goes neatly to Booking, Expedia, Airbnb and the rest. Below is what you need to know about it.",
+    "fr": "Comment rumo et les OTA se parlent, pour qu'une modification chez vous parte proprement vers Booking, Expedia, Airbnb et les autres. Voici ce qu'il faut en savoir."
+  },
+  "Hoe het werkt": {
+    "en": "How it works",
+    "fr": "Comment cela marche"
+  },
+  "Wat er <em>heen en weer</em> gaat": {
+    "en": "What goes <em>back and forth</em>",
+    "fr": "Ce qui circule <em>dans les deux sens</em>"
+  },
+  "Naar de kanalen toe gaan je prijzen, je beschikbaarheid, je restricties (min-stay, max-stay, gesloten bij aankomst of vertrek) en de koppeling tussen jouw kamertypes en die van het kanaal. Terug komen nieuwe boekingen en annuleringen, zodra de OTA ze meldt.": {
+    "en": "Out to the channels go your prices, your availability, your restrictions (min-stay, max-stay, closed on arrival or departure) and the link between your room types and the channel's. Back come new bookings and cancellations, as soon as the OTA reports them.",
+    "fr": "Vers les canaux partent vos prix, votre disponibilité, vos restrictions (min-stay, max-stay, fermé à l'arrivée ou au départ) et le rattachement entre vos types de chambres et les leurs. En retour arrivent les nouvelles réservations et les annulations, dès que l'OTA les signale."
+  },
+  "In de praktijk: je past een prijs aan in rumo en binnen seconden staat hij op elk gekoppeld kanaal. Een nieuwe boeking op Booking.com staat even snel in je kalender. Elke wijziging heeft een eigen statuslijn: vertrokken, doorgestuurd, aangekomen.": {
+    "en": "In practice: you change a price in rumo and within seconds it is on every connected channel. A new booking on Booking.com is in your calendar just as fast. Every change has its own status line: sent, forwarded, arrived.",
+    "fr": "En pratique : vous modifiez un prix dans rumo et en quelques secondes il est sur chaque canal connecté. Une nouvelle réservation sur Booking.com est dans votre calendrier tout aussi vite. Chaque modification a sa propre ligne de statut : partie, transmise, arrivée."
+  },
+  "Een nieuwe OTA <em>koppelen</em>": {
+    "en": "<em>Connecting</em> a new OTA",
+    "fr": "<em>Connecter</em> une nouvelle OTA"
+  },
+  "Voor elk kanaal is er een vast pad: in het extranet van de OTA rumo als aanbieder toelaten, je property-ID doorgeven, en daarna in rumo je kamertypes koppelen aan die van het kanaal. Bij Airbnb gaat dat via een inlogkoppeling, bij Booking via een akkoord dat zij moeten activeren.": {
+    "en": "For every channel there is a fixed path: allow rumo as a provider in the OTA's extranet, pass on your property ID, and then link your room types to the channel's in rumo. With Airbnb that goes through a login connection, with Booking through an agreement they have to activate.",
+    "fr": "Pour chaque canal, le chemin est fixe : autoriser rumo comme fournisseur dans l'extranet de l'OTA, transmettre votre property ID, puis relier dans rumo vos types de chambres à ceux du canal. Chez Airbnb, cela passe par une connexion de compte ; chez Booking, par un accord qu'ils doivent activer."
+  },
+  "De eerste koppeling doen we <strong>samen</strong>. Vanaf de tweede gaat het meestal vanzelf. Rudy wijst je de stappen aan, maar keuzes in het extranet van een OTA (een Genius-promo, een Mobile Rate, je listing-tekst) laat hij aan jou: dat zijn beslissingen, geen handelingen.": {
+    "en": "We do the first connection <strong>together</strong>. From the second on it usually goes by itself. Rudy points out the steps, but choices in an OTA's extranet (a Genius promo, a Mobile Rate, your listing text) he leaves to you: those are decisions, not actions.",
+    "fr": "La première connexion, nous la faisons <strong>ensemble</strong>. À partir de la deuxième, cela va généralement tout seul. Rudy vous indique les étapes, mais les choix dans l'extranet d'une OTA (une promo Genius, un Mobile Rate, le texte de votre annonce), il vous les laisse : ce sont des décisions, pas des gestes."
+  },
+  "Sync": {
+    "en": "Sync",
+    "fr": "Synchro"
+  },
+  "Wanneer is een wijziging zichtbaar bij de OTA?": {
+    "en": "When is a change visible at the OTA?",
+    "fr": "Quand une modification est-elle visible chez l'OTA ?"
+  },
+  "Meestal binnen <em>enkele seconden</em>. In drukke periodes kan het een halve minuut duren. Duurt het langer, dan ligt het aan het kanaal zelf, en dat zie je in je statuslog. Staat er iets vast, dan kan je het met de hand opnieuw duwen.": {
+    "en": "Usually within <em>a few seconds</em>. In busy periods it can take half a minute. If it takes longer, it is down to the channel itself, and you see that in your status log. If something is stuck, you can push it again by hand.",
+    "fr": "En général en <em>quelques secondes</em>. En période chargée, cela peut prendre une demi-minute. Si c'est plus long, cela vient du canal lui-même, et vous le voyez dans votre journal de statut. Si quelque chose est bloqué, vous pouvez le renvoyer à la main."
+  },
+  "Eén belangrijke nuance: <strong>annuleringen, no-shows en prijswijzigingen na boeking</strong> stuur je niet vanuit rumo terug naar de OTA. De meeste OTA's aanvaarden dat type wijziging gewoon niet. Je doet dat in hun extranet, en de status komt daarna vanzelf weer bij rumo terecht.": {
+    "en": "One important nuance: <strong>cancellations, no-shows and price changes after booking</strong> you do not send back to the OTA from rumo. Most OTAs simply do not accept that type of change. You do it in their extranet, and the status then comes back to rumo by itself.",
+    "fr": "Une nuance importante : les <strong>annulations, no-shows et changements de prix après réservation</strong> ne se renvoient pas depuis rumo vers l'OTA. La plupart des OTA n'acceptent tout simplement pas ce type de modification. Vous le faites dans leur extranet, et le statut revient ensuite tout seul dans rumo."
+  },
+  "Commissie": {
+    "en": "Commission",
+    "fr": "Commission"
+  },
+  "Waarom je van Expedia geen <em>commissiefactuur</em> krijgt": {
+    "en": "Why you get no <em>commission invoice</em> from Expedia",
+    "fr": "Pourquoi Expedia ne vous envoie pas de <em>facture de commission</em>"
+  },
+  "Booking.com is een makelaar: de gast is jouw klant en de commissie komt achteraf als een factuur. Expedia Collect is een wederverkoper: die houdt zijn deel in voor het geld bij jou toekomt, dus er is nooit een commissiefactuur en er valt niets af te trekken.": {
+    "en": "Booking.com is a broker: the guest is your customer and the commission comes afterwards as an invoice. Expedia Collect is a reseller: it keeps its share before the money reaches you, so there is never a commission invoice and there is nothing to deduct.",
+    "fr": "Booking.com est un intermédiaire : le client est votre client et la commission arrive après coup sous forme de facture. Expedia Collect est un revendeur : il retient sa part avant que l'argent ne vous parvienne, il n'y a donc jamais de facture de commission et rien à déduire."
+  },
+  "Reken je daar toch je vaste percentage op, dan trek je diezelfde commissie een tweede keer af en lijkt dat kanaal duurder dan het is.": {
+    "en": "Put your fixed percentage on that anyway and you deduct that same commission a second time, and the channel looks more expensive than it is.",
+    "fr": "Si vous y appliquez tout de même votre pourcentage fixe, vous déduisez cette même commission une seconde fois et ce canal paraît plus cher qu'il ne l'est."
+  },
+  "<a class=\"kb-verder\" href=\"uitgelegd/ota-commissie.html\">Het hele verhaal, met een rekenvoorbeeld <span>&rarr;</span></a>": {
+    "en": "<a class=\"kb-verder\" href=\"uitgelegd/ota-commissie.html\">The whole story, with a worked example <span>&rarr;</span></a>",
+    "fr": "<a class=\"kb-verder\" href=\"uitgelegd/ota-commissie.html\">Toute l'histoire, avec un exemple chiffré <span>&rarr;</span></a>"
+  },
+  "Conflicten": {
+    "en": "Conflicts",
+    "fr": "Conflits"
+  },
+  "Een dubbele boeking, wat dan?": {
+    "en": "A double booking, now what?",
+    "fr": "Une double réservation, et maintenant ?"
+  },
+  "Theoretisch onmogelijk dankzij real-time sync, maar in de praktijk gebeurt het ooit (twee OTA's verkopen tegelijk de laatste kamer). rumo waarschuwt je meteen. Jij beslist welke gast je upgrade en welke je verplaatst, niet de algoritmes.": {
+    "en": "Theoretically impossible thanks to real-time sync, but in practice it happens once in a while (two OTAs selling the last room at the same time). rumo warns you immediately. You decide which guest you upgrade and which you move, not the algorithms.",
+    "fr": "Théoriquement impossible grâce à la synchro en temps réel, mais en pratique cela arrive de temps en temps (deux OTA vendent la dernière chambre en même temps). rumo vous avertit immédiatement. C'est vous qui décidez quel client vous surclassez et lequel vous déplacez, pas les algorithmes."
+  },
+  "In de pijplijn": {
+    "en": "In the pipeline",
+    "fr": "Dans le pipeline"
+  },
+  "Per OTA: Booking.com, Airbnb, Expedia": {
+    "en": "Per OTA: Booking.com, Airbnb, Expedia",
+    "fr": "Par OTA : Booking.com, Airbnb, Expedia"
+  },
+  "Tarieven &amp; <em>arrangementen</em>": {
+    "en": "Rates &amp; <em>packages</em>",
+    "fr": "Tarifs &amp; <em>forfaits</em>"
+  },
+  "Eén basistarief, en de rest wordt afgeleid. Geen vier verschillende rate plans handmatig invoeren voor één kamer. Geen 23 schermen om een weekendprijs in te stellen.": {
+    "en": "One base rate, and the rest is derived. No entering four different rate plans by hand for one room. No 23 screens to set a weekend price.",
+    "fr": "Un tarif de base, et le reste en découle. Pas quatre plans tarifaires à encoder à la main pour une chambre. Pas 23 écrans pour régler un prix de week-end."
+  },
+  "Basismodel": {
+    "en": "Base model",
+    "fr": "Modèle de base"
+  },
+  "Hoe rumo prijzen modelleert": {
+    "en": "How rumo models prices",
+    "fr": "Comment rumo modélise les prix"
+  },
+  "Je vertrekt van een <em>basistarief</em> per kamertype. Daarop komen modifiers: bezetting (1, 2, 3 personen), kinderprijs, lengte van het verblijf, kanaal-uplift, seizoen. Je past de modifier aan, niet de vier afgeleide tarieven.": {
+    "en": "You start from a <em>base rate</em> per room type. On top come modifiers: occupancy (1, 2, 3 people), child price, length of stay, channel uplift, season. You adjust the modifier, not the four derived rates.",
+    "fr": "Vous partez d'un <em>tarif de base</em> par type de chambre. Par-dessus viennent les modificateurs : occupation (1, 2, 3 personnes), prix enfant, durée du séjour, majoration par canal, saison. Vous ajustez le modificateur, pas les quatre tarifs qui en découlent."
+  },
+  "Dat is anders dan bij de meeste channel managers, waar je voor elke bezetting een aparte regel moet onderhouden. Wij vinden dat onnodig werk.": {
+    "en": "That is different from most channel managers, where you have to maintain a separate line for every occupancy. We think that is unnecessary work.",
+    "fr": "C'est différent de la plupart des channel managers, où il faut entretenir une ligne distincte pour chaque occupation. Nous trouvons cela inutile."
+  },
+  "Bezetting": {
+    "en": "Occupancy",
+    "fr": "Occupation"
+  },
+  "Tarieven per bezetting (1, 2, 3 personen)": {
+    "en": "Rates per occupancy (1, 2, 3 people)",
+    "fr": "Tarifs par occupation (1, 2, 3 personnes)"
+  },
+  "Voor een kamer waar 1, 2 of 3 personen kunnen logeren: zet één basistarief en twee modifiers. Bijvoorbeeld <em>−€30 voor single-occupancy</em> en <em>+€40 voor de derde gast</em>. rumo rekent de drie tarieven uit en stuurt ze allemaal naar de OTA's.": {
+    "en": "For a room where 1, 2 or 3 people can stay: set one base rate and two modifiers. For example <em>−€30 for single occupancy</em> and <em>+€40 for the third guest</em>. rumo works out the three rates and sends them all to the OTAs.",
+    "fr": "Pour une chambre où 1, 2 ou 3 personnes peuvent loger : un tarif de base et deux modificateurs. Par exemple <em>−30 € pour une occupation simple</em> et <em>+40 € pour le troisième client</em>. rumo calcule les trois tarifs et les envoie tous aux OTA."
+  },
+  "Arrangementen": {
+    "en": "Packages",
+    "fr": "Forfaits"
+  },
+  "Een <em>arrangement</em> bouwen (overnachting + ontbijt + diner)": {
+    "en": "Building a <em>package</em> (room + breakfast + dinner)",
+    "fr": "Construire un <em>forfait</em> (nuitée + petit-déjeuner + dîner)"
+  },
+  "Een arrangement is een tarief met inbegrepen extra's. \"Romantisch weekend\" = overnachting + ontbijt + 4-gangen-menu, voor één prijs. Op de factuur worden de drie posten netjes uitgesplitst (handig voor de BTW), op het OTA-tarief zien gasten één bedrag.": {
+    "en": "A package is a rate with extras included. \"Romantic weekend\" = room + breakfast + four-course menu, for one price. On the invoice the three items are split out neatly (handy for VAT); on the OTA rate guests see one amount.",
+    "fr": "Un forfait est un tarif avec des extras compris. « Week-end romantique » = nuitée + petit-déjeuner + menu 4 services, pour un seul prix. Sur la facture, les trois postes sont ventilés proprement (pratique pour la TVA) ; sur le tarif OTA, les clients voient un seul montant."
+  },
+  "Periodes": {
+    "en": "Periods",
+    "fr": "Périodes"
+  },
+  "Seizoens- en weekendprijzen": {
+    "en": "Season and weekend prices",
+    "fr": "Prix de saison et de week-end"
+  },
+  "Selecteer een datumbereik op de kalender, kies de modifier (\"+15% voor zomerseizoen\"), klaar. Werkt op alle kamertypes tegelijk of op één. Kan ook per weekdag: anders prijs op vrijdag/zaterdag dan op maandag/dinsdag.": {
+    "en": "Select a date range on the calendar, choose the modifier (\"+15% for the summer season\"), done. Works on all room types at once or on one. Can also be per weekday: a different price on Friday/Saturday than on Monday/Tuesday.",
+    "fr": "Sélectionnez une plage de dates sur le calendrier, choisissez le modificateur (« +15 % en haute saison »), c'est fait. Fonctionne sur tous les types de chambres à la fois ou sur un seul. Possible aussi par jour de semaine : un autre prix le vendredi et le samedi que le lundi et le mardi."
+  },
+  "Rekenvoorbeeld": {
+    "en": "Worked example",
+    "fr": "Exemple chiffré"
+  },
+  "Hoe een prijs op <em>Booking.com</em> tot stand komt": {
+    "en": "How a price on <em>Booking.com</em> comes about",
+    "fr": "Comment un prix sur <em>Booking.com</em> se construit"
+  },
+  "Concreet, met cijfers. Junior Suite, basistarief €140 per nacht voor 2 personen. Een gast boekt 2 nachten zaterdag-zondag, met 3 personen, via Booking.com:": {
+    "en": "Concretely, with figures. Junior Suite, base rate €140 per night for 2 people. A guest books 2 nights Saturday-Sunday, with 3 people, through Booking.com:",
+    "fr": "Concrètement, avec des chiffres. Junior Suite, tarif de base 140 € la nuit pour 2 personnes. Un client réserve 2 nuits samedi-dimanche, à 3 personnes, via Booking.com :"
+  },
+  "Basistarief: <strong>€140</strong>": {
+    "en": "Base rate: <strong>€140</strong>",
+    "fr": "Tarif de base : <strong>140 €</strong>"
+  },
+  "+ Weekend (+10%): <strong>€154</strong>": {
+    "en": "+ Weekend (+10%): <strong>€154</strong>",
+    "fr": "+ Week-end (+10 %) : <strong>154 €</strong>"
+  },
+  "+ Derde persoon (+€40): <strong>€194</strong>": {
+    "en": "+ Third person (+€40): <strong>€194</strong>",
+    "fr": "+ Troisième personne (+40 €) : <strong>194 €</strong>"
+  },
+  "+ OTA-uplift Booking (+12%): <strong>€217</strong>": {
+    "en": "+ OTA uplift Booking (+12%): <strong>€217</strong>",
+    "fr": "+ Majoration OTA Booking (+12 %) : <strong>217 €</strong>"
+  },
+  "× 2 nachten: <strong>€434</strong>": {
+    "en": "× 2 nights: <strong>€434</strong>",
+    "fr": "× 2 nuits : <strong>434 €</strong>"
+  },
+  "Dat is wat de gast op Booking ziet. rumo toont je dezelfde stacking als je over een prijs hovert in de kalender. Zo weet je altijd <em>waarom</em> een tarief is wat het is, en welke modifier je moet bijstellen als je het wil veranderen.": {
+    "en": "That is what the guest sees on Booking. rumo shows you the same stacking when you hover over a price in the calendar. So you always know <em>why</em> a rate is what it is, and which modifier to adjust if you want to change it.",
+    "fr": "C'est ce que le client voit sur Booking. rumo vous montre le même empilement quand vous survolez un prix dans le calendrier. Vous savez donc toujours <em>pourquoi</em> un tarif est ce qu'il est, et quel modificateur ajuster pour le changer."
+  },
+  "Korting per kanaal &amp; promo codes": {
+    "en": "Discount per channel &amp; promo codes",
+    "fr": "Remise par canal &amp; codes promo"
+  },
+  "Facturatie &amp; <em>Peppol</em>": {
+    "en": "Invoicing &amp; <em>Peppol</em>",
+    "fr": "Facturation &amp; <em>Peppol</em>"
+  },
+  "Boekhoud-correcte facturatie zonder dat jij erover moet nadenken. BTW-splitsing per regel, elke factuur als UBL of PDF, en Peppol-verzending voor B2B via de Peppol add-on.": {
+    "en": "Accounting-correct invoicing without you having to think about it. VAT split per line, every invoice as UBL or PDF, and Peppol sending for B2B through the Peppol add-on.",
+    "fr": "Une facturation comptablement correcte sans que vous ayez à y penser. Ventilation de la TVA par ligne, chaque facture en UBL ou en PDF, et envoi Peppol pour le B2B via l'add-on Peppol."
+  },
+  "Hoe Peppol werkt in rumo": {
+    "en": "How Peppol works in rumo",
+    "fr": "Comment Peppol fonctionne dans rumo"
+  },
+  "Voor B2B-facturen verplicht in België vanaf 2026. In de basis maakt rumo van elke factuur een UBL-bestand of een PDF die je kan downloaden en doorsturen. Het automatisch <em>versturen</em> over het Peppol-netwerk, naar de Peppol-ID van je klant, zit in de <strong>Peppol add-on</strong>. Met die add-on aan gebeurt het zonder aparte tool en zonder handmatige verzending.": {
+    "en": "Compulsory for B2B invoices in Belgium from 2026. As standard, rumo turns every invoice into a UBL file or a PDF you can download and forward. Automatically <em>sending</em> over the Peppol network, to your customer's Peppol ID, is in the <strong>Peppol add-on</strong>. With that add-on on it happens without a separate tool and without manual sending.",
+    "fr": "Obligatoire pour les factures B2B en Belgique à partir de 2026. De base, rumo transforme chaque facture en fichier UBL ou en PDF que vous pouvez télécharger et transmettre. L'<em>envoi</em> automatique sur le réseau Peppol, vers l'identifiant Peppol de votre client, se trouve dans l'<strong>add-on Peppol</strong>. Avec cet add-on, cela se fait sans outil séparé et sans envoi manuel."
+  },
+  "Particulieren krijgen gewoon een PDF per mail. rumo herkent het verschil en doet het juiste.": {
+    "en": "Private individuals simply get a PDF by mail. rumo recognises the difference and does the right thing.",
+    "fr": "Les particuliers reçoivent simplement un PDF par mail. rumo reconnaît la différence et fait ce qu'il faut."
+  },
+  "BTW": {
+    "en": "VAT",
+    "fr": "TVA"
+  },
+  "BTW-splitsing 6% horeca / 21%": {
+    "en": "VAT split 6% hospitality / 21%",
+    "fr": "Ventilation TVA 6 % horeca / 21 %"
+  },
+  "Per factuurregel het juiste tarief: overnachting en ontbijt aan 6%, alcohol en overige diensten aan 21%. Bij arrangementen wordt de splitsing automatisch toegepast op de samengestelde lijnen.": {
+    "en": "The right rate per invoice line: room and breakfast at 6%, alcohol and other services at 21%. With packages the split is applied automatically to the composed lines.",
+    "fr": "Le bon taux par ligne de facture : nuitée et petit-déjeuner à 6 %, alcool et autres services à 21 %. Pour les forfaits, la ventilation est appliquée automatiquement aux lignes composées."
+  },
+  "Aan het einde van de maand of het kwartaal exporteer je een BTW-rapport voor je boekhouder. Met grondslag, BTW-bedrag en totalen per tarief.": {
+    "en": "At the end of the month or the quarter you export a VAT report for your accountant. With base, VAT amount and totals per rate.",
+    "fr": "À la fin du mois ou du trimestre, vous exportez un rapport TVA pour votre comptable. Avec la base, le montant de TVA et les totaux par taux."
+  },
+  "Credit nota's": {
+    "en": "Credit notes",
+    "fr": "Notes de crédit"
+  },
+  "Een credit nota maken": {
+    "en": "Making a credit note",
+    "fr": "Faire une note de crédit"
+  },
+  "Facturen in rumo kunnen niet verwijderd worden, dat moet ook niet, dat is precies wat je boekhouder graag heeft. Wil je iets corrigeren? Maak een credit nota. rumo legt automatisch het verband met de oorspronkelijke factuur. Audit trail compleet.": {
+    "en": "Invoices in rumo cannot be deleted; nor should they be, and that is exactly what your accountant likes. Want to correct something? Make a credit note. rumo automatically links it to the original invoice. Audit trail complete.",
+    "fr": "Les factures dans rumo ne peuvent pas être supprimées ; il ne le faut pas non plus, et c'est précisément ce que votre comptable apprécie. Vous voulez corriger quelque chose ? Faites une note de crédit. rumo établit automatiquement le lien avec la facture d'origine. Piste d'audit complète."
+  },
+  "Documenten": {
+    "en": "Documents",
+    "fr": "Documents"
+  },
+  "Welk document rumo <em>zelf</em> kiest": {
+    "en": "Which document rumo picks <em>itself</em>",
+    "fr": "Quel document rumo choisit <em>lui-même</em>"
+  },
+  "rumo maakt vier soorten documenten: een factuur, een proforma, een creditnota en een ontvangstbewijs voor particulieren. Welk type het wordt hoef je zelf niet uit te zoeken: dat volgt uit wie er betaalt en of er een ondernemingsnummer bekend is.": {
+    "en": "rumo makes four kinds of document: an invoice, a proforma, a credit note and a receipt for private individuals. You do not have to work out which type it becomes: that follows from who pays and whether a company number is known.",
+    "fr": "rumo produit quatre sortes de documents : une facture, une proforma, une note de crédit et un reçu pour les particuliers. Vous n'avez pas à chercher quel type cela devient : cela découle de qui paie et de l'existence ou non d'un numéro d'entreprise."
+  },
+  "Een creditnota hangt altijd aan de factuur die ze rechtzet, zodat je later kan zien welke twee bij elkaar horen.": {
+    "en": "A credit note always hangs on the invoice it corrects, so that you can see later which two belong together.",
+    "fr": "Une note de crédit est toujours rattachée à la facture qu'elle corrige, pour que vous puissiez voir plus tard lesquelles vont ensemble."
+  },
+  "Lijnen van de rekening kan je overzetten naar een andere reservatie. Dat is wat je nodig hebt bij een groep waarbij de organisator de kamers betaalt en elke gast zijn eigen consumpties.": {
+    "en": "Lines of the bill can be moved to another reservation. That is what you need with a group where the organiser pays the rooms and every guest their own consumptions.",
+    "fr": "Les lignes de la note peuvent être transférées vers une autre réservation. C'est ce qu'il vous faut pour un groupe dont l'organisateur paie les chambres et où chaque client paie ses propres consommations."
+  },
+  "Doorsturen naar Octopus, Exact Online, Yuki": {
+    "en": "Passing on to Octopus, Exact Online, Yuki",
+    "fr": "Transmission vers Octopus, Exact Online, Yuki"
+  },
+  "Directe koppeling met de drie meest gebruikte boekhoudpakketten in BE/NL. Facturen, credit nota's en betaalingen komen automatisch in je boekhouding terecht. Je boekhouder krijgt voortaan minder mails van jou, en dat is fijn voor jullie allebei.": {
+    "en": "A direct connection with the three most used accounting packages in BE/NL. Invoices, credit notes and payments land in your bookkeeping automatically. From now on your accountant gets fewer mails from you, and that is pleasant for both of you.",
+    "fr": "Une connexion directe avec les trois logiciels comptables les plus utilisés en BE/NL. Factures, notes de crédit et paiements arrivent automatiquement dans votre comptabilité. Votre comptable recevra désormais moins de mails de vous, et c'est agréable pour vous deux."
+  },
+  "Betalen": {
+    "en": "Paying",
+    "fr": "Payer"
+  },
+  "Welke <em>betaalmethoden</em> rumo ondersteunt": {
+    "en": "Which <em>payment methods</em> rumo supports",
+    "fr": "Quels <em>moyens de paiement</em> rumo prend en charge"
+  },
+  "<strong>Stripe</strong> voor kaart en Bancontact, zowel online (via een betaallink) als op een aangesloten kaartterminal. Onder Stripe valt ook een kaart op naam bewaren en later belasten.": {
+    "en": "<strong>Stripe</strong> for card and Bancontact, both online (through a payment link) and on a connected card terminal. Stripe also covers keeping a card on file and charging it later.",
+    "fr": "<strong>Stripe</strong> pour la carte et Bancontact, aussi bien en ligne (via un lien de paiement) que sur un terminal connecté. Stripe couvre aussi la conservation d'une carte au nom du client pour un débit ultérieur."
+  },
+  "<strong>Contant</strong> registreer je manueel als contante betaling op de boeking": {
+    "en": "<strong>Cash</strong> you register manually as a cash payment on the booking",
+    "fr": "<strong>Les espèces</strong> s'enregistrent manuellement comme paiement en liquide sur la réservation"
+  },
+  "<strong>Overschrijving</strong> registreer je manueel, en je bevestigt ze zodra het geld effectief op je rekening staat": {
+    "en": "<strong>Bank transfer</strong> you register manually, and you confirm it as soon as the money is actually in your account",
+    "fr": "<strong>Le virement</strong> s'enregistre manuellement, et vous le confirmez dès que l'argent est effectivement sur votre compte"
+  },
+  "<strong>Pre-authorization</strong> (kaartgarantie zonder direct te debiteren) via Stripe, voor late aankomsten of OTA-boekingen zonder voorschot": {
+    "en": "<strong>Pre-authorisation</strong> (card guarantee without charging right away) through Stripe, for late arrivals or OTA bookings without a deposit",
+    "fr": "<strong>La préautorisation</strong> (garantie par carte sans débit immédiat) via Stripe, pour les arrivées tardives ou les réservations OTA sans acompte"
+  },
+  "Elke betaling komt onmiddellijk binnen op de boeking en wordt automatisch met de juiste factuurregel verrekend. Geen handmatig afpunten meer.": {
+    "en": "Every payment lands on the booking immediately and is settled automatically against the right invoice line. No more manual matching.",
+    "fr": "Chaque paiement arrive immédiatement sur la réservation et est automatiquement imputé à la bonne ligne de facture. Fini le pointage manuel."
+  },
+  "Voorschotten": {
+    "en": "Deposits",
+    "fr": "Acomptes"
+  },
+  "Voorschotten en <em>deelfacturen</em>": {
+    "en": "Deposits and <em>partial invoices</em>",
+    "fr": "Acomptes et <em>factures partielles</em>"
+  },
+  "Een voorschot inn je via een betaallink (Stripe) of registreer je manueel na overschrijving. rumo zet het op de boeking als <em>\"ontvangen, nog te verrekenen\"</em>. Bij uitcheck wordt het automatisch afgetrokken van het eindbedrag.": {
+    "en": "You collect a deposit through a payment link (Stripe) or register it manually after a transfer. rumo puts it on the booking as <em>\"received, still to be settled\"</em>. At check-out it is deducted from the final amount automatically.",
+    "fr": "Vous encaissez un acompte via un lien de paiement (Stripe) ou vous l'enregistrez manuellement après virement. rumo le place sur la réservation comme <em>« reçu, encore à imputer »</em>. Au départ, il est automatiquement déduit du montant final."
+  },
+  "Voor langere verblijven, arrangementen of groepen kan je deelfacturen sturen (bv. 50% bij boeking, 50% bij aankomst). Elke deelfactuur is een echte factuur, met eigen nummer en eigen Peppol-verzending. Bij uitcheck wordt de slotfactuur opgemaakt voor het resterende saldo.": {
+    "en": "For longer stays, packages or groups you can send partial invoices (50% on booking, 50% on arrival, for instance). Every partial invoice is a real invoice, with its own number and its own Peppol sending. At check-out the final invoice is drawn up for the remaining balance.",
+    "fr": "Pour les séjours longs, les forfaits ou les groupes, vous pouvez envoyer des factures partielles (par ex. 50 % à la réservation, 50 % à l'arrivée). Chaque facture partielle est une vraie facture, avec son numéro et son propre envoi Peppol. Au départ, la facture finale est établie pour le solde restant."
+  },
+  "Statistieken &amp; <em>rapporten</em>": {
+    "en": "Statistics &amp; <em>reports</em>",
+    "fr": "Statistiques &amp; <em>rapports</em>"
+  },
+  "De cijfers waar je beslissingen op baseert. Bezetting, omzet, kanaalmix, vergelijking met vorig jaar. Klikbaar tot op reservatie-niveau, exporteerbaar voor je accountant of voor je eigen analyse.": {
+    "en": "The figures you base decisions on. Occupancy, revenue, channel mix, comparison with last year. Clickable down to reservation level, exportable for your accountant or for your own analysis.",
+    "fr": "Les chiffres sur lesquels vous fondez vos décisions. Occupation, chiffre d'affaires, mix de canaux, comparaison avec l'an dernier. Cliquables jusqu'au niveau de la réservation, exportables pour votre comptable ou pour votre propre analyse."
+  },
+  "KPI's": {
+    "en": "KPIs",
+    "fr": "KPI"
+  },
+  "Bezetting, ADR en RevPAR <em>lezen</em>": {
+    "en": "<em>Reading</em> occupancy, ADR and RevPAR",
+    "fr": "<em>Lire</em> l'occupation, l'ADR et le RevPAR"
+  },
+  "Drie cijfers die elke hoteliër moet kennen. rumo toont ze per dag, week, maand, jaar, met vergelijking tot dezelfde periode vorig jaar.": {
+    "en": "Three figures every hotelier should know. rumo shows them per day, week, month, year, with a comparison to the same period last year.",
+    "fr": "Trois chiffres que tout hôtelier devrait connaître. rumo les affiche par jour, semaine, mois et année, avec la comparaison à la même période l'an dernier."
+  },
+  "<strong>Bezetting:</strong> verkochte kamernachten / beschikbare kamernachten": {
+    "en": "<strong>Occupancy:</strong> room nights sold / room nights available",
+    "fr": "<strong>Occupation :</strong> nuitées vendues / nuitées disponibles"
+  },
+  "<strong>ADR</strong> (Average Daily Rate): kameromzet / verkochte nachten": {
+    "en": "<strong>ADR</strong> (Average Daily Rate): room revenue / nights sold",
+    "fr": "<strong>ADR</strong> (Average Daily Rate) : chiffre d'affaires chambres / nuits vendues"
+  },
+  "<strong>RevPAR</strong> (Revenue per Available Room): bezetting × ADR, oftewel kameromzet per beschikbare kamernacht": {
+    "en": "<strong>RevPAR</strong> (Revenue per Available Room): occupancy × ADR, or room revenue per available room night",
+    "fr": "<strong>RevPAR</strong> (Revenue per Available Room) : occupation × ADR, autrement dit le CA chambres par nuitée disponible"
+  },
+  "Hover over een getal voor het rekenwerk. Klik om door te boren tot op de individuele reservaties die het cijfer opmaken.": {
+    "en": "Hover over a figure for the arithmetic. Click to drill down to the individual reservations that make it up.",
+    "fr": "Survolez un chiffre pour voir le calcul. Cliquez pour descendre jusqu'aux réservations individuelles qui le composent."
+  },
+  "Maand- en <em>jaarrapporten</em> draaien": {
+    "en": "Running monthly and <em>yearly reports</em>",
+    "fr": "Sortir des <em>rapports mensuels et annuels</em>"
+  },
+  "Eén klik op <em>periode-rapport</em> geeft je: omzet per kanaal, omzet per kamertype, bezetting per dag, dagelijkse cash-flow, BTW-splitsing per tarief, gemiddelde verblijfsduur. Export als PDF voor je verzekering of accountant, of als XLS voor verdere analyse in Excel of Google Sheets.": {
+    "en": "One click on <em>period report</em> gives you: revenue per channel, revenue per room type, occupancy per day, daily cash flow, VAT split per rate, average length of stay. Export as PDF for your insurer or accountant, or as XLS for further analysis in Excel or Google Sheets.",
+    "fr": "Un clic sur <em>rapport de période</em> vous donne : le chiffre d'affaires par canal, par type de chambre, l'occupation par jour, le flux de caisse quotidien, la ventilation TVA par taux, la durée moyenne de séjour. Export en PDF pour votre assureur ou votre comptable, ou en XLS pour une analyse plus poussée dans Excel ou Google Sheets."
+  },
+  "Voor maandafsluiting: één pagina die je kan printen, ondertekenen, in de kast leggen voor de fiscus. Geen handmatige samenvattingen meer.": {
+    "en": "For the monthly close: one page you can print, sign and put in the cupboard for the tax office. No more manual summaries.",
+    "fr": "Pour la clôture mensuelle : une page que vous pouvez imprimer, signer et ranger pour le fisc. Fini les résumés manuels."
+  },
+  "Pace": {
+    "en": "Pace",
+    "fr": "Pace"
+  },
+  "Je <em>boekingscurve</em> tegenover vorig jaar": {
+    "en": "Your <em>booking curve</em> against last year",
+    "fr": "Votre <em>courbe de réservation</em> face à l'an dernier"
+  },
+  "Pace legt naast elkaar hoeveel je op deze dag vorig jaar al geboekt had en hoeveel nu. Dat zegt iets anders dan je bezetting: het gaat over het <em>tempo</em> waarin een periode volloopt, niet over hoe vol ze uiteindelijk raakt.": {
+    "en": "Pace puts side by side how much you had already booked on this day last year and how much now. That says something different from your occupancy: it is about the <em>speed</em> at which a period fills up, not about how full it eventually gets.",
+    "fr": "Le Pace met côte à côte ce que vous aviez déjà réservé à cette date l'an dernier et ce que vous avez aujourd'hui. Cela dit autre chose que votre occupation : il s'agit du <em>rythme</em> auquel une période se remplit, pas du niveau qu'elle atteindra."
+  },
+  "Naast Pace staan er nog tabbladen voor je debiteuren (wie moet er nog betalen) en voor de nationaliteit van je gasten. Draait je hotel ook eten, dan is er een apart F&amp;B-omzetrapport.": {
+    "en": "Next to Pace there are tabs for your debtors (who still has to pay) and for the nationality of your guests. Does your hotel also serve food? Then there is a separate F&amp;B revenue report.",
+    "fr": "À côté du Pace, il y a des onglets pour vos débiteurs (qui doit encore payer) et pour la nationalité de vos clients. Votre hôtel sert aussi à manger ? Il existe alors un rapport de chiffre d'affaires F&amp;B distinct."
+  },
+  "Alles is te exporteren naar CSV, Excel of pdf.": {
+    "en": "Everything can be exported to CSV, Excel or PDF.",
+    "fr": "Tout est exportable en CSV, Excel ou PDF."
+  },
+  "Kanaalmix": {
+    "en": "Channel mix",
+    "fr": "Mix de canaux"
+  },
+  "Welke OTA brengt je het meeste <em>netto</em> op?": {
+    "en": "Which OTA brings you the most <em>net</em>?",
+    "fr": "Quelle OTA vous rapporte le plus <em>net</em> ?"
+  },
+  "Per kanaal: aantal boekingen, gemiddeld tarief, gemiddelde verblijfsduur en het aandeel annuleringen. Plus de commissie, die bij Booking en Airbnb met de boeking meekomt en dus niet geschat hoeft te worden. Zo zie je <em>netto-opbrengst per kanaal</em>, niet alleen bruto-omzet.": {
+    "en": "Per channel: number of bookings, average rate, average length of stay and the share of cancellations. Plus the commission, which at Booking and Airbnb comes along with the booking and therefore does not have to be estimated. So you see <em>net yield per channel</em>, not only gross revenue.",
+    "fr": "Par canal : nombre de réservations, tarif moyen, durée moyenne de séjour et part d'annulations. Plus la commission, qui chez Booking et Airbnb arrive avec la réservation et ne doit donc pas être estimée. Vous voyez ainsi le <em>rendement net par canal</em>, pas seulement le chiffre d'affaires brut."
+  },
+  "Vaak een eye-opener: een OTA met veel volume maar 22% commissie levert soms minder op dan je eigen website met 0%. Met dat cijfer in de hand kan je beslissen waar je marketing-euro het beste landt.": {
+    "en": "Often an eye-opener: an OTA with a lot of volume but 22% commission sometimes yields less than your own website at 0%. With that figure in hand you can decide where your marketing euro lands best.",
+    "fr": "Souvent une révélation : une OTA avec beaucoup de volume mais 22 % de commission rapporte parfois moins que votre propre site à 0 %. Avec ce chiffre en main, vous pouvez décider où votre euro marketing atterrit le mieux."
+  },
+  "Belgische <em>compliance</em>": {
+    "en": "Belgian <em>compliance</em>",
+    "fr": "<em>Conformité</em> belge"
+  },
+  "Het deel waar de meeste internationale PMS'en de bal laten vallen. Gemeentebelasting, politiemelding, Brusselse logiestaks. Wij doen het wél, omdat we hier wonen.": {
+    "en": "The part where most international PMSs drop the ball. Municipal tax, police registration, the Brussels accommodation levy. We do it, because we live here.",
+    "fr": "La partie où la plupart des PMS internationaux laissent tomber. Taxe communale, déclaration à la police, taxe de séjour bruxelloise. Nous le faisons, parce que nous vivons ici."
+  },
+  "Stadstaks": {
+    "en": "City tax",
+    "fr": "Taxe de séjour"
+  },
+  "Gemeentebelasting / city tax": {
+    "en": "Municipal tax / city tax",
+    "fr": "Taxe communale / city tax"
+  },
+  "Per gemeente een ander tarief, soms per nacht, soms per gast, soms vrijgesteld onder een bepaalde leeftijd. rumo kent de regel van jouw gemeente en past hem automatisch toe op elke reservatie. Op de factuur als aparte regel zichtbaar, zo wil je gast dat zien.": {
+    "en": "A different rate per municipality, sometimes per night, sometimes per guest, sometimes exempt below a certain age. rumo knows the rule for your municipality and applies it automatically to every reservation. Visible on the invoice as a separate line, which is how your guest wants to see it.",
+    "fr": "Un taux différent par commune, parfois par nuit, parfois par client, parfois exonéré en dessous d'un certain âge. rumo connaît la règle de votre commune et l'applique automatiquement à chaque réservation. Visible sur la facture comme ligne distincte, c'est ainsi que votre client veut la voir."
+  },
+  "Aan het einde van het jaar krijg je een export per gemeente, klaar om in te dienen. Geen manueel turven meer.": {
+    "en": "At the end of the year you get an export per municipality, ready to file. No more counting by hand.",
+    "fr": "En fin d'année, vous recevez un export par commune, prêt à déposer. Fini les comptages à la main."
+  },
+  "Politiemelding": {
+    "en": "Police registration",
+    "fr": "Déclaration à la police"
+  },
+  "Gastenregistratie voor de politie": {
+    "en": "Guest registration for the police",
+    "fr": "Enregistrement des clients pour la police"
+  },
+  "Sinds de wet op gastenregistratie ben je verplicht om bij elke gast een aantal gegevens vast te leggen: naam, geboortedatum, ID-nummer, adres. Het guest portal vraagt die gegevens aan je gast tijdens de pre-checkin, vóór hij arriveert. Jij hoeft niets in te tikken.": {
+    "en": "Since the law on guest registration you are obliged to record a number of details for every guest: name, date of birth, ID number, address. The guest portal asks your guest for those details during the pre-check-in, before they arrive. You have to type nothing.",
+    "fr": "Depuis la loi sur l'enregistrement des voyageurs, vous êtes tenu de consigner pour chaque client une série de données : nom, date de naissance, numéro de pièce d'identité, adresse. Le portail client demande ces données à votre client pendant le pré-check-in, avant son arrivée. Vous n'avez rien à encoder."
+  },
+  "De export naar de politie zit in je rumo. Maandelijks of op aanvraag, in het juiste formaat.": {
+    "en": "The export to the police is in your rumo. Monthly or on request, in the right format.",
+    "fr": "L'export vers la police est dans votre rumo. Mensuellement ou à la demande, dans le bon format."
+  },
+  "Statbel": {
+    "en": "Statbel",
+    "fr": "Statbel"
+  },
+  "Maandelijkse <em>FOD Statbel</em>-aangifte": {
+    "en": "Monthly <em>FPS Statbel</em> declaration",
+    "fr": "Déclaration mensuelle au <em>SPF Statbel</em>"
+  },
+  "België verplicht een maandelijkse aangifte voor alle commerciële logies vanaf een bepaalde grootte. rumo telt automatisch overnachtingen per nationaliteit, gemiddelde verblijfsduur, aantal aankomsten en het aantal gasten. Eén klik en de aangifte staat klaar in het Statbel-formaat.": {
+    "en": "Belgium requires a monthly declaration for all commercial accommodation above a certain size. rumo automatically counts overnight stays per nationality, average length of stay, number of arrivals and the number of guests. One click and the declaration is ready in the Statbel format.",
+    "fr": "La Belgique impose une déclaration mensuelle pour tous les hébergements commerciaux à partir d'une certaine taille. rumo compte automatiquement les nuitées par nationalité, la durée moyenne de séjour, le nombre d'arrivées et le nombre de clients. Un clic et la déclaration est prête au format Statbel."
+  },
+  "Indienen blijft jouw verantwoordelijkheid. Maar het tellen, het juiste formaat, de splitsing per herkomstland: dat is al gebeurd.": {
+    "en": "Filing stays your responsibility. But the counting, the right format, the split per country of origin: that has already happened.",
+    "fr": "Le dépôt reste votre responsabilité. Mais le comptage, le bon format, la ventilation par pays d'origine : c'est déjà fait."
+  },
+  "BTW-aangifte": {
+    "en": "VAT return",
+    "fr": "Déclaration TVA"
+  },
+  "Wat rumo doet voor je <em>BTW-aangifte</em>": {
+    "en": "What rumo does for your <em>VAT return</em>",
+    "fr": "Ce que rumo fait pour votre <em>déclaration TVA</em>"
+  },
+  "Eerlijk: rumo dient je BTW-aangifte niet zelf in en maakt daar ook geen kant-en-klaar aangiftebestand voor. Dat blijft het werk van jou of je boekhouder. Wat rumo wél doet, is de basis kloppend houden: elke factuurregel krijgt het juiste tarief (6% logies, 21% voor de rest), en de cijfers en facturen staan klaar om door te geven.": {
+    "en": "Honestly: rumo does not file your VAT return itself and does not make a ready-made return file for it either. That stays the work of you or your accountant. What rumo does do is keep the basis right: every invoice line gets the correct rate (6% accommodation, 21% for the rest), and the figures and invoices are ready to hand over.",
+    "fr": "Soyons honnêtes : rumo ne dépose pas votre déclaration TVA et n'en produit pas non plus un fichier prêt à l'emploi. Cela reste votre travail ou celui de votre comptable. Ce que rumo fait, c'est garder la base juste : chaque ligne de facture reçoit le bon taux (6 % pour l'hébergement, 21 % pour le reste), et les chiffres et factures sont prêts à être transmis."
+  },
+  "Werk je met de Scrada add-on, dan komen je facturen en betalingen automatisch in je boekhouding terecht, waar de aangifte vertrekt. Zonder die koppeling geef je de PDF's of de UBL-facturen door aan je boekhouder. In beide gevallen zijn de tarieven al correct gesplitst, dus er valt niets meer uit te pluizen.": {
+    "en": "If you work with the Scrada add-on, your invoices and payments land in your bookkeeping automatically, which is where the return starts. Without that connection you pass the PDFs or the UBL invoices to your accountant. In both cases the rates are already split correctly, so there is nothing left to untangle.",
+    "fr": "Si vous travaillez avec l'add-on Scrada, vos factures et paiements arrivent automatiquement dans votre comptabilité, d'où part la déclaration. Sans cette connexion, vous transmettez les PDF ou les factures UBL à votre comptable. Dans les deux cas, les taux sont déjà correctement ventilés : il n'y a plus rien à démêler."
+  },
+  "Brusselse logiestaks &amp; jaarrapport": {
+    "en": "Brussels accommodation levy &amp; annual report",
+    "fr": "Taxe de séjour bruxelloise &amp; rapport annuel"
+  },
+  "Privacy &amp; <em>gegevens</em>": {
+    "en": "Privacy &amp; <em>data</em>",
+    "fr": "Vie privée &amp; <em>données</em>"
+  },
+  "Waar staan jouw gastgegevens, hoe lang, en wie kan eraan. Vragen die je gast je ooit gaat stellen, en die de GDPR-toezichthouder al beantwoord wil zien.": {
+    "en": "Where your guest data sits, for how long, and who can get at it. Questions your guest is going to ask you one day, and that the GDPR supervisor already wants answered.",
+    "fr": "Où se trouvent vos données clients, combien de temps, et qui peut y accéder. Des questions que votre client vous posera un jour, et auxquelles l'autorité RGPD veut déjà une réponse."
+  },
+  "Hosting": {
+    "en": "Hosting",
+    "fr": "Hébergement"
+  },
+  "Waar staan mijn <em>gastgegevens</em>": {
+    "en": "Where is my <em>guest data</em>",
+    "fr": "Où se trouvent mes <em>données clients</em>"
+  },
+  "rumo draait op servers binnen de EU (Frankfurt). Geen Amerikaanse cloud, geen datatransfer buiten de EER. GDPR-conform per ontwerp, niet als nagedacht extraatje.": {
+    "en": "rumo runs on servers inside the EU (Frankfurt). No American cloud, no data transfer outside the EEA. GDPR-compliant by design, not as an afterthought.",
+    "fr": "rumo tourne sur des serveurs situés dans l'UE (Francfort). Pas de cloud américain, pas de transfert de données hors EEE. Conforme au RGPD dès la conception, pas comme un ajout après coup."
+  },
+  "Backups zijn versleuteld en staan op een tweede EU-locatie. Mocht het hoofd-datacenter onbereikbaar zijn, dan is je rumo binnen het uur terug, met data van maximaal vijf minuten oud.": {
+    "en": "Backups are encrypted and sit at a second EU location. Should the main data centre be unreachable, your rumo is back within the hour, with data at most five minutes old.",
+    "fr": "Les sauvegardes sont chiffrées et se trouvent sur un second site européen. Si le centre de données principal devenait inaccessible, votre rumo est de retour dans l'heure, avec des données vieilles de cinq minutes au maximum."
+  },
+  "Bewaartermijn": {
+    "en": "Retention",
+    "fr": "Durée de conservation"
+  },
+  "Hoe lang gegevens worden <em>bewaard</em>": {
+    "en": "How long data is <em>kept</em>",
+    "fr": "Combien de temps les données sont <em>conservées</em>"
+  },
+  "<strong>Factuur- en boekhoudgegevens:</strong> 10 jaar (BTW- en vennootschapswet)": {
+    "en": "<strong>Invoice and accounting data:</strong> 10 years (VAT and company law)",
+    "fr": "<strong>Données de facturation et comptables :</strong> 10 ans (droit de la TVA et des sociétés)"
+  },
+  "<strong>Gastregistratiegegevens:</strong> volgens politieverordening, meestal 5 jaar": {
+    "en": "<strong>Guest registration data:</strong> according to police regulations, usually 5 years",
+    "fr": "<strong>Données d'enregistrement des clients :</strong> selon le règlement de police, généralement 5 ans"
+  },
+  "<strong>Marketing-consent:</strong> tot intrekking door de gast": {
+    "en": "<strong>Marketing consent:</strong> until withdrawn by the guest",
+    "fr": "<strong>Consentement marketing :</strong> jusqu'à son retrait par le client"
+  },
+  "<strong>Overige persoonsgegevens:</strong> tot 2 jaar na het laatste verblijf": {
+    "en": "<strong>Other personal data:</strong> up to 2 years after the last stay",
+    "fr": "<strong>Autres données à caractère personnel :</strong> jusqu'à 2 ans après le dernier séjour"
+  },
+  "Na de bewaartermijn worden persoonsgegevens automatisch geanonimiseerd. De boekhoudcijfers blijven (verplicht), de naam-en-toenaam verdwijnt.": {
+    "en": "After the retention period personal data is anonymised automatically. The accounting figures stay (compulsory), the name and details disappear.",
+    "fr": "Après la durée de conservation, les données à caractère personnel sont anonymisées automatiquement. Les chiffres comptables restent (obligation légale), le nom et les coordonnées disparaissent."
+  },
+  "GDPR": {
+    "en": "GDPR",
+    "fr": "RGPD"
+  },
+  "Een gast vraagt om zijn data te <em>wissen</em>": {
+    "en": "A guest asks for their data to be <em>erased</em>",
+    "fr": "Un client demande d'<em>effacer</em> ses données"
+  },
+  "GDPR-recht op vergetelheid. Zoek de gast in rumo, klik <em>anonimiseer</em>. Persoonsgegevens worden vervangen door een hash. Financiële records blijven (wettelijk verplicht voor 10 jaar) maar zijn niet meer naar een persoon herleidbaar.": {
+    "en": "GDPR right to be forgotten. Find the guest in rumo, click <em>anonymise</em>. Personal data is replaced by a hash. Financial records stay (legally required for 10 years) but can no longer be traced to a person.",
+    "fr": "Droit à l'oubli du RGPD. Cherchez le client dans rumo, cliquez sur <em>anonymiser</em>. Les données personnelles sont remplacées par un hachage. Les enregistrements financiers restent (obligation légale de 10 ans) mais ne sont plus rattachables à une personne."
+  },
+  "Voor dataportabiliteit: één klik genereert een ZIP met alle gegevens van die gast, klaar om door te sturen naar de gast zelf.": {
+    "en": "For data portability: one click generates a ZIP with all that guest's data, ready to send on to the guest themselves.",
+    "fr": "Pour la portabilité : un clic génère un ZIP avec toutes les données de ce client, prêt à lui être transmis."
+  },
+  "Gebruikers &amp; <em>rollen</em>": {
+    "en": "Users &amp; <em>roles</em>",
+    "fr": "Utilisateurs &amp; <em>rôles</em>"
+  },
+  "Wie mag wat in rumo. Vier rollen, geen vijftig vinkjes. Genoeg om receptionist, housekeeping en boekhouder elk hun eigen rumo te geven, zonder een namiddag uitleg.": {
+    "en": "Who may do what in rumo. Four roles, not fifty tick boxes. Enough to give a receptionist, housekeeping and an accountant each their own rumo, without an afternoon of explaining.",
+    "fr": "Qui peut faire quoi dans rumo. Quatre rôles, pas cinquante cases à cocher. Assez pour donner à la réception, au housekeeping et au comptable chacun son rumo, sans une après-midi d'explications."
+  },
+  "Rollen": {
+    "en": "Roles",
+    "fr": "Rôles"
+  },
+  "De vier <em>rollen</em> in rumo": {
+    "en": "The four <em>roles</em> in rumo",
+    "fr": "Les quatre <em>rôles</em> dans rumo"
+  },
+  "<strong>Eigenaar:</strong> alles. Tarieven, facturatie, gebruikersbeheer, integraties, KPI's": {
+    "en": "<strong>Owner:</strong> everything. Rates, invoicing, user management, integrations, KPIs",
+    "fr": "<strong>Propriétaire :</strong> tout. Tarifs, facturation, gestion des utilisateurs, intégrations, KPI"
+  },
+  "<strong>Receptionist:</strong> reservaties, in/uit-checken, facturatie. Geen tarieven, geen gebruikersbeheer, geen integratie-keuzes": {
+    "en": "<strong>Receptionist:</strong> reservations, checking in and out, invoicing. No rates, no user management, no integration choices",
+    "fr": "<strong>Réceptionniste :</strong> réservations, arrivées et départs, facturation. Pas de tarifs, pas de gestion des utilisateurs, pas de choix d'intégrations"
+  },
+  "<strong>Housekeeping:</strong> alleen kamerstatus en kuislijst. Geen prijzen, geen gastdata buiten naam": {
+    "en": "<strong>Housekeeping:</strong> room status and cleaning list only. No prices, no guest data beyond a name",
+    "fr": "<strong>Housekeeping :</strong> uniquement le statut des chambres et la liste de nettoyage. Pas de prix, pas de données clients au-delà du nom"
+  },
+  "<strong>Boekhouder:</strong> alleen leesrechten op factuurdata, BTW-rapporten, exports": {
+    "en": "<strong>Accountant:</strong> read-only rights on invoice data, VAT reports, exports",
+    "fr": "<strong>Comptable :</strong> droits de lecture seule sur les données de facturation, les rapports TVA, les exports"
+  },
+  "Geen 47 vinkjes om te combineren. Vier rollen die in de praktijk werken. Wil je iets daarbuiten? Stuur ons een berichtje, we kijken samen of het past.": {
+    "en": "No 47 tick boxes to combine. Four roles that work in practice. Want something outside that? Send us a message and we will look at whether it fits.",
+    "fr": "Pas 47 cases à combiner. Quatre rôles qui fonctionnent en pratique. Vous voulez autre chose ? Envoyez-nous un message, nous verrons ensemble si cela rentre."
+  },
+  "Uitnodigen": {
+    "en": "Inviting",
+    "fr": "Inviter"
+  },
+  "Een collega <em>uitnodigen</em>": {
+    "en": "<em>Inviting</em> a colleague",
+    "fr": "<em>Inviter</em> un collègue"
+  },
+  "Instellingen → gebruikers → <em>+ uitnodigen</em>. Voer e-mail in, kies een rol. Je collega krijgt een mail, kiest zelf een wachtwoord, 2FA staat standaard aan. Toegang weer intrekken is één klik.": {
+    "en": "Settings → users → <em>+ invite</em>. Enter an email, choose a role. Your colleague gets a mail, chooses their own password, 2FA is on by default. Withdrawing access again is one click.",
+    "fr": "Paramètres → utilisateurs → <em>+ inviter</em>. Encodez un mail, choisissez un rôle. Votre collègue reçoit un mail, choisit lui-même son mot de passe, la 2FA est activée par défaut. Retirer l'accès est un clic."
+  },
+  "Externe boekhouder die af en toe binnen wil kijken? Geef hem rol <em>Boekhouder</em> en zet expiry op zes maanden. Hij kan niets stuk maken en valt automatisch weg na de termijn.": {
+    "en": "An external accountant who wants to look in now and then? Give them the <em>Accountant</em> role and set expiry to six months. They cannot break anything and drop away automatically after the term.",
+    "fr": "Un comptable externe qui veut jeter un œil de temps en temps ? Donnez-lui le rôle <em>Comptable</em> et fixez une expiration à six mois. Il ne peut rien casser et disparaît automatiquement au terme."
+  },
+  "Audit": {
+    "en": "Audit",
+    "fr": "Audit"
+  },
+  "Wie deed wat: de <em>audit log</em>": {
+    "en": "Who did what: the <em>audit log</em>",
+    "fr": "Qui a fait quoi : le <em>journal d'audit</em>"
+  },
+  "Elke wijziging die ergens toe doet (annulering, prijsaanpassing, refund, gebruikersaanmaak, factuurwijziging) wordt gelogd met tijdstip, gebruiker en oude/nieuwe waarde. Onveranderbaar, ook door de eigenaar niet aanpasbaar.": {
+    "en": "Every change that matters (cancellation, price adjustment, refund, user creation, invoice change) is logged with the time, the user and the old/new value. Unchangeable, not even by the owner.",
+    "fr": "Chaque modification qui compte (annulation, ajustement de prix, remboursement, création d'utilisateur, modification de facture) est journalisée avec l'heure, l'utilisateur et l'ancienne/nouvelle valeur. Inaltérable, même pour le propriétaire."
+  },
+  "Handig bij interne vragen (\"wie heeft die korting gegeven?\"), fraude-controle, of als de boekhouder iets wil natrekken. En het beschermt jou tegen valse claims, want je kan altijd terugkijken.": {
+    "en": "Handy for internal questions (\"who gave that discount?\"), fraud checks, or when the accountant wants to trace something. And it protects you against false claims, because you can always look back.",
+    "fr": "Pratique pour les questions internes (« qui a accordé cette remise ? »), les contrôles de fraude, ou quand le comptable veut vérifier quelque chose. Et cela vous protège des fausses réclamations, car vous pouvez toujours remonter."
+  },
+  "Troubleshooting": {
+    "en": "Troubleshooting",
+    "fr": "Dépannage"
+  },
+  "Als er iets niet werkt. Niet \"open een ticket en wacht drie dagen\", wel \"klik hier, kijk daar, en als het dan nog raar doet bel je ons\".": {
+    "en": "When something does not work. Not \"open a ticket and wait three days\", but \"click here, look there, and if it is still odd you ring us\".",
+    "fr": "Quand quelque chose ne marche pas. Pas « ouvrez un ticket et attendez trois jours », mais « cliquez ici, regardez là, et si c'est encore bizarre vous nous appelez »."
+  },
+  "Mijn prijswijziging staat niet op <em>Booking</em>": {
+    "en": "My price change is not on <em>Booking</em>",
+    "fr": "Ma modification de prix n'est pas sur <em>Booking</em>"
+  },
+  "Drie checks, in deze volgorde:": {
+    "en": "Three checks, in this order:",
+    "fr": "Trois vérifications, dans cet ordre :"
+  },
+  "<strong>rumo statuslog:</strong> wijziging vertrokken? Zo niet, dan zit het aan jouw kant (browser-conflict, niet opgeslagen)": {
+    "en": "<strong>rumo status log:</strong> has the change left? If not, it is at your end (browser conflict, not saved)",
+    "fr": "<strong>Journal de statut rumo :</strong> la modification est-elle partie ? Sinon, cela vient de chez vous (conflit de navigateur, non enregistré)"
+  },
+  "<strong>Verzendstatus:</strong> is de wijziging doorgestuurd? Zo niet, dan zit het in de koppeling zelf (mapping of toegang)": {
+    "en": "<strong>Sending status:</strong> has the change been forwarded? If not, it is in the connection itself (mapping or access)",
+    "fr": "<strong>Statut d'envoi :</strong> la modification a-t-elle été transmise ? Sinon, cela vient de la connexion elle-même (mapping ou accès)"
+  },
+  "<strong>Booking-extranet:</strong> aangekomen? Zo ja, dan is alles in orde en zit het in OTA-cache (paar minuten geduld)": {
+    "en": "<strong>Booking extranet:</strong> arrived? If so, all is well and it is in the OTA cache (a few minutes' patience)",
+    "fr": "<strong>Extranet Booking :</strong> arrivée ? Si oui, tout est en ordre et cela tient au cache de l'OTA (quelques minutes de patience)"
+  },
+  "Klik op de wijziging in het statuslog en je krijgt de exacte foutmelding: mapping niet gevonden, OTA-token verlopen, prijs onder min-rate, of iets anders. Niet opgelost in vijf minuten? Stuur een WhatsApp, wij kijken meteen mee.": {
+    "en": "Click the change in the status log and you get the exact error: mapping not found, OTA token expired, price below min rate, or something else. Not solved in five minutes? Send a WhatsApp and we will look straight away.",
+    "fr": "Cliquez sur la modification dans le journal de statut et vous obtenez le message d'erreur exact : mapping introuvable, jeton OTA expiré, prix sous le tarif minimum, ou autre chose. Pas résolu en cinq minutes ? Envoyez un WhatsApp, nous regardons tout de suite."
+  },
+  "De <em>stadstaks</em> op de factuur klopt niet": {
+    "en": "The <em>city tax</em> on the invoice is wrong",
+    "fr": "La <em>taxe de séjour</em> sur la facture est fausse"
+  },
+  "Drie meest voorkomende oorzaken:": {
+    "en": "The three most common causes:",
+    "fr": "Les trois causes les plus fréquentes :"
+  },
+  "Leeftijdsregel niet correct toegepast (sommige gemeentes: geen taks onder 12 of 18 jaar, geboortedatum ontbreekt of klopt niet)": {
+    "en": "The age rule is not applied correctly (some municipalities: no tax under 12 or 18, date of birth missing or wrong)",
+    "fr": "La règle d'âge n'est pas appliquée correctement (certaines communes : pas de taxe sous 12 ou 18 ans, date de naissance manquante ou erronée)"
+  },
+  "Verkeerde gemeente toegekend aan je hotel (zeldzaam, maar gebeurt bij verhuis of fusie)": {
+    "en": "The wrong municipality assigned to your hotel (rare, but it happens after a move or a merger)",
+    "fr": "La mauvaise commune attribuée à votre hôtel (rare, mais cela arrive après un déménagement ou une fusion)"
+  },
+  "De gemeenteregel is veranderd en wij hebben hem nog niet gepatcht": {
+    "en": "The municipal rule has changed and we have not patched it yet",
+    "fr": "La règle communale a changé et nous ne l'avons pas encore corrigée"
+  },
+  "Open de boeking, klik op de taks-lijn, je krijgt de berekeningsdetails (regel, basis, leeftijd, aantal nachten). Klopt de regel zelf niet meer? Geef ons een seintje. We updaten gemeenteregels centraal voor alle rumo-hotels, niet per hotel.": {
+    "en": "Open the booking, click the tax line, and you get the calculation details (rule, base, age, number of nights). Is the rule itself out of date? Give us a shout. We update municipal rules centrally for all rumo hotels, not per hotel.",
+    "fr": "Ouvrez la réservation, cliquez sur la ligne de taxe : vous obtenez le détail du calcul (règle, base, âge, nombre de nuits). La règle elle-même n'est plus correcte ? Faites-nous signe. Nous mettons les règles communales à jour de façon centrale pour tous les hôtels rumo, pas hôtel par hôtel."
+  },
+  "Correctie": {
+    "en": "Correction",
+    "fr": "Correction"
+  },
+  "Ik heb een verkeerde nacht of prijs <em>aangerekend</em>": {
+    "en": "I have <em>charged</em> a wrong night or price",
+    "fr": "J'ai <em>facturé</em> une mauvaise nuit ou un mauvais prix"
+  },
+  "<strong>Voor de factuur is verstuurd:</strong> open de boeking, pas de prijslijn aan, rumo herrekent automatisch. De wijziging staat in de audit log met oude en nieuwe waarde.": {
+    "en": "<strong>Before the invoice has been sent:</strong> open the booking, adjust the price line, rumo recalculates automatically. The change is in the audit log with the old and the new value.",
+    "fr": "<strong>Avant l'envoi de la facture :</strong> ouvrez la réservation, ajustez la ligne de prix, rumo recalcule automatiquement. La modification figure dans le journal d'audit avec l'ancienne et la nouvelle valeur."
+  },
+  "<strong>Na de factuur:</strong> maak een credit nota voor het foute bedrag en daarna een nieuwe factuur voor het juiste bedrag. Beide hangen samen in de audit trail, je boekhouder ziet de correctie netjes terug zonder dat je iets moet uitleggen.": {
+    "en": "<strong>After the invoice:</strong> make a credit note for the wrong amount and then a new invoice for the right amount. Both hang together in the audit trail; your accountant sees the correction neatly without you having to explain anything.",
+    "fr": "<strong>Après la facture :</strong> faites une note de crédit pour le montant erroné, puis une nouvelle facture pour le bon montant. Les deux sont liées dans la piste d'audit ; votre comptable voit la correction proprement sans que vous ayez à expliquer quoi que ce soit."
+  },
+  "OTA": {
+    "en": "OTA",
+    "fr": "OTA"
+  },
+  "De koppeling met een OTA is <em>gebroken</em>": {
+    "en": "The connection with an OTA is <em>broken</em>",
+    "fr": "La connexion avec une OTA est <em>rompue</em>"
+  },
+  "Symptoom: nieuwe boekingen komen niet binnen, prijzen synchroniseren niet, of je krijgt een rode waarschuwing in rumo. Open <em>instellingen → kanalen</em> en kijk naar het kleurpunt naast elke OTA.": {
+    "en": "Symptom: new bookings do not come in, prices do not synchronise, or you get a red warning in rumo. Open <em>settings → channels</em> and look at the coloured dot next to each OTA.",
+    "fr": "Symptôme : les nouvelles réservations n'arrivent pas, les prix ne se synchronisent plus, ou vous voyez un avertissement rouge dans rumo. Ouvrez <em>paramètres → canaux</em> et regardez le point coloré à côté de chaque OTA."
+  },
+  "Rood = verbinding stuk (vaak token verlopen of credential gewijzigd in de OTA-extranet). Klik op de OTA, kies <em>herverbinden</em>. Bij OAuth-kanalen (Airbnb, sommige Booking-setups) moet je opnieuw inloggen op de OTA en autoriseren. Twee minuten werk, geen support-ticket nodig.": {
+    "en": "Red = connection broken (often an expired token or a credential changed in the OTA extranet). Click the OTA, choose <em>reconnect</em>. With OAuth channels (Airbnb, some Booking set-ups) you have to log in to the OTA again and authorise. Two minutes' work, no support ticket needed.",
+    "fr": "Rouge = connexion rompue (souvent un jeton expiré ou un identifiant modifié dans l'extranet de l'OTA). Cliquez sur l'OTA, choisissez <em>reconnecter</em>. Pour les canaux OAuth (Airbnb, certaines configurations Booking), vous devez vous reconnecter à l'OTA et autoriser. Deux minutes de travail, pas besoin de ticket."
+  },
+  "rumo is traag of <em>niet bereikbaar</em>": {
+    "en": "rumo is slow or <em>unreachable</em>",
+    "fr": "rumo est lent ou <em>injoignable</em>"
+  },
+  "Eerste reflex: check <a href=\"https://status.rumo.eu\" style=\"color:var(--terra-dark);\">status.rumo.eu</a>. Daar zien wij storingen voor we ze rapporteren. Geen storing zichtbaar maar het werkt niet voor jou? Hard refresh (Ctrl+Shift+R / Cmd+Shift+R), ander tabblad, andere browser, andere netwerkverbinding.": {
+    "en": "First reflex: check <a href=\"https://status.rumo.eu\" style=\"color:var(--terra-dark);\">status.rumo.eu</a>. That is where we see outages before we report them. No outage visible but it does not work for you? Hard refresh (Ctrl+Shift+R / Cmd+Shift+R), another tab, another browser, another network connection.",
+    "fr": "Premier réflexe : consultez <a href=\"https://status.rumo.eu\" style=\"color:var(--terra-dark);\">status.rumo.eu</a>. C'est là que nous voyons les pannes avant de les signaler. Aucune panne visible mais cela ne fonctionne pas chez vous ? Rafraîchissement forcé (Ctrl+Maj+R / Cmd+Maj+R), autre onglet, autre navigateur, autre connexion réseau."
+  },
+  "Werkt het nog steeds niet? Stuur ons een WhatsApp met een screenshot van wat je ziet. Geen wachtrij, geen ticket-systeem, gewoon een berichtje en wij kijken.": {
+    "en": "Still not working? Send us a WhatsApp with a screenshot of what you see. No queue, no ticket system, just a message and we will look.",
+    "fr": "Cela ne marche toujours pas ? Envoyez-nous un WhatsApp avec une capture de ce que vous voyez. Pas de file d'attente, pas de système de tickets, juste un message et nous regardons."
+  },
+  "Rudy, je <em>AI-assistent</em>": {
+    "en": "Rudy, your <em>AI assistant</em>",
+    "fr": "Rudy, votre <em>assistant IA</em>"
+  },
+  "Geen chatbot. Geen FAQ-zoeker. Een echte assistent die een aantal concrete taken voor je uitvoert in rumo, uitlegt hoe de rest werkt, en eerlijk zegt wat je zelf moet doen. Rudy werkt naast de receptionist, niet met de gast: hij praat nooit rechtstreeks met je gasten.": {
+    "en": "No chatbot. No FAQ search. A real assistant who carries out a number of concrete tasks for you in rumo, explains how the rest works, and says honestly what you have to do yourself. Rudy works alongside the receptionist, not with the guest: he never talks to your guests directly.",
+    "fr": "Pas un chatbot. Pas un moteur de FAQ. Un véritable assistant qui exécute pour vous un certain nombre de tâches concrètes dans rumo, explique comment fonctionne le reste, et dit honnêtement ce que vous devez faire vous-même. Rudy travaille aux côtés du réceptionniste, pas avec le client : il ne parle jamais directement à vos clients."
+  },
+  "Wat is Rudy?": {
+    "en": "What is Rudy?",
+    "fr": "Qu'est-ce que Rudy ?"
+  },
+  "Wat <em>Rudy</em> kan, in één paragraaf": {
+    "en": "What <em>Rudy</em> can do, in one paragraph",
+    "fr": "Ce que <em>Rudy</em> sait faire, en un paragraphe"
+  },
+  "Rudy leest deze artikels, je handboek en je documenten, en kent rumo van binnenuit. Concreet neemt hij een handvol tijdrovende dingen van je over: een reservatie aanmaken, een prijsofferte maken uit een aanvraagmail van een gast, een groepslijst met namen in de juiste kamers zetten, en een lijst gasten of boekingen importeren uit een Excel of PDF. Daarnaast zoekt hij dingen op (je cijfers, een procedure in het handboek), legt hij uit hoe iets in rumo werkt, en schrijft hij een antwoord op een gastbericht dat jij daarna verstuurt.": {
+    "en": "Rudy reads these articles, your handbook and your documents, and knows rumo from the inside. Concretely he takes a handful of time-consuming things off your hands: creating a reservation, making a quote out of a request mail from a guest, putting a group list with names into the right rooms, and importing a list of guests or bookings from an Excel or a PDF. He also looks things up (your figures, a procedure in the handbook), explains how something in rumo works, and drafts an answer to a guest message that you then send.",
+    "fr": "Rudy lit ces articles, votre manuel et vos documents, et connaît rumo de l'intérieur. Concrètement, il vous enlève une poignée de choses chronophages : créer une réservation, établir un devis à partir d'un mail de demande d'un client, placer une liste de groupe avec les noms dans les bonnes chambres, et importer une liste de clients ou de réservations depuis un Excel ou un PDF. Il cherche aussi des informations (vos chiffres, une procédure dans le manuel), explique comment quelque chose fonctionne dans rumo, et rédige une réponse à un message client que vous envoyez ensuite."
+  },
+  "Je vraagt het gewoon in het Nederlands. Hij stelt voor, jij kijkt na en bevestigt. Wat hij niet zelf kan, zegt hij eerlijk.": {
+    "en": "You simply ask in your own language. He proposes, you check and confirm. What he cannot do himself, he says honestly.",
+    "fr": "Vous le demandez simplement dans votre langue. Il propose, vous vérifiez et confirmez. Ce qu'il ne sait pas faire, il le dit honnêtement."
+  },
+  "Wat hij doet": {
+    "en": "What he does",
+    "fr": "Ce qu'il fait"
+  },
+  "Wat Rudy concreet <em>voor je doet</em>": {
+    "en": "What Rudy concretely <em>does for you</em>",
+    "fr": "Ce que Rudy fait concrètement <em>pour vous</em>"
+  },
+  "Een afgebakend lijstje, geen toverstok. Concreet:": {
+    "en": "A defined list, not a magic wand. Concretely:",
+    "fr": "Une liste délimitée, pas une baguette magique. Concrètement :"
+  },
+  "Een reservatie aanmaken (gast, kamer, datums)": {
+    "en": "Creating a reservation (guest, room, dates)",
+    "fr": "Créer une réservation (client, chambre, dates)"
+  },
+  "Een offerte maken uit een aanvraagmail: hij zet ze als optie klaar met een bevestig-link voor de gast, en schrijft er een antwoordmail bij": {
+    "en": "Making a quote out of a request mail: he lines it up as an option with a confirmation link for the guest, and drafts a reply mail with it",
+    "fr": "Établir un devis à partir d'un mail de demande : il le prépare en option avec un lien de confirmation pour le client, et rédige le mail de réponse"
+  },
+  "Een geplakte groeps- of roominglijst in de juiste kamers invullen (eerst een voorbeeld, pas na jouw OK schrijft hij)": {
+    "en": "Filling a pasted group or rooming list into the right rooms (a preview first; only after your OK does he write)",
+    "fr": "Remplir une liste de groupe ou de rooming collée dans les bonnes chambres (d'abord un aperçu ; il n'écrit qu'après votre OK)"
+  },
+  "Gasten, boekers, bedrijven of boekingen importeren uit een Excel of PDF": {
+    "en": "Importing guests, bookers, companies or bookings from an Excel or a PDF",
+    "fr": "Importer des clients, des donneurs d'ordre, des entreprises ou des réservations depuis un Excel ou un PDF"
+  },
+  "Keuringsattesten en preventie-documenten inlezen en klaarzetten in een wachtrij, zodat jij ze enkel nog moet bevestigen": {
+    "en": "Reading in inspection certificates and prevention documents and lining them up in a queue, so that all you have to do is confirm them",
+    "fr": "Lire des attestations de contrôle et des documents de prévention et les préparer dans une file d'attente, pour qu'il ne vous reste qu'à confirmer"
+  },
+  "Je cijfers opzoeken (omzet, bezetting, stadstaks, openstaande bedragen) en er een vraag over beantwoorden": {
+    "en": "Looking up your figures (revenue, occupancy, city tax, outstanding amounts) and answering a question about them",
+    "fr": "Chercher vos chiffres (chiffre d'affaires, occupation, taxe de séjour, montants ouverts) et répondre à une question à ce sujet"
+  },
+  "Een antwoord op een gastbericht schrijven in de Inbox; jij verstuurt het": {
+    "en": "Drafting an answer to a guest message in the Inbox; you send it",
+    "fr": "Rédiger une réponse à un message client dans la boîte de réception ; c'est vous qui l'envoyez"
+  },
+  "Bij alles wat hij wegschrijft laat hij je eerst een voorbeeld zien en wacht hij op je bevestiging. Hij verzint nooit cijfers of feiten: weet hij iets niet, dan zegt hij dat.": {
+    "en": "With everything he writes away he shows you a preview first and waits for your confirmation. He never invents figures or facts: if he does not know something, he says so.",
+    "fr": "Pour tout ce qu'il enregistre, il vous montre d'abord un aperçu et attend votre confirmation. Il n'invente jamais de chiffres ni de faits : s'il ne sait pas, il le dit."
+  },
+  "Wat hij <em>niet</em> doet": {
+    "en": "What he does <em>not</em> do",
+    "fr": "Ce qu'il <em>ne</em> fait <em>pas</em>"
+  },
+  "Wat Rudy <em>niet</em> doet": {
+    "en": "What Rudy does <em>not</em> do",
+    "fr": "Ce que Rudy <em>ne</em> fait <em>pas</em>"
+  },
+  "Twee soorten. Ten eerste dingen die hij <strong>wél zou kunnen maar bewust laat liggen</strong>, omdat het geen werk voor een assistent is:": {
+    "en": "Two kinds. First, things he <strong>could do but deliberately leaves alone</strong>, because it is not work for an assistant:",
+    "fr": "Deux catégories. D'abord des choses qu'il <strong>pourrait faire mais laisse volontairement</strong>, parce que ce n'est pas le travail d'un assistant :"
+  },
+  "Geen automatische credit nota's, refunds of penalty-aanrekeningen, die meldt hij aan jou (of je receptionist), met een voorstel": {
+    "en": "No automatic credit notes, refunds or penalty charges; he reports those to you (or your receptionist), with a proposal",
+    "fr": "Pas de notes de crédit, de remboursements ni de pénalités automatiques : il vous les signale (ou à votre réceptionniste), avec une proposition"
+  },
+  "Geen prijsbeleid: hij beslist niet of jouw prijs te hoog of te laag is": {
+    "en": "No pricing policy: he does not decide whether your price is too high or too low",
+    "fr": "Pas de politique tarifaire : il ne décide pas si votre prix est trop haut ou trop bas"
+  },
+  "Ten tweede dingen die hij simpelweg <strong>niet kan</strong>, en die je dus zelf doet:": {
+    "en": "Second, things he simply <strong>cannot</strong> do, and that you therefore do yourself:",
+    "fr": "Ensuite, des choses qu'il ne <strong>peut simplement pas</strong> faire, et que vous faites donc vous-même :"
+  },
+  "Geen stop-sell of open-sell, geen min-stay, max-stay, CTA of CTD. Restricties naar de OTA's zet je zelf in de channel manager.": {
+    "en": "No stop-sell or open-sell, no min-stay, max-stay, CTA or CTD. You set restrictions to the OTAs yourself in the channel manager.",
+    "fr": "Pas de stop-sell ni d'open-sell, pas de min-stay, max-stay, CTA ou CTD. Les restrictions vers les OTA, vous les réglez vous-même dans le channel manager."
+  },
+  "Geen prijzen aanpassen of doorduwen naar de OTA's, en geen bulk-prijswijzigingen": {
+    "en": "No adjusting prices or pushing them to the OTAs, and no bulk price changes",
+    "fr": "Pas d'ajustement de prix ni d'envoi vers les OTA, et pas de modifications de prix en masse"
+  },
+  "Geen betaallinks versturen naar gasten, dat doe je vanaf de betaalscherm van de boeking": {
+    "en": "No sending payment links to guests; you do that from the payment screen of the booking",
+    "fr": "Pas d'envoi de liens de paiement aux clients : cela se fait depuis l'écran de paiement de la réservation"
+  },
+  "Niet rechtstreeks met de gast praten: hij schrijft een antwoord voor, jij drukt op verzenden": {
+    "en": "No talking to the guest directly: he drafts an answer, you press send",
+    "fr": "Pas de contact direct avec le client : il rédige une réponse, c'est vous qui appuyez sur envoyer"
+  },
+  "Geen acties in de OTA-extranetten (Genius-promo, Mobile Rate, listing-content)": {
+    "en": "No actions in the OTA extranets (Genius promo, Mobile Rate, listing content)",
+    "fr": "Pas d'actions dans les extranets des OTA (promo Genius, Mobile Rate, contenu de l'annonce)"
+  },
+  "Het idee: Rudy doet de tijdrovende voorbereidingen, jij houdt de knoppen die ertoe doen.": {
+    "en": "The idea: Rudy does the time-consuming preparation, you keep the buttons that matter.",
+    "fr": "L'idée : Rudy fait les préparatifs chronophages, vous gardez les boutons qui comptent."
+  },
+  "Import": {
+    "en": "Import",
+    "fr": "Import"
+  },
+  "Rudy een <em>bestand</em> laten uitlezen": {
+    "en": "Letting Rudy read a <em>file</em>",
+    "fr": "Faire lire un <em>fichier</em> à Rudy"
+  },
+  "Rudy kan een Excel- of pdf-bestand uitlezen en er boekingen, gasten, bedrijven of tarieven uit halen. Hij toont wat hij gevonden heeft en jij keurt goed voor er iets weggeschreven wordt.": {
+    "en": "Rudy can read an Excel or PDF file and pull bookings, guests, companies or rates out of it. He shows what he found and you approve before anything is written away.",
+    "fr": "Rudy peut lire un fichier Excel ou PDF et en extraire des réservations, des clients, des entreprises ou des tarifs. Il montre ce qu'il a trouvé et vous approuvez avant que quoi que ce soit ne soit enregistré."
+  },
+  "Hetzelfde geldt voor een geplakte groepslijst: hij koppelt elke naam aan een kamer, jij kijkt na. En binnengekomen preventiedocumenten sorteert hij in de juiste map van je dossier.": {
+    "en": "The same goes for a pasted group list: he links every name to a room, you check. And prevention documents that come in he sorts into the right folder of your file.",
+    "fr": "Il en va de même pour une liste de groupe collée : il rattache chaque nom à une chambre, vous vérifiez. Et les documents de prévention qui arrivent, il les classe dans le bon dossier."
+  },
+  "Hoe vraag je": {
+    "en": "How to ask",
+    "fr": "Comment demander"
+  },
+  "Hoe je iets aan Rudy vraagt": {
+    "en": "How you ask Rudy something",
+    "fr": "Comment demander quelque chose à Rudy"
+  },
+  "Gewoon Nederlands. \"Maak een offerte voor deze aanvraag\" (met de mail erbij geplakt), \"zet deze groepslijst in de juiste kamers\", \"wat was mijn omzet vorige week per kanaal\", \"wat is onze procedure bij een late aankomst\". Geen commando-syntaxis. Geen menu's onthouden.": {
+    "en": "Just plain language. \"Make a quote for this request\" (with the mail pasted in), \"put this group list into the right rooms\", \"what was my revenue last week per channel\", \"what is our procedure for a late arrival\". No command syntax. No menus to remember.",
+    "fr": "En langage courant. « Fais un devis pour cette demande » (avec le mail collé), « place cette liste de groupe dans les bonnes chambres », « quel était mon chiffre d'affaires la semaine dernière par canal », « quelle est notre procédure en cas d'arrivée tardive ». Pas de syntaxe de commande. Pas de menus à retenir."
+  },
+  "Als hij twijfelt of de vraag dubbelzinnig is, vraagt hij door. Als hij iets niet kan, zegt hij het.": {
+    "en": "If he is unsure or the question is ambiguous, he asks. If he cannot do something, he says so.",
+    "fr": "S'il hésite ou si la question est ambiguë, il pose la question. S'il ne peut pas, il le dit."
+  },
+  "Train Rudy": {
+    "en": "Train Rudy",
+    "fr": "Entraîner Rudy"
+  },
+  "Hem korte <em>hotelfeiten</em> meegeven": {
+    "en": "Giving him short <em>hotel facts</em>",
+    "fr": "Lui donner de courts <em>faits sur l'hôtel</em>"
+  },
+  "Naast je handboek is er een lijstje korte feiten dat je zelf invult: de ontbijturen, waar de parking is, of er een lift is. Handig voor wat te kort is om er een handboekartikel over te schrijven.": {
+    "en": "Next to your handbook there is a list of short facts you fill in yourself: the breakfast hours, where the parking is, whether there is a lift. Handy for what is too short to write a handbook article about.",
+    "fr": "À côté de votre manuel, il y a une liste de faits courts que vous remplissez vous-même : les heures du petit-déjeuner, où se trouve le parking, s'il y a un ascenseur. Pratique pour ce qui est trop court pour en faire un article de manuel."
+  },
+  "Per feit kies je of Rudy het ook mag gebruiken wanneer hij een antwoord voor een gast voorschrijft. Zo blijft interne informatie intern.": {
+    "en": "Per fact you choose whether Rudy may also use it when he drafts an answer for a guest. That way internal information stays internal.",
+    "fr": "Pour chaque fait, vous choisissez si Rudy peut aussi l'utiliser lorsqu'il rédige une réponse destinée à un client. Les informations internes restent ainsi internes."
+  },
+  "Cheatsheet": {
+    "en": "Cheatsheet",
+    "fr": "Aide-mémoire"
+  },
+  "Vraag <em>Rudy</em> dit eens": {
+    "en": "Try asking <em>Rudy</em> this",
+    "fr": "Demandez donc ceci à <em>Rudy</em>"
+  },
+  "Een reeks voorbeelden waar Rudy mee uit de voeten kan. Gewoon Nederlands, geen syntax. Bij alles wat hij wegschrijft stelt hij eerst voor, jij keurt goed.": {
+    "en": "A series of examples Rudy can handle. Plain language, no syntax. With everything he writes away he proposes first and you approve.",
+    "fr": "Une série d'exemples que Rudy sait traiter. En langage courant, sans syntaxe. Pour tout ce qu'il enregistre, il propose d'abord et vous approuvez."
+  },
+  "Jij vraagt": {
+    "en": "You ask",
+    "fr": "Vous demandez"
+  },
+  "Wat Rudy doet": {
+    "en": "What Rudy does",
+    "fr": "Ce que Rudy fait"
+  },
+  "\"Boek kamer 12 voor Janssens van 3 tot 5 mei\"": {
+    "en": "\"Book room 12 for Janssens from 3 to 5 May\"",
+    "fr": "« Réserve la chambre 12 pour Janssens du 3 au 5 mai »"
+  },
+  "Maakt de reservatie aan met de juiste prijs. Jij kijkt na.": {
+    "en": "Creates the reservation with the right price. You check.",
+    "fr": "Crée la réservation au bon prix. Vous vérifiez."
+  },
+  "\"Maak een offerte voor deze aanvraag\" (mail erbij geplakt)": {
+    "en": "\"Make a quote for this request\" (mail pasted in)",
+    "fr": "« Fais un devis pour cette demande » (mail collé)"
+  },
+  "Zet een optie klaar met een bevestig-link, en schrijft de antwoordmail in de taal van de gast.": {
+    "en": "Lines up an option with a confirmation link, and drafts the reply mail in the guest's language.",
+    "fr": "Prépare une option avec un lien de confirmation, et rédige le mail de réponse dans la langue du client."
+  },
+  "\"Zet deze roominglijst in de juiste kamers\"": {
+    "en": "\"Put this rooming list into the right rooms\"",
+    "fr": "« Place cette liste de rooming dans les bonnes chambres »"
+  },
+  "Toont eerst een voorbeeld: wie in welke kamer. Pas na je OK schrijft hij het weg.": {
+    "en": "Shows a preview first: who in which room. Only after your OK does he write it away.",
+    "fr": "Montre d'abord un aperçu : qui dans quelle chambre. Il n'enregistre qu'après votre OK."
+  },
+  "\"Importeer deze Excel met gasten\"": {
+    "en": "\"Import this Excel with guests\"",
+    "fr": "« Importe cet Excel avec des clients »"
+  },
+  "Leest het bestand, toont wat hij herkent, importeert na bevestiging.": {
+    "en": "Reads the file, shows what he recognises, imports after confirmation.",
+    "fr": "Lit le fichier, montre ce qu'il reconnaît, importe après confirmation."
+  },
+  "\"Hier zijn 10 keuringsattesten\"": {
+    "en": "\"Here are 10 inspection certificates\"",
+    "fr": "« Voici 10 attestations de contrôle »"
+  },
+  "Leest ze in en zet ze klaar in de wachtrij; jij bevestigt.": {
+    "en": "Reads them in and lines them up in the queue; you confirm.",
+    "fr": "Les lit et les prépare dans la file d'attente ; vous confirmez."
+  },
+  "\"Wat was mijn omzet vorige week per kanaal?\"": {
+    "en": "\"What was my revenue last week per channel?\"",
+    "fr": "« Quel était mon chiffre d'affaires la semaine dernière par canal ? »"
+  },
+  "Toont een tabel. Geen actie nodig.": {
+    "en": "Shows a table. No action needed.",
+    "fr": "Affiche un tableau. Aucune action nécessaire."
+  },
+  "\"Vergelijk mijn bezetting deze maand met vorig jaar\"": {
+    "en": "\"Compare my occupancy this month with last year\"",
+    "fr": "« Compare mon occupation ce mois-ci avec l'an dernier »"
+  },
+  "Twee percentages plus het verschil.": {
+    "en": "Two percentages plus the difference.",
+    "fr": "Deux pourcentages et l'écart."
+  },
+  "\"Wat was mijn stadstaks in maart?\"": {
+    "en": "\"What was my city tax in March?\"",
+    "fr": "« Quelle était ma taxe de séjour en mars ? »"
+  },
+  "Het bedrag, opgehaald uit het rapport.": {
+    "en": "The amount, taken from the report.",
+    "fr": "Le montant, tiré du rapport."
+  },
+  "\"Welke facturen staan nog open?\"": {
+    "en": "\"Which invoices are still open?\"",
+    "fr": "« Quelles factures sont encore ouvertes ? »"
+  },
+  "De lijst openstaande bedragen uit het debiteuren-rapport.": {
+    "en": "The list of outstanding amounts from the debtors report.",
+    "fr": "La liste des montants ouverts issue du rapport débiteurs."
+  },
+  "\"Wat is onze procedure bij een late aankomst?\"": {
+    "en": "\"What is our procedure for a late arrival?\"",
+    "fr": "« Quelle est notre procédure en cas d'arrivée tardive ? »"
+  },
+  "Zoekt het op in je handboek en citeert het juiste artikel.": {
+    "en": "Looks it up in your handbook and quotes the right article.",
+    "fr": "La cherche dans votre manuel et cite le bon article."
+  },
+  "\"Schrijf een antwoord op dit Booking.com-bericht\"": {
+    "en": "\"Draft an answer to this Booking.com message\"",
+    "fr": "« Rédige une réponse à ce message Booking.com »"
+  },
+  "Stelt een antwoord voor in de taal van de gast. Jij verstuurt.": {
+    "en": "Proposes an answer in the guest's language. You send it.",
+    "fr": "Propose une réponse dans la langue du client. Vous l'envoyez."
+  },
+  "\"Stuur een betaallink naar boeking BR-1234\"": {
+    "en": "\"Send a payment link to booking BR-1234\"",
+    "fr": "« Envoie un lien de paiement à la réservation BR-1234 »"
+  },
+  "<em>Doet hij niet zelf.</em> Legt uit waar jij dat op de boeking doet.": {
+    "en": "<em>He does not do that himself.</em> Explains where you do that on the booking.",
+    "fr": "<em>Il ne le fait pas lui-même.</em> Il explique où vous le faites sur la réservation."
+  },
+  "\"Geef gast Janssens een refund van €80\"": {
+    "en": "\"Give guest Janssens a refund of €80\"",
+    "fr": "« Rembourse 80 € au client Janssens »"
+  },
+  "<em>Doet hij niet zelf.</em> Stuurt een melding naar je receptionist met het voorstel.": {
+    "en": "<em>He does not do that himself.</em> Sends a notification to your receptionist with the proposal.",
+    "fr": "<em>Il ne le fait pas lui-même.</em> Il envoie une notification à votre réceptionniste avec la proposition."
+  },
+  "Iets niet duidelijk?": {
+    "en": "Something unclear?",
+    "fr": "Quelque chose n'est pas clair ?"
+  },
+  "Mis je een <em>stukje uitleg?</em>": {
+    "en": "Missing a <em>piece of explanation?</em>",
+    "fr": "Il vous manque une <em>explication ?</em>"
+  },
+  "Stuur ons een bericht. We vullen aan, en jij krijgt direct antwoord, geen wachtrij, geen ticket-systeem.": {
+    "en": "Send us a message. We add to it, and you get an answer straight away: no queue, no ticket system.",
+    "fr": "Envoyez-nous un message. Nous complétons, et vous obtenez une réponse directe : pas de file d'attente, pas de système de tickets."
+  },
+  "Stuur een mailtje <span>→</span>": {
+    "en": "Send us an email <span>→</span>",
+    "fr": "Envoyez-nous un mail <span>→</span>"
+  },
+  "Zelf proberen": {
+    "en": "Try it yourself",
+    "fr": "Essayer vous-même"
+  },
+  "Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.": {
+    "en": "No demo call.<br>Just <em>14 days</em> to play.",
+    "fr": "Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer."
+  },
+  "Geen creditcard, geen verplichtingen, geen \"account manager\" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.": {
+    "en": "No credit card, no obligations, no \"account manager\" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.",
+    "fr": "Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit."
+  },
+  "Probeer 14 dagen gratis <span>→</span>": {
+    "en": "Try it free for 14 days <span>→</span>",
+    "fr": "Essayez 14 jours gratuitement <span>→</span>"
+  },
+  "Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href=\"overstappen.html\">Gratis datamigratie</a>": {
+    "en": "No credit card · Cancellable monthly after 6 months · <a href=\"overstappen.html\">Free data migration</a>",
+    "fr": "Sans carte de crédit · Résiliable au mois après 6 mois · <a href=\"overstappen.html\">Migration des données offerte</a>"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  }
+}

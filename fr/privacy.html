@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script src="../demo-form.js?v=2" defer></script>
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vie privée · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Comment rumo et l'hôtel où vous avez réservé traitent vos données. En langage courant. Ce que nous collectons, pourquoi, avec qui nous partageons, et ce que vous pouvez en faire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* ─── LEGAL PROSE ─── */
+  .legal {
+    background:var(--paper);
+    padding:4rem 0 6rem;
+  }
+  .legal-wrap {
+    max-width:740px;
+    margin:0 auto;
+    padding:0 2rem;
+  }
+  .legal h2 {
+    font-size:clamp(1.6rem, 3vw, 2.1rem);
+    margin-top:3rem;
+    margin-bottom:1rem;
+  }
+  .legal h2:first-of-type { margin-top:0; }
+  .legal h3 {
+    font-size:1.15rem;
+    font-family:'Inter', sans-serif;
+    font-weight:600;
+    letter-spacing:0;
+    color:var(--ink);
+    margin-top:1.75rem;
+    margin-bottom:0.5rem;
+    line-height:1.4;
+  }
+  .legal p {
+    font-size:1rem;
+    color:var(--ink-soft);
+    line-height:1.7;
+    max-width:none;
+    margin-bottom:1rem;
+  }
+  .legal ul {
+    margin:0.5rem 0 1.25rem;
+    padding-left:1.25rem;
+  }
+  .legal li {
+    font-size:1rem;
+    color:var(--ink-soft);
+    line-height:1.7;
+    margin-bottom:0.4rem;
+  }
+  .legal a {
+    color:var(--terra-dark);
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+  .legal a:hover { color:var(--ink); }
+  .legal strong { color:var(--ink); font-weight:600; }
+  .legal-meta {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:2.5rem;
+    padding-bottom:1.5rem;
+    border-bottom:1px solid var(--line);
+  }
+  .legal-callout {
+    /* Stond op paper-panel, en dat verschilt nauwelijks van de pagina zelf.
+       Op een lap tekst van vier schermen hoog is dit het enige wat het oog
+       even vasthoudt, dus mag het ook echt te zien zijn. Wel binnen de warme
+       reeks: roze viel uit de huisstijl. */
+    background:var(--sand);
+    border:1px solid transparent;
+    border-radius:12px;
+    padding:1.25rem 1.5rem;
+    margin:1.5rem 0;
+  }
+  .legal-callout p:last-child { margin-bottom:0; }
+  .legal-controller {
+    color:var(--terra-dark);
+    font-style:italic;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../privacy.html">NL</a>
+      <a href="../en/privacy.html">EN</a>
+      <a href="privacy.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <span class="kicker">Privacy</span>
+      <h1>Comment nous traitons vos <em>données</em>.</h1>
+      <p class="lead">En langage courant. Ce que nous collectons, pourquoi, avec qui nous partageons, et ce que vous pouvez en faire.</p>
+    </div>
+    <div class="page-header-side">
+      Version<br> <strong>17 mai 2026</strong>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>RGPD</span> <span>ePrivacy</span> <span>Droit belge</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ LEGAL CONTENT ═══════════════════════ -->
+<section class="legal">
+  <div class="legal-wrap fade-up">
+
+    <div class="legal-meta">
+      Dernière mise à jour · 17 mai 2026
+    </div>
+
+    <h2>1. Qui est responsable ?</h2>
+    <p>
+      Une réservation d'hôtel concerne deux parties : <strong>l'hôtel</strong> où vous séjournez, et <strong>rumo</strong>, le logiciel avec lequel cet hôtel travaille. Nous avons chacun un rôle différent.
+    </p>
+
+    <div class="legal-callout">
+      <p>
+        <strong>L'hôtel</strong> (<span class="legal-controller" id="controller-name">l'hôtel où vous avez réservé</span>) est le <strong>responsable du traitement</strong>. C'est lui qui décide quelles données sont nécessaires, combien de temps elles sont conservées et avec qui elles sont partagées en dehors de rumo.
+      </p>
+      <p>
+        <strong>Rumo</strong> (Rumo BV, Gand, Belgique) est le <strong>sous-traitant</strong>. Nous fournissons le logiciel, hébergeons les serveurs et veillons à ce que tout tourne. Nous ne faisons rien de vos données en dehors de ce que l'hôtel nous demande, ce qui est fixé dans un accord de traitement.
+      </p>
+    </div>
+
+    <p>
+      Vous avez une question sur votre réservation ou vos données ? <strong>Contactez d'abord l'hôtel.</strong> Il a la vue d'ensemble et peut vous aider le plus vite. Nous intervenons si nécessaire.
+    </p>
+
+    <h2>2. Ce que nous savons de vous</h2>
+
+    <h3>Quand vous réservez une chambre</h3>
+    <ul>
+      <li>Nom, adresse mail, numéro de téléphone et adresse</li>
+      <li>Les dates de votre séjour, le type de chambre et les remarques éventuelles que vous laissez</li>
+      <li>Les données de paiement, qui vont directement à notre partenaire de paiement Stripe ; nous ne voyons jamais nous-mêmes votre numéro de carte complet</li>
+    </ul>
+
+    <h3>À votre arrivée et pendant votre séjour</h3>
+    <ul>
+      <li>Les données d'identité de votre carte d'identité ou de votre passeport (obligatoire selon l'arrêté royal du 27 avril 2007 pour les clients d'hôtel en Belgique)</li>
+      <li>La signature sur votre fiche d'enregistrement, si l'hôtel la recueille de façon numérique</li>
+      <li>Ce que vous consommez dans l'hôtel et la facturation qui va avec</li>
+    </ul>
+
+    <h3>Ce que nous <em>ne</em> faisons <em>pas</em></h3>
+    <ul>
+      <li>Pas de pixels publicitaires, pas de Google Analytics, pas de pixel Facebook, pas de « publicité personnalisée ». Sur notre site, un compteur européen sans cookies enregistre combien de visiteurs passent ; il ne construit aucun profil (voir <a href="cookies.html">Cookies</a>)</li>
+      <li>Pas de vente ni de transmission de vos données à des tiers au-delà de ce qui figure ci-dessous sous « sous-traitants »</li>
+      <li>Pas de profilage automatisé produisant des effets juridiques à votre égard</li>
+    </ul>
+
+    <h2>3. Pourquoi nous les avons</h2>
+    <p>La loi (article 6 du RGPD) exige une raison valable pour chaque donnée. Pour nous, cela revient à :</p>
+    <ul>
+      <li><strong>L'exécution de votre contrat de réservation.</strong> Nom, coordonnées, dates de séjour. Sans cela, nous ne pouvons tout simplement pas vous donner de chambre.</li>
+      <li><strong>Une obligation légale.</strong> Données d'identité (AR du 27 avril 2007), facturation et administration TVA (Code belge de la TVA, 7 ans), déclarations aux services de police là où elles sont obligatoires.</li>
+      <li><strong>Un intérêt légitime.</strong> Sécurisation des systèmes, prévention de la fraude, traitement des plaintes. Toujours mis en balance avec vos intérêts.</li>
+      <li><strong>Votre consentement.</strong> Les mails marketing ou les newsletters de l'hôtel, uniquement si vous dites explicitement oui, et vous pouvez toujours le retirer.</li>
+    </ul>
+
+    <h2>4. Avec qui nous partageons</h2>
+    <p>
+      Rumo fait appel à quelques autres entreprises pour faire fonctionner le service. Ce sont nos <strong>sous-traitants ultérieurs</strong>. Tous avec un accord de traitement, tous dans l'UE ou sous un mécanisme de transfert valable.
+    </p>
+    <ul>
+      <li><strong>Scaleway</strong> (FR), hébergement des serveurs et de la base de données</li>
+      <li><strong>Stripe</strong> (IE/US), traitement des paiements, conservation des cartes</li>
+      <li><strong>Channex</strong> (UK), connexion avec Booking.com, Expedia, Airbnb et d'autres canaux de distribution</li>
+      <li><strong>Brevo</strong> (FR), mails transactionnels (confirmations, rappels)</li>
+      <li><strong>Mistral</strong> (FR, via Scaleway), fonctions d'IA lorsque votre hôtel les utilise (par ex. classement de documents ou assistant interne pour le personnel). Jamais utilisé pour entraîner un modèle sur des données clients.</li>
+    </ul>
+
+    <p>
+      Par ailleurs, l'hôtel peut lui-même relier à rumo d'autres systèmes que nous ne choisissons pas, par exemple un logiciel comptable, une caisse ou un système de clés. Ceux-là sont mentionnés dans leur propre déclaration de confidentialité.
+    </p>
+
+    <h2>5. Combien de temps nous les conservons</h2>
+    <ul>
+      <li><strong>Factures et pièces comptables</strong> : 7 ans (Code belge de la TVA)</li>
+      <li><strong>Registre des clients avec données d'identité</strong> : au moins jusqu'à la fin de l'année civile suivante (AR du 27 avril 2007), en pratique souvent 5 ans</li>
+      <li><strong>Historique des réservations et correspondance</strong> : aussi longtemps que c'est utile à la relation avec l'hôtel, puis effacé ou anonymisé</li>
+      <li><strong>Carte de paiement tokenisée</strong> : jusqu'à ce que la réservation soit entièrement réglée, puis supprimée, sauf si vous la conservez explicitement pour un prochain séjour</li>
+      <li><strong>Consentement marketing</strong> : jusqu'à ce que vous le retiriez</li>
+    </ul>
+
+    <h2>6. Ce que vous pouvez faire</h2>
+    <p>Le RGPD vous donne six droits concrets. Cela sonne solennel ; cela signifie surtout que vous avez votre mot à dire.</p>
+    <ul>
+      <li><strong>Accès</strong> : demander quelles données nous avons sur vous</li>
+      <li><strong>Rectification</strong> : faire corriger des erreurs</li>
+      <li><strong>Effacement</strong> : demander que tout soit effacé, sauf ce que nous devons légalement conserver</li>
+      <li><strong>Limitation</strong> : demander la suspension temporaire du traitement</li>
+      <li><strong>Portabilité</strong> : obtenir une copie dans un format réutilisable</li>
+      <li><strong>Opposition</strong> : vous opposer à un traitement fondé sur l'intérêt légitime</li>
+    </ul>
+    <p>
+      Adressez-vous d'abord à <span class="legal-controller" id="controller-name-2">l'hôtel où vous avez réservé</span>. Il peut le régler pour vous dans rumo. Si cela n'aboutit pas dans un délai raisonnable, ou s'il s'agit de rumo lui-même (notre infrastructure logicielle par exemple), écrivez à <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>.
+    </p>
+    <p>
+      Pas satisfait ? Vous pouvez toujours introduire une plainte auprès de l'<a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">Autorité de protection des données</a> à Bruxelles.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+      <strong>Rumo BV</strong><br> Gand, Belgique<br> <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a> · <a href="mailto:hello@rumo.eu">hello@rumo.eu</a>
+    </p>
+    <p>
+      Vous avez une question sur ce texte, ou vous trouvez quelque chose peu clair ? Envoyez-nous un mail. Nous adaptons là où c'est possible.
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// Fade-up scroll animation
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+
+// Dynamic hotel name from ?hotel=<name> query param
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get('hotel');
+  if (!raw) return;
+  // Strip any HTML / scripts. Keep printable chars only.
+  const clean = raw.replace(/[<>"'`{}\\]/g, '').trim().slice(0, 80);
+  if (!clean) return;
+  // Title-case if all lowercase: "chamade" → "Chamade"
+  const display = clean === clean.toLowerCase()
+    ? clean.charAt(0).toUpperCase() + clean.slice(1)
+    : clean;
+  document.querySelectorAll('#controller-name, #controller-name-2').forEach(el => {
+    el.textContent = 'Hotel ' + display;
+  });
+})();
+</script>
+</body>
+</html>

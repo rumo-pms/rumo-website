@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../../gate.js"></script>
+<script src="../../demo-form.js?v=2" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qui entretient votre chaudière, et c'était quand la dernière fois ? · expliqué par rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Un hôtel est aussi un bâtiment, et ce bâtiment a une administration. Pourquoi les contrôles sont rarement le problème, et les papiers qui suivent presque toujours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared.css">
+<link rel="stylesheet" href="../../uitgelegd/artikel.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="../features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="../ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="../tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../a-propos.html">À propos</a></li>
+    <li><a href="../index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../../uitgelegd/gebouwbeheer.html">NL</a>
+      <a href="../../en/explained/building.html">EN</a>
+      <a href="batiment.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <a href="index.html" class="terug">← Expliqué</a>
+      <span class="kicker">Le bâtiment</span>
+      <h1>Qui entretient votre chaudière, et c'était quand <em>la dernière fois ?</em></h1>
+      <p class="lead">Si vous ne pouvez répondre immédiatement à aucune de ces deux questions, vous êtes en bonne compagnie. Presque aucun hôtelier ne le peut, et ce n'est pas par négligence. C'est parce qu'un hôtel n'a pas un dossier de bâtiment mais une quinzaine, chacun avec son délai, sa firme et son papier.</p>
+    </div>
+    <div class="ph-side-illus">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- Gebouw met een klok ernaast: het gaat over termijnen, niet over techniek -->
+        <path d="M22,100 L22,34 L62,34 L62,100"/>
+        <line x1="14" y1="100" x2="106" y2="100"/>
+        <rect x="30" y="44" width="10" height="10"/>
+        <rect x="46" y="44" width="10" height="10"/>
+        <rect x="30" y="62" width="10" height="10"/>
+        <rect x="46" y="62" width="10" height="10"/>
+        <rect x="36" y="82" width="12" height="18"/>
+        <circle cx="86" cy="58" r="18"/>
+        <path d="M86,48 L86,58 L93,63"/>
+      </svg>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>Lecture 3 minutes</span> <span>Pour qui gère le bâtiment</span> <span>Vaut aussi sans rumo</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ARTIKEL ═══════════════════════ -->
+<section class="artikel">
+  <div class="artikel-inner fade-up">
+
+    <h2>Le problème n'est pas <em>le contrôle</em></h2>
+    <p>Le contrôle lui-même tourne rarement mal. Quelqu'un passe, contrôle, et en général tout est en ordre. C'est le papier qui suit qui coince : l'attestation qui devait arriver par mail plus tard et qui n'est jamais venue, ou qui dort dans une boîte que plus personne n'ouvre.</p>
+    <p>Posez-vous quatre questions par installation. Qui l'entretient. Qui la contrôle. C'était quand la dernière fois. Jusqu'à quand l'attestation actuelle est-elle valable. C'est gérable, jusqu'à ce que vous fassiez la liste de ce dont il s'agit : la chaudière, la basse tension, les dévidoirs, les extincteurs, les détecteurs, l'éclairage de secours, l'exutoire de fumée, l'ascenseur, la hotte, la porte de garage, les portes automatiques. Soixante questions, réparties sur une dizaine de firmes. <strong>Personne ne garde cela en tête.</strong></p>
+    <p>Ce qui complique encore : aucun délai ne suit le même rythme. L'un revient chaque année, l'autre tous les tant d'années, et savoir si c'est deux ou cinq dépend de l'appareil, du combustible et de la région. Demandez à un hôtelier quand l'analyse de risques de son ascenseur expire et vous obtenez une hésitation. Ce n'est pas une question idiote : c'est un délai qui revient si rarement qu'on ne le voit venir de nulle part.</p>
+
+    <div class="kader">
+      <p><strong>Pourquoi une date d'échéance n'est pas un jour mais un projet.</strong> Un contrôle qui expire la semaine prochaine ne se règle pas la semaine prochaine. Pour un contrôle basse tension, un électricien passe généralement d'abord réparer ce que le contrôle précédent avait relevé, et l'organisme de contrôle ensuite seulement. Deux agendas, deux délais.</p>
+      <p>Comptez donc à rebours. Celui qui ne voit sa date d'échéance qu'une fois arrivée n'est pas en retard d'un coup de fil. Il est en retard de six semaines.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="uitroep">
+  <div class="uitroep-inner fade-up">
+    <p>Le problème n'est pas le contrôle. C'est <em>le papier</em> qui suit.</p>
+    <span class="uitroep-bij">Ce que les pompiers demandent, c'est l'attestation</span>
+  </div>
+</section>
+
+<section class="artikel" style="padding-top:4rem">
+  <div class="artikel-inner fade-up">
+
+    <h2>Il y a quatre sortes de papiers, et on les <em>confond</em></h2>
+    <ul>
+      <li><strong>L'attestation de contrôle</strong> d'un organisme agréé. C'est le papier qu'un inspecteur veut voir.</li>
+      <li><strong>L'attestation d'entretien</strong> de la firme qui a fait le travail. C'est celle qui manque le plus souvent, pour une raison banale : le technicien repart et l'attestation doit suivre par mail. Ou pas.</li>
+      <li><strong>Ce que vous attestez vous-même.</strong> Vous pouvez en principe entretenir vous-même votre hotte de cuisine, mais vous devez alors aussi attester vous-même que vous l'avez fait. Qui l'ignore est en ordre dans les faits et pas en ordre sur le papier.</li>
+      <li><strong>Des pièces de dossier qui n'expirent pas.</strong> Votre schéma unifilaire, votre inventaire amiante, votre plan d'évacuation. Ils ne figurent sur aucun rappel et ne sont que demandés, en général au pire moment.</li>
+    </ul>
+
+    <h2>Et puis il y a ceux qui <em>circulent</em></h2>
+    <p>Un employeur externe a le droit de savoir quels risques existent sur votre site avant que ses gens ne commencent : où se trouve l'amiante, comment on évacue. Ce n'est pas de la politesse, c'est une obligation d'information qui vous incombe. Et cela va plus loin qu'une liste : qui a travaillé là, quand, sur quoi, et cet homme a-t-il reçu une clé qui ouvre toutes les chambres ? C'est la première question posée si quelque chose a disparu le lendemain.</p>
+    <p>À côté de cela courent des registres qui n'ont rien à voir avec les contrôles et que les gens oublient souvent : l'exercice d'évacuation, le registre des incidents, le registre des premiers secours, le registre des faits psychosociaux, le carnet de rinçage pour la légionelle.</p>
+
+    <h2>Qu'en faire</h2>
+    <p>Le piège est de croire que c'est un problème technique. C'est un <strong>problème de documents</strong>, et cela se résout comme tout problème de documents : un seul endroit, une date d'échéance par pièce, et un avertissement bien avant qu'il ne soit trop tard. Mettez aussi une date sur les installations dont vous ne la connaissez pas exactement, car une date estimée est surveillée et un champ vide jamais. Et notez qui entretient et qui contrôle comme deux noms distincts.</p>
+
+    <div class="artikel-slot">
+      <p>Dans rumo, c'est l'add-on Prévention : un registre de vos installations avec les dates d'échéance et les firmes derrière, vos attestations dans un coffre documentaire qui garde les versions au lieu d'écraser, des tâches récurrentes et des checklists à signer, les registres de sécurité ci-dessus, et un lien d'inscription avec code QR par lequel un entrepreneur s'enregistre lui-même et signe pour les informations du site qu'il a vues. Vous êtes averti trente, quatorze, sept et un jour avant l'expiration d'un document.</p>
+      <p>Ce qu'il ne fait expressément <em>pas</em> : rumo ne connaît pas le délai légal de votre installation. Ce que vous encodez comme date d'échéance est ce avec quoi il travaille, et vous la prenez sur l'attestation que vous avez en main. Les avertissements arrivent dans l'application, pas dans votre boîte mail.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Encore une chose comprise ?</span>
+    <h2>Nous préférons l'<em>expliquer</em><br>plutôt que de le vendre.</h2>
+    <p>Ce qui vient avec la gestion d'un hôtel : contrôles, allotements, commissions, formation. Nous avons dû le comprendre nous-mêmes et nous écrivons ce que nous avons trouvé.</p>
+    <a href="index.html" class="btn-paper">Tout ce que nous expliquons <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="../migration.html">Migration des données offerte</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="../features.html">Fonctionnalités</a></li>
+        <li><a href="../features.html#integraties">Intégrations</a></li>
+        <li><a href="../securite.html">Sécurité</a></li>
+        <li><a href="../tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="../kb.html">Centre d'aide</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="../ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="index.html">Expliqué</a></li>
+        <li><a href="../migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="../a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="../features.html#integraties">Booking.com</a></li>
+        <li><a href="../features.html#integraties">Airbnb</a></li>
+        <li><a href="../features.html#integraties">Exact Online</a></li>
+        <li><a href="../features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="../privacy.html">Confidentialité</a> · <a href="../cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

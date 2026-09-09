@@ -1,0 +1,74 @@
+1	Privacy voor hotelpersoneel · rumo
+2	Wat rumo bijhoudt van het hotelpersoneel dat de PMS gebruikt. Welke gegevens, waarom, hoe lang, en wat jij ermee kan doen.
+3	<a href="faq.html">FAQ</a>
+4	Privacy · Hotelpersoneel
+5	Wat wij van <em>jou</em> bijhouden.
+6	Voor het personeel dat in rumo werkt. Hier is rumo zelf de verantwoordelijke. Geen hotel-tussenstap, geen verwarrende rollen.
+7	Versie<br> <strong>17 mei 2026</strong>
+8	<span>AVG / GDPR</span> <span>Rumo BV als controller</span> <span>Belgisch recht</span>
+9	Laatst bijgewerkt · 17 mei 2026
+10	1. Eerst even kaderen
+11	Er zijn twee soorten gegevens in rumo. <strong>Gastgegevens</strong> (boekingen, ID-kaarten, facturen) horen bij het hotel, die uitleg staat op de <a href="privacy.html">algemene privacy-pagina</a>. Daar is het hotel verantwoordelijk en rumo verwerker.
+12	<strong>Personeelsgegevens</strong> zijn iets anders. Als jij als receptionist, manager of housekeeper inlogt op rumo, dan zijn we jouw account, je inloggeschiedenis en je acties aan het bijhouden. Daar is <strong>rumo zelf verwerkingsverantwoordelijke</strong>. Die rol kunnen we niet bij het hotel leggen, want het is onze software die de logs maakt en bewaart.
+13	Dit is de uitleg over dat tweede stuk.
+14	2. Wat we van je weten
+15	Je account
+16	Voornaam, achternaam en e-mailadres, gebruikt om in te loggen en je in de software te tonen
+17	Je rol in het hotel (admin, receptie, housekeeping, F&amp;B, ...), bepaalt wat je in rumo kan zien en doen
+18	Je wachtwoord (gehasht, nooit in klare tekst opgeslagen) en eventueel een tweede factor als die staat aan
+19	Optioneel: een profielfoto die je zelf hebt geüpload
+20	Hoe en wanneer je inlogt
+21	Voor elke inlog houden we bij:
+22	Tijdstip
+23	IP-adres
+24	Browser en besturingssysteem (de "user-agent")
+25	Dat staat in de <code style="font-family:'JetBrains Mono',monospace;font-size:0.85em;background:var(--sand);padding:0.1em 0.35em;border-radius:4px;">login_log</code> tabel en is nodig om verdachte aanmeldingen te detecteren. Bijvoorbeeld: iemand logt om 3u 's nachts in vanuit een ander land terwijl jij in Gent slaapt.
+26	Wat je doet in rumo
+27	<strong>Audit-logs</strong> op gevoelige acties: prijswijzigingen, betalingen valideren of charge'en, refunds, kredietnota's, gastregistratie. We bewaren wie wat wanneer gedaan heeft, plus de oude en de nieuwe waarde.
+28	<strong>Staff-messaging</strong>: berichten die je stuurt in interne kanalen of DMs, met eventuele bijlages.
+29	Een algemene activiteitenlog op het niveau van het hotel: wie heeft welke reservatie geopend, gewijzigd of geannuleerd.
+30	Support-contact
+31	E-mails die je naar <a href="mailto:hello@rumo.eu">hello@rumo.eu</a> of <a href="mailto:support@rumo.eu">support@rumo.eu</a> stuurt, plus onze antwoorden
+32	Eventuele schermafbeeldingen of voorbeelden die je meestuurt om een probleem te illustreren
+33	Wat we <em>niet</em> doen
+34	Geen toetsenaanslag-tracking, geen muis-heatmaps, geen session-replay
+35	Geen profilering op basis van je werkpatroon ("deze receptionist werkt langzaam")
+36	Geen verkoop van werknemersdata aan derden
+37	Geen tracking-pixels in onze e-mails om te zien of je ze opent
+38	3. Waarom we het hebben
+39	<strong>Uitvoering van de overeenkomst tussen rumo en jouw hotel.</strong> Je hebt een account omdat het hotel jou toegang geeft als personeelslid. Zonder accountgegevens kunnen we dat niet leveren.
+40	<strong>Gerechtvaardigd belang, beveiliging en accountabiliteit.</strong> Login-logs en audit-logs zijn er voor fraudepreventie (bv. iemand voert verdachte refunds in), voor incident-response (er gebeurt iets vreemds, we moeten kunnen reconstrueren), en voor het hotel zelf dat eigen personeel moet kunnen controleren waar nodig.
+41	<strong>Wettelijke verplichting.</strong> Audit-trails op financiële handelingen zijn vereist voor de boekhoudwetgeving en fraudebestrijding.
+42	<strong>Toestemming.</strong> Productupdates of nieuwsbrieven van rumo zelf, alleen als je daar expliciet ja op zegt, met intrekrecht.
+43	4. Met wie we delen
+44	Wij draaien rumo bij een handvol andere bedrijven. Allemaal binnen de EU of onder een geldig overdrachtsmechanisme. Allemaal met een verwerkersovereenkomst:
+45	<strong>Scaleway</strong> (FR), host de servers en de databank waar je gegevens op staan
+46	<strong>Brevo</strong> (FR), verstuurt transactionele e-mails zoals "iemand heeft je uitgenodigd", wachtwoord-reset, login-meldingen
+47	<strong>Mistral</strong> (FR, via Scaleway), als jouw hotel Rudy (de AI-assistent) gebruikt, dan kan jouw vraag aan Rudy en de context van je rol naar Mistral. Wordt niet gebruikt om de modellen te trainen.
+48	<strong>Niet</strong> bij Google, niet bij Microsoft, niet bij OpenAI, niet bij Meta. Geen Sentry-koppeling op dit moment. Op onze <em>website</em> rumo.eu staat wel een cookieloze bezoekersteller (Plausible, EU-gehost). Die telt alleen bezoeken aan de marketingpagina's en raakt de software waarin jij werkt niet aan: over jou als medewerker gaat daar niets doorheen. Zie <a href="cookies.html">Cookies</a>.
+49	5. Hoe lang we het bewaren
+50	<strong>Je account</strong>: zolang je een actieve gebruiker bent. Wordt je toegang ingetrokken door je hotel, dan zetten we het account op inactief; volledige verwijdering na 30 dagen tenzij wettelijke bewaarplicht (bv. financiële audit-trails).
+51	<strong>Login-logs</strong>: 90 dagen, daarna automatisch gewist. Lang genoeg om recente afwijkingen op te sporen, kort genoeg om geen jarenlange surveillance op te bouwen.
+52	<strong>Audit-logs op financiële handelingen</strong>: 7 jaar (BTW-wetboek). Niet anders dan voor papieren kasboeken.
+53	<strong>Staff-berichten</strong>: volgens de retentie-policy die het hotel zelf instelt (typisch 30-365 dagen, instelbaar per hotel).
+54	<strong>Support-correspondentie</strong>: twee jaar, daarna gewist tenzij er nog een lopende kwestie is.
+55	6. Wat jij kan doen
+56	Dezelfde zes rechten als elke EU-burger:
+57	<strong>Inzage</strong>: een kopie vragen van wat we van je hebben
+58	<strong>Correctie</strong>: fouten laten rechtzetten (typo in je naam, verkeerd e-mailadres)
+59	<strong>Verwijdering</strong>: vragen om alles te wissen, behalve wat we wettelijk moeten bijhouden
+60	<strong>Beperking</strong>: vragen om verwerking tijdelijk stop te zetten
+61	<strong>Overdraagbaarheid</strong>: een kopie krijgen in een herbruikbaar formaat (JSON/CSV)
+62	<strong>Bezwaar</strong>: verzet tegen verwerking op basis van gerechtvaardigd belang
+63	Voor accountzaken in rumo zelf: vraag eerst bij je hotelbeheerder. Die kan in Settings een hoop dingen voor jou aanpassen of jouw account verwijderen.
+64	Voor alles wat rumo zelf bewaart (login-logs, support-mails, etc.): stuur een mailtje naar <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>. We antwoorden binnen 30 dagen, meestal sneller.
+65	Niet tevreden? Klacht kan altijd bij de <a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">Gegevensbeschermingsautoriteit</a> in Brussel.
+66	7. Contact
+67	<strong>Rumo BV</strong><br> Gent, België<br> <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a> · <a href="mailto:hello@rumo.eu">hello@rumo.eu</a>
+68	<a href="https://wa.me/32485382828">WhatsApp</a>
+69	<a href="features.html#integraties">Booking.com</a>
+70	<a href="features.html#integraties">Airbnb</a>
+71	<a href="features.html#integraties">Exact Online</a>
+72	<a href="features.html#integraties">Peppol</a>
+73	<span>© 2026 Rumo · Gent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+74	Menu

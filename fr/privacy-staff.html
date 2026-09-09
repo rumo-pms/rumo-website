@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script src="../demo-form.js?v=2" defer></script>
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vie privée pour le personnel hôtelier · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Ce que rumo conserve sur le personnel hôtelier qui utilise le PMS. Quelles données, pourquoi, combien de temps, et ce que vous pouvez en faire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* ─── LEGAL PROSE ─── (identiek aan privacy.html / cookies.html) */
+  .legal {
+    background:var(--paper);
+    padding:4rem 0 6rem;
+  }
+  .legal-wrap {
+    max-width:740px;
+    margin:0 auto;
+    padding:0 2rem;
+  }
+  .legal h2 {
+    font-size:clamp(1.6rem, 3vw, 2.1rem);
+    margin-top:3rem;
+    margin-bottom:1rem;
+  }
+  .legal h2:first-of-type { margin-top:0; }
+  .legal h3 {
+    font-size:1.15rem;
+    font-family:'Inter', sans-serif;
+    font-weight:600;
+    letter-spacing:0;
+    color:var(--ink);
+    margin-top:1.75rem;
+    margin-bottom:0.5rem;
+    line-height:1.4;
+  }
+  .legal p {
+    font-size:1rem;
+    color:var(--ink-soft);
+    line-height:1.7;
+    max-width:none;
+    margin-bottom:1rem;
+  }
+  .legal ul {
+    margin:0.5rem 0 1.25rem;
+    padding-left:1.25rem;
+  }
+  .legal li {
+    font-size:1rem;
+    color:var(--ink-soft);
+    line-height:1.7;
+    margin-bottom:0.4rem;
+  }
+  .legal a {
+    color:var(--terra-dark);
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+  .legal a:hover { color:var(--ink); }
+  .legal strong { color:var(--ink); font-weight:600; }
+  .legal-meta {
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:2.5rem;
+    padding-bottom:1.5rem;
+    border-bottom:1px solid var(--line);
+  }
+  .legal-callout {
+    /* Stond op paper-panel, en dat verschilt nauwelijks van de pagina zelf.
+       Op een lap tekst van vier schermen hoog is dit het enige wat het oog
+       even vasthoudt, dus mag het ook echt te zien zijn. Wel binnen de warme
+       reeks: roze viel uit de huisstijl. */
+    background:var(--sand);
+    border:1px solid transparent;
+    border-radius:12px;
+    padding:1.25rem 1.5rem;
+    margin:1.5rem 0;
+  }
+  .legal-callout p:last-child { margin-bottom:0; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../privacy-staff.html">NL</a>
+      <a href="../en/privacy-staff.html">EN</a>
+      <a href="privacy-staff.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <span class="kicker">Vie privée · Personnel hôtelier</span>
+      <h1>Ce que nous conservons sur <em>vous</em>.</h1>
+      <p class="lead">Pour le personnel qui travaille dans rumo. Ici, c'est rumo lui-même qui est responsable du traitement. Pas d'hôtel intermédiaire, pas de rôles confus.</p>
+    </div>
+    <div class="page-header-side">
+      Version<br> <strong>17 mai 2026</strong>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>RGPD</span> <span>Rumo BV comme responsable</span> <span>Droit belge</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ LEGAL CONTENT ═══════════════════════ -->
+<section class="legal">
+  <div class="legal-wrap fade-up">
+
+    <div class="legal-meta">
+      Dernière mise à jour · 17 mai 2026
+    </div>
+
+    <h2>1. D'abord, le cadre</h2>
+    <p>
+      Il y a deux sortes de données dans rumo. Les <strong>données clients</strong> (réservations, cartes d'identité, factures) appartiennent à l'hôtel ; cette explication figure sur la <a href="privacy.html">page vie privée générale</a>. Là, l'hôtel est responsable du traitement et rumo sous-traitant.
+    </p>
+    <p>
+      Les <strong>données du personnel</strong>, c'est autre chose. Quand vous vous connectez à rumo comme réceptionniste, manager ou femme de chambre, nous conservons votre compte, votre historique de connexion et vos actions. Là, <strong>rumo est lui-même responsable du traitement</strong>. Nous ne pouvons pas confier ce rôle à l'hôtel, car c'est notre logiciel qui crée et conserve les journaux.
+    </p>
+    <p>
+      Ceci est l'explication de cette seconde partie.
+    </p>
+
+    <h2>2. Ce que nous savons de vous</h2>
+
+    <h3>Votre compte</h3>
+    <ul>
+      <li>Prénom, nom et adresse mail, utilisés pour vous connecter et vous afficher dans le logiciel</li>
+      <li>Votre rôle dans l'hôtel (admin, réception, housekeeping, F&amp;B, ...), qui détermine ce que vous pouvez voir et faire dans rumo</li>
+      <li>Votre mot de passe (haché, jamais conservé en clair) et éventuellement un deuxième facteur s'il est activé</li>
+      <li>En option : une photo de profil que vous avez téléversée vous-même</li>
+    </ul>
+
+    <h3>Comment et quand vous vous connectez</h3>
+    <p>Pour chaque connexion, nous conservons :</p>
+    <ul>
+      <li>L'heure</li>
+      <li>L'adresse IP</li>
+      <li>Le navigateur et le système d'exploitation (le « user-agent »)</li>
+    </ul>
+    <p>
+      Cela figure dans la table <code style="font-family:'JetBrains Mono',monospace;font-size:0.85em;background:var(--sand);padding:0.1em 0.35em;border-radius:4px;">login_log</code> et sert à détecter des connexions suspectes. Par exemple : quelqu'un se connecte à 3 h du matin depuis un autre pays alors que vous dormez à Gand.
+    </p>
+
+    <h3>Ce que vous faites dans rumo</h3>
+    <ul>
+      <li>Des <strong>journaux d'audit</strong> sur les actions sensibles : changements de prix, validation ou débit de paiements, remboursements, notes de crédit, enregistrement des clients. Nous conservons qui a fait quoi et quand, plus l'ancienne et la nouvelle valeur.</li>
+      <li>Le <strong>chat interne</strong> : les messages que vous envoyez dans les canaux internes ou en privé, avec leurs éventuelles pièces jointes.</li>
+      <li>Un journal d'activité général au niveau de l'hôtel : qui a ouvert, modifié ou annulé quelle réservation.</li>
+    </ul>
+
+    <h3>Contacts avec le support</h3>
+    <ul>
+      <li>Les mails que vous envoyez à <a href="mailto:hello@rumo.eu">hello@rumo.eu</a> ou <a href="mailto:support@rumo.eu">support@rumo.eu</a>, ainsi que nos réponses</li>
+      <li>Les captures d'écran ou exemples que vous joignez pour illustrer un problème</li>
+    </ul>
+
+    <h3>Ce que nous <em>ne</em> faisons <em>pas</em></h3>
+    <ul>
+      <li>Pas d'enregistrement des frappes, pas de cartes de chaleur de souris, pas de rejeu de session</li>
+      <li>Pas de profilage sur la base de votre rythme de travail (« cette réceptionniste est lente »)</li>
+      <li>Pas de vente de données de collaborateurs à des tiers</li>
+      <li>Pas de pixels de pistage dans nos mails pour voir si vous les ouvrez</li>
+    </ul>
+
+    <h2>3. Pourquoi nous les avons</h2>
+    <ul>
+      <li>
+        <strong>L'exécution du contrat entre rumo et votre hôtel.</strong> Vous avez un compte parce que l'hôtel vous donne accès en tant que membre du personnel. Sans données de compte, nous ne pouvons pas le fournir.
+      </li>
+      <li>
+        <strong>L'intérêt légitime, la sécurité et la traçabilité.</strong> Les journaux de connexion et d'audit servent à la prévention de la fraude (par ex. quelqu'un qui encode des remboursements suspects), à la réponse aux incidents (quelque chose d'étrange se produit et nous devons pouvoir reconstituer), et à l'hôtel lui-même, qui doit pouvoir contrôler son propre personnel là où c'est nécessaire.
+      </li>
+      <li>
+        <strong>Une obligation légale.</strong> Les pistes d'audit sur les opérations financières sont exigées par la législation comptable et la lutte contre la fraude.
+      </li>
+      <li>
+        <strong>Votre consentement.</strong> Les mises à jour produit ou newsletters de rumo lui-même, uniquement si vous dites explicitement oui, avec droit de retrait.
+      </li>
+    </ul>
+
+    <h2>4. Avec qui nous partageons</h2>
+    <p>
+      Nous faisons tourner rumo chez une poignée d'autres entreprises. Toutes dans l'UE ou sous un mécanisme de transfert valable. Toutes avec un accord de traitement :
+    </p>
+    <ul>
+      <li><strong>Scaleway</strong> (FR), héberge les serveurs et la base de données où se trouvent vos données</li>
+      <li><strong>Brevo</strong> (FR), envoie les mails transactionnels du type « quelqu'un vous a invité », réinitialisation de mot de passe, alertes de connexion</li>
+      <li><strong>Mistral</strong> (FR, via Scaleway) : si votre hôtel utilise Rudy (l'assistant IA), votre question à Rudy et le contexte de votre rôle peuvent aller chez Mistral. Non utilisé pour entraîner les modèles.</li>
+    </ul>
+    <p>
+      <strong>Pas</strong> chez Google, pas chez Microsoft, pas chez OpenAI, pas chez Meta. Aucune connexion Sentry à ce jour. Sur notre <em>site</em> rumo.eu se trouve bien un compteur de visites sans cookies (Plausible, hébergé dans l'UE). Il ne compte que les visites des pages marketing et ne touche pas au logiciel dans lequel vous travaillez : rien de vous en tant que collaborateur n'y passe. Voir <a href="cookies.html">Cookies</a>.
+    </p>
+
+    <h2>5. Combien de temps nous les conservons</h2>
+    <ul>
+      <li><strong>Votre compte</strong> : tant que vous êtes un utilisateur actif. Si votre accès est retiré par votre hôtel, nous mettons le compte en inactif ; suppression complète après 30 jours, sauf obligation légale de conservation (pistes d'audit financières, par exemple).</li>
+      <li><strong>Journaux de connexion</strong> : 90 jours, puis effacés automatiquement. Assez longtemps pour repérer des anomalies récentes, assez court pour ne pas construire des années de surveillance.</li>
+      <li><strong>Journaux d'audit sur les opérations financières</strong> : 7 ans (Code de la TVA). Pas différent des livres de caisse papier.</li>
+      <li><strong>Messages internes</strong> : selon la politique de conservation que l'hôtel règle lui-même (typiquement 30 à 365 jours, réglable par hôtel).</li>
+      <li><strong>Correspondance avec le support</strong> : deux ans, puis effacée sauf si une question est encore en cours.</li>
+    </ul>
+
+    <h2>6. Ce que vous pouvez faire</h2>
+    <p>Les mêmes six droits que tout citoyen de l'UE :</p>
+    <ul>
+      <li><strong>Accès</strong> : demander une copie de ce que nous avons sur vous</li>
+      <li><strong>Rectification</strong> : faire corriger des erreurs (une faute dans votre nom, une mauvaise adresse mail)</li>
+      <li><strong>Effacement</strong> : demander que tout soit effacé, sauf ce que nous devons légalement conserver</li>
+      <li><strong>Limitation</strong> : demander la suspension temporaire du traitement</li>
+      <li><strong>Portabilité</strong> : obtenir une copie dans un format réutilisable (JSON/CSV)</li>
+      <li><strong>Opposition</strong> : vous opposer à un traitement fondé sur l'intérêt légitime</li>
+    </ul>
+    <p>
+      Pour les questions de compte dans rumo même : adressez-vous d'abord à votre administrateur d'hôtel. Il peut adapter beaucoup de choses pour vous dans les paramètres, ou supprimer votre compte.
+    </p>
+    <p>
+      Pour tout ce que rumo conserve lui-même (journaux de connexion, mails de support, etc.) : envoyez un mail à <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>. Nous répondons dans les 30 jours, en général plus vite.
+    </p>
+    <p>
+      Pas satisfait ? Une plainte est toujours possible auprès de l'<a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank" rel="noopener noreferrer">Autorité de protection des données</a> à Bruxelles.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+      <strong>Rumo BV</strong><br> Gand, Belgique<br> <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a> · <a href="mailto:hello@rumo.eu">hello@rumo.eu</a>
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

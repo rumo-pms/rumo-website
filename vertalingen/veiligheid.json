@@ -1,0 +1,622 @@
+{
+  "Veiligheid &amp; privacy · rumo": {
+    "en": "Security &amp; privacy · rumo",
+    "fr": "Sécurité &amp; vie privée · rumo"
+  },
+  "Passkeys, afgeschermde gastgegevens, alarm bij ongewoon leesgedrag, lokvogels, en een incidentdossier dat de melding aan de Gegevensbeschermingsautoriteit voor je klaarzet. Inbegrepen, geen add-on.": {
+    "en": "Passkeys, shielded guest data, an alarm on unusual reading behaviour, decoys, and an incident file that prepares the notification to the data protection authority for you. Included, not an add-on.",
+    "fr": "Passkeys, données clients masquées, alerte en cas de lecture inhabituelle, leurres, et un dossier d'incident qui prépare pour vous la notification à l'Autorité de protection des données. Compris, pas un add-on."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "Veiligheid &amp; privacy": {
+    "en": "Security &amp; privacy",
+    "fr": "Sécurité &amp; vie privée"
+  },
+  "Inbegrepen · geen add-on": {
+    "en": "Included · not an add-on",
+    "fr": "Compris · pas un add-on"
+  },
+  "Wie kan er aan <em>je gastenlijst</em>?": {
+    "en": "Who can get at <em>your guest list</em>?",
+    "fr": "Qui peut accéder à <em>votre liste de clients</em> ?"
+  },
+  "De meeste software gaat ervan uit dat wie binnen is, er ook hoort. rumo niet. Je logt in met je vinger, je ziet standaard geen gastgegevens, en voor er geld of een gebruiker beweegt moet je opnieuw bevestigen dat jij het bent.": {
+    "en": "Most software assumes that whoever is inside belongs there. rumo does not. You log in with your finger, you see no guest data by default, and before money or a user moves you have to confirm again that it is you.",
+    "fr": "La plupart des logiciels partent du principe que celui qui est entré a le droit d'y être. Pas rumo. Vous vous connectez avec votre doigt, vous ne voyez par défaut aucune donnée client, et avant qu'un montant ou un utilisateur ne bouge, vous devez confirmer à nouveau que c'est bien vous."
+  },
+  "Loopt er toch iets mis, dan ligt de brief aan je gasten en de melding aan de overheid klaar voor jij goed en wel begonnen bent met zoeken.": {
+    "en": "If something does go wrong, the letter to your guests and the notification to the authorities are ready before you have properly started looking.",
+    "fr": "Si quelque chose tourne mal malgré tout, la lettre à vos clients et la notification aux autorités sont prêtes avant même que vous ayez vraiment commencé à chercher."
+  },
+  "Inloggen met je vinger": {
+    "en": "Log in with your finger",
+    "fr": "Se connecter avec son doigt"
+  },
+  "Alarm bij ongewoon gedrag": {
+    "en": "Alarm on unusual behaviour",
+    "fr": "Alerte en cas de comportement inhabituel"
+  },
+  "Melding klaar binnen 72 uur": {
+    "en": "Notification ready within 72 hours",
+    "fr": "Notification prête en 72 heures"
+  },
+  "Meldingen": {
+    "en": "Notifications",
+    "fr": "Notifications"
+  },
+  "Vandaag": {
+    "en": "Today",
+    "fr": "Aujourd'hui"
+  },
+  "<strong>Ongewoon veel reservaties geopend</strong> <span>Nathalie · 10 minuten · receptie-account</span>": {
+    "en": "<strong>Unusually many reservations opened</strong> <span>Nathalie · 10 minutes · reception account</span>",
+    "fr": "<strong>Un nombre inhabituel de réservations ouvertes</strong> <span>Nathalie · 10 minutes · compte réception</span>"
+  },
+  "<strong>Iemand zit reservatienummers te raden</strong> <span>Lokvogel getoond · account bekijken</span>": {
+    "en": "<strong>Someone is guessing reservation numbers</strong> <span>Decoy shown · review account</span>",
+    "fr": "<strong>Quelqu'un devine des numéros de réservation</strong> <span>Leurre affiché · examiner le compte</span>"
+  },
+  "<strong>Terugbetaling bevestigd met passkey</strong> <span>€ 240,00 · Tom · 14:02</span>": {
+    "en": "<strong>Refund confirmed with a passkey</strong> <span>€ 240,00 · Tom · 14:02</span>",
+    "fr": "<strong>Remboursement confirmé par passkey</strong> <span>€ 240,00 · Tom · 14:02</span>"
+  },
+  "<strong>Slapend account uitgezet</strong> <span>Laatste login · 94 dagen geleden</span>": {
+    "en": "<strong>Dormant account switched off</strong> <span>Last login · 94 days ago</span>",
+    "fr": "<strong>Compte dormant désactivé</strong> <span>Dernière connexion · il y a 94 jours</span>"
+  },
+  "De voordeur": {
+    "en": "The front door",
+    "fr": "La porte d'entrée"
+  },
+  "Een wachtwoord alleen is <em>geen slot</em>.": {
+    "en": "A password alone is <em>not a lock</em>.",
+    "fr": "Un mot de passe seul <em>n'est pas une serrure</em>."
+  },
+  "rumo werkt met passkeys: je bevestigt met je vinger, je gezicht of de code van je eigen toestel. Er is niets om af te kijken en niets om te hergebruiken.": {
+    "en": "rumo works with passkeys: you confirm with your finger, your face or the code of your own device. There is nothing to look over your shoulder at and nothing to reuse.",
+    "fr": "rumo fonctionne avec des passkeys : vous confirmez avec votre doigt, votre visage ou le code de votre propre appareil. Il n'y a rien à observer par-dessus l'épaule et rien à réutiliser."
+  },
+  "<em>Tweede factor verplicht</em> voor iedereen, ook via Google of Microsoft": {
+    "en": "<em>Second factor compulsory</em> for everyone, through Google or Microsoft too",
+    "fr": "<em>Deuxième facteur obligatoire</em> pour tout le monde, via Google ou Microsoft également"
+  },
+  "<em>Automatisch afmelden</em> na een tijd niks doen. Een half uur is het maximum": {
+    "en": "<em>Automatic sign-out</em> after a while of doing nothing. Half an hour is the maximum",
+    "fr": "<em>Déconnexion automatique</em> après un moment d'inactivité. Une demi-heure au maximum"
+  },
+  "<em>Slapende accounts</em> gaan vanzelf uit na 90 dagen. De stagiair van vorige zomer heeft dus geen sleutel meer": {
+    "en": "<em>Dormant accounts</em> switch off by themselves after 90 days. So last summer's intern no longer has a key",
+    "fr": "<em>Les comptes dormants</em> s'éteignent d'eux-mêmes après 90 jours. Le stagiaire de l'été dernier n'a donc plus de clé"
+  },
+  "Gebruikers": {
+    "en": "Users",
+    "fr": "Utilisateurs"
+  },
+  "7 personen": {
+    "en": "7 people",
+    "fr": "7 personnes"
+  },
+  "Nathalie · receptie": {
+    "en": "Nathalie · reception",
+    "fr": "Nathalie · réception"
+  },
+  "Passkey · vinger of gezicht": {
+    "en": "Passkey · finger or face",
+    "fr": "Passkey · doigt ou visage"
+  },
+  "In orde": {
+    "en": "In order",
+    "fr": "En ordre"
+  },
+  "Tom · manager": {
+    "en": "Tom · manager",
+    "fr": "Tom · manager"
+  },
+  "Wachtwoord · tweede factor gevraagd": {
+    "en": "Password · second factor requested",
+    "fr": "Mot de passe · deuxième facteur demandé"
+  },
+  "Bijna": {
+    "en": "Almost",
+    "fr": "Presque"
+  },
+  "Jonas · student": {
+    "en": "Jonas · student",
+    "fr": "Jonas · étudiant"
+  },
+  "94 dagen niet ingelogd": {
+    "en": "94 days without logging in",
+    "fr": "94 jours sans connexion"
+  },
+  "Uitgezet": {
+    "en": "Switched off",
+    "fr": "Désactivé"
+  },
+  "Als er tóch iemand binnen is": {
+    "en": "If someone does get in",
+    "fr": "Si quelqu'un entre malgré tout"
+  },
+  "Het echte werk begint <em>daarna</em>.": {
+    "en": "The real work starts <em>after that</em>.",
+    "fr": "Le vrai travail commence <em>après</em>."
+  },
+  "Een gestolen account ziet er van buitenaf uit als een gewone collega. Dus kijkt rumo niet naar wie er inlogt, maar naar wat die persoon doet.": {
+    "en": "A stolen account looks from the outside like an ordinary colleague. So rumo does not look at who logs in, but at what that person does.",
+    "fr": "Un compte volé ressemble de l'extérieur à un collègue ordinaire. rumo ne regarde donc pas qui se connecte, mais ce que cette personne fait."
+  },
+  "<em>Leesalarm</em> bij ongewoon veel gasten openen in korte tijd. Waar de grens ligt zetten wij, niet het hotel": {
+    "en": "<em>Reading alarm</em> when unusually many guests are opened in a short time. Where the limit lies is set by us, not by the hotel",
+    "fr": "<em>Alerte de lecture</em> quand un nombre inhabituel de clients est ouvert en peu de temps. C'est nous qui fixons la limite, pas l'hôtel"
+  },
+  "<em>Lokvogels:</em> wie reservatienummers zit te raden, botst op een verzonnen reservatie. Wie ze opent, verraadt zichzelf": {
+    "en": "<em>Decoys:</em> whoever sits guessing reservation numbers runs into a made-up reservation. Open it and you give yourself away",
+    "fr": "<em>Leurres :</em> celui qui devine des numéros de réservation tombe sur une réservation inventée. Qui l'ouvre se trahit"
+  },
+  "<em>Vinger op de knop</em> bij geld en bij mensen: terugbetalingen, rollen, exports": {
+    "en": "<em>Finger on the button</em> for money and for people: refunds, roles, exports",
+    "fr": "<em>Le doigt sur le bouton</em> pour l'argent et pour les personnes : remboursements, rôles, exports"
+  },
+  "Beveiligingsalarmen": {
+    "en": "Security alarms",
+    "fr": "Alertes de sécurité"
+  },
+  "Laatste 7 dagen": {
+    "en": "Last 7 days",
+    "fr": "7 derniers jours"
+  },
+  "<strong>Veel profielen geopend in korte tijd</strong> <span>Account receptie 2 · dinsdag 03:41</span>": {
+    "en": "<strong>Many profiles opened in a short time</strong> <span>Reception account 2 · Tuesday 03:41</span>",
+    "fr": "<strong>Beaucoup de profils ouverts en peu de temps</strong> <span>Compte réception 2 · mardi 03:41</span>"
+  },
+  "<strong>Lokvogel getoond</strong> <span>Na 3 onbestaande reservatienummers</span>": {
+    "en": "<strong>Decoy shown</strong> <span>After 3 non-existent reservation numbers</span>",
+    "fr": "<strong>Leurre affiché</strong> <span>Après 3 numéros de réservation inexistants</span>"
+  },
+  "<strong>Terugbetaling geweigerd</strong> <span>Passkey niet bevestigd · niets uitgevoerd</span>": {
+    "en": "<strong>Refund refused</strong> <span>Passkey not confirmed · nothing carried out</span>",
+    "fr": "<strong>Remboursement refusé</strong> <span>Passkey non confirmée · rien n'a été exécuté</span>"
+  },
+  "Gastgegevens": {
+    "en": "Guest data",
+    "fr": "Données clients"
+  },
+  "Housekeeping heeft geen <em>telefoonnummers</em> nodig.": {
+    "en": "Housekeeping does not need <em>phone numbers</em>.",
+    "fr": "Le housekeeping n'a pas besoin des <em>numéros de téléphone</em>."
+  },
+  "E-mailadressen, telefoonnummers, geboortedatums: die staan standaard afgeschermd. Niet enkel op je scherm, ook onderweg ernaartoe.": {
+    "en": "Email addresses, phone numbers, dates of birth: those are shielded by default. Not only on your screen, but on the way there too.",
+    "fr": "Adresses mail, numéros de téléphone, dates de naissance : ils sont masqués par défaut. Pas seulement à l'écran, mais aussi sur le chemin."
+  },
+  "Per veld open te klikken, en elk openklikken wordt gelogd met naam en tijdstip": {
+    "en": "Openable per field, and every opening is logged with a name and a time",
+    "fr": "À ouvrir champ par champ, et chaque ouverture est journalisée avec un nom et une heure"
+  },
+  "Housekeeping en F&amp;B krijgen ze helemaal niet toegestuurd": {
+    "en": "Housekeeping and F&amp;B are not sent them at all",
+    "fr": "Le housekeeping et le F&amp;B ne les reçoivent tout simplement pas"
+  },
+  "Een gast mailen doet de server. Jouw scherm heeft dat adres nooit nodig": {
+    "en": "Mailing a guest is done by the server. Your screen never needs that address",
+    "fr": "C'est le serveur qui envoie le mail au client. Votre écran n'a jamais besoin de cette adresse"
+  },
+  "Reservatie · BK-4821": {
+    "en": "Reservation · BK-4821",
+    "fr": "Réservation · BK-4821"
+  },
+  "Receptie": {
+    "en": "Reception",
+    "fr": "Réception"
+  },
+  "<span class=\"lbl\">Naam</span> <span class=\"val\">Marie Dubois</span> <span class=\"tag\">Zichtbaar</span>": {
+    "en": "<span class=\"lbl\">Name</span> <span class=\"val\">Marie Dubois</span> <span class=\"tag\">Visible</span>",
+    "fr": "<span class=\"lbl\">Nom</span> <span class=\"val\">Marie Dubois</span> <span class=\"tag\">Visible</span>"
+  },
+  "<span class=\"lbl\">E-mail</span> <span class=\"val hid\">m•••@•••.be</span> <span class=\"tag\">Verborgen</span>": {
+    "en": "<span class=\"lbl\">Email</span> <span class=\"val hid\">m•••@•••.be</span> <span class=\"tag\">Hidden</span>",
+    "fr": "<span class=\"lbl\">E-mail</span> <span class=\"val hid\">m•••@•••.be</span> <span class=\"tag\">Masqué</span>"
+  },
+  "<span class=\"lbl\">Telefoon</span> <span class=\"val\">+32 470 12 34 56</span> <span class=\"tag open\">Getoond · gelogd</span>": {
+    "en": "<span class=\"lbl\">Phone</span> <span class=\"val\">+32 470 12 34 56</span> <span class=\"tag open\">Shown · logged</span>",
+    "fr": "<span class=\"lbl\">Téléphone</span> <span class=\"val\">+32 470 12 34 56</span> <span class=\"tag open\">Affiché · journalisé</span>"
+  },
+  "<span class=\"lbl\">Geboorte</span> <span class=\"val hid\">••/••/••••</span> <span class=\"tag\">Verborgen</span>": {
+    "en": "<span class=\"lbl\">Birth</span> <span class=\"val hid\">••/••/••••</span> <span class=\"tag\">Hidden</span>",
+    "fr": "<span class=\"lbl\">Naissance</span> <span class=\"val hid\">••/••/••••</span> <span class=\"tag\">Masquée</span>"
+  },
+  "<span class=\"lbl\">Identiteit</span> <span class=\"val hid\">niet meegestuurd</span> <span class=\"tag nooit\">Housekeeping</span>": {
+    "en": "<span class=\"lbl\">Identity</span> <span class=\"val hid\">not sent along</span> <span class=\"tag nooit\">Housekeeping</span>",
+    "fr": "<span class=\"lbl\">Identité</span> <span class=\"val hid\">non transmise</span> <span class=\"tag nooit\">Housekeeping</span>"
+  },
+  "14:06 · Tom toonde het telefoonnummer van Marie Dubois": {
+    "en": "14:06 · Tom showed Marie Dubois's phone number",
+    "fr": "14:06 · Tom a affiché le numéro de téléphone de Marie Dubois"
+  },
+  "Het logboek": {
+    "en": "The log",
+    "fr": "Le journal"
+  },
+  "Wie heeft dat <em>opengedaan</em>?": {
+    "en": "Who opened <em>that</em>?",
+    "fr": "Qui a <em>ouvert</em> cela ?"
+  },
+  "Elke login, elke export, elk opengeklikt telefoonnummer, elk alarm en elke euro die beweegt: het staat erin. Doorzoekbaar op tekst, type, persoon en datum.": {
+    "en": "Every login, every export, every phone number clicked open, every alarm and every euro that moves: it is in there. Searchable by text, type, person and date.",
+    "fr": "Chaque connexion, chaque export, chaque numéro de téléphone ouvert, chaque alerte et chaque euro qui bouge : tout y figure. Consultable par texte, par type, par personne et par date."
+  },
+  "Exporteren vraagt zelf ook je passkey, en komt daarna zelf in het logboek": {
+    "en": "Exporting asks for your passkey too, and then lands in the log itself",
+    "fr": "L'export demande lui aussi votre passkey, et atterrit ensuite dans le journal"
+  },
+  "Jij bepaalt hoelang alles blijft staan. Ook het opkuisen laat een spoor na": {
+    "en": "You decide how long everything stays. The clean-up leaves a trail as well",
+    "fr": "C'est vous qui décidez combien de temps tout reste. Le nettoyage laisse lui aussi une trace"
+  },
+  "Logboek": {
+    "en": "Log",
+    "fr": "Journal"
+  },
+  "Filter · gastgegevens": {
+    "en": "Filter · guest data",
+    "fr": "Filtre · données clients"
+  },
+  "Telefoonnummer getoond": {
+    "en": "Phone number shown",
+    "fr": "Numéro de téléphone affiché"
+  },
+  "Tom · vandaag 14:06": {
+    "en": "Tom · today 14:06",
+    "fr": "Tom · aujourd'hui 14:06"
+  },
+  "Reservatie BK-4821 · gast Marie Dubois": {
+    "en": "Reservation BK-4821 · guest Marie Dubois",
+    "fr": "Réservation BK-4821 · cliente Marie Dubois"
+  },
+  "Export van reservaties": {
+    "en": "Export of reservations",
+    "fr": "Export de réservations"
+  },
+  "Nathalie · gisteren 17:22": {
+    "en": "Nathalie · yesterday 17:22",
+    "fr": "Nathalie · hier 17:22"
+  },
+  "412 regels · CSV · bevestigd met passkey": {
+    "en": "412 rows · CSV · confirmed with a passkey",
+    "fr": "412 lignes · CSV · confirmé par passkey"
+  },
+  "Rol gewijzigd": {
+    "en": "Role changed",
+    "fr": "Rôle modifié"
+  },
+  "Jeffrey · maandag 09:04": {
+    "en": "Jeffrey · Monday 09:04",
+    "fr": "Jeffrey · lundi 09:04"
+  },
+  "Tom kreeg manager-rechten · bevestigd met passkey": {
+    "en": "Tom was given manager rights · confirmed with a passkey",
+    "fr": "Tom a reçu les droits de manager · confirmé par passkey"
+  },
+  "En wij dan?": {
+    "en": "And what about us?",
+    "fr": "Et nous alors ?"
+  },
+  "Kunnen wij zelf in <em>jouw hotel</em> kijken?": {
+    "en": "Can we look inside <em>your hotel</em>?",
+    "fr": "Pouvons-nous regarder dans <em>votre hôtel</em> ?"
+  },
+  "Terechte vraag, want een leverancier die stilletjes overal bij kan is precies waar je bang voor moet zijn. Het antwoord: alleen als jij het vraagt, en alleen om te kijken.": {
+    "en": "Fair question, because a supplier who can quietly get at everything is exactly what you should be afraid of. The answer: only if you ask, and only to look.",
+    "fr": "Question légitime, car un fournisseur qui peut accéder discrètement à tout est exactement ce dont il faut se méfier. La réponse : uniquement si vous le demandez, et uniquement pour regarder."
+  },
+  "<em>Per vraag, niet per hotel.</em> De toestemming hangt aan één supportgesprek en eindigt daarmee": {
+    "en": "<em>Per question, not per hotel.</em> The permission hangs on one support conversation and ends with it",
+    "fr": "<em>Par question, pas par hôtel.</em> L'autorisation est liée à une seule conversation de support et se termine avec elle"
+  },
+  "<em>Kijken, niet aanraken.</em> Wij kunnen niets opslaan, wijzigen of verwijderen": {
+    "en": "<em>Look, do not touch.</em> We cannot save, change or delete anything",
+    "fr": "<em>Regarder, pas toucher.</em> Nous ne pouvons rien enregistrer, modifier ni supprimer"
+  },
+  "<em>Niemands account geleend.</em> In jouw logboek staat wie er bij óns keek, met naam": {
+    "en": "<em>Nobody's account borrowed.</em> Your log shows who at our end looked, by name",
+    "fr": "<em>Le compte de personne n'est emprunté.</em> Votre journal indique qui, chez nous, a regardé, avec son nom"
+  },
+  "Intrekken werkt bij de eerstvolgende klik, niet morgen": {
+    "en": "Withdrawing works on the very next click, not tomorrow",
+    "fr": "Le retrait prend effet au clic suivant, pas demain"
+  },
+  "Filter · rumo keek mee": {
+    "en": "Filter · rumo looked along",
+    "fr": "Filtre · rumo a regardé"
+  },
+  "Toestemming gegeven": {
+    "en": "Permission given",
+    "fr": "Autorisation donnée"
+  },
+  "Jeffrey · dinsdag 10:12": {
+    "en": "Jeffrey · Tuesday 10:12",
+    "fr": "Jeffrey · mardi 10:12"
+  },
+  "Vraag \"factuur toont verkeerde btw\" · alleen dit gesprek": {
+    "en": "Question \"invoice shows the wrong VAT\" · this conversation only",
+    "fr": "Question « la facture affiche la mauvaise TVA » · cette conversation uniquement"
+  },
+  "Seba (rumo) bekeek Facturatie": {
+    "en": "Seba (rumo) viewed Invoicing",
+    "fr": "Seba (rumo) a consulté Facturation"
+  },
+  "dinsdag 10:19": {
+    "en": "Tuesday 10:19",
+    "fr": "mardi 10:19"
+  },
+  "Alleen lezen · eigen account, geen geleende login": {
+    "en": "Read only · own account, no borrowed login",
+    "fr": "Lecture seule · compte propre, pas de login emprunté"
+  },
+  "Toestemming vervallen": {
+    "en": "Permission expired",
+    "fr": "Autorisation expirée"
+  },
+  "dinsdag 11:04": {
+    "en": "Tuesday 11:04",
+    "fr": "mardi 11:04"
+  },
+  "Vraag afgesloten · toegang meteen weg": {
+    "en": "Question closed · access gone at once",
+    "fr": "Question clôturée · accès retiré aussitôt"
+  },
+  "Als het toch misloopt": {
+    "en": "If it does go wrong",
+    "fr": "Si cela tourne mal quand même"
+  },
+  "72 uur. Dat is <em>de hele marge</em>.": {
+    "en": "72 hours. That is <em>the whole margin</em>.",
+    "fr": "72 heures. C'est <em>toute la marge</em>."
+  },
+  "Loopt er iets fout met gastgegevens, dan geeft de wet je 72 uur om het te melden. Die klok begint te lopen op het moment dat je het weet, niet wanneer je klaar bent met uitzoeken.": {
+    "en": "If something goes wrong with guest data, the law gives you 72 hours to report it. That clock starts the moment you know, not when you have finished working it out.",
+    "fr": "Si quelque chose tourne mal avec des données clients, la loi vous donne 72 heures pour le déclarer. Cette horloge démarre au moment où vous le savez, pas quand vous avez fini d'enquêter."
+  },
+  "<em>De lijst:</em> rumo zet klaar wie er in die periode bij jou verbleef": {
+    "en": "<em>The list:</em> rumo lines up who was staying with you in that period",
+    "fr": "<em>La liste :</em> rumo rassemble qui séjournait chez vous pendant cette période"
+  },
+  "<em>De waarschuwing:</em> één knop mailt die gasten, elk in zijn eigen taal, vanuit jouw hotel": {
+    "en": "<em>The warning:</em> one button mails those guests, each in their own language, from your hotel",
+    "fr": "<em>L'avertissement :</em> un bouton envoie un mail à ces clients, chacun dans sa langue, depuis votre hôtel"
+  },
+  "<em>De bank:</em> een brief op jouw briefpapier voor wie geld kwijt is": {
+    "en": "<em>The bank:</em> a letter on your letterhead for anyone who has lost money",
+    "fr": "<em>La banque :</em> une lettre à votre en-tête pour ceux qui ont perdu de l'argent"
+  },
+  "<em>De melding:</em> het formulier van artikel 33, ingevuld met wat er in het dossier staat": {
+    "en": "<em>The notification:</em> the article 33 form, filled in with what the file holds",
+    "fr": "<em>La notification :</em> le formulaire de l'article 33, rempli avec ce que contient le dossier"
+  },
+  "De klok van 72 uur staat er de hele tijd bij, en telt af.": {
+    "en": "The 72-hour clock is there the whole time, counting down.",
+    "fr": "L'horloge des 72 heures est affichée en permanence, et elle décompte."
+  },
+  "Incident · phishing januari": {
+    "en": "Incident · phishing January",
+    "fr": "Incident · phishing janvier"
+  },
+  "Open": {
+    "en": "Open",
+    "fr": "Ouvert"
+  },
+  "Getroffen gasten verzameld": {
+    "en": "Affected guests collected",
+    "fr": "Clients concernés rassemblés"
+  },
+  "Waarschuwing verstuurd": {
+    "en": "Warning sent",
+    "fr": "Avertissement envoyé"
+  },
+  "128 · 3 talen": {
+    "en": "128 · 3 languages",
+    "fr": "128 · 3 langues"
+  },
+  "Brief voor de bank": {
+    "en": "Letter for the bank",
+    "fr": "Lettre pour la banque"
+  },
+  "4 gasten": {
+    "en": "4 guests",
+    "fr": "4 clients"
+  },
+  "Melding GBA · ontwerp klaar": {
+    "en": "Notification DPA · draft ready",
+    "fr": "Notification APD · projet prêt"
+  },
+  "nazien": {
+    "en": "review",
+    "fr": "à relire"
+  },
+  "Nog 61 uur binnen de meldingstermijn": {
+    "en": "61 hours left within the notification period",
+    "fr": "Encore 61 heures dans le délai de notification"
+  },
+  "Onder de motorkap": {
+    "en": "Under the bonnet",
+    "fr": "Sous le capot"
+  },
+  "De dingen die je <em>nooit ziet</em>.": {
+    "en": "The things you <em>never see</em>.",
+    "fr": "Les choses que vous <em>ne voyez jamais</em>."
+  },
+  "Kort, want hier wordt niemand vrolijk van. Maar het is wel het stuk waar het bij anderen meestal misgaat.": {
+    "en": "Briefly, because nobody gets cheerful from this. But it is the part where things usually go wrong elsewhere.",
+    "fr": "Ce sera bref, parce que cela ne réjouit personne. Mais c'est la partie où, ailleurs, cela se passe généralement mal."
+  },
+  "De gegevens van jouw hotel staan gescheiden van die van elk ander hotel": {
+    "en": "Your hotel's data is kept separate from every other hotel's",
+    "fr": "Les données de votre hôtel sont séparées de celles de tout autre hôtel"
+  },
+  "Je data staat in Europa en blijft in Europa": {
+    "en": "Your data sits in Europe and stays in Europe",
+    "fr": "Vos données sont en Europe et restent en Europe"
+  },
+  "Kaartnummers komen onze database niet binnen. Alleen type, vervaldatum en de laatste vier cijfers": {
+    "en": "Card numbers never enter our database. Only the type, the expiry date and the last four digits",
+    "fr": "Les numéros de carte n'entrent pas dans notre base de données. Seulement le type, la date d'expiration et les quatre derniers chiffres"
+  },
+  "Alles wat van buiten binnenkomt wordt op handtekening gecontroleerd": {
+    "en": "Everything coming in from outside is checked on its signature",
+    "fr": "Tout ce qui arrive de l'extérieur est vérifié sur sa signature"
+  },
+  "Elke link naar het guest portal geldt voor één boeking": {
+    "en": "Every link to the guest portal is valid for one booking",
+    "fr": "Chaque lien vers le portail client vaut pour une seule réservation"
+  },
+  "Fundament": {
+    "en": "Foundation",
+    "fr": "Fondations"
+  },
+  "Altijd aan": {
+    "en": "Always on",
+    "fr": "Toujours actif"
+  },
+  "Gescheiden per hotel": {
+    "en": "Separated per hotel",
+    "fr": "Séparé par hôtel"
+  },
+  "Jouw gegevens apart van de rest": {
+    "en": "Your data apart from the rest",
+    "fr": "Vos données à part du reste"
+  },
+  "Actief": {
+    "en": "Active",
+    "fr": "Actif"
+  },
+  "Data in Europa": {
+    "en": "Data in Europe",
+    "fr": "Données en Europe"
+  },
+  "Hosting binnen de EU": {
+    "en": "Hosting inside the EU",
+    "fr": "Hébergement dans l'UE"
+  },
+  "Handtekening op elk bericht": {
+    "en": "A signature on every message",
+    "fr": "Une signature sur chaque message"
+  },
+  "Geheim vervangt zich dagelijks": {
+    "en": "The secret replaces itself daily",
+    "fr": "Le secret se remplace chaque jour"
+  },
+  "Even eerlijk": {
+    "en": "Honestly now",
+    "fr": "Soyons honnêtes"
+  },
+  "Wat we <em>niet</em> beweren.": {
+    "en": "What we do <em>not</em> claim.",
+    "fr": "Ce que nous <em>ne</em> prétendons pas."
+  },
+  "Een pagina over veiligheid waar alleen goed nieuws op staat, is geen pagina over veiligheid.": {
+    "en": "A page about security with only good news on it is not a page about security.",
+    "fr": "Une page sur la sécurité où il n'y a que de bonnes nouvelles n'est pas une page sur la sécurité."
+  },
+  "We hangen geen ISO-certificaat aan de muur. We hebben er geen. Heb jij er een nodig van je verzekeraar of je keten, zeg het, dan praten we erover in plaats van er een logo voor te kopen.": {
+    "en": "We do not hang an ISO certificate on the wall. We do not have one. Do you need one from your insurer or your chain? Say so and we will talk about it, rather than buying a logo for it.",
+    "fr": "Nous n'accrochons pas de certificat ISO au mur. Nous n'en avons pas. Il vous en faut un pour votre assureur ou votre chaîne ? Dites-le et nous en parlerons, plutôt que d'acheter un logo."
+  },
+  "We kunnen niet beloven dat niemand van je team ooit nog op een foute link klikt. Dat kan niemand. Wij zorgen dat het daarna zo weinig mogelijk oplevert.": {
+    "en": "We cannot promise that nobody on your team will ever click a bad link again. Nobody can. What we do is make sure it yields as little as possible afterwards.",
+    "fr": "Nous ne pouvons pas promettre que personne dans votre équipe ne cliquera plus jamais sur un mauvais lien. Personne ne le peut. Ce que nous faisons, c'est veiller à ce que cela rapporte le moins possible ensuite."
+  },
+  "De alarmen zijn struikeldraden, geen sloten. Ze houden niets tegen, ze maken lawaai en schrijven mee. Dat is bewust: een slot dat te streng staat, zet iemand op een drukke zaterdag gewoon af.": {
+    "en": "The alarms are tripwires, not locks. They stop nothing; they make noise and write things down. That is deliberate: a lock set too strictly simply blocks someone on a busy Saturday.",
+    "fr": "Les alertes sont des fils tendus, pas des serrures. Elles n'arrêtent rien : elles font du bruit et prennent note. C'est voulu : une serrure trop stricte bloque simplement quelqu'un un samedi chargé."
+  },
+  "En wat je bij ons opslaat blijft van jou. Ga je ooit weg, dan krijg je alles mee in een export. Zonder dat je daarvoor moet bellen.": {
+    "en": "And what you store with us stays yours. If you ever leave, you take everything with you in an export. Without having to ring anyone for it.",
+    "fr": "Et ce que vous stockez chez nous reste à vous. Si vous partez un jour, vous emportez tout dans un export. Sans devoir téléphoner pour l'obtenir."
+  },
+  "Andere features": {
+    "en": "Other features",
+    "fr": "Autres fonctionnalités"
+  },
+  "Veiligheid is <em>geen module</em>.<br>Ze zit in alles.": {
+    "en": "Security is <em>not a module</em>.<br>It is in everything.",
+    "fr": "La sécurité <em>n'est pas un module</em>.<br>Elle est partout."
+  },
+  "De PMS, Rudy, het handboek, channel manager, guest portal. Allemaal in dezelfde rumo, allemaal onder dezelfde regels.": {
+    "en": "The PMS, Rudy, the handbook, channel manager, guest portal. All in the same rumo, all under the same rules.",
+    "fr": "Le PMS, Rudy, le manuel, le channel manager, le portail client. Tout dans le même rumo, tout sous les mêmes règles."
+  },
+  "De <em>PMS</em>": {
+    "en": "The <em>PMS</em>",
+    "fr": "Le <em>PMS</em>"
+  },
+  "Lees meer →": {
+    "en": "Read more →",
+    "fr": "Lire la suite →"
+  },
+  "<em>Rudy</em>": {
+    "en": "<em>Rudy</em>",
+    "fr": "<em>Rudy</em>"
+  },
+  "<em>Preventie</em> &amp; welzijn": {
+    "en": "<em>Prevention</em> &amp; wellbeing",
+    "fr": "<em>Prévention</em> &amp; bien-être"
+  },
+  "<em>Channel</em> manager": {
+    "en": "<em>Channel</em> manager",
+    "fr": "<em>Channel</em> manager"
+  },
+  "Guest <em>portal &amp; booking engine</em>": {
+    "en": "Guest <em>portal &amp; booking engine</em>",
+    "fr": "<em>Portail client</em> &amp; moteur de réservation"
+  },
+  "Zelf proberen": {
+    "en": "Try it yourself",
+    "fr": "Essayer vous-même"
+  },
+  "Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.": {
+    "en": "No demo call.<br>Just <em>14 days</em> to play.",
+    "fr": "Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer."
+  },
+  "Geen creditcard, geen verplichtingen, geen \"account manager\" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.": {
+    "en": "No credit card, no obligations, no \"account manager\" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.",
+    "fr": "Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit."
+  },
+  "Probeer 14 dagen gratis <span>→</span>": {
+    "en": "Try it free for 14 days <span>→</span>",
+    "fr": "Essayez 14 jours gratuitement <span>→</span>"
+  },
+  "Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href=\"overstappen.html\">Gratis datamigratie</a>": {
+    "en": "No credit card · Cancellable monthly after 6 months · <a href=\"overstappen.html\">Free data migration</a>",
+    "fr": "Sans carte de crédit · Résiliable au mois après 6 mois · <a href=\"overstappen.html\">Migration des données offerte</a>"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  }
+}

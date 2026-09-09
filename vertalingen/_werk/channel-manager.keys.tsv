@@ -1,0 +1,130 @@
+1	Channel manager · rumo
+2	Eén wijziging in rumo, binnen seconden op Booking, Airbnb, Expedia en de rest. Realtime, in twee richtingen, met bewaking op dubbele boekingen.
+3	<a href="faq.html">FAQ</a>
+4	Eén wijziging,<br><em>alle OTA's.</em>
+5	Jij verandert een prijs in rumo, en binnen seconden staat hij op Booking, Airbnb, Expedia en de rest. Komt er een boeking binnen, dan staat ze meteen op je kalender. Eén abonnement bij ons, geen aparte rekening voor de koppeling.
+6	Wat je hier instelt geldt voor je hele huis, <strong>ook voor je eigen boekingspagina</strong>. Dat moet ook: dat is het enige kanaal zonder channel manager ervoor.
+7	Heen en weer
+8	Alles wat ze <em>moeten weten.</em>
+9	Naar de kanalen gaan je prijzen, je beschikbaarheid en je restricties. Terug komen de boekingen en de annuleringen. Meestal binnen een handvol seconden.
+10	<strong>Restricties horen bij een kamertype én een tariefplan.</strong> Sluit je er één, dan blijven de andere open
+11	Een bulkbewerking is voorbereid, niet verstuurd: pas bij bewaren vertrekt ze
+12	Annuleringen en prijswijzigingen na boeking doe je in het extranet van de OTA
+13	Tarieven
+14	Standard double &middot; za 4 april
+15	Nachtprijs <b><span class="oud">&euro;&nbsp;139
+16	&euro;&nbsp;155
+17	<span class="al-cat">Kanaal</span><br><b>Booking.com</b>
+18	<span class="al-merk open was">Wacht
+19	Bijgewerkt
+20	<span class="al-cat">Kanaal</span><br><b>Airbnb</b>
+21	<span class="al-merk open was traag1">Wacht
+22	<span class="al-cat">Kanaal</span><br><b>Expedia</b>
+23	<span class="al-merk open was traag2">Wacht
+24	<span class="al-cat">Eigen</span><br><b>Je eigen boekingspagina</b>
+25	<span class="al-merk open was traag3">Wacht
+26	Auto close
+27	Is je receptie dicht, dan is <em>de nacht dicht.</em>
+28	Stel in hoe laat je receptie sluit. rumo zet die nacht dan vanzelf op stop-sell, op elk kanaal en op je eigen boekingspagina tegelijk. Er is niets om op te drukken.
+29	Het sluit alleen díé nacht. Morgen blijft te koop, dus een gast kan nog vooruit boeken terwijl er niemand aan de balie staat.
+30	Een gast ziet het als uitverkocht, niet als gesloten. Met opzet
+31	Vertrekken op die ochtend kan wel, want dat kost je die nacht niets
+32	Je receptie mag met de hand nog altijd een boeking aannemen
+33	Tarieven en beschikbaarheid
+34	2 april
+35	<span class="aan">Basistarieven</span><span>Booking.com</span><span>Airbnb</span><span>Expedia</span>
+36	<span class="sub">Standard double &middot; logies</span><br><b>Vannacht</b>
+37	<span class="chip was">Te koop
+38	Stop-sell
+39	<span class="sub">Standard double &middot; logies</span><br><b>Morgen &middot; &euro; 139</b>
+40	Te koop
+41	<span class="sub">Standard double &middot; ontbijt</span><br><b>Morgen &middot; &euro; 155</b>
+42	<span class="sub">Receptie sluit om 22u00</span><br><b>Stoppen met verkopen om 20u00</b>
+43	Auto close aan
+44	Aan
+45	Alleen vannacht. Morgen blijft te koop
+46	Loopt het nog?
+47	Niet alleen <em>verstuurd</em>, ook <em>aangekomen.</em>
+48	Het overzicht is je gezondheidscheck: ben je verbonden, wanneer kwam de laatste boeking binnen, en is er onlangs iets misgelopen.
+49	<strong>Elke nacht wordt er vergeleken.</strong> Niet of rumo iets verstuurd heeft, maar of de kanalen het ook echt vasthouden. Blijft een verschil de volgende nacht staan, dan is het meestal een instelling en geen hik.
+50	Een kamertype dat je later toevoegt, raakt niet vanzelf bekend bij de kanalen. Het paneel noemt bij naam wat ontbreekt
+51	Overzicht
+52	Verbonden
+53	Ja
+54	Laatste boeking
+55	14 min
+56	Laatste push
+57	3 min
+58	Mislukt (24u)
+59	Nachtelijke vergelijking
+60	<span class="sub">Vannacht gecontroleerd</span><br><b>Alles kwam overeen</b>
+61	In orde
+62	<span class="sub">Twee nachten op rij</span><br><b>3 nachten wijken af op Expedia</b>
+63	Kijk hier eens
+64	<span class="sub">Na het aansluiten toegevoegd</span><br><b>Familiekamer nog niet bekend</b>
+65	Opnieuw verbinden
+66	<span class="sub">Familiekamer &middot; na het aansluiten toegevoegd</span><br><b>Nog niet bij de channel manager bekend</b>
+67	De kanalen verkopen wat ze kennen, niet wat je nog niet doorgaf
+68	Meer dan sync
+69	Wat rumo nog met de OTA's <em>doet</em>.
+70	Prijzen en beschikbaarheid doorsturen is het begin. Achter de schermen regelt rumo nog een pak dingen die je anders manueel bij Booking of Airbnb zou moeten uitzoeken.
+71	Booking.com
+72	Ongeldige kaart? <em>Booking</em> lost het op.
+73	Blijkt een gastkaart dood, dan meldt rumo dat terug aan Booking.com. Booking vraagt de gast om een nieuwe kaart en geeft jou annuleringsrecht als het niet lukt.
+74	Inbox + Rudy
+75	Gastberichten van de OTA's, <em>op één plek</em>.
+76	Berichten van Booking.com en Airbnb komen binnen in rumo, Rudy schrijft het antwoord voor en de receptie verstuurt. Expedia doet hier niet aan mee. Deze koppeling neem je apart bij, de rest van deze pagina zit in je pakket.
+77	Virtuele kaarten
+78	Kaartafhandeling <em>per kanaal</em>, automatisch.
+79	Verifiëren, pre-autoriseren of automatisch afboeken, per kanaal ingesteld. Een virtuele kaart van Booking wordt vaak pas vlak voor aankomst geldig, dus rumo probeert niet te vroeg en herprobeert vanzelf.
+80	Netto-omzet
+81	De <em>echte</em> commissie, per boeking.
+82	rumo leest het commissiebedrag dat bij elke boeking meekomt. Je netto-omzet per reservatie klopt dus, in plaats van giswerk met een gemiddeld percentage.
+83	Optionele add-on
+84	<em>Smart Pricing</em>, ingebouwd.
+85	Prijzen die meebewegen met je bezetting, in stappen die je zelf instelt en meteen naar je kanalen geduwd. Geen externe tool nodig.
+86	Ontdubbeling
+87	Geen <em>dubbele</em> imports.
+88	Stuurt een kanaal dezelfde boeking twee keer door, dan herkent rumo dat en houdt hij de dubbel tegen.
+89	Statuspaneel
+90	Zie in één oogopslag of de <em>sync loopt</em>.
+91	Laatste boeking binnen, laatste wijziging verstuurd, en wat er misliep. Staat er iets vast, dan duw je het met de hand opnieuw.
+92	De lijst
+93	Booking, Airbnb, Expedia, <em>en een honderdtal anderen</em>.
+94	Een honderdtal kanalen is bereikbaar. De grote drie staan klaar, voor de exotischere helpen we met de eerste aansluiting. Hou je het bij de grote drie? Dat doen de meeste hotels.
+95	<em>Staat klaar:</em> Booking, Airbnb, Expedia, Hotelbeds, Agoda
+96	<em>Op aanvraag:</em> HotelsCombined, Hostelworld, Despegar, lokale OTA's
+97	Plus je eigen boekingspagina, waar geen commissie op zit
+98	Gekoppelde kanalen
+99	5 actief
+100	<strong>Booking.com</strong> <span class="status">Verbonden</span>
+101	<strong>Airbnb</strong> <span class="status">Verbonden</span>
+102	<strong>Expedia</strong> <span class="status">Verbonden</span>
+103	<strong>Hotelbeds</strong> <span class="status">Verbonden</span>
+104	<strong>Agoda</strong> <span class="status">Verbonden</span>
+105	<strong>Eigen website</strong> <span class="status">Verbonden</span>
+106	+ een honderdtal kanalen
+107	Andere features
+108	Channel manager is <em>één laag</em>.<br>Daar omheen ligt nog wat.
+109	De PMS, Rudy, het handboek, preventie, guest portal. Allemaal in dezelfde rumo, allemaal samen één systeem.
+110	De <em>PMS</em>
+111	Lees meer →
+112	<em>Rudy</em>
+113	Het <em>handboek</em>
+114	<em>Preventie</em> &amp; welzijn
+115	Guest <em>portal &amp; booking engine</em>
+116	Zelf proberen
+117	Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.
+118	Geen creditcard, geen verplichtingen, geen "account manager" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.
+119	Probeer 14 dagen gratis <span>→</span>
+120	Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href="overstappen.html">Gratis datamigratie</a>
+121	<a href="https://wa.me/32485382828">WhatsApp</a>
+122	<a href="features.html#integraties">Booking.com</a>
+123	<a href="features.html#integraties">Airbnb</a>
+124	<a href="features.html#integraties">Exact Online</a>
+125	<a href="features.html#integraties">Peppol</a>
+126	<span>© 2026 Rumo · Gent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+127	Menu
+128	Een prijswijziging in rumo die na elkaar naar Booking.com, Airbnb, Expedia en de eigen boekingspagina vertrekt.
+129	Het tarievenraster van rumo: de nacht van vandaag gaat op stop-sell zodra de receptie sluit.
+130	Het overzicht van de channel manager in rumo: verbindingsstatus, de nachtelijke vergelijking en de koppeling van je kamertypes.

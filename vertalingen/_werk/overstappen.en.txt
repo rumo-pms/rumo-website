@@ -1,0 +1,66 @@
+1|Switching · rumo
+2|Switching from your current PMS to rumo. What happens to your reservations, what happens to your Booking.com connection, how long it takes and what it costs.
+3|<a href="faq.html">FAQ</a>
+4|What happens to your <em>reservations</em> when you switch.
+5|And to your channel connections, your rates and your guest profiles. A move between two PMSs runs in six steps, and your old system simply keeps running until the last one. Below is every step, what is expected of you at each, and which three parts are slower in practice than planned.
+6|<span>Your old system keeps running</span> <span>Your history comes along</span> <span>Nothing is imported silently</span> <span>You pick the moment</span> <span>Costs nothing</span>
+7|First, the three <em>practical</em> questions.
+8|Question one
+9|"Do I lose my reservations?"
+10|No, and you do not have to retype them either. You pull an export out of your current system and you read it in. And not only what is still to come: your old bookings come along too, with who slept there and what was paid. Meanwhile your old system simply keeps running, so you switch nothing off in order to set rumo up.
+11|Question two
+12|"Will my Booking.com be down for two days?"
+13|Your listing is not rebuilt. When you connect a channel you choose between a new listing and the account you already have. Choose the second and your page, your reviews and your history stay as they are. What moves is who keeps your calendar.
+14|Question three
+15|"When am I on my own?"
+16|At the moment you say so, not on a date in a project plan. As long as you do not move the channel connection, your old system keeps selling. The switch is a button you turn when you are ready for it.
+17|Right, so how does that work <em>in practice?</em>
+18|Six steps. You can stop at any point without anything being broken, because until the last step your old system is still running.
+19|Step 1
+20|You get an empty rumo <em>next to</em> your current system.
+21|Not instead of. Next to. You log in, you click around, and nothing changes at your hotel yet. This is also your trial period: if you do not like it you stop here, and nothing has ever been changed to what you run today.
+22|Step 2
+23|You drop your export into the conversation with Rudy.
+24|A CSV or Excel from your current PMS. Rudy reads your rooms and your rates out of it and puts what he found in front of you. You confirm or correct, question by question.
+25|Nothing is imported silently. He shows every step first and you say yes or no. That is slow when you are in a hurry, but it is the reason you are not hunting afterwards for where those thirty odd room types came from.
+26|Step 3
+27|What is not in the export gets asked.
+28|And that is more than you think. Room numbers, room types and prices are usually in there. Your cancellation conditions, your VAT rates and what your breakfast costs almost never are. That is not a shortcoming of your system, that is simply what exports look like.
+29|So those parts are asked for, with a proposal instead of an empty field. Correcting a proposal is quicker than describing everything from scratch. Do not know something? Then you skip it and it stays empty until you do.
+30|Step 4
+31|Your reservations come <em>last</em>, and only if you want.
+32|First your house has to be right: rooms, types, rates. Only then do the bookings go in, because a reservation with no room to put it in is a row in a spreadsheet.
+33|You first see what is going to be read in. Only then does it happen. Say no and it does not happen, and you start with an empty calendar. Also a valid answer, certainly if you switch in a quiet season.
+34|<strong>And your past comes along.</strong> Not only the bookings still to come. Your recent years go in as well: who slept there, how long, and what was paid. Checked-out stays stay checked out, and your guest base comes along separately, so a returning guest already has their history behind them on their first booking in rumo.
+35|One thing to know the moment it has just been read in: your calendar opens on a window around today, roughly a week back and a few months ahead. An import of old stays falls entirely outside that, and then it looks as if nothing happened. Scroll back to the right month and there they are.
+36|Step 5
+37|Your channels move; they are not <em>rebuilt.</em>
+38|When you add a channel you choose: a brand new listing, or moving over the OTA account you already have. In that second case everything you have built up on Booking.com stays. Your page, your photos, your reviews, your ranking.
+39|Then comes the part that usually goes wrong in a move: the mapping. Your "Standard Double" may be called "Classic Double Room" on Booking.com, and the system has to know that these are the same thing. You check that before you switch over, not after.
+40|Step 6
+41|You say when.
+42|Until that moment your old system simply keeps selling. From that moment rumo does it. There is no in-between period in which nobody keeps your calendar, because you only switch the one off when the other is on.
+43|And what we are <em>not</em> going to claim.
+44|These three things decide how long your move really takes. They are here because you are better off putting them in your diary beforehand than running into them along the way.
+45|That it is done in one evening.
+46|That depends on your set-up. A B&amp;B with four rooms, one rate and one channel is an afternoon. A hotel with forty rooms, six rates, packages and five OTAs is more like a week with gaps in it. Not because it is heavy work, but because there are decisions in it that you need a moment to think about.
+47|That an export contains everything.
+48|It never does. See step 3. Count on having to pass on your cancellation conditions, your VAT rates and your breakfast price yourself. Anyone promising that an import takes over everything has never opened a PMS export.
+49|That the OTAs work at our pace.
+50|A new channel connection stays on "requested" until the OTA approves it. That is their clock. rumo keeps watching in the meantime and sets the connection to active as soon as the answer is in, but how long that takes is not ours to decide. So do not plan your move on the Friday before a fully booked weekend.
+51|And erm, what does switching cost?
+52|Nothing. <em>Zero.</em>
+53|No set-up fee, no migration package, no onboarding consultant charging three days to retype your room types.
+54|And it is not a temporary offer. Most of the work in a migration is setting up your room types, your rates and your connections, and that happens in the conversation with Rudy while you are clicking around anyway. The guidance that comes with it is in your subscription, like all support. (Yep, really.)
+55|Try it free for 14 days <span>→</span>
+56|Ready to give it a go?
+57|Just start <em>next to</em><br>your current system.
+58|Your export stays with you. Reading it in happens in your own trial environment, with your own file, so you do not have to send us any guest data to see whether it works. Not sure whether your package can come along? Put its name with your request, in the remarks box, and we will say something about it straight away.
+59|No credit card · Cancellable monthly after 6 months · Free data migration
+60|<a href="https://wa.me/32485382828">WhatsApp</a>
+61|<a href="features.html#integraties">Booking.com</a>
+62|<a href="features.html#integraties">Airbnb</a>
+63|<a href="features.html#integraties">Exact Online</a>
+64|<a href="features.html#integraties">Peppol</a>
+65|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+66|Menu

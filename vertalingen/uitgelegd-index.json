@@ -1,0 +1,150 @@
+{
+  "Uitgelegd · rumo": {
+    "en": "Explained · rumo",
+    "fr": "Expliqué · rumo"
+  },
+  "Wat we zelf moesten uitzoeken om hotelsoftware te kunnen bouwen: keuringen van je gebouw, contingenten, OTA-commissies, procedures en het opleiden van personeel. In gewone taal opgeschreven.": {
+    "en": "What we had to work out ourselves in order to build hotel software: building inspections, allotments, OTA commissions, procedures and training staff. Written down in plain language.",
+    "fr": "Ce que nous avons dû comprendre nous-mêmes pour construire un logiciel hôtelier : contrôles du bâtiment, allotements, commissions des OTA, procédures et formation du personnel. Écrit en langage courant."
+  },
+  "<a href=\"../faq.html\">FAQ</a>": {
+    "en": "<a href=\"../faq.html\">FAQ</a>",
+    "fr": "<a href=\"../faq.html\">FAQ</a>"
+  },
+  "Wat we zelf hebben moeten <em>uitzoeken.</em>": {
+    "en": "What we had to <em>work out ourselves.</em>",
+    "fr": "Ce que nous avons dû <em>comprendre nous-mêmes.</em>"
+  },
+  "Om deze software te kunnen bouwen moesten we eerst begrijpen hoe het echt zit. Wanneer een keuring van je gebouw vervalt, hoe een contingent stilletjes leegloopt, waarom Expedia geen commissiefactuur stuurt, waarom een nieuwe receptionist opleiden elke keer even lang duurt. Wat we daarbij geleerd hebben, staat hier.": {
+    "en": "To build this software we first had to understand how it really works. When an inspection on your building expires, how an allotment quietly drains away, why Expedia sends no commission invoice, why training a new receptionist takes just as long every time. What we learned along the way is here.",
+    "fr": "Pour construire ce logiciel, il a d'abord fallu comprendre comment cela fonctionne réellement. Quand un contrôle de votre bâtiment expire, comment un allotement se vide sans bruit, pourquoi Expedia n'envoie pas de facture de commission, pourquoi former un nouveau réceptionniste prend chaque fois autant de temps. Ce que nous y avons appris est ici."
+  },
+  "Opleiden": {
+    "en": "Training",
+    "fr": "Formation"
+  },
+  "Je leidt vaker op, aan mensen die er <em>minder vaak zijn.</em>": {
+    "en": "You train more often, for people who are <em>there less often.</em>",
+    "fr": "Vous formez plus souvent, des gens qui sont là <em>moins souvent.</em>"
+  },
+  "Meer studenten en flexi's achter je balie, die korter blijven én trager leren omdat ze minder vaak werken. Over wat je één keer kan opschrijven, wat je alleen kan leren door het te doen, en waarom je bij een oefenomgeving eerst naar de mail moet kijken.": {
+    "en": "More students and flexi-workers behind your desk, staying for less time and learning more slowly because they work less often. About what you can write down once, what you can only learn by doing, and why an practice environment starts with a look at the mail.",
+    "fr": "Davantage d'étudiants et de flexi-jobs derrière votre comptoir, qui restent moins longtemps et apprennent plus lentement parce qu'ils travaillent moins souvent. Sur ce qui s'écrit une fois, ce qui ne s'apprend qu'en le faisant, et pourquoi un environnement d'entraînement commence par un coup d'œil au courrier."
+  },
+  "<span>3 minuten</span><span>Personeel</span>": {
+    "en": "<span>3 minutes</span><span>Staff</span>",
+    "fr": "<span>3 minutes</span><span>Personnel</span>"
+  },
+  "Je team": {
+    "en": "Your team",
+    "fr": "Votre équipe"
+  },
+  "Hoe weet je wie de nieuwe procedure <em>gelezen heeft?</em>": {
+    "en": "How do you know who has <em>read the new procedure?</em>",
+    "fr": "Comment savez-vous qui a <em>lu la nouvelle procédure ?</em>"
+  },
+  "Je past je brandprocedure aan, en de helft van je team heeft de oude versie gelezen. Over leesbevestigingen die aan een versie hangen, foto's als norm, en waarom een gewijzigde procedure lastiger is dan een nieuwe.": {
+    "en": "You change your fire procedure, and half your team has read the old version. About read confirmations tied to a version, photos as the standard, and why a changed procedure is trickier than a new one.",
+    "fr": "Vous modifiez votre procédure incendie, et la moitié de votre équipe a lu l'ancienne version. Sur les confirmations de lecture liées à une version, la photo comme norme, et pourquoi une procédure modifiée est plus délicate qu'une nouvelle."
+  },
+  "Het gebouw": {
+    "en": "The building",
+    "fr": "Le bâtiment"
+  },
+  "Wie onderhoudt je gasketel, en wanneer was dat <em>de laatste keer?</em>": {
+    "en": "Who maintains your gas boiler, and when was <em>the last time?</em>",
+    "fr": "Qui entretient votre chaudière, et c'était quand <em>la dernière fois ?</em>"
+  },
+  "Een hotel is ook een gebouw, en dat gebouw heeft een administratie: vijftien installaties, evenveel termijnen, en vier soorten papier die allemaal \"een attest\" heten. Waarom de keuring zelden het probleem is en het papier erna bijna altijd wel.": {
+    "en": "A hotel is also a building, and that building has paperwork: fifteen installations, as many intervals, and four kinds of paper all called \"a certificate\". Why the inspection is rarely the problem and the paper afterwards almost always is.",
+    "fr": "Un hôtel est aussi un bâtiment, et ce bâtiment a une administration : quinze installations, autant de délais, et quatre sortes de papiers qui s'appellent tous « une attestation ». Pourquoi le contrôle est rarement le problème et le papier qui suit presque toujours."
+  },
+  "<span>3 minuten</span><span>Preventie</span>": {
+    "en": "<span>3 minutes</span><span>Prevention</span>",
+    "fr": "<span>3 minutes</span><span>Prévention</span>"
+  },
+  "Groepen en contingenten": {
+    "en": "Groups and allotments",
+    "fr": "Groupes et allotements"
+  },
+  "\"Hoort deze aanvraag nu bij het congres, <em>of niet?</em>\"": {
+    "en": "\"Does this request belong to the conference, <em>or not?</em>\"",
+    "fr": "« Cette demande fait-elle partie du congrès, <em>ou pas ?</em> »"
+  },
+  "Kamers vasthouden voor een groep is een belofte met een vervaldatum, geen blok in je kalender. Over pickup, de cut-off die je geld kost zonder dat iemand het merkt, en wie welke lijn van de rekening betaalt.": {
+    "en": "Holding rooms for a group is a promise with an expiry date, not a block in your calendar. About pickup, the cut-off that costs you money without anyone noticing, and who pays which line of the bill.",
+    "fr": "Garder des chambres pour un groupe est une promesse avec une date d'échéance, pas un bloc dans votre calendrier. Sur le pickup, le cut-off qui vous coûte de l'argent sans que personne ne le remarque, et qui paie quelle ligne de la note."
+  },
+  "<span>3 minuten</span><span>Groepen</span>": {
+    "en": "<span>3 minutes</span><span>Groups</span>",
+    "fr": "<span>3 minutes</span><span>Groupes</span>"
+  },
+  "OTA's en commissie": {
+    "en": "OTAs and commission",
+    "fr": "OTA et commission"
+  },
+  "Waarom krijg je van Expedia geen <em>commissiefactuur?</em>": {
+    "en": "Why do you get no <em>commission invoice</em> from Expedia?",
+    "fr": "Pourquoi Expedia ne vous envoie-t-il pas de <em>facture de commission ?</em>"
+  },
+  "Twee boekingen van honderd euro, allebei vijftien procent commissie, en toch mogen ze niet op dezelfde manier in je boeken staan. Met een rekenvoorbeeld waarin beide kolommen onderaan hetzelfde uitkomen.": {
+    "en": "Two bookings of a hundred euros, both at fifteen per cent commission, and still they may not sit in your books the same way. With a worked example in which both columns come out the same at the bottom.",
+    "fr": "Deux réservations de cent euros, toutes deux à quinze pour cent de commission, et pourtant elles ne peuvent pas figurer de la même façon dans vos comptes. Avec un exemple chiffré où les deux colonnes donnent le même résultat en bas."
+  },
+  "<span>3 minuten</span><span>Kanalen</span>": {
+    "en": "<span>3 minutes</span><span>Channels</span>",
+    "fr": "<span>3 minutes</span><span>Canaux</span>"
+  },
+  "Iets dat je zelf nooit uitgelegd kreeg?": {
+    "en": "Something nobody ever explained to you?",
+    "fr": "Quelque chose qu'on ne vous a jamais expliqué ?"
+  },
+  "Zeg maar waar je over <em>struikelt.</em>": {
+    "en": "Tell us what you <em>trip over.</em>",
+    "fr": "Dites-nous sur quoi vous <em>butez.</em>"
+  },
+  "Loop je elke maand tegen hetzelfde aan zonder dat je ergens een fatsoenlijke uitleg vindt? Stuur het door, dan zetten we het op de lijst. Ook als het antwoord is dat rumo er niets aan kan veranderen.": {
+    "en": "Do you run into the same thing every month without finding a decent explanation anywhere? Send it in and we will put it on the list. Even if the answer is that rumo can do nothing about it.",
+    "fr": "Vous vous heurtez chaque mois à la même chose sans trouver d'explication correcte nulle part ? Envoyez-la-nous et nous la mettrons sur la liste. Même si la réponse est que rumo n'y peut rien."
+  },
+  "Stuur ons een mailtje <span>→</span>": {
+    "en": "Send us an email <span>→</span>",
+    "fr": "Envoyez-nous un mail <span>→</span>"
+  },
+  "Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href=\"../overstappen.html\">Gratis datamigratie</a>": {
+    "en": "No credit card · Cancellable monthly after 6 months · <a href=\"../overstappen.html\">Free data migration</a>",
+    "fr": "Sans carte de crédit · Résiliable au mois après 6 mois · <a href=\"../overstappen.html\">Migration des données offerte</a>"
+  },
+  "<a href=\"index.html\">Uitgelegd</a>": {
+    "en": "<a href=\"index.html\">Explained</a>",
+    "fr": "<a href=\"index.html\">Expliqué</a>"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"../features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"../features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"../features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"../features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"../features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"../features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"../features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"../features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"../features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"../features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"../features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"../features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"../privacy.html\">Privacy</a> · <a href=\"../cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"../privacy.html\">Privacy</a> · <a href=\"../cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"../privacy.html\">Privacy</a> · <a href=\"../cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  }
+}

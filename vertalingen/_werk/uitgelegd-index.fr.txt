@@ -1,0 +1,37 @@
+1|Expliqué · rumo
+2|Ce que nous avons dû comprendre nous-mêmes pour construire un logiciel hôtelier : contrôles du bâtiment, allotements, commissions des OTA, procédures et formation du personnel. Écrit en langage courant.
+3|<a href="../faq.html">FAQ</a>
+4|Ce que nous avons dû <em>comprendre nous-mêmes.</em>
+5|Pour construire ce logiciel, il a d'abord fallu comprendre comment cela fonctionne réellement. Quand un contrôle de votre bâtiment expire, comment un allotement se vide sans bruit, pourquoi Expedia n'envoie pas de facture de commission, pourquoi former un nouveau réceptionniste prend chaque fois autant de temps. Ce que nous y avons appris est ici.
+6|Formation
+7|Vous formez plus souvent, des gens qui sont là <em>moins souvent.</em>
+8|Davantage d'étudiants et de flexi-jobs derrière votre comptoir, qui restent moins longtemps et apprennent plus lentement parce qu'ils travaillent moins souvent. Sur ce qui s'écrit une fois, ce qui ne s'apprend qu'en le faisant, et pourquoi un environnement d'entraînement commence par un coup d'œil au courrier.
+9|<span>3 minutes</span><span>Personnel</span>
+10|Votre équipe
+11|Comment savez-vous qui a <em>lu la nouvelle procédure ?</em>
+12|Vous modifiez votre procédure incendie, et la moitié de votre équipe a lu l'ancienne version. Sur les confirmations de lecture liées à une version, la photo comme norme, et pourquoi une procédure modifiée est plus délicate qu'une nouvelle.
+13|Le bâtiment
+14|Qui entretient votre chaudière, et c'était quand <em>la dernière fois ?</em>
+15|Un hôtel est aussi un bâtiment, et ce bâtiment a une administration : quinze installations, autant de délais, et quatre sortes de papiers qui s'appellent tous « une attestation ». Pourquoi le contrôle est rarement le problème et le papier qui suit presque toujours.
+16|<span>3 minutes</span><span>Prévention</span>
+17|Groupes et allotements
+18|« Cette demande fait-elle partie du congrès, <em>ou pas ?</em> »
+19|Garder des chambres pour un groupe est une promesse avec une date d'échéance, pas un bloc dans votre calendrier. Sur le pickup, le cut-off qui vous coûte de l'argent sans que personne ne le remarque, et qui paie quelle ligne de la note.
+20|<span>3 minutes</span><span>Groupes</span>
+21|OTA et commission
+22|Pourquoi Expedia ne vous envoie-t-il pas de <em>facture de commission ?</em>
+23|Deux réservations de cent euros, toutes deux à quinze pour cent de commission, et pourtant elles ne peuvent pas figurer de la même façon dans vos comptes. Avec un exemple chiffré où les deux colonnes donnent le même résultat en bas.
+24|<span>3 minutes</span><span>Canaux</span>
+25|Quelque chose qu'on ne vous a jamais expliqué ?
+26|Dites-nous sur quoi vous <em>butez.</em>
+27|Vous vous heurtez chaque mois à la même chose sans trouver d'explication correcte nulle part ? Envoyez-la-nous et nous la mettrons sur la liste. Même si la réponse est que rumo n'y peut rien.
+28|Envoyez-nous un mail <span>→</span>
+29|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="../overstappen.html">Migration des données offerte</a>
+30|<a href="index.html">Expliqué</a>
+31|<a href="https://wa.me/32485382828">WhatsApp</a>
+32|<a href="../features.html#integraties">Booking.com</a>
+33|<a href="../features.html#integraties">Airbnb</a>
+34|<a href="../features.html#integraties">Exact Online</a>
+35|<a href="../features.html#integraties">Peppol</a>
+36|<span>© 2026 Rumo · Gand, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+37|Menu

@@ -1,0 +1,314 @@
+{
+  "Rudy · rumo": {
+    "en": "Rudy · rumo",
+    "fr": "Rudy · rumo"
+  },
+  "Rudy is de AI-assistent in rumo. Hij kent je hotel, je procedures en je data, en voert taken voor je uit in gewone taal. Geen menu's, geen syntax.": {
+    "en": "Rudy is the AI assistant inside rumo. He knows your hotel, your procedures and your data, and carries out tasks in plain language. No menus, no syntax.",
+    "fr": "Rudy est l'assistant IA de rumo. Il connaît votre hôtel, vos procédures et vos données, et exécute des tâches en langage courant. Pas de menus, pas de syntaxe."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "Rudy · AI-assistent": {
+    "en": "Rudy · AI assistant",
+    "fr": "Rudy · assistant IA"
+  },
+  "Een collega die<br><em>nooit</em> vrij neemt.": {
+    "en": "A colleague who<br><em>never</em> takes a day off.",
+    "fr": "Un collègue qui ne prend<br><em>jamais</em> congé."
+  },
+  "Rudy kent je hotel, je procedures en je gasten. Stel een vraag in je eigen taal en hij antwoordt. Vraag hem iets te doen, dan stelt hij het voor en keur jij goed. (En ja, ook in het Pools als dat moet.)": {
+    "en": "Rudy knows your hotel, your procedures and your guests. Ask a question in your own language and he answers. Ask him to do something and he proposes it, you approve. (And yes, in Polish too if that is what it takes.)",
+    "fr": "Rudy connaît votre hôtel, vos procédures et vos clients. Posez une question dans votre langue et il répond. Demandez-lui quelque chose et il le propose, c'est vous qui approuvez. (Et oui, en polonais aussi s'il le faut.)"
+  },
+  "Hij zit in dezelfde rumo als jij: hij ziet je reservaties, je tarieven, je gasten en je eigen handboek. En hij kan niet meer dan de persoon die hem aanspreekt.": {
+    "en": "He sits in the same rumo as you: he sees your reservations, your rates, your guests and your own handbook. And he can do no more than the person talking to him.",
+    "fr": "Il vit dans le même rumo que vous : il voit vos réservations, vos tarifs, vos clients et votre propre manuel. Et il ne peut rien de plus que la personne qui lui parle."
+  },
+  "Rudy weet veel. Niet alles.<br>Maar <em>écht</em> veel.": {
+    "en": "Rudy knows a lot. Not everything.<br>But <em>really</em> a lot.",
+    "fr": "Rudy sait beaucoup. Pas tout.<br>Mais <em>vraiment</em> beaucoup."
+  },
+  "Rudy is geen tovenaar en hij doet ook niet alsof. Wat jij hoort te beslissen, laat hij aan jou. Maar de rest is geen kort rijtje: reservaties aanmaken, offertes opmaken, groepslijsten invullen, je handboek doorzoeken, Excel importeren, antwoorden voorschrijven.": {
+    "en": "Rudy is no wizard and he does not pretend to be one. What is yours to decide, he leaves to you. But the rest is not a short list: creating reservations, drawing up quotes, filling in group lists, searching your handbook, importing Excel, drafting replies.",
+    "fr": "Rudy n'est pas un magicien et ne fait pas semblant de l'être. Ce qui vous revient, il vous le laisse. Mais le reste n'est pas une petite liste : créer des réservations, rédiger des devis, remplir des listes de groupe, chercher dans votre manuel, importer un Excel, préparer des réponses."
+  },
+  "Wat hij doet": {
+    "en": "What he does",
+    "fr": "Ce qu'il fait"
+  },
+  "De dagelijkse <em>handelingen.</em>": {
+    "en": "The daily <em>handling.</em>",
+    "fr": "Les <em>gestes</em> du quotidien."
+  },
+  "De routine is wat hij uit handen neemt: de honderden kleine acties die je dag aan stukken klikken. Wat terug te draaien is doet hij meteen, voor wat onomkeerbaar is wacht hij op jouw ja.": {
+    "en": "The routine is what he takes off your hands: the hundreds of small actions that click your day to pieces. What can be undone he does straight away; for what cannot, he waits for your yes.",
+    "fr": "C'est la routine qu'il vous enlève : les centaines de petites actions qui découpent votre journée. Ce qui est réversible, il le fait tout de suite ; pour ce qui ne l'est pas, il attend votre oui."
+  },
+  "Opzoeken wat er speelt: vrije kamers, aankomsten, het saldo van een boeking": {
+    "en": "Looking up what is going on: free rooms, arrivals, the balance on a booking",
+    "fr": "Chercher ce qui se passe : chambres libres, arrivées, solde d'une réservation"
+  },
+  "Een aanvraag die je erin plakt uitlezen en er een reservatie van maken": {
+    "en": "Reading a request you paste in and turning it into a reservation",
+    "fr": "Lire une demande que vous collez et en faire une réservation"
+  },
+  "Uitleggen hoe je iets in rumo doet, want hij kent de handleiding": {
+    "en": "Explaining how to do something in rumo, because he knows the manual",
+    "fr": "Expliquer comment faire quelque chose dans rumo, parce qu'il connaît le manuel"
+  },
+  "Onder een voorstel staat wat er werkelijk geboekt zou worden, met de prijs uit je eigen tarieven. Zo vertrekt een voorstel dat hij besprak maar nooit uitvoerde niet ongemerkt naar je gast.": {
+    "en": "Under a proposal you see what would actually be booked, at the price from your own rates. So a proposal he discussed but never carried out does not quietly reach your guest.",
+    "fr": "Sous une proposition figure ce qui serait réellement réservé, au prix de vos propres tarifs. Ainsi, une proposition dont il a parlé mais qu'il n'a jamais exécutée ne part pas discrètement chez votre client."
+  },
+  "<span class=\"ag-bol\"></span><b>Rudy</b><span class=\"ag-meta\">Receptie &middot; <span data-datum=\"dag-vandaag\">do</span> <span data-datum=\"vandaag\">2 april</span></span>": {
+    "en": "<span class=\"ag-bol\"></span><b>Rudy</b><span class=\"ag-meta\">Reception &middot; <span data-datum=\"dag-vandaag\">Th</span> <span data-datum=\"vandaag\">2 April</span></span>",
+    "fr": "<span class=\"ag-bol\"></span><b>Rudy</b><span class=\"ag-meta\">Réception &middot; <span data-datum=\"dag-vandaag\">je</span> <span data-datum=\"vandaag\">2 avril</span></span>"
+  },
+  "Deze mail net binnen: \"Graag een deluxe double op naam van Janssens, van 12 tot 15 mei, wij zijn met twee.\" Maak er een reservatie van.": {
+    "en": "This mail just came in: \"A deluxe double under the name Janssens please, from 12 to 15 May, there are two of us.\" Turn it into a reservation.",
+    "fr": "Ce mail vient d'arriver : « Une deluxe double au nom de Janssens, du 12 au 15 mai, nous sommes deux. » Fais-en une réservation."
+  },
+  "Ik lees eruit: deluxe double, drie nachten, twee volwassenen. Op dat tarief zit het ontbijt inbegrepen. De gastgegevens vul ik meteen in. Zo ziet ze eruit voor ik ze wegschrijf:": {
+    "en": "What I read: deluxe double, three nights, two adults. Breakfast is included in that rate. I am filling in the guest details straight away. This is what it looks like before I save it:",
+    "fr": "Ce que j'en lis : deluxe double, trois nuits, deux adultes. Le petit-déjeuner est compris dans ce tarif. Je remplis les données du client tout de suite. Voici à quoi elle ressemble avant que je l'enregistre :"
+  },
+  "<span>Kamer</span><span>Deluxe double</span>": {
+    "en": "<span>Room</span><span>Deluxe double</span>",
+    "fr": "<span>Chambre</span><span>Deluxe double</span>"
+  },
+  "<span>Verblijf</span><span>12 &rarr; 15 mei &middot; 3 nachten</span>": {
+    "en": "<span>Stay</span><span>12 &rarr; 15 May &middot; 3 nights</span>",
+    "fr": "<span>Séjour</span><span>12 &rarr; 15 mai &middot; 3 nuits</span>"
+  },
+  "<span>Gasten</span><span>2 volwassenen</span>": {
+    "en": "<span>Guests</span><span>2 adults</span>",
+    "fr": "<span>Clients</span><span>2 adultes</span>"
+  },
+  "<span>Tarief</span><span>Flexibel &middot; ontbijt inbegrepen</span>": {
+    "en": "<span>Rate</span><span>Flexible &middot; breakfast included</span>",
+    "fr": "<span>Tarif</span><span>Flexible &middot; petit-déjeuner compris</span>"
+  },
+  "<span>Totaal</span><span>&euro; 447,00</span>": {
+    "en": "<span>Total</span><span>&euro; 447,00</span>",
+    "fr": "<span>Total</span><span>&euro; 447,00</span>"
+  },
+  "<span class=\"aan\">Goedkeuren</span><span>Pas aan</span><span>Annuleer</span>": {
+    "en": "<span class=\"aan\">Approve</span><span>Adjust</span><span>Cancel</span>",
+    "fr": "<span class=\"aan\">Approuver</span><span>Modifier</span><span>Annuler</span>"
+  },
+  "Prijs uit je eigen tarieven": {
+    "en": "Price from your own rates",
+    "fr": "Prix issu de vos propres tarifs"
+  },
+  "Wat hij laat liggen": {
+    "en": "What he leaves alone",
+    "fr": "Ce qu'il laisse de côté"
+  },
+  "Eerlijk over wat <em>jij beslist.</em>": {
+    "en": "Honest about what <em>you decide.</em>",
+    "fr": "Honnête sur ce que <em>vous décidez.</em>"
+  },
+  "Sommige dingen doet hij bewust niet. Niet omdat hij ze niet kan, maar omdat het beslissingen zijn met een staartje.": {
+    "en": "Some things he deliberately does not do. Not because he cannot, but because they are decisions with a tail.",
+    "fr": "Certaines choses, il ne les fait volontairement pas. Non pas parce qu'il en est incapable, mais parce que ce sont des décisions qui ont des suites."
+  },
+  "Geen creditnota's of terugbetalingen op eigen houtje. Hij meldt het met een voorstel": {
+    "en": "No credit notes or refunds on his own. He flags it with a proposal",
+    "fr": "Pas de notes de crédit ni de remboursements de sa propre initiative. Il le signale avec une proposition"
+  },
+  "Geen prijsbeleid. Hij wijst aan waar je een tarief aanpast, hij beslist niet": {
+    "en": "No pricing policy. He points at where you change a rate, he does not decide",
+    "fr": "Pas de politique tarifaire. Il montre où changer un tarif, il ne décide pas"
+  },
+  "Geen interne teamchat, en geen enkel ander hotel dan het jouwe": {
+    "en": "No internal team chat, and no hotel other than yours",
+    "fr": "Pas de chat interne, et aucun autre hôtel que le vôtre"
+  },
+  "Hoe je hem vraagt": {
+    "en": "How you ask him",
+    "fr": "Comment lui demander"
+  },
+  "Gewoon Nederlands.<br><em>Geen syntax.</em>": {
+    "en": "Just English.<br><em>No syntax.</em>",
+    "fr": "Du français, tout simplement.<br><em>Pas de syntaxe.</em>"
+  },
+  "Typ of zeg wat je wil, in de taal waarin je denkt. Rudy kijkt naar je context (welk hotel, welke datum, welke gast) en stelt een actie voor. Twijfelt hij? Hij vraagt door. Kan hij iets niet? Hij zegt het, zonder eromheen te draaien.": {
+    "en": "Type or say what you want, in the language you think in. Rudy looks at your context (which hotel, which date, which guest) and proposes an action. Unsure? He asks. Cannot do something? He says so, without dancing around it.",
+    "fr": "Tapez ou dites ce que vous voulez, dans la langue dans laquelle vous pensez. Rudy regarde votre contexte (quel hôtel, quelle date, quel client) et propose une action. Un doute ? Il pose la question. Il ne peut pas ? Il le dit, sans tourner autour du pot."
+  },
+  "Jij vraagt": {
+    "en": "You ask",
+    "fr": "Vous demandez"
+  },
+  "Wat Rudy doet": {
+    "en": "What Rudy does",
+    "fr": "Ce que Rudy fait"
+  },
+  "\"Plak de aanvraag erin en zeg: maak hier een reservatie van\"": {
+    "en": "\"Paste the request in and say: turn this into a reservation\"",
+    "fr": "« Colle la demande et dis : fais-en une réservation »"
+  },
+  "Leest de mail uit, stelt de boeking samen, vult de gast in. <em>Jij keurt goed.</em>": {
+    "en": "Reads the mail, puts the booking together, fills in the guest. <em>You approve.</em>",
+    "fr": "Lit le mail, compose la réservation, remplit le client. <em>Vous approuvez.</em>"
+  },
+  "\"Combien de chambres sont libres demain ?\"": {
+    "en": "\"Combien de chambres sont libres demain ?\"",
+    "fr": "\"Combien de chambres sont libres demain ?\""
+  },
+  "<em>Réponse en français.</em> Geen taalknop om aan te vinken, hij schakelt mee met de vraag.": {
+    "en": "<em>Réponse en français.</em> No language button to tick, he switches along with the question.",
+    "fr": "<em>Réponse en français.</em> Pas de bouton de langue à cocher, il suit la langue de la question."
+  },
+  "\"Wat was mijn omzet vorige week per kanaal?\"": {
+    "en": "\"What was my revenue last week per channel?\"",
+    "fr": "« Quel était mon chiffre d'affaires la semaine dernière, par canal ? »"
+  },
+  "Toont een tabel. Geen actie nodig.": {
+    "en": "Shows a table. No action needed.",
+    "fr": "Affiche un tableau. Aucune action nécessaire."
+  },
+  "\"Write a reply about parking, in English\"": {
+    "en": "\"Write a reply about parking, in English\"",
+    "fr": "\"Write a reply about parking, in English\""
+  },
+  "Drafts the answer for the guest chat. <em>Reception sends it.</em>": {
+    "en": "Drafts the answer for the guest chat. <em>Reception sends it.</em>",
+    "fr": "Drafts the answer for the guest chat. <em>Reception sends it.</em>"
+  },
+  "\"Wat zegt ons handboek over de procedure bij een no-show?\"": {
+    "en": "\"What does our handbook say about the no-show procedure?\"",
+    "fr": "« Que dit notre manuel sur la procédure en cas de no-show ? »"
+  },
+  "Citeert de juiste passage uit jouw handboek, met bron.": {
+    "en": "Quotes the right passage from your handbook, with the source.",
+    "fr": "Cite le bon passage de votre manuel, avec la source."
+  },
+  "\"Geef gast Janssens een refund van €80\"": {
+    "en": "\"Give guest Janssens a refund of €80\"",
+    "fr": "« Rembourse 80 € au client Janssens »"
+  },
+  "<em>Doet hij niet zelf.</em> Stuurt een melding naar je receptionist met het voorstel.": {
+    "en": "<em>He does not do that himself.</em> Sends a notification to your receptionist with the proposal.",
+    "fr": "<em>Il ne le fait pas lui-même.</em> Il envoie une notification à votre réceptionniste avec la proposition."
+  },
+  "Bekijk de volledige cheatsheet met 15 voorbeelden in de <a href=\"kb.html#rudy\" style=\"color:var(--terra-dark); text-decoration:underline;\">helpdesk</a>.": {
+    "en": "See the full cheatsheet with 15 examples in the <a href=\"kb.html#rudy\" style=\"color:var(--terra-dark); text-decoration:underline;\">helpdesk</a>.",
+    "fr": "Voyez l'aide-mémoire complet avec 15 exemples dans le <a href=\"kb.html#rudy\" style=\"color:var(--terra-dark); text-decoration:underline;\">helpdesk</a>."
+  },
+  "Zijn kennis": {
+    "en": "His knowledge",
+    "fr": "Ses connaissances"
+  },
+  "Waar Rudy's <em>antwoorden</em> vandaan komen.": {
+    "en": "Where Rudy's <em>answers</em> come from.",
+    "fr": "D'où viennent les <em>réponses</em> de Rudy."
+  },
+  "Hij leeft in jouw rumo en zet het artikel erbij waar hij het uit haalt, zodat je het kan natrekken. Staat het antwoord nergens, dan zegt hij dat.": {
+    "en": "He lives in your rumo and adds the article he took it from, so you can check it. If the answer is nowhere, he says so.",
+    "fr": "Il vit dans votre rumo et joint l'article dont il tire sa réponse, pour que vous puissiez vérifier. Si la réponse ne se trouve nulle part, il le dit."
+  },
+  "<strong>Live data</strong> <span>Reservaties, kamers, prijzen, beschikbaarheid</span>": {
+    "en": "<strong>Live data</strong> <span>Reservations, rooms, rates, availability</span>",
+    "fr": "<strong>Données en direct</strong> <span>Réservations, chambres, tarifs, disponibilité</span>"
+  },
+  "<strong>Jouw handboek</strong> <span>Procedures, huisregels, noodplannen</span>": {
+    "en": "<strong>Your handbook</strong> <span>Procedures, house rules, emergency plans</span>",
+    "fr": "<strong>Votre manuel</strong> <span>Procédures, règlement, plans d'urgence</span>"
+  },
+  "<strong>Rudy</strong> <span>Citeert altijd terug naar de bron</span>": {
+    "en": "<strong>Rudy</strong> <span>Always quotes back to the source</span>",
+    "fr": "<strong>Rudy</strong> <span>Renvoie toujours à la source</span>"
+  },
+  "Andere features": {
+    "en": "Other features",
+    "fr": "Autres fonctionnalités"
+  },
+  "Rudy is één <em>laag</em>.<br>Daaronder ligt nog wat.": {
+    "en": "Rudy is one <em>layer</em>.<br>There is more underneath.",
+    "fr": "Rudy est une <em>couche</em>.<br>Il y a autre chose en dessous."
+  },
+  "De PMS, het handboek, preventie, channel manager, guest portal. Allemaal in dezelfde rumo. (En allemaal met Rudy die erin meeleest.)": {
+    "en": "The PMS, the handbook, prevention, channel manager, guest portal. All in the same rumo. (And all with Rudy reading along.)",
+    "fr": "Le PMS, le manuel, la prévention, le channel manager, le portail client. Tout dans le même rumo. (Et partout Rudy qui lit par-dessus votre épaule.)"
+  },
+  "De <em>PMS</em>": {
+    "en": "The <em>PMS</em>",
+    "fr": "Le <em>PMS</em>"
+  },
+  "Lees meer →": {
+    "en": "Read more →",
+    "fr": "Lire la suite →"
+  },
+  "Het <em>handboek</em>": {
+    "en": "The <em>handbook</em>",
+    "fr": "Le <em>manuel</em>"
+  },
+  "<em>Preventie</em> &amp; welzijn": {
+    "en": "<em>Prevention</em> &amp; wellbeing",
+    "fr": "<em>Prévention</em> &amp; bien-être"
+  },
+  "<em>Channel</em> manager": {
+    "en": "<em>Channel</em> manager",
+    "fr": "<em>Channel</em> manager"
+  },
+  "Guest <em>portal &amp; booking engine</em>": {
+    "en": "Guest <em>portal &amp; booking engine</em>",
+    "fr": "<em>Portail client</em> &amp; moteur de réservation"
+  },
+  "Zelf proberen": {
+    "en": "Try it yourself",
+    "fr": "Essayer vous-même"
+  },
+  "Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.": {
+    "en": "No demo call.<br>Just <em>14 days</em> to play.",
+    "fr": "Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer."
+  },
+  "Geen creditcard, geen verplichtingen, geen \"account manager\" die je elke week opbelt. Een demo-omgeving vol nepreservaties, mét Rudy erin. Bevalt het niet? Dan verdwijnt het stilletjes.": {
+    "en": "No credit card, no obligations, no \"account manager\" ringing you every week. A demo environment full of made-up reservations, with Rudy in it. Not for you? Then it quietly disappears.",
+    "fr": "Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations, Rudy compris. Cela ne vous convient pas ? Alors il disparaît sans bruit."
+  },
+  "Probeer 14 dagen gratis <span>→</span>": {
+    "en": "Try it free for 14 days <span>→</span>",
+    "fr": "Essayez 14 jours gratuitement <span>→</span>"
+  },
+  "Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href=\"overstappen.html\">Gratis datamigratie</a>": {
+    "en": "No credit card · Cancellable monthly after 6 months · <a href=\"overstappen.html\">Free data migration</a>",
+    "fr": "Sans carte de crédit · Résiliable au mois après 6 mois · <a href=\"overstappen.html\">Migration des données offerte</a>"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  },
+  "Een gesprek met Rudy: hij stelt een reservatie voor, toont eronder wat er geboekt zou worden, en wacht op goedkeuring.": {
+    "en": "A conversation with Rudy: he proposes a reservation, shows underneath what would be booked, and waits for approval.",
+    "fr": "Une conversation avec Rudy : il propose une réservation, montre en dessous ce qui serait réservé, et attend l'approbation."
+  }
+}

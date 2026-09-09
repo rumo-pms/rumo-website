@@ -1,0 +1,514 @@
+{
+  "De PMS · rumo": {
+    "en": "The PMS · rumo",
+    "fr": "Le PMS · rumo"
+  },
+  "Het hart van rumo: een visuele kalender, check-out in één klik, Peppol-facturatie, en een dashboard dat je dag versnelt. Geen 47 menu's diep.": {
+    "en": "The heart of rumo: a visual calendar, check-out in one click, Peppol invoicing, and a dashboard that speeds up your day. Not 47 menus deep.",
+    "fr": "Le cœur de rumo : un calendrier visuel, le check-out en un clic, la facturation Peppol et un tableau de bord qui accélère votre journée. Pas 47 menus de profondeur."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "De PMS": {
+    "en": "The PMS",
+    "fr": "Le PMS"
+  },
+  "Software die niet<br><em>in de weg</em> loopt.": {
+    "en": "Software that stays<br><em>out of your way.</em>",
+    "fr": "Un logiciel qui ne vous<br><em>gêne pas.</em>"
+  },
+  "De kalender, de check-in, de check-out, de factuur. Wat je elke dag doet ligt vooraan, wat je zelden doet zit erop maar niet ervoor.": {
+    "en": "The calendar, the check-in, the check-out, the invoice. What you do every day is up front. What you rarely do is in there, just not in the way.",
+    "fr": "Le calendrier, le check-in, le check-out, la facture. Ce que vous faites tous les jours est devant. Ce que vous faites rarement est là, mais pas dans le chemin."
+  },
+  "Drag-and-drop kalender": {
+    "en": "Drag-and-drop calendar",
+    "fr": "Calendrier glisser-déposer"
+  },
+  "Check-out in één klik, of de factuur op maat": {
+    "en": "Check-out in one click, or an invoice you shape yourself",
+    "fr": "Check-out en un clic, ou une facture sur mesure"
+  },
+  "Zoeken met Ctrl+K": {
+    "en": "Search with Ctrl+K",
+    "fr": "Recherche avec Ctrl+K"
+  },
+  "De rekening": {
+    "en": "The bill",
+    "fr": "La note"
+  },
+  "Wat er op de factuur staat, <em>schrijf jij.</em>": {
+    "en": "What ends up on the invoice, <em>you write.</em>",
+    "fr": "Ce qui figure sur la facture, <em>c'est vous qui l'écrivez.</em>"
+  },
+  "Uitchecken kan in één klik: de factuur staat er, de gast is uit, de kamer springt naar vuil. Maar niet elke rekening is standaard, en dan moet je erin kunnen.": {
+    "en": "Checking out takes one click: the invoice is there, the guest is out, the room flips to dirty. But not every bill is standard, and then you need to get inside it.",
+    "fr": "Le départ tient en un clic : la facture est là, le client est parti, la chambre passe en sale. Mais toutes les notes ne sont pas standard, et là il faut pouvoir entrer dedans."
+  },
+  "Klik op een regel en typ er iets anders": {
+    "en": "Click a line and type something else",
+    "fr": "Cliquez sur une ligne et tapez autre chose"
+  },
+  "Vink aan wat mee moet, of zet lijnen over naar een andere reservatie": {
+    "en": "Tick what should go along, or move lines to another reservation",
+    "fr": "Cochez ce qui doit suivre, ou déplacez des lignes vers une autre réservation"
+  },
+  "Btw per regel gesplitst, stadstaks al berekend, Peppol ingebouwd": {
+    "en": "VAT split per line, city tax already worked out, Peppol built in",
+    "fr": "TVA ventilée par ligne, taxe de séjour déjà calculée, Peppol intégré"
+  },
+  "Rekening": {
+    "en": "Bill",
+    "fr": "Note"
+  },
+  "M&uuml;ller &middot; kamer 104": {
+    "en": "M&uuml;ller &middot; room 104",
+    "fr": "M&uuml;ller &middot; chambre 104"
+  },
+  "<span class=\"l\">Totaal</span><span class=\"v\">&euro; 487,00</span>": {
+    "en": "<span class=\"l\">Total</span><span class=\"v\">&euro; 487,00</span>",
+    "fr": "<span class=\"l\">Total</span><span class=\"v\">&euro; 487,00</span>"
+  },
+  "<span class=\"l\">Betaald</span><span class=\"v\">&euro; 160,00</span>": {
+    "en": "<span class=\"l\">Paid</span><span class=\"v\">&euro; 160,00</span>",
+    "fr": "<span class=\"l\">Payé</span><span class=\"v\">&euro; 160,00</span>"
+  },
+  "<span class=\"l\">Openstaand</span><span class=\"v open\">&euro; 327,00</span>": {
+    "en": "<span class=\"l\">Outstanding</span><span class=\"v open\">&euro; 327,00</span>",
+    "fr": "<span class=\"l\">Solde</span><span class=\"v open\">&euro; 327,00</span>"
+  },
+  "Nog niet gefactureerd": {
+    "en": "Not invoiced yet",
+    "fr": "Pas encore facturé"
+  },
+  "Bewerk items": {
+    "en": "Edit items",
+    "fr": "Modifier les postes"
+  },
+  "<span class=\"ab-vink\"></span> <span class=\"ab-veld\"> <span class=\"ab-oud\">Overnachting &middot; Standard Double</span> <span class=\"ab-nieuw\">Weekendarrangement Gent &middot; 3 nachten</span> </span> <span class=\"ab-btw\">6%</span> <span class=\"ab-bedrag\">&euro; 390,00</span>": {
+    "en": "<span class=\"ab-vink\"></span> <span class=\"ab-veld\"> <span class=\"ab-oud\">Room night &middot; Standard Double</span> <span class=\"ab-nieuw\">Ghent weekend package &middot; 3 nights</span> </span> <span class=\"ab-btw\">6%</span> <span class=\"ab-bedrag\">&euro; 390,00</span>",
+    "fr": "<span class=\"ab-vink\"></span> <span class=\"ab-veld\"> <span class=\"ab-oud\">Nuitée &middot; Standard Double</span> <span class=\"ab-nieuw\">Forfait week-end à Gand &middot; 3 nuits</span> </span> <span class=\"ab-btw\">6%</span> <span class=\"ab-bedrag\">&euro; 390,00</span>"
+  },
+  "<span class=\"ab-vink\"></span>Ontbijt &middot; 2 personen<span class=\"ab-btw\">12%</span><span class=\"ab-bedrag\">&euro; 54,00</span>": {
+    "en": "<span class=\"ab-vink\"></span>Breakfast &middot; 2 people<span class=\"ab-btw\">12%</span><span class=\"ab-bedrag\">&euro; 54,00</span>",
+    "fr": "<span class=\"ab-vink\"></span>Petit-déjeuner &middot; 2 personnes<span class=\"ab-btw\">12%</span><span class=\"ab-bedrag\">&euro; 54,00</span>"
+  },
+  "<span class=\"ab-vink\"></span>Parking<span class=\"ab-btw\">21%</span><span class=\"ab-bedrag\">&euro; 28,00</span>": {
+    "en": "<span class=\"ab-vink\"></span>Parking<span class=\"ab-btw\">21%</span><span class=\"ab-bedrag\">&euro; 28,00</span>",
+    "fr": "<span class=\"ab-vink\"></span>Parking<span class=\"ab-btw\">21%</span><span class=\"ab-bedrag\">&euro; 28,00</span>"
+  },
+  "<span class=\"ab-vink\"></span>Stadstaks &middot; 2 pers. &times; 3 nachten<span class=\"ab-btw\">vrij</span><span class=\"ab-bedrag\">&euro; 15,00</span>": {
+    "en": "<span class=\"ab-vink\"></span>City tax &middot; 2 people &times; 3 nights<span class=\"ab-btw\">exempt</span><span class=\"ab-bedrag\">&euro; 15,00</span>",
+    "fr": "<span class=\"ab-vink\"></span>Taxe de séjour &middot; 2 pers. &times; 3 nuits<span class=\"ab-btw\">exonéré</span><span class=\"ab-bedrag\">&euro; 15,00</span>"
+  },
+  "Factuur maken &middot; &euro; 487,00": {
+    "en": "Create invoice &middot; &euro; 487,00",
+    "fr": "Créer la facture &middot; &euro; 487,00"
+  },
+  "Wie moet er vandaag <em>welke kamer</em> doen?": {
+    "en": "Who does <em>which room</em> today?",
+    "fr": "Qui fait <em>quelle chambre</em> aujourd'hui ?"
+  },
+  "Eén lijst per dag. Een kamer wordt vanzelf vuil bij een check-in, een check-out en elke ochtend opnieuw. Schoon zetten doet housekeeping zelf.": {
+    "en": "One list a day. A room goes dirty by itself on a check-in, on a check-out and every morning again. Housekeeping sets it clean.",
+    "fr": "Une liste par jour. Une chambre passe en sale toute seule à un check-in, à un check-out et chaque matin. C'est le housekeeping qui la remet en propre."
+  },
+  "Op je kalender zie je per kamer of ze nog vuil is": {
+    "en": "Your calendar shows per room whether it is still dirty",
+    "fr": "Votre calendrier montre chambre par chambre si elle est encore sale"
+  },
+  "Werkt op een tablet op de gang, en er is een printlijst": {
+    "en": "Works on a tablet in the corridor, and there is a printable list",
+    "fr": "Fonctionne sur une tablette dans le couloir, et il existe une liste à imprimer"
+  },
+  "Een babybedje of een laat vertrek komt vanzelf op de kaart": {
+    "en": "A cot or a late departure lands on the card by itself",
+    "fr": "Un lit bébé ou un départ tardif arrive tout seul sur la fiche"
+  },
+  "Meer nodig dan schoon en vuil? Dan is er <a href=\"advanced-housekeeping.html\">Advanced Housekeeping</a>.": {
+    "en": "Need more than clean and dirty? Then there is <a href=\"advanced-housekeeping.html\">Advanced Housekeeping</a>.",
+    "fr": "Il vous faut plus que propre et sale ? Alors il y a <a href=\"advanced-housekeeping.html\">Advanced Housekeeping</a>."
+  },
+  "<span data-datum=\"vandaag\">2 april": {
+    "en": "<span data-datum=\"vandaag\">2 April",
+    "fr": "<span data-datum=\"vandaag\">2 avril"
+  },
+  "Vuil": {
+    "en": "Dirty",
+    "fr": "Sale"
+  },
+  "Schoon": {
+    "en": "Clean",
+    "fr": "Propre"
+  },
+  "Vertrek": {
+    "en": "Departure",
+    "fr": "Départ"
+  },
+  "Blijft": {
+    "en": "Staying",
+    "fr": "Reste"
+  },
+  "<b>101</b> <span class=\"sub\">vertrek &middot; volledige beurt</span><span class=\"chip oranje\">Vuil</span>": {
+    "en": "<b>101</b> <span class=\"sub\">departure &middot; full service</span><span class=\"chip oranje\">Dirty</span>",
+    "fr": "<b>101</b> <span class=\"sub\">départ &middot; nettoyage complet</span><span class=\"chip oranje\">Sale</span>"
+  },
+  "<b>104</b> <span class=\"sub\">blijft &middot; alleen handdoeken</span><span class=\"chip\">Schoon</span>": {
+    "en": "<b>104</b> <span class=\"sub\">staying &middot; towels only</span><span class=\"chip\">Clean</span>",
+    "fr": "<b>104</b> <span class=\"sub\">reste &middot; serviettes uniquement</span><span class=\"chip\">Propre</span>"
+  },
+  "<b>204</b> <span class=\"sub\">vertrek &middot; babybedje weghalen</span><span class=\"as-chips\"><span class=\"chip oranje was\">Vuil</span><span class=\"chip wordt\">Schoon</span></span>": {
+    "en": "<b>204</b> <span class=\"sub\">departure &middot; remove the cot</span><span class=\"as-chips\"><span class=\"chip oranje was\">Dirty</span><span class=\"chip wordt\">Clean</span></span>",
+    "fr": "<b>204</b> <span class=\"sub\">départ &middot; enlever le lit bébé</span><span class=\"as-chips\"><span class=\"chip oranje was\">Sale</span><span class=\"chip wordt\">Propre</span></span>"
+  },
+  "<b>206</b> <span class=\"sub\">aankomst &middot; extra bed klaarzetten</span><span class=\"chip oranje\">Vuil</span>": {
+    "en": "<b>206</b> <span class=\"sub\">arrival &middot; set up an extra bed</span><span class=\"chip oranje\">Dirty</span>",
+    "fr": "<b>206</b> <span class=\"sub\">arrivée &middot; préparer un lit d'appoint</span><span class=\"chip oranje\">Sale</span>"
+  },
+  "Alles schoon": {
+    "en": "All clean",
+    "fr": "Tout est propre"
+  },
+  "Printlijst voor het hele hotel": {
+    "en": "Printable list for the whole hotel",
+    "fr": "Liste à imprimer pour tout l'hôtel"
+  },
+  "Ontbijt": {
+    "en": "Breakfast",
+    "fr": "Petit-déjeuner"
+  },
+  "De keuken weet 's ochtends al <em>hoe laat het is.</em>": {
+    "en": "By morning the kitchen already knows <em>what it is in for.</em>",
+    "fr": "Dès le matin, la cuisine sait <em>à quoi s'attendre.</em>"
+  },
+  "Geen kassa, wel de lijst die de keuken nodig heeft. De telling volgt de nacht: wie vandaag aankomt ontbijt pas morgen, wie morgen vertrekt ontbijt die ochtend nog wel.": {
+    "en": "No till, just the list the kitchen needs. The count follows the night: whoever arrives today has breakfast tomorrow, whoever leaves tomorrow still has breakfast that morning.",
+    "fr": "Pas de caisse, juste la liste dont la cuisine a besoin. Le comptage suit la nuit : qui arrive aujourd'hui déjeune demain, qui part demain déjeune encore ce matin-là."
+  },
+  "Allergieën staan bij de kamer, niet in een apart schriftje": {
+    "en": "Allergies sit with the room, not in a separate notebook",
+    "fr": "Les allergies sont attachées à la chambre, pas à un carnet séparé"
+  },
+  "Aanvinken wie er geweest is, en dat ziet je collega meteen": {
+    "en": "Tick off who has been, and your colleague sees it straight away",
+    "fr": "Cochez qui est passé, et votre collègue le voit aussitôt"
+  },
+  "Staat er iemand extra? De keuken zet het er zelf bij, en het komt op zijn rekening": {
+    "en": "Someone extra at the table? The kitchen adds them itself, and it lands on their bill",
+    "fr": "Quelqu'un en plus à table ? La cuisine l'ajoute elle-même, et cela arrive sur sa note"
+  },
+  "<span data-datum=\"morgen\">3 april": {
+    "en": "<span data-datum=\"morgen\">3 April",
+    "fr": "<span data-datum=\"morgen\">3 avril"
+  },
+  "Ontbijt toevoegen": {
+    "en": "Add breakfast",
+    "fr": "Ajouter un petit-déjeuner"
+  },
+  "Couverts": {
+    "en": "Covers",
+    "fr": "Couverts"
+  },
+  "Kamers": {
+    "en": "Rooms",
+    "fr": "Chambres"
+  },
+  "Allergie&euml;n": {
+    "en": "Allergies",
+    "fr": "Allergies"
+  },
+  "<span class=\"aan\">Ontbijt</span><span>Aanwezig 12</span><span>Printlijst</span>": {
+    "en": "<span class=\"aan\">Breakfast</span><span>Present 12</span><span>Print list</span>",
+    "fr": "<span class=\"aan\">Petit-déjeuner</span><span>Présents 12</span><span>Liste à imprimer</span>"
+  },
+  "<b>101</b> <span class=\"sub\">Hermans &middot; 2 pers. &middot; tarief incl.</span><span class=\"chip\">Aanwezig</span>": {
+    "en": "<b>101</b> <span class=\"sub\">Hermans &middot; 2 people &middot; rate incl.</span><span class=\"chip\">Present</span>",
+    "fr": "<b>101</b> <span class=\"sub\">Hermans &middot; 2 pers. &middot; tarif incl.</span><span class=\"chip\">Présent</span>"
+  },
+  "<b>104</b> <span class=\"sub\">M&uuml;ller &middot; 2 pers. &middot; extra bijgeboekt</span><span class=\"chip oranje\">Lactose, noten</span>": {
+    "en": "<b>104</b> <span class=\"sub\">M&uuml;ller &middot; 2 people &middot; added on</span><span class=\"chip oranje\">Lactose, nuts</span>",
+    "fr": "<b>104</b> <span class=\"sub\">M&uuml;ller &middot; 2 pers. &middot; ajouté</span><span class=\"chip oranje\">Lactose, fruits à coque</span>"
+  },
+  "<b>205</b> <span class=\"sub\">Sato &middot; 2 pers.</span><span class=\"chip grijs\">Verwacht</span>": {
+    "en": "<b>205</b> <span class=\"sub\">Sato &middot; 2 people</span><span class=\"chip grijs\">Expected</span>",
+    "fr": "<b>205</b> <span class=\"sub\">Sato &middot; 2 pers.</span><span class=\"chip grijs\">Attendu</span>"
+  },
+  "<b>208</b> <span class=\"sub\">Peeters &middot; 2 pers. &middot; door de keuken bijgezet</span><span class=\"chip\">Net bijgezet</span>": {
+    "en": "<b>208</b> <span class=\"sub\">Peeters &middot; 2 people &middot; added by the kitchen</span><span class=\"chip\">Just added</span>",
+    "fr": "<b>208</b> <span class=\"sub\">Peeters &middot; 2 pers. &middot; ajouté par la cuisine</span><span class=\"chip\">Vient d'être ajouté</span>"
+  },
+  "Kamer kiezen, aantal personen, klaar": {
+    "en": "Pick a room, how many people, done",
+    "fr": "Choisir la chambre, le nombre de personnes, terminé"
+  },
+  "Allotments": {
+    "en": "Allotments",
+    "fr": "Allotements"
+  },
+  "Kamers vasthouden voor een groep, <em>zonder ze kwijt te spelen.</em>": {
+    "en": "Holding rooms for a group, <em>without losing track of them.</em>",
+    "fr": "Garder des chambres pour un groupe, <em>sans les perdre de vue.</em>"
+  },
+  "Je houdt kamers achter voor een groep, meestal aan een onderhandeld tarief. Dat is geen blok in je kalender, het is een belofte met een vervaldatum.": {
+    "en": "You hold rooms back for a group, usually at a negotiated rate. That is not a block in your calendar, it is a promise with an expiry date.",
+    "fr": "Vous réservez des chambres pour un groupe, souvent à un tarif négocié. Ce n'est pas un bloc dans votre calendrier, c'est une promesse avec une date d'échéance."
+  },
+  "Wat je vasthoudt gaat <em>van je beschikbaarheid af</em>, ook op Booking.com": {
+    "en": "What you hold comes <em>off your availability</em>, on Booking.com too",
+    "fr": "Ce que vous gardez est <em>retiré de votre disponibilité</em>, sur Booking.com aussi"
+  },
+  "Pickup toont hoeveel van de afgesproken kamers echt gebruikt zijn": {
+    "en": "Pickup shows how many of the agreed rooms were actually used",
+    "fr": "Le pickup montre combien des chambres convenues ont réellement été prises"
+  },
+  "Op de cut-off gaat wat niet geboekt is vanzelf terug in de verkoop": {
+    "en": "On the cut-off, whatever is unbooked goes back on sale by itself",
+    "fr": "À la date de cut-off, ce qui n'est pas réservé repart en vente tout seul"
+  },
+  "Factureren per boeking, of in één keer aan het bedrijf": {
+    "en": "Invoice per booking, or all at once to the company",
+    "fr": "Facturer par réservation, ou en une fois à l'entreprise"
+  },
+  "<a href=\"uitgelegd/allotments.html\">Hoe contingenten werken, los van rumo &rarr;</a>": {
+    "en": "<a href=\"uitgelegd/allotments.html\">How allotments work, rumo aside &rarr;</a>",
+    "fr": "<a href=\"uitgelegd/allotments.html\">Comment fonctionnent les allotements, rumo mis à part &rarr;</a>"
+  },
+  "Congres Van Eyck": {
+    "en": "Van Eyck conference",
+    "fr": "Congrès Van Eyck"
+  },
+  "12 &ndash; 15 mei &middot; actief": {
+    "en": "12 &ndash; 15 May &middot; active",
+    "fr": "12 &ndash; 15 mai &middot; actif"
+  },
+  "Vastgehouden": {
+    "en": "Held",
+    "fr": "Gardées"
+  },
+  "Geboekt": {
+    "en": "Booked",
+    "fr": "Réservées"
+  },
+  "Nog open": {
+    "en": "Still open",
+    "fr": "Encore libres"
+  },
+  "Cut-off": {
+    "en": "Cut-off",
+    "fr": "Cut-off"
+  },
+  "28 apr": {
+    "en": "28 Apr",
+    "fr": "28 avr"
+  },
+  "<span class=\"aan\">Pickup</span><span>Boekingen</span><span>Facturatie</span><span>Historiek</span>": {
+    "en": "<span class=\"aan\">Pickup</span><span>Bookings</span><span>Invoicing</span><span>History</span>",
+    "fr": "<span class=\"aan\">Pickup</span><span>Réservations</span><span>Facturation</span><span>Historique</span>"
+  },
+  "<b>Standard double</b> <span class=\"sub\">10 gehouden &middot; 8 geboekt</span><span class=\"chip\">2 open</span>": {
+    "en": "<b>Standard double</b> <span class=\"sub\">10 held &middot; 8 booked</span><span class=\"chip\">2 open</span>",
+    "fr": "<b>Standard double</b> <span class=\"sub\">10 gardées &middot; 8 réservées</span><span class=\"chip\">2 libres</span>"
+  },
+  "<b>Deluxe double</b> <span class=\"sub\">6 gehouden &middot; 4 geboekt</span><span class=\"chip\">2 open</span>": {
+    "en": "<b>Deluxe double</b> <span class=\"sub\">6 held &middot; 4 booked</span><span class=\"chip\">2 open</span>",
+    "fr": "<b>Deluxe double</b> <span class=\"sub\">6 gardées &middot; 4 réservées</span><span class=\"chip\">2 libres</span>"
+  },
+  "<b>Junior suite</b> <span class=\"sub\">4 gehouden &middot; 1 geboekt</span><span class=\"chip oranje\">3 open</span>": {
+    "en": "<b>Junior suite</b> <span class=\"sub\">4 held &middot; 1 booked</span><span class=\"chip oranje\">3 open</span>",
+    "fr": "<b>Junior suite</b> <span class=\"sub\">4 gardées &middot; 1 réservée</span><span class=\"chip oranje\">3 libres</span>"
+  },
+  "Centrale factuur aan Congresbureau Van Eyck bvba": {
+    "en": "Central invoice to Congresbureau Van Eyck bvba",
+    "fr": "Facture centrale au Congresbureau Van Eyck bvba"
+  },
+  "Je cijfers staan er al. <em>Je moet ze niet gaan halen.</em>": {
+    "en": "Your figures are already there. <em>You do not have to go and fetch them.</em>",
+    "fr": "Vos chiffres sont déjà là. <em>Vous n'avez pas à aller les chercher.</em>"
+  },
+  "Kies een periode en je krijgt een stuk of twaalf rapporten over diezelfde dagen. Geen exports die je eerst in Excel moet kneden.": {
+    "en": "Pick a period and you get a dozen or so reports on those same days. No exports you have to knead in Excel first.",
+    "fr": "Choisissez une période et vous obtenez une douzaine de rapports sur ces mêmes jours. Pas d'exports à pétrir d'abord dans Excel."
+  },
+  "Omzet, gemiddelde kamerprijs, RevPAR en bezetting, per kamertype en per kanaal": {
+    "en": "Revenue, average room rate, RevPAR and occupancy, per room type and per channel",
+    "fr": "Chiffre d'affaires, prix moyen, RevPAR et taux d'occupation, par type de chambre et par canal"
+  },
+  "<em>Pace:</em> loop je voor of achter op vorig jaar?": {
+    "en": "<em>Pace:</em> are you ahead of last year, or behind?",
+    "fr": "<em>Pace :</em> êtes-vous en avance ou en retard sur l'an dernier ?"
+  },
+  "Debiteuren, nationaliteit, online check-in, ontbijt": {
+    "en": "Debtors, nationality, online check-in, breakfast",
+    "fr": "Débiteurs, nationalités, check-in en ligne, petits-déjeuners"
+  },
+  "En apart: het politieregister, de stadstaks en de overheidsstatistiek. Opgebouwd uit wat je gast zelf invulde. Indienen blijft jouw handtekening, tellen niet.": {
+    "en": "And separately: the police register, the city tax and the government statistics. Built from what your guest filled in. Filing stays your signature; counting does not.",
+    "fr": "Et à part : le registre de police, la taxe de séjour et les statistiques officielles. Construits à partir de ce que votre client a rempli lui-même. Le dépôt reste votre signature ; le comptage, non."
+  },
+  "1 &ndash; 30 april 2026": {
+    "en": "1 &ndash; 30 April 2026",
+    "fr": "1 &ndash; 30 avril 2026"
+  },
+  "<span class=\"aan\">Omzet</span><span>Pace</span><span>Reservaties</span><span>Facturen</span><span>Bezetting</span><span>Nationaliteit</span><span>Compliance</span>": {
+    "en": "<span class=\"aan\">Revenue</span><span>Pace</span><span>Reservations</span><span>Invoices</span><span>Occupancy</span><span>Nationality</span><span>Compliance</span>",
+    "fr": "<span class=\"aan\">Chiffre d'affaires</span><span>Pace</span><span>Réservations</span><span>Factures</span><span>Occupation</span><span>Nationalités</span><span>Conformité</span>"
+  },
+  "Kameromzet": {
+    "en": "Room revenue",
+    "fr": "CA chambres"
+  },
+  "&euro; 84.320": {
+    "en": "&euro; 84.320",
+    "fr": "&euro; 84.320"
+  },
+  "Gem. prijs": {
+    "en": "Avg. rate",
+    "fr": "Prix moyen"
+  },
+  "&euro; 132": {
+    "en": "&euro; 132",
+    "fr": "&euro; 132"
+  },
+  "RevPAR": {
+    "en": "RevPAR",
+    "fr": "RevPAR"
+  },
+  "&euro; 96": {
+    "en": "&euro; 96",
+    "fr": "&euro; 96"
+  },
+  "Bezetting": {
+    "en": "Occupancy",
+    "fr": "Occupation"
+  },
+  "<b>Booking.com</b> <span class=\"sub\">142 nachten &middot; netto na commissie</span><span class=\"chip\">&euro; 31.480</span>": {
+    "en": "<b>Booking.com</b> <span class=\"sub\">142 nights &middot; net after commission</span><span class=\"chip\">&euro; 31.480</span>",
+    "fr": "<b>Booking.com</b> <span class=\"sub\">142 nuits &middot; net après commission</span><span class=\"chip\">&euro; 31.480</span>"
+  },
+  "<b>Eigen boekingspagina</b> <span class=\"sub\">96 nachten &middot; geen commissie</span><span class=\"chip\">&euro; 24.910</span>": {
+    "en": "<b>Own booking page</b> <span class=\"sub\">96 nights &middot; no commission</span><span class=\"chip\">&euro; 24.910</span>",
+    "fr": "<b>Page de réservation propre</b> <span class=\"sub\">96 nuits &middot; sans commission</span><span class=\"chip\">&euro; 24.910</span>"
+  },
+  "<b>Pace</b> <span class=\"sub\">tegenover 30 april vorig jaar</span><span class=\"chip oranje\">+8%</span>": {
+    "en": "<b>Pace</b> <span class=\"sub\">against 30 April last year</span><span class=\"chip oranje\">+8%</span>",
+    "fr": "<b>Pace</b> <span class=\"sub\">par rapport au 30 avril de l'an dernier</span><span class=\"chip oranje\">+8%</span>"
+  },
+  "Wettelijk, klaar om in te dienen": {
+    "en": "Statutory, ready to file",
+    "fr": "Légal, prêt à déposer"
+  },
+  "<b>Politieregister</b> <span class=\"sub\">april &middot; 412 gasten</span><span class=\"chip\">Klaar</span>": {
+    "en": "<b>Police register</b> <span class=\"sub\">April &middot; 412 guests</span><span class=\"chip\">Ready</span>",
+    "fr": "<b>Registre de police</b> <span class=\"sub\">avril &middot; 412 clients</span><span class=\"chip\">Prêt</span>"
+  },
+  "Export naar CSV, Excel of PDF": {
+    "en": "Export to CSV, Excel or PDF",
+    "fr": "Export en CSV, Excel ou PDF"
+  },
+  "Andere features": {
+    "en": "Other features",
+    "fr": "Autres fonctionnalités"
+  },
+  "De PMS is <em>de basis</em>.<br>Daar bovenop ligt nog wat.": {
+    "en": "The PMS is <em>the base</em>.<br>There is more on top of it.",
+    "fr": "Le PMS est <em>la base</em>.<br>Et il y a autre chose par-dessus."
+  },
+  "Rudy, het handboek, preventie, channel manager, guest portal. Allemaal in dezelfde rumo, allemaal samen één systeem.": {
+    "en": "Rudy, the handbook, prevention, channel manager, guest portal. All in the same rumo, all one system together.",
+    "fr": "Rudy, le manuel, la prévention, le channel manager, le portail client. Tout dans le même rumo, tout ensemble un seul système."
+  },
+  "<em>Rudy</em>": {
+    "en": "<em>Rudy</em>",
+    "fr": "<em>Rudy</em>"
+  },
+  "Lees meer →": {
+    "en": "Read more →",
+    "fr": "Lire la suite →"
+  },
+  "Het <em>handboek</em>": {
+    "en": "The <em>handbook</em>",
+    "fr": "Le <em>manuel</em>"
+  },
+  "<em>Preventie</em> &amp; welzijn": {
+    "en": "<em>Prevention</em> &amp; wellbeing",
+    "fr": "<em>Prévention</em> &amp; bien-être"
+  },
+  "<em>Channel</em> manager": {
+    "en": "<em>Channel</em> manager",
+    "fr": "<em>Channel</em> manager"
+  },
+  "Guest <em>portal &amp; booking engine</em>": {
+    "en": "Guest <em>portal &amp; booking engine</em>",
+    "fr": "<em>Portail client</em> &amp; moteur de réservation"
+  },
+  "Zelf proberen": {
+    "en": "Try it yourself",
+    "fr": "Essayer vous-même"
+  },
+  "Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.": {
+    "en": "No demo call.<br>Just <em>14 days</em> to play.",
+    "fr": "Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer."
+  },
+  "Geen creditcard, geen verplichtingen, geen \"account manager\" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.": {
+    "en": "No credit card, no obligations, no \"account manager\" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.",
+    "fr": "Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit."
+  },
+  "Probeer 14 dagen gratis <span>→</span>": {
+    "en": "Try it free for 14 days <span>→</span>",
+    "fr": "Essayez 14 jours gratuitement <span>→</span>"
+  },
+  "Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href=\"overstappen.html\">Gratis datamigratie</a>": {
+    "en": "No credit card · Cancellable monthly after 6 months · <a href=\"overstappen.html\">Free data migration</a>",
+    "fr": "Sans carte de crédit · Résiliable au mois après 6 mois · <a href=\"overstappen.html\">Migration des données offerte</a>"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  },
+  "Het rekeningscherm van een reservatie: iemand klikt op Bewerk items, klikt op de tekst van een factuurregel en typt er een eigen omschrijving in.": {
+    "en": "The bill screen of a reservation: someone clicks Edit items, clicks the text of an invoice line and types their own description into it.",
+    "fr": "L'écran de note d'une réservation : quelqu'un clique sur Modifier les postes, clique sur le texte d'une ligne de facture et y tape sa propre description."
+  },
+  "Het housekeeping-scherm van rumo: kamer 204 wordt schoon gezet en de tellers boven de lijst tellen mee.": {
+    "en": "The housekeeping screen in rumo: room 204 is set to clean and the counters above the list move along.",
+    "fr": "L'écran housekeeping de rumo : la chambre 204 passe en propre et les compteurs au-dessus de la liste suivent."
+  },
+  "Het ontbijtscherm van rumo: de keuken zet een ontbijt bij op kamer 208 en de telling gaat van 34 naar 36 couverts.": {
+    "en": "The breakfast screen in rumo: the kitchen adds a breakfast on room 208 and the count goes from 34 to 36 covers.",
+    "fr": "L'écran petit-déjeuner de rumo : la cuisine ajoute un petit-déjeuner sur la chambre 208 et le comptage passe de 34 à 36 couverts."
+  },
+  "Het allotmentscherm van rumo: een blok kamers voor een congres, met de pickup per kamertype en de cut-off.": {
+    "en": "The allotment screen in rumo: a block of rooms for a conference, with the pickup per room type and the cut-off.",
+    "fr": "L'écran allotements de rumo : un bloc de chambres pour un congrès, avec le pickup par type de chambre et la date de cut-off."
+  },
+  "Het rapportenscherm van rumo: de periode staat op april en het omzetrapport toont de kengetallen met de vergelijking met vorig jaar.": {
+    "en": "The reports screen in rumo: the period is set to April and the revenue report shows the key figures with the comparison to last year.",
+    "fr": "L'écran rapports de rumo : la période est réglée sur avril et le rapport de chiffre d'affaires montre les indicateurs avec la comparaison à l'an dernier."
+  }
+}

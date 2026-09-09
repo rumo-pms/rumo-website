@@ -1,0 +1,128 @@
+1	De PMS · rumo
+2	Het hart van rumo: een visuele kalender, check-out in één klik, Peppol-facturatie, en een dashboard dat je dag versnelt. Geen 47 menu's diep.
+3	<a href="faq.html">FAQ</a>
+4	De PMS
+5	Software die niet<br><em>in de weg</em> loopt.
+6	De kalender, de check-in, de check-out, de factuur. Wat je elke dag doet ligt vooraan, wat je zelden doet zit erop maar niet ervoor.
+7	Drag-and-drop kalender
+8	Check-out in één klik, of de factuur op maat
+9	Zoeken met Ctrl+K
+10	De rekening
+11	Wat er op de factuur staat, <em>schrijf jij.</em>
+12	Uitchecken kan in één klik: de factuur staat er, de gast is uit, de kamer springt naar vuil. Maar niet elke rekening is standaard, en dan moet je erin kunnen.
+13	Klik op een regel en typ er iets anders
+14	Vink aan wat mee moet, of zet lijnen over naar een andere reservatie
+15	Btw per regel gesplitst, stadstaks al berekend, Peppol ingebouwd
+16	Rekening
+17	M&uuml;ller &middot; kamer 104
+18	<span class="l">Totaal</span><span class="v">&euro; 487,00</span>
+19	<span class="l">Betaald</span><span class="v">&euro; 160,00</span>
+20	<span class="l">Openstaand</span><span class="v open">&euro; 327,00</span>
+21	Nog niet gefactureerd
+22	Bewerk items
+23	<span class="ab-vink"></span> <span class="ab-veld"> <span class="ab-oud">Overnachting &middot; Standard Double</span> <span class="ab-nieuw">Weekendarrangement Gent &middot; 3 nachten</span> </span> <span class="ab-btw">6%</span> <span class="ab-bedrag">&euro; 390,00</span>
+24	<span class="ab-vink"></span>Ontbijt &middot; 2 personen<span class="ab-btw">12%</span><span class="ab-bedrag">&euro; 54,00</span>
+25	<span class="ab-vink"></span>Parking<span class="ab-btw">21%</span><span class="ab-bedrag">&euro; 28,00</span>
+26	<span class="ab-vink"></span>Stadstaks &middot; 2 pers. &times; 3 nachten<span class="ab-btw">vrij</span><span class="ab-bedrag">&euro; 15,00</span>
+27	Factuur maken &middot; &euro; 487,00
+28	Wie moet er vandaag <em>welke kamer</em> doen?
+29	Eén lijst per dag. Een kamer wordt vanzelf vuil bij een check-in, een check-out en elke ochtend opnieuw. Schoon zetten doet housekeeping zelf.
+30	Op je kalender zie je per kamer of ze nog vuil is
+31	Werkt op een tablet op de gang, en er is een printlijst
+32	Een babybedje of een laat vertrek komt vanzelf op de kaart
+33	Meer nodig dan schoon en vuil? Dan is er <a href="advanced-housekeeping.html">Advanced Housekeeping</a>.
+34	<span data-datum="vandaag">2 april
+35	Vuil
+36	Schoon
+37	Vertrek
+38	Blijft
+39	<b>101</b> <span class="sub">vertrek &middot; volledige beurt</span><span class="chip oranje">Vuil</span>
+40	<b>104</b> <span class="sub">blijft &middot; alleen handdoeken</span><span class="chip">Schoon</span>
+41	<b>204</b> <span class="sub">vertrek &middot; babybedje weghalen</span><span class="as-chips"><span class="chip oranje was">Vuil</span><span class="chip wordt">Schoon</span></span>
+42	<b>206</b> <span class="sub">aankomst &middot; extra bed klaarzetten</span><span class="chip oranje">Vuil</span>
+43	Alles schoon
+44	Printlijst voor het hele hotel
+45	Ontbijt
+46	De keuken weet 's ochtends al <em>hoe laat het is.</em>
+47	Geen kassa, wel de lijst die de keuken nodig heeft. De telling volgt de nacht: wie vandaag aankomt ontbijt pas morgen, wie morgen vertrekt ontbijt die ochtend nog wel.
+48	Allergieën staan bij de kamer, niet in een apart schriftje
+49	Aanvinken wie er geweest is, en dat ziet je collega meteen
+50	Staat er iemand extra? De keuken zet het er zelf bij, en het komt op zijn rekening
+51	<span data-datum="morgen">3 april
+52	Ontbijt toevoegen
+53	Couverts
+54	Kamers
+55	Allergie&euml;n
+56	<span class="aan">Ontbijt</span><span>Aanwezig 12</span><span>Printlijst</span>
+57	<b>101</b> <span class="sub">Hermans &middot; 2 pers. &middot; tarief incl.</span><span class="chip">Aanwezig</span>
+58	<b>104</b> <span class="sub">M&uuml;ller &middot; 2 pers. &middot; extra bijgeboekt</span><span class="chip oranje">Lactose, noten</span>
+59	<b>205</b> <span class="sub">Sato &middot; 2 pers.</span><span class="chip grijs">Verwacht</span>
+60	<b>208</b> <span class="sub">Peeters &middot; 2 pers. &middot; door de keuken bijgezet</span><span class="chip">Net bijgezet</span>
+61	Kamer kiezen, aantal personen, klaar
+62	Allotments
+63	Kamers vasthouden voor een groep, <em>zonder ze kwijt te spelen.</em>
+64	Je houdt kamers achter voor een groep, meestal aan een onderhandeld tarief. Dat is geen blok in je kalender, het is een belofte met een vervaldatum.
+65	Wat je vasthoudt gaat <em>van je beschikbaarheid af</em>, ook op Booking.com
+66	Pickup toont hoeveel van de afgesproken kamers echt gebruikt zijn
+67	Op de cut-off gaat wat niet geboekt is vanzelf terug in de verkoop
+68	Factureren per boeking, of in één keer aan het bedrijf
+69	<a href="uitgelegd/allotments.html">Hoe contingenten werken, los van rumo &rarr;</a>
+70	Congres Van Eyck
+71	12 &ndash; 15 mei &middot; actief
+72	Vastgehouden
+73	Geboekt
+74	Nog open
+75	Cut-off
+76	28 apr
+77	<span class="aan">Pickup</span><span>Boekingen</span><span>Facturatie</span><span>Historiek</span>
+78	<b>Standard double</b> <span class="sub">10 gehouden &middot; 8 geboekt</span><span class="chip">2 open</span>
+79	<b>Deluxe double</b> <span class="sub">6 gehouden &middot; 4 geboekt</span><span class="chip">2 open</span>
+80	<b>Junior suite</b> <span class="sub">4 gehouden &middot; 1 geboekt</span><span class="chip oranje">3 open</span>
+81	Centrale factuur aan Congresbureau Van Eyck bvba
+82	Je cijfers staan er al. <em>Je moet ze niet gaan halen.</em>
+83	Kies een periode en je krijgt een stuk of twaalf rapporten over diezelfde dagen. Geen exports die je eerst in Excel moet kneden.
+84	Omzet, gemiddelde kamerprijs, RevPAR en bezetting, per kamertype en per kanaal
+85	<em>Pace:</em> loop je voor of achter op vorig jaar?
+86	Debiteuren, nationaliteit, online check-in, ontbijt
+87	En apart: het politieregister, de stadstaks en de overheidsstatistiek. Opgebouwd uit wat je gast zelf invulde. Indienen blijft jouw handtekening, tellen niet.
+88	1 &ndash; 30 april 2026
+89	<span class="aan">Omzet</span><span>Pace</span><span>Reservaties</span><span>Facturen</span><span>Bezetting</span><span>Nationaliteit</span><span>Compliance</span>
+90	Kameromzet
+91	&euro; 84.320
+92	Gem. prijs
+93	&euro; 132
+94	RevPAR
+95	&euro; 96
+96	Bezetting
+97	<b>Booking.com</b> <span class="sub">142 nachten &middot; netto na commissie</span><span class="chip">&euro; 31.480</span>
+98	<b>Eigen boekingspagina</b> <span class="sub">96 nachten &middot; geen commissie</span><span class="chip">&euro; 24.910</span>
+99	<b>Pace</b> <span class="sub">tegenover 30 april vorig jaar</span><span class="chip oranje">+8%</span>
+100	Wettelijk, klaar om in te dienen
+101	<b>Politieregister</b> <span class="sub">april &middot; 412 gasten</span><span class="chip">Klaar</span>
+102	Export naar CSV, Excel of PDF
+103	Andere features
+104	De PMS is <em>de basis</em>.<br>Daar bovenop ligt nog wat.
+105	Rudy, het handboek, preventie, channel manager, guest portal. Allemaal in dezelfde rumo, allemaal samen één systeem.
+106	<em>Rudy</em>
+107	Lees meer →
+108	Het <em>handboek</em>
+109	<em>Preventie</em> &amp; welzijn
+110	<em>Channel</em> manager
+111	Guest <em>portal &amp; booking engine</em>
+112	Zelf proberen
+113	Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.
+114	Geen creditcard, geen verplichtingen, geen "account manager" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.
+115	Probeer 14 dagen gratis <span>→</span>
+116	Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href="overstappen.html">Gratis datamigratie</a>
+117	<a href="https://wa.me/32485382828">WhatsApp</a>
+118	<a href="features.html#integraties">Booking.com</a>
+119	<a href="features.html#integraties">Airbnb</a>
+120	<a href="features.html#integraties">Exact Online</a>
+121	<a href="features.html#integraties">Peppol</a>
+122	<span>© 2026 Rumo · Gent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+123	Menu
+124	Het rekeningscherm van een reservatie: iemand klikt op Bewerk items, klikt op de tekst van een factuurregel en typt er een eigen omschrijving in.
+125	Het housekeeping-scherm van rumo: kamer 204 wordt schoon gezet en de tellers boven de lijst tellen mee.
+126	Het ontbijtscherm van rumo: de keuken zet een ontbijt bij op kamer 208 en de telling gaat van 34 naar 36 couverts.
+127	Het allotmentscherm van rumo: een blok kamers voor een congres, met de pickup per kamertype en de cut-off.
+128	Het rapportenscherm van rumo: de periode staat op april en het omzetrapport toont de kengetallen met de vergelijking met vorig jaar.

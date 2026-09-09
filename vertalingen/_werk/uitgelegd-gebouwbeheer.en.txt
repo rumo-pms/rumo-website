@@ -1,0 +1,41 @@
+1|Who maintains your gas boiler, and when was the last time? · explained by rumo
+2|A hotel is also a building, and that building has paperwork. Why inspections are rarely the problem, and the papers afterwards almost always are.
+3|<a href="../faq.html">FAQ</a>
+4|← Explained
+5|The building
+6|Who maintains your gas boiler, and when was <em>the last time?</em>
+7|If you cannot answer either question straight away, you are in good company. Hardly any hotelier can, and that is not because they are sloppy. It is because a hotel does not have one building file but fifteen or so, each with its own interval, its own company and its own certificate.
+8|<span>3 minute read</span> <span>For whoever runs the building</span> <span>Applies without rumo too</span>
+9|The problem is not <em>the inspection</em>
+10|The inspection itself rarely goes wrong. Someone comes round, inspects, and usually it is fine. The paper afterwards is what goes wrong: the certificate that was to come by mail later and never came, or that sits in a mailbox nobody opens any more.
+11|Ask yourself four questions per installation. Who maintains it. Who inspects it. When was that last done. Until when is the current certificate valid. Manageable, until you make the list of what they are about: the gas boiler, the low-voltage installation, the fire hose reels, the extinguishers, the detectors, the emergency lighting, the smoke vent, the lift, the extraction hood, the garage door, the automatic doors. Sixty questions, spread over ten or so companies. <strong>Nobody keeps that in their head.</strong>
+12|What makes it harder: no two intervals run in step. One comes back every year, another every so many years, and whether that is two or five depends on the appliance, the fuel and the region. Ask a hotelier when the risk analysis on their lift expires and you get a hesitation. That is not a stupid question: it is an interval that comes round so rarely that you never see it coming.
+13|<strong>Why an expiry date is not a day but a project.</strong> An inspection expiring next week cannot be arranged next week. With a low-voltage inspection, an electrician usually comes first to repair what the previous inspection noted, and only then the inspection body. Two diaries, two waiting times.
+14|So count backwards. Whoever only sees their expiry date when it arrives is not late with a phone call. They are six weeks late.
+15|The problem is not the inspection. It is <em>the paper</em> afterwards.
+16|What the fire brigade asks for is the certificate
+17|There are four kinds of paper, and they get <em>mixed up</em>
+18|<strong>The inspection certificate</strong> from an accredited body. That is the paper an inspector wants to see.
+19|<strong>The maintenance certificate</strong> from the company that did the work. This is the one most often missing, for a banal reason: the technician leaves and the certificate is to come by mail later. Or not.
+20|<strong>What you certify yourself.</strong> You may in principle maintain your kitchen extraction hood yourself, but then you also have to certify yourself that you did it. Anyone who does not know that is in order in practice and not in order on paper.
+21|<strong>File documents that do not expire.</strong> Your single-line diagram, your asbestos inventory, your evacuation plan. Those are on no reminder at all and are only ever asked for, usually at the worst possible moment.
+22|And then there is whoever is <em>walking around</em>
+23|An external employer has the right to know what risks there are on your site before their people start: where the asbestos is, how you evacuate. That is not politeness, that is a duty to inform that sits with you. And it goes further than a list: who worked there, when, on what, and was that person given a key that opens every room? That last one is the first question asked when something has gone missing the day after.
+24|Alongside that run registers that have nothing to do with inspections and that people often forget: the evacuation drill, the incident register, the first-aid register, the register of psychosocial facts, the flushing log for legionella.
+25|What to do about it
+26|The trap is thinking this is a technical problem. It is a <strong>document problem</strong>, and you solve that like any document problem: one place, one expiry date per item, and a warning well before it is too late. Put a date on the installations whose date you do not know exactly as well, because an estimated expiry date gets watched and an empty field never does. And note who maintains and who inspects as separate names.
+27|In rumo this is the Prevention add-on: a register of your installations with expiry dates and the companies behind them, your certificates in a document vault that keeps versions instead of overwriting, recurring tasks and checklists to sign off, the safety registers above, and a sign-in link with a QR code that lets a contractor register themselves and sign for the site information they have seen. You are warned thirty, fourteen, seven and one day before a document expires.
+28|What it expressly does <em>not</em> do: rumo does not know the statutory interval for your installation. What you enter as an expiry date is what it works with, and you take that from the certificate you have in hand. The warnings come in the app, not in your mailbox.
+29|Worked something else out?
+30|We would rather <em>explain</em> it<br>than sell it.
+31|The things that come with running a hotel: inspections, allotments, commissions, training people. We had to work them out ourselves and we write down what we found.
+32|Everything we explain <span>→</span>
+33|No credit card · Cancellable monthly after 6 months · <a href="../overstappen.html">Free data migration</a>
+34|<a href="index.html">Explained</a>
+35|<a href="https://wa.me/32485382828">WhatsApp</a>
+36|<a href="../features.html#integraties">Booking.com</a>
+37|<a href="../features.html#integraties">Airbnb</a>
+38|<a href="../features.html#integraties">Exact Online</a>
+39|<a href="../features.html#integraties">Peppol</a>
+40|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+41|Menu

@@ -1,0 +1,128 @@
+1|The PMS · rumo
+2|The heart of rumo: a visual calendar, check-out in one click, Peppol invoicing, and a dashboard that speeds up your day. Not 47 menus deep.
+3|<a href="faq.html">FAQ</a>
+4|The PMS
+5|Software that stays<br><em>out of your way.</em>
+6|The calendar, the check-in, the check-out, the invoice. What you do every day is up front. What you rarely do is in there, just not in the way.
+7|Drag-and-drop calendar
+8|Check-out in one click, or an invoice you shape yourself
+9|Search with Ctrl+K
+10|The bill
+11|What ends up on the invoice, <em>you write.</em>
+12|Checking out takes one click: the invoice is there, the guest is out, the room flips to dirty. But not every bill is standard, and then you need to get inside it.
+13|Click a line and type something else
+14|Tick what should go along, or move lines to another reservation
+15|VAT split per line, city tax already worked out, Peppol built in
+16|Bill
+17|M&uuml;ller &middot; room 104
+18|<span class="l">Total</span><span class="v">&euro; 487,00</span>
+19|<span class="l">Paid</span><span class="v">&euro; 160,00</span>
+20|<span class="l">Outstanding</span><span class="v open">&euro; 327,00</span>
+21|Not invoiced yet
+22|Edit items
+23|<span class="ab-vink"></span> <span class="ab-veld"> <span class="ab-oud">Room night &middot; Standard Double</span> <span class="ab-nieuw">Ghent weekend package &middot; 3 nights</span> </span> <span class="ab-btw">6%</span> <span class="ab-bedrag">&euro; 390,00</span>
+24|<span class="ab-vink"></span>Breakfast &middot; 2 people<span class="ab-btw">12%</span><span class="ab-bedrag">&euro; 54,00</span>
+25|<span class="ab-vink"></span>Parking<span class="ab-btw">21%</span><span class="ab-bedrag">&euro; 28,00</span>
+26|<span class="ab-vink"></span>City tax &middot; 2 people &times; 3 nights<span class="ab-btw">exempt</span><span class="ab-bedrag">&euro; 15,00</span>
+27|Create invoice &middot; &euro; 487,00
+28|Who does <em>which room</em> today?
+29|One list a day. A room goes dirty by itself on a check-in, on a check-out and every morning again. Housekeeping sets it clean.
+30|Your calendar shows per room whether it is still dirty
+31|Works on a tablet in the corridor, and there is a printable list
+32|A cot or a late departure lands on the card by itself
+33|Need more than clean and dirty? Then there is <a href="advanced-housekeeping.html">Advanced Housekeeping</a>.
+34|<span data-datum="vandaag">2 April
+35|Dirty
+36|Clean
+37|Departure
+38|Staying
+39|<b>101</b> <span class="sub">departure &middot; full service</span><span class="chip oranje">Dirty</span>
+40|<b>104</b> <span class="sub">staying &middot; towels only</span><span class="chip">Clean</span>
+41|<b>204</b> <span class="sub">departure &middot; remove the cot</span><span class="as-chips"><span class="chip oranje was">Dirty</span><span class="chip wordt">Clean</span></span>
+42|<b>206</b> <span class="sub">arrival &middot; set up an extra bed</span><span class="chip oranje">Dirty</span>
+43|All clean
+44|Printable list for the whole hotel
+45|Breakfast
+46|By morning the kitchen already knows <em>what it is in for.</em>
+47|No till, just the list the kitchen needs. The count follows the night: whoever arrives today has breakfast tomorrow, whoever leaves tomorrow still has breakfast that morning.
+48|Allergies sit with the room, not in a separate notebook
+49|Tick off who has been, and your colleague sees it straight away
+50|Someone extra at the table? The kitchen adds them itself, and it lands on their bill
+51|<span data-datum="morgen">3 April
+52|Add breakfast
+53|Covers
+54|Rooms
+55|Allergies
+56|<span class="aan">Breakfast</span><span>Present 12</span><span>Print list</span>
+57|<b>101</b> <span class="sub">Hermans &middot; 2 people &middot; rate incl.</span><span class="chip">Present</span>
+58|<b>104</b> <span class="sub">M&uuml;ller &middot; 2 people &middot; added on</span><span class="chip oranje">Lactose, nuts</span>
+59|<b>205</b> <span class="sub">Sato &middot; 2 people</span><span class="chip grijs">Expected</span>
+60|<b>208</b> <span class="sub">Peeters &middot; 2 people &middot; added by the kitchen</span><span class="chip">Just added</span>
+61|Pick a room, how many people, done
+62|Allotments
+63|Holding rooms for a group, <em>without losing track of them.</em>
+64|You hold rooms back for a group, usually at a negotiated rate. That is not a block in your calendar, it is a promise with an expiry date.
+65|What you hold comes <em>off your availability</em>, on Booking.com too
+66|Pickup shows how many of the agreed rooms were actually used
+67|On the cut-off, whatever is unbooked goes back on sale by itself
+68|Invoice per booking, or all at once to the company
+69|<a href="uitgelegd/allotments.html">How allotments work, rumo aside &rarr;</a>
+70|Van Eyck conference
+71|12 &ndash; 15 May &middot; active
+72|Held
+73|Booked
+74|Still open
+75|Cut-off
+76|28 Apr
+77|<span class="aan">Pickup</span><span>Bookings</span><span>Invoicing</span><span>History</span>
+78|<b>Standard double</b> <span class="sub">10 held &middot; 8 booked</span><span class="chip">2 open</span>
+79|<b>Deluxe double</b> <span class="sub">6 held &middot; 4 booked</span><span class="chip">2 open</span>
+80|<b>Junior suite</b> <span class="sub">4 held &middot; 1 booked</span><span class="chip oranje">3 open</span>
+81|Central invoice to Congresbureau Van Eyck bvba
+82|Your figures are already there. <em>You do not have to go and fetch them.</em>
+83|Pick a period and you get a dozen or so reports on those same days. No exports you have to knead in Excel first.
+84|Revenue, average room rate, RevPAR and occupancy, per room type and per channel
+85|<em>Pace:</em> are you ahead of last year, or behind?
+86|Debtors, nationality, online check-in, breakfast
+87|And separately: the police register, the city tax and the government statistics. Built from what your guest filled in. Filing stays your signature; counting does not.
+88|1 &ndash; 30 April 2026
+89|<span class="aan">Revenue</span><span>Pace</span><span>Reservations</span><span>Invoices</span><span>Occupancy</span><span>Nationality</span><span>Compliance</span>
+90|Room revenue
+91|&euro; 84.320
+92|Avg. rate
+93|&euro; 132
+94|RevPAR
+95|&euro; 96
+96|Occupancy
+97|<b>Booking.com</b> <span class="sub">142 nights &middot; net after commission</span><span class="chip">&euro; 31.480</span>
+98|<b>Own booking page</b> <span class="sub">96 nights &middot; no commission</span><span class="chip">&euro; 24.910</span>
+99|<b>Pace</b> <span class="sub">against 30 April last year</span><span class="chip oranje">+8%</span>
+100|Statutory, ready to file
+101|<b>Police register</b> <span class="sub">April &middot; 412 guests</span><span class="chip">Ready</span>
+102|Export to CSV, Excel or PDF
+103|Other features
+104|The PMS is <em>the base</em>.<br>There is more on top of it.
+105|Rudy, the handbook, prevention, channel manager, guest portal. All in the same rumo, all one system together.
+106|<em>Rudy</em>
+107|Read more →
+108|The <em>handbook</em>
+109|<em>Prevention</em> &amp; wellbeing
+110|<em>Channel</em> manager
+111|Guest <em>portal &amp; booking engine</em>
+112|Try it yourself
+113|No demo call.<br>Just <em>14 days</em> to play.
+114|No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.
+115|Try it free for 14 days <span>→</span>
+116|No credit card · Cancellable monthly after 6 months · <a href="overstappen.html">Free data migration</a>
+117|<a href="https://wa.me/32485382828">WhatsApp</a>
+118|<a href="features.html#integraties">Booking.com</a>
+119|<a href="features.html#integraties">Airbnb</a>
+120|<a href="features.html#integraties">Exact Online</a>
+121|<a href="features.html#integraties">Peppol</a>
+122|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+123|Menu
+124|The bill screen of a reservation: someone clicks Edit items, clicks the text of an invoice line and types their own description into it.
+125|The housekeeping screen in rumo: room 204 is set to clean and the counters above the list move along.
+126|The breakfast screen in rumo: the kitchen adds a breakfast on room 208 and the count goes from 34 to 36 covers.
+127|The allotment screen in rumo: a block of rooms for a conference, with the pickup per room type and the cut-off.
+128|The reports screen in rumo: the period is set to April and the revenue report shows the key figures with the comparison to last year.

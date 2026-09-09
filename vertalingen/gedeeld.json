@@ -4,16 +4,16 @@
   "fr": "<li><a href=\"features.html\" class=\"active\">Que faisons-nous&nbsp;?</a></li>"
  },
  "<li><a href=\"wat-drijft-ons.html\">Wat drijft ons?</a></li>": {
-  "en": "<li><a href=\"what-drives-us.html\">What drives us?</a></li>",
-  "fr": "<li><a href=\"ce-qui-nous-anime.html\">Ce qui nous anime</a></li>"
+  "en": "<li><a href=\"wat-drijft-ons.html\">What drives us?</a></li>",
+  "fr": "<li><a href=\"wat-drijft-ons.html\">Ce qui nous anime</a></li>"
  },
  "<li><a href=\"prijzen.html\">En euh, wat kost dat?</a></li>": {
-  "en": "<li><a href=\"pricing.html\">And erm, what does it cost?</a></li>",
-  "fr": "<li><a href=\"tarifs.html\">Et euh, ça coûte combien&nbsp;?</a></li>"
+  "en": "<li><a href=\"prijzen.html\">And erm, what does it cost?</a></li>",
+  "fr": "<li><a href=\"prijzen.html\">Et euh, ça coûte combien&nbsp;?</a></li>"
  },
  "<li><a href=\"over-ons.html\">Over ons</a></li>": {
-  "en": "<li><a href=\"about.html\">About us</a></li>",
-  "fr": "<li><a href=\"a-propos.html\">À propos</a></li>"
+  "en": "<li><a href=\"over-ons.html\">About us</a></li>",
+  "fr": "<li><a href=\"over-ons.html\">À propos</a></li>"
  },
  "<li><a href=\"index.html#demo\" class=\"nav-cta\">Probeer gratis →</a></li>": {
   "en": "<li><a href=\"index.html#demo\" class=\"nav-cta\">Try it free →</a></li>",
@@ -48,24 +48,24 @@
   "fr": "<li><a href=\"features.html#integraties\">Intégrations</a></li>"
  },
  "<li><a href=\"veiligheid.html\">Veiligheid</a></li>": {
-  "en": "<li><a href=\"../veiligheid.html\">Security</a></li>",
-  "fr": "<li><a href=\"../veiligheid.html\">Sécurité</a></li>"
+  "en": "<li><a href=\"veiligheid.html\">Security</a></li>",
+  "fr": "<li><a href=\"veiligheid.html\">Sécurité</a></li>"
  },
  "<li><a href=\"kb.html\">Helpdesk</a></li>": {
-  "en": "<li><a href=\"../kb.html\">Help centre</a></li>",
-  "fr": "<li><a href=\"../kb.html\">Centre d'aide</a></li>"
+  "en": "<li><a href=\"kb.html\">Help centre</a></li>",
+  "fr": "<li><a href=\"kb.html\">Centre d'aide</a></li>"
  },
  "<div class=\"footer-label\">Rumo</div>": {
   "en": "<div class=\"footer-label\">Rumo</div>",
   "fr": "<div class=\"footer-label\">Rumo</div>"
  },
  "<li><a href=\"uitgelegd/index.html\">Uitgelegd</a></li>": {
-  "en": "<li><a href=\"../uitgelegd/index.html\">Explained (in Dutch)</a></li>",
-  "fr": "<li><a href=\"../uitgelegd/index.html\">Expliqué (en néerlandais)</a></li>"
+  "en": "<li><a href=\"uitgelegd/index.html\">Explained (in Dutch)</a></li>",
+  "fr": "<li><a href=\"uitgelegd/index.html\">Expliqué (en néerlandais)</a></li>"
  },
  "<li><a href=\"overstappen.html\">Overstappen</a></li>": {
-  "en": "<li><a href=\"../overstappen.html\">Switching over (in Dutch)</a></li>",
-  "fr": "<li><a href=\"../overstappen.html\">Migration (en néerlandais)</a></li>"
+  "en": "<li><a href=\"overstappen.html\">Switching over (in Dutch)</a></li>",
+  "fr": "<li><a href=\"overstappen.html\">Migration (en néerlandais)</a></li>"
  },
  "<li><a href=\"mailto:hello@rumo.eu\">Stuur ons een mailtje</a></li>": {
   "en": "<li><a href=\"mailto:hello@rumo.eu\">Send us an email</a></li>",
@@ -88,12 +88,12 @@
   "fr": "<li><a href=\"features.html#integraties\">Gestion des clés</a></li>"
  },
  "<a href=\"privacy.html\">Privacy</a>": {
-  "en": "<a href=\"../privacy.html\">Privacy</a>",
-  "fr": "<a href=\"../privacy.html\">Confidentialité</a>"
+  "en": "<a href=\"privacy.html\">Privacy</a>",
+  "fr": "<a href=\"privacy.html\">Confidentialité</a>"
  },
  "<a href=\"cookies.html\">Cookies</a>": {
-  "en": "<a href=\"../cookies.html\">Cookies</a>",
-  "fr": "<a href=\"../cookies.html\">Cookies</a>"
+  "en": "<a href=\"cookies.html\">Cookies</a>",
+  "fr": "<a href=\"cookies.html\">Cookies</a>"
  },
  "<li><a href=\"features.html#integraties\">Revenue management</a></li>": {
   "en": "<li><a href=\"features.html#integraties\">Revenue management</a></li>",

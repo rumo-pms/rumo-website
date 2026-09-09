@@ -1,0 +1,4 @@
+1|Rumo - Hotel Property Management System
+2|Hotel software you do not need a training course for.
+3|Reservations, invoicing, housekeeping, channel management, guest commu&shy;nication, all in one system, without three Excel files and a post-it on your screen.<br><br> Built in Belgium. For <span>independent hotels</span> that would rather spend their time on guests than on software.
+4|Currently in development. We will keep you posted.

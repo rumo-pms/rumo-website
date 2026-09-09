@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script src="../demo-form.js?v=2" defer></script>
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions générales · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Les conditions générales de rumo, toujours la version en vigueur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  .legal { background:var(--paper); padding:4rem 0 6rem; }
+  .legal-wrap { max-width:740px; margin:0 auto; padding:0 2rem; }
+  .legal h2 { font-size:clamp(1.5rem, 3vw, 2rem); margin-top:2.75rem; margin-bottom:1rem; }
+  .legal h2:first-of-type { margin-top:0; }
+  .legal h3 { font-size:1.1rem; font-family:'Inter',sans-serif; font-weight:600; color:var(--ink); margin-top:1.5rem; margin-bottom:0.4rem; line-height:1.4; }
+  .legal p { line-height:1.7; margin-bottom:1rem; color:var(--ink-soft, #3a3a3a); }
+  .legal ul { margin:0 0 1rem 1.2rem; line-height:1.7; }
+  .legal hr { border:none; border-top:1px solid var(--border,#e5e0d8); margin:2.5rem 0; }
+  .legal-table { width:100%; border-collapse:collapse; margin:1rem 0 1.5rem; font-size:0.92rem; }
+  .legal-table th, .legal-table td { border:1px solid var(--border,#e5e0d8); padding:0.5rem 0.7rem; text-align:left; vertical-align:top; }
+  .legal-table th { background:rgba(0,0,0,0.03); font-weight:600; }
+  .legal-lang-switch { display:flex; gap:0.4rem; margin-bottom:1.5rem; }
+  .legal-lang-switch button { font:inherit; font-size:0.8rem; padding:0.25rem 0.7rem; border:1px solid var(--border,#e5e0d8); border-radius:999px; background:transparent; cursor:pointer; color:var(--muted,#8a8578); }
+  .legal-lang-switch button.active { background:var(--ink,#1a1a1a); color:#fff; border-color:var(--ink,#1a1a1a); }
+  .legal-version { font-size:0.85rem; color:var(--muted,#8a8578); margin-bottom:1.75rem; }
+  .legal-loading, .legal-error { color:var(--muted,#8a8578); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <span class="kicker">Juridique</span>
+      <h1>Conditions <em>générales</em>.</h1>
+      <p class="lead">Les règles qui s'appliquent à votre abonnement. C'est toujours la version en vigueur, directement issue de notre système.</p>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>Droit belge</span> <span>Toujours à jour</span> <span>Une seule source</span>
+  </div>
+</div>
+
+<section class="legal">
+  <div class="legal-wrap fade-up">
+    <div id="legal-live" data-doc="terms"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Juridique</div>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Confidentialité</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="conditions-generales.html">Conditions générales</a></li>
+        <li><a href="dpa.html">Accord de traitement des données</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a> · <a href="conditions-generales.html">Conditions</a></span>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+});
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.documentElement.dataset.fadeReady = '1';
+</script>
+<script src="../legal-live.js"></script>
+</body>
+</html>

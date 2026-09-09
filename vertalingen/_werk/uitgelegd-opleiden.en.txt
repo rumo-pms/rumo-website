@@ -1,0 +1,47 @@
+1|You train more often, for people who are there less often · explained by rumo
+2|More students and flexi-workers are turning up behind your desk, they stay for less time, and because they work less often it takes longer before a task really sinks in. About what you can make once and what has to be practised.
+3|<a href="../faq.html">FAQ</a>
+4|← Explained
+5|Training
+6|You train more often, for people who are <em>there less often.</em>
+7|A permanent employee you train once and you enjoy that for years. But there are more and more students and flexi-workers behind your desk, they stay for less time, and because they work less often it also takes longer before a task really sinks in.
+8|<span>3 minute read</span> <span>For whoever trains people</span> <span>Applies without rumo too</span>
+9|Two things happening <em>at the same time</em>
+10|The first is a matter of numbers. Where you used to train one permanent receptionist, there is now a student for the weekends, a flexi-worker for the busy months and someone giving it a go for a season. More people, and each of them stays for less time. So the same explanation goes out the door more often.
+11|The second is less visible and weighs more heavily. <strong>Whoever works less often learns more slowly.</strong> Not because they take it in less well, but because a task sinks in through repetition. A permanent employee does a check-out five times a week and can do it in their sleep after a month. Someone working one Saturday in two might do that check-out twenty times in the same six months, and starts each shift a little from scratch.
+12|So you train more often, for people who need longer. Those two multiply each other.
+13|Repetition is exactly what has <em>gone</em>
+14|Classic training quietly counts on repetition. You explain something once, the new colleague then sees it again every day, and after two weeks it has sunk in. That works as long as that person is there every day.
+15|Take the repetition away and the whole construction falls away. And something takes its place that you do not want: the colleague who picks up the slack. A few questions every shift, to whoever happens to be standing next to them. That costs two people time instead of one, and it is visible nowhere.
+16|Half of it you <em>cannot</em> write down
+17|A training contains two kinds of things.
+18|<strong>Things someone has to know.</strong> Where the spare keys are, which taxi firm you work with, what the cancellation rule is. You can write that down, and then you never have to say it again.
+19|<strong>Things someone has to be able to do.</strong> Checking in a group, making a credit note, handling a no-show.
+20|Nobody reads their way into that second list. You can write it out perfectly, with screenshots and arrows on the right buttons, and that person will still be sweating the first time it really has to happen. And the less often they work, the further that first time lies from the explanation.
+21|A training is not a success because it has been <em>given</em>.
+22|It is a success when the task afterwards is right
+23|And practising is only possible in the <em>real</em> system
+24|That is the knot. The only place where someone can make a real invoice is your real hotel. With a real guest, real money and bookkeeping that records everything. So new people learn the difficult tasks <strong>on the day it goes wrong</strong>: under time pressure, with someone standing waiting.
+25|The usual way out is a test booking in the name of "Test Test". A check-in you can practise on that perfectly well. But as soon as money is involved, that invoice is in your numbering and that credit note is in your books. And then there is something else people consistently forget.
+26|<strong>The mail is the most dangerous part.</strong> A practice check-in sends a confirmation. A practice cancellation sends a cancellation. A practice payment link is a real payment link, with a real amount on it.
+27|It is the first question you should ask about any practice environment: <em>what can get out of here?</em> Besides the mail, that is your channels, your payments and your door locks.
+28|What you can do tomorrow, <em>without</em> software too
+29|<strong>Write down what you have said twice.</strong> That second time is the signal, not the sixth. Five sentences that exist are worth more than a chapter you intend to write.
+30|<strong>Make a list of ten tasks</strong> a new colleague has to be able to do. Ten, not thirty. Anyone who has to learn thirty things learns none.
+31|<strong>Agree per task what "good" looks like</strong>, in one sentence, before you let someone practise. Look at the outcome and not at the clicks: there is nearly always more than one right route.
+32|<strong>Let someone scroll through your procedures the day before their first shift.</strong> Not to know them, but to know that they exist.
+33|In rumo there is a practice copy for this, the training hotel. Free, and it does not count as a second hotel. Inside is the set-up of your own hotel with made-up guests, and the four wires to the outside world are cut: the mail does not leave, there is no connection to the channels, no card is ever charged and the door locks are not carried over.
+34|The practising itself is a conversation with Rudy: he gives one assignment at a time, you carry it out in the app, and afterwards he looks in the data to see whether it is really there. So he does not judge it himself. Your progress is private, from the manager too, and once a week everything is emptied and filled again.
+35|Worked something else out?
+36|We would rather <em>explain</em> it<br>than sell it.
+37|The things that come with running a hotel: inspections, allotments, commissions, training people. We had to work them out ourselves and we write down what we found.
+38|Everything we explain <span>→</span>
+39|No credit card · Cancellable monthly after 6 months · <a href="../overstappen.html">Free data migration</a>
+40|<a href="index.html">Explained</a>
+41|<a href="https://wa.me/32485382828">WhatsApp</a>
+42|<a href="../features.html#integraties">Booking.com</a>
+43|<a href="../features.html#integraties">Airbnb</a>
+44|<a href="../features.html#integraties">Exact Online</a>
+45|<a href="../features.html#integraties">Peppol</a>
+46|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+47|Menu

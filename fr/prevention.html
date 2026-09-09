@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../gate.js"></script>
+<script src="../demo-form.js?v=2" defer></script>
+<script src="../datums.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prévention &amp; bien-être · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Prévention incendie, légionelle, premiers secours, checklists, incidents. Enfin dans un dossier vivant qui suit, rappelle et documente.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* ─── HERO ─── */
+  .fp-hero {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .fp-hero-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 4.5rem;
+    align-items: center;
+  }
+  .fp-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8a6b1a;
+    background: #FCEDBD;
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .fp-hero-tag svg { width: 14px; height: 14px; stroke-width: 1.8; fill: none; }
+  .fp-hero-addon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #b96b4a;
+    background: #FBE1D2;
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
+    margin-left: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .fp-hero-addon::before {
+    content: '';
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #D68F6F;
+  }
+  .fp-hero-text h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2.4rem, 4.8vw, 3.6rem);
+    letter-spacing: -0.028em;
+    line-height: 1.04;
+    margin-bottom: 1.4rem;
+  }
+  .fp-hero-text h1 em { color: var(--terra-dark); font-style: italic; }
+  .fp-hero-text .lead {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 52ch;
+    margin-bottom: 2rem;
+  }
+  .fp-hero-bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .fp-hero-bullets li::before {
+    content: '·';
+    color: var(--terra);
+    margin-right: 0.5em;
+  }
+
+  /* ─── SECTIONS ─── */
+  .fp-section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .fp-section.alt { background: var(--paper-deep); }
+  .fp-section-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .fp-section.reverse .fp-section-inner > .fp-section-visual { order: -1; }
+  .fp-section-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-bottom: 0.9rem;
+    display: inline-block;
+  }
+  .fp-section-text h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+    margin-bottom: 1.3rem;
+  }
+  .fp-section-text h2 em { color: var(--terra-dark); font-style: italic; }
+  .fp-section-text .lead {
+    color: var(--ink-soft);
+    line-height: 1.65;
+    max-width: 52ch;
+    font-size: 1.02rem;
+    margin-bottom: 1.3rem;
+  }
+  .fp-bullets {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  .fp-bullets li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .fp-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.65em;
+    width: 8px; height: 1.5px;
+    background: var(--terra);
+  }
+  .fp-bullets li em { color: var(--terra-dark); font-style: italic; }
+
+  /* ─── mockup wrapper ─── */
+  .mockup {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1.4rem;
+    box-shadow: 0 20px 40px rgba(27,25,23,0.08);
+  }
+  .mockup-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mockup-head h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .mockup-head .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    background: var(--sand);
+    color: var(--ink);
+  }
+
+  /* Mockup · Notifications */
+  .mk-notif .notif {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left-width: 3px;
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.55rem;
+  }
+  .mk-notif .notif:last-child { margin-bottom: 0; }
+  .mk-notif .notif.warn { border-left-color: #d8a437; }
+  .mk-notif .notif.ok { border-left-color: var(--forest); }
+  .mk-notif .notif.red { border-left-color: var(--terra-dark); }
+  .mk-notif .notif.info { border-left-color: #4a7fb5; }
+  .mk-notif .notif .ic {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .mk-notif .notif.warn .ic { background: #FCEDBD; color: #8a6b1a; }
+  .mk-notif .notif.ok .ic { background: var(--forest-soft); color: var(--forest); }
+  .mk-notif .notif.red .ic { background: var(--rose-soft); color: var(--terra-dark); }
+  .mk-notif .notif.info .ic { background: #DCE4F3; color: #4a7fb5; }
+  .mk-notif .notif strong { display: block; font-size: 0.92rem; color: var(--ink); margin-bottom: 0.1rem; }
+  .mk-notif .notif span { font-size: 0.74rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+
+  /* Mockup · Dossier rows */
+  .mk-dossier .dossier-row {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--paper);
+    margin-bottom: 0.55rem;
+  }
+  .mk-dossier .dossier-row:last-child { margin-bottom: 0; }
+  .mk-dossier .dossier-row .ic {
+    width: 36px; height: 36px;
+    border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .mk-dossier .dossier-row .ic svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+  .mk-dossier .dossier-row strong { display: block; font-size: 0.94rem; color: var(--ink); margin-bottom: 0.15rem; }
+  .mk-dossier .dossier-row .meta { font-size: 0.72rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+  .mk-dossier .dossier-row .status {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.55rem;
+    border-radius: 100px;
+    background: var(--forest-soft);
+    color: var(--forest);
+  }
+  .mk-dossier .dossier-row.warn .status { background: #FCEDBD; color: #8a6b1a; }
+
+  /* Mockup · Checklist */
+  .mk-checklist .check-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.7rem 0.4rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.92rem;
+  }
+  .mk-checklist .check-item:last-child { border-bottom: none; }
+  .mk-checklist .check-box {
+    width: 20px; height: 20px;
+    border: 2px solid var(--line);
+    border-radius: 5px;
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem;
+  }
+  .mk-checklist .check-box.done { background: var(--forest); border-color: var(--forest); color: var(--paper); }
+  .mk-checklist .check-item.done { color: var(--muted); text-decoration: line-through; }
+  .mk-checklist .check-item .meta {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .mk-checklist .checklist-summary {
+    margin-top: 0.85rem;
+    padding: 0.85rem 1rem;
+    background: var(--forest-soft);
+    border-radius: 10px;
+    color: var(--forest);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  /* Mockup · Audit timeline */
+  .mk-audit .audit-item {
+    display: flex;
+    gap: 0.85rem;
+    padding-bottom: 0.85rem;
+    margin-bottom: 0.85rem;
+    border-bottom: 1px dashed var(--line);
+  }
+  .mk-audit .audit-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .mk-audit .audit-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--terra);
+    margin-top: 0.4em;
+    flex-shrink: 0;
+  }
+  .mk-audit .audit-text strong { display: block; font-size: 0.92rem; color: var(--ink); margin-bottom: 0.15rem; }
+  .mk-audit .audit-text span { font-size: 0.74rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; display: block; margin-bottom: 0.2rem; }
+  .mk-audit .audit-text p { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.5; }
+
+  /* ─── andere features strip ─── */
+  .fp-others {
+    background: var(--paper-deep);
+    padding: 5rem 0 6rem;
+    border-top: 1px solid var(--line);
+  }
+  .fp-others-head {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fp-others-head h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0.6rem 0 0.8rem;
+  }
+  .fp-others-head h3 em { color: var(--terra-dark); font-style: italic; }
+  .fp-others-head p { color: var(--ink-soft); font-size: 0.98rem; }
+  .fp-others-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .fp-others-card {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  }
+  .fp-others-card:hover {
+    box-shadow: 0 14px 28px rgba(27,25,23,0.08);
+    transform: translateY(-3px);
+    border-color: var(--terra);
+  }
+  .fp-others-ic {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fp-others-ic svg { width: 16px; height: 16px; stroke-width: 1.8; fill: none; }
+  .fp-others-card h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .fp-others-card h4 em { color: var(--terra-dark); font-style: italic; font-weight: 300; }
+  .fp-others-card .arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-top: auto;
+  }
+
+  @media (max-width: 880px) {
+    .fp-hero { padding: 4rem 0; }
+    .fp-hero-inner, .fp-section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .fp-section.reverse .fp-section-inner > .fp-section-visual { order: 0; }
+    .fp-section { padding: 4rem 0; }
+    .fp-others-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .fp-others-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../prevention.html">NL</a>
+      <a href="../en/prevention.html">EN</a>
+      <a href="prevention.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="fp-hero">
+  <div class="wrap">
+    <div class="fp-hero-inner enkel fade-up">
+      <div class="fp-hero-text">
+        <span class="fp-hero-tag">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Prévention &amp; bien-être
+        </span>
+        <span class="fp-hero-addon">Add-on &middot; 29 &euro;/mois</span>
+        <h1>Prévention incendie. Légionelle. Premiers secours.<br><em>Enfin sous contrôle.</em></h1>
+        <p class="lead">Tout hôtelier connaît ce sentiment : quelque part dans une armoire se trouve un classeur avec des contrôles, des checklists et des plans de sécurité. Personne ne sait avec certitude si tout est encore valable. Jusqu'à ce qu'une inspection arrive.</p>
+        <p class="lead">Un hôtel est aussi un bâtiment, et ce bâtiment a sa propre administration. Quinze installations, chacune avec sa firme, son délai et son papier. Ce n'est pas un problème technique mais un <strong>problème de documents</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ INSTALLATIES ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Installations</span>
+        <h2>Chaque installation a <em>sa propre horloge.</em></h2>
+        <p class="lead">Par installation, vous notez ce que c'est, jusqu'à quand l'attestation vaut, qui l'entretient et qui la contrôle. Ces deux derniers sont volontairement des noms distincts, car c'est la question que vous poserez dans un an.</p>
+        <ul class="fp-bullets">
+          <li>Vous ne réglez pas le statut : il découle de la date d'échéance</li>
+          <li>Une installation sans date n'a pas de statut. Ce n'est <em>pas</em> la même chose qu'être en ordre</li>
+          <li>rumo ne connaît pas le délai légal. Ce que vous encodez est ce avec quoi il travaille</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="Le registre des installations dans rumo : chaque installation avec sa date d'échéance et le statut qui en découle.">
+          <div class="as-kop"><h4>Installations</h4><span data-datum="vandaag">2 avril</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Échue</div><div class="v oranje">1</div></div>
+            <div><div class="l">Sous 30 j</div><div class="v oranje">3</div></div>
+            <div><div class="l">En ordre</div><div class="v groen">14</div></div>
+            <div><div class="l">Sans date</div><div class="v">2</div></div>
+          </div>
+          <div class="as-tabs"><span class="aan">Toutes</span><span>Incendie</span><span>Électricité</span><span>Eau</span><span>Ascenseur</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Organisme de contrôle &middot; basse tension</span><br><b>Installation électrique</b></div><span class="chip oranje">Échue</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Ascensoriste &middot; analyse de risques</span><br><b>Ascenseur</b></div><span class="chip oranje">Encore 12 jours</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Société incendie &middot; 14 pièces</span><br><b>Extincteurs</b></div><span class="chip oranje">Encore 21 jours</span></div>
+          <div class="as-voet">L'entretien et le contrôle figurent comme deux firmes distinctes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ WAARSCHUWINGEN ═══════════════════════ -->
+<section class="fp-section reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">À temps</span>
+        <h2>Vous le voyez <em>avant qu'on ne le demande.</em></h2>
+        <p class="lead">Un contrôle qui échoit la semaine prochaine ne se règle pas la semaine prochaine. Un électricien passe d'abord réparer ce que le contrôle précédent avait relevé, et l'organisme de contrôle ensuite seulement. Deux agendas, deux délais.</p>
+        <p class="lead">C'est pourquoi rumo prévient trente, quatorze, sept et un jour à l'avance. La cloche montre en direct ce qui demande de l'attention : contrôles qui échoient, tâches ouvertes, un exercice d'évacuation vieux de plus d'un an.</p>
+        <ul class="fp-bullets">
+          <li>Ces avertissements arrivent dans l'application, pas dans votre boîte mail. Quelqu'un doit ouvrir rumo</li>
+          <li>La cloche est réservée aux managers et aux admins</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="La cloche de notifications dans rumo : ce qui demande de l'attention aujourd'hui côté contrôles, tâches et documents.">
+          <div class="as-kop"><h4>Ce qui demande de l'attention</h4><span data-datum="vandaag">2 avril</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Échu</span><br><b>Attestation de contrôle basse tension</b></div><span class="chip oranje">Depuis 9 jours</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Sous 30 jours</span><br><b>Attestation extincteurs</b></div><span class="chip oranje">Encore 21 jours</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Annuel &middot; attendu</span><br><b>Exercice d'évacuation</b></div><span class="chip oranje">Il y a 14 mois</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Sous 30 jours</span><br><b>Analyse de risques ascenseur</b></div><span class="chip oranje">Encore 12 jours</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">Tâches et checklists</div>
+          <div class="as-rij vuil"><div><span class="sub">Annuel</span><br><b>Exercice d'évacuation</b></div><span class="chip oranje">Il y a 14 mois</span></div>
+          <div class="as-voet">Dans l'application, pas dans votre boîte mail</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ DOCUMENTEN ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Le dossier</span>
+        <h2>Un dossier <em>prêt à être montré.</em></h2>
+        <p class="lead">Les attestations, rapports, autorisations et plans eux-mêmes, jusqu'à 25 Mo par fichier. Avec, par document, qui l'a délivré et jusqu'à quand il vaut.</p>
+        <ul class="fp-bullets">
+          <li>Des versions plutôt qu'un écrasement : l'ancienne est archivée, la chaîne reste complète</li>
+          <li>Par document, vous choisissez qui peut le voir. Rudy respecte la même règle</li>
+          <li>Envoyez-lui une pile d'attestations et il les prépare, mais il n'archive jamais lui-même</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="Le dossier documentaire dans rumo : des attestations avec leurs versions et une file d'attente avec ce que Rudy a préparé.">
+          <div class="as-kop"><h4>Documents</h4><span>48 pièces</span></div>
+          <div class="as-tabs"><span class="aan">Tous</span><span>Attestations</span><span>Rapports</span><span>Plans</span><span>Polices</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Société incendie &middot; version 4</span><br><b>Attestation de contrôle extincteurs</b></div><span class="chip">Valable jusqu'au 23/04</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Conseiller en prévention</span><br><b>Analyse de risques du bâtiment</b></div><span class="chip">Managers uniquement</span></div>
+          <div class="as-rij"><div><span class="sub">Version 3 &middot; archivée</span><br><b>Attestation de contrôle extincteurs</b></div><span class="chip grijs">Conservée</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">En attente de confirmation</div>
+          <div class="as-voet">Rudy prépare, vous confirmez</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ REGISTERS ═══════════════════════ -->
+<section class="fp-section reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Registres et checklists</span>
+        <h2>Des checklists qui <em>se font vraiment.</em></h2>
+        <p class="lead">À côté de la technique court une seconde piste : incidents, premiers secours, faits psychosociaux, exercices d'évacuation, légionelle, produits chimiques, et qui est venu travailler dans le bâtiment.</p>
+        <p class="lead"><strong>La différence entre une tâche et une checklist, c'est la preuve.</strong> Une tâche retient seulement quand elle a été faite pour la dernière fois. Une checklist laisse une trace : qui l'a exécutée, ce que chaque point a donné, et une signature. Elle devient toute seule un PDF dans vos documents.</p>
+        <ul class="fp-bullets">
+          <li>Un entrepreneur s'annonce lui-même avec un code QR, sans login rumo</li>
+          <li>Ces enregistrements de visite sont effacés après deux ans. Si vous voulez en garder, exportez à temps</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="Les registres de sécurité dans rumo, avec une checklist tout juste signée qui atterrit en PDF dans les documents.">
+          <div class="as-kop"><h4>Veiligheid</h4><span data-datum="vandaag">2 avril</span></div>
+          <div class="as-tabs"><span class="aan">Registres</span><span>Checklists</span><span>Entrepreneurs</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Incidents</span><br><b>3 cette année &middot; 1 ouvert</b></div><span class="chip">Tenu à jour</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Légionelle</span><br><b>Carnet de rinçage &middot; 6 robinets</b></div><span class="chip">Cette semaine</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Exercice d'évacuation</span><br><b>Le dernier il y a 14 mois</b></div><span class="chip oranje">Attendu</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">Checklist tout juste signée</div>
+          <div class="as-rij wisselt"><div><span class="sub">Ronde incendie mensuelle &middot; An</span><br><b>18 points &middot; 1 remarque</b></div><span class="as-chips"><span class="chip oranje was">En cours</span><span class="chip wordt">Signée</span></span></div>
+          <div class="as-voet">Une tâche retient la date, une checklist laisse une preuve</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ANDERE FEATURES ═══════════════════════ -->
+<section class="fp-others">
+  <div class="wrap">
+    <div class="fp-others-head fade-up">
+      <span class="kicker">Autres fonctionnalités</span>
+      <h3>La prévention est <em>une couche</em>.<br>Il y a autre chose autour.</h3>
+      <p>Le PMS, Rudy, le manuel, le channel manager, le portail client. Tout dans le même rumo, tout ensemble un seul système.</p>
+    </div>
+    <div class="fp-others-grid fade-up">
+
+      <a class="fp-others-card" href="pms.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h4>Le <em>PMS</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="rudy.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4><em>Rudy</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="handbook.html">
+        <div class="fp-others-ic" style="background:#DCE4F3; color:#4a7fb5;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h6M8 11h8"/></svg>
+        </div>
+        <h4>Le <em>manuel</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="channel-manager.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
+        </div>
+        <h4><em>Channel</em> manager</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="guest-portal.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h4><em>Portail client</em> &amp; moteur de réservation</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Essayer vous-même</span>
+    <h2>Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.</h2>
+    <p>Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit.</p>
+    <a href="index.html#demo" class="btn-paper">Essayez 14 jours gratuitement <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="migration.html">Migration des données offerte</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+// threshold 0, niet 0.1: een blok hoger dan tien keer het scherm haalde die
+// drempel nooit, en bleef onzichtbaar op een telefoon.
+}, { threshold: 0 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.documentElement.dataset.fadeReady = '1';
+</script>
+
+</body>
+</html>

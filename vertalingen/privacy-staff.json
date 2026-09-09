@@ -1,0 +1,298 @@
+{
+  "Privacy voor hotelpersoneel · rumo": {
+    "en": "Privacy for hotel staff · rumo",
+    "fr": "Vie privée pour le personnel hôtelier · rumo"
+  },
+  "Wat rumo bijhoudt van het hotelpersoneel dat de PMS gebruikt. Welke gegevens, waarom, hoe lang, en wat jij ermee kan doen.": {
+    "en": "What rumo records about the hotel staff who use the PMS. Which data, why, how long, and what you can do about it.",
+    "fr": "Ce que rumo conserve sur le personnel hôtelier qui utilise le PMS. Quelles données, pourquoi, combien de temps, et ce que vous pouvez en faire."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "Privacy · Hotelpersoneel": {
+    "en": "Privacy · Hotel staff",
+    "fr": "Vie privée · Personnel hôtelier"
+  },
+  "Wat wij van <em>jou</em> bijhouden.": {
+    "en": "What we record about <em>you</em>.",
+    "fr": "Ce que nous conservons sur <em>vous</em>."
+  },
+  "Voor het personeel dat in rumo werkt. Hier is rumo zelf de verantwoordelijke. Geen hotel-tussenstap, geen verwarrende rollen.": {
+    "en": "For the staff who work in rumo. Here rumo itself is the controller. No hotel in between, no confusing roles.",
+    "fr": "Pour le personnel qui travaille dans rumo. Ici, c'est rumo lui-même qui est responsable du traitement. Pas d'hôtel intermédiaire, pas de rôles confus."
+  },
+  "Versie<br> <strong>17 mei 2026</strong>": {
+    "en": "Version<br> <strong>17 May 2026</strong>",
+    "fr": "Version<br> <strong>17 mai 2026</strong>"
+  },
+  "<span>AVG / GDPR</span> <span>Rumo BV als controller</span> <span>Belgisch recht</span>": {
+    "en": "<span>GDPR</span> <span>Rumo BV as controller</span> <span>Belgian law</span>",
+    "fr": "<span>RGPD</span> <span>Rumo BV comme responsable</span> <span>Droit belge</span>"
+  },
+  "Laatst bijgewerkt · 17 mei 2026": {
+    "en": "Last updated · 17 May 2026",
+    "fr": "Dernière mise à jour · 17 mai 2026"
+  },
+  "1. Eerst even kaderen": {
+    "en": "1. First, some framing",
+    "fr": "1. D'abord, le cadre"
+  },
+  "Er zijn twee soorten gegevens in rumo. <strong>Gastgegevens</strong> (boekingen, ID-kaarten, facturen) horen bij het hotel, die uitleg staat op de <a href=\"privacy.html\">algemene privacy-pagina</a>. Daar is het hotel verantwoordelijk en rumo verwerker.": {
+    "en": "There are two kinds of data in rumo. <strong>Guest data</strong> (bookings, ID cards, invoices) belongs to the hotel; that explanation is on the <a href=\"privacy.html\">general privacy page</a>. There the hotel is the controller and rumo the processor.",
+    "fr": "Il y a deux sortes de données dans rumo. Les <strong>données clients</strong> (réservations, cartes d'identité, factures) appartiennent à l'hôtel ; cette explication figure sur la <a href=\"privacy.html\">page vie privée générale</a>. Là, l'hôtel est responsable du traitement et rumo sous-traitant."
+  },
+  "<strong>Personeelsgegevens</strong> zijn iets anders. Als jij als receptionist, manager of housekeeper inlogt op rumo, dan zijn we jouw account, je inloggeschiedenis en je acties aan het bijhouden. Daar is <strong>rumo zelf verwerkingsverantwoordelijke</strong>. Die rol kunnen we niet bij het hotel leggen, want het is onze software die de logs maakt en bewaart.": {
+    "en": "<strong>Staff data</strong> is something else. When you log in to rumo as a receptionist, manager or housekeeper, we are recording your account, your login history and your actions. There <strong>rumo itself is the controller</strong>. We cannot put that role with the hotel, because it is our software that makes and keeps the logs.",
+    "fr": "Les <strong>données du personnel</strong>, c'est autre chose. Quand vous vous connectez à rumo comme réceptionniste, manager ou femme de chambre, nous conservons votre compte, votre historique de connexion et vos actions. Là, <strong>rumo est lui-même responsable du traitement</strong>. Nous ne pouvons pas confier ce rôle à l'hôtel, car c'est notre logiciel qui crée et conserve les journaux."
+  },
+  "Dit is de uitleg over dat tweede stuk.": {
+    "en": "This is the explanation of that second part.",
+    "fr": "Ceci est l'explication de cette seconde partie."
+  },
+  "2. Wat we van je weten": {
+    "en": "2. What we know about you",
+    "fr": "2. Ce que nous savons de vous"
+  },
+  "Je account": {
+    "en": "Your account",
+    "fr": "Votre compte"
+  },
+  "Voornaam, achternaam en e-mailadres, gebruikt om in te loggen en je in de software te tonen": {
+    "en": "First name, surname and email address, used to log in and to show you in the software",
+    "fr": "Prénom, nom et adresse mail, utilisés pour vous connecter et vous afficher dans le logiciel"
+  },
+  "Je rol in het hotel (admin, receptie, housekeeping, F&amp;B, ...), bepaalt wat je in rumo kan zien en doen": {
+    "en": "Your role in the hotel (admin, reception, housekeeping, F&amp;B, ...), which decides what you can see and do in rumo",
+    "fr": "Votre rôle dans l'hôtel (admin, réception, housekeeping, F&amp;B, ...), qui détermine ce que vous pouvez voir et faire dans rumo"
+  },
+  "Je wachtwoord (gehasht, nooit in klare tekst opgeslagen) en eventueel een tweede factor als die staat aan": {
+    "en": "Your password (hashed, never stored in plain text) and possibly a second factor if that is switched on",
+    "fr": "Votre mot de passe (haché, jamais conservé en clair) et éventuellement un deuxième facteur s'il est activé"
+  },
+  "Optioneel: een profielfoto die je zelf hebt geüpload": {
+    "en": "Optionally: a profile photo you uploaded yourself",
+    "fr": "En option : une photo de profil que vous avez téléversée vous-même"
+  },
+  "Hoe en wanneer je inlogt": {
+    "en": "How and when you log in",
+    "fr": "Comment et quand vous vous connectez"
+  },
+  "Voor elke inlog houden we bij:": {
+    "en": "For every login we record:",
+    "fr": "Pour chaque connexion, nous conservons :"
+  },
+  "Tijdstip": {
+    "en": "Time",
+    "fr": "L'heure"
+  },
+  "IP-adres": {
+    "en": "IP address",
+    "fr": "L'adresse IP"
+  },
+  "Browser en besturingssysteem (de \"user-agent\")": {
+    "en": "Browser and operating system (the \"user agent\")",
+    "fr": "Le navigateur et le système d'exploitation (le « user-agent »)"
+  },
+  "Dat staat in de <code style=\"font-family:'JetBrains Mono',monospace;font-size:0.85em;background:var(--sand);padding:0.1em 0.35em;border-radius:4px;\">login_log</code> tabel en is nodig om verdachte aanmeldingen te detecteren. Bijvoorbeeld: iemand logt om 3u 's nachts in vanuit een ander land terwijl jij in Gent slaapt.": {
+    "en": "That sits in the <code style=\"font-family:'JetBrains Mono',monospace;font-size:0.85em;background:var(--sand);padding:0.1em 0.35em;border-radius:4px;\">login_log</code> table and is needed to detect suspicious sign-ins. For instance: someone logs in at 3 a.m. from another country while you are asleep in Ghent.",
+    "fr": "Cela figure dans la table <code style=\"font-family:'JetBrains Mono',monospace;font-size:0.85em;background:var(--sand);padding:0.1em 0.35em;border-radius:4px;\">login_log</code> et sert à détecter des connexions suspectes. Par exemple : quelqu'un se connecte à 3 h du matin depuis un autre pays alors que vous dormez à Gand."
+  },
+  "Wat je doet in rumo": {
+    "en": "What you do in rumo",
+    "fr": "Ce que vous faites dans rumo"
+  },
+  "<strong>Audit-logs</strong> op gevoelige acties: prijswijzigingen, betalingen valideren of charge'en, refunds, kredietnota's, gastregistratie. We bewaren wie wat wanneer gedaan heeft, plus de oude en de nieuwe waarde.": {
+    "en": "<strong>Audit logs</strong> on sensitive actions: price changes, validating or charging payments, refunds, credit notes, guest registration. We keep who did what when, plus the old and the new value.",
+    "fr": "Des <strong>journaux d'audit</strong> sur les actions sensibles : changements de prix, validation ou débit de paiements, remboursements, notes de crédit, enregistrement des clients. Nous conservons qui a fait quoi et quand, plus l'ancienne et la nouvelle valeur."
+  },
+  "<strong>Staff-messaging</strong>: berichten die je stuurt in interne kanalen of DMs, met eventuele bijlages.": {
+    "en": "<strong>Staff messaging</strong>: messages you send in internal channels or DMs, with any attachments.",
+    "fr": "Le <strong>chat interne</strong> : les messages que vous envoyez dans les canaux internes ou en privé, avec leurs éventuelles pièces jointes."
+  },
+  "Een algemene activiteitenlog op het niveau van het hotel: wie heeft welke reservatie geopend, gewijzigd of geannuleerd.": {
+    "en": "A general activity log at hotel level: who opened, changed or cancelled which reservation.",
+    "fr": "Un journal d'activité général au niveau de l'hôtel : qui a ouvert, modifié ou annulé quelle réservation."
+  },
+  "Support-contact": {
+    "en": "Support contact",
+    "fr": "Contacts avec le support"
+  },
+  "E-mails die je naar <a href=\"mailto:hello@rumo.eu\">hello@rumo.eu</a> of <a href=\"mailto:support@rumo.eu\">support@rumo.eu</a> stuurt, plus onze antwoorden": {
+    "en": "Emails you send to <a href=\"mailto:hello@rumo.eu\">hello@rumo.eu</a> or <a href=\"mailto:support@rumo.eu\">support@rumo.eu</a>, plus our replies",
+    "fr": "Les mails que vous envoyez à <a href=\"mailto:hello@rumo.eu\">hello@rumo.eu</a> ou <a href=\"mailto:support@rumo.eu\">support@rumo.eu</a>, ainsi que nos réponses"
+  },
+  "Eventuele schermafbeeldingen of voorbeelden die je meestuurt om een probleem te illustreren": {
+    "en": "Any screenshots or examples you send along to illustrate a problem",
+    "fr": "Les captures d'écran ou exemples que vous joignez pour illustrer un problème"
+  },
+  "Wat we <em>niet</em> doen": {
+    "en": "What we do <em>not</em> do",
+    "fr": "Ce que nous <em>ne</em> faisons <em>pas</em>"
+  },
+  "Geen toetsenaanslag-tracking, geen muis-heatmaps, geen session-replay": {
+    "en": "No keystroke tracking, no mouse heatmaps, no session replay",
+    "fr": "Pas d'enregistrement des frappes, pas de cartes de chaleur de souris, pas de rejeu de session"
+  },
+  "Geen profilering op basis van je werkpatroon (\"deze receptionist werkt langzaam\")": {
+    "en": "No profiling based on your work pattern (\"this receptionist is slow\")",
+    "fr": "Pas de profilage sur la base de votre rythme de travail (« cette réceptionniste est lente »)"
+  },
+  "Geen verkoop van werknemersdata aan derden": {
+    "en": "No sale of employee data to third parties",
+    "fr": "Pas de vente de données de collaborateurs à des tiers"
+  },
+  "Geen tracking-pixels in onze e-mails om te zien of je ze opent": {
+    "en": "No tracking pixels in our emails to see whether you open them",
+    "fr": "Pas de pixels de pistage dans nos mails pour voir si vous les ouvrez"
+  },
+  "3. Waarom we het hebben": {
+    "en": "3. Why we have it",
+    "fr": "3. Pourquoi nous les avons"
+  },
+  "<strong>Uitvoering van de overeenkomst tussen rumo en jouw hotel.</strong> Je hebt een account omdat het hotel jou toegang geeft als personeelslid. Zonder accountgegevens kunnen we dat niet leveren.": {
+    "en": "<strong>Performance of the agreement between rumo and your hotel.</strong> You have an account because the hotel gives you access as a member of staff. Without account data we cannot deliver that.",
+    "fr": "<strong>L'exécution du contrat entre rumo et votre hôtel.</strong> Vous avez un compte parce que l'hôtel vous donne accès en tant que membre du personnel. Sans données de compte, nous ne pouvons pas le fournir."
+  },
+  "<strong>Gerechtvaardigd belang, beveiliging en accountabiliteit.</strong> Login-logs en audit-logs zijn er voor fraudepreventie (bv. iemand voert verdachte refunds in), voor incident-response (er gebeurt iets vreemds, we moeten kunnen reconstrueren), en voor het hotel zelf dat eigen personeel moet kunnen controleren waar nodig.": {
+    "en": "<strong>Legitimate interest, security and accountability.</strong> Login logs and audit logs are there for fraud prevention (someone entering suspicious refunds, say), for incident response (something odd happens and we have to be able to reconstruct it), and for the hotel itself, which has to be able to check its own staff where needed.",
+    "fr": "<strong>L'intérêt légitime, la sécurité et la traçabilité.</strong> Les journaux de connexion et d'audit servent à la prévention de la fraude (par ex. quelqu'un qui encode des remboursements suspects), à la réponse aux incidents (quelque chose d'étrange se produit et nous devons pouvoir reconstituer), et à l'hôtel lui-même, qui doit pouvoir contrôler son propre personnel là où c'est nécessaire."
+  },
+  "<strong>Wettelijke verplichting.</strong> Audit-trails op financiële handelingen zijn vereist voor de boekhoudwetgeving en fraudebestrijding.": {
+    "en": "<strong>Legal obligation.</strong> Audit trails on financial actions are required by accounting legislation and for fighting fraud.",
+    "fr": "<strong>Une obligation légale.</strong> Les pistes d'audit sur les opérations financières sont exigées par la législation comptable et la lutte contre la fraude."
+  },
+  "<strong>Toestemming.</strong> Productupdates of nieuwsbrieven van rumo zelf, alleen als je daar expliciet ja op zegt, met intrekrecht.": {
+    "en": "<strong>Consent.</strong> Product updates or newsletters from rumo itself, only if you explicitly say yes, with the right to withdraw.",
+    "fr": "<strong>Votre consentement.</strong> Les mises à jour produit ou newsletters de rumo lui-même, uniquement si vous dites explicitement oui, avec droit de retrait."
+  },
+  "4. Met wie we delen": {
+    "en": "4. Who we share with",
+    "fr": "4. Avec qui nous partageons"
+  },
+  "Wij draaien rumo bij een handvol andere bedrijven. Allemaal binnen de EU of onder een geldig overdrachtsmechanisme. Allemaal met een verwerkersovereenkomst:": {
+    "en": "We run rumo at a handful of other companies. All inside the EU or under a valid transfer mechanism. All with a data processing agreement:",
+    "fr": "Nous faisons tourner rumo chez une poignée d'autres entreprises. Toutes dans l'UE ou sous un mécanisme de transfert valable. Toutes avec un accord de traitement :"
+  },
+  "<strong>Scaleway</strong> (FR), host de servers en de databank waar je gegevens op staan": {
+    "en": "<strong>Scaleway</strong> (FR), hosts the servers and the database your data sits on",
+    "fr": "<strong>Scaleway</strong> (FR), héberge les serveurs et la base de données où se trouvent vos données"
+  },
+  "<strong>Brevo</strong> (FR), verstuurt transactionele e-mails zoals \"iemand heeft je uitgenodigd\", wachtwoord-reset, login-meldingen": {
+    "en": "<strong>Brevo</strong> (FR), sends transactional emails such as \"someone has invited you\", password resets, login notifications",
+    "fr": "<strong>Brevo</strong> (FR), envoie les mails transactionnels du type « quelqu'un vous a invité », réinitialisation de mot de passe, alertes de connexion"
+  },
+  "<strong>Mistral</strong> (FR, via Scaleway), als jouw hotel Rudy (de AI-assistent) gebruikt, dan kan jouw vraag aan Rudy en de context van je rol naar Mistral. Wordt niet gebruikt om de modellen te trainen.": {
+    "en": "<strong>Mistral</strong> (FR, via Scaleway), if your hotel uses Rudy (the AI assistant), your question to Rudy and the context of your role can go to Mistral. Not used to train the models.",
+    "fr": "<strong>Mistral</strong> (FR, via Scaleway) : si votre hôtel utilise Rudy (l'assistant IA), votre question à Rudy et le contexte de votre rôle peuvent aller chez Mistral. Non utilisé pour entraîner les modèles."
+  },
+  "<strong>Niet</strong> bij Google, niet bij Microsoft, niet bij OpenAI, niet bij Meta. Geen Sentry-koppeling op dit moment. Op onze <em>website</em> rumo.eu staat wel een cookieloze bezoekersteller (Plausible, EU-gehost). Die telt alleen bezoeken aan de marketingpagina's en raakt de software waarin jij werkt niet aan: over jou als medewerker gaat daar niets doorheen. Zie <a href=\"cookies.html\">Cookies</a>.": {
+    "en": "<strong>Not</strong> at Google, not at Microsoft, not at OpenAI, not at Meta. No Sentry connection at this time. On our <em>website</em> rumo.eu there is a cookieless visitor counter (Plausible, EU-hosted). That only counts visits to the marketing pages and does not touch the software you work in: nothing about you as a member of staff passes through it. See <a href=\"cookies.html\">Cookies</a>.",
+    "fr": "<strong>Pas</strong> chez Google, pas chez Microsoft, pas chez OpenAI, pas chez Meta. Aucune connexion Sentry à ce jour. Sur notre <em>site</em> rumo.eu se trouve bien un compteur de visites sans cookies (Plausible, hébergé dans l'UE). Il ne compte que les visites des pages marketing et ne touche pas au logiciel dans lequel vous travaillez : rien de vous en tant que collaborateur n'y passe. Voir <a href=\"cookies.html\">Cookies</a>."
+  },
+  "5. Hoe lang we het bewaren": {
+    "en": "5. How long we keep it",
+    "fr": "5. Combien de temps nous les conservons"
+  },
+  "<strong>Je account</strong>: zolang je een actieve gebruiker bent. Wordt je toegang ingetrokken door je hotel, dan zetten we het account op inactief; volledige verwijdering na 30 dagen tenzij wettelijke bewaarplicht (bv. financiële audit-trails).": {
+    "en": "<strong>Your account</strong>: as long as you are an active user. If your access is withdrawn by your hotel, we set the account to inactive; full deletion after 30 days unless there is a legal retention duty (financial audit trails, for instance).",
+    "fr": "<strong>Votre compte</strong> : tant que vous êtes un utilisateur actif. Si votre accès est retiré par votre hôtel, nous mettons le compte en inactif ; suppression complète après 30 jours, sauf obligation légale de conservation (pistes d'audit financières, par exemple)."
+  },
+  "<strong>Login-logs</strong>: 90 dagen, daarna automatisch gewist. Lang genoeg om recente afwijkingen op te sporen, kort genoeg om geen jarenlange surveillance op te bouwen.": {
+    "en": "<strong>Login logs</strong>: 90 days, then deleted automatically. Long enough to spot recent anomalies, short enough not to build years of surveillance.",
+    "fr": "<strong>Journaux de connexion</strong> : 90 jours, puis effacés automatiquement. Assez longtemps pour repérer des anomalies récentes, assez court pour ne pas construire des années de surveillance."
+  },
+  "<strong>Audit-logs op financiële handelingen</strong>: 7 jaar (BTW-wetboek). Niet anders dan voor papieren kasboeken.": {
+    "en": "<strong>Audit logs on financial actions</strong>: 7 years (VAT Code). No different from paper cash books.",
+    "fr": "<strong>Journaux d'audit sur les opérations financières</strong> : 7 ans (Code de la TVA). Pas différent des livres de caisse papier."
+  },
+  "<strong>Staff-berichten</strong>: volgens de retentie-policy die het hotel zelf instelt (typisch 30-365 dagen, instelbaar per hotel).": {
+    "en": "<strong>Staff messages</strong>: according to the retention policy the hotel sets itself (typically 30-365 days, adjustable per hotel).",
+    "fr": "<strong>Messages internes</strong> : selon la politique de conservation que l'hôtel règle lui-même (typiquement 30 à 365 jours, réglable par hôtel)."
+  },
+  "<strong>Support-correspondentie</strong>: twee jaar, daarna gewist tenzij er nog een lopende kwestie is.": {
+    "en": "<strong>Support correspondence</strong>: two years, then deleted unless a matter is still running.",
+    "fr": "<strong>Correspondance avec le support</strong> : deux ans, puis effacée sauf si une question est encore en cours."
+  },
+  "6. Wat jij kan doen": {
+    "en": "6. What you can do",
+    "fr": "6. Ce que vous pouvez faire"
+  },
+  "Dezelfde zes rechten als elke EU-burger:": {
+    "en": "The same six rights as any EU citizen:",
+    "fr": "Les mêmes six droits que tout citoyen de l'UE :"
+  },
+  "<strong>Inzage</strong>: een kopie vragen van wat we van je hebben": {
+    "en": "<strong>Access</strong>: ask for a copy of what we hold about you",
+    "fr": "<strong>Accès</strong> : demander une copie de ce que nous avons sur vous"
+  },
+  "<strong>Correctie</strong>: fouten laten rechtzetten (typo in je naam, verkeerd e-mailadres)": {
+    "en": "<strong>Rectification</strong>: have mistakes corrected (a typo in your name, a wrong email address)",
+    "fr": "<strong>Rectification</strong> : faire corriger des erreurs (une faute dans votre nom, une mauvaise adresse mail)"
+  },
+  "<strong>Verwijdering</strong>: vragen om alles te wissen, behalve wat we wettelijk moeten bijhouden": {
+    "en": "<strong>Erasure</strong>: ask for everything to be deleted, except what we are legally required to keep",
+    "fr": "<strong>Effacement</strong> : demander que tout soit effacé, sauf ce que nous devons légalement conserver"
+  },
+  "<strong>Beperking</strong>: vragen om verwerking tijdelijk stop te zetten": {
+    "en": "<strong>Restriction</strong>: ask for processing to be paused",
+    "fr": "<strong>Limitation</strong> : demander la suspension temporaire du traitement"
+  },
+  "<strong>Overdraagbaarheid</strong>: een kopie krijgen in een herbruikbaar formaat (JSON/CSV)": {
+    "en": "<strong>Portability</strong>: get a copy in a reusable format (JSON/CSV)",
+    "fr": "<strong>Portabilité</strong> : obtenir une copie dans un format réutilisable (JSON/CSV)"
+  },
+  "<strong>Bezwaar</strong>: verzet tegen verwerking op basis van gerechtvaardigd belang": {
+    "en": "<strong>Objection</strong>: object to processing based on legitimate interest",
+    "fr": "<strong>Opposition</strong> : vous opposer à un traitement fondé sur l'intérêt légitime"
+  },
+  "Voor accountzaken in rumo zelf: vraag eerst bij je hotelbeheerder. Die kan in Settings een hoop dingen voor jou aanpassen of jouw account verwijderen.": {
+    "en": "For account matters in rumo itself: ask your hotel administrator first. They can change a good deal for you in Settings, or delete your account.",
+    "fr": "Pour les questions de compte dans rumo même : adressez-vous d'abord à votre administrateur d'hôtel. Il peut adapter beaucoup de choses pour vous dans les paramètres, ou supprimer votre compte."
+  },
+  "Voor alles wat rumo zelf bewaart (login-logs, support-mails, etc.): stuur een mailtje naar <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a>. We antwoorden binnen 30 dagen, meestal sneller.": {
+    "en": "For everything rumo itself keeps (login logs, support mails, etc.): send an email to <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a>. We reply within 30 days, usually sooner.",
+    "fr": "Pour tout ce que rumo conserve lui-même (journaux de connexion, mails de support, etc.) : envoyez un mail à <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a>. Nous répondons dans les 30 jours, en général plus vite."
+  },
+  "Niet tevreden? Klacht kan altijd bij de <a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Gegevensbeschermingsautoriteit</a> in Brussel.": {
+    "en": "Not satisfied? You can always complain to the <a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Data Protection Authority</a> in Brussels.",
+    "fr": "Pas satisfait ? Une plainte est toujours possible auprès de l'<a href=\"https://www.gegevensbeschermingsautoriteit.be\" target=\"_blank\" rel=\"noopener noreferrer\">Autorité de protection des données</a> à Bruxelles."
+  },
+  "7. Contact": {
+    "en": "7. Contact",
+    "fr": "7. Contact"
+  },
+  "<strong>Rumo BV</strong><br> Gent, België<br> <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a> · <a href=\"mailto:hello@rumo.eu\">hello@rumo.eu</a>": {
+    "en": "<strong>Rumo BV</strong><br> Ghent, Belgium<br> <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a> · <a href=\"mailto:hello@rumo.eu\">hello@rumo.eu</a>",
+    "fr": "<strong>Rumo BV</strong><br> Gand, Belgique<br> <a href=\"mailto:privacy@rumo.eu\">privacy@rumo.eu</a> · <a href=\"mailto:hello@rumo.eu\">hello@rumo.eu</a>"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  }
+}

@@ -1,0 +1,155 @@
+1	Veiligheid &amp; privacy · rumo
+2	Passkeys, afgeschermde gastgegevens, alarm bij ongewoon leesgedrag, lokvogels, en een incidentdossier dat de melding aan de Gegevensbeschermingsautoriteit voor je klaarzet. Inbegrepen, geen add-on.
+3	<a href="faq.html">FAQ</a>
+4	Veiligheid &amp; privacy
+5	Inbegrepen · geen add-on
+6	Wie kan er aan <em>je gastenlijst</em>?
+7	De meeste software gaat ervan uit dat wie binnen is, er ook hoort. rumo niet. Je logt in met je vinger, je ziet standaard geen gastgegevens, en voor er geld of een gebruiker beweegt moet je opnieuw bevestigen dat jij het bent.
+8	Loopt er toch iets mis, dan ligt de brief aan je gasten en de melding aan de overheid klaar voor jij goed en wel begonnen bent met zoeken.
+9	Inloggen met je vinger
+10	Alarm bij ongewoon gedrag
+11	Melding klaar binnen 72 uur
+12	Meldingen
+13	Vandaag
+14	<strong>Ongewoon veel reservaties geopend</strong> <span>Nathalie · 10 minuten · receptie-account</span>
+15	<strong>Iemand zit reservatienummers te raden</strong> <span>Lokvogel getoond · account bekijken</span>
+16	<strong>Terugbetaling bevestigd met passkey</strong> <span>€ 240,00 · Tom · 14:02</span>
+17	<strong>Slapend account uitgezet</strong> <span>Laatste login · 94 dagen geleden</span>
+18	De voordeur
+19	Een wachtwoord alleen is <em>geen slot</em>.
+20	rumo werkt met passkeys: je bevestigt met je vinger, je gezicht of de code van je eigen toestel. Er is niets om af te kijken en niets om te hergebruiken.
+21	<em>Tweede factor verplicht</em> voor iedereen, ook via Google of Microsoft
+22	<em>Automatisch afmelden</em> na een tijd niks doen. Een half uur is het maximum
+23	<em>Slapende accounts</em> gaan vanzelf uit na 90 dagen. De stagiair van vorige zomer heeft dus geen sleutel meer
+24	Gebruikers
+25	7 personen
+26	Nathalie · receptie
+27	Passkey · vinger of gezicht
+28	In orde
+29	Tom · manager
+30	Wachtwoord · tweede factor gevraagd
+31	Bijna
+32	Jonas · student
+33	94 dagen niet ingelogd
+34	Uitgezet
+35	Als er tóch iemand binnen is
+36	Het echte werk begint <em>daarna</em>.
+37	Een gestolen account ziet er van buitenaf uit als een gewone collega. Dus kijkt rumo niet naar wie er inlogt, maar naar wat die persoon doet.
+38	<em>Leesalarm</em> bij ongewoon veel gasten openen in korte tijd. Waar de grens ligt zetten wij, niet het hotel
+39	<em>Lokvogels:</em> wie reservatienummers zit te raden, botst op een verzonnen reservatie. Wie ze opent, verraadt zichzelf
+40	<em>Vinger op de knop</em> bij geld en bij mensen: terugbetalingen, rollen, exports
+41	Beveiligingsalarmen
+42	Laatste 7 dagen
+43	<strong>Veel profielen geopend in korte tijd</strong> <span>Account receptie 2 · dinsdag 03:41</span>
+44	<strong>Lokvogel getoond</strong> <span>Na 3 onbestaande reservatienummers</span>
+45	<strong>Terugbetaling geweigerd</strong> <span>Passkey niet bevestigd · niets uitgevoerd</span>
+46	Gastgegevens
+47	Housekeeping heeft geen <em>telefoonnummers</em> nodig.
+48	E-mailadressen, telefoonnummers, geboortedatums: die staan standaard afgeschermd. Niet enkel op je scherm, ook onderweg ernaartoe.
+49	Per veld open te klikken, en elk openklikken wordt gelogd met naam en tijdstip
+50	Housekeeping en F&amp;B krijgen ze helemaal niet toegestuurd
+51	Een gast mailen doet de server. Jouw scherm heeft dat adres nooit nodig
+52	Reservatie · BK-4821
+53	Receptie
+54	<span class="lbl">Naam</span> <span class="val">Marie Dubois</span> <span class="tag">Zichtbaar</span>
+55	<span class="lbl">E-mail</span> <span class="val hid">m•••@•••.be</span> <span class="tag">Verborgen</span>
+56	<span class="lbl">Telefoon</span> <span class="val">+32 470 12 34 56</span> <span class="tag open">Getoond · gelogd</span>
+57	<span class="lbl">Geboorte</span> <span class="val hid">••/••/••••</span> <span class="tag">Verborgen</span>
+58	<span class="lbl">Identiteit</span> <span class="val hid">niet meegestuurd</span> <span class="tag nooit">Housekeeping</span>
+59	14:06 · Tom toonde het telefoonnummer van Marie Dubois
+60	Het logboek
+61	Wie heeft dat <em>opengedaan</em>?
+62	Elke login, elke export, elk opengeklikt telefoonnummer, elk alarm en elke euro die beweegt: het staat erin. Doorzoekbaar op tekst, type, persoon en datum.
+63	Exporteren vraagt zelf ook je passkey, en komt daarna zelf in het logboek
+64	Jij bepaalt hoelang alles blijft staan. Ook het opkuisen laat een spoor na
+65	Logboek
+66	Filter · gastgegevens
+67	Telefoonnummer getoond
+68	Tom · vandaag 14:06
+69	Reservatie BK-4821 · gast Marie Dubois
+70	Export van reservaties
+71	Nathalie · gisteren 17:22
+72	412 regels · CSV · bevestigd met passkey
+73	Rol gewijzigd
+74	Jeffrey · maandag 09:04
+75	Tom kreeg manager-rechten · bevestigd met passkey
+76	En wij dan?
+77	Kunnen wij zelf in <em>jouw hotel</em> kijken?
+78	Terechte vraag, want een leverancier die stilletjes overal bij kan is precies waar je bang voor moet zijn. Het antwoord: alleen als jij het vraagt, en alleen om te kijken.
+79	<em>Per vraag, niet per hotel.</em> De toestemming hangt aan één supportgesprek en eindigt daarmee
+80	<em>Kijken, niet aanraken.</em> Wij kunnen niets opslaan, wijzigen of verwijderen
+81	<em>Niemands account geleend.</em> In jouw logboek staat wie er bij óns keek, met naam
+82	Intrekken werkt bij de eerstvolgende klik, niet morgen
+83	Filter · rumo keek mee
+84	Toestemming gegeven
+85	Jeffrey · dinsdag 10:12
+86	Vraag "factuur toont verkeerde btw" · alleen dit gesprek
+87	Seba (rumo) bekeek Facturatie
+88	dinsdag 10:19
+89	Alleen lezen · eigen account, geen geleende login
+90	Toestemming vervallen
+91	dinsdag 11:04
+92	Vraag afgesloten · toegang meteen weg
+93	Als het toch misloopt
+94	72 uur. Dat is <em>de hele marge</em>.
+95	Loopt er iets fout met gastgegevens, dan geeft de wet je 72 uur om het te melden. Die klok begint te lopen op het moment dat je het weet, niet wanneer je klaar bent met uitzoeken.
+96	<em>De lijst:</em> rumo zet klaar wie er in die periode bij jou verbleef
+97	<em>De waarschuwing:</em> één knop mailt die gasten, elk in zijn eigen taal, vanuit jouw hotel
+98	<em>De bank:</em> een brief op jouw briefpapier voor wie geld kwijt is
+99	<em>De melding:</em> het formulier van artikel 33, ingevuld met wat er in het dossier staat
+100	De klok van 72 uur staat er de hele tijd bij, en telt af.
+101	Incident · phishing januari
+102	Open
+103	Getroffen gasten verzameld
+104	Waarschuwing verstuurd
+105	128 · 3 talen
+106	Brief voor de bank
+107	4 gasten
+108	Melding GBA · ontwerp klaar
+109	nazien
+110	Nog 61 uur binnen de meldingstermijn
+111	Onder de motorkap
+112	De dingen die je <em>nooit ziet</em>.
+113	Kort, want hier wordt niemand vrolijk van. Maar het is wel het stuk waar het bij anderen meestal misgaat.
+114	De gegevens van jouw hotel staan gescheiden van die van elk ander hotel
+115	Je data staat in Europa en blijft in Europa
+116	Kaartnummers komen onze database niet binnen. Alleen type, vervaldatum en de laatste vier cijfers
+117	Alles wat van buiten binnenkomt wordt op handtekening gecontroleerd
+118	Elke link naar het guest portal geldt voor één boeking
+119	Fundament
+120	Altijd aan
+121	Gescheiden per hotel
+122	Jouw gegevens apart van de rest
+123	Actief
+124	Data in Europa
+125	Hosting binnen de EU
+126	Handtekening op elk bericht
+127	Geheim vervangt zich dagelijks
+128	Even eerlijk
+129	Wat we <em>niet</em> beweren.
+130	Een pagina over veiligheid waar alleen goed nieuws op staat, is geen pagina over veiligheid.
+131	We hangen geen ISO-certificaat aan de muur. We hebben er geen. Heb jij er een nodig van je verzekeraar of je keten, zeg het, dan praten we erover in plaats van er een logo voor te kopen.
+132	We kunnen niet beloven dat niemand van je team ooit nog op een foute link klikt. Dat kan niemand. Wij zorgen dat het daarna zo weinig mogelijk oplevert.
+133	De alarmen zijn struikeldraden, geen sloten. Ze houden niets tegen, ze maken lawaai en schrijven mee. Dat is bewust: een slot dat te streng staat, zet iemand op een drukke zaterdag gewoon af.
+134	En wat je bij ons opslaat blijft van jou. Ga je ooit weg, dan krijg je alles mee in een export. Zonder dat je daarvoor moet bellen.
+135	Andere features
+136	Veiligheid is <em>geen module</em>.<br>Ze zit in alles.
+137	De PMS, Rudy, het handboek, channel manager, guest portal. Allemaal in dezelfde rumo, allemaal onder dezelfde regels.
+138	De <em>PMS</em>
+139	Lees meer →
+140	<em>Rudy</em>
+141	<em>Preventie</em> &amp; welzijn
+142	<em>Channel</em> manager
+143	Guest <em>portal &amp; booking engine</em>
+144	Zelf proberen
+145	Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.
+146	Geen creditcard, geen verplichtingen, geen "account manager" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.
+147	Probeer 14 dagen gratis <span>→</span>
+148	Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href="overstappen.html">Gratis datamigratie</a>
+149	<a href="https://wa.me/32485382828">WhatsApp</a>
+150	<a href="features.html#integraties">Booking.com</a>
+151	<a href="features.html#integraties">Airbnb</a>
+152	<a href="features.html#integraties">Exact Online</a>
+153	<a href="features.html#integraties">Peppol</a>
+154	<span>© 2026 Rumo · Gent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+155	Menu

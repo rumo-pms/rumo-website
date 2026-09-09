@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../../gate.js"></script>
+<script src="../../demo-form.js?v=2" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How do you know who has read the new procedure? · explained by rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="You change your fire procedure. Who on your team now knows the old version and who the new one? About read confirmations, photos as the standard, and why a changed procedure is trickier than a new one.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared.css">
+<link rel="stylesheet" href="../../uitgelegd/artikel.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="../features.html">What do we do?</a></li>
+    <li><a href="../what-drives-us.html">What drives us?</a></li>
+    <li><a href="../pricing.html">And erm, what does it cost?</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../about.html">About us</a></li>
+    <li><a href="../index.html#demo" class="nav-cta">Try it free →</a></li>
+    <li class="nav-lang">
+      <a href="../../uitgelegd/draaiboek.html">NL</a>
+      <a href="handbook.html" class="active">EN</a>
+      <a href="../../fr/explique/manuel.html">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <a href="index.html" class="terug">← Explained</a>
+      <span class="kicker">Your team</span>
+      <h1>How do you know who has <em>read the new procedure?</em></h1>
+      <p class="lead">You change your fire procedure because something has changed. Half your team has read the old version and will not look again: they think they know it. That is the trickiest kind of not-knowing, and there is a simple way to pick out exactly those people.</p>
+    </div>
+    <div class="ph-side-illus">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- Een opengeslagen boek waar drie mensen naar kijken -->
+        <path d="M18,44 Q34,36 50,44 L50,82 Q34,74 18,82 Z"/>
+        <path d="M50,44 Q66,36 82,44 L82,82 Q66,74 50,82 Z"/>
+        <line x1="50" y1="44" x2="50" y2="82"/>
+        <circle cx="26" cy="24" r="6"/>
+        <circle cx="50" cy="20" r="6"/>
+        <circle cx="74" cy="24" r="6"/>
+        <line x1="10" y1="96" x2="110" y2="96"/>
+        <path d="M92,58 L104,58" stroke-dasharray="3 3"/>
+      </svg>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>3 minute read</span> <span>For whoever runs a team</span> <span>Applies without rumo too</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ARTIKEL ═══════════════════════ -->
+<section class="artikel">
+  <div class="artikel-inner fade-up">
+
+    <h2>A hotel is too big for <em>one head</em></h2>
+    <p>Which taxi firm do we work with. Where are the spare towels. What do you do when the fire alarm goes off, and what if it is clearly false. Who do you ring on a Sunday evening when the lift is stuck. Most of that comes up rarely, and that is exactly why nobody remembers it.</p>
+    <p>The reflex is to explain it once more. But you have already explained it. <strong>The problem is not that it was not said, it is that it is written down nowhere.</strong></p>
+
+    <h2>There are three kinds of <em>knowing</em></h2>
+    <p>That is why one big folder of procedures never works: there are three different problems in it.</p>
+    <ul>
+      <li><strong>Facts you look up.</strong> The taxi number, the cupboard with the towels. You do not have to remember those, you have to be able to <em>find</em> them. Remembering is even the wrong ambition here: that taxi firm changes.</li>
+      <li><strong>Tasks you have to be able to do.</strong> Those are in a text all right, but nobody learns them from a text. <a href="training.html">Another article</a> is about that.</li>
+      <li><strong>Agreements people disagree about.</strong> The hardest one, because it does not look like a knowledge problem.</li>
+    </ul>
+
+    <h2>The <em>towel problem</em></h2>
+    <p>One housekeeper hangs the towel like this, the other does not find that pretty. Both have an opinion, both have a good reason. These are not two stubborn people: it is an <strong>agreement that was never made</strong>. As long as nobody has written down which of the two is right, nobody is wrong either, and the strongest personality on that shift wins. That changes by the day, and your guest sees it.</p>
+    <p>Words do not solve this. Write "hang the towels neatly" in your handbook and you have decided nothing, because both housekeepers find their own way neat.</p>
+
+    <div class="kader">
+      <p><strong>Here a photo is not decoration.</strong> A sentence describes a standard. A photo <em>is</em> the standard. That saves you half an hour of discussion per new colleague, every time again.</p>
+      <p>If it is about a task rather than an end result, a video does what a photo cannot. Rule of thumb: <strong>photograph an end state, film a task.</strong> Do always write a few sentences with it, because you cannot search inside a video.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="uitroep">
+  <div class="uitroep-inner fade-up">
+    <p>A procedure you have changed is <em>less reliable</em> than one you had never written.</p>
+    <span class="uitroep-bij">Because whoever knew the old version will not look again</span>
+  </div>
+</section>
+
+<section class="artikel" style="padding-top:4rem">
+  <div class="artikel-inner fade-up">
+
+    <h2>"Read" has to have a <em>date</em></h2>
+    <p>You change your fire procedure. Seven of your twelve people have read the old version and think they know it, so they will not look it up. A changed procedure is therefore less reliable than one you had never written.</p>
+    <p>Let people confirm per article that they have read it, and hang that confirmation on the <em>version</em> they read. Change the article and it jumps back to unread for exactly those people. Not as a punishment, but because it is true. Keep the old confirmation: that is your proof that they did know the previous version.</p>
+
+    <h2>The real test is <em>23:15</em></h2>
+    <p>A handbook is not a success because it has been written, but because someone finds something in it at quarter past eleven at night with a guest standing in front of them. And there it runs into one fact: <strong>nobody leafs through a handbook.</strong> People ask the colleague standing next to them, and otherwise you. On a Sunday. So findability weighs more heavily than structure.</p>
+    <p>The best signal comes from an empty answer. If someone searches for something that is not in there, your team points out the gaps to you, free of charge, simply by doing its work.</p>
+
+    <div class="artikel-slot">
+      <p>In rumo this is the handbook: your own procedures in categories you can shield per role, with photos and attachments, and a read confirmation that works as described above. Change an article and it comes back as unread for everyone who had confirmed the old version, and the old confirmation is kept.</p>
+      <p>Rudy searches that handbook when someone asks about the way you work, and answers with a link to the article he took it from. If he finds nothing, he says so instead of guessing. Videos you add as a link to YouTube or Vimeo; they play in the article, but they are not stored in rumo.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Worked something else out?</span>
+    <h2>We would rather <em>explain</em> it<br>than sell it.</h2>
+    <p>The things that come with running a hotel: inspections, allotments, commissions, training people. We had to work them out ourselves and we write down what we found.</p>
+    <a href="index.html" class="btn-paper">Everything we explain <span>→</span></a>
+    <p class="final-fine">No credit card · Cancellable monthly after 6 months · <a href="../switching.html">Free data migration</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Hotel software for independent hoteliers. Without the fuss.</p>
+    </div>
+    <div>
+      <div class="footer-label">Product</div>
+      <ul class="footer-links">
+        <li><a href="../features.html">Features</a></li>
+        <li><a href="../features.html#integraties">Integrations</a></li>
+        <li><a href="../security.html">Security</a></li>
+        <li><a href="../pricing.html">And erm, what does it cost?</a></li>
+        <li><a href="../kb.html">Help centre</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="../what-drives-us.html">What drives us?</a></li>
+        <li><a href="index.html">Explained</a></li>
+        <li><a href="../switching.html">Switching over (in Dutch)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Send us an email</a></li>
+        <li><a href="../about.html">About us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Integrations</div>
+      <ul class="footer-links">
+        <li><a href="../features.html#integraties">Booking.com</a></li>
+        <li><a href="../features.html#integraties">Airbnb</a></li>
+        <li><a href="../features.html#integraties">Exact Online</a></li>
+        <li><a href="../features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Ghent, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

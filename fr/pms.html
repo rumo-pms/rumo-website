@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../gate.js"></script>
+<script src="../demo-form.js?v=2" defer></script>
+<script src="../datums.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le PMS · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Le cœur de rumo : un calendrier visuel, le check-out en un clic, la facturation Peppol et un tableau de bord qui accélère votre journée. Pas 47 menus de profondeur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* ─── HERO ─── */
+  .fp-hero {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .fp-hero-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 4.5rem;
+    align-items: center;
+  }
+  .fp-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--forest);
+    background: var(--forest-soft);
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .fp-hero-tag svg { width: 14px; height: 14px; stroke-width: 1.8; fill: none; }
+  .fp-hero-text h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2.6rem, 5.2vw, 3.8rem);
+    letter-spacing: -0.028em;
+    line-height: 1.04;
+    margin-bottom: 1.4rem;
+  }
+  .fp-hero-text h1 em { color: var(--terra-dark); font-style: italic; }
+  .fp-hero-text .lead {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 52ch;
+    margin-bottom: 2rem;
+  }
+  .fp-hero-bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .fp-hero-bullets li::before {
+    content: '·';
+    color: var(--terra);
+    margin-right: 0.5em;
+  }
+
+  /* ─── SECTIONS ─── */
+  .fp-section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .fp-section.alt { background: var(--paper-deep); }
+  .fp-section-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  /* Een rasterkind krimpt standaard niet onder zijn langste woord. Eén lange
+     term in een opsomming duwde de kolom daardoor breder dan het scherm, en
+     dan schuift de hele pagina zijwaarts. */
+  .fp-section-inner > * { min-width: 0; }
+  .fp-bullets li { overflow-wrap: anywhere; }
+  .fp-section.reverse .fp-section-inner > .fp-section-visual { order: -1; }
+  .fp-section-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-bottom: 0.9rem;
+    display: inline-block;
+  }
+  .fp-section-text h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+    margin-bottom: 1.3rem;
+  }
+  .fp-section-text h2 em { color: var(--terra-dark); font-style: italic; }
+  .fp-section-text .lead {
+    color: var(--ink-soft);
+    line-height: 1.65;
+    max-width: 52ch;
+    font-size: 1.02rem;
+    margin-bottom: 1.3rem;
+  }
+  .fp-bullets {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  .fp-bullets li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .fp-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.65em;
+    width: 8px; height: 1.5px;
+    background: var(--terra);
+  }
+  .fp-bullets li em { color: var(--terra-dark); font-style: italic; }
+
+  /* ─── mockup wrapper ─── */
+  .mockup {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1.4rem;
+    box-shadow: 0 20px 40px rgba(27,25,23,0.08);
+  }
+  .mockup-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mockup-head h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .mockup-head .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    background: var(--sand);
+    color: var(--ink);
+  }
+  .mockup-head .badge.live { background: var(--terra); color: var(--paper); }
+  .mockup-head .badge.live::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--paper); display:inline-block; margin-right:0.35em; }
+
+  /* Mockup · Calendar */
+  .mk-calendar .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+  .mk-calendar .hd {
+    display: grid; grid-template-columns: 56px repeat(5, 1fr); gap: 3px;
+    margin-bottom: 0.5rem;
+  }
+  .mk-calendar .hd div {
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem; letter-spacing: 0.05em;
+    color: var(--muted); text-transform: uppercase;
+    padding: 0.2rem 0;
+  }
+  .mk-calendar .hd div.active { color: var(--terra-dark); font-weight: 600; }
+  .mk-calendar .rows { display: grid; grid-template-columns: 56px repeat(5, 1fr); gap: 3px; row-gap: 0.4rem; }
+  .mk-calendar .lbl {
+    font-size: 0.74rem; font-weight: 600; padding: 0.5rem 0;
+    display: flex; align-items: center;
+    color: var(--ink);
+  }
+  .mk-calendar .lbl small { font-weight: 400; color: var(--muted); font-size: 0.58rem; margin-left: 0.3em; letter-spacing: 0.04em; text-transform: uppercase; }
+  .mk-calendar .cell {
+    border-radius: 4px;
+    padding: 0.4rem 0.55rem;
+    font-size: 0.68rem;
+    color: #fff;
+    display: flex; align-items: center;
+  }
+  .mk-calendar .cell.empty { background: var(--sand); }
+  .mk-calendar .cell.booked { background: var(--terra); }
+  .mk-calendar .cell.booked2 { background: var(--forest); }
+  .mk-calendar .cell.booked3 { background: #8a6b1a; }
+  .mk-calendar .cell.tentative { background: var(--terra); opacity: 0.4; }
+
+  /* Mockup · Quick-checkout steps */
+  .mk-steps .step {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: var(--paper);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+    margin-bottom: 0.55rem;
+  }
+  .mk-steps .step:last-child { margin-bottom: 0; }
+  .mk-steps .check {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--forest); color: var(--paper);
+    font-size: 0.8rem;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .mk-steps strong { display: block; font-size: 0.94rem; color: var(--ink); margin-bottom: 0.1rem; }
+  .mk-steps span { font-size: 0.76rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+
+  /* Mockup · Invoice */
+  .mk-invoice .inv-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  .mk-invoice .inv-num {
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 0.1rem;
+  }
+  .mk-invoice .inv-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+  .mk-invoice .peppol-badge {
+    background: var(--forest-soft);
+    color: var(--forest);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    border-radius: 100px;
+  }
+  .mk-invoice .inv-lines {
+    margin-bottom: 1rem;
+  }
+  .mk-invoice .inv-line {
+    display: grid;
+    grid-template-columns: 1fr 50px 60px;
+    gap: 0.5rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+  }
+  .mk-invoice .inv-line .tax {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-align: right;
+  }
+  .mk-invoice .inv-line .amt {
+    text-align: right;
+    font-family: 'Fraunces', serif;
+    color: var(--ink);
+  }
+  .mk-invoice .inv-totals {
+    background: var(--paper);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+  }
+  .mk-invoice .inv-totals .row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.82rem;
+    margin-bottom: 0.3rem;
+    color: var(--ink-soft);
+  }
+  .mk-invoice .inv-totals .row.total {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .mk-invoice .inv-totals .row.total span:last-child {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+  }
+
+  /* Mockup · Dashboard */
+  .mk-dashboard .stats {
+    background: var(--ink); color: var(--paper);
+    border-radius: 14px; padding: 1rem 1.2rem;
+    display: flex; align-items: center; gap: 1.5rem;
+    margin-bottom: 0.85rem;
+  }
+  .mk-dashboard .stats div { flex: 1; min-width: 0; }
+  .mk-dashboard .stats .big {
+    font-family: 'Fraunces', serif; font-weight: 400;
+    font-size: 1.5rem; letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .mk-dashboard .stats .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem; letter-spacing: 0.06em;
+    color: rgba(245,238,226,0.55);
+    text-transform: uppercase; margin-bottom: 0.15rem;
+  }
+  .mk-dashboard .stats .mini .big {
+    font-family: 'Inter', sans-serif; font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .mk-dashboard .stats .mini .big.t { color: var(--terra); }
+  .mk-dashboard .stats .mini .big.g { color: var(--butter); }
+  .mk-dashboard .rooms {
+    font-weight: 600; font-size: 0.85rem; margin-bottom: 0.4rem;
+    color: var(--ink);
+  }
+  .mk-dashboard .room-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;
+  }
+  .mk-dashboard .room {
+    background: var(--paper); border-radius: 10px; padding: 0.65rem;
+    border-left: 3px solid var(--forest);
+    border-top: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .mk-dashboard .room .num { font-weight: 700; font-size: 0.95rem; color: var(--ink); }
+  .mk-dashboard .room .guest { font-size: 0.72rem; color: var(--muted); line-height: 1.3; margin-top: 0.1rem; }
+  .mk-dashboard .room .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem; color: var(--forest);
+    letter-spacing: 0.04em; text-transform: uppercase;
+    margin-top: 0.25rem;
+  }
+
+  /* ─── andere features strip ─── */
+  .fp-others {
+    background: var(--paper-deep);
+    padding: 5rem 0 6rem;
+    border-top: 1px solid var(--line);
+  }
+  .fp-others-head {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fp-others-head h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0.6rem 0 0.8rem;
+  }
+  .fp-others-head h3 em { color: var(--terra-dark); font-style: italic; }
+  .fp-others-head p { color: var(--ink-soft); font-size: 0.98rem; }
+  .fp-others-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .fp-others-card {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  }
+  .fp-others-card:hover {
+    box-shadow: 0 14px 28px rgba(27,25,23,0.08);
+    transform: translateY(-3px);
+    border-color: var(--terra);
+  }
+  .fp-others-ic {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fp-others-ic svg { width: 16px; height: 16px; stroke-width: 1.8; fill: none; }
+  .fp-others-card h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .fp-others-card h4 em { color: var(--terra-dark); font-style: italic; font-weight: 300; }
+  .fp-others-card .arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-top: auto;
+  }
+
+  /* ─── responsive ─── */
+  @media (max-width: 880px) {
+    .fp-hero { padding: 4rem 0; }
+    .fp-hero-inner, .fp-section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .fp-section.reverse .fp-section-inner > .fp-section-visual { order: 0; }
+    .fp-section { padding: 4rem 0; }
+    .fp-others-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .fp-others-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../pms.html">NL</a>
+      <a href="../en/pms.html">EN</a>
+      <a href="pms.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="fp-hero">
+  <div class="wrap">
+    <div class="fp-hero-inner enkel fade-up">
+      <div class="fp-hero-text">
+        <span class="fp-hero-tag">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Le PMS
+        </span>
+        <h1>Un logiciel qui ne vous<br><em>gêne pas.</em></h1>
+        <p class="lead">Le calendrier, le check-in, le check-out, la facture. Ce que vous faites tous les jours est devant. Ce que vous faites rarement est là, mais pas dans le chemin.</p>
+        <ul class="fp-hero-bullets">
+          <li>Calendrier glisser-déposer</li>
+          <li>Check-out en un clic, ou une facture sur mesure</li>
+          <li>Recherche avec Ctrl+K</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FACTURATIE ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">La note</span>
+        <h2>Ce qui figure sur la facture, <em>c'est vous qui l'écrivez.</em></h2>
+        <p class="lead">Le départ tient en un clic : la facture est là, le client est parti, la chambre passe en sale. Mais toutes les notes ne sont pas standard, et là il faut pouvoir entrer dedans.</p>
+        <ul class="fp-bullets">
+          <li>Cliquez sur une ligne et tapez autre chose</li>
+          <li>Cochez ce qui doit suivre, ou déplacez des lignes vers une autre réservation</li>
+          <li>TVA ventilée par ligne, taxe de séjour déjà calculée, Peppol intégré</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster bewerk" role="img" aria-label="L'écran de note d'une réservation : quelqu'un clique sur Modifier les postes, clique sur le texte d'une ligne de facture et y tape sa propre description.">
+          <div class="ab-kop">
+            <h4>Note</h4>
+            <span>M&uuml;ller &middot; chambre 104</span>
+          </div>
+          <div class="ab-balk">
+            <div><span class="l">Total</span><span class="v">&euro; 487,00</span></div>
+            <div><span class="l">Payé</span><span class="v">&euro; 160,00</span></div>
+            <div><span class="l">Solde</span><span class="v open">&euro; 327,00</span></div>
+          </div>
+          <div class="ab-sub">
+            <h5>Pas encore facturé</h5>
+            <span class="ab-bewerk aan">Modifier les postes</span>
+          </div>
+          <div class="ab-regel">
+            <span class="ab-vink"></span> <span class="ab-veld"> <span class="ab-oud">Nuitée &middot; Standard Double</span> <span class="ab-nieuw">Forfait week-end à Gand &middot; 3 nuits</span> </span> <span class="ab-btw">6%</span> <span class="ab-bedrag">&euro; 390,00</span>
+          </div>
+          <div class="ab-regel"><span class="ab-vink"></span>Petit-déjeuner &middot; 2 personnes<span class="ab-btw">12%</span><span class="ab-bedrag">&euro; 54,00</span></div>
+          <div class="ab-regel"><span class="ab-vink"></span>Parking<span class="ab-btw">21%</span><span class="ab-bedrag">&euro; 28,00</span></div>
+          <div class="ab-regel"><span class="ab-vink"></span>Taxe de séjour &middot; 2 pers. &times; 3 nuits<span class="ab-btw">exonéré</span><span class="ab-bedrag">&euro; 15,00</span></div>
+          <div class="as-knop" style="margin-bottom:1.1rem">Créer la facture &middot; &euro; 487,00</div>
+
+          <span class="ab-cursor"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ HOUSEKEEPING ═══════════════════════ -->
+<section class="fp-section reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Housekeeping</span>
+        <h2>Qui fait <em>quelle chambre</em> aujourd'hui ?</h2>
+        <p class="lead">Une liste par jour. Une chambre passe en sale toute seule à un check-in, à un check-out et chaque matin. C'est le housekeeping qui la remet en propre.</p>
+        <ul class="fp-bullets">
+          <li>Votre calendrier montre chambre par chambre si elle est encore sale</li>
+          <li>Fonctionne sur une tablette dans le couloir, et il existe une liste à imprimer</li>
+          <li>Un lit bébé ou un départ tardif arrive tout seul sur la fiche</li>
+        </ul>
+        <p class="lead" style="margin-top:1.4rem">Il vous faut plus que propre et sale ? Alors il y a <a href="advanced-housekeeping.html">Advanced Housekeeping</a>.</p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="L'écran housekeeping de rumo : la chambre 204 passe en propre et les compteurs au-dessus de la liste suivent.">
+          <div class="as-kop"><h4>Housekeeping</h4><span><span data-datum="vandaag">2 avril</span> &middot; 18 kamers</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Sale</div><div class="v oranje as-wissel"><span class="was">5</span><span class="wordt">4</span></div></div>
+            <div><div class="l">Propre</div><div class="v groen as-wissel"><span class="was">13</span><span class="wordt">14</span></div></div>
+            <div><div class="l">Départ</div><div class="v">4</div></div>
+            <div><div class="l">Reste</div><div class="v">9</div></div>
+          </div>
+          <div class="as-rij vuil"><b>101</b> <span class="sub">départ &middot; nettoyage complet</span><span class="chip oranje">Sale</span></div>
+          <div class="as-rij schoon"><b>104</b> <span class="sub">reste &middot; serviettes uniquement</span><span class="chip">Propre</span></div>
+          <div class="as-rij wisselt"><b>204</b> <span class="sub">départ &middot; enlever le lit bébé</span><span class="as-chips"><span class="chip oranje was">Sale</span><span class="chip wordt">Propre</span></span></div>
+          <div class="as-rij vuil"><b>206</b> <span class="sub">arrivée &middot; préparer un lit d'appoint</span><span class="chip oranje">Sale</span></div>
+          <div class="as-knop">Tout est propre</div>
+          <div class="as-voet">Liste à imprimer pour tout l'hôtel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ F&B ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Petit-déjeuner</span>
+        <h2>Dès le matin, la cuisine sait <em>à quoi s'attendre.</em></h2>
+        <p class="lead">Pas de caisse, juste la liste dont la cuisine a besoin. Le comptage suit la nuit : qui arrive aujourd'hui déjeune demain, qui part demain déjeune encore ce matin-là.</p>
+        <ul class="fp-bullets">
+          <li>Les allergies sont attachées à la chambre, pas à un carnet séparé</li>
+          <li>Cochez qui est passé, et votre collègue le voit aussitôt</li>
+          <li>Quelqu'un en plus à table ? La cuisine l'ajoute elle-même, et cela arrive sur sa note</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="L'écran petit-déjeuner de rumo : la cuisine ajoute un petit-déjeuner sur la chambre 208 et le comptage passe de 34 à 36 couverts.">
+          <div class="as-kop"><h4>Petit-déjeuner</h4><span><span data-datum="morgen">3 avril</span> &middot; keuken</span><span class="as-knop plus">Ajouter un petit-déjeuner</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Couverts</div><div class="v as-wissel"><span class="was">34</span><span class="wordt">36</span></div></div>
+            <div><div class="l">Chambres</div><div class="v as-wissel"><span class="was">14</span><span class="wordt">15</span></div></div>
+            <div><div class="l">Allergies</div><div class="v oranje">2</div></div>
+          </div>
+          <div class="as-tabs"><span class="aan">Petit-déjeuner</span><span>Présents 12</span><span>Liste à imprimer</span></div>
+          <div class="as-rij schoon"><b>101</b> <span class="sub">Hermans &middot; 2 pers. &middot; tarif incl.</span><span class="chip">Présent</span></div>
+          <div class="as-rij vuil"><b>104</b> <span class="sub">M&uuml;ller &middot; 2 pers. &middot; ajouté</span><span class="chip oranje">Lactose, fruits à coque</span></div>
+          <div class="as-rij"><b>205</b> <span class="sub">Sato &middot; 2 pers.</span><span class="chip grijs">Attendu</span></div>
+          <div class="as-rij komt-erbij schoon"><b>208</b> <span class="sub">Peeters &middot; 2 pers. &middot; ajouté par la cuisine</span><span class="chip">Vient d'être ajouté</span></div>
+          <div class="as-voet">Choisir la chambre, le nombre de personnes, terminé</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ALLOTMENTS ═══════════════════════ -->
+<section class="fp-section reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Allotements</span>
+        <h2>Garder des chambres pour un groupe, <em>sans les perdre de vue.</em></h2>
+        <p class="lead">Vous réservez des chambres pour un groupe, souvent à un tarif négocié. Ce n'est pas un bloc dans votre calendrier, c'est une promesse avec une date d'échéance.</p>
+        <ul class="fp-bullets">
+          <li>Ce que vous gardez est <em>retiré de votre disponibilité</em>, sur Booking.com aussi</li>
+          <li>Le pickup montre combien des chambres convenues ont réellement été prises</li>
+          <li>À la date de cut-off, ce qui n'est pas réservé repart en vente tout seul</li>
+          <li>Facturer par réservation, ou en une fois à l'entreprise</li>
+        </ul>
+        <p class="ph-sprong" style="margin-top:1.4rem"><a href="explique/allotements.html">Comment fonctionnent les allotements, rumo mis à part &rarr;</a></p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="L'écran allotements de rumo : un bloc de chambres pour un congrès, avec le pickup par type de chambre et la date de cut-off.">
+          <div class="as-kop"><h4>Congrès Van Eyck</h4><span>12 &ndash; 15 mai &middot; actif</span></div>
+          <div class="as-tellers">
+            <div><div class="l">Gardées</div><div class="v">20</div></div>
+            <div><div class="l">Réservées</div><div class="v groen">13</div></div>
+            <div><div class="l">Encore libres</div><div class="v oranje">7</div></div>
+            <div><div class="l">Cut-off</div><div class="v">28 avr</div></div>
+          </div>
+          <div class="as-tabs"><span class="aan">Pickup</span><span>Réservations</span><span>Facturation</span><span>Historique</span></div>
+          <div class="as-rij schoon"><b>Standard double</b> <span class="sub">10 gardées &middot; 8 réservées</span><span class="chip">2 libres</span></div>
+          <div class="as-rij schoon"><b>Deluxe double</b> <span class="sub">6 gardées &middot; 4 réservées</span><span class="chip">2 libres</span></div>
+          <div class="as-rij vuil"><b>Junior suite</b> <span class="sub">4 gardées &middot; 1 réservée</span><span class="chip oranje">3 libres</span></div>
+          <div class="as-voet">Facture centrale au Congresbureau Van Eyck bvba</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ RAPPORTEN ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Rapporten</span>
+        <h2>Vos chiffres sont déjà là. <em>Vous n'avez pas à aller les chercher.</em></h2>
+        <p class="lead">Choisissez une période et vous obtenez une douzaine de rapports sur ces mêmes jours. Pas d'exports à pétrir d'abord dans Excel.</p>
+        <ul class="fp-bullets">
+          <li>Chiffre d'affaires, prix moyen, RevPAR et taux d'occupation, par type de chambre et par canal</li>
+          <li><em>Pace :</em> êtes-vous en avance ou en retard sur l'an dernier ?</li>
+          <li>Débiteurs, nationalités, check-in en ligne, petits-déjeuners</li>
+        </ul>
+        <p class="lead" style="margin-top:1.4rem">Et à part : le registre de police, la taxe de séjour et les statistiques officielles. Construits à partir de ce que votre client a rempli lui-même. Le dépôt reste votre signature ; le comptage, non.</p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="L'écran rapports de rumo : la période est réglée sur avril et le rapport de chiffre d'affaires montre les indicateurs avec la comparaison à l'an dernier.">
+          <div class="as-kop"><h4>Rapporten</h4><span data-datum="maand">1 &ndash; 30 avril 2026</span></div>
+          <div class="as-tabs"><span class="aan">Chiffre d'affaires</span><span>Pace</span><span>Réservations</span><span>Factures</span><span>Occupation</span><span>Nationalités</span><span>Conformité</span></div>
+          <div class="as-tellers">
+            <div><div class="l">CA chambres</div><div class="v">&euro; 84.320</div></div>
+            <div><div class="l">Prix moyen</div><div class="v">&euro; 132</div></div>
+            <div><div class="l">RevPAR</div><div class="v">&euro; 96</div></div>
+            <div><div class="l">Occupation</div><div class="v groen">73%</div></div>
+          </div>
+          <div class="as-rij schoon"><b>Booking.com</b> <span class="sub">142 nuits &middot; net après commission</span><span class="chip">&euro; 31.480</span></div>
+          <div class="as-rij schoon"><b>Page de réservation propre</b> <span class="sub">96 nuits &middot; sans commission</span><span class="chip">&euro; 24.910</span></div>
+          <div class="as-rij vuil"><b>Pace</b> <span class="sub">par rapport au 30 avril de l'an dernier</span><span class="chip oranje">+8%</span></div>
+          <div class="as-voet" style="margin:1rem 0 0.5rem">Légal, prêt à déposer</div>
+          <div class="as-rij schoon"><b>Registre de police</b> <span class="sub">avril &middot; 412 clients</span><span class="chip">Prêt</span></div>
+          <div class="as-voet">Export en CSV, Excel ou PDF</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ANDERE FEATURES ═══════════════════════ -->
+<section class="fp-others">
+  <div class="wrap">
+    <div class="fp-others-head fade-up">
+      <span class="kicker">Autres fonctionnalités</span>
+      <h3>Le PMS est <em>la base</em>.<br>Et il y a autre chose par-dessus.</h3>
+      <p>Rudy, le manuel, la prévention, le channel manager, le portail client. Tout dans le même rumo, tout ensemble un seul système.</p>
+    </div>
+    <div class="fp-others-grid fade-up">
+
+      <a class="fp-others-card" href="rudy.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4><em>Rudy</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="handbook.html">
+        <div class="fp-others-ic" style="background:#DCE4F3; color:#4a7fb5;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h6M8 11h8"/></svg>
+        </div>
+        <h4>Le <em>manuel</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="prevention.html">
+        <div class="fp-others-ic" style="background:#FCEDBD; color:#8a6b1a;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4><em>Prévention</em> &amp; bien-être</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="channel-manager.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
+        </div>
+        <h4><em>Channel</em> manager</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="guest-portal.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h4><em>Portail client</em> &amp; moteur de réservation</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Essayer vous-même</span>
+    <h2>Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.</h2>
+    <p>Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit.</p>
+    <a href="index.html#demo" class="btn-paper">Essayez 14 jours gratuitement <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="migration.html">Migration des données offerte</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+// threshold 0, niet 0.1: een blok hoger dan tien keer het scherm haalde die
+// drempel nooit, en bleef onzichtbaar op een telefoon.
+}, { threshold: 0 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.documentElement.dataset.fadeReady = '1';
+</script>
+
+</body>
+</html>

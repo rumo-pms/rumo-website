@@ -1,0 +1,66 @@
+1|Migration · rumo
+2|Passer de votre PMS actuel à rumo. Ce qu'il advient de vos réservations, de votre connexion Booking.com, combien de temps cela prend et ce que cela coûte.
+3|<a href="faq.html">FAQ</a>
+4|Ce qu'il advient de vos <em>réservations</em> quand vous changez.
+5|Et de vos connexions aux canaux, de vos tarifs et de vos profils clients. Le passage d'un PMS à un autre se fait en six étapes, et votre ancien système continue tout simplement de tourner jusqu'à la dernière. Vous trouverez ci-dessous chaque étape, ce qu'on attend de vous à chacune, et les trois parties qui, en pratique, avancent plus lentement que prévu.
+6|<span>Votre ancien système continue de tourner</span> <span>Votre historique suit</span> <span>Rien n'est importé en silence</span> <span>Vous choisissez le moment</span> <span>Cela ne coûte rien</span>
+7|D'abord les trois questions <em>pratiques</em>.
+8|Question une
+9|« Est-ce que je perds mes réservations ? »
+10|Non, et vous ne devez pas non plus les retaper. Vous sortez un export de votre système actuel et vous l'importez. Et pas seulement ce qui est à venir : vos anciennes réservations suivent aussi, avec qui a dormi là et ce qui a été payé. Pendant ce temps, votre ancien système continue simplement de tourner : vous n'éteignez rien pour pouvoir installer rumo.
+11|Question deux
+12|« Est-ce que mon Booking.com sera à l'arrêt deux jours ? »
+13|Votre annonce n'est pas reconstruite. En connectant un canal, vous choisissez entre une nouvelle annonce et le compte que vous avez déjà. Si vous choisissez le second, votre page, vos avis et votre historique restent en place. Ce qui change, c'est qui tient votre calendrier.
+14|Question trois
+15|« À partir de quand suis-je seul aux commandes ? »
+16|Au moment où vous le dites, pas à une date inscrite dans un plan de projet. Tant que vous ne basculez pas la connexion des canaux, votre ancien système continue de vendre. Le passage est un bouton que vous actionnez quand vous êtes prêt.
+17|Bon, et concrètement, <em>comment ça se passe ?</em>
+18|Six étapes. Vous pouvez vous arrêter à tout moment sans que rien ne soit cassé, car jusqu'à la dernière étape votre ancien système tourne encore.
+19|Étape 1
+20|Vous recevez un rumo vide <em>à côté</em> de votre système actuel.
+21|Pas à la place. À côté. Vous vous connectez, vous cliquez partout, et rien ne change encore dans votre hôtel. C'est aussi votre période d'essai : si cela ne vous plaît pas, vous vous arrêtez ici, et rien n'aura jamais été modifié à ce que vous faites tourner aujourd'hui.
+22|Étape 2
+23|Vous déposez votre export dans la conversation avec Rudy.
+24|Un CSV ou un Excel de votre PMS actuel. Rudy y lit vos chambres et vos tarifs et vous soumet ce qu'il a trouvé. Vous confirmez ou vous corrigez, question par question.
+25|Rien n'est importé en silence. Il montre chaque étape d'abord et vous dites oui ou non. C'est lent quand on est pressé, mais c'est la raison pour laquelle vous ne cherchez pas ensuite d'où viennent ces trente types de chambres bizarres.
+26|Étape 3
+27|Ce qui ne figure pas dans l'export vous est demandé.
+28|Et c'est plus que vous ne le pensez. Les numéros de chambres, les types et les prix y sont en général. Vos conditions d'annulation, vos taux de TVA et le prix de votre petit-déjeuner, presque jamais. Ce n'est pas un défaut de votre système, c'est simplement à quoi ressemblent les exports.
+29|Ces éléments vous sont donc demandés, avec une proposition plutôt qu'un champ vide. Corriger une proposition va plus vite que tout décrire depuis zéro. Vous ne savez pas ? Vous passez, et cela reste vide jusqu'à ce que vous sachiez.
+30|Étape 4
+31|Vos réservations viennent <em>en dernier</em>, et seulement si vous le voulez.
+32|Votre maison doit d'abord être juste : chambres, types, tarifs. Ce n'est qu'ensuite que les réservations entrent, car une réservation sans chambre où la poser est une ligne dans un tableur.
+33|Vous voyez d'abord ce qui va être importé. Ensuite seulement cela se produit. Si vous dites non, cela n'a pas lieu et vous démarrez avec un calendrier vide. C'est une réponse valable aussi, surtout si vous changez en basse saison.
+34|<strong>Et votre passé suit.</strong> Pas seulement les réservations à venir. Vos dernières années entrent aussi : qui a dormi là, combien de temps, et ce qui a été payé. Les séjours terminés restent terminés, et votre fichier clients suit séparément, si bien qu'un client fidèle a déjà son historique derrière lui dès sa première réservation dans rumo.
+35|Une chose à savoir juste après l'import : votre calendrier s'ouvre sur une fenêtre autour d'aujourd'hui, environ une semaine en arrière et quelques mois en avant. Un import d'anciens séjours tombe entièrement en dehors, et on a alors l'impression qu'il ne s'est rien passé. Revenez au bon mois et ils sont bien là.
+36|Étape 5
+37|Vos canaux déménagent, ils ne sont pas <em>reconstruits.</em>
+38|En ajoutant un canal, vous choisissez : une annonce toute neuve, ou la reprise du compte OTA que vous avez déjà. Dans ce second cas, tout ce que vous avez construit sur Booking.com reste. Votre page, vos photos, vos avis, votre classement.
+39|Vient ensuite la partie qui coince le plus souvent lors d'un changement : le mapping. Votre « Standard Double » s'appelle peut-être « Classic Double Room » sur Booking.com, et le système doit savoir que c'est la même chose. Cela se vérifie avant de basculer, pas après.
+40|Étape 6
+41|C'est vous qui dites quand.
+42|Jusque-là, votre ancien système continue de vendre. À partir de là, c'est rumo. Il n'y a pas de période intermédiaire où personne ne tient votre calendrier, puisque vous n'éteignez l'un que lorsque l'autre est allumé.
+43|Et ce que nous n'allons <em>pas</em> prétendre.
+44|Ces trois éléments déterminent la durée réelle de votre migration. Ils sont ici parce qu'il vaut mieux les inscrire à l'avance dans votre agenda que les rencontrer en chemin.
+45|Que ce soit fini en une soirée.
+46|Cela dépend de votre configuration. Un B&amp;B de quatre chambres, un tarif et un canal, c'est une après-midi. Un hôtel de quarante chambres, six tarifs, des forfaits et cinq OTA, c'est plutôt une semaine avec des interruptions. Non pas parce que le travail est lourd, mais parce qu'il contient des décisions qui demandent réflexion.
+47|Qu'un export contienne tout.
+48|Il ne le fait jamais. Voir l'étape 3. Comptez devoir transmettre vous-même vos conditions d'annulation, vos taux de TVA et le prix de votre petit-déjeuner. Celui qui promet qu'un import reprend tout n'a jamais ouvert un export de PMS.
+49|Que les OTA travaillent à notre rythme.
+50|Une nouvelle connexion de canal reste « en demande » jusqu'à ce que l'OTA l'approuve. C'est leur horloge. rumo continue de surveiller et met la connexion en actif dès que la réponse arrive, mais la durée ne dépend pas de nous. Ne planifiez donc pas votre migration le vendredi avant un week-end complet.
+51|Et euh, ça coûte combien, cette migration ?
+52|Rien. <em>Zéro.</em>
+53|Pas de frais d'installation, pas de forfait de migration, pas de consultant d'onboarding qui facture trois jours pour retaper vos types de chambres.
+54|Et ce n'est pas une action temporaire. L'essentiel du travail dans une migration, c'est de mettre en place vos types de chambres, vos tarifs et vos connexions, et cela se fait dans la conversation avec Rudy pendant que vous cliquez de toute façon partout. L'accompagnement qui va avec est compris dans votre abonnement, comme tout le support. (Oui, vraiment.)
+55|Essayez 14 jours gratuitement <span>→</span>
+56|Prêt à essayer ?
+57|Commencez simplement <em>à côté</em><br>de votre système actuel.
+58|Votre export reste chez vous. L'import se fait dans votre propre environnement d'essai, avec votre propre fichier : vous n'avez donc pas à nous envoyer de données clients pour voir si cela fonctionne. Vous doutez que votre logiciel puisse suivre ? Indiquez son nom dans votre demande, dans la case remarques, et nous vous en dirons tout de suite quelque chose.
+59|Sans carte de crédit · Résiliable au mois après 6 mois · Migration des données offerte
+60|<a href="https://wa.me/32485382828">WhatsApp</a>
+61|<a href="features.html#integraties">Booking.com</a>
+62|<a href="features.html#integraties">Airbnb</a>
+63|<a href="features.html#integraties">Exact Online</a>
+64|<a href="features.html#integraties">Peppol</a>
+65|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+66|Menu

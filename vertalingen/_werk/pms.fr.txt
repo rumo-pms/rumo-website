@@ -1,0 +1,128 @@
+1|Le PMS · rumo
+2|Le cœur de rumo : un calendrier visuel, le check-out en un clic, la facturation Peppol et un tableau de bord qui accélère votre journée. Pas 47 menus de profondeur.
+3|<a href="faq.html">FAQ</a>
+4|Le PMS
+5|Un logiciel qui ne vous<br><em>gêne pas.</em>
+6|Le calendrier, le check-in, le check-out, la facture. Ce que vous faites tous les jours est devant. Ce que vous faites rarement est là, mais pas dans le chemin.
+7|Calendrier glisser-déposer
+8|Check-out en un clic, ou une facture sur mesure
+9|Recherche avec Ctrl+K
+10|La note
+11|Ce qui figure sur la facture, <em>c'est vous qui l'écrivez.</em>
+12|Le départ tient en un clic : la facture est là, le client est parti, la chambre passe en sale. Mais toutes les notes ne sont pas standard, et là il faut pouvoir entrer dedans.
+13|Cliquez sur une ligne et tapez autre chose
+14|Cochez ce qui doit suivre, ou déplacez des lignes vers une autre réservation
+15|TVA ventilée par ligne, taxe de séjour déjà calculée, Peppol intégré
+16|Note
+17|M&uuml;ller &middot; chambre 104
+18|<span class="l">Total</span><span class="v">&euro; 487,00</span>
+19|<span class="l">Payé</span><span class="v">&euro; 160,00</span>
+20|<span class="l">Solde</span><span class="v open">&euro; 327,00</span>
+21|Pas encore facturé
+22|Modifier les postes
+23|<span class="ab-vink"></span> <span class="ab-veld"> <span class="ab-oud">Nuitée &middot; Standard Double</span> <span class="ab-nieuw">Forfait week-end à Gand &middot; 3 nuits</span> </span> <span class="ab-btw">6%</span> <span class="ab-bedrag">&euro; 390,00</span>
+24|<span class="ab-vink"></span>Petit-déjeuner &middot; 2 personnes<span class="ab-btw">12%</span><span class="ab-bedrag">&euro; 54,00</span>
+25|<span class="ab-vink"></span>Parking<span class="ab-btw">21%</span><span class="ab-bedrag">&euro; 28,00</span>
+26|<span class="ab-vink"></span>Taxe de séjour &middot; 2 pers. &times; 3 nuits<span class="ab-btw">exonéré</span><span class="ab-bedrag">&euro; 15,00</span>
+27|Créer la facture &middot; &euro; 487,00
+28|Qui fait <em>quelle chambre</em> aujourd'hui ?
+29|Une liste par jour. Une chambre passe en sale toute seule à un check-in, à un check-out et chaque matin. C'est le housekeeping qui la remet en propre.
+30|Votre calendrier montre chambre par chambre si elle est encore sale
+31|Fonctionne sur une tablette dans le couloir, et il existe une liste à imprimer
+32|Un lit bébé ou un départ tardif arrive tout seul sur la fiche
+33|Il vous faut plus que propre et sale ? Alors il y a <a href="advanced-housekeeping.html">Advanced Housekeeping</a>.
+34|<span data-datum="vandaag">2 avril
+35|Sale
+36|Propre
+37|Départ
+38|Reste
+39|<b>101</b> <span class="sub">départ &middot; nettoyage complet</span><span class="chip oranje">Sale</span>
+40|<b>104</b> <span class="sub">reste &middot; serviettes uniquement</span><span class="chip">Propre</span>
+41|<b>204</b> <span class="sub">départ &middot; enlever le lit bébé</span><span class="as-chips"><span class="chip oranje was">Sale</span><span class="chip wordt">Propre</span></span>
+42|<b>206</b> <span class="sub">arrivée &middot; préparer un lit d'appoint</span><span class="chip oranje">Sale</span>
+43|Tout est propre
+44|Liste à imprimer pour tout l'hôtel
+45|Petit-déjeuner
+46|Dès le matin, la cuisine sait <em>à quoi s'attendre.</em>
+47|Pas de caisse, juste la liste dont la cuisine a besoin. Le comptage suit la nuit : qui arrive aujourd'hui déjeune demain, qui part demain déjeune encore ce matin-là.
+48|Les allergies sont attachées à la chambre, pas à un carnet séparé
+49|Cochez qui est passé, et votre collègue le voit aussitôt
+50|Quelqu'un en plus à table ? La cuisine l'ajoute elle-même, et cela arrive sur sa note
+51|<span data-datum="morgen">3 avril
+52|Ajouter un petit-déjeuner
+53|Couverts
+54|Chambres
+55|Allergies
+56|<span class="aan">Petit-déjeuner</span><span>Présents 12</span><span>Liste à imprimer</span>
+57|<b>101</b> <span class="sub">Hermans &middot; 2 pers. &middot; tarif incl.</span><span class="chip">Présent</span>
+58|<b>104</b> <span class="sub">M&uuml;ller &middot; 2 pers. &middot; ajouté</span><span class="chip oranje">Lactose, fruits à coque</span>
+59|<b>205</b> <span class="sub">Sato &middot; 2 pers.</span><span class="chip grijs">Attendu</span>
+60|<b>208</b> <span class="sub">Peeters &middot; 2 pers. &middot; ajouté par la cuisine</span><span class="chip">Vient d'être ajouté</span>
+61|Choisir la chambre, le nombre de personnes, terminé
+62|Allotements
+63|Garder des chambres pour un groupe, <em>sans les perdre de vue.</em>
+64|Vous réservez des chambres pour un groupe, souvent à un tarif négocié. Ce n'est pas un bloc dans votre calendrier, c'est une promesse avec une date d'échéance.
+65|Ce que vous gardez est <em>retiré de votre disponibilité</em>, sur Booking.com aussi
+66|Le pickup montre combien des chambres convenues ont réellement été prises
+67|À la date de cut-off, ce qui n'est pas réservé repart en vente tout seul
+68|Facturer par réservation, ou en une fois à l'entreprise
+69|<a href="uitgelegd/allotments.html">Comment fonctionnent les allotements, rumo mis à part &rarr;</a>
+70|Congrès Van Eyck
+71|12 &ndash; 15 mai &middot; actif
+72|Gardées
+73|Réservées
+74|Encore libres
+75|Cut-off
+76|28 avr
+77|<span class="aan">Pickup</span><span>Réservations</span><span>Facturation</span><span>Historique</span>
+78|<b>Standard double</b> <span class="sub">10 gardées &middot; 8 réservées</span><span class="chip">2 libres</span>
+79|<b>Deluxe double</b> <span class="sub">6 gardées &middot; 4 réservées</span><span class="chip">2 libres</span>
+80|<b>Junior suite</b> <span class="sub">4 gardées &middot; 1 réservée</span><span class="chip oranje">3 libres</span>
+81|Facture centrale au Congresbureau Van Eyck bvba
+82|Vos chiffres sont déjà là. <em>Vous n'avez pas à aller les chercher.</em>
+83|Choisissez une période et vous obtenez une douzaine de rapports sur ces mêmes jours. Pas d'exports à pétrir d'abord dans Excel.
+84|Chiffre d'affaires, prix moyen, RevPAR et taux d'occupation, par type de chambre et par canal
+85|<em>Pace :</em> êtes-vous en avance ou en retard sur l'an dernier ?
+86|Débiteurs, nationalités, check-in en ligne, petits-déjeuners
+87|Et à part : le registre de police, la taxe de séjour et les statistiques officielles. Construits à partir de ce que votre client a rempli lui-même. Le dépôt reste votre signature ; le comptage, non.
+88|1 &ndash; 30 avril 2026
+89|<span class="aan">Chiffre d'affaires</span><span>Pace</span><span>Réservations</span><span>Factures</span><span>Occupation</span><span>Nationalités</span><span>Conformité</span>
+90|CA chambres
+91|&euro; 84.320
+92|Prix moyen
+93|&euro; 132
+94|RevPAR
+95|&euro; 96
+96|Occupation
+97|<b>Booking.com</b> <span class="sub">142 nuits &middot; net après commission</span><span class="chip">&euro; 31.480</span>
+98|<b>Page de réservation propre</b> <span class="sub">96 nuits &middot; sans commission</span><span class="chip">&euro; 24.910</span>
+99|<b>Pace</b> <span class="sub">par rapport au 30 avril de l'an dernier</span><span class="chip oranje">+8%</span>
+100|Légal, prêt à déposer
+101|<b>Registre de police</b> <span class="sub">avril &middot; 412 clients</span><span class="chip">Prêt</span>
+102|Export en CSV, Excel ou PDF
+103|Autres fonctionnalités
+104|Le PMS est <em>la base</em>.<br>Et il y a autre chose par-dessus.
+105|Rudy, le manuel, la prévention, le channel manager, le portail client. Tout dans le même rumo, tout ensemble un seul système.
+106|<em>Rudy</em>
+107|Lire la suite →
+108|Le <em>manuel</em>
+109|<em>Prévention</em> &amp; bien-être
+110|<em>Channel</em> manager
+111|<em>Portail client</em> &amp; moteur de réservation
+112|Essayer vous-même
+113|Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.
+114|Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit.
+115|Essayez 14 jours gratuitement <span>→</span>
+116|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="overstappen.html">Migration des données offerte</a>
+117|<a href="https://wa.me/32485382828">WhatsApp</a>
+118|<a href="features.html#integraties">Booking.com</a>
+119|<a href="features.html#integraties">Airbnb</a>
+120|<a href="features.html#integraties">Exact Online</a>
+121|<a href="features.html#integraties">Peppol</a>
+122|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+123|Menu
+124|L'écran de note d'une réservation : quelqu'un clique sur Modifier les postes, clique sur le texte d'une ligne de facture et y tape sa propre description.
+125|L'écran housekeeping de rumo : la chambre 204 passe en propre et les compteurs au-dessus de la liste suivent.
+126|L'écran petit-déjeuner de rumo : la cuisine ajoute un petit-déjeuner sur la chambre 208 et le comptage passe de 34 à 36 couverts.
+127|L'écran allotements de rumo : un bloc de chambres pour un congrès, avec le pickup par type de chambre et la date de cut-off.
+128|L'écran rapports de rumo : la période est réglée sur avril et le rapport de chiffre d'affaires montre les indicateurs avec la comparaison à l'an dernier.

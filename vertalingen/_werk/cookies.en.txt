@@ -1,0 +1,58 @@
+1|Cookies · rumo
+2|rumo only uses essential cookies to make the software work. No tracking, no advertising, no surprises.
+3|<a href="faq.html">FAQ</a>
+4|Only what is <em>strictly needed</em>.
+5|No tracking, no advertising pixels, no "we share your behaviour with 247 partners". Just the three or four things the software needs in order to work.
+6|Version<br> <strong>17 May 2026</strong>
+7|<span>ePrivacy Directive</span> <span>No consent needed</span> <span>Essential only</span>
+8|Last updated · 17 May 2026
+9|What is a cookie?
+10|A cookie is a small file a website stores in your browser so that it can recognise you later. Some are needed to make the site work (for example: remembering that you are logged in). Others are there to follow your behaviour for advertising.
+11|<strong>We only use the first kind.</strong>
+12|Which cookies (and cookie-like things) we set
+13|Strictly speaking we do not use classic browser cookies, but we do use a few items in <code>localStorage</code>. That is technically the same story, a small file in your browser, and it falls under the same rules.
+14|Name
+15|What for
+16|How long
+17|<code>rumo_hotel_id</code><br><code>rumo_hotel_name</code><br><code>rumo_tenant_id</code>
+18|Remembering which hotel you belong to. Without this the software does not know which rooms, prices or reservations to show.
+19|Until you log out or clear your browser
+20|<code>rumo_last_user_id</code>
+21|When logging in on a shared workstation: knowing which user was last active, so that we can restore the right session.
+22|Until you log out or another user logs in
+23|<code>rumo_cookie_ack</code>
+24|Remembering that you have seen the cookie notice, so that it does not come back every time.
+25|Until you clear your browser
+26|Keycloak session cookies
+27|Keeping your login session safe (anti-CSRF, session identifier). Strictly necessary to stay logged in.
+28|Duration of your session
+29|<strong>All essential.</strong> That means: under the ePrivacy Directive (and the Belgian Electronic Communications Act) we do not need prior consent to place them. A banner with "accept / refuse" is therefore not legally required. We do show a short notice the first time you visit rumo, for clarity.
+30|Visitor statistics on this website
+31|On <strong>rumo.eu</strong> (the website you are on now, not the software itself) we count how many people come by. We do that with <strong>Plausible</strong>, a European counter that needs no cookie for it and leaves nothing in your browser. So there is no extra row in the table above, because there is nothing to add.
+32|What we see of it: which pages are viewed, which site someone arrives from, from which country, and whether it is a phone or a laptop. All added together, never per person. No profile of you is built, not on this site and certainly not beyond it. Come back tomorrow and the counter does not know it is you.
+33|We also count a handful of <strong>actions</strong>: that someone opens the trial form, that they send it, or that sending failed. Without that last one we would not notice a request disappearing on the way. Nothing there is tied to a person either; we only see numbers.
+34|Because nothing is stored on your device, no consent banner is needed for this. And because it is a form of measuring all the same, it is written out here rather than tucked into a footnote.
+35|What we do <em>not</em> do
+36|No Google Analytics and no Google Tag Manager. Just the cookieless counter above, and nothing else
+37|No Facebook Pixel, no LinkedIn Insight, no TikTok pixel
+38|No Hotjar, Mixpanel, Segment or other session-replay tools
+39|No advertising cookies, no retargeting, no cross-site tracking
+40|No sale or passing on of browsing behaviour to third parties
+41|If that ever changes (because a hotel wants its own booking pixel, for instance), a real cookie banner will appear with an accept and a refuse button. Until then: not needed.
+42|How to delete them
+43|In every browser you can clear cookies and localStorage by hand. You usually find it under <strong>Settings → Privacy → Clear browsing data</strong>. Per browser:
+44|<a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Chrome</a>
+45|<a href="https://support.mozilla.org/nl/kb/cookies-verwijderen-gegevens-wissen-websites-opgeslagen" target="_blank" rel="noopener noreferrer">Firefox</a>
+46|<a href="https://support.apple.com/nl-be/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a>
+47|<a href="https://support.microsoft.com/nl-nl/microsoft-edge/cookies-verwijderen-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Edge</a>
+48|Clear everything? Then you have to log in again, and the software forgets which hotel you belong to. That is all that happens.
+49|Want to know more?
+50|Read our <a href="privacy.html">privacy page</a> for the bigger picture: which data we hold about you, why, who we share it with, and what rights you have.
+51|Questions or remarks? <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>.
+52|<a href="https://wa.me/32485382828">WhatsApp</a>
+53|<a href="features.html#integraties">Booking.com</a>
+54|<a href="features.html#integraties">Airbnb</a>
+55|<a href="features.html#integraties">Exact Online</a>
+56|<a href="features.html#integraties">Peppol</a>
+57|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+58|Menu

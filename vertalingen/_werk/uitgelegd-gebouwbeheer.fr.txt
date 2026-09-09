@@ -1,0 +1,41 @@
+1|Qui entretient votre chaudière, et c'était quand la dernière fois ? · expliqué par rumo
+2|Un hôtel est aussi un bâtiment, et ce bâtiment a une administration. Pourquoi les contrôles sont rarement le problème, et les papiers qui suivent presque toujours.
+3|<a href="../faq.html">FAQ</a>
+4|← Expliqué
+5|Le bâtiment
+6|Qui entretient votre chaudière, et c'était quand <em>la dernière fois ?</em>
+7|Si vous ne pouvez répondre immédiatement à aucune de ces deux questions, vous êtes en bonne compagnie. Presque aucun hôtelier ne le peut, et ce n'est pas par négligence. C'est parce qu'un hôtel n'a pas un dossier de bâtiment mais une quinzaine, chacun avec son délai, sa firme et son papier.
+8|<span>Lecture 3 minutes</span> <span>Pour qui gère le bâtiment</span> <span>Vaut aussi sans rumo</span>
+9|Le problème n'est pas <em>le contrôle</em>
+10|Le contrôle lui-même tourne rarement mal. Quelqu'un passe, contrôle, et en général tout est en ordre. C'est le papier qui suit qui coince : l'attestation qui devait arriver par mail plus tard et qui n'est jamais venue, ou qui dort dans une boîte que plus personne n'ouvre.
+11|Posez-vous quatre questions par installation. Qui l'entretient. Qui la contrôle. C'était quand la dernière fois. Jusqu'à quand l'attestation actuelle est-elle valable. C'est gérable, jusqu'à ce que vous fassiez la liste de ce dont il s'agit : la chaudière, la basse tension, les dévidoirs, les extincteurs, les détecteurs, l'éclairage de secours, l'exutoire de fumée, l'ascenseur, la hotte, la porte de garage, les portes automatiques. Soixante questions, réparties sur une dizaine de firmes. <strong>Personne ne garde cela en tête.</strong>
+12|Ce qui complique encore : aucun délai ne suit le même rythme. L'un revient chaque année, l'autre tous les tant d'années, et savoir si c'est deux ou cinq dépend de l'appareil, du combustible et de la région. Demandez à un hôtelier quand l'analyse de risques de son ascenseur expire et vous obtenez une hésitation. Ce n'est pas une question idiote : c'est un délai qui revient si rarement qu'on ne le voit venir de nulle part.
+13|<strong>Pourquoi une date d'échéance n'est pas un jour mais un projet.</strong> Un contrôle qui expire la semaine prochaine ne se règle pas la semaine prochaine. Pour un contrôle basse tension, un électricien passe généralement d'abord réparer ce que le contrôle précédent avait relevé, et l'organisme de contrôle ensuite seulement. Deux agendas, deux délais.
+14|Comptez donc à rebours. Celui qui ne voit sa date d'échéance qu'une fois arrivée n'est pas en retard d'un coup de fil. Il est en retard de six semaines.
+15|Le problème n'est pas le contrôle. C'est <em>le papier</em> qui suit.
+16|Ce que les pompiers demandent, c'est l'attestation
+17|Il y a quatre sortes de papiers, et on les <em>confond</em>
+18|<strong>L'attestation de contrôle</strong> d'un organisme agréé. C'est le papier qu'un inspecteur veut voir.
+19|<strong>L'attestation d'entretien</strong> de la firme qui a fait le travail. C'est celle qui manque le plus souvent, pour une raison banale : le technicien repart et l'attestation doit suivre par mail. Ou pas.
+20|<strong>Ce que vous attestez vous-même.</strong> Vous pouvez en principe entretenir vous-même votre hotte de cuisine, mais vous devez alors aussi attester vous-même que vous l'avez fait. Qui l'ignore est en ordre dans les faits et pas en ordre sur le papier.
+21|<strong>Des pièces de dossier qui n'expirent pas.</strong> Votre schéma unifilaire, votre inventaire amiante, votre plan d'évacuation. Ils ne figurent sur aucun rappel et ne sont que demandés, en général au pire moment.
+22|Et puis il y a ceux qui <em>circulent</em>
+23|Un employeur externe a le droit de savoir quels risques existent sur votre site avant que ses gens ne commencent : où se trouve l'amiante, comment on évacue. Ce n'est pas de la politesse, c'est une obligation d'information qui vous incombe. Et cela va plus loin qu'une liste : qui a travaillé là, quand, sur quoi, et cet homme a-t-il reçu une clé qui ouvre toutes les chambres ? C'est la première question posée si quelque chose a disparu le lendemain.
+24|À côté de cela courent des registres qui n'ont rien à voir avec les contrôles et que les gens oublient souvent : l'exercice d'évacuation, le registre des incidents, le registre des premiers secours, le registre des faits psychosociaux, le carnet de rinçage pour la légionelle.
+25|Qu'en faire
+26|Le piège est de croire que c'est un problème technique. C'est un <strong>problème de documents</strong>, et cela se résout comme tout problème de documents : un seul endroit, une date d'échéance par pièce, et un avertissement bien avant qu'il ne soit trop tard. Mettez aussi une date sur les installations dont vous ne la connaissez pas exactement, car une date estimée est surveillée et un champ vide jamais. Et notez qui entretient et qui contrôle comme deux noms distincts.
+27|Dans rumo, c'est l'add-on Prévention : un registre de vos installations avec les dates d'échéance et les firmes derrière, vos attestations dans un coffre documentaire qui garde les versions au lieu d'écraser, des tâches récurrentes et des checklists à signer, les registres de sécurité ci-dessus, et un lien d'inscription avec code QR par lequel un entrepreneur s'enregistre lui-même et signe pour les informations du site qu'il a vues. Vous êtes averti trente, quatorze, sept et un jour avant l'expiration d'un document.
+28|Ce qu'il ne fait expressément <em>pas</em> : rumo ne connaît pas le délai légal de votre installation. Ce que vous encodez comme date d'échéance est ce avec quoi il travaille, et vous la prenez sur l'attestation que vous avez en main. Les avertissements arrivent dans l'application, pas dans votre boîte mail.
+29|Encore une chose comprise ?
+30|Nous préférons l'<em>expliquer</em><br>plutôt que de le vendre.
+31|Ce qui vient avec la gestion d'un hôtel : contrôles, allotements, commissions, formation. Nous avons dû le comprendre nous-mêmes et nous écrivons ce que nous avons trouvé.
+32|Tout ce que nous expliquons <span>→</span>
+33|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="../overstappen.html">Migration des données offerte</a>
+34|<a href="index.html">Expliqué</a>
+35|<a href="https://wa.me/32485382828">WhatsApp</a>
+36|<a href="../features.html#integraties">Booking.com</a>
+37|<a href="../features.html#integraties">Airbnb</a>
+38|<a href="../features.html#integraties">Exact Online</a>
+39|<a href="../features.html#integraties">Peppol</a>
+40|<span>© 2026 Rumo · Gand, BE</span> <span><a href="../privacy.html">Privacy</a> · <a href="../cookies.html">Cookies</a></span>
+41|Menu

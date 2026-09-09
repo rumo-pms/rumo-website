@@ -1,0 +1,103 @@
+1|Portail client &amp; moteur de réservation · rumo
+2|Réserver via votre propre site sans commission, et un portail où chaque client fait lui-même son pré-check-in. Sur son téléphone, dans sa langue, quand il veut.
+3|<a href="faq.html">FAQ</a>
+4|Portail client &amp; moteur de réservation
+5|Réserver et s'enregistrer<br>depuis <em>leur téléphone</em>.
+6|Une page de réservation sans commission, et un portail où le client s'enregistre, confirme un devis ou récupère sa facture. Sur son téléphone, dans sa langue.
+7|Pas de compte, pas de mot de passe. Un lien personnel dans son mail de confirmation, qui expire deux semaines après son départ.
+8|Réservations directes
+9|Des réservations via <em>votre site</em>. Sans commission.
+10|Une fenêtre de réservation que vous placez dans votre site, avec les mêmes prix et la même disponibilité que votre calendrier. La même réservation vous rapporte ici jusqu'à 22 % de plus, puisqu'aucune commission n'est retirée.
+11|Obéit aux mêmes restrictions que vos canaux
+12|Une carte en garantie, sans que rien ne soit débité
+13|Le client annule lui-même, selon vos conditions
+14|Widget de réservation · votre site
+15|En direct
+16|Arrivée
+17|14 mai 2026
+18|Départ
+19|17 mai 2026
+20|<strong>Junior Suite</strong> <span>2 personnes · 3 nuits</span>
+21|<strong>Deluxe Double</strong> <span>2 personnes · 3 nuits</span>
+22|Réservez maintenant, sans commission →
+23|22 % moins cher que sur Booking
+24|Avant l'arrivée
+25|Le travail qui se faisait <em>autrefois</em> au comptoir.
+26|Identité, adresse, heure d'arrivée, régime : le client le remplit lui-même sur son téléphone. Au comptoir, c'est alors un coup d'œil et un clic, au lieu de quelqu'un qui épelle le nom de sa rue.
+27|Dans un groupe, chaque chambre s'enregistre séparément, et la chambre 205 ne voit pas les autres
+28|Vous décidez de ce que vous demandez, et le client peut le remplir en plusieurs fois
+29|Changer les dates ou annuler une réservation OTA, le portail ne le fait volontairement pas
+30|Qui voyage avec vous ?
+31|Client principal
+32|Anna Janssens
+33|Carte d'identité
+34|✓ Téléversée
+35|Régime ou allergies
+36|Végétarien, sans fruits à coque
+37|Confirmer et continuer →
+38|Chat avec la réception
+39|Une seule conversation, de la <em>réservation</em> au départ.
+40|Des messages dans les deux sens, toujours au même endroit. Dans l'autre sens aussi : la réception ouvre la conversation quand c'est nécessaire.
+41|Si le client ne regarde pas, il reçoit un mail. Un seul, pas une avalanche
+42|Arrive dans la même boîte que votre chat interne, avec une réponse préparée par Rudy
+43|Réception
+44|Bonjour Anna, petite info : il y a des travaux dans notre rue. Le plus simple pour se garer est de passer par la Kerkstraat.
+45|Tom · chambre 206
+46|Pourrions-nous avoir deux serviettes supplémentaires ?
+47|Tapez un message →
+48|Entrer sans <em>clé</em>, sans comptoir.
+49|Relié à vos serrures Salto, le client reçoit ses codes pour la porte d'entrée, le parking et la chambre. S'il arrive à minuit, personne ne doit être au comptoir.
+50|<strong>Le code n'arrive que si tout est en ordre.</strong> S'il reste un solde ouvert ou si le check-in n'est pas fait, cela reste fermé. Si cela ne se règle pas et que le client arrive aujourd'hui, la cloche le signale à votre réception.
+51|Vos codes d'accès
+52|Porte d'entrée du bâtiment
+53|Chambre 205
+54|Valable
+55|14 mai 15:00 → 17 mai 11:00
+56|Envoyer aussi les codes par mail →
+57|Entre l'arrivée et le départ
+58|Devis, paiement, <em>facture</em>.
+59|Vous envoyez un devis sous forme de lien et le client confirme ou refuse. Un solde ouvert, il le paie lui-même. Et il récupère la facture jusqu'à deux semaines après son départ.
+60|Bancontact, Visa, Mastercard ou Apple Pay
+61|Un lien de paiement pour une partie du montant, pratique quand une entreprise paie une part
+62|Ventes additionnelles et surclassements avant l'arrivée, en add-on séparé
+63|Devis de Hotel Sfeer
+64|Week-end romantique avec dîner
+65|2 nuits en Junior Suite
+66|Petit-déjeuner × 4
+67|Dîner 4 services × 2
+68|Total
+69|Confirmer
+70|Des questions ?
+71|Conformité
+72|<em>Déclaration</em> à la police, automatiquement.
+73|Ce que le client a rempli lui-même remplit d'un coup trois obligations : l'enregistrement policier, la taxe de séjour sur sa facture et les statistiques officielles.
+74|Celui qui tape tout cela au comptoir le recompte ensuite trois fois. Ici, cela vient de la source. Le dépôt reste votre signature ; le comptage, non.
+75|Export police · <span data-datum="maand-naam">avril 2026</span>
+76|142 enregistrements
+77|<strong>Müller, Hans</strong> <span>DE · 12 – 15 · chambre 104</span>
+78|Complet
+79|<strong>Janssens, Anna</strong> <span>BE · 14 – 17 · chambre 103</span>
+80|<strong>Dupont, Marie</strong> <span>FR · 18 – 20 · chambre 102</span>
+81|<strong>+ 139 autres enregistrements</strong> <span>Nationalité, pièce d'identité, adresse, dates</span>
+82|Exporter au format police
+83|Autres fonctionnalités
+84|Le portail client est <em>une couche</em>.<br>Il y a autre chose autour.
+85|Le PMS, Rudy, le manuel, la prévention, le channel manager. Tout dans le même rumo, tout ensemble un seul système.
+86|Le <em>PMS</em>
+87|Lire la suite →
+88|<em>Rudy</em>
+89|Le <em>manuel</em>
+90|<em>Prévention</em> &amp; bien-être
+91|<em>Channel</em> manager
+92|Essayer vous-même
+93|Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.
+94|Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations, avec un portail client qui fonctionne. Cela ne vous convient pas ? Alors il disparaît sans bruit.
+95|Essayez 14 jours gratuitement <span>→</span>
+96|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="overstappen.html">Migration des données offerte</a>
+97|<a href="https://wa.me/32485382828">WhatsApp</a>
+98|<a href="features.html#integraties">Booking.com</a>
+99|<a href="features.html#integraties">Airbnb</a>
+100|<a href="features.html#integraties">Exact Online</a>
+101|<a href="features.html#integraties">Peppol</a>
+102|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+103|Menu

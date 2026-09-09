@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../gate.js"></script>
+<script src="../demo-form.js?v=2" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Migration · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Passer de votre PMS actuel à rumo. Ce qu'il advient de vos réservations, de votre connexion Booking.com, combien de temps cela prend et ce que cela coûte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* Zij-illustratie in de paginakop; zelfde maatvoering als over-ons.html. */
+  .ph-side-illus { width:140px; height:140px; position:relative; }
+  .ph-side-illus svg { width:100%; height:100%; color:var(--terra-dark); opacity:0.85; }
+
+  /* ─── DE DRIE VRAGEN ─── */
+  .vragen { background:var(--paper-deep); padding:6rem 0; }
+  .vragen-head { max-width:640px; margin-bottom:3.5rem; }
+  .vragen-head h2 {
+    font-family:'Fraunces', Georgia, serif; font-weight:400;
+    font-size:clamp(1.9rem, 3.6vw, 2.8rem); letter-spacing:-0.03em;
+    line-height:1.05; color:var(--ink); margin-bottom:1rem;
+  }
+  .vragen-head h2 em { font-style:italic; color:var(--terra); font-weight:300; }
+  .vragen-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; }
+  .vraag-kaart {
+    background:var(--paper-panel); border:1px solid var(--line);
+    border-radius:20px; padding:2rem 1.8rem;
+  }
+  .vraag-tekst {
+    font-family:'Fraunces', Georgia, serif; font-size:1.15rem; line-height:1.25;
+    color:var(--ink); margin-bottom:0.9rem;
+  }
+  .vraag-nr {
+    font-family:'JetBrains Mono', monospace; font-size:0.68rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--terra); display:block; margin-bottom:0.7rem;
+  }
+  .vraag-kaart p { font-size:0.95rem; line-height:1.65; color:var(--ink-soft); margin:0; }
+
+  /* ─── STAPPEN ─── */
+  .stappen { background:var(--paper); padding:6rem 0; }
+  .stappen-head { max-width:640px; margin-bottom:3.5rem; }
+  .stappen-head h2 {
+    font-family:'Fraunces', Georgia, serif; font-weight:400;
+    font-size:clamp(1.9rem, 3.6vw, 2.8rem); letter-spacing:-0.03em;
+    line-height:1.05; color:var(--ink); margin-bottom:1rem;
+  }
+  .stappen-head h2 em { font-style:italic; color:var(--terra); font-weight:300; }
+  .stappen-lijst { max-width:760px; border-left:1px solid var(--line); }
+  .stap { position:relative; padding:0 0 2.8rem 2.5rem; }
+  .stap:last-child { padding-bottom:0; }
+  .stap::before {
+    content:''; position:absolute; left:-4.5px; top:0.55rem;
+    width:9px; height:9px; border-radius:50%; background:var(--terra);
+  }
+  .stap-nr {
+    font-family:'JetBrains Mono', monospace; font-size:0.68rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--muted); display:block; margin-bottom:0.4rem;
+  }
+  .stap h3 {
+    font-family:'Fraunces', Georgia, serif; font-weight:400; font-size:1.4rem;
+    letter-spacing:-0.02em; line-height:1.2; color:var(--ink); margin-bottom:0.6rem;
+  }
+  .stap h3 em { font-style:italic; color:var(--terra); font-weight:300; }
+  .stap p { font-size:1rem; line-height:1.7; color:var(--ink-soft); margin:0 0 0.7rem; }
+  .stap p:last-child { margin-bottom:0; }
+
+  /* ─── EERLIJK ─── */
+  .eerlijk { background:var(--ink); color:var(--paper); padding:6rem 0; }
+  .eerlijk-head { max-width:640px; margin-bottom:3rem; }
+  .eerlijk-head h2 {
+    font-family:'Fraunces', Georgia, serif; font-weight:400;
+    font-size:clamp(1.9rem, 3.6vw, 2.8rem); letter-spacing:-0.03em;
+    line-height:1.05; color:var(--paper); margin-bottom:1rem;
+  }
+  .eerlijk-head h2 em { font-style:italic; color:var(--butter); font-weight:300; }
+  .eerlijk-head p { color:rgba(245,238,226,0.72); font-size:1.1rem; line-height:1.6; margin:0; }
+  .eerlijk-lijst { display:grid; gap:1.2rem; max-width:760px; }
+  .eerlijk-item {
+    border:1px solid rgba(245,238,226,0.14); border-radius:18px; padding:1.6rem 1.8rem;
+  }
+  .eerlijk-item h3 {
+    font-family:'Fraunces', Georgia, serif; font-weight:400; font-size:1.2rem;
+    color:var(--paper); margin-bottom:0.5rem; letter-spacing:-0.02em;
+  }
+  .eerlijk-item p { color:rgba(245,238,226,0.72); font-size:0.97rem; line-height:1.65; margin:0; }
+
+  /* ─── KOSTPRIJS ─── */
+  .kostprijs { background:var(--paper-deep); padding:6rem 0; }
+  .kostprijs-inner { max-width:680px; }
+  .kostprijs h2 {
+    font-family:'Fraunces', Georgia, serif; font-weight:400;
+    font-size:clamp(2.2rem, 4.5vw, 3.4rem); letter-spacing:-0.03em;
+    line-height:1.02; color:var(--ink); margin-bottom:1.2rem;
+  }
+  .kostprijs h2 em { font-style:italic; color:var(--terra); font-weight:300; }
+  .kostprijs p { font-size:1.1rem; line-height:1.7; color:var(--ink-soft); margin:0 0 1rem; }
+  .kostprijs p:last-of-type { margin-bottom:2rem; }
+
+  @media (max-width:900px) {
+    .vragen-grid { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../overstappen.html">NL</a>
+      <a href="../en/switching.html">EN</a>
+      <a href="migration.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ PAGE HEADER ═══════════════════════ -->
+<div class="page-header">
+  <div class="page-header-inner fade-up">
+    <div>
+      <span class="kicker">Overstappen</span>
+      <h1>Ce qu'il advient de vos <em>réservations</em> quand vous changez.</h1>
+      <p class="lead">Et de vos connexions aux canaux, de vos tarifs et de vos profils clients. Le passage d'un PMS à un autre se fait en six étapes, et votre ancien système continue tout simplement de tourner jusqu'à la dernière. Vous trouverez ci-dessous chaque étape, ce qu'on attend de vous à chacune, et les trois parties qui, en pratique, avancent plus lentement que prévu.</p>
+    </div>
+    <div class="ph-side-illus">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- Twee huizen, een brug ertussen: het oude systeem blijft staan tot je over bent -->
+        <path d="M12,72 L12,50 L28,38 L44,50 L44,72 Z"/>
+        <rect x="22" y="58" width="12" height="14"/>
+        <path d="M76,72 L76,50 L92,38 L108,50 L108,72 Z"/>
+        <rect x="86" y="58" width="12" height="14"/>
+        <line x1="44" y1="72" x2="76" y2="72"/>
+        <path d="M52,66 L60,72 L52,78"/>
+        <line x1="6" y1="88" x2="114" y2="88"/>
+      </svg>
+    </div>
+  </div>
+  <div class="page-header-ribbon">
+    <span>Votre ancien système continue de tourner</span> <span>Votre historique suit</span> <span>Rien n'est importé en silence</span> <span>Vous choisissez le moment</span> <span>Cela ne coûte rien</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ DE DRIE VRAGEN ═══════════════════════ -->
+<section class="vragen">
+  <div class="wrap">
+    <div class="vragen-head fade-up">
+      <h2>D'abord les trois questions <em>pratiques</em>.</h2>
+    </div>
+    <div class="vragen-grid fade-up">
+
+      <div class="vraag-kaart">
+        <span class="vraag-nr">Question une</span>
+        <div class="vraag-tekst">« Est-ce que je perds mes réservations ? »</div>
+        <p>Non, et vous ne devez pas non plus les retaper. Vous sortez un export de votre système actuel et vous l'importez. Et pas seulement ce qui est à venir : vos anciennes réservations suivent aussi, avec qui a dormi là et ce qui a été payé. Pendant ce temps, votre ancien système continue simplement de tourner : vous n'éteignez rien pour pouvoir installer rumo.</p>
+      </div>
+
+      <div class="vraag-kaart">
+        <span class="vraag-nr">Question deux</span>
+        <div class="vraag-tekst">« Est-ce que mon Booking.com sera à l'arrêt deux jours ? »</div>
+        <p>Votre annonce n'est pas reconstruite. En connectant un canal, vous choisissez entre une nouvelle annonce et le compte que vous avez déjà. Si vous choisissez le second, votre page, vos avis et votre historique restent en place. Ce qui change, c'est qui tient votre calendrier.</p>
+      </div>
+
+      <div class="vraag-kaart">
+        <span class="vraag-nr">Question trois</span>
+        <div class="vraag-tekst">« À partir de quand suis-je seul aux commandes ? »</div>
+        <p>Au moment où vous le dites, pas à une date inscrite dans un plan de projet. Tant que vous ne basculez pas la connexion des canaux, votre ancien système continue de vendre. Le passage est un bouton que vous actionnez quand vous êtes prêt.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ STAPPEN ═══════════════════════ -->
+<section class="stappen">
+  <div class="wrap">
+    <div class="stappen-head fade-up">
+      <h2>Bon, et concrètement, <em>comment ça se passe ?</em></h2>
+      <p class="lead">Six étapes. Vous pouvez vous arrêter à tout moment sans que rien ne soit cassé, car jusqu'à la dernière étape votre ancien système tourne encore.</p>
+    </div>
+
+    <div class="stappen-lijst fade-up">
+
+      <div class="stap">
+        <span class="stap-nr">Étape 1</span>
+        <h3>Vous recevez un rumo vide <em>à côté</em> de votre système actuel.</h3>
+        <p>Pas à la place. À côté. Vous vous connectez, vous cliquez partout, et rien ne change encore dans votre hôtel. C'est aussi votre période d'essai : si cela ne vous plaît pas, vous vous arrêtez ici, et rien n'aura jamais été modifié à ce que vous faites tourner aujourd'hui.</p>
+      </div>
+
+      <div class="stap">
+        <span class="stap-nr">Étape 2</span>
+        <h3>Vous déposez votre export dans la conversation avec Rudy.</h3>
+        <p>Un CSV ou un Excel de votre PMS actuel. Rudy y lit vos chambres et vos tarifs et vous soumet ce qu'il a trouvé. Vous confirmez ou vous corrigez, question par question.</p>
+        <p>Rien n'est importé en silence. Il montre chaque étape d'abord et vous dites oui ou non. C'est lent quand on est pressé, mais c'est la raison pour laquelle vous ne cherchez pas ensuite d'où viennent ces trente types de chambres bizarres.</p>
+      </div>
+
+      <div class="stap">
+        <span class="stap-nr">Étape 3</span>
+        <h3>Ce qui ne figure pas dans l'export vous est demandé.</h3>
+        <p>Et c'est plus que vous ne le pensez. Les numéros de chambres, les types et les prix y sont en général. Vos conditions d'annulation, vos taux de TVA et le prix de votre petit-déjeuner, presque jamais. Ce n'est pas un défaut de votre système, c'est simplement à quoi ressemblent les exports.</p>
+        <p>Ces éléments vous sont donc demandés, avec une proposition plutôt qu'un champ vide. Corriger une proposition va plus vite que tout décrire depuis zéro. Vous ne savez pas ? Vous passez, et cela reste vide jusqu'à ce que vous sachiez.</p>
+      </div>
+
+      <div class="stap">
+        <span class="stap-nr">Étape 4</span>
+        <h3>Vos réservations viennent <em>en dernier</em>, et seulement si vous le voulez.</h3>
+        <p>Votre maison doit d'abord être juste : chambres, types, tarifs. Ce n'est qu'ensuite que les réservations entrent, car une réservation sans chambre où la poser est une ligne dans un tableur.</p>
+        <p>Vous voyez d'abord ce qui va être importé. Ensuite seulement cela se produit. Si vous dites non, cela n'a pas lieu et vous démarrez avec un calendrier vide. C'est une réponse valable aussi, surtout si vous changez en basse saison.</p>
+        <p><strong>Et votre passé suit.</strong> Pas seulement les réservations à venir. Vos dernières années entrent aussi : qui a dormi là, combien de temps, et ce qui a été payé. Les séjours terminés restent terminés, et votre fichier clients suit séparément, si bien qu'un client fidèle a déjà son historique derrière lui dès sa première réservation dans rumo.</p>
+        <p>Une chose à savoir juste après l'import : votre calendrier s'ouvre sur une fenêtre autour d'aujourd'hui, environ une semaine en arrière et quelques mois en avant. Un import d'anciens séjours tombe entièrement en dehors, et on a alors l'impression qu'il ne s'est rien passé. Revenez au bon mois et ils sont bien là.</p>
+      </div>
+
+      <div class="stap">
+        <span class="stap-nr">Étape 5</span>
+        <h3>Vos canaux déménagent, ils ne sont pas <em>reconstruits.</em></h3>
+        <p>En ajoutant un canal, vous choisissez : une annonce toute neuve, ou la reprise du compte OTA que vous avez déjà. Dans ce second cas, tout ce que vous avez construit sur Booking.com reste. Votre page, vos photos, vos avis, votre classement.</p>
+        <p>Vient ensuite la partie qui coince le plus souvent lors d'un changement : le mapping. Votre « Standard Double » s'appelle peut-être « Classic Double Room » sur Booking.com, et le système doit savoir que c'est la même chose. Cela se vérifie avant de basculer, pas après.</p>
+      </div>
+
+      <div class="stap">
+        <span class="stap-nr">Étape 6</span>
+        <h3>C'est vous qui dites quand.</h3>
+        <p>Jusque-là, votre ancien système continue de vendre. À partir de là, c'est rumo. Il n'y a pas de période intermédiaire où personne ne tient votre calendrier, puisque vous n'éteignez l'un que lorsque l'autre est allumé.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ EERLIJK ═══════════════════════ -->
+<section class="eerlijk">
+  <div class="wrap">
+    <div class="eerlijk-head fade-up">
+      <h2>Et ce que nous n'allons <em>pas</em> prétendre.</h2>
+      <p>Ces trois éléments déterminent la durée réelle de votre migration. Ils sont ici parce qu'il vaut mieux les inscrire à l'avance dans votre agenda que les rencontrer en chemin.</p>
+    </div>
+    <div class="eerlijk-lijst fade-up">
+
+      <div class="eerlijk-item">
+        <h3>Que ce soit fini en une soirée.</h3>
+        <p>Cela dépend de votre configuration. Un B&amp;B de quatre chambres, un tarif et un canal, c'est une après-midi. Un hôtel de quarante chambres, six tarifs, des forfaits et cinq OTA, c'est plutôt une semaine avec des interruptions. Non pas parce que le travail est lourd, mais parce qu'il contient des décisions qui demandent réflexion.</p>
+      </div>
+
+      <div class="eerlijk-item">
+        <h3>Qu'un export contienne tout.</h3>
+        <p>Il ne le fait jamais. Voir l'étape 3. Comptez devoir transmettre vous-même vos conditions d'annulation, vos taux de TVA et le prix de votre petit-déjeuner. Celui qui promet qu'un import reprend tout n'a jamais ouvert un export de PMS.</p>
+      </div>
+
+      <div class="eerlijk-item">
+        <h3>Que les OTA travaillent à notre rythme.</h3>
+        <p>Une nouvelle connexion de canal reste « en demande » jusqu'à ce que l'OTA l'approuve. C'est leur horloge. rumo continue de surveiller et met la connexion en actif dès que la réponse arrive, mais la durée ne dépend pas de nous. Ne planifiez donc pas votre migration le vendredi avant un week-end complet.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ KOSTPRIJS ═══════════════════════ -->
+<section class="kostprijs">
+  <div class="wrap kostprijs-inner fade-up">
+    <span class="kicker">Et euh, ça coûte combien, cette migration ?</span>
+    <h2>Rien. <em>Zéro.</em></h2>
+    <p>Pas de frais d'installation, pas de forfait de migration, pas de consultant d'onboarding qui facture trois jours pour retaper vos types de chambres.</p>
+    <p>Et ce n'est pas une action temporaire. L'essentiel du travail dans une migration, c'est de mettre en place vos types de chambres, vos tarifs et vos connexions, et cela se fait dans la conversation avec Rudy pendant que vous cliquez de toute façon partout. L'accompagnement qui va avec est compris dans votre abonnement, comme tout le support. (Oui, vraiment.)</p>
+    <a href="index.html#demo" class="btn-ink">Essayez 14 jours gratuitement <span>→</span></a>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Prêt à essayer ?</span>
+    <h2>Commencez simplement <em>à côté</em><br>de votre système actuel.</h2>
+    <p>Votre export reste chez vous. L'import se fait dans votre propre environnement d'essai, avec votre propre fichier : vous n'avez donc pas à nous envoyer de données clients pour voir si cela fonctionne. Vous doutez que votre logiciel puisse suivre ? Indiquez son nom dans votre demande, dans la case remarques, et nous vous en dirons tout de suite quelque chose.</p>
+    <a href="index.html#demo" class="btn-paper">Essayez 14 jours gratuitement <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · Migration des données offerte</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+// threshold 0, niet 0.1: die eiste dat een tiende van het blok tegelijk in beeld
+// stond. Een lang artikel is ~9000px hoog, en op een telefoonscherm van 700px
+// haal je die tien procent nooit. Gevolg: het blok bleef op opacity 0 staan en
+// de pagina was leeg tot aan de footer, terwijl je wel kon scrollen.
+const doelen = document.querySelectorAll('.fade-up');
+if (!('IntersectionObserver' in window)) {
+  doelen.forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  doelen.forEach(el => observer.observe(el));
+}
+document.documentElement.dataset.fadeReady = '1';
+</script>
+</body>
+</html>

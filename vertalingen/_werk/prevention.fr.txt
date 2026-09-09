@@ -1,0 +1,102 @@
+1|Prévention &amp; bien-être · rumo
+2|Prévention incendie, légionelle, premiers secours, checklists, incidents. Enfin dans un dossier vivant qui suit, rappelle et documente.
+3|<a href="faq.html">FAQ</a>
+4|Prévention &amp; bien-être
+5|Add-on &middot; 29 &euro;/mois
+6|Prévention incendie. Légionelle. Premiers secours.<br><em>Enfin sous contrôle.</em>
+7|Tout hôtelier connaît ce sentiment : quelque part dans une armoire se trouve un classeur avec des contrôles, des checklists et des plans de sécurité. Personne ne sait avec certitude si tout est encore valable. Jusqu'à ce qu'une inspection arrive.
+8|Un hôtel est aussi un bâtiment, et ce bâtiment a sa propre administration. Quinze installations, chacune avec sa firme, son délai et son papier. Ce n'est pas un problème technique mais un <strong>problème de documents</strong>.
+9|Installations
+10|Chaque installation a <em>sa propre horloge.</em>
+11|Par installation, vous notez ce que c'est, jusqu'à quand l'attestation vaut, qui l'entretient et qui la contrôle. Ces deux derniers sont volontairement des noms distincts, car c'est la question que vous poserez dans un an.
+12|Vous ne réglez pas le statut : il découle de la date d'échéance
+13|Une installation sans date n'a pas de statut. Ce n'est <em>pas</em> la même chose qu'être en ordre
+14|rumo ne connaît pas le délai légal. Ce que vous encodez est ce avec quoi il travaille
+15|2 avril
+16|Échue
+17|Sous 30 j
+18|En ordre
+19|Sans date
+20|<span class="aan">Toutes</span><span>Incendie</span><span>Électricité</span><span>Eau</span><span>Ascenseur</span>
+21|<span class="sub">Organisme de contrôle &middot; basse tension</span><br><b>Installation électrique</b>
+22|<span class="sub">Ascensoriste &middot; analyse de risques</span><br><b>Ascenseur</b>
+23|Encore 12 jours
+24|<span class="sub">Société incendie &middot; 14 pièces</span><br><b>Extincteurs</b>
+25|Encore 21 jours
+26|L'entretien et le contrôle figurent comme deux firmes distinctes
+27|À temps
+28|Vous le voyez <em>avant qu'on ne le demande.</em>
+29|Un contrôle qui échoit la semaine prochaine ne se règle pas la semaine prochaine. Un électricien passe d'abord réparer ce que le contrôle précédent avait relevé, et l'organisme de contrôle ensuite seulement. Deux agendas, deux délais.
+30|C'est pourquoi rumo prévient trente, quatorze, sept et un jour à l'avance. La cloche montre en direct ce qui demande de l'attention : contrôles qui échoient, tâches ouvertes, un exercice d'évacuation vieux de plus d'un an.
+31|Ces avertissements arrivent dans l'application, pas dans votre boîte mail. Quelqu'un doit ouvrir rumo
+32|La cloche est réservée aux managers et aux admins
+33|Ce qui demande de l'attention
+34|<span class="sub">Échu</span><br><b>Attestation de contrôle basse tension</b>
+35|Depuis 9 jours
+36|<span class="sub">Sous 30 jours</span><br><b>Attestation extincteurs</b>
+37|<span class="sub">Annuel &middot; attendu</span><br><b>Exercice d'évacuation</b>
+38|Il y a 14 mois
+39|<span class="sub">Sous 30 jours</span><br><b>Analyse de risques ascenseur</b>
+40|Tâches et checklists
+41|<span class="sub">Annuel</span><br><b>Exercice d'évacuation</b>
+42|Dans l'application, pas dans votre boîte mail
+43|Le dossier
+44|Un dossier <em>prêt à être montré.</em>
+45|Les attestations, rapports, autorisations et plans eux-mêmes, jusqu'à 25 Mo par fichier. Avec, par document, qui l'a délivré et jusqu'à quand il vaut.
+46|Des versions plutôt qu'un écrasement : l'ancienne est archivée, la chaîne reste complète
+47|Par document, vous choisissez qui peut le voir. Rudy respecte la même règle
+48|Envoyez-lui une pile d'attestations et il les prépare, mais il n'archive jamais lui-même
+49|Documents
+50|48 pièces
+51|<span class="aan">Tous</span><span>Attestations</span><span>Rapports</span><span>Plans</span><span>Polices</span>
+52|<span class="sub">Société incendie &middot; version 4</span><br><b>Attestation de contrôle extincteurs</b>
+53|Valable jusqu'au 23/04
+54|<span class="sub">Conseiller en prévention</span><br><b>Analyse de risques du bâtiment</b>
+55|Managers uniquement
+56|<span class="sub">Version 3 &middot; archivée</span><br><b>Attestation de contrôle extincteurs</b>
+57|Conservée
+58|En attente de confirmation
+59|Rudy prépare, vous confirmez
+60|Registres et checklists
+61|Des checklists qui <em>se font vraiment.</em>
+62|À côté de la technique court une seconde piste : incidents, premiers secours, faits psychosociaux, exercices d'évacuation, légionelle, produits chimiques, et qui est venu travailler dans le bâtiment.
+63|<strong>La différence entre une tâche et une checklist, c'est la preuve.</strong> Une tâche retient seulement quand elle a été faite pour la dernière fois. Une checklist laisse une trace : qui l'a exécutée, ce que chaque point a donné, et une signature. Elle devient toute seule un PDF dans vos documents.
+64|Un entrepreneur s'annonce lui-même avec un code QR, sans login rumo
+65|Ces enregistrements de visite sont effacés après deux ans. Si vous voulez en garder, exportez à temps
+66|<span class="aan">Registres</span><span>Checklists</span><span>Entrepreneurs</span>
+67|<span class="sub">Incidents</span><br><b>3 cette année &middot; 1 ouvert</b>
+68|Tenu à jour
+69|<span class="sub">Légionelle</span><br><b>Carnet de rinçage &middot; 6 robinets</b>
+70|Cette semaine
+71|<span class="sub">Exercice d'évacuation</span><br><b>Le dernier il y a 14 mois</b>
+72|Attendu
+73|Checklist tout juste signée
+74|<span class="sub">Ronde incendie mensuelle &middot; An</span><br><b>18 points &middot; 1 remarque</b>
+75|<span class="chip oranje was">En cours
+76|Signée
+77|Une tâche retient la date, une checklist laisse une preuve
+78|Autres fonctionnalités
+79|La prévention est <em>une couche</em>.<br>Il y a autre chose autour.
+80|Le PMS, Rudy, le manuel, le channel manager, le portail client. Tout dans le même rumo, tout ensemble un seul système.
+81|Le <em>PMS</em>
+82|Lire la suite →
+83|<em>Rudy</em>
+84|Le <em>manuel</em>
+85|<em>Channel</em> manager
+86|<em>Portail client</em> &amp; moteur de réservation
+87|Essayer vous-même
+88|Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.
+89|Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit.
+90|Essayez 14 jours gratuitement <span>→</span>
+91|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="overstappen.html">Migration des données offerte</a>
+92|<a href="https://wa.me/32485382828">WhatsApp</a>
+93|<a href="features.html#integraties">Booking.com</a>
+94|<a href="features.html#integraties">Airbnb</a>
+95|<a href="features.html#integraties">Exact Online</a>
+96|<a href="features.html#integraties">Peppol</a>
+97|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+98|Menu
+99|Le registre des installations dans rumo : chaque installation avec sa date d'échéance et le statut qui en découle.
+100|La cloche de notifications dans rumo : ce qui demande de l'attention aujourd'hui côté contrôles, tâches et documents.
+101|Le dossier documentaire dans rumo : des attestations avec leurs versions et une file d'attente avec ce que Rudy a préparé.
+102|Les registres de sécurité dans rumo, avec une checklist tout juste signée qui atterrit en PDF dans les documents.

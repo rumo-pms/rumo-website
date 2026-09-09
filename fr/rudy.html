@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../gate.js"></script>
+<script src="../demo-form.js?v=2" defer></script>
+<script src="../datums.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rudy · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Rudy est l'assistant IA de rumo. Il connaît votre hôtel, vos procédures et vos données, et exécute des tâches en langage courant. Pas de menus, pas de syntaxe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* ─── HERO ─── */
+  .fp-hero {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+    padding: 6rem 0 6rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .fp-hero-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 4.5rem;
+    align-items: center;
+  }
+  .fp-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    background: var(--rose-soft);
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .fp-hero-tag svg { width: 14px; height: 14px; stroke-width: 1.8; fill: none; }
+  .fp-hero-text h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2.6rem, 5.2vw, 3.8rem);
+    letter-spacing: -0.028em;
+    line-height: 1.04;
+    margin-bottom: 1.4rem;
+  }
+  .fp-hero-text h1 em { color: var(--terra-dark); font-style: italic; }
+  .fp-hero-text .lead {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 52ch;
+    margin-bottom: 2rem;
+  }
+  .fp-hero-bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .fp-hero-bullets li::before {
+    content: '·';
+    color: var(--terra);
+    margin-right: 0.5em;
+  }
+
+  /* ─── SECTIONS ─── */
+  .fp-section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .fp-section.alt { background: var(--paper-deep); }
+  .fp-section-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .fp-section.reverse .fp-section-inner > .fp-section-visual { order: -1; }
+  .fp-section-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-bottom: 0.9rem;
+    display: inline-block;
+  }
+  .fp-section-text h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+    margin-bottom: 1.3rem;
+  }
+  .fp-section-text h2 em { color: var(--terra-dark); font-style: italic; }
+  .fp-section-text .lead {
+    color: var(--ink-soft);
+    line-height: 1.65;
+    max-width: 52ch;
+    font-size: 1.02rem;
+    margin-bottom: 1.3rem;
+  }
+  .fp-bullets {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  .fp-bullets li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .fp-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.65em;
+    width: 8px; height: 1.5px;
+    background: var(--terra);
+  }
+  .fp-bullets li em { color: var(--terra-dark); font-style: italic; }
+
+  /* ─── full-width section (cheatsheet) ─── */
+  .fp-section-full {
+    padding: 6rem 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .fp-section-full-head {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 3rem;
+  }
+  .fp-section-full-head h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+    margin: 0.9rem 0 1rem;
+  }
+  .fp-section-full-head h2 em { color: var(--terra-dark); font-style: italic; }
+  .fp-section-full-head .lead {
+    color: var(--ink-soft);
+    line-height: 1.6;
+    font-size: 1.02rem;
+  }
+
+  /* ─── cheatsheet table ─── */
+  .fp-cheat-wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1.6rem 1.8rem;
+    box-shadow: 0 14px 36px rgba(27,25,23,0.07);
+  }
+  .fp-cheat-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+  }
+  .fp-cheat-table thead th {
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .fp-cheat-table tbody td {
+    padding: 0.85rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .fp-cheat-table tbody tr:last-child td { border-bottom: none; }
+  .fp-cheat-table td.ask {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.83rem;
+    color: var(--ink);
+    width: 44%;
+  }
+  .fp-cheat-table td.does { color: var(--ink-soft); }
+  .fp-cheat-table td.does em { color: var(--terra-dark); font-style: italic; }
+  .fp-cheat-note {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin-top: 2rem;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ─── mockup wrapper ─── */
+  .mockup {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1.4rem;
+    box-shadow: 0 20px 40px rgba(27,25,23,0.08);
+  }
+  .mockup-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mockup-head h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .mockup-head .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    background: var(--sand);
+    color: var(--ink);
+  }
+  .mockup-head .badge.pending { background: var(--butter); color: #8a6b1a; }
+  .mockup-head .badge.refused { background: var(--rose-soft); color: var(--terra-dark); }
+
+  /* Mockup · Rudy chat */
+  .mk-rudy .chat { display: flex; flex-direction: column; gap: 0.55rem; padding-top: 0.5rem; }
+  .mk-rudy .msg {
+    max-width: 84%;
+    padding: 0.7rem 1rem;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+  .mk-rudy .msg.u { background: var(--sand); color: var(--ink); margin-left: auto; border-bottom-right-radius: 4px; }
+  .mk-rudy .msg.b { background: var(--ink); color: var(--paper); border-bottom-left-radius: 4px; }
+  .mk-rudy .msg.b strong { color: var(--butter); font-weight: 600; }
+  .mk-rudy .head-avatar {
+    display: flex; align-items: center; gap: 0.7rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 0.75rem;
+  }
+  .mk-rudy .avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--terra-dark);
+    color: var(--paper);
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .mk-rudy .head-avatar strong {
+    font-family: 'Fraunces', serif; font-weight: 400; font-size: 1.05rem;
+    display: block; line-height: 1.1;
+  }
+  .mk-rudy .head-avatar span {
+    font-size: 0.72rem; color: var(--forest);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .mk-rudy.refused .head-avatar span { color: var(--terra-dark); }
+
+  /* Mockup · Approval card */
+  .mk-approval .approval-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 0.35rem;
+  }
+  .mk-approval .approval-desc {
+    color: var(--ink-soft);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 1.1rem;
+  }
+  .mk-approval .approval-impact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+  }
+  .mk-approval .approval-impact > div {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.7rem 0.85rem;
+  }
+  .mk-approval .approval-impact span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  .mk-approval .approval-impact strong {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--ink);
+  }
+  .mk-approval .approval-impact .new strong { color: var(--terra-dark); }
+  .mk-approval .approval-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .mk-approval .btn {
+    flex: 1;
+    padding: 0.65rem 0.8rem;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink-soft);
+    cursor: default;
+  }
+  .mk-approval .btn.primary {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .mk-approval .approval-trail {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--line);
+  }
+  .mk-approval .approval-trail .step {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.35rem;
+  }
+  .mk-approval .approval-trail .check {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: var(--forest);
+    color: var(--paper);
+    font-size: 0.7rem;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  /* ─── sources diagram ─── */
+  /* Geen kaart om het geheel: de rijen staan rechtstreeks op de sectie, net
+     als op de andere productpagina's. Alleen de rijen zelf blijven wit. */
+  .fp-sources { background: none; border: none; padding: 0; box-shadow: none; }
+  .fp-sources-inputs {
+    display: grid;
+    gap: 0.7rem;
+    margin-bottom: 1.3rem;
+  }
+  .fp-sources-row {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(27,25,23,0.07);
+    border-radius: 12px;
+    background: #fff;
+  }
+  .fp-sources-row .ic {
+    width: 36px; height: 36px;
+    border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .fp-sources-row .ic svg { width: 16px; height: 16px; stroke-width: 1.8; fill: none; }
+  .fp-sources-row strong { display: block; font-size: 0.95rem; color: var(--ink); margin-bottom: 0.15rem; }
+  .fp-sources-row span { font-size: 0.78rem; color: var(--muted); line-height: 1.4; }
+  .fp-sources-arrow {
+    text-align: center;
+    color: var(--terra);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .fp-sources-out {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 14px;
+    padding: 1.3rem;
+    text-align: center;
+  }
+  .fp-sources-out strong {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .fp-sources-out span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--butter);
+  }
+
+  /* ─── andere features strip ─── */
+  .fp-others {
+    background: var(--paper-deep);
+    padding: 5rem 0 6rem;
+    border-top: 1px solid var(--line);
+  }
+  .fp-others-head {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fp-others-head h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0.6rem 0 0.8rem;
+  }
+  .fp-others-head h3 em { color: var(--terra-dark); font-style: italic; }
+  .fp-others-head p { color: var(--ink-soft); font-size: 0.98rem; }
+  .fp-others-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .fp-others-card {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  }
+  .fp-others-card:hover {
+    box-shadow: 0 14px 28px rgba(27,25,23,0.08);
+    transform: translateY(-3px);
+    border-color: var(--terra);
+  }
+  .fp-others-ic {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fp-others-ic svg { width: 16px; height: 16px; stroke-width: 1.8; fill: none; }
+  .fp-others-card h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .fp-others-card h4 em { color: var(--terra-dark); font-style: italic; font-weight: 300; }
+  .fp-others-card .arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-top: auto;
+  }
+
+  /* ─── responsive ─── */
+  @media (max-width: 880px) {
+    .fp-hero { padding: 4rem 0; }
+    .fp-hero-inner, .fp-section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .fp-section.reverse .fp-section-inner > .fp-section-visual { order: 0; }
+    .fp-section { padding: 4rem 0; }
+    .fp-section-full { padding: 4rem 0; }
+    .fp-others-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .fp-cheat-wrap { padding: 1rem; }
+    .fp-cheat-table, .fp-cheat-table tbody, .fp-cheat-table tr, .fp-cheat-table td { display: block; width: 100%; }
+    .fp-cheat-table thead { display: none; }
+    .fp-cheat-table tr { padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
+    .fp-cheat-table tr:last-child { border-bottom: none; }
+    .fp-cheat-table td { padding: 0.2rem 0; border: none; }
+    .fp-cheat-table td.ask { margin-bottom: 0.35rem; width: 100%; }
+    .fp-others-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../rudy.html">NL</a>
+      <a href="../en/rudy.html">EN</a>
+      <a href="rudy.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="fp-hero">
+  <div class="wrap">
+    <div class="fp-hero-inner enkel fade-up">
+      <div class="fp-hero-text">
+        <span class="fp-hero-tag">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Rudy · assistant IA
+        </span>
+        <h1>Un collègue qui ne prend<br><em>jamais</em> congé.</h1>
+        <p class="lead">Rudy connaît votre hôtel, vos procédures et vos clients. Posez une question dans votre langue et il répond. Demandez-lui quelque chose et il le propose, c'est vous qui approuvez. (Et oui, en polonais aussi s'il le faut.)</p>
+        <p class="lead">Il vit dans le même rumo que vous : il voit vos réservations, vos tarifs, vos clients et votre propre manuel. Et il ne peut rien de plus que la personne qui lui parle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ STATEMENT · VEEL, NIET ALLES ═══════════════════════ -->
+<style>
+  /* Donker, met dezelfde warme gloed als de productband onderaan de pagina.
+     Dat blok is de plek waar de pagina even stilstaat bij wat hij wel en niet
+     kan; op papierkleur liep dat gewoon mee met de rest. */
+  .fp-claim {
+    background: var(--ink);
+    padding: 6.5rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .fp-claim::after {
+    content: '';
+    position: absolute; top: -35%; left: -8%; width: 55%; height: 130%;
+    background: radial-gradient(circle, rgba(244,217,143,0.12), transparent 65%);
+    pointer-events: none;
+  }
+  .fp-claim::before {
+    content: '';
+    position: absolute; right: -10%; bottom: -40%; width: 45%; height: 120%;
+    background: radial-gradient(circle, rgba(214,143,111,0.10), transparent 65%);
+    pointer-events: none;
+  }
+  .fp-claim-inner { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; }
+  .fp-claim h2 {
+    font-family: 'Fraunces', serif; font-weight: 400;
+    font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.08;
+    color: var(--paper); margin: 0 0 1.5rem;
+  }
+  .fp-claim h2 em { color: var(--butter); font-style: italic; font-weight: 300; }
+  .fp-claim p { font-size: 1.05rem; line-height: 1.75; color: #d9cfc0; max-width: 600px; margin: 0 auto; }
+</style>
+<section class="fp-claim">
+  <div class="wrap">
+    <div class="fp-claim-inner fade-up">
+      <h2>Rudy sait beaucoup. Pas tout.<br>Mais <em>vraiment</em> beaucoup.</h2>
+      <p>Rudy n'est pas un magicien et ne fait pas semblant de l'être. Ce qui vous revient, il vous le laisse. Mais le reste n'est pas une petite liste : créer des réservations, rédiger des devis, remplir des listes de groupe, chercher dans votre manuel, importer un Excel, préparer des réponses.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 1 · WAT HIJ DOET ═══════════════════════ -->
+<section class="fp-section">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Ce qu'il fait</span>
+        <h2>Les <em>gestes</em> du quotidien.</h2>
+        <p class="lead">C'est la routine qu'il vous enlève : les centaines de petites actions qui découpent votre journée. Ce qui est réversible, il le fait tout de suite ; pour ce qui ne l'est pas, il attend votre oui.</p>
+        <ul class="fp-bullets">
+          <li>Chercher ce qui se passe : chambres libres, arrivées, solde d'une réservation</li>
+          <li>Lire une demande que vous collez et en faire une réservation</li>
+          <li>Expliquer comment faire quelque chose dans rumo, parce qu'il connaît le manuel</li>
+        </ul>
+        <p class="lead" style="margin-top:1.4rem">Sous une proposition figure ce qui serait réellement réservé, au prix de vos propres tarifs. Ainsi, une proposition dont il a parlé mais qu'il n'a jamais exécutée ne part pas discrètement chez votre client.</p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster gesprek" role="img" aria-label="Une conversation avec Rudy : il propose une réservation, montre en dessous ce qui serait réservé, et attend l'approbation.">
+          <div class="ag-kop"><span class="ag-bol"></span><b>Rudy</b><span class="ag-meta">Réception &middot; <span data-datum="dag-vandaag">je</span> <span data-datum="vandaag">2 avril</span></span></div>
+          <div class="ag-draad">
+            <div class="ag-bel ik">Ce mail vient d'arriver : « Une deluxe double au nom de Janssens, du 12 au 15 mai, nous sommes deux. » Fais-en une réservation.</div>
+            <div class="ag-tikt"><i></i><i></i><i></i></div>
+            <div class="ag-bel hij ag-antwoord">Ce que j'en lis : deluxe double, trois nuits, deux adultes. Le petit-déjeuner est compris dans ce tarif. Je remplis les données du client tout de suite. Voici à quoi elle ressemble avant que je l'enregistre :</div>
+            <div class="ag-feiten ag-antwoord">
+              <div><span>Chambre</span><span>Deluxe double</span></div>
+              <div><span>Séjour</span><span>12 &rarr; 15 mai &middot; 3 nuits</span></div>
+              <div><span>Clients</span><span>2 adultes</span></div>
+              <div><span>Tarif</span><span>Flexible &middot; petit-déjeuner compris</span></div>
+              <div><span>Total</span><span>&euro; 447,00</span></div>
+            </div>
+            <div class="ag-knoppen ag-antwoord"><span class="aan">Approuver</span><span>Modifier</span><span>Annuler</span></div>
+            <span class="ag-bron">Prix issu de vos propres tarifs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 2 · WAT HIJ NIET DOET ═══════════════════════ -->
+<section class="fp-section alt reverse">
+  <div class="wrap">
+    <div class="fp-section-inner enkel fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Ce qu'il laisse de côté</span>
+        <h2>Honnête sur ce que <em>vous décidez.</em></h2>
+        <p class="lead">Certaines choses, il ne les fait volontairement pas. Non pas parce qu'il en est incapable, mais parce que ce sont des décisions qui ont des suites.</p>
+        <ul class="fp-bullets">
+          <li>Pas de notes de crédit ni de remboursements de sa propre initiative. Il le signale avec une proposition</li>
+          <li>Pas de politique tarifaire. Il montre où changer un tarif, il ne décide pas</li>
+          <li>Pas de chat interne, et aucun autre hôtel que le vôtre</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 3 · CHEATSHEET ═══════════════════════ -->
+<section class="fp-section-full">
+  <div class="wrap">
+    <div class="fp-section-full-head fade-up">
+      <span class="fp-section-kicker">Comment lui demander</span>
+      <h2>Du français, tout simplement.<br><em>Pas de syntaxe.</em></h2>
+      <p class="lead">Tapez ou dites ce que vous voulez, dans la langue dans laquelle vous pensez. Rudy regarde votre contexte (quel hôtel, quelle date, quel client) et propose une action. Un doute ? Il pose la question. Il ne peut pas ? Il le dit, sans tourner autour du pot.</p>
+    </div>
+
+    <div class="fp-cheat-wrap fade-up">
+      <table class="fp-cheat-table">
+        <thead>
+          <tr><th>Vous demandez</th><th>Ce que Rudy fait</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ask">« Colle la demande et dis : fais-en une réservation »</td><td class="does">Lit le mail, compose la réservation, remplit le client. <em>Vous approuvez.</em></td></tr>
+          <tr><td class="ask">"Combien de chambres sont libres demain ?"</td><td class="does"><em>Réponse en français.</em> Pas de bouton de langue à cocher, il suit la langue de la question.</td></tr>
+          <tr><td class="ask">« Quel était mon chiffre d'affaires la semaine dernière, par canal ? »</td><td class="does">Affiche un tableau. Aucune action nécessaire.</td></tr>
+          <tr><td class="ask">"Write a reply about parking, in English"</td><td class="does">Drafts the answer for the guest chat. <em>Reception sends it.</em></td></tr>
+          <tr><td class="ask">« Que dit notre manuel sur la procédure en cas de no-show ? »</td><td class="does">Cite le bon passage de votre manuel, avec la source.</td></tr>
+          <tr><td class="ask">« Rembourse 80 € au client Janssens »</td><td class="does"><em>Il ne le fait pas lui-même.</em> Il envoie une notification à votre réceptionniste avec la proposition.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="fp-cheat-note">Voyez l'aide-mémoire complet avec 15 exemples dans le <a href="kb.html#rudy" style="color:var(--terra-dark); text-decoration:underline;">helpdesk</a>.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SECTIE 4 · KENNIS ═══════════════════════ -->
+<section class="fp-section">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Ses connaissances</span>
+        <h2>D'où viennent les <em>réponses</em> de Rudy.</h2>
+        <p class="lead">Il vit dans votre rumo et joint l'article dont il tire sa réponse, pour que vous puissiez vérifier. Si la réponse ne se trouve nulle part, il le dit.</p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="fp-sources">
+          <div class="fp-sources-inputs">
+            <div class="fp-sources-row">
+              <div class="ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <div>
+                <strong>Données en direct</strong> <span>Réservations, chambres, tarifs, disponibilité</span>
+              </div>
+            </div>
+            <div class="fp-sources-row">
+              <div class="ic" style="background:#DCE4F3; color:#4a7fb5;">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h6M8 11h8"/></svg>
+              </div>
+              <div>
+                <strong>Votre manuel</strong> <span>Procédures, règlement, plans d'urgence</span>
+              </div>
+            </div>
+          </div>
+          <div class="fp-sources-arrow">↓</div>
+          <div class="fp-sources-out">
+            <strong>Rudy</strong> <span>Renvoie toujours à la source</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ANDERE FEATURES ═══════════════════════ -->
+<section class="fp-others">
+  <div class="wrap">
+    <div class="fp-others-head fade-up">
+      <span class="kicker">Autres fonctionnalités</span>
+      <h3>Rudy est une <em>couche</em>.<br>Il y a autre chose en dessous.</h3>
+      <p>Le PMS, le manuel, la prévention, le channel manager, le portail client. Tout dans le même rumo. (Et partout Rudy qui lit par-dessus votre épaule.)</p>
+    </div>
+    <div class="fp-others-grid fade-up">
+
+      <a class="fp-others-card" href="pms.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h4>Le <em>PMS</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="handbook.html">
+        <div class="fp-others-ic" style="background:#DCE4F3; color:#4a7fb5;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h6M8 11h8"/></svg>
+        </div>
+        <h4>Le <em>manuel</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="prevention.html">
+        <div class="fp-others-ic" style="background:#FCEDBD; color:#8a6b1a;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4><em>Prévention</em> &amp; bien-être</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="channel-manager.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
+        </div>
+        <h4><em>Channel</em> manager</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="guest-portal.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4><em>Portail client</em> &amp; moteur de réservation</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Essayer vous-même</span>
+    <h2>Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.</h2>
+    <p>Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations, Rudy compris. Cela ne vous convient pas ? Alors il disparaît sans bruit.</p>
+    <a href="index.html#demo" class="btn-paper">Essayez 14 jours gratuitement <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="migration.html">Migration des données offerte</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+// threshold 0, niet 0.1: een blok hoger dan tien keer het scherm haalde die
+// drempel nooit, en bleef onzichtbaar op een telefoon.
+}, { threshold: 0 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.documentElement.dataset.fadeReady = '1';
+</script>
+
+</body>
+</html>

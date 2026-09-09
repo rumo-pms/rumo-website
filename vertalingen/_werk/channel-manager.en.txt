@@ -1,0 +1,130 @@
+1|Channel manager · rumo
+2|One change in rumo, on Booking, Airbnb, Expedia and the rest within seconds. Real time, both ways, with a watch on double bookings.
+3|<a href="faq.html">FAQ</a>
+4|One change,<br><em>every OTA.</em>
+5|You change a price in rumo and within seconds it is on Booking, Airbnb, Expedia and the rest. A booking comes in and it is on your calendar straight away. One subscription with us, no separate bill for the connection.
+6|What you set here applies to your whole house, <strong>including your own booking page</strong>. It has to: that is the one channel with no channel manager in front of it.
+7|Back and forth
+8|Everything they <em>need to know.</em>
+9|Out to the channels go your rates, your availability and your restrictions. Back come the bookings and the cancellations. Usually within a handful of seconds.
+10|<strong>Restrictions belong to a room type and a rate plan.</strong> Close one and the others stay open
+11|A bulk edit is prepared, not sent: it only leaves when you save
+12|Cancellations and price changes after booking you do in the OTA's extranet
+13|Rates
+14|Standard double &middot; Sat 4 April
+15|Nightly rate <b><span class="oud">&euro;&nbsp;139
+16|&euro;&nbsp;155
+17|<span class="al-cat">Channel</span><br><b>Booking.com</b>
+18|<span class="al-merk open was">Waiting
+19|Updated
+20|<span class="al-cat">Channel</span><br><b>Airbnb</b>
+21|<span class="al-merk open was traag1">Waiting
+22|<span class="al-cat">Channel</span><br><b>Expedia</b>
+23|<span class="al-merk open was traag2">Waiting
+24|<span class="al-cat">Own</span><br><b>Your own booking page</b>
+25|<span class="al-merk open was traag3">Waiting
+26|Auto close
+27|If your desk is closed, <em>the night is closed.</em>
+28|Set what time your reception closes. rumo then puts that night on stop-sell by itself, on every channel and on your own booking page at the same time. There is nothing to press.
+29|It closes only that night. Tomorrow stays on sale, so a guest can still book ahead while there is nobody at the desk.
+30|A guest sees it as sold out, not as closed. On purpose
+31|Departing that morning is still possible, because it costs you nothing that night
+32|Your reception can still take a booking by hand
+33|Rates and availability
+34|2 April
+35|<span class="aan">Base rates</span><span>Booking.com</span><span>Airbnb</span><span>Expedia</span>
+36|<span class="sub">Standard double &middot; room only</span><br><b>Tonight</b>
+37|<span class="chip was">On sale
+38|Stop-sell
+39|<span class="sub">Standard double &middot; room only</span><br><b>Tomorrow &middot; &euro; 139</b>
+40|On sale
+41|<span class="sub">Standard double &middot; breakfast</span><br><b>Tomorrow &middot; &euro; 155</b>
+42|<span class="sub">Reception closes at 22:00</span><br><b>Stop selling at 20:00</b>
+43|Auto close on
+44|On
+45|Tonight only. Tomorrow stays on sale
+46|Is it still running?
+47|Not only <em>sent</em>, but <em>arrived.</em>
+48|The overview is your health check: are you connected, when did the last booking come in, and did anything go wrong recently.
+49|<strong>Every night there is a comparison.</strong> Not whether rumo sent something, but whether the channels are actually holding it. If a difference is still there the next night, it is usually a setting and not a hiccup.
+50|A room type you add later does not become known to the channels by itself. The panel names what is missing
+51|Overview
+52|Connected
+53|Yes
+54|Last booking
+55|14 min
+56|Last push
+57|3 min
+58|Failed (24h)
+59|Nightly comparison
+60|<span class="sub">Checked tonight</span><br><b>Everything matched</b>
+61|All good
+62|<span class="sub">Two nights running</span><br><b>3 nights differ on Expedia</b>
+63|Take a look
+64|<span class="sub">Added after connecting</span><br><b>Family room not known yet</b>
+65|Reconnect
+66|<span class="sub">Family room &middot; added after connecting</span><br><b>Not known to the channel manager yet</b>
+67|The channels sell what they know, not what you have not passed on
+68|More than sync
+69|What else rumo <em>does</em> with the OTAs.
+70|Sending rates and availability is the beginning. Behind the scenes rumo settles a good deal more that you would otherwise have to sort out by hand at Booking or Airbnb.
+71|Booking.com
+72|Invalid card? <em>Booking</em> sorts it out.
+73|If a guest card turns out to be dead, rumo reports that back to Booking.com. Booking asks the guest for a new card and gives you the right to cancel if it does not work out.
+74|Inbox + Rudy
+75|Guest messages from the OTAs, <em>in one place</em>.
+76|Messages from Booking.com and Airbnb arrive in rumo, Rudy drafts the answer and reception sends it. Expedia does not take part in this. You take this connection separately; the rest of this page is in your package.
+77|Virtual cards
+78|Card handling <em>per channel</em>, automatically.
+79|Verify, pre-authorise or charge automatically, set per channel. A virtual card from Booking often only becomes valid shortly before arrival, so rumo does not try too early and retries by itself.
+80|Net revenue
+81|The <em>real</em> commission, per booking.
+82|rumo reads the commission amount that comes along with every booking. So your net revenue per reservation is right, instead of guesswork with an average percentage.
+83|Optional add-on
+84|<em>Smart Pricing</em>, built in.
+85|Prices that move with your occupancy, in steps you set yourself and pushed straight to your channels. No external tool needed.
+86|Deduplication
+87|No <em>double</em> imports.
+88|If a channel sends the same booking twice, rumo recognises it and holds the duplicate back.
+89|Status panel
+90|See at a glance whether the <em>sync is running</em>.
+91|Last booking in, last change sent, and what went wrong. If something is stuck, you push it again by hand.
+92|The list
+93|Booking, Airbnb, Expedia, <em>and a hundred or so others</em>.
+94|A hundred or so channels are reachable. The big three are ready to go; for the more exotic ones we help with the first connection. Sticking to the big three? That is what most hotels do.
+95|<em>Ready to go:</em> Booking, Airbnb, Expedia, Hotelbeds, Agoda
+96|<em>On request:</em> HotelsCombined, Hostelworld, Despegar, local OTAs
+97|Plus your own booking page, which carries no commission
+98|Connected channels
+99|5 active
+100|<strong>Booking.com</strong> <span class="status">Connected</span>
+101|<strong>Airbnb</strong> <span class="status">Connected</span>
+102|<strong>Expedia</strong> <span class="status">Connected</span>
+103|<strong>Hotelbeds</strong> <span class="status">Connected</span>
+104|<strong>Agoda</strong> <span class="status">Connected</span>
+105|<strong>Own website</strong> <span class="status">Connected</span>
+106|+ a hundred or so channels
+107|Other features
+108|The channel manager is <em>one layer</em>.<br>There is more around it.
+109|The PMS, Rudy, the handbook, prevention, guest portal. All in the same rumo, all one system together.
+110|The <em>PMS</em>
+111|Read more →
+112|<em>Rudy</em>
+113|The <em>handbook</em>
+114|<em>Prevention</em> &amp; wellbeing
+115|Guest <em>portal &amp; booking engine</em>
+116|Try it yourself
+117|No demo call.<br>Just <em>14 days</em> to play.
+118|No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.
+119|Try it free for 14 days <span>→</span>
+120|No credit card · Cancellable monthly after 6 months · <a href="overstappen.html">Free data migration</a>
+121|<a href="https://wa.me/32485382828">WhatsApp</a>
+122|<a href="features.html#integraties">Booking.com</a>
+123|<a href="features.html#integraties">Airbnb</a>
+124|<a href="features.html#integraties">Exact Online</a>
+125|<a href="features.html#integraties">Peppol</a>
+126|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+127|Menu
+128|A price change in rumo leaving one after the other for Booking.com, Airbnb, Expedia and the own booking page.
+129|The rate grid in rumo: tonight goes to stop-sell as soon as reception closes.
+130|The channel manager overview in rumo: connection status, the nightly comparison and the linking of your room types.

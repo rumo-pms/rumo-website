@@ -1,0 +1,58 @@
+1	Cookies · rumo
+2	rumo gebruikt alleen essentiële cookies om de software te laten werken. Geen tracking, geen advertenties, geen verrassingen.
+3	<a href="faq.html">FAQ</a>
+4	Alleen wat <em>strikt nodig</em> is.
+5	Geen tracking, geen advertentiepixels, geen "we delen je gedrag met 247 partners". Gewoon de drie of vier dingen die de software nodig heeft om te werken.
+6	Versie<br> <strong>17 mei 2026</strong>
+7	<span>ePrivacy Richtlijn</span> <span>Geen toestemming nodig</span> <span>Alleen essentieel</span>
+8	Laatst bijgewerkt · 17 mei 2026
+9	Wat is een cookie?
+10	Een cookie is een klein bestandje dat een website opslaat in je browser zodat hij je later kan herkennen. Sommige zijn nodig om de site te laten werken (bijvoorbeeld: onthouden dat je ingelogd bent). Andere zijn er om je gedrag te volgen voor advertenties.
+11	<strong>Wij gebruiken alleen het eerste soort.</strong>
+12	Welke cookies (en cookie-achtige dingen) we zetten
+13	Strikt gezien gebruiken we geen klassieke browsercookies, maar wel een paar items in <code>localStorage</code>. Dat is technisch hetzelfde verhaal, een klein bestandje in je browser, en valt onder dezelfde regels.
+14	Naam
+15	Waarvoor
+16	Hoe lang
+17	<code>rumo_hotel_id</code><br><code>rumo_hotel_name</code><br><code>rumo_tenant_id</code>
+18	Onthouden bij welk hotel je hoort. Zonder dit weet de software niet welke kamers, prijzen of reservaties hij moet tonen.
+19	Tot je uitlogt of je browser wist
+20	<code>rumo_last_user_id</code>
+21	Bij het inloggen op een gedeeld werkstation: weten welke gebruiker als laatste actief was, zodat we de juiste sessie kunnen herstellen.
+22	Tot je uitlogt of een andere gebruiker inlogt
+23	<code>rumo_cookie_ack</code>
+24	Onthouden dat je het cookie-bannertje gezien hebt, zodat het niet elke keer terugkomt.
+25	Tot je je browser wist
+26	Keycloak sessie-cookies
+27	Houden je inlog-sessie veilig (anti-CSRF, sessie-identifier). Strikt noodzakelijk om ingelogd te blijven.
+28	Duur van je sessie
+29	<strong>Allemaal essentieel.</strong> Dat betekent: volgens de ePrivacy-richtlijn (en de Belgische Wet Elektronische Communicatie) hebben we geen voorafgaande toestemming nodig om ze te plaatsen. Een banner met "accepteer / weiger" is dan ook niet wettelijk vereist. We tonen wel een korte mededeling de eerste keer dat je rumo bezoekt, voor de duidelijkheid.
+30	Bezoekersstatistieken op deze website
+31	Op <strong>rumo.eu</strong> (de website waar je nu bent, niet de software zelf) tellen we hoeveel mensen langskomen. Dat doen we met <strong>Plausible</strong>, een Europese teller die daarvoor geen cookie nodig heeft en niets in je browser achterlaat. Er staat dus geen extra regel in de tabel hierboven, omdat er niets bij te zetten valt.
+32	Wat we ervan zien: welke pagina's bekeken worden, vanaf welke site iemand binnenkomt, uit welk land, en of het een telefoon of een laptop is. Allemaal opgeteld, nooit per persoon. Er wordt geen profiel van je opgebouwd, niet op deze site en zeker niet daarbuiten. Kom je morgen terug, dan weet de teller niet dat jij het bent.
+33	We tellen ook een handvol <strong>handelingen</strong>: dat iemand het proefformulier opent, dat hij het verstuurt, of dat het versturen mislukt. Zonder dat laatste zouden we niet merken dat een aanvraag onderweg verdwijnt. Ook daar wordt niets aan een persoon gekoppeld; we zien alleen aantallen.
+34	Omdat er niets op je toestel wordt opgeslagen, is hier geen toestemmingsbanner voor nodig. En omdat het toch een vorm van meten is, staat het hier gewoon uitgeschreven in plaats van in een voetnoot.
+35	Wat we <em>niet</em> doen
+36	Geen Google Analytics en geen Google Tag Manager. Wel de cookieloze teller hierboven, en verder niets
+37	Geen Facebook Pixel, geen LinkedIn Insight, geen TikTok-pixel
+38	Geen Hotjar, Mixpanel, Segment of andere session-replay tools
+39	Geen advertentiecookies, geen retargeting, geen cross-site tracking
+40	Geen verkoop of doorgifte van browse-gedrag aan derden
+41	Als dat ooit verandert (bijvoorbeeld omdat een hotel een eigen booking-pixel wil), dan zal er een echte cookie-banner verschijnen met accepteer- én weigerknop. Tot dan: niet nodig.
+42	Hoe je ze verwijdert
+43	In elke browser kan je cookies en localStorage manueel wissen. Meestal vind je dat onder <strong>Instellingen → Privacy → Browsegegevens wissen</strong>. Specifiek per browser:
+44	<a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Chrome</a>
+45	<a href="https://support.mozilla.org/nl/kb/cookies-verwijderen-gegevens-wissen-websites-opgeslagen" target="_blank" rel="noopener noreferrer">Firefox</a>
+46	<a href="https://support.apple.com/nl-be/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a>
+47	<a href="https://support.microsoft.com/nl-nl/microsoft-edge/cookies-verwijderen-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Edge</a>
+48	Wis je alles? Dan moet je opnieuw inloggen, en de software vergeet bij welk hotel je hoort. Dat is alles wat er gebeurt.
+49	Meer weten?
+50	Lees onze <a href="privacy.html">privacy-pagina</a> voor de grotere context: welke gegevens we van je hebben, waarom, met wie we delen, en welke rechten je hebt.
+51	Vragen of opmerkingen? <a href="mailto:privacy@rumo.eu">privacy@rumo.eu</a>.
+52	<a href="https://wa.me/32485382828">WhatsApp</a>
+53	<a href="features.html#integraties">Booking.com</a>
+54	<a href="features.html#integraties">Airbnb</a>
+55	<a href="features.html#integraties">Exact Online</a>
+56	<a href="features.html#integraties">Peppol</a>
+57	<span>© 2026 Rumo · Gent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+58	Menu

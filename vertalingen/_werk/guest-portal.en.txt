@@ -1,0 +1,103 @@
+1|Guest portal &amp; booking engine · rumo
+2|Booking through your own website without commission, and a guest portal where every guest does their own pre-check-in. On their phone, in their language, in their own time.
+3|<a href="faq.html">FAQ</a>
+4|Guest portal &amp; booking engine
+5|Booking and checking in<br>on their <em>own phone</em>.
+6|Your own booking page with no commission on it, and a portal where the guest checks in, confirms a quote or picks up their invoice. On their phone, in their language.
+7|No account, no password. A personal link in their confirmation mail that expires two weeks after they leave.
+8|Direct bookings
+9|Bookings through your <em>own site</em>. No commission.
+10|A booking window you plant in your own website, with the same prices and availability as your calendar. The same booking earns you up to 22% more here, because no commission comes off.
+11|Obeys the same restrictions as your channels
+12|A card as a guarantee, without anything being charged
+13|The guest cancels themselves, according to your conditions
+14|Booking widget · your website
+15|Live
+16|Arrival
+17|14 May 2026
+18|Departure
+19|17 May 2026
+20|<strong>Junior Suite</strong> <span>2 people · 3 nights</span>
+21|<strong>Deluxe Double</strong> <span>2 people · 3 nights</span>
+22|Book now, no commission →
+23|22% cheaper than on Booking
+24|Before arrival
+25|The work that <em>used to</em> happen at the desk.
+26|Identity, address, arrival time, diet: the guest fills it in on their phone. At the desk it is then one look and one click, instead of someone spelling out their street name.
+27|In a group every room checks in separately, and room 205 does not see the others
+28|You decide what you ask, and the guest may fill it in in pieces
+29|Changing dates or cancelling an OTA booking is deliberately not something the portal does
+30|Who is travelling along?
+31|Main guest
+32|Anna Janssens
+33|Identity card
+34|✓ Uploaded
+35|Diet or allergies
+36|Vegetarian, no nuts
+37|Confirm and continue →
+38|Chat with reception
+39|One conversation, from <em>booking</em> to check-out.
+40|Messages back and forth, always in the same place. In the other direction too: reception starts the conversation when that is needed.
+41|If the guest is not looking, they get one mail. One, not a mail storm
+42|Lands in the same inbox as your internal chat, with an answer Rudy drafts
+43|Reception
+44|Hello Anna, small heads-up: there are roadworks in our street. Parking is easiest via the Kerkstraat.
+45|Tom · room 206
+46|Could we have two extra towels?
+47|Type a message →
+48|In without a <em>key</em>, without a desk.
+49|Linked to your Salto locks, the guest gets their codes for the front door, the parking and the room. If they arrive at midnight, nobody has to be at the desk.
+50|<strong>The code only comes when everything is in order.</strong> If there is still a balance outstanding or the check-in is not done, it stays locked. If it does not work out and the guest arrives today, the bell tells your reception.
+51|Your access codes
+52|Building front door
+53|Room 205
+54|Valid
+55|14 May 15:00 → 17 May 11:00
+56|Mail the codes as well →
+57|Between check-in and check-out
+58|Quote, payment, <em>invoice</em>.
+59|You send a quote as a link and the guest confirms or declines. An outstanding balance they pay themselves. And they pick up the invoice up to two weeks after leaving.
+60|Bancontact, Visa, Mastercard or Apple Pay
+61|A payment link for part of the amount, handy when a company pays a share
+62|Upsells and room upgrades before arrival, as a separate add-on
+63|Quote from Hotel Sfeer
+64|Romantic weekend with dinner
+65|2 nights Junior Suite
+66|Breakfast × 4
+67|4-course dinner × 2
+68|Total
+69|Confirm
+70|Questions?
+71|Compliance
+72|Police <em>registration</em>, automatically.
+73|What the guest filled in themselves takes care of three obligations at once: the police registration, the city tax on their invoice and the government statistics.
+74|Whoever types it in at the desk counts it over three times afterwards. Here it comes from the source. Filing stays your signature; counting does not.
+75|Police export · <span data-datum="maand-naam">April 2026</span>
+76|142 registrations
+77|<strong>Müller, Hans</strong> <span>DE · 12 – 15 · room 104</span>
+78|Complete
+79|<strong>Janssens, Anna</strong> <span>BE · 14 – 17 · room 103</span>
+80|<strong>Dupont, Marie</strong> <span>FR · 18 – 20 · room 102</span>
+81|<strong>+ 139 other registrations</strong> <span>Nationality, ID, address, dates</span>
+82|Export to police format
+83|Other features
+84|The guest portal is <em>one layer</em>.<br>There is more around it.
+85|The PMS, Rudy, the handbook, prevention, channel manager. All in the same rumo, all one system together.
+86|The <em>PMS</em>
+87|Read more →
+88|<em>Rudy</em>
+89|The <em>handbook</em>
+90|<em>Prevention</em> &amp; wellbeing
+91|<em>Channel</em> manager
+92|Try it yourself
+93|No demo call.<br>Just <em>14 days</em> to play.
+94|No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations, with a working guest portal alongside. Not for you? Then it quietly disappears.
+95|Try it free for 14 days <span>→</span>
+96|No credit card · Cancellable monthly after 6 months · <a href="overstappen.html">Free data migration</a>
+97|<a href="https://wa.me/32485382828">WhatsApp</a>
+98|<a href="features.html#integraties">Booking.com</a>
+99|<a href="features.html#integraties">Airbnb</a>
+100|<a href="features.html#integraties">Exact Online</a>
+101|<a href="features.html#integraties">Peppol</a>
+102|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+103|Menu

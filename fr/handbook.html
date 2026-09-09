@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>
+/* Zet de klasse die de fade-in aanzet. Staat JavaScript uit, dan wordt ze nooit
+   gezet en is de pagina gewoon leesbaar. Loopt er verderop iets mis waardoor
+   het script onderaan niet draait, dan haalt het vangnet de klasse weer weg:
+   dan mis je de animatie in plaats van de hele tekst. */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  addEventListener('load', function () {
+    setTimeout(function () { if (!d.dataset.fadeReady) d.classList.remove('js'); }, 1200);
+  });
+})();
+</script>
+<script src="../gate.js"></script>
+<script src="../demo-form.js?v=2" defer></script>
+<script src="../datums.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le manuel · rumo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<!-- Plausible: cookieloze, EU-gehoste statistieken. Geen persoonsgegevens, geen cross-site profiel. Zie cookies.html. -->
+<script async src="https://plausible.io/js/pa-qrWo4zr4eI0-tnEew9x4u.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<meta name="description" content="Procédures de réception, règlement intérieur et plans d'urgence au même endroit, dans un texte que l'on peut chercher. Tout le monde travaille de la même façon, les nouveaux compris. Et Rudy lit par-dessus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+<style>
+  /* ─── HERO ─── */
+  .fp-hero {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .fp-hero-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 4.5rem;
+    align-items: center;
+  }
+  .fp-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #4a7fb5;
+    background: #DCE4F3;
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .fp-hero-tag svg { width: 14px; height: 14px; stroke-width: 1.8; fill: none; }
+  .fp-hero-text h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(2.6rem, 5.2vw, 3.8rem);
+    letter-spacing: -0.028em;
+    line-height: 1.04;
+    margin-bottom: 1.4rem;
+  }
+  .fp-hero-text h1 em { color: var(--terra-dark); font-style: italic; }
+  .fp-hero-text .lead {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 52ch;
+    margin-bottom: 2rem;
+  }
+  .fp-hero-bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .fp-hero-bullets li::before {
+    content: '·';
+    color: var(--terra);
+    margin-right: 0.5em;
+  }
+
+  /* ─── SECTIONS ─── */
+  .fp-section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .fp-section.alt { background: var(--paper-deep); }
+  .fp-section-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .fp-section.reverse .fp-section-inner > .fp-section-visual { order: -1; }
+  .fp-section-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-bottom: 0.9rem;
+    display: inline-block;
+  }
+  .fp-section-text h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+    margin-bottom: 1.3rem;
+  }
+  .fp-section-text h2 em { color: var(--terra-dark); font-style: italic; }
+  .fp-section-text .lead {
+    color: var(--ink-soft);
+    line-height: 1.65;
+    max-width: 52ch;
+    font-size: 1.02rem;
+    margin-bottom: 1.3rem;
+  }
+  .fp-bullets {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+  .fp-bullets li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .fp-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.65em;
+    width: 8px; height: 1.5px;
+    background: var(--terra);
+  }
+  .fp-bullets li em { color: var(--terra-dark); font-style: italic; }
+
+  /* ─── mockup wrapper ─── */
+  .mockup {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1.4rem;
+    box-shadow: 0 20px 40px rgba(27,25,23,0.08);
+  }
+  .mockup-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .mockup-head h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .mockup-head .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    background: var(--sand);
+    color: var(--ink);
+  }
+
+  /* Mockup · Handbook category grid */
+  .mk-handbook .cats {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem;
+    margin-bottom: 0.85rem;
+  }
+  .mk-handbook .cat {
+    background: var(--paper); border-radius: 10px; padding: 0.85rem;
+    border: 1px solid var(--line);
+  }
+  .mk-handbook .cat .ic {
+    width: 26px; height: 26px; border-radius: 7px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  .mk-handbook .cat.a .ic { background: var(--rose-soft); color: var(--terra-dark); }
+  .mk-handbook .cat.b .ic { background: var(--forest-soft); color: var(--forest); }
+  .mk-handbook .cat.c .ic { background: #FCEDBD; color: #8a6b1a; }
+  .mk-handbook .cat.d .ic { background: var(--sand); color: var(--ink); }
+  .mk-handbook .cat .ic svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+  .mk-handbook .cat strong {
+    display: block; font-size: 0.86rem; font-weight: 600; color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+  .mk-handbook .cat span {
+    font-size: 0.7rem; color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+  .mk-handbook .recent {
+    background: var(--paper); border-radius: 10px; padding: 0.85rem;
+    border: 1px solid var(--line);
+  }
+  .mk-handbook .recent .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem; color: var(--muted);
+    letter-spacing: 0.06em; text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+  .mk-handbook .recent strong { display: block; font-size: 0.9rem; color: var(--ink); margin-bottom: 0.15rem; }
+  .mk-handbook .recent span { font-size: 0.72rem; color: var(--muted); }
+
+  /* Mockup · Article preview (mobile-style card) */
+  .mk-article {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(27,25,23,0.08);
+    overflow: hidden;
+  }
+  .mk-article .header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1rem 1.2rem;
+  }
+  .mk-article .header .breadcrumb {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--butter);
+    margin-bottom: 0.4rem;
+  }
+  .mk-article .header h6 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  .mk-article .body {
+    padding: 1.2rem;
+  }
+  .mk-article .body p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-bottom: 0.7rem;
+  }
+  .mk-article .body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .mk-article .body li {
+    position: relative;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--ink);
+    margin-bottom: 0.35rem;
+    line-height: 1.5;
+  }
+  .mk-article .body li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.6em;
+    width: 7px; height: 1.5px;
+    background: var(--terra);
+  }
+  .mk-article .meta {
+    padding: 0.85rem 1.2rem;
+    border-top: 1px solid var(--line);
+    background: var(--paper);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  /* Mockup · Search */
+  .mk-search .search-box {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.9rem;
+  }
+  .mk-search .search-box .ic {
+    color: var(--muted);
+  }
+  .mk-search .search-box .ic svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+  .mk-search .query {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: var(--ink);
+    flex: 1;
+  }
+  .mk-search .kbd {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    background: var(--sand);
+    color: var(--ink-soft);
+    padding: 0.2rem 0.45rem;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+  .mk-search .result {
+    padding: 0.75rem 0.9rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mk-search .result.hit { border-color: var(--terra); background: var(--rose-soft); }
+  .mk-search .result strong {
+    font-size: 0.88rem;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+  .mk-search .result span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .mk-search .result .arrow {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .mk-search .result.hit .arrow { color: var(--terra-dark); }
+
+  /* Mockup · Editor */
+  .mk-editor .editor-tabs {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+  }
+  .mk-editor .editor-tab {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.35rem 0.7rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--muted);
+  }
+  .mk-editor .editor-tab.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .mk-editor .editor-content {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--ink);
+    font-family: 'Fraunces', serif;
+  }
+  .mk-editor .editor-content h6 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+  .mk-editor .editor-content p { margin-bottom: 0.5rem; }
+  .mk-editor .editor-content .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: var(--terra);
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  .mk-editor .saved {
+    margin-top: 0.7rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--forest);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .mk-editor .saved::before {
+    content: '✓';
+    margin-right: 0.4em;
+  }
+
+  /* ─── andere features strip ─── */
+  .fp-others {
+    background: var(--paper-deep);
+    padding: 5rem 0 6rem;
+    border-top: 1px solid var(--line);
+  }
+  .fp-others-head {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fp-others-head h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0.6rem 0 0.8rem;
+  }
+  .fp-others-head h3 em { color: var(--terra-dark); font-style: italic; }
+  .fp-others-head p { color: var(--ink-soft); font-size: 0.98rem; }
+  .fp-others-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .fp-others-card {
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  }
+  .fp-others-card:hover {
+    box-shadow: 0 14px 28px rgba(27,25,23,0.08);
+    transform: translateY(-3px);
+    border-color: var(--terra);
+  }
+  .fp-others-ic {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fp-others-ic svg { width: 16px; height: 16px; stroke-width: 1.8; fill: none; }
+  .fp-others-card h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .fp-others-card h4 em { color: var(--terra-dark); font-style: italic; font-weight: 300; }
+  .fp-others-card .arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terra-dark);
+    margin-top: auto;
+  }
+
+  @media (max-width: 880px) {
+    .fp-hero { padding: 4rem 0; }
+    .fp-hero-inner, .fp-section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .fp-section.reverse .fp-section-inner > .fp-section-visual { order: 0; }
+    .fp-section { padding: 4rem 0; }
+    .fp-others-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .fp-others-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">rumo<em>.</em></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="features.html">Que faisons-nous&nbsp;?</a></li>
+    <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+    <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+    <li><a href="index.html#demo" class="nav-cta">Essai gratuit →</a></li>
+    <li class="nav-lang">
+      <a href="../handbook.html">NL</a>
+      <a href="../en/handbook.html">EN</a>
+      <a href="handbook.html" class="active">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="fp-hero">
+  <div class="wrap">
+    <div class="fp-hero-inner enkel fade-up">
+      <div class="fp-hero-text">
+        <span class="fp-hero-tag">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M8 7h6M8 11h8"/></svg>
+          Le manuel
+        </span>
+        <h1>Un seul endroit pour<br>tout ce que vous <em>savez</em>.</h1>
+        <p class="lead">Procédures, règlement et plans d'urgence au même endroit, au lieu d'être éparpillés entre Word, WhatsApp et la boîte à chaussures derrière le comptoir. Sur le téléphone de celui qui en a besoin, pendant son service.</p>
+        <p class="lead">Il retient <em>votre</em> savoir, pas le nôtre. Tout le monde lit ; écrire est réservé aux managers et aux admins.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ WIE ZIET WAT ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Qui voit quoi</span>
+        <h2>Tout n'est pas <em>pour tout le monde.</em></h2>
+        <p class="lead">Vous créez vos propres catégories et vous les fermez par rôle. C'est plus important qu'il n'y paraît : une femme de chambre qui voit quarante articles de réception passe aussi à côté des quatre qui la concernent.</p>
+        <ul class="fp-bullets">
+          <li>Une catégorie fermée n'apparaît pas dans sa liste, et Rudy ne la cite pas chez elle</li>
+          <li>Vous faites glisser les articles dans l'ordre voulu, sur un téléphone aussi</li>
+          <li>Pièces jointes jusqu'à 25 Mo. Les PDF et les photos s'ouvrent dans l'écran même</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="Le manuel dans rumo : les catégories avec leurs articles, la catégorie Réception étant fermée au housekeeping.">
+          <div class="as-kop"><h4>Manuel</h4><span>36 articles &middot; 12 collègues</span></div>
+          <div class="as-tabs"><span class="aan">Tout</span><span>Réception</span><span>Housekeeping</span><span>Cuisine</span><span>Sécurité</span><span>Annonces</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Réception</span><br><b>Check-in lors d'une arrivée tardive</b></div><span class="chip">Lu par 12</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Housekeeping</span><br><b>Préparer une chambre pour une arrivée</b></div><span class="chip">Lu par 12</span></div>
+          <div class="as-rij vuil"><div><span class="sub">Réception &middot; fermé</span><br><b>Procédure coffre et caisse</b></div><span class="chip oranje">Réception uniquement</span></div>
+          <div class="as-voet">Faites glisser pour changer l'ordre</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ LEESBEVESTIGING ═══════════════════════ -->
+<section class="fp-section reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Lu</span>
+        <h2>Modifiez une procédure et elle est <em>de nouveau non lue.</em></h2>
+        <p class="lead">Chacun confirme article par article qu'il l'a lu, et cette confirmation est attachée à la version qui existait à ce moment-là. Modifiez l'article et il revient dans la liste de ces personnes-là exactement.</p>
+        <p class="lead">Non pas comme une punition, mais parce que c'est vrai : elles ont lu quelque chose qui n'existe plus. Et c'est la forme la plus dangereuse de ne pas savoir, car celui qui connaissait l'ancienne version ne va pas revérifier de lui-même.</p>
+        <p class="lead">L'ancienne confirmation est conservée. C'est votre preuve qu'elles connaissaient bien la version précédente.</p>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster lijst" role="img" aria-label="Le manuel dans rumo : une procédure incendie modifiée revient en non lue chez les collègues qui avaient confirmé la version précédente.">
+          <div class="al-kop"><h4>Manuel</h4><span>Réception &middot; 12 collègues</span></div>
+          <div class="al-rij">
+            <div><span class="al-cat">Petit-déjeuner</span><br><b>Sans gluten et autres allergies</b></div>
+            <span class="al-merk">Lu par 12</span>
+          </div>
+          <div class="al-rij wijzigt">
+            <div><span class="al-cat">Sécurité</span><br><b>Que faire en cas d'alarme incendie</b></div>
+            <span class="al-merken">
+              <span class="al-merk was">Lu par 12</span>
+              <span class="al-merk open wordt">Non lu chez 12</span>
+            </span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Réception</span><br><b>Départ tardif et prolongations</b></div>
+            <span class="al-merk">Lu par 11</span>
+          </div>
+          <div class="al-rij">
+            <div><span class="al-cat">Housekeeping</span><br><b>Préparer une chambre pour une arrivée</b></div>
+            <span class="al-merk">Lu par 12</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ TERUGVINDEN ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Retrouver</span>
+        <h2>Le vrai test, c'est <em>onze heures et quart du soir.</em></h2>
+        <p class="lead">Un manuel n'est pas réussi parce qu'il est écrit. Il est réussi quand quelqu'un y retrouve quelque chose à onze heures et quart, avec un client devant lui.</p>
+        <ul class="fp-bullets">
+          <li>Cherche aussi dans le texte de vos PDF joints</li>
+          <li>Fonctionne sur un téléphone, sans application séparée</li>
+          <li>Une recherche sans résultat vous désigne un trou dans vos procédures</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="Recherche dans le manuel : trois résultats pour check-in tardif, dont un issu du texte d'un PDF joint.">
+          <div class="as-kop"><h4>Rechercher</h4><span>3 résultats</span></div>
+          <div class="as-rij" style="border-left-color:var(--terra)"><b>check-in tardif</b><span class="chip grijs">Ctrl+K</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">Articles</div>
+          <div class="as-rij schoon tikt-aan"><div><span class="sub">Réception &middot; 4 étapes</span><br><b>Check-in lors d'une arrivée tardive</b></div><span class="chip">Ouvrir</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Réception &middot; 2 étapes</span><br><b>Envoyer un code de porte via le portail</b></div><span class="chip">Ouvrir</span></div>
+          <div class="as-rij"><div><span class="sub">Sécurité &middot; PDF, page 3</span><br><b>Procédure de nuit &middot; en dehors des heures</b></div><span class="chip grijs">Ouvrir</span></div>
+          <div class="as-voet" style="margin-top:1rem">Fonctionne sur le téléphone, sans application séparée</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SCHRIJVEN ═══════════════════════ -->
+<section class="fp-section reverse">
+  <div class="wrap">
+    <div class="fp-section-inner breed fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Écrire</span>
+        <h2>Écrivez-le dans rumo même. <em>Pas ailleurs.</em></h2>
+        <p class="lead">Pas de fichier Word à importer. Vous le tapez directement, avec des photos dans le texte et une vidéo sous forme de lien vers YouTube ou Vimeo.</p>
+        <p class="lead"><strong>Ici, une photo n'est pas une décoration.</strong> Une phrase décrit une norme, une photo <em>est</em> la norme. Cela vous épargne une demi-heure de discussion par nouveau collègue.</p>
+        <ul class="fp-bullets">
+          <li>Cette vidéo est chez YouTube, pas chez nous. Si quelqu'un la met en privé, votre procédure est vide sans que vous le remarquiez</li>
+        </ul>
+      </div>
+      <div class="fp-section-visual">
+        <div class="appvenster scherm" role="img" aria-label="Écrire un article dans rumo : du texte, une photo comme norme et une vidéo sous forme de lien.">
+          <div class="as-kop"><h4>Modifier l'article</h4><span>Housekeeping</span></div>
+          <div class="as-rij" style="border-left-color:var(--terra)"><b>Préparer une chambre pour une arrivée</b><span class="chip grijs">Version 3</span></div>
+          <div class="as-voet" style="margin:0.9rem 0 0.5rem">Contenu</div>
+          <div class="as-rij schoon"><div><span class="sub">Texte</span><br><b>Six étapes, dans l'ordre</b></div><span class="chip">Terminé</span></div>
+          <div class="as-rij schoon"><div><span class="sub">Photo</span><br><b>Voici le lit quand il est fait</b></div><span class="chip">Dans le texte</span></div>
+          <div class="as-rij"><div><span class="sub">Vidéo</span><br><b>Faire le lit &middot; lien vers YouTube</b></div><span class="chip grijs">Se lit ici</span></div>
+          <div class="as-knop">Publier</div>
+          <div class="as-voet">Tout le monde lit ; écrire est réservé aux managers et aux admins</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ VOEDT RUDY ═══════════════════════ -->
+<section class="fp-section alt">
+  <div class="wrap">
+    <div class="fp-section-inner enkel fade-up">
+      <div class="fp-section-text">
+        <span class="fp-section-kicker">Source pour Rudy</span>
+        <h2>Ce que vous écrivez, <em>Rudy le sait.</em></h2>
+        <p class="lead">Si quelqu'un pose une question sur votre façon de travailler, Rudy cherche dans le manuel et joint l'article dont il tire sa réponse. Il respecte le même cloisonnement par rôle.</p>
+        <p class="lead">Si la réponse ne se trouve nulle part, il le dit et propose d'écrire un article à ce sujet. C'est le signal le moins cher que vous recevrez sur un trou dans vos propres procédures.</p>
+        <p class="lead">Sur rumo lui-même, il répond à partir du mode d'emploi. Demandez comment fonctionne le calendrier et cela vient de nous ; demandez ce que vous faites en cas d'alarme incendie et cela vient de vous.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ANDERE FEATURES ═══════════════════════ -->
+<section class="fp-others">
+  <div class="wrap">
+    <div class="fp-others-head fade-up">
+      <span class="kicker">Autres fonctionnalités</span>
+      <h3>Le manuel est <em>une couche</em>.<br>Il y a autre chose autour.</h3>
+      <p>Le PMS, Rudy, la prévention, le channel manager, le portail client. Tout dans le même rumo, tout ensemble un seul système.</p>
+    </div>
+    <div class="fp-others-grid fade-up">
+
+      <a class="fp-others-card" href="pms.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h4>Le <em>PMS</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="rudy.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h4><em>Rudy</em></h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="prevention.html">
+        <div class="fp-others-ic" style="background:#FCEDBD; color:#8a6b1a;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4><em>Prévention</em> &amp; bien-être</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="channel-manager.html">
+        <div class="fp-others-ic" style="background:var(--rose-soft); color:var(--terra-dark);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
+        </div>
+        <h4><em>Channel</em> manager</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+      <a class="fp-others-card" href="guest-portal.html">
+        <div class="fp-others-ic" style="background:var(--forest-soft); color:var(--forest);">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h4><em>Portail client</em> &amp; moteur de réservation</h4>
+        <span class="arrow">Lire la suite →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FINAL ═══════════════════════ -->
+<section class="final" id="demo">
+  <div class="final-inner fade-up">
+    <span class="kicker">Essayer vous-même</span>
+    <h2>Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.</h2>
+    <p>Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations, et un manuel que vous pouvez remplir tout de suite. Cela ne vous convient pas ? Alors il disparaît sans bruit.</p>
+    <a href="index.html#demo" class="btn-paper">Essayez 14 jours gratuitement <span>→</span></a>
+    <p class="final-fine">Sans carte de crédit · Résiliable au mois après 6 mois · <a href="migration.html">Migration des données offerte</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">rumo<em>.</em></div>
+      <p class="footer-tagline">Un logiciel hôtelier pour les indépendants. Sans complications.</p>
+    </div>
+    <div>
+      <div class="footer-label">Produit</div>
+      <ul class="footer-links">
+        <li><a href="features.html">Fonctionnalités</a></li>
+        <li><a href="features.html#integraties">Intégrations</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="tarifs.html">Et euh, ça coûte combien&nbsp;?</a></li>
+        <li><a href="kb.html">Centre d'aide</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Rumo</div>
+      <ul class="footer-links">
+        <li><a href="ce-qui-nous-anime.html">Ce qui nous anime</a></li>
+        <li><a href="explique/index.html">Expliqué (en néerlandais)</a></li>
+        <li><a href="migration.html">Migration (en néerlandais)</a></li>
+        <li><a href="https://wa.me/32485382828">WhatsApp</a></li>
+        <li><a href="mailto:hello@rumo.eu">Envoyez-nous un e-mail</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-label">Intégrations</div>
+      <ul class="footer-links">
+        <li><a href="features.html#integraties">Booking.com</a></li>
+        <li><a href="features.html#integraties">Airbnb</a></li>
+        <li><a href="features.html#integraties">Exact Online</a></li>
+        <li><a href="features.html#integraties">Peppol</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Confidentialité</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+// threshold 0, niet 0.1: een blok hoger dan tien keer het scherm haalde die
+// drempel nooit, en bleef onzichtbaar op een telefoon.
+}, { threshold: 0 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.documentElement.dataset.fadeReady = '1';
+</script>
+
+</body>
+</html>

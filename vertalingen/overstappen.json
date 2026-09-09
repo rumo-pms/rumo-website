@@ -1,0 +1,266 @@
+{
+  "Overstappen · rumo": {
+    "en": "Switching · rumo",
+    "fr": "Migration · rumo"
+  },
+  "Overstappen van je huidige PMS naar rumo. Wat er met je reservaties gebeurt, wat er met je Booking.com-koppeling gebeurt, hoe lang het duurt en wat het kost.": {
+    "en": "Switching from your current PMS to rumo. What happens to your reservations, what happens to your Booking.com connection, how long it takes and what it costs.",
+    "fr": "Passer de votre PMS actuel à rumo. Ce qu'il advient de vos réservations, de votre connexion Booking.com, combien de temps cela prend et ce que cela coûte."
+  },
+  "<a href=\"faq.html\">FAQ</a>": {
+    "en": "<a href=\"faq.html\">FAQ</a>",
+    "fr": "<a href=\"faq.html\">FAQ</a>"
+  },
+  "Wat er met je <em>reservaties</em> gebeurt als je overstapt.": {
+    "en": "What happens to your <em>reservations</em> when you switch.",
+    "fr": "Ce qu'il advient de vos <em>réservations</em> quand vous changez."
+  },
+  "En met je kanaalkoppelingen, je tarieven en je gastprofielen. Een overstap tussen twee PMS'en verloopt in zes stappen waarbij je oude systeem tot de laatste stap gewoon blijft draaien. Hieronder staat elke stap, wat er per stap van jou verwacht wordt, en welke drie stukken in de praktijk trager gaan dan gepland.": {
+    "en": "And to your channel connections, your rates and your guest profiles. A move between two PMSs runs in six steps, and your old system simply keeps running until the last one. Below is every step, what is expected of you at each, and which three parts are slower in practice than planned.",
+    "fr": "Et de vos connexions aux canaux, de vos tarifs et de vos profils clients. Le passage d'un PMS à un autre se fait en six étapes, et votre ancien système continue tout simplement de tourner jusqu'à la dernière. Vous trouverez ci-dessous chaque étape, ce qu'on attend de vous à chacune, et les trois parties qui, en pratique, avancent plus lentement que prévu."
+  },
+  "<span>Je oude systeem blijft draaien</span> <span>Je historiek gaat mee</span> <span>Niets wordt stil geïmporteerd</span> <span>Jij kiest het moment</span> <span>Kost niets</span>": {
+    "en": "<span>Your old system keeps running</span> <span>Your history comes along</span> <span>Nothing is imported silently</span> <span>You pick the moment</span> <span>Costs nothing</span>",
+    "fr": "<span>Votre ancien système continue de tourner</span> <span>Votre historique suit</span> <span>Rien n'est importé en silence</span> <span>Vous choisissez le moment</span> <span>Cela ne coûte rien</span>"
+  },
+  "Eerst de drie <em>praktische</em> vragen.": {
+    "en": "First, the three <em>practical</em> questions.",
+    "fr": "D'abord les trois questions <em>pratiques</em>."
+  },
+  "Vraag één": {
+    "en": "Question one",
+    "fr": "Question une"
+  },
+  "\"Ben ik mijn reservaties kwijt?\"": {
+    "en": "\"Do I lose my reservations?\"",
+    "fr": "« Est-ce que je perds mes réservations ? »"
+  },
+  "Nee, en je moet ze ook niet overtypen. Je haalt een export uit je huidige systeem en die lees je in. En niet alleen wat er nog komt: ook je oude boekingen gaan mee, met wie er geslapen heeft en wat er betaald is. Je oude systeem blijft ondertussen gewoon draaien, dus je zet niets af om rumo te kunnen opzetten.": {
+    "en": "No, and you do not have to retype them either. You pull an export out of your current system and you read it in. And not only what is still to come: your old bookings come along too, with who slept there and what was paid. Meanwhile your old system simply keeps running, so you switch nothing off in order to set rumo up.",
+    "fr": "Non, et vous ne devez pas non plus les retaper. Vous sortez un export de votre système actuel et vous l'importez. Et pas seulement ce qui est à venir : vos anciennes réservations suivent aussi, avec qui a dormi là et ce qui a été payé. Pendant ce temps, votre ancien système continue simplement de tourner : vous n'éteignez rien pour pouvoir installer rumo."
+  },
+  "Vraag twee": {
+    "en": "Question two",
+    "fr": "Question deux"
+  },
+  "\"Ligt mijn Booking.com twee dagen plat?\"": {
+    "en": "\"Will my Booking.com be down for two days?\"",
+    "fr": "« Est-ce que mon Booking.com sera à l'arrêt deux jours ? »"
+  },
+  "Je listing wordt niet opnieuw gebouwd. Bij het koppelen van een kanaal kies je tussen een nieuwe listing en het account dat je al hebt. Kies je het tweede, dan blijven je pagina, je reviews en je geschiedenis staan. Wat verhuist is wie je kalender bijhoudt.": {
+    "en": "Your listing is not rebuilt. When you connect a channel you choose between a new listing and the account you already have. Choose the second and your page, your reviews and your history stay as they are. What moves is who keeps your calendar.",
+    "fr": "Votre annonce n'est pas reconstruite. En connectant un canal, vous choisissez entre une nouvelle annonce et le compte que vous avez déjà. Si vous choisissez le second, votre page, vos avis et votre historique restent en place. Ce qui change, c'est qui tient votre calendrier."
+  },
+  "Vraag drie": {
+    "en": "Question three",
+    "fr": "Question trois"
+  },
+  "\"Wanneer sta ik er alleen voor?\"": {
+    "en": "\"When am I on my own?\"",
+    "fr": "« À partir de quand suis-je seul aux commandes ? »"
+  },
+  "Op het moment dat jij het zegt, niet op een datum die in een projectplan staat. Zolang je de kanaalkoppeling niet omzet, verkoopt je oude systeem door. De overstap is een knop die jij omdraait als je er klaar voor bent.": {
+    "en": "At the moment you say so, not on a date in a project plan. As long as you do not move the channel connection, your old system keeps selling. The switch is a button you turn when you are ready for it.",
+    "fr": "Au moment où vous le dites, pas à une date inscrite dans un plan de projet. Tant que vous ne basculez pas la connexion des canaux, votre ancien système continue de vendre. Le passage est un bouton que vous actionnez quand vous êtes prêt."
+  },
+  "Goh, en hoe gaat dat dan <em>concreet?</em>": {
+    "en": "Right, so how does that work <em>in practice?</em>",
+    "fr": "Bon, et concrètement, <em>comment ça se passe ?</em>"
+  },
+  "Zes stappen. Je kan er op elk moment mee stoppen zonder dat er iets stuk is, want tot de laatste stap draait je oude systeem nog.": {
+    "en": "Six steps. You can stop at any point without anything being broken, because until the last step your old system is still running.",
+    "fr": "Six étapes. Vous pouvez vous arrêter à tout moment sans que rien ne soit cassé, car jusqu'à la dernière étape votre ancien système tourne encore."
+  },
+  "Stap 1": {
+    "en": "Step 1",
+    "fr": "Étape 1"
+  },
+  "Je krijgt een lege rumo <em>naast</em> je huidige systeem.": {
+    "en": "You get an empty rumo <em>next to</em> your current system.",
+    "fr": "Vous recevez un rumo vide <em>à côté</em> de votre système actuel."
+  },
+  "Niet in de plaats van. Ernaast. Je logt in, je klikt rond, en aan je hotel verandert er nog niets. Dit is ook meteen je proefperiode: als het je niet bevalt stop je hier, en er is nooit iets gewijzigd aan wat je vandaag draait.": {
+    "en": "Not instead of. Next to. You log in, you click around, and nothing changes at your hotel yet. This is also your trial period: if you do not like it you stop here, and nothing has ever been changed to what you run today.",
+    "fr": "Pas à la place. À côté. Vous vous connectez, vous cliquez partout, et rien ne change encore dans votre hôtel. C'est aussi votre période d'essai : si cela ne vous plaît pas, vous vous arrêtez ici, et rien n'aura jamais été modifié à ce que vous faites tourner aujourd'hui."
+  },
+  "Stap 2": {
+    "en": "Step 2",
+    "fr": "Étape 2"
+  },
+  "Je gooit je export in het gesprek met Rudy.": {
+    "en": "You drop your export into the conversation with Rudy.",
+    "fr": "Vous déposez votre export dans la conversation avec Rudy."
+  },
+  "Een CSV of Excel uit je huidige PMS. Rudy leest daar je kamers en je tarieven uit en legt je voor wat hij gevonden heeft. Jij bevestigt of corrigeert, vraag per vraag.": {
+    "en": "A CSV or Excel from your current PMS. Rudy reads your rooms and your rates out of it and puts what he found in front of you. You confirm or correct, question by question.",
+    "fr": "Un CSV ou un Excel de votre PMS actuel. Rudy y lit vos chambres et vos tarifs et vous soumet ce qu'il a trouvé. Vous confirmez ou vous corrigez, question par question."
+  },
+  "Er wordt niets stil geïmporteerd. Elke stap toont hij eerst en jij zegt ja of nee. Dat is traag als je haast hebt, maar het is wel de reden dat je achteraf niet zit te zoeken waar die dertig rare kamertypes vandaan komen.": {
+    "en": "Nothing is imported silently. He shows every step first and you say yes or no. That is slow when you are in a hurry, but it is the reason you are not hunting afterwards for where those thirty odd room types came from.",
+    "fr": "Rien n'est importé en silence. Il montre chaque étape d'abord et vous dites oui ou non. C'est lent quand on est pressé, mais c'est la raison pour laquelle vous ne cherchez pas ensuite d'où viennent ces trente types de chambres bizarres."
+  },
+  "Stap 3": {
+    "en": "Step 3",
+    "fr": "Étape 3"
+  },
+  "Wat niet in de export staat, wordt gevraagd.": {
+    "en": "What is not in the export gets asked.",
+    "fr": "Ce qui ne figure pas dans l'export vous est demandé."
+  },
+  "En dat is meer dan je denkt. Kamernummers, kamertypes en prijzen zitten er meestal in. Je annulatievoorwaarden, je BTW-tarieven en wat je ontbijt kost bijna nooit. Dat is geen tekortkoming van jouw systeem, dat is gewoon hoe exports eruitzien.": {
+    "en": "And that is more than you think. Room numbers, room types and prices are usually in there. Your cancellation conditions, your VAT rates and what your breakfast costs almost never are. That is not a shortcoming of your system, that is simply what exports look like.",
+    "fr": "Et c'est plus que vous ne le pensez. Les numéros de chambres, les types et les prix y sont en général. Vos conditions d'annulation, vos taux de TVA et le prix de votre petit-déjeuner, presque jamais. Ce n'est pas un défaut de votre système, c'est simplement à quoi ressemblent les exports."
+  },
+  "Die stukken worden er dus bijgevraagd, met een voorstel in plaats van een leeg veld. Een voorstel corrigeren gaat sneller dan alles van nul beschrijven. Weet je iets niet? Dan sla je het over en blijft het leeg tot je het wel weet.": {
+    "en": "So those parts are asked for, with a proposal instead of an empty field. Correcting a proposal is quicker than describing everything from scratch. Do not know something? Then you skip it and it stays empty until you do.",
+    "fr": "Ces éléments vous sont donc demandés, avec une proposition plutôt qu'un champ vide. Corriger une proposition va plus vite que tout décrire depuis zéro. Vous ne savez pas ? Vous passez, et cela reste vide jusqu'à ce que vous sachiez."
+  },
+  "Stap 4": {
+    "en": "Step 4",
+    "fr": "Étape 4"
+  },
+  "Je reservaties komen als <em>laatste</em>, en enkel als je wil.": {
+    "en": "Your reservations come <em>last</em>, and only if you want.",
+    "fr": "Vos réservations viennent <em>en dernier</em>, et seulement si vous le voulez."
+  },
+  "Eerst moet je huis kloppen: kamers, types, tarieven. Pas daarna komen de boekingen erin, want een reservatie zonder kamer om in te leggen is een rij in een spreadsheet.": {
+    "en": "First your house has to be right: rooms, types, rates. Only then do the bookings go in, because a reservation with no room to put it in is a row in a spreadsheet.",
+    "fr": "Votre maison doit d'abord être juste : chambres, types, tarifs. Ce n'est qu'ensuite que les réservations entrent, car une réservation sans chambre où la poser est une ligne dans un tableur."
+  },
+  "Je ziet eerst wat er ingelezen gaat worden. Dan pas gebeurt het. Zeg je nee, dan gebeurt het niet en begin je met een lege kalender. Ook een geldig antwoord, zeker als je in een rustig seizoen overstapt.": {
+    "en": "You first see what is going to be read in. Only then does it happen. Say no and it does not happen, and you start with an empty calendar. Also a valid answer, certainly if you switch in a quiet season.",
+    "fr": "Vous voyez d'abord ce qui va être importé. Ensuite seulement cela se produit. Si vous dites non, cela n'a pas lieu et vous démarrez avec un calendrier vide. C'est une réponse valable aussi, surtout si vous changez en basse saison."
+  },
+  "<strong>En je verleden gaat mee.</strong> Niet alleen de boekingen die nog moeten komen. Je afgelopen jaren komen er ook in: wie er geslapen heeft, hoe lang, en wat er betaald is. Uitgecheckte verblijven blijven uitgecheckt, en je gastenbestand komt apart mee, zodat een terugkerende gast bij zijn eerste boeking in rumo zijn geschiedenis al achter zich heeft staan.": {
+    "en": "<strong>And your past comes along.</strong> Not only the bookings still to come. Your recent years go in as well: who slept there, how long, and what was paid. Checked-out stays stay checked out, and your guest base comes along separately, so a returning guest already has their history behind them on their first booking in rumo.",
+    "fr": "<strong>Et votre passé suit.</strong> Pas seulement les réservations à venir. Vos dernières années entrent aussi : qui a dormi là, combien de temps, et ce qui a été payé. Les séjours terminés restent terminés, et votre fichier clients suit séparément, si bien qu'un client fidèle a déjà son historique derrière lui dès sa première réservation dans rumo."
+  },
+  "Eén ding om te weten op het moment dat het net ingelezen is: je kalender opent op een venster rond vandaag, ongeveer een week terug en een paar maanden vooruit. Een import van oude verblijven valt daar volledig buiten, en dan lijkt het alsof er niets gebeurd is. Scroll terug naar de juiste maand en ze staan er gewoon.": {
+    "en": "One thing to know the moment it has just been read in: your calendar opens on a window around today, roughly a week back and a few months ahead. An import of old stays falls entirely outside that, and then it looks as if nothing happened. Scroll back to the right month and there they are.",
+    "fr": "Une chose à savoir juste après l'import : votre calendrier s'ouvre sur une fenêtre autour d'aujourd'hui, environ une semaine en arrière et quelques mois en avant. Un import d'anciens séjours tombe entièrement en dehors, et on a alors l'impression qu'il ne s'est rien passé. Revenez au bon mois et ils sont bien là."
+  },
+  "Stap 5": {
+    "en": "Step 5",
+    "fr": "Étape 5"
+  },
+  "Je kanalen verhuizen, ze worden niet <em>heropgebouwd.</em>": {
+    "en": "Your channels move; they are not <em>rebuilt.</em>",
+    "fr": "Vos canaux déménagent, ils ne sont pas <em>reconstruits.</em>"
+  },
+  "Bij het toevoegen van een kanaal kies je: een gloednieuwe listing, of het OTA-account dat je al hebt overzetten. In dat tweede geval blijft alles wat je op Booking.com hebt opgebouwd staan. Je pagina, je foto's, je reviews, je ranking.": {
+    "en": "When you add a channel you choose: a brand new listing, or moving over the OTA account you already have. In that second case everything you have built up on Booking.com stays. Your page, your photos, your reviews, your ranking.",
+    "fr": "En ajoutant un canal, vous choisissez : une annonce toute neuve, ou la reprise du compte OTA que vous avez déjà. Dans ce second cas, tout ce que vous avez construit sur Booking.com reste. Votre page, vos photos, vos avis, votre classement."
+  },
+  "Daarna komt het stukje waar het meestal misloopt bij een overstap: de mapping. Jouw \"Standard Double\" heet op Booking.com misschien \"Classic Double Room\", en het systeem moet weten dat dat hetzelfde is. Dat controleer je voor je omschakelt, niet erna.": {
+    "en": "Then comes the part that usually goes wrong in a move: the mapping. Your \"Standard Double\" may be called \"Classic Double Room\" on Booking.com, and the system has to know that these are the same thing. You check that before you switch over, not after.",
+    "fr": "Vient ensuite la partie qui coince le plus souvent lors d'un changement : le mapping. Votre « Standard Double » s'appelle peut-être « Classic Double Room » sur Booking.com, et le système doit savoir que c'est la même chose. Cela se vérifie avant de basculer, pas après."
+  },
+  "Stap 6": {
+    "en": "Step 6",
+    "fr": "Étape 6"
+  },
+  "Jij zegt wanneer.": {
+    "en": "You say when.",
+    "fr": "C'est vous qui dites quand."
+  },
+  "Tot dat moment verkoopt je oude systeem gewoon door. Vanaf dat moment doet rumo het. Er is geen tussenperiode waarin niemand je kalender bijhoudt, want je zet de ene pas af als de andere aan staat.": {
+    "en": "Until that moment your old system simply keeps selling. From that moment rumo does it. There is no in-between period in which nobody keeps your calendar, because you only switch the one off when the other is on.",
+    "fr": "Jusque-là, votre ancien système continue de vendre. À partir de là, c'est rumo. Il n'y a pas de période intermédiaire où personne ne tient votre calendrier, puisque vous n'éteignez l'un que lorsque l'autre est allumé."
+  },
+  "En wat we <em>niet</em> gaan beweren.": {
+    "en": "And what we are <em>not</em> going to claim.",
+    "fr": "Et ce que nous n'allons <em>pas</em> prétendre."
+  },
+  "Deze drie dingen bepalen hoe lang je overstap in werkelijkheid duurt. Ze staan hier omdat je ze beter vooraf in je agenda zet dan dat je ze onderweg tegenkomt.": {
+    "en": "These three things decide how long your move really takes. They are here because you are better off putting them in your diary beforehand than running into them along the way.",
+    "fr": "Ces trois éléments déterminent la durée réelle de votre migration. Ils sont ici parce qu'il vaut mieux les inscrire à l'avance dans votre agenda que les rencontrer en chemin."
+  },
+  "Dat het op één avond klaar is.": {
+    "en": "That it is done in one evening.",
+    "fr": "Que ce soit fini en une soirée."
+  },
+  "Dat hangt af van je setup. Een B&amp;B met vier kamers, één tarief en één kanaal is een namiddag. Een hotel met veertig kamers, zes tarieven, arrangementen en vijf OTA's is eerder een week met tussenpozen. Niet omdat het zwaar werk is, maar omdat er beslissingen in zitten waar je even over moet nadenken.": {
+    "en": "That depends on your set-up. A B&amp;B with four rooms, one rate and one channel is an afternoon. A hotel with forty rooms, six rates, packages and five OTAs is more like a week with gaps in it. Not because it is heavy work, but because there are decisions in it that you need a moment to think about.",
+    "fr": "Cela dépend de votre configuration. Un B&amp;B de quatre chambres, un tarif et un canal, c'est une après-midi. Un hôtel de quarante chambres, six tarifs, des forfaits et cinq OTA, c'est plutôt une semaine avec des interruptions. Non pas parce que le travail est lourd, mais parce qu'il contient des décisions qui demandent réflexion."
+  },
+  "Dat een export alles bevat.": {
+    "en": "That an export contains everything.",
+    "fr": "Qu'un export contienne tout."
+  },
+  "Doet hij nooit. Zie stap 3. Reken erop dat je je annulatievoorwaarden, je BTW-tarieven en je ontbijtprijs zelf eens moet doorgeven. Wie belooft dat een import alles overneemt, heeft nog nooit een PMS-export opengedaan.": {
+    "en": "It never does. See step 3. Count on having to pass on your cancellation conditions, your VAT rates and your breakfast price yourself. Anyone promising that an import takes over everything has never opened a PMS export.",
+    "fr": "Il ne le fait jamais. Voir l'étape 3. Comptez devoir transmettre vous-même vos conditions d'annulation, vos taux de TVA et le prix de votre petit-déjeuner. Celui qui promet qu'un import reprend tout n'a jamais ouvert un export de PMS."
+  },
+  "Dat de OTA's op ons tempo werken.": {
+    "en": "That the OTAs work at our pace.",
+    "fr": "Que les OTA travaillent à notre rythme."
+  },
+  "Een nieuwe kanaalkoppeling staat op \"in aanvraag\" tot de OTA hem goedkeurt. Dat is hun klok. rumo blijft ondertussen kijken en zet de koppeling op actief zodra het antwoord binnen is, maar hoe lang dat duurt beslissen wij niet. Plan je overstap dus niet op de vrijdag voor een volgeboekt weekend.": {
+    "en": "A new channel connection stays on \"requested\" until the OTA approves it. That is their clock. rumo keeps watching in the meantime and sets the connection to active as soon as the answer is in, but how long that takes is not ours to decide. So do not plan your move on the Friday before a fully booked weekend.",
+    "fr": "Une nouvelle connexion de canal reste « en demande » jusqu'à ce que l'OTA l'approuve. C'est leur horloge. rumo continue de surveiller et met la connexion en actif dès que la réponse arrive, mais la durée ne dépend pas de nous. Ne planifiez donc pas votre migration le vendredi avant un week-end complet."
+  },
+  "En euh, wat kost die overstap?": {
+    "en": "And erm, what does switching cost?",
+    "fr": "Et euh, ça coûte combien, cette migration ?"
+  },
+  "Niets. <em>Nul.</em>": {
+    "en": "Nothing. <em>Zero.</em>",
+    "fr": "Rien. <em>Zéro.</em>"
+  },
+  "Geen setupkost, geen migratiepakket, geen onboarding-consultant die drie dagen aanrekent om je kamertypes over te typen.": {
+    "en": "No set-up fee, no migration package, no onboarding consultant charging three days to retype your room types.",
+    "fr": "Pas de frais d'installation, pas de forfait de migration, pas de consultant d'onboarding qui facture trois jours pour retaper vos types de chambres."
+  },
+  "En het is geen tijdelijke actie. Het meeste werk in een migratie is je kamertypes, je tarieven en je koppelingen opzetten, en dat gebeurt in het gesprek met Rudy terwijl jij toch al aan het rondklikken bent. De begeleiding die daarbij komt kijken zit in je abonnement, zoals alle ondersteuning. (Jup, écht.)": {
+    "en": "And it is not a temporary offer. Most of the work in a migration is setting up your room types, your rates and your connections, and that happens in the conversation with Rudy while you are clicking around anyway. The guidance that comes with it is in your subscription, like all support. (Yep, really.)",
+    "fr": "Et ce n'est pas une action temporaire. L'essentiel du travail dans une migration, c'est de mettre en place vos types de chambres, vos tarifs et vos connexions, et cela se fait dans la conversation avec Rudy pendant que vous cliquez de toute façon partout. L'accompagnement qui va avec est compris dans votre abonnement, comme tout le support. (Oui, vraiment.)"
+  },
+  "Probeer 14 dagen gratis <span>→</span>": {
+    "en": "Try it free for 14 days <span>→</span>",
+    "fr": "Essayez 14 jours gratuitement <span>→</span>"
+  },
+  "Klaar om het te proberen?": {
+    "en": "Ready to give it a go?",
+    "fr": "Prêt à essayer ?"
+  },
+  "Begin gewoon <em>naast</em><br>je huidige systeem.": {
+    "en": "Just start <em>next to</em><br>your current system.",
+    "fr": "Commencez simplement <em>à côté</em><br>de votre système actuel."
+  },
+  "Je export blijft bij jou. Het inlezen gebeurt in je eigen proefomgeving, met je eigen bestand, dus je hoeft ons geen gastgegevens door te sturen om te zien of het werkt. Twijfel je of jouw pakket meekan? Zet de naam ervan bij je aanvraag, in het vakje voor opmerkingen, dan zeggen we er meteen iets over.": {
+    "en": "Your export stays with you. Reading it in happens in your own trial environment, with your own file, so you do not have to send us any guest data to see whether it works. Not sure whether your package can come along? Put its name with your request, in the remarks box, and we will say something about it straight away.",
+    "fr": "Votre export reste chez vous. L'import se fait dans votre propre environnement d'essai, avec votre propre fichier : vous n'avez donc pas à nous envoyer de données clients pour voir si cela fonctionne. Vous doutez que votre logiciel puisse suivre ? Indiquez son nom dans votre demande, dans la case remarques, et nous vous en dirons tout de suite quelque chose."
+  },
+  "Geen credit card · Na 6 maanden maandelijks opzegbaar · Gratis datamigratie": {
+    "en": "No credit card · Cancellable monthly after 6 months · Free data migration",
+    "fr": "Sans carte de crédit · Résiliable au mois après 6 mois · Migration des données offerte"
+  },
+  "<a href=\"https://wa.me/32485382828\">WhatsApp</a>": {
+    "en": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>",
+    "fr": "<a href=\"https://wa.me/32485382828\">WhatsApp</a>"
+  },
+  "<a href=\"features.html#integraties\">Booking.com</a>": {
+    "en": "<a href=\"features.html#integraties\">Booking.com</a>",
+    "fr": "<a href=\"features.html#integraties\">Booking.com</a>"
+  },
+  "<a href=\"features.html#integraties\">Airbnb</a>": {
+    "en": "<a href=\"features.html#integraties\">Airbnb</a>",
+    "fr": "<a href=\"features.html#integraties\">Airbnb</a>"
+  },
+  "<a href=\"features.html#integraties\">Exact Online</a>": {
+    "en": "<a href=\"features.html#integraties\">Exact Online</a>",
+    "fr": "<a href=\"features.html#integraties\">Exact Online</a>"
+  },
+  "<a href=\"features.html#integraties\">Peppol</a>": {
+    "en": "<a href=\"features.html#integraties\">Peppol</a>",
+    "fr": "<a href=\"features.html#integraties\">Peppol</a>"
+  },
+  "<span>© 2026 Rumo · Gent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>": {
+    "en": "<span>© 2026 Rumo · Ghent, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>",
+    "fr": "<span>© 2026 Rumo · Gand, BE</span> <span><a href=\"privacy.html\">Privacy</a> · <a href=\"cookies.html\">Cookies</a></span>"
+  },
+  "Menu": {
+    "en": "Menu",
+    "fr": "Menu"
+  }
+}
