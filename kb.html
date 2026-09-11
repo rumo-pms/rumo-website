@@ -896,7 +896,7 @@
               <div class="kb-article-body">
                 <p>Drie cijfers die elke hoteliër moet kennen. rumo toont ze per dag, week, maand, jaar, met vergelijking tot dezelfde periode vorig jaar.</p>
                 <ul>
-                  <li><strong>Bezetting:</strong> verkochte kamernachten / beschikbare kamernachten</li>
+                  <li><strong>Bezetting:</strong> per dag de bezette kamers gedeeld door je aantal kamers. Over een periode is het cijfer het <em>gemiddelde van die dagen</em>, geen grote deling ineens — reken je het met de hand na, dan is dat het verschil</li>
                   <li><strong>ADR</strong> (Average Daily Rate): kameromzet / verkochte nachten</li>
                   <li><strong>RevPAR</strong> (Revenue per Available Room): bezetting × ADR, oftewel kameromzet per beschikbare kamernacht</li>
                 </ul>
@@ -918,7 +918,7 @@
               <h3 class="kb-article-title">Je <em>boekingscurve</em> tegenover vorig jaar</h3>
               <div class="kb-article-body">
                 <p>Pace legt naast elkaar hoeveel je op deze dag vorig jaar al geboekt had en hoeveel nu. Dat zegt iets anders dan je bezetting: het gaat over het <em>tempo</em> waarin een periode volloopt, niet over hoe vol ze uiteindelijk raakt.</p>
-                <p>Naast Pace staan er nog tabbladen voor je debiteuren (wie moet er nog betalen) en voor de nationaliteit van je gasten. Draait je hotel ook eten, dan is er een apart F&amp;B-omzetrapport.</p>
+                <p>Naast Pace staan er nog tabbladen voor de nationaliteit van je gasten, je facturen en je online check-ins. Wie er nog moet betalen staat niet meer bij de rapporten maar bij <em>Betalingen → Debiteuren</em>, naast het geld dat wél binnenkwam. Draait je hotel ook eten, dan is er een apart F&amp;B-omzetrapport.</p>
                 <p>Alles is te exporteren naar CSV, Excel of pdf.</p>
               </div>
             </article>
@@ -946,8 +946,10 @@
               <div class="kb-article-kicker">Stadstaks</div>
               <h3 class="kb-article-title">Gemeentebelasting / city tax</h3>
               <div class="kb-article-body">
-                <p>Per gemeente een ander tarief, soms per nacht, soms per gast, soms vrijgesteld onder een bepaalde leeftijd. rumo kent de regel van jouw gemeente en past hem automatisch toe op elke reservatie. Op de factuur als aparte regel zichtbaar, zo wil je gast dat zien.</p>
-                <p>Aan het einde van het jaar krijg je een export per gemeente, klaar om in te dienen. Geen manueel turven meer.</p>
+                <p>De regel van jouw gemeente zet je één keer op in de instellingen: een vast bedrag per gast per nacht of een percentage van de kamerprijs, met het btw-tarief dat ze draagt en wie er volgens het reglement belastingplichtig is. Daarna past rumo hem vanzelf toe op elke reservatie, zichtbaar als aparte regel op de factuur.</p>
+                <p>rumo kent de reglementen van de Belgische gemeenten niet uit zichzelf, en dat is met opzet: ze veranderen per gemeente en per jaar, en een tabel die wij bijhouden zou stilletjes verouderen. Verandert het tarief, dan zet je de nieuwe waarde erbij met de datum vanaf wanneer ze geldt — welk tarief een boeking krijgt, hangt af van de aankomstdatum, niet van wanneer ze geboekt werd.</p>
+                <p>Kinderen en baby's tellen niet mee: de taks rekent enkel volwassenen. Wie als kind geboekt staat, betaalt dus niets, en dat is de leeftijdsvrijstelling die je in de meeste reglementen ziet.</p>
+                <p>Voor de aangifte staat het rapport klaar onder Rapporten → Compliance, over de periode die je kiest.</p>
               </div>
             </article>
 
@@ -1009,12 +1011,12 @@
               <h3 class="kb-article-title">Hoe lang gegevens worden <em>bewaard</em></h3>
               <div class="kb-article-body">
                 <ul>
-                  <li><strong>Factuur- en boekhoudgegevens:</strong> 10 jaar (BTW- en vennootschapswet)</li>
+                  <li><strong>Factuur- en boekhoudgegevens:</strong> 7 jaar (Belgisch BTW-wetboek)</li>
                   <li><strong>Gastregistratiegegevens:</strong> volgens politieverordening, meestal 5 jaar</li>
                   <li><strong>Marketing-consent:</strong> tot intrekking door de gast</li>
                   <li><strong>Overige persoonsgegevens:</strong> tot 2 jaar na het laatste verblijf</li>
                 </ul>
-                <p>Na de bewaartermijn worden persoonsgegevens automatisch geanonimiseerd. De boekhoudcijfers blijven (verplicht), de naam-en-toenaam verdwijnt.</p>
+                <p>Die termijnen komen uit de wet en uit je eigen privacyverklaring; ze zijn niet iets wat rumo vandaag zelf afdwingt op gastgegevens. Wat wél automatisch opgeruimd wordt, stel je zelf in: je logboek, je prijswijzigingen en je aanmeldingen (standaard een jaar), de activiteit van je kanalen (standaard 90 dagen) en je interne teamberichten. Die opkuis draait elke nacht en laat telkens een regel in het logboek na met hoeveel er weg is.</p>
               </div>
             </article>
 
@@ -1022,8 +1024,8 @@
               <div class="kb-article-kicker">GDPR</div>
               <h3 class="kb-article-title">Een gast vraagt om zijn data te <em>wissen</em></h3>
               <div class="kb-article-body">
-                <p>GDPR-recht op vergetelheid. Zoek de gast in rumo, klik <em>anonimiseer</em>. Persoonsgegevens worden vervangen door een hash. Financiële records blijven (wettelijk verplicht voor 10 jaar) maar zijn niet meer naar een persoon herleidbaar.</p>
-                <p>Voor dataportabiliteit: één klik genereert een ZIP met alle gegevens van die gast, klaar om door te sturen naar de gast zelf.</p>
+                <p>Eerlijk: er is vandaag geen knop die één gast met één klik anonimiseert. Een gastprofiel zonder boekingen kan je verwijderen, en dat is het dan ook echt. Hangt er wel een reservatie aan, dan weigert rumo de verwijdering — een factuur en een politieregistratie mogen wettelijk niet zomaar verdwijnen, en een profiel losknippen van zijn boekingen zou precies dat doen.</p>
+                <p>Wat er wél is, en wat de meeste vragen al opvangt: gastgegevens staan standaard afgeschermd, elke keer dat iemand ze openklikt komt dat in het logboek, en housekeeping en F&amp;B krijgen ze überhaupt niet toegestuurd. Krijg je een echt verzoek tot verwijdering op een gast met geschiedenis, stuur het dan naar ons door — dat is voorlopig handwerk en geen zelfbedieningsknop.</p>
               </div>
             </article>
 
@@ -1039,15 +1041,15 @@
 
             <article class="kb-article">
               <div class="kb-article-kicker">Rollen</div>
-              <h3 class="kb-article-title">De vier <em>rollen</em> in rumo</h3>
+              <h3 class="kb-article-title">De <em>rollen</em> in rumo</h3>
               <div class="kb-article-body">
                 <ul>
-                  <li><strong>Eigenaar:</strong> alles. Tarieven, facturatie, gebruikersbeheer, integraties, KPI's</li>
-                  <li><strong>Receptionist:</strong> reservaties, in/uit-checken, facturatie. Geen tarieven, geen gebruikersbeheer, geen integratie-keuzes</li>
-                  <li><strong>Housekeeping:</strong> alleen kamerstatus en kuislijst. Geen prijzen, geen gastdata buiten naam</li>
-                  <li><strong>Boekhouder:</strong> alleen leesrechten op factuurdata, BTW-rapporten, exports</li>
+                  <li><strong>Admin</strong> en <strong>manager:</strong> alles. Tarieven, facturatie, rapporten, instellingen, gebruikersbeheer, koppelingen. Vandaag kunnen die twee exact hetzelfde; ze staan apart voor de dag dat ze uit elkaar gaan</li>
+                  <li><strong>Receptionist:</strong> het dagwerk. Reservaties, in- en uitchecken, factureren en betalingen, de kalender, de gastprofielen, en in de channel manager de dagelijkse ingrepen zoals een stop-sell of een prijs voor een datum. Geen rapporten, geen instellingen, geen gebruikersbeheer, en de omzetcijfers blijven weg</li>
+                  <li><strong>Housekeeping:</strong> het kuisscherm, meldingen, het handboek, het trainingshotel en support. Geen prijzen, en gastgegevens komen niet eens tot bij dit scherm</li>
+                  <li><strong>F&amp;B:</strong> dezelfde vijf schermen, met het ontbijtscherm in de plaats van housekeeping</li>
                 </ul>
-                <p>Geen 47 vinkjes om te combineren. Vier rollen die in de praktijk werken. Wil je iets daarbuiten? Stuur ons een berichtje, we kijken samen of het past.</p>
+                <p>Geen 47 vinkjes om te combineren. Eén ding dat mensen verrast: een receptionist mág aan de prijzen. Dat is met opzet, want hij staat aan de balie wanneer er beslist moet worden. Wil je dat anders? Stuur ons een berichtje.</p>
               </div>
             </article>
 
@@ -1055,8 +1057,8 @@
               <div class="kb-article-kicker">Uitnodigen</div>
               <h3 class="kb-article-title">Een collega <em>uitnodigen</em></h3>
               <div class="kb-article-body">
-                <p>Instellingen → gebruikers → <em>+ uitnodigen</em>. Voer e-mail in, kies een rol. Je collega krijgt een mail, kiest zelf een wachtwoord, 2FA staat standaard aan. Toegang weer intrekken is één klik.</p>
-                <p>Externe boekhouder die af en toe binnen wil kijken? Geef hem rol <em>Boekhouder</em> en zet expiry op zes maanden. Hij kan niets stuk maken en valt automatisch weg na de termijn.</p>
+                <p>Instellingen → gebruikers → <em>+ uitnodigen</em>. Voer e-mail in, kies een of meer rollen. Je collega krijgt een mail en kiest zelf een wachtwoord of zet een passkey. Staat de tweede factor bij jouw hotel aan, dan wordt hij er bij zijn eerste aanmelding om gevraagd. Toegang weer intrekken is één klik.</p>
+                <p>Er is geen vervaldatum per gebruiker: iemand die er niet meer bij hoort, zet je op inactief of verwijder je. Voor een boekhouder die af en toe wil binnenkijken is er ook geen aparte rol — geef hem de toegang die hij nodig heeft en haal ze weg wanneer het werk gedaan is.</p>
               </div>
             </article>
 
@@ -1099,11 +1101,11 @@
               <div class="kb-article-body">
                 <p>Drie meest voorkomende oorzaken:</p>
                 <ul>
-                  <li>Leeftijdsregel niet correct toegepast (sommige gemeentes: geen taks onder 12 of 18 jaar, geboortedatum ontbreekt of klopt niet)</li>
-                  <li>Verkeerde gemeente toegekend aan je hotel (zeldzaam, maar gebeurt bij verhuis of fusie)</li>
-                  <li>De gemeenteregel is veranderd en wij hebben hem nog niet gepatcht</li>
+                  <li>Een gast staat als volwassene geboekt terwijl het een kind is. De taks telt alleen volwassenen, dus die ene verkeerde categorie is meteen een nacht te veel</li>
+                  <li>Een annulering of no-show die nog meetelt. Wie er niet geslapen heeft, betaalt geen taks — controleer de status van de kamer, niet die van de boeking</li>
+                  <li>Het tarief in je instellingen is niet meer het tarief van je gemeente</li>
                 </ul>
-                <p>Open de boeking, klik op de taks-lijn, je krijgt de berekeningsdetails (regel, basis, leeftijd, aantal nachten). Klopt de regel zelf niet meer? Geef ons een seintje. We updaten gemeenteregels centraal voor alle rumo-hotels, niet per hotel.</p>
+                <p>Open de boeking en klik op de taks-lijn: je krijgt de berekening te zien, per kamer en per nacht. Klopt het tarief zelf niet meer, dan pas je dat zelf aan bij de instellingen — met de datum vanaf wanneer het nieuwe geldt, zodat boekingen van voordien blijven staan zoals ze waren. Wij houden geen lijst van gemeentetarieven bij, dus er is niets waar wij op moeten wachten.</p>
               </div>
             </article>
 

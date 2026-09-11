@@ -192,7 +192,7 @@
 192	KPI's
 193	Bezetting, ADR en RevPAR <em>lezen</em>
 194	Drie cijfers die elke hoteliër moet kennen. rumo toont ze per dag, week, maand, jaar, met vergelijking tot dezelfde periode vorig jaar.
-195	<strong>Bezetting:</strong> verkochte kamernachten / beschikbare kamernachten
+195	<strong>Bezetting:</strong> per dag de bezette kamers gedeeld door je aantal kamers. Over een periode is het cijfer het <em>gemiddelde van die dagen</em>, geen grote deling ineens — reken je het met de hand na, dan is dat het verschil
 196	<strong>ADR</strong> (Average Daily Rate): kameromzet / verkochte nachten
 197	<strong>RevPAR</strong> (Revenue per Available Room): bezetting × ADR, oftewel kameromzet per beschikbare kamernacht
 198	Hover over een getal voor het rekenwerk. Klik om door te boren tot op de individuele reservaties die het cijfer opmaken.
@@ -202,7 +202,7 @@
 202	Pace
 203	Je <em>boekingscurve</em> tegenover vorig jaar
 204	Pace legt naast elkaar hoeveel je op deze dag vorig jaar al geboekt had en hoeveel nu. Dat zegt iets anders dan je bezetting: het gaat over het <em>tempo</em> waarin een periode volloopt, niet over hoe vol ze uiteindelijk raakt.
-205	Naast Pace staan er nog tabbladen voor je debiteuren (wie moet er nog betalen) en voor de nationaliteit van je gasten. Draait je hotel ook eten, dan is er een apart F&amp;B-omzetrapport.
+205	Naast Pace staan er nog tabbladen voor de nationaliteit van je gasten, je facturen en je online check-ins. Wie er nog moet betalen staat niet meer bij de rapporten maar bij <em>Betalingen → Debiteuren</em>, naast het geld dat wél binnenkwam. Draait je hotel ook eten, dan is er een apart F&amp;B-omzetrapport.
 206	Alles is te exporteren naar CSV, Excel of pdf.
 207	Kanaalmix
 208	Welke OTA brengt je het meeste <em>netto</em> op?
@@ -212,165 +212,167 @@
 212	Het deel waar de meeste internationale PMS'en de bal laten vallen. Gemeentebelasting, politiemelding, Brusselse logiestaks. Wij doen het wél, omdat we hier wonen.
 213	Stadstaks
 214	Gemeentebelasting / city tax
-215	Per gemeente een ander tarief, soms per nacht, soms per gast, soms vrijgesteld onder een bepaalde leeftijd. rumo kent de regel van jouw gemeente en past hem automatisch toe op elke reservatie. Op de factuur als aparte regel zichtbaar, zo wil je gast dat zien.
-216	Aan het einde van het jaar krijg je een export per gemeente, klaar om in te dienen. Geen manueel turven meer.
-217	Politiemelding
-218	Gastenregistratie voor de politie
-219	Sinds de wet op gastenregistratie ben je verplicht om bij elke gast een aantal gegevens vast te leggen: naam, geboortedatum, ID-nummer, adres. Het guest portal vraagt die gegevens aan je gast tijdens de pre-checkin, vóór hij arriveert. Jij hoeft niets in te tikken.
-220	De export naar de politie zit in je rumo. Maandelijks of op aanvraag, in het juiste formaat.
-221	Statbel
-222	Maandelijkse <em>FOD Statbel</em>-aangifte
-223	België verplicht een maandelijkse aangifte voor alle commerciële logies vanaf een bepaalde grootte. rumo telt automatisch overnachtingen per nationaliteit, gemiddelde verblijfsduur, aantal aankomsten en het aantal gasten. Eén klik en de aangifte staat klaar in het Statbel-formaat.
-224	Indienen blijft jouw verantwoordelijkheid. Maar het tellen, het juiste formaat, de splitsing per herkomstland: dat is al gebeurd.
-225	BTW-aangifte
-226	Wat rumo doet voor je <em>BTW-aangifte</em>
-227	Eerlijk: rumo dient je BTW-aangifte niet zelf in en maakt daar ook geen kant-en-klaar aangiftebestand voor. Dat blijft het werk van jou of je boekhouder. Wat rumo wél doet, is de basis kloppend houden: elke factuurregel krijgt het juiste tarief (6% logies, 21% voor de rest), en de cijfers en facturen staan klaar om door te geven.
-228	Werk je met de Scrada add-on, dan komen je facturen en betalingen automatisch in je boekhouding terecht, waar de aangifte vertrekt. Zonder die koppeling geef je de PDF's of de UBL-facturen door aan je boekhouder. In beide gevallen zijn de tarieven al correct gesplitst, dus er valt niets meer uit te pluizen.
-229	Brusselse logiestaks &amp; jaarrapport
-230	Privacy &amp; <em>gegevens</em>
-231	Waar staan jouw gastgegevens, hoe lang, en wie kan eraan. Vragen die je gast je ooit gaat stellen, en die de GDPR-toezichthouder al beantwoord wil zien.
-232	Hosting
-233	Waar staan mijn <em>gastgegevens</em>
-234	rumo draait op servers binnen de EU (Frankfurt). Geen Amerikaanse cloud, geen datatransfer buiten de EER. GDPR-conform per ontwerp, niet als nagedacht extraatje.
-235	Backups zijn versleuteld en staan op een tweede EU-locatie. Mocht het hoofd-datacenter onbereikbaar zijn, dan is je rumo binnen het uur terug, met data van maximaal vijf minuten oud.
-236	Bewaartermijn
-237	Hoe lang gegevens worden <em>bewaard</em>
-238	<strong>Factuur- en boekhoudgegevens:</strong> 10 jaar (BTW- en vennootschapswet)
-239	<strong>Gastregistratiegegevens:</strong> volgens politieverordening, meestal 5 jaar
-240	<strong>Marketing-consent:</strong> tot intrekking door de gast
-241	<strong>Overige persoonsgegevens:</strong> tot 2 jaar na het laatste verblijf
-242	Na de bewaartermijn worden persoonsgegevens automatisch geanonimiseerd. De boekhoudcijfers blijven (verplicht), de naam-en-toenaam verdwijnt.
-243	GDPR
-244	Een gast vraagt om zijn data te <em>wissen</em>
-245	GDPR-recht op vergetelheid. Zoek de gast in rumo, klik <em>anonimiseer</em>. Persoonsgegevens worden vervangen door een hash. Financiële records blijven (wettelijk verplicht voor 10 jaar) maar zijn niet meer naar een persoon herleidbaar.
-246	Voor dataportabiliteit: één klik genereert een ZIP met alle gegevens van die gast, klaar om door te sturen naar de gast zelf.
-247	Gebruikers &amp; <em>rollen</em>
-248	Wie mag wat in rumo. Vier rollen, geen vijftig vinkjes. Genoeg om receptionist, housekeeping en boekhouder elk hun eigen rumo te geven, zonder een namiddag uitleg.
-249	Rollen
-250	De vier <em>rollen</em> in rumo
-251	<strong>Eigenaar:</strong> alles. Tarieven, facturatie, gebruikersbeheer, integraties, KPI's
-252	<strong>Receptionist:</strong> reservaties, in/uit-checken, facturatie. Geen tarieven, geen gebruikersbeheer, geen integratie-keuzes
-253	<strong>Housekeeping:</strong> alleen kamerstatus en kuislijst. Geen prijzen, geen gastdata buiten naam
-254	<strong>Boekhouder:</strong> alleen leesrechten op factuurdata, BTW-rapporten, exports
-255	Geen 47 vinkjes om te combineren. Vier rollen die in de praktijk werken. Wil je iets daarbuiten? Stuur ons een berichtje, we kijken samen of het past.
-256	Uitnodigen
-257	Een collega <em>uitnodigen</em>
-258	Instellingen → gebruikers → <em>+ uitnodigen</em>. Voer e-mail in, kies een rol. Je collega krijgt een mail, kiest zelf een wachtwoord, 2FA staat standaard aan. Toegang weer intrekken is één klik.
-259	Externe boekhouder die af en toe binnen wil kijken? Geef hem rol <em>Boekhouder</em> en zet expiry op zes maanden. Hij kan niets stuk maken en valt automatisch weg na de termijn.
-260	Audit
-261	Wie deed wat: de <em>audit log</em>
-262	Elke wijziging die ergens toe doet (annulering, prijsaanpassing, refund, gebruikersaanmaak, factuurwijziging) wordt gelogd met tijdstip, gebruiker en oude/nieuwe waarde. Onveranderbaar, ook door de eigenaar niet aanpasbaar.
-263	Handig bij interne vragen ("wie heeft die korting gegeven?"), fraude-controle, of als de boekhouder iets wil natrekken. En het beschermt jou tegen valse claims, want je kan altijd terugkijken.
-264	Troubleshooting
-265	Als er iets niet werkt. Niet "open een ticket en wacht drie dagen", wel "klik hier, kijk daar, en als het dan nog raar doet bel je ons".
-266	Mijn prijswijziging staat niet op <em>Booking</em>
-267	Drie checks, in deze volgorde:
-268	<strong>rumo statuslog:</strong> wijziging vertrokken? Zo niet, dan zit het aan jouw kant (browser-conflict, niet opgeslagen)
-269	<strong>Verzendstatus:</strong> is de wijziging doorgestuurd? Zo niet, dan zit het in de koppeling zelf (mapping of toegang)
-270	<strong>Booking-extranet:</strong> aangekomen? Zo ja, dan is alles in orde en zit het in OTA-cache (paar minuten geduld)
-271	Klik op de wijziging in het statuslog en je krijgt de exacte foutmelding: mapping niet gevonden, OTA-token verlopen, prijs onder min-rate, of iets anders. Niet opgelost in vijf minuten? Stuur een WhatsApp, wij kijken meteen mee.
-272	De <em>stadstaks</em> op de factuur klopt niet
-273	Drie meest voorkomende oorzaken:
-274	Leeftijdsregel niet correct toegepast (sommige gemeentes: geen taks onder 12 of 18 jaar, geboortedatum ontbreekt of klopt niet)
-275	Verkeerde gemeente toegekend aan je hotel (zeldzaam, maar gebeurt bij verhuis of fusie)
-276	De gemeenteregel is veranderd en wij hebben hem nog niet gepatcht
-277	Open de boeking, klik op de taks-lijn, je krijgt de berekeningsdetails (regel, basis, leeftijd, aantal nachten). Klopt de regel zelf niet meer? Geef ons een seintje. We updaten gemeenteregels centraal voor alle rumo-hotels, niet per hotel.
-278	Correctie
-279	Ik heb een verkeerde nacht of prijs <em>aangerekend</em>
-280	<strong>Voor de factuur is verstuurd:</strong> open de boeking, pas de prijslijn aan, rumo herrekent automatisch. De wijziging staat in de audit log met oude en nieuwe waarde.
-281	<strong>Na de factuur:</strong> maak een credit nota voor het foute bedrag en daarna een nieuwe factuur voor het juiste bedrag. Beide hangen samen in de audit trail, je boekhouder ziet de correctie netjes terug zonder dat je iets moet uitleggen.
-282	OTA
-283	De koppeling met een OTA is <em>gebroken</em>
-284	Symptoom: nieuwe boekingen komen niet binnen, prijzen synchroniseren niet, of je krijgt een rode waarschuwing in rumo. Open <em>instellingen → kanalen</em> en kijk naar het kleurpunt naast elke OTA.
-285	Rood = verbinding stuk (vaak token verlopen of credential gewijzigd in de OTA-extranet). Klik op de OTA, kies <em>herverbinden</em>. Bij OAuth-kanalen (Airbnb, sommige Booking-setups) moet je opnieuw inloggen op de OTA en autoriseren. Twee minuten werk, geen support-ticket nodig.
-286	rumo is traag of <em>niet bereikbaar</em>
-287	Eerste reflex: check <a href="https://status.rumo.eu" style="color:var(--terra-dark);">status.rumo.eu</a>. Daar zien wij storingen voor we ze rapporteren. Geen storing zichtbaar maar het werkt niet voor jou? Hard refresh (Ctrl+Shift+R / Cmd+Shift+R), ander tabblad, andere browser, andere netwerkverbinding.
-288	Werkt het nog steeds niet? Stuur ons een WhatsApp met een screenshot van wat je ziet. Geen wachtrij, geen ticket-systeem, gewoon een berichtje en wij kijken.
-289	Rudy, je <em>AI-assistent</em>
-290	Geen chatbot. Geen FAQ-zoeker. Een echte assistent die een aantal concrete taken voor je uitvoert in rumo, uitlegt hoe de rest werkt, en eerlijk zegt wat je zelf moet doen. Rudy werkt naast de receptionist, niet met de gast: hij praat nooit rechtstreeks met je gasten.
-291	Wat is Rudy?
-292	Wat <em>Rudy</em> kan, in één paragraaf
-293	Rudy leest deze artikels, je handboek en je documenten, en kent rumo van binnenuit. Concreet neemt hij een handvol tijdrovende dingen van je over: een reservatie aanmaken, een prijsofferte maken uit een aanvraagmail van een gast, een groepslijst met namen in de juiste kamers zetten, en een lijst gasten of boekingen importeren uit een Excel of PDF. Daarnaast zoekt hij dingen op (je cijfers, een procedure in het handboek), legt hij uit hoe iets in rumo werkt, en schrijft hij een antwoord op een gastbericht dat jij daarna verstuurt.
-294	Je vraagt het gewoon in het Nederlands. Hij stelt voor, jij kijkt na en bevestigt. Wat hij niet zelf kan, zegt hij eerlijk.
-295	Wat hij doet
-296	Wat Rudy concreet <em>voor je doet</em>
-297	Een afgebakend lijstje, geen toverstok. Concreet:
-298	Een reservatie aanmaken (gast, kamer, datums)
-299	Een offerte maken uit een aanvraagmail: hij zet ze als optie klaar met een bevestig-link voor de gast, en schrijft er een antwoordmail bij
-300	Een geplakte groeps- of roominglijst in de juiste kamers invullen (eerst een voorbeeld, pas na jouw OK schrijft hij)
-301	Gasten, boekers, bedrijven of boekingen importeren uit een Excel of PDF
-302	Keuringsattesten en preventie-documenten inlezen en klaarzetten in een wachtrij, zodat jij ze enkel nog moet bevestigen
-303	Je cijfers opzoeken (omzet, bezetting, stadstaks, openstaande bedragen) en er een vraag over beantwoorden
-304	Een antwoord op een gastbericht schrijven in de Inbox; jij verstuurt het
-305	Bij alles wat hij wegschrijft laat hij je eerst een voorbeeld zien en wacht hij op je bevestiging. Hij verzint nooit cijfers of feiten: weet hij iets niet, dan zegt hij dat.
-306	Wat hij <em>niet</em> doet
-307	Wat Rudy <em>niet</em> doet
-308	Twee soorten. Ten eerste dingen die hij <strong>wél zou kunnen maar bewust laat liggen</strong>, omdat het geen werk voor een assistent is:
-309	Geen automatische credit nota's, refunds of penalty-aanrekeningen, die meldt hij aan jou (of je receptionist), met een voorstel
-310	Geen prijsbeleid: hij beslist niet of jouw prijs te hoog of te laag is
-311	Ten tweede dingen die hij simpelweg <strong>niet kan</strong>, en die je dus zelf doet:
-312	Geen stop-sell of open-sell, geen min-stay, max-stay, CTA of CTD. Restricties naar de OTA's zet je zelf in de channel manager.
-313	Geen prijzen aanpassen of doorduwen naar de OTA's, en geen bulk-prijswijzigingen
-314	Geen betaallinks versturen naar gasten, dat doe je vanaf de betaalscherm van de boeking
-315	Niet rechtstreeks met de gast praten: hij schrijft een antwoord voor, jij drukt op verzenden
-316	Geen acties in de OTA-extranetten (Genius-promo, Mobile Rate, listing-content)
-317	Het idee: Rudy doet de tijdrovende voorbereidingen, jij houdt de knoppen die ertoe doen.
-318	Import
-319	Rudy een <em>bestand</em> laten uitlezen
-320	Rudy kan een Excel- of pdf-bestand uitlezen en er boekingen, gasten, bedrijven of tarieven uit halen. Hij toont wat hij gevonden heeft en jij keurt goed voor er iets weggeschreven wordt.
-321	Hetzelfde geldt voor een geplakte groepslijst: hij koppelt elke naam aan een kamer, jij kijkt na. En binnengekomen preventiedocumenten sorteert hij in de juiste map van je dossier.
-322	Hoe vraag je
-323	Hoe je iets aan Rudy vraagt
-324	Gewoon Nederlands. "Maak een offerte voor deze aanvraag" (met de mail erbij geplakt), "zet deze groepslijst in de juiste kamers", "wat was mijn omzet vorige week per kanaal", "wat is onze procedure bij een late aankomst". Geen commando-syntaxis. Geen menu's onthouden.
-325	Als hij twijfelt of de vraag dubbelzinnig is, vraagt hij door. Als hij iets niet kan, zegt hij het.
-326	Train Rudy
-327	Hem korte <em>hotelfeiten</em> meegeven
-328	Naast je handboek is er een lijstje korte feiten dat je zelf invult: de ontbijturen, waar de parking is, of er een lift is. Handig voor wat te kort is om er een handboekartikel over te schrijven.
-329	Per feit kies je of Rudy het ook mag gebruiken wanneer hij een antwoord voor een gast voorschrijft. Zo blijft interne informatie intern.
-330	Cheatsheet
-331	Vraag <em>Rudy</em> dit eens
-332	Een reeks voorbeelden waar Rudy mee uit de voeten kan. Gewoon Nederlands, geen syntax. Bij alles wat hij wegschrijft stelt hij eerst voor, jij keurt goed.
-333	Jij vraagt
-334	Wat Rudy doet
-335	"Boek kamer 12 voor Janssens van 3 tot 5 mei"
-336	Maakt de reservatie aan met de juiste prijs. Jij kijkt na.
-337	"Maak een offerte voor deze aanvraag" (mail erbij geplakt)
-338	Zet een optie klaar met een bevestig-link, en schrijft de antwoordmail in de taal van de gast.
-339	"Zet deze roominglijst in de juiste kamers"
-340	Toont eerst een voorbeeld: wie in welke kamer. Pas na je OK schrijft hij het weg.
-341	"Importeer deze Excel met gasten"
-342	Leest het bestand, toont wat hij herkent, importeert na bevestiging.
-343	"Hier zijn 10 keuringsattesten"
-344	Leest ze in en zet ze klaar in de wachtrij; jij bevestigt.
-345	"Wat was mijn omzet vorige week per kanaal?"
-346	Toont een tabel. Geen actie nodig.
-347	"Vergelijk mijn bezetting deze maand met vorig jaar"
-348	Twee percentages plus het verschil.
-349	"Wat was mijn stadstaks in maart?"
-350	Het bedrag, opgehaald uit het rapport.
-351	"Welke facturen staan nog open?"
-352	De lijst openstaande bedragen uit het debiteuren-rapport.
-353	"Wat is onze procedure bij een late aankomst?"
-354	Zoekt het op in je handboek en citeert het juiste artikel.
-355	"Schrijf een antwoord op dit Booking.com-bericht"
-356	Stelt een antwoord voor in de taal van de gast. Jij verstuurt.
-357	"Stuur een betaallink naar boeking BR-1234"
-358	<em>Doet hij niet zelf.</em> Legt uit waar jij dat op de boeking doet.
-359	"Geef gast Janssens een refund van €80"
-360	<em>Doet hij niet zelf.</em> Stuurt een melding naar je receptionist met het voorstel.
-361	Iets niet duidelijk?
-362	Mis je een <em>stukje uitleg?</em>
-363	Stuur ons een bericht. We vullen aan, en jij krijgt direct antwoord, geen wachtrij, geen ticket-systeem.
-364	Stuur een mailtje <span>→</span>
-365	Zelf proberen
-366	Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.
-367	Geen creditcard, geen verplichtingen, geen "account manager" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.
-368	Probeer 14 dagen gratis <span>→</span>
-369	Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href="overstappen.html">Gratis datamigratie</a>
-370	<a href="https://wa.me/32485382828">WhatsApp</a>
-371	<a href="features.html#integraties">Booking.com</a>
-372	<a href="features.html#integraties">Airbnb</a>
-373	<a href="features.html#integraties">Exact Online</a>
-374	<a href="features.html#integraties">Peppol</a>
-375	<span>© 2026 Rumo · Gent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
-376	Menu
+215	De regel van jouw gemeente zet je één keer op in de instellingen: een vast bedrag per gast per nacht of een percentage van de kamerprijs, met het btw-tarief dat ze draagt en wie er volgens het reglement belastingplichtig is. Daarna past rumo hem vanzelf toe op elke reservatie, zichtbaar als aparte regel op de factuur.
+216	rumo kent de reglementen van de Belgische gemeenten niet uit zichzelf, en dat is met opzet: ze veranderen per gemeente en per jaar, en een tabel die wij bijhouden zou stilletjes verouderen. Verandert het tarief, dan zet je de nieuwe waarde erbij met de datum vanaf wanneer ze geldt — welk tarief een boeking krijgt, hangt af van de aankomstdatum, niet van wanneer ze geboekt werd.
+217	Kinderen en baby's tellen niet mee: de taks rekent enkel volwassenen. Wie als kind geboekt staat, betaalt dus niets, en dat is de leeftijdsvrijstelling die je in de meeste reglementen ziet.
+218	Voor de aangifte staat het rapport klaar onder Rapporten → Compliance, over de periode die je kiest.
+219	Politiemelding
+220	Gastenregistratie voor de politie
+221	Sinds de wet op gastenregistratie ben je verplicht om bij elke gast een aantal gegevens vast te leggen: naam, geboortedatum, ID-nummer, adres. Het guest portal vraagt die gegevens aan je gast tijdens de pre-checkin, vóór hij arriveert. Jij hoeft niets in te tikken.
+222	De export naar de politie zit in je rumo. Maandelijks of op aanvraag, in het juiste formaat.
+223	Statbel
+224	Maandelijkse <em>FOD Statbel</em>-aangifte
+225	België verplicht een maandelijkse aangifte voor alle commerciële logies vanaf een bepaalde grootte. rumo telt automatisch overnachtingen per nationaliteit, gemiddelde verblijfsduur, aantal aankomsten en het aantal gasten. Eén klik en de aangifte staat klaar in het Statbel-formaat.
+226	Indienen blijft jouw verantwoordelijkheid. Maar het tellen, het juiste formaat, de splitsing per herkomstland: dat is al gebeurd.
+227	BTW-aangifte
+228	Wat rumo doet voor je <em>BTW-aangifte</em>
+229	Eerlijk: rumo dient je BTW-aangifte niet zelf in en maakt daar ook geen kant-en-klaar aangiftebestand voor. Dat blijft het werk van jou of je boekhouder. Wat rumo wél doet, is de basis kloppend houden: elke factuurregel krijgt het juiste tarief (6% logies, 21% voor de rest), en de cijfers en facturen staan klaar om door te geven.
+230	Werk je met de Scrada add-on, dan komen je facturen en betalingen automatisch in je boekhouding terecht, waar de aangifte vertrekt. Zonder die koppeling geef je de PDF's of de UBL-facturen door aan je boekhouder. In beide gevallen zijn de tarieven al correct gesplitst, dus er valt niets meer uit te pluizen.
+231	Brusselse logiestaks &amp; jaarrapport
+232	Privacy &amp; <em>gegevens</em>
+233	Waar staan jouw gastgegevens, hoe lang, en wie kan eraan. Vragen die je gast je ooit gaat stellen, en die de GDPR-toezichthouder al beantwoord wil zien.
+234	Hosting
+235	Waar staan mijn <em>gastgegevens</em>
+236	rumo draait op servers binnen de EU (Frankfurt). Geen Amerikaanse cloud, geen datatransfer buiten de EER. GDPR-conform per ontwerp, niet als nagedacht extraatje.
+237	Backups zijn versleuteld en staan op een tweede EU-locatie. Mocht het hoofd-datacenter onbereikbaar zijn, dan is je rumo binnen het uur terug, met data van maximaal vijf minuten oud.
+238	Bewaartermijn
+239	Hoe lang gegevens worden <em>bewaard</em>
+240	<strong>Factuur- en boekhoudgegevens:</strong> 7 jaar (Belgisch BTW-wetboek)
+241	<strong>Gastregistratiegegevens:</strong> volgens politieverordening, meestal 5 jaar
+242	<strong>Marketing-consent:</strong> tot intrekking door de gast
+243	<strong>Overige persoonsgegevens:</strong> tot 2 jaar na het laatste verblijf
+244	Die termijnen komen uit de wet en uit je eigen privacyverklaring; ze zijn niet iets wat rumo vandaag zelf afdwingt op gastgegevens. Wat wél automatisch opgeruimd wordt, stel je zelf in: je logboek, je prijswijzigingen en je aanmeldingen (standaard een jaar), de activiteit van je kanalen (standaard 90 dagen) en je interne teamberichten. Die opkuis draait elke nacht en laat telkens een regel in het logboek na met hoeveel er weg is.
+245	GDPR
+246	Een gast vraagt om zijn data te <em>wissen</em>
+247	Eerlijk: er is vandaag geen knop die één gast met één klik anonimiseert. Een gastprofiel zonder boekingen kan je verwijderen, en dat is het dan ook echt. Hangt er wel een reservatie aan, dan weigert rumo de verwijdering — een factuur en een politieregistratie mogen wettelijk niet zomaar verdwijnen, en een profiel losknippen van zijn boekingen zou precies dat doen.
+248	Wat er wél is, en wat de meeste vragen al opvangt: gastgegevens staan standaard afgeschermd, elke keer dat iemand ze openklikt komt dat in het logboek, en housekeeping en F&amp;B krijgen ze überhaupt niet toegestuurd. Krijg je een echt verzoek tot verwijdering op een gast met geschiedenis, stuur het dan naar ons door — dat is voorlopig handwerk en geen zelfbedieningsknop.
+249	Gebruikers &amp; <em>rollen</em>
+250	Wie mag wat in rumo. Vier rollen, geen vijftig vinkjes. Genoeg om receptionist, housekeeping en boekhouder elk hun eigen rumo te geven, zonder een namiddag uitleg.
+251	Rollen
+252	De <em>rollen</em> in rumo
+253	<strong>Admin</strong> en <strong>manager:</strong> alles. Tarieven, facturatie, rapporten, instellingen, gebruikersbeheer, koppelingen. Vandaag kunnen die twee exact hetzelfde; ze staan apart voor de dag dat ze uit elkaar gaan
+254	<strong>Receptionist:</strong> het dagwerk. Reservaties, in- en uitchecken, factureren en betalingen, de kalender, de gastprofielen, en in de channel manager de dagelijkse ingrepen zoals een stop-sell of een prijs voor een datum. Geen rapporten, geen instellingen, geen gebruikersbeheer, en de omzetcijfers blijven weg
+255	<strong>Housekeeping:</strong> het kuisscherm, meldingen, het handboek, het trainingshotel en support. Geen prijzen, en gastgegevens komen niet eens tot bij dit scherm
+256	<strong>F&amp;B:</strong> dezelfde vijf schermen, met het ontbijtscherm in de plaats van housekeeping
+257	Geen 47 vinkjes om te combineren. Eén ding dat mensen verrast: een receptionist mág aan de prijzen. Dat is met opzet, want hij staat aan de balie wanneer er beslist moet worden. Wil je dat anders? Stuur ons een berichtje.
+258	Uitnodigen
+259	Een collega <em>uitnodigen</em>
+260	Instellingen → gebruikers → <em>+ uitnodigen</em>. Voer e-mail in, kies een of meer rollen. Je collega krijgt een mail en kiest zelf een wachtwoord of zet een passkey. Staat de tweede factor bij jouw hotel aan, dan wordt hij er bij zijn eerste aanmelding om gevraagd. Toegang weer intrekken is één klik.
+261	Er is geen vervaldatum per gebruiker: iemand die er niet meer bij hoort, zet je op inactief of verwijder je. Voor een boekhouder die af en toe wil binnenkijken is er ook geen aparte rol — geef hem de toegang die hij nodig heeft en haal ze weg wanneer het werk gedaan is.
+262	Audit
+263	Wie deed wat: de <em>audit log</em>
+264	Elke wijziging die ergens toe doet (annulering, prijsaanpassing, refund, gebruikersaanmaak, factuurwijziging) wordt gelogd met tijdstip, gebruiker en oude/nieuwe waarde. Onveranderbaar, ook door de eigenaar niet aanpasbaar.
+265	Handig bij interne vragen ("wie heeft die korting gegeven?"), fraude-controle, of als de boekhouder iets wil natrekken. En het beschermt jou tegen valse claims, want je kan altijd terugkijken.
+266	Troubleshooting
+267	Als er iets niet werkt. Niet "open een ticket en wacht drie dagen", wel "klik hier, kijk daar, en als het dan nog raar doet bel je ons".
+268	Mijn prijswijziging staat niet op <em>Booking</em>
+269	Drie checks, in deze volgorde:
+270	<strong>rumo statuslog:</strong> wijziging vertrokken? Zo niet, dan zit het aan jouw kant (browser-conflict, niet opgeslagen)
+271	<strong>Verzendstatus:</strong> is de wijziging doorgestuurd? Zo niet, dan zit het in de koppeling zelf (mapping of toegang)
+272	<strong>Booking-extranet:</strong> aangekomen? Zo ja, dan is alles in orde en zit het in OTA-cache (paar minuten geduld)
+273	Klik op de wijziging in het statuslog en je krijgt de exacte foutmelding: mapping niet gevonden, OTA-token verlopen, prijs onder min-rate, of iets anders. Niet opgelost in vijf minuten? Stuur een WhatsApp, wij kijken meteen mee.
+274	De <em>stadstaks</em> op de factuur klopt niet
+275	Drie meest voorkomende oorzaken:
+276	Een gast staat als volwassene geboekt terwijl het een kind is. De taks telt alleen volwassenen, dus die ene verkeerde categorie is meteen een nacht te veel
+277	Een annulering of no-show die nog meetelt. Wie er niet geslapen heeft, betaalt geen taks — controleer de status van de kamer, niet die van de boeking
+278	Het tarief in je instellingen is niet meer het tarief van je gemeente
+279	Open de boeking en klik op de taks-lijn: je krijgt de berekening te zien, per kamer en per nacht. Klopt het tarief zelf niet meer, dan pas je dat zelf aan bij de instellingen — met de datum vanaf wanneer het nieuwe geldt, zodat boekingen van voordien blijven staan zoals ze waren. Wij houden geen lijst van gemeentetarieven bij, dus er is niets waar wij op moeten wachten.
+280	Correctie
+281	Ik heb een verkeerde nacht of prijs <em>aangerekend</em>
+282	<strong>Voor de factuur is verstuurd:</strong> open de boeking, pas de prijslijn aan, rumo herrekent automatisch. De wijziging staat in de audit log met oude en nieuwe waarde.
+283	<strong>Na de factuur:</strong> maak een credit nota voor het foute bedrag en daarna een nieuwe factuur voor het juiste bedrag. Beide hangen samen in de audit trail, je boekhouder ziet de correctie netjes terug zonder dat je iets moet uitleggen.
+284	OTA
+285	De koppeling met een OTA is <em>gebroken</em>
+286	Symptoom: nieuwe boekingen komen niet binnen, prijzen synchroniseren niet, of je krijgt een rode waarschuwing in rumo. Open <em>instellingen → kanalen</em> en kijk naar het kleurpunt naast elke OTA.
+287	Rood = verbinding stuk (vaak token verlopen of credential gewijzigd in de OTA-extranet). Klik op de OTA, kies <em>herverbinden</em>. Bij OAuth-kanalen (Airbnb, sommige Booking-setups) moet je opnieuw inloggen op de OTA en autoriseren. Twee minuten werk, geen support-ticket nodig.
+288	rumo is traag of <em>niet bereikbaar</em>
+289	Eerste reflex: check <a href="https://status.rumo.eu" style="color:var(--terra-dark);">status.rumo.eu</a>. Daar zien wij storingen voor we ze rapporteren. Geen storing zichtbaar maar het werkt niet voor jou? Hard refresh (Ctrl+Shift+R / Cmd+Shift+R), ander tabblad, andere browser, andere netwerkverbinding.
+290	Werkt het nog steeds niet? Stuur ons een WhatsApp met een screenshot van wat je ziet. Geen wachtrij, geen ticket-systeem, gewoon een berichtje en wij kijken.
+291	Rudy, je <em>AI-assistent</em>
+292	Geen chatbot. Geen FAQ-zoeker. Een echte assistent die een aantal concrete taken voor je uitvoert in rumo, uitlegt hoe de rest werkt, en eerlijk zegt wat je zelf moet doen. Rudy werkt naast de receptionist, niet met de gast: hij praat nooit rechtstreeks met je gasten.
+293	Wat is Rudy?
+294	Wat <em>Rudy</em> kan, in één paragraaf
+295	Rudy leest deze artikels, je handboek en je documenten, en kent rumo van binnenuit. Concreet neemt hij een handvol tijdrovende dingen van je over: een reservatie aanmaken, een prijsofferte maken uit een aanvraagmail van een gast, een groepslijst met namen in de juiste kamers zetten, en een lijst gasten of boekingen importeren uit een Excel of PDF. Daarnaast zoekt hij dingen op (je cijfers, een procedure in het handboek), legt hij uit hoe iets in rumo werkt, en schrijft hij een antwoord op een gastbericht dat jij daarna verstuurt.
+296	Je vraagt het gewoon in het Nederlands. Hij stelt voor, jij kijkt na en bevestigt. Wat hij niet zelf kan, zegt hij eerlijk.
+297	Wat hij doet
+298	Wat Rudy concreet <em>voor je doet</em>
+299	Een afgebakend lijstje, geen toverstok. Concreet:
+300	Een reservatie aanmaken (gast, kamer, datums)
+301	Een offerte maken uit een aanvraagmail: hij zet ze als optie klaar met een bevestig-link voor de gast, en schrijft er een antwoordmail bij
+302	Een geplakte groeps- of roominglijst in de juiste kamers invullen (eerst een voorbeeld, pas na jouw OK schrijft hij)
+303	Gasten, boekers, bedrijven of boekingen importeren uit een Excel of PDF
+304	Keuringsattesten en preventie-documenten inlezen en klaarzetten in een wachtrij, zodat jij ze enkel nog moet bevestigen
+305	Je cijfers opzoeken (omzet, bezetting, stadstaks, openstaande bedragen) en er een vraag over beantwoorden
+306	Een antwoord op een gastbericht schrijven in de Inbox; jij verstuurt het
+307	Bij alles wat hij wegschrijft laat hij je eerst een voorbeeld zien en wacht hij op je bevestiging. Hij verzint nooit cijfers of feiten: weet hij iets niet, dan zegt hij dat.
+308	Wat hij <em>niet</em> doet
+309	Wat Rudy <em>niet</em> doet
+310	Twee soorten. Ten eerste dingen die hij <strong>wél zou kunnen maar bewust laat liggen</strong>, omdat het geen werk voor een assistent is:
+311	Geen automatische credit nota's, refunds of penalty-aanrekeningen, die meldt hij aan jou (of je receptionist), met een voorstel
+312	Geen prijsbeleid: hij beslist niet of jouw prijs te hoog of te laag is
+313	Ten tweede dingen die hij simpelweg <strong>niet kan</strong>, en die je dus zelf doet:
+314	Geen stop-sell of open-sell, geen min-stay, max-stay, CTA of CTD. Restricties naar de OTA's zet je zelf in de channel manager.
+315	Geen prijzen aanpassen of doorduwen naar de OTA's, en geen bulk-prijswijzigingen
+316	Geen betaallinks versturen naar gasten, dat doe je vanaf de betaalscherm van de boeking
+317	Niet rechtstreeks met de gast praten: hij schrijft een antwoord voor, jij drukt op verzenden
+318	Geen acties in de OTA-extranetten (Genius-promo, Mobile Rate, listing-content)
+319	Het idee: Rudy doet de tijdrovende voorbereidingen, jij houdt de knoppen die ertoe doen.
+320	Import
+321	Rudy een <em>bestand</em> laten uitlezen
+322	Rudy kan een Excel- of pdf-bestand uitlezen en er boekingen, gasten, bedrijven of tarieven uit halen. Hij toont wat hij gevonden heeft en jij keurt goed voor er iets weggeschreven wordt.
+323	Hetzelfde geldt voor een geplakte groepslijst: hij koppelt elke naam aan een kamer, jij kijkt na. En binnengekomen preventiedocumenten sorteert hij in de juiste map van je dossier.
+324	Hoe vraag je
+325	Hoe je iets aan Rudy vraagt
+326	Gewoon Nederlands. "Maak een offerte voor deze aanvraag" (met de mail erbij geplakt), "zet deze groepslijst in de juiste kamers", "wat was mijn omzet vorige week per kanaal", "wat is onze procedure bij een late aankomst". Geen commando-syntaxis. Geen menu's onthouden.
+327	Als hij twijfelt of de vraag dubbelzinnig is, vraagt hij door. Als hij iets niet kan, zegt hij het.
+328	Train Rudy
+329	Hem korte <em>hotelfeiten</em> meegeven
+330	Naast je handboek is er een lijstje korte feiten dat je zelf invult: de ontbijturen, waar de parking is, of er een lift is. Handig voor wat te kort is om er een handboekartikel over te schrijven.
+331	Per feit kies je of Rudy het ook mag gebruiken wanneer hij een antwoord voor een gast voorschrijft. Zo blijft interne informatie intern.
+332	Cheatsheet
+333	Vraag <em>Rudy</em> dit eens
+334	Een reeks voorbeelden waar Rudy mee uit de voeten kan. Gewoon Nederlands, geen syntax. Bij alles wat hij wegschrijft stelt hij eerst voor, jij keurt goed.
+335	Jij vraagt
+336	Wat Rudy doet
+337	"Boek kamer 12 voor Janssens van 3 tot 5 mei"
+338	Maakt de reservatie aan met de juiste prijs. Jij kijkt na.
+339	"Maak een offerte voor deze aanvraag" (mail erbij geplakt)
+340	Zet een optie klaar met een bevestig-link, en schrijft de antwoordmail in de taal van de gast.
+341	"Zet deze roominglijst in de juiste kamers"
+342	Toont eerst een voorbeeld: wie in welke kamer. Pas na je OK schrijft hij het weg.
+343	"Importeer deze Excel met gasten"
+344	Leest het bestand, toont wat hij herkent, importeert na bevestiging.
+345	"Hier zijn 10 keuringsattesten"
+346	Leest ze in en zet ze klaar in de wachtrij; jij bevestigt.
+347	"Wat was mijn omzet vorige week per kanaal?"
+348	Toont een tabel. Geen actie nodig.
+349	"Vergelijk mijn bezetting deze maand met vorig jaar"
+350	Twee percentages plus het verschil.
+351	"Wat was mijn stadstaks in maart?"
+352	Het bedrag, opgehaald uit het rapport.
+353	"Welke facturen staan nog open?"
+354	De lijst openstaande bedragen uit het debiteuren-rapport.
+355	"Wat is onze procedure bij een late aankomst?"
+356	Zoekt het op in je handboek en citeert het juiste artikel.
+357	"Schrijf een antwoord op dit Booking.com-bericht"
+358	Stelt een antwoord voor in de taal van de gast. Jij verstuurt.
+359	"Stuur een betaallink naar boeking BR-1234"
+360	<em>Doet hij niet zelf.</em> Legt uit waar jij dat op de boeking doet.
+361	"Geef gast Janssens een refund van €80"
+362	<em>Doet hij niet zelf.</em> Stuurt een melding naar je receptionist met het voorstel.
+363	Iets niet duidelijk?
+364	Mis je een <em>stukje uitleg?</em>
+365	Stuur ons een bericht. We vullen aan, en jij krijgt direct antwoord, geen wachtrij, geen ticket-systeem.
+366	Stuur een mailtje <span>→</span>
+367	Zelf proberen
+368	Geen demo-gesprek.<br>Gewoon <em>14 dagen</em> spelen.
+369	Geen creditcard, geen verplichtingen, geen "account manager" die je elke week opbelt. Een demo-omgeving vol nepreservaties. Bevalt het niet? Dan verdwijnt het stilletjes.
+370	Probeer 14 dagen gratis <span>→</span>
+371	Geen credit card · Na 6 maanden maandelijks opzegbaar · <a href="overstappen.html">Gratis datamigratie</a>
+372	<a href="https://wa.me/32485382828">WhatsApp</a>
+373	<a href="features.html#integraties">Booking.com</a>
+374	<a href="features.html#integraties">Airbnb</a>
+375	<a href="features.html#integraties">Exact Online</a>
+376	<a href="features.html#integraties">Peppol</a>
+377	<span>© 2026 Rumo · Gent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+378	Menu

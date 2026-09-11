@@ -893,7 +893,7 @@
               <div class="kb-article-body">
                 <p>Three figures every hotelier should know. rumo shows them per day, week, month, year, with a comparison to the same period last year.</p>
                 <ul>
-                  <li><strong>Occupancy:</strong> room nights sold / room nights available</li>
+                  <li><strong>Occupancy:</strong> per day, the occupied rooms divided by your room count. Over a period the figure is the <em>average of those days</em>, not one big division — that is the difference if you recompute it by hand</li>
                   <li><strong>ADR</strong> (Average Daily Rate): room revenue / nights sold</li>
                   <li><strong>RevPAR</strong> (Revenue per Available Room): occupancy × ADR, or room revenue per available room night</li>
                 </ul>
@@ -915,7 +915,7 @@
               <h3 class="kb-article-title">Your <em>booking curve</em> against last year</h3>
               <div class="kb-article-body">
                 <p>Pace puts side by side how much you had already booked on this day last year and how much now. That says something different from your occupancy: it is about the <em>speed</em> at which a period fills up, not about how full it eventually gets.</p>
-                <p>Next to Pace there are tabs for your debtors (who still has to pay) and for the nationality of your guests. Does your hotel also serve food? Then there is a separate F&amp;B revenue report.</p>
+                <p>Next to Pace there are tabs for the nationality of your guests, your invoices and your online check-ins. Who still has to pay is no longer with the reports but under <em>Payments → Debtors</em>, next to the money that did come in.</p>
                 <p>Everything can be exported to CSV, Excel or PDF.</p>
               </div>
             </article>
@@ -943,8 +943,10 @@
               <div class="kb-article-kicker">City tax</div>
               <h3 class="kb-article-title">Municipal tax / city tax</h3>
               <div class="kb-article-body">
-                <p>A different rate per municipality, sometimes per night, sometimes per guest, sometimes exempt below a certain age. rumo knows the rule for your municipality and applies it automatically to every reservation. Visible on the invoice as a separate line, which is how your guest wants to see it.</p>
-                <p>At the end of the year you get an export per municipality, ready to file. No more counting by hand.</p>
+                <p>Your municipality's rule you set up once in the settings: a fixed amount per guest per night or a percentage of the room price, with the VAT rate it carries and who the regulation names as liable. After that rumo applies it to every reservation by itself, visible as its own line on the invoice.</p>
+                <p>rumo does not know the regulations of the Belgian municipalities on its own, and that is deliberate: they differ per municipality and per year, and a table we maintained would quietly go stale. If the rate changes, you add the new value with the date it takes effect — which rate a booking gets follows from its arrival date, not from when it was booked.</p>
+                <p>Children and babies do not count: the tax only charges adults. Anyone booked as a child pays nothing, and that is the age exemption you see in most regulations.</p>
+                <p>For the declaration the report is ready under Reports → Compliance, over the period you pick.</p>
               </div>
             </article>
 
@@ -1006,12 +1008,12 @@
               <h3 class="kb-article-title">How long data is <em>kept</em></h3>
               <div class="kb-article-body">
                 <ul>
-                  <li><strong>Invoice and accounting data:</strong> 10 years (VAT and company law)</li>
+                  <li><strong>Invoice and accounting data:</strong> 7 years (Belgian VAT Code)</li>
                   <li><strong>Guest registration data:</strong> according to police regulations, usually 5 years</li>
                   <li><strong>Marketing consent:</strong> until withdrawn by the guest</li>
                   <li><strong>Other personal data:</strong> up to 2 years after the last stay</li>
                 </ul>
-                <p>After the retention period personal data is anonymised automatically. The accounting figures stay (compulsory), the name and details disappear.</p>
+                <p>Those windows come from the law and from your own privacy statement; they are not something rumo enforces on guest data today. What is cleaned up automatically is what you set yourself: your log, your price changes and your sign-ins (a year by default), your channel activity (90 days by default) and your internal team messages. That purge runs every night and leaves a line in the log saying how much went.</p>
               </div>
             </article>
 
@@ -1019,8 +1021,8 @@
               <div class="kb-article-kicker">GDPR</div>
               <h3 class="kb-article-title">A guest asks for their data to be <em>erased</em></h3>
               <div class="kb-article-body">
-                <p>GDPR right to be forgotten. Find the guest in rumo, click <em>anonymise</em>. Personal data is replaced by a hash. Financial records stay (legally required for 10 years) but can no longer be traced to a person.</p>
-                <p>For data portability: one click generates a ZIP with all that guest's data, ready to send on to the guest themselves.</p>
+                <p>Honestly: there is no button today that anonymises one guest in one click. A guest profile with no bookings can be deleted, and then it really is gone. If a reservation hangs on it, rumo refuses the deletion — an invoice and a police registration may not simply disappear, and cutting a profile loose from its bookings would do exactly that.</p>
+                <p>What does exist, and what answers most of the questions: guest data is shielded by default, every time somebody clicks it open that lands in the log, and housekeeping and F&amp;B are not sent it at all. If you get a real erasure request on a guest with history, pass it to us — for now that is handwork, not a self-service button.</p>
               </div>
             </article>
 
@@ -1036,15 +1038,15 @@
 
             <article class="kb-article">
               <div class="kb-article-kicker">Roles</div>
-              <h3 class="kb-article-title">The four <em>roles</em> in rumo</h3>
+              <h3 class="kb-article-title">The <em>roles</em> in rumo</h3>
               <div class="kb-article-body">
                 <ul>
-                  <li><strong>Owner:</strong> everything. Rates, invoicing, user management, integrations, KPIs</li>
-                  <li><strong>Receptionist:</strong> reservations, checking in and out, invoicing. No rates, no user management, no integration choices</li>
-                  <li><strong>Housekeeping:</strong> room status and cleaning list only. No prices, no guest data beyond a name</li>
-                  <li><strong>Accountant:</strong> read-only rights on invoice data, VAT reports, exports</li>
+                  <li><strong>Admin</strong> and <strong>manager:</strong> everything. Rates, invoicing, reports, settings, user management, connections. Today those two can do exactly the same; they are kept apart for the day they diverge</li>
+                  <li><strong>Receptionist:</strong> the daily work. Reservations, checking in and out, invoicing and payments, the calendar, the guest profiles, and in the channel manager the everyday moves like a stop-sell or a price for a date. No reports, no settings, no user management, and the revenue figures stay out of sight</li>
+                  <li><strong>Housekeeping:</strong> the cleaning screen, issues, the handbook, the training hotel and support. No prices, and guest data does not even reach this screen</li>
+                  <li><strong>F&amp;B:</strong> the same five screens, with the breakfast screen in place of housekeeping</li>
                 </ul>
-                <p>No 47 tick boxes to combine. Four roles that work in practice. Want something outside that? Send us a message and we will look at whether it fits.</p>
+                <p>No 47 tick boxes to combine. One thing that surprises people: a receptionist <em>may</em> touch the prices. That is deliberate — they are the one at the desk when it has to be decided. Want it otherwise? Send us a message.</p>
               </div>
             </article>
 
@@ -1052,8 +1054,8 @@
               <div class="kb-article-kicker">Inviting</div>
               <h3 class="kb-article-title"><em>Inviting</em> a colleague</h3>
               <div class="kb-article-body">
-                <p>Settings → users → <em>+ invite</em>. Enter an email, choose a role. Your colleague gets a mail, chooses their own password, 2FA is on by default. Withdrawing access again is one click.</p>
-                <p>An external accountant who wants to look in now and then? Give them the <em>Accountant</em> role and set expiry to six months. They cannot break anything and drop away automatically after the term.</p>
+                <p>Settings → users → <em>+ invite</em>. Enter an email, pick one or more roles. Your colleague gets a mail and chooses their own password or sets a passkey. If the second factor is on at your hotel, they are asked for one at their first sign-in. Withdrawing access again is one click.</p>
+                <p>There is no expiry date per user: somebody who no longer belongs there you set to inactive or remove. There is no separate accountant role either — give them the access they need and take it away when the work is done.</p>
               </div>
             </article>
 
@@ -1096,11 +1098,11 @@
               <div class="kb-article-body">
                 <p>The three most common causes:</p>
                 <ul>
-                  <li>The age rule is not applied correctly (some municipalities: no tax under 12 or 18, date of birth missing or wrong)</li>
-                  <li>The wrong municipality assigned to your hotel (rare, but it happens after a move or a merger)</li>
-                  <li>The municipal rule has changed and we have not patched it yet</li>
+                  <li>A guest is booked as an adult while it is a child. The tax counts adults only, so that one wrong category is a night too many straight away</li>
+                  <li>A cancellation or no-show still counting. Whoever did not sleep there owes no tax — check the status of the room, not of the booking</li>
+                  <li>The rate in your settings is no longer your municipality’s rate</li>
                 </ul>
-                <p>Open the booking, click the tax line, and you get the calculation details (rule, base, age, number of nights). Is the rule itself out of date? Give us a shout. We update municipal rules centrally for all rumo hotels, not per hotel.</p>
+                <p>Open the booking and click the tax line: you get the calculation, per room and per night. Is the rate itself out of date? You change that yourself in the settings — with the date the new one takes effect, so bookings from before stay as they were. We keep no list of municipal rates, so there is nothing for you to wait on us for.</p>
               </div>
             </article>
 

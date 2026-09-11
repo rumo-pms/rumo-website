@@ -893,7 +893,7 @@
               <div class="kb-article-body">
                 <p>Trois chiffres que tout hôtelier devrait connaître. rumo les affiche par jour, semaine, mois et année, avec la comparaison à la même période l'an dernier.</p>
                 <ul>
-                  <li><strong>Occupation :</strong> nuitées vendues / nuitées disponibles</li>
+                  <li><strong>Occupation :</strong> par jour, les chambres occupées divisées par votre nombre de chambres. Sur une période, le chiffre est la <em>moyenne de ces jours</em>, pas une grande division d'un coup — c'est la différence si vous le recalculez à la main</li>
                   <li><strong>ADR</strong> (Average Daily Rate) : chiffre d'affaires chambres / nuits vendues</li>
                   <li><strong>RevPAR</strong> (Revenue per Available Room) : occupation × ADR, autrement dit le CA chambres par nuitée disponible</li>
                 </ul>
@@ -915,7 +915,7 @@
               <h3 class="kb-article-title">Votre <em>courbe de réservation</em> face à l'an dernier</h3>
               <div class="kb-article-body">
                 <p>Le Pace met côte à côte ce que vous aviez déjà réservé à cette date l'an dernier et ce que vous avez aujourd'hui. Cela dit autre chose que votre occupation : il s'agit du <em>rythme</em> auquel une période se remplit, pas du niveau qu'elle atteindra.</p>
-                <p>À côté du Pace, il y a des onglets pour vos débiteurs (qui doit encore payer) et pour la nationalité de vos clients. Votre hôtel sert aussi à manger ? Il existe alors un rapport de chiffre d'affaires F&amp;B distinct.</p>
+                <p>À côté du Pace, il y a des onglets pour la nationalité de vos clients, vos factures et vos check-ins en ligne. Qui doit encore payer ne se trouve plus dans les rapports mais sous <em>Paiements → Débiteurs</em>, à côté de l'argent qui est bien rentré.</p>
                 <p>Tout est exportable en CSV, Excel ou PDF.</p>
               </div>
             </article>
@@ -943,8 +943,10 @@
               <div class="kb-article-kicker">Taxe de séjour</div>
               <h3 class="kb-article-title">Taxe communale / city tax</h3>
               <div class="kb-article-body">
-                <p>Un taux différent par commune, parfois par nuit, parfois par client, parfois exonéré en dessous d'un certain âge. rumo connaît la règle de votre commune et l'applique automatiquement à chaque réservation. Visible sur la facture comme ligne distincte, c'est ainsi que votre client veut la voir.</p>
-                <p>En fin d'année, vous recevez un export par commune, prêt à déposer. Fini les comptages à la main.</p>
+                <p>La règle de votre commune, vous la configurez une fois dans les paramètres : un montant fixe par client et par nuit ou un pourcentage du prix de la chambre, avec le taux de TVA qu'elle porte et qui, selon le règlement, en est redevable. Ensuite rumo l'applique tout seul à chaque réservation, visible comme ligne distincte sur la facture.</p>
+                <p>rumo ne connaît pas de lui-même les règlements des communes belges, et c'est voulu : ils diffèrent par commune et par année, et une table que nous tiendrions à jour vieillirait en silence. Si le tarif change, vous ajoutez la nouvelle valeur avec la date à partir de laquelle elle s'applique — le tarif d'une réservation découle de sa date d'arrivée, pas du moment où elle a été faite.</p>
+                <p>Les enfants et les bébés ne comptent pas : la taxe ne porte que sur les adultes. Qui est réservé comme enfant ne paie rien, et c'est l'exonération d'âge que l'on voit dans la plupart des règlements.</p>
+                <p>Pour la déclaration, le rapport est prêt sous Rapports → Conformité, sur la période que vous choisissez.</p>
               </div>
             </article>
 
@@ -1006,12 +1008,12 @@
               <h3 class="kb-article-title">Combien de temps les données sont <em>conservées</em></h3>
               <div class="kb-article-body">
                 <ul>
-                  <li><strong>Données de facturation et comptables :</strong> 10 ans (droit de la TVA et des sociétés)</li>
+                  <li><strong>Données de facturation et comptables :</strong> 7 ans (Code belge de la TVA)</li>
                   <li><strong>Données d'enregistrement des clients :</strong> selon le règlement de police, généralement 5 ans</li>
                   <li><strong>Consentement marketing :</strong> jusqu'à son retrait par le client</li>
                   <li><strong>Autres données à caractère personnel :</strong> jusqu'à 2 ans après le dernier séjour</li>
                 </ul>
-                <p>Après la durée de conservation, les données à caractère personnel sont anonymisées automatiquement. Les chiffres comptables restent (obligation légale), le nom et les coordonnées disparaissent.</p>
+                <p>Ces délais viennent de la loi et de votre propre déclaration de confidentialité ; ce n'est pas quelque chose que rumo impose aujourd'hui aux données clients. Ce qui est nettoyé automatiquement, c'est ce que vous réglez vous-même : votre journal, vos changements de prix et vos connexions (un an par défaut), l'activité de vos canaux (90 jours par défaut) et vos messages internes. Ce nettoyage tourne chaque nuit et laisse une ligne dans le journal indiquant combien a disparu.</p>
               </div>
             </article>
 
@@ -1019,8 +1021,8 @@
               <div class="kb-article-kicker">RGPD</div>
               <h3 class="kb-article-title">Un client demande d'<em>effacer</em> ses données</h3>
               <div class="kb-article-body">
-                <p>Droit à l'oubli du RGPD. Cherchez le client dans rumo, cliquez sur <em>anonymiser</em>. Les données personnelles sont remplacées par un hachage. Les enregistrements financiers restent (obligation légale de 10 ans) mais ne sont plus rattachables à une personne.</p>
-                <p>Pour la portabilité : un clic génère un ZIP avec toutes les données de ce client, prêt à lui être transmis.</p>
+                <p>Soyons honnêtes : il n'existe aujourd'hui aucun bouton qui anonymise un client en un clic. Un profil client sans réservation peut être supprimé, et là il disparaît vraiment. S'il y a une réservation dessus, rumo refuse la suppression — une facture et un enregistrement policier ne peuvent pas disparaître comme cela, et détacher un profil de ses réservations ferait exactement cela.</p>
+                <p>Ce qui existe, et qui répond déjà à la plupart des questions : les données clients sont masquées par défaut, chaque ouverture est journalisée, et le housekeeping et le F&amp;B ne les reçoivent pas du tout. Si vous recevez une vraie demande d'effacement sur un client avec un historique, transmettez-la-nous — c'est pour l'instant du travail manuel, pas un bouton en libre-service.</p>
               </div>
             </article>
 
@@ -1036,15 +1038,15 @@
 
             <article class="kb-article">
               <div class="kb-article-kicker">Rôles</div>
-              <h3 class="kb-article-title">Les quatre <em>rôles</em> dans rumo</h3>
+              <h3 class="kb-article-title">Les <em>rôles</em> dans rumo</h3>
               <div class="kb-article-body">
                 <ul>
-                  <li><strong>Propriétaire :</strong> tout. Tarifs, facturation, gestion des utilisateurs, intégrations, KPI</li>
-                  <li><strong>Réceptionniste :</strong> réservations, arrivées et départs, facturation. Pas de tarifs, pas de gestion des utilisateurs, pas de choix d'intégrations</li>
-                  <li><strong>Housekeeping :</strong> uniquement le statut des chambres et la liste de nettoyage. Pas de prix, pas de données clients au-delà du nom</li>
-                  <li><strong>Comptable :</strong> droits de lecture seule sur les données de facturation, les rapports TVA, les exports</li>
+                  <li><strong>Admin</strong> et <strong>manager :</strong> tout. Tarifs, facturation, rapports, paramètres, gestion des utilisateurs, connexions. Aujourd'hui ces deux-là peuvent exactement la même chose ; ils restent distincts pour le jour où ils divergeront</li>
+                  <li><strong>Réceptionniste :</strong> le travail quotidien. Réservations, arrivées et départs, facturation et paiements, le calendrier, les profils clients, et dans le channel manager les gestes de tous les jours comme un stop-sell ou un prix pour une date. Pas de rapports, pas de paramètres, pas de gestion des utilisateurs, et les chiffres de chiffre d'affaires restent hors de vue</li>
+                  <li><strong>Housekeeping :</strong> l'écran de nettoyage, les signalements, le manuel, l'hôtel de formation et le support. Pas de prix, et les données clients n'arrivent même pas jusqu'à cet écran</li>
+                  <li><strong>F&amp;B :</strong> les mêmes cinq écrans, avec l'écran petit-déjeuner à la place du housekeeping</li>
                 </ul>
-                <p>Pas 47 cases à combiner. Quatre rôles qui fonctionnent en pratique. Vous voulez autre chose ? Envoyez-nous un message, nous verrons ensemble si cela rentre.</p>
+                <p>Pas 47 cases à combiner. Une chose qui surprend : un réceptionniste <em>peut</em> toucher aux prix. C'est voulu — c'est lui qui est au comptoir quand il faut trancher. Vous préférez autrement ? Envoyez-nous un message.</p>
               </div>
             </article>
 
@@ -1052,8 +1054,8 @@
               <div class="kb-article-kicker">Inviter</div>
               <h3 class="kb-article-title"><em>Inviter</em> un collègue</h3>
               <div class="kb-article-body">
-                <p>Paramètres → utilisateurs → <em>+ inviter</em>. Encodez un mail, choisissez un rôle. Votre collègue reçoit un mail, choisit lui-même son mot de passe, la 2FA est activée par défaut. Retirer l'accès est un clic.</p>
-                <p>Un comptable externe qui veut jeter un œil de temps en temps ? Donnez-lui le rôle <em>Comptable</em> et fixez une expiration à six mois. Il ne peut rien casser et disparaît automatiquement au terme.</p>
+                <p>Paramètres → utilisateurs → <em>+ inviter</em>. Encodez un mail, choisissez un ou plusieurs rôles. Votre collègue reçoit un mail et choisit lui-même son mot de passe ou pose une passkey. Si le deuxième facteur est activé chez vous, il lui sera demandé à sa première connexion. Retirer l'accès est un clic.</p>
+                <p>Il n'y a pas de date d'expiration par utilisateur : quelqu'un qui n'a plus sa place, vous le mettez en inactif ou vous le supprimez. Il n'y a pas non plus de rôle comptable distinct — donnez-lui l'accès dont il a besoin et retirez-le quand le travail est fait.</p>
               </div>
             </article>
 
@@ -1096,11 +1098,11 @@
               <div class="kb-article-body">
                 <p>Les trois causes les plus fréquentes :</p>
                 <ul>
-                  <li>La règle d'âge n'est pas appliquée correctement (certaines communes : pas de taxe sous 12 ou 18 ans, date de naissance manquante ou erronée)</li>
-                  <li>La mauvaise commune attribuée à votre hôtel (rare, mais cela arrive après un déménagement ou une fusion)</li>
-                  <li>La règle communale a changé et nous ne l'avons pas encore corrigée</li>
+                  <li>Un client est réservé comme adulte alors que c'est un enfant. La taxe ne compte que les adultes : cette seule mauvaise catégorie fait tout de suite une nuit de trop</li>
+                  <li>Une annulation ou un no-show qui compte encore. Qui n'a pas dormi là ne doit pas de taxe — vérifiez le statut de la chambre, pas celui de la réservation</li>
+                  <li>Le tarif dans vos paramètres n'est plus celui de votre commune</li>
                 </ul>
-                <p>Ouvrez la réservation, cliquez sur la ligne de taxe : vous obtenez le détail du calcul (règle, base, âge, nombre de nuits). La règle elle-même n'est plus correcte ? Faites-nous signe. Nous mettons les règles communales à jour de façon centrale pour tous les hôtels rumo, pas hôtel par hôtel.</p>
+                <p>Ouvrez la réservation et cliquez sur la ligne de taxe : vous obtenez le calcul, par chambre et par nuit. Le tarif lui-même n'est plus bon ? Vous le changez vous-même dans les paramètres — avec la date à partir de laquelle le nouveau s'applique, pour que les réservations antérieures restent telles quelles. Nous ne tenons aucune liste de tarifs communaux : il n'y a donc rien à attendre de nous.</p>
               </div>
             </article>
 

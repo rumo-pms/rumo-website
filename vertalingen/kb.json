@@ -775,9 +775,9 @@
     "en": "Three figures every hotelier should know. rumo shows them per day, week, month, year, with a comparison to the same period last year.",
     "fr": "Trois chiffres que tout hôtelier devrait connaître. rumo les affiche par jour, semaine, mois et année, avec la comparaison à la même période l'an dernier."
   },
-  "<strong>Bezetting:</strong> verkochte kamernachten / beschikbare kamernachten": {
-    "en": "<strong>Occupancy:</strong> room nights sold / room nights available",
-    "fr": "<strong>Occupation :</strong> nuitées vendues / nuitées disponibles"
+  "<strong>Bezetting:</strong> per dag de bezette kamers gedeeld door je aantal kamers. Over een periode is het cijfer het <em>gemiddelde van die dagen</em>, geen grote deling ineens — reken je het met de hand na, dan is dat het verschil": {
+    "en": "<strong>Occupancy:</strong> per day, the occupied rooms divided by your room count. Over a period the figure is the <em>average of those days</em>, not one big division — that is the difference if you recompute it by hand",
+    "fr": "<strong>Occupation :</strong> par jour, les chambres occupées divisées par votre nombre de chambres. Sur une période, le chiffre est la <em>moyenne de ces jours</em>, pas une grande division d'un coup — c'est la différence si vous le recalculez à la main"
   },
   "<strong>ADR</strong> (Average Daily Rate): kameromzet / verkochte nachten": {
     "en": "<strong>ADR</strong> (Average Daily Rate): room revenue / nights sold",
@@ -815,9 +815,9 @@
     "en": "Pace puts side by side how much you had already booked on this day last year and how much now. That says something different from your occupancy: it is about the <em>speed</em> at which a period fills up, not about how full it eventually gets.",
     "fr": "Le Pace met côte à côte ce que vous aviez déjà réservé à cette date l'an dernier et ce que vous avez aujourd'hui. Cela dit autre chose que votre occupation : il s'agit du <em>rythme</em> auquel une période se remplit, pas du niveau qu'elle atteindra."
   },
-  "Naast Pace staan er nog tabbladen voor je debiteuren (wie moet er nog betalen) en voor de nationaliteit van je gasten. Draait je hotel ook eten, dan is er een apart F&amp;B-omzetrapport.": {
-    "en": "Next to Pace there are tabs for your debtors (who still has to pay) and for the nationality of your guests. Does your hotel also serve food? Then there is a separate F&amp;B revenue report.",
-    "fr": "À côté du Pace, il y a des onglets pour vos débiteurs (qui doit encore payer) et pour la nationalité de vos clients. Votre hôtel sert aussi à manger ? Il existe alors un rapport de chiffre d'affaires F&amp;B distinct."
+  "Naast Pace staan er nog tabbladen voor de nationaliteit van je gasten, je facturen en je online check-ins. Wie er nog moet betalen staat niet meer bij de rapporten maar bij <em>Betalingen → Debiteuren</em>, naast het geld dat wél binnenkwam. Draait je hotel ook eten, dan is er een apart F&amp;B-omzetrapport.": {
+    "en": "Next to Pace there are tabs for the nationality of your guests, your invoices and your online check-ins. Who still has to pay is no longer with the reports but under <em>Payments → Debtors</em>, next to the money that did come in.",
+    "fr": "À côté du Pace, il y a des onglets pour la nationalité de vos clients, vos factures et vos check-ins en ligne. Qui doit encore payer ne se trouve plus dans les rapports mais sous <em>Paiements → Débiteurs</em>, à côté de l'argent qui est bien rentré."
   },
   "Alles is te exporteren naar CSV, Excel of pdf.": {
     "en": "Everything can be exported to CSV, Excel or PDF.",
@@ -855,13 +855,21 @@
     "en": "Municipal tax / city tax",
     "fr": "Taxe communale / city tax"
   },
-  "Per gemeente een ander tarief, soms per nacht, soms per gast, soms vrijgesteld onder een bepaalde leeftijd. rumo kent de regel van jouw gemeente en past hem automatisch toe op elke reservatie. Op de factuur als aparte regel zichtbaar, zo wil je gast dat zien.": {
-    "en": "A different rate per municipality, sometimes per night, sometimes per guest, sometimes exempt below a certain age. rumo knows the rule for your municipality and applies it automatically to every reservation. Visible on the invoice as a separate line, which is how your guest wants to see it.",
-    "fr": "Un taux différent par commune, parfois par nuit, parfois par client, parfois exonéré en dessous d'un certain âge. rumo connaît la règle de votre commune et l'applique automatiquement à chaque réservation. Visible sur la facture comme ligne distincte, c'est ainsi que votre client veut la voir."
+  "De regel van jouw gemeente zet je één keer op in de instellingen: een vast bedrag per gast per nacht of een percentage van de kamerprijs, met het btw-tarief dat ze draagt en wie er volgens het reglement belastingplichtig is. Daarna past rumo hem vanzelf toe op elke reservatie, zichtbaar als aparte regel op de factuur.": {
+    "en": "Your municipality's rule you set up once in the settings: a fixed amount per guest per night or a percentage of the room price, with the VAT rate it carries and who the regulation names as liable. After that rumo applies it to every reservation by itself, visible as its own line on the invoice.",
+    "fr": "La règle de votre commune, vous la configurez une fois dans les paramètres : un montant fixe par client et par nuit ou un pourcentage du prix de la chambre, avec le taux de TVA qu'elle porte et qui, selon le règlement, en est redevable. Ensuite rumo l'applique tout seul à chaque réservation, visible comme ligne distincte sur la facture."
   },
-  "Aan het einde van het jaar krijg je een export per gemeente, klaar om in te dienen. Geen manueel turven meer.": {
-    "en": "At the end of the year you get an export per municipality, ready to file. No more counting by hand.",
-    "fr": "En fin d'année, vous recevez un export par commune, prêt à déposer. Fini les comptages à la main."
+  "rumo kent de reglementen van de Belgische gemeenten niet uit zichzelf, en dat is met opzet: ze veranderen per gemeente en per jaar, en een tabel die wij bijhouden zou stilletjes verouderen. Verandert het tarief, dan zet je de nieuwe waarde erbij met de datum vanaf wanneer ze geldt — welk tarief een boeking krijgt, hangt af van de aankomstdatum, niet van wanneer ze geboekt werd.": {
+    "en": "rumo does not know the regulations of the Belgian municipalities on its own, and that is deliberate: they differ per municipality and per year, and a table we maintained would quietly go stale. If the rate changes, you add the new value with the date it takes effect — which rate a booking gets follows from its arrival date, not from when it was booked.",
+    "fr": "rumo ne connaît pas de lui-même les règlements des communes belges, et c'est voulu : ils diffèrent par commune et par année, et une table que nous tiendrions à jour vieillirait en silence. Si le tarif change, vous ajoutez la nouvelle valeur avec la date à partir de laquelle elle s'applique — le tarif d'une réservation découle de sa date d'arrivée, pas du moment où elle a été faite."
+  },
+  "Kinderen en baby's tellen niet mee: de taks rekent enkel volwassenen. Wie als kind geboekt staat, betaalt dus niets, en dat is de leeftijdsvrijstelling die je in de meeste reglementen ziet.": {
+    "en": "Children and babies do not count: the tax only charges adults. Anyone booked as a child pays nothing, and that is the age exemption you see in most regulations.",
+    "fr": "Les enfants et les bébés ne comptent pas : la taxe ne porte que sur les adultes. Qui est réservé comme enfant ne paie rien, et c'est l'exonération d'âge que l'on voit dans la plupart des règlements."
+  },
+  "Voor de aangifte staat het rapport klaar onder Rapporten → Compliance, over de periode die je kiest.": {
+    "en": "For the declaration the report is ready under Reports → Compliance, over the period you pick.",
+    "fr": "Pour la déclaration, le rapport est prêt sous Rapports → Conformité, sur la période que vous choisissez."
   },
   "Politiemelding": {
     "en": "Police registration",
@@ -947,9 +955,9 @@
     "en": "How long data is <em>kept</em>",
     "fr": "Combien de temps les données sont <em>conservées</em>"
   },
-  "<strong>Factuur- en boekhoudgegevens:</strong> 10 jaar (BTW- en vennootschapswet)": {
-    "en": "<strong>Invoice and accounting data:</strong> 10 years (VAT and company law)",
-    "fr": "<strong>Données de facturation et comptables :</strong> 10 ans (droit de la TVA et des sociétés)"
+  "<strong>Factuur- en boekhoudgegevens:</strong> 7 jaar (Belgisch BTW-wetboek)": {
+    "en": "<strong>Invoice and accounting data:</strong> 7 years (Belgian VAT Code)",
+    "fr": "<strong>Données de facturation et comptables :</strong> 7 ans (Code belge de la TVA)"
   },
   "<strong>Gastregistratiegegevens:</strong> volgens politieverordening, meestal 5 jaar": {
     "en": "<strong>Guest registration data:</strong> according to police regulations, usually 5 years",
@@ -963,9 +971,9 @@
     "en": "<strong>Other personal data:</strong> up to 2 years after the last stay",
     "fr": "<strong>Autres données à caractère personnel :</strong> jusqu'à 2 ans après le dernier séjour"
   },
-  "Na de bewaartermijn worden persoonsgegevens automatisch geanonimiseerd. De boekhoudcijfers blijven (verplicht), de naam-en-toenaam verdwijnt.": {
-    "en": "After the retention period personal data is anonymised automatically. The accounting figures stay (compulsory), the name and details disappear.",
-    "fr": "Après la durée de conservation, les données à caractère personnel sont anonymisées automatiquement. Les chiffres comptables restent (obligation légale), le nom et les coordonnées disparaissent."
+  "Die termijnen komen uit de wet en uit je eigen privacyverklaring; ze zijn niet iets wat rumo vandaag zelf afdwingt op gastgegevens. Wat wél automatisch opgeruimd wordt, stel je zelf in: je logboek, je prijswijzigingen en je aanmeldingen (standaard een jaar), de activiteit van je kanalen (standaard 90 dagen) en je interne teamberichten. Die opkuis draait elke nacht en laat telkens een regel in het logboek na met hoeveel er weg is.": {
+    "en": "Those windows come from the law and from your own privacy statement; they are not something rumo enforces on guest data today. What is cleaned up automatically is what you set yourself: your log, your price changes and your sign-ins (a year by default), your channel activity (90 days by default) and your internal team messages. That purge runs every night and leaves a line in the log saying how much went.",
+    "fr": "Ces délais viennent de la loi et de votre propre déclaration de confidentialité ; ce n'est pas quelque chose que rumo impose aujourd'hui aux données clients. Ce qui est nettoyé automatiquement, c'est ce que vous réglez vous-même : votre journal, vos changements de prix et vos connexions (un an par défaut), l'activité de vos canaux (90 jours par défaut) et vos messages internes. Ce nettoyage tourne chaque nuit et laisse une ligne dans le journal indiquant combien a disparu."
   },
   "GDPR": {
     "en": "GDPR",
@@ -975,13 +983,13 @@
     "en": "A guest asks for their data to be <em>erased</em>",
     "fr": "Un client demande d'<em>effacer</em> ses données"
   },
-  "GDPR-recht op vergetelheid. Zoek de gast in rumo, klik <em>anonimiseer</em>. Persoonsgegevens worden vervangen door een hash. Financiële records blijven (wettelijk verplicht voor 10 jaar) maar zijn niet meer naar een persoon herleidbaar.": {
-    "en": "GDPR right to be forgotten. Find the guest in rumo, click <em>anonymise</em>. Personal data is replaced by a hash. Financial records stay (legally required for 10 years) but can no longer be traced to a person.",
-    "fr": "Droit à l'oubli du RGPD. Cherchez le client dans rumo, cliquez sur <em>anonymiser</em>. Les données personnelles sont remplacées par un hachage. Les enregistrements financiers restent (obligation légale de 10 ans) mais ne sont plus rattachables à une personne."
+  "Eerlijk: er is vandaag geen knop die één gast met één klik anonimiseert. Een gastprofiel zonder boekingen kan je verwijderen, en dat is het dan ook echt. Hangt er wel een reservatie aan, dan weigert rumo de verwijdering — een factuur en een politieregistratie mogen wettelijk niet zomaar verdwijnen, en een profiel losknippen van zijn boekingen zou precies dat doen.": {
+    "en": "Honestly: there is no button today that anonymises one guest in one click. A guest profile with no bookings can be deleted, and then it really is gone. If a reservation hangs on it, rumo refuses the deletion — an invoice and a police registration may not simply disappear, and cutting a profile loose from its bookings would do exactly that.",
+    "fr": "Soyons honnêtes : il n'existe aujourd'hui aucun bouton qui anonymise un client en un clic. Un profil client sans réservation peut être supprimé, et là il disparaît vraiment. S'il y a une réservation dessus, rumo refuse la suppression — une facture et un enregistrement policier ne peuvent pas disparaître comme cela, et détacher un profil de ses réservations ferait exactement cela."
   },
-  "Voor dataportabiliteit: één klik genereert een ZIP met alle gegevens van die gast, klaar om door te sturen naar de gast zelf.": {
-    "en": "For data portability: one click generates a ZIP with all that guest's data, ready to send on to the guest themselves.",
-    "fr": "Pour la portabilité : un clic génère un ZIP avec toutes les données de ce client, prêt à lui être transmis."
+  "Wat er wél is, en wat de meeste vragen al opvangt: gastgegevens staan standaard afgeschermd, elke keer dat iemand ze openklikt komt dat in het logboek, en housekeeping en F&amp;B krijgen ze überhaupt niet toegestuurd. Krijg je een echt verzoek tot verwijdering op een gast met geschiedenis, stuur het dan naar ons door — dat is voorlopig handwerk en geen zelfbedieningsknop.": {
+    "en": "What does exist, and what answers most of the questions: guest data is shielded by default, every time somebody clicks it open that lands in the log, and housekeeping and F&amp;B are not sent it at all. If you get a real erasure request on a guest with history, pass it to us — for now that is handwork, not a self-service button.",
+    "fr": "Ce qui existe, et qui répond déjà à la plupart des questions : les données clients sont masquées par défaut, chaque ouverture est journalisée, et le housekeeping et le F&amp;B ne les reçoivent pas du tout. Si vous recevez une vraie demande d'effacement sur un client avec un historique, transmettez-la-nous — c'est pour l'instant du travail manuel, pas un bouton en libre-service."
   },
   "Gebruikers &amp; <em>rollen</em>": {
     "en": "Users &amp; <em>roles</em>",
@@ -995,29 +1003,29 @@
     "en": "Roles",
     "fr": "Rôles"
   },
-  "De vier <em>rollen</em> in rumo": {
-    "en": "The four <em>roles</em> in rumo",
-    "fr": "Les quatre <em>rôles</em> dans rumo"
+  "De <em>rollen</em> in rumo": {
+    "en": "The <em>roles</em> in rumo",
+    "fr": "Les <em>rôles</em> dans rumo"
   },
-  "<strong>Eigenaar:</strong> alles. Tarieven, facturatie, gebruikersbeheer, integraties, KPI's": {
-    "en": "<strong>Owner:</strong> everything. Rates, invoicing, user management, integrations, KPIs",
-    "fr": "<strong>Propriétaire :</strong> tout. Tarifs, facturation, gestion des utilisateurs, intégrations, KPI"
+  "<strong>Admin</strong> en <strong>manager:</strong> alles. Tarieven, facturatie, rapporten, instellingen, gebruikersbeheer, koppelingen. Vandaag kunnen die twee exact hetzelfde; ze staan apart voor de dag dat ze uit elkaar gaan": {
+    "en": "<strong>Admin</strong> and <strong>manager:</strong> everything. Rates, invoicing, reports, settings, user management, connections. Today those two can do exactly the same; they are kept apart for the day they diverge",
+    "fr": "<strong>Admin</strong> et <strong>manager :</strong> tout. Tarifs, facturation, rapports, paramètres, gestion des utilisateurs, connexions. Aujourd'hui ces deux-là peuvent exactement la même chose ; ils restent distincts pour le jour où ils divergeront"
   },
-  "<strong>Receptionist:</strong> reservaties, in/uit-checken, facturatie. Geen tarieven, geen gebruikersbeheer, geen integratie-keuzes": {
-    "en": "<strong>Receptionist:</strong> reservations, checking in and out, invoicing. No rates, no user management, no integration choices",
-    "fr": "<strong>Réceptionniste :</strong> réservations, arrivées et départs, facturation. Pas de tarifs, pas de gestion des utilisateurs, pas de choix d'intégrations"
+  "<strong>Receptionist:</strong> het dagwerk. Reservaties, in- en uitchecken, factureren en betalingen, de kalender, de gastprofielen, en in de channel manager de dagelijkse ingrepen zoals een stop-sell of een prijs voor een datum. Geen rapporten, geen instellingen, geen gebruikersbeheer, en de omzetcijfers blijven weg": {
+    "en": "<strong>Receptionist:</strong> the daily work. Reservations, checking in and out, invoicing and payments, the calendar, the guest profiles, and in the channel manager the everyday moves like a stop-sell or a price for a date. No reports, no settings, no user management, and the revenue figures stay out of sight",
+    "fr": "<strong>Réceptionniste :</strong> le travail quotidien. Réservations, arrivées et départs, facturation et paiements, le calendrier, les profils clients, et dans le channel manager les gestes de tous les jours comme un stop-sell ou un prix pour une date. Pas de rapports, pas de paramètres, pas de gestion des utilisateurs, et les chiffres de chiffre d'affaires restent hors de vue"
   },
-  "<strong>Housekeeping:</strong> alleen kamerstatus en kuislijst. Geen prijzen, geen gastdata buiten naam": {
-    "en": "<strong>Housekeeping:</strong> room status and cleaning list only. No prices, no guest data beyond a name",
-    "fr": "<strong>Housekeeping :</strong> uniquement le statut des chambres et la liste de nettoyage. Pas de prix, pas de données clients au-delà du nom"
+  "<strong>Housekeeping:</strong> het kuisscherm, meldingen, het handboek, het trainingshotel en support. Geen prijzen, en gastgegevens komen niet eens tot bij dit scherm": {
+    "en": "<strong>Housekeeping:</strong> the cleaning screen, issues, the handbook, the training hotel and support. No prices, and guest data does not even reach this screen",
+    "fr": "<strong>Housekeeping :</strong> l'écran de nettoyage, les signalements, le manuel, l'hôtel de formation et le support. Pas de prix, et les données clients n'arrivent même pas jusqu'à cet écran"
   },
-  "<strong>Boekhouder:</strong> alleen leesrechten op factuurdata, BTW-rapporten, exports": {
-    "en": "<strong>Accountant:</strong> read-only rights on invoice data, VAT reports, exports",
-    "fr": "<strong>Comptable :</strong> droits de lecture seule sur les données de facturation, les rapports TVA, les exports"
+  "<strong>F&amp;B:</strong> dezelfde vijf schermen, met het ontbijtscherm in de plaats van housekeeping": {
+    "en": "<strong>F&amp;B:</strong> the same five screens, with the breakfast screen in place of housekeeping",
+    "fr": "<strong>F&amp;B :</strong> les mêmes cinq écrans, avec l'écran petit-déjeuner à la place du housekeeping"
   },
-  "Geen 47 vinkjes om te combineren. Vier rollen die in de praktijk werken. Wil je iets daarbuiten? Stuur ons een berichtje, we kijken samen of het past.": {
-    "en": "No 47 tick boxes to combine. Four roles that work in practice. Want something outside that? Send us a message and we will look at whether it fits.",
-    "fr": "Pas 47 cases à combiner. Quatre rôles qui fonctionnent en pratique. Vous voulez autre chose ? Envoyez-nous un message, nous verrons ensemble si cela rentre."
+  "Geen 47 vinkjes om te combineren. Eén ding dat mensen verrast: een receptionist mág aan de prijzen. Dat is met opzet, want hij staat aan de balie wanneer er beslist moet worden. Wil je dat anders? Stuur ons een berichtje.": {
+    "en": "No 47 tick boxes to combine. One thing that surprises people: a receptionist <em>may</em> touch the prices. That is deliberate — they are the one at the desk when it has to be decided. Want it otherwise? Send us a message.",
+    "fr": "Pas 47 cases à combiner. Une chose qui surprend : un réceptionniste <em>peut</em> toucher aux prix. C'est voulu — c'est lui qui est au comptoir quand il faut trancher. Vous préférez autrement ? Envoyez-nous un message."
   },
   "Uitnodigen": {
     "en": "Inviting",
@@ -1027,13 +1035,13 @@
     "en": "<em>Inviting</em> a colleague",
     "fr": "<em>Inviter</em> un collègue"
   },
-  "Instellingen → gebruikers → <em>+ uitnodigen</em>. Voer e-mail in, kies een rol. Je collega krijgt een mail, kiest zelf een wachtwoord, 2FA staat standaard aan. Toegang weer intrekken is één klik.": {
-    "en": "Settings → users → <em>+ invite</em>. Enter an email, choose a role. Your colleague gets a mail, chooses their own password, 2FA is on by default. Withdrawing access again is one click.",
-    "fr": "Paramètres → utilisateurs → <em>+ inviter</em>. Encodez un mail, choisissez un rôle. Votre collègue reçoit un mail, choisit lui-même son mot de passe, la 2FA est activée par défaut. Retirer l'accès est un clic."
+  "Instellingen → gebruikers → <em>+ uitnodigen</em>. Voer e-mail in, kies een of meer rollen. Je collega krijgt een mail en kiest zelf een wachtwoord of zet een passkey. Staat de tweede factor bij jouw hotel aan, dan wordt hij er bij zijn eerste aanmelding om gevraagd. Toegang weer intrekken is één klik.": {
+    "en": "Settings → users → <em>+ invite</em>. Enter an email, pick one or more roles. Your colleague gets a mail and chooses their own password or sets a passkey. If the second factor is on at your hotel, they are asked for one at their first sign-in. Withdrawing access again is one click.",
+    "fr": "Paramètres → utilisateurs → <em>+ inviter</em>. Encodez un mail, choisissez un ou plusieurs rôles. Votre collègue reçoit un mail et choisit lui-même son mot de passe ou pose une passkey. Si le deuxième facteur est activé chez vous, il lui sera demandé à sa première connexion. Retirer l'accès est un clic."
   },
-  "Externe boekhouder die af en toe binnen wil kijken? Geef hem rol <em>Boekhouder</em> en zet expiry op zes maanden. Hij kan niets stuk maken en valt automatisch weg na de termijn.": {
-    "en": "An external accountant who wants to look in now and then? Give them the <em>Accountant</em> role and set expiry to six months. They cannot break anything and drop away automatically after the term.",
-    "fr": "Un comptable externe qui veut jeter un œil de temps en temps ? Donnez-lui le rôle <em>Comptable</em> et fixez une expiration à six mois. Il ne peut rien casser et disparaît automatiquement au terme."
+  "Er is geen vervaldatum per gebruiker: iemand die er niet meer bij hoort, zet je op inactief of verwijder je. Voor een boekhouder die af en toe wil binnenkijken is er ook geen aparte rol — geef hem de toegang die hij nodig heeft en haal ze weg wanneer het werk gedaan is.": {
+    "en": "There is no expiry date per user: somebody who no longer belongs there you set to inactive or remove. There is no separate accountant role either — give them the access they need and take it away when the work is done.",
+    "fr": "Il n'y a pas de date d'expiration par utilisateur : quelqu'un qui n'a plus sa place, vous le mettez en inactif ou vous le supprimez. Il n'y a pas non plus de rôle comptable distinct — donnez-lui l'accès dont il a besoin et retirez-le quand le travail est fait."
   },
   "Audit": {
     "en": "Audit",
@@ -1091,21 +1099,21 @@
     "en": "The three most common causes:",
     "fr": "Les trois causes les plus fréquentes :"
   },
-  "Leeftijdsregel niet correct toegepast (sommige gemeentes: geen taks onder 12 of 18 jaar, geboortedatum ontbreekt of klopt niet)": {
-    "en": "The age rule is not applied correctly (some municipalities: no tax under 12 or 18, date of birth missing or wrong)",
-    "fr": "La règle d'âge n'est pas appliquée correctement (certaines communes : pas de taxe sous 12 ou 18 ans, date de naissance manquante ou erronée)"
+  "Een gast staat als volwassene geboekt terwijl het een kind is. De taks telt alleen volwassenen, dus die ene verkeerde categorie is meteen een nacht te veel": {
+    "en": "A guest is booked as an adult while it is a child. The tax counts adults only, so that one wrong category is a night too many straight away",
+    "fr": "Un client est réservé comme adulte alors que c'est un enfant. La taxe ne compte que les adultes : cette seule mauvaise catégorie fait tout de suite une nuit de trop"
   },
-  "Verkeerde gemeente toegekend aan je hotel (zeldzaam, maar gebeurt bij verhuis of fusie)": {
-    "en": "The wrong municipality assigned to your hotel (rare, but it happens after a move or a merger)",
-    "fr": "La mauvaise commune attribuée à votre hôtel (rare, mais cela arrive après un déménagement ou une fusion)"
+  "Een annulering of no-show die nog meetelt. Wie er niet geslapen heeft, betaalt geen taks — controleer de status van de kamer, niet die van de boeking": {
+    "en": "A cancellation or no-show still counting. Whoever did not sleep there owes no tax — check the status of the room, not of the booking",
+    "fr": "Une annulation ou un no-show qui compte encore. Qui n'a pas dormi là ne doit pas de taxe — vérifiez le statut de la chambre, pas celui de la réservation"
   },
-  "De gemeenteregel is veranderd en wij hebben hem nog niet gepatcht": {
-    "en": "The municipal rule has changed and we have not patched it yet",
-    "fr": "La règle communale a changé et nous ne l'avons pas encore corrigée"
+  "Het tarief in je instellingen is niet meer het tarief van je gemeente": {
+    "en": "The rate in your settings is no longer your municipality’s rate",
+    "fr": "Le tarif dans vos paramètres n'est plus celui de votre commune"
   },
-  "Open de boeking, klik op de taks-lijn, je krijgt de berekeningsdetails (regel, basis, leeftijd, aantal nachten). Klopt de regel zelf niet meer? Geef ons een seintje. We updaten gemeenteregels centraal voor alle rumo-hotels, niet per hotel.": {
-    "en": "Open the booking, click the tax line, and you get the calculation details (rule, base, age, number of nights). Is the rule itself out of date? Give us a shout. We update municipal rules centrally for all rumo hotels, not per hotel.",
-    "fr": "Ouvrez la réservation, cliquez sur la ligne de taxe : vous obtenez le détail du calcul (règle, base, âge, nombre de nuits). La règle elle-même n'est plus correcte ? Faites-nous signe. Nous mettons les règles communales à jour de façon centrale pour tous les hôtels rumo, pas hôtel par hôtel."
+  "Open de boeking en klik op de taks-lijn: je krijgt de berekening te zien, per kamer en per nacht. Klopt het tarief zelf niet meer, dan pas je dat zelf aan bij de instellingen — met de datum vanaf wanneer het nieuwe geldt, zodat boekingen van voordien blijven staan zoals ze waren. Wij houden geen lijst van gemeentetarieven bij, dus er is niets waar wij op moeten wachten.": {
+    "en": "Open the booking and click the tax line: you get the calculation, per room and per night. Is the rate itself out of date? You change that yourself in the settings — with the date the new one takes effect, so bookings from before stay as they were. We keep no list of municipal rates, so there is nothing for you to wait on us for.",
+    "fr": "Ouvrez la réservation et cliquez sur la ligne de taxe : vous obtenez le calcul, par chambre et par nuit. Le tarif lui-même n'est plus bon ? Vous le changez vous-même dans les paramètres — avec la date à partir de laquelle le nouveau s'applique, pour que les réservations antérieures restent telles quelles. Nous ne tenons aucune liste de tarifs communaux : il n'y a donc rien à attendre de nous."
   },
   "Correctie": {
     "en": "Correction",

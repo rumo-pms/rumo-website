@@ -192,7 +192,7 @@
 192|KPI
 193|<em>Lire</em> l'occupation, l'ADR et le RevPAR
 194|Trois chiffres que tout hôtelier devrait connaître. rumo les affiche par jour, semaine, mois et année, avec la comparaison à la même période l'an dernier.
-195|<strong>Occupation :</strong> nuitées vendues / nuitées disponibles
+195|<strong>Occupation :</strong> par jour, les chambres occupées divisées par votre nombre de chambres. Sur une période, le chiffre est la <em>moyenne de ces jours</em>, pas une grande division d'un coup — c'est la différence si vous le recalculez à la main
 196|<strong>ADR</strong> (Average Daily Rate) : chiffre d'affaires chambres / nuits vendues
 197|<strong>RevPAR</strong> (Revenue per Available Room) : occupation × ADR, autrement dit le CA chambres par nuitée disponible
 198|Survolez un chiffre pour voir le calcul. Cliquez pour descendre jusqu'aux réservations individuelles qui le composent.
@@ -202,7 +202,7 @@
 202|Pace
 203|Votre <em>courbe de réservation</em> face à l'an dernier
 204|Le Pace met côte à côte ce que vous aviez déjà réservé à cette date l'an dernier et ce que vous avez aujourd'hui. Cela dit autre chose que votre occupation : il s'agit du <em>rythme</em> auquel une période se remplit, pas du niveau qu'elle atteindra.
-205|À côté du Pace, il y a des onglets pour vos débiteurs (qui doit encore payer) et pour la nationalité de vos clients. Votre hôtel sert aussi à manger ? Il existe alors un rapport de chiffre d'affaires F&amp;B distinct.
+205|À côté du Pace, il y a des onglets pour la nationalité de vos clients, vos factures et vos check-ins en ligne. Qui doit encore payer ne se trouve plus dans les rapports mais sous <em>Paiements → Débiteurs</em>, à côté de l'argent qui est bien rentré.
 206|Tout est exportable en CSV, Excel ou PDF.
 207|Mix de canaux
 208|Quelle OTA vous rapporte le plus <em>net</em> ?
@@ -212,165 +212,167 @@
 212|La partie où la plupart des PMS internationaux laissent tomber. Taxe communale, déclaration à la police, taxe de séjour bruxelloise. Nous le faisons, parce que nous vivons ici.
 213|Taxe de séjour
 214|Taxe communale / city tax
-215|Un taux différent par commune, parfois par nuit, parfois par client, parfois exonéré en dessous d'un certain âge. rumo connaît la règle de votre commune et l'applique automatiquement à chaque réservation. Visible sur la facture comme ligne distincte, c'est ainsi que votre client veut la voir.
-216|En fin d'année, vous recevez un export par commune, prêt à déposer. Fini les comptages à la main.
-217|Déclaration à la police
-218|Enregistrement des clients pour la police
-219|Depuis la loi sur l'enregistrement des voyageurs, vous êtes tenu de consigner pour chaque client une série de données : nom, date de naissance, numéro de pièce d'identité, adresse. Le portail client demande ces données à votre client pendant le pré-check-in, avant son arrivée. Vous n'avez rien à encoder.
-220|L'export vers la police est dans votre rumo. Mensuellement ou à la demande, dans le bon format.
-221|Statbel
-222|Déclaration mensuelle au <em>SPF Statbel</em>
-223|La Belgique impose une déclaration mensuelle pour tous les hébergements commerciaux à partir d'une certaine taille. rumo compte automatiquement les nuitées par nationalité, la durée moyenne de séjour, le nombre d'arrivées et le nombre de clients. Un clic et la déclaration est prête au format Statbel.
-224|Le dépôt reste votre responsabilité. Mais le comptage, le bon format, la ventilation par pays d'origine : c'est déjà fait.
-225|Déclaration TVA
-226|Ce que rumo fait pour votre <em>déclaration TVA</em>
-227|Soyons honnêtes : rumo ne dépose pas votre déclaration TVA et n'en produit pas non plus un fichier prêt à l'emploi. Cela reste votre travail ou celui de votre comptable. Ce que rumo fait, c'est garder la base juste : chaque ligne de facture reçoit le bon taux (6 % pour l'hébergement, 21 % pour le reste), et les chiffres et factures sont prêts à être transmis.
-228|Si vous travaillez avec l'add-on Scrada, vos factures et paiements arrivent automatiquement dans votre comptabilité, d'où part la déclaration. Sans cette connexion, vous transmettez les PDF ou les factures UBL à votre comptable. Dans les deux cas, les taux sont déjà correctement ventilés : il n'y a plus rien à démêler.
-229|Taxe de séjour bruxelloise &amp; rapport annuel
-230|Vie privée &amp; <em>données</em>
-231|Où se trouvent vos données clients, combien de temps, et qui peut y accéder. Des questions que votre client vous posera un jour, et auxquelles l'autorité RGPD veut déjà une réponse.
-232|Hébergement
-233|Où se trouvent mes <em>données clients</em>
-234|rumo tourne sur des serveurs situés dans l'UE (Francfort). Pas de cloud américain, pas de transfert de données hors EEE. Conforme au RGPD dès la conception, pas comme un ajout après coup.
-235|Les sauvegardes sont chiffrées et se trouvent sur un second site européen. Si le centre de données principal devenait inaccessible, votre rumo est de retour dans l'heure, avec des données vieilles de cinq minutes au maximum.
-236|Durée de conservation
-237|Combien de temps les données sont <em>conservées</em>
-238|<strong>Données de facturation et comptables :</strong> 10 ans (droit de la TVA et des sociétés)
-239|<strong>Données d'enregistrement des clients :</strong> selon le règlement de police, généralement 5 ans
-240|<strong>Consentement marketing :</strong> jusqu'à son retrait par le client
-241|<strong>Autres données à caractère personnel :</strong> jusqu'à 2 ans après le dernier séjour
-242|Après la durée de conservation, les données à caractère personnel sont anonymisées automatiquement. Les chiffres comptables restent (obligation légale), le nom et les coordonnées disparaissent.
-243|RGPD
-244|Un client demande d'<em>effacer</em> ses données
-245|Droit à l'oubli du RGPD. Cherchez le client dans rumo, cliquez sur <em>anonymiser</em>. Les données personnelles sont remplacées par un hachage. Les enregistrements financiers restent (obligation légale de 10 ans) mais ne sont plus rattachables à une personne.
-246|Pour la portabilité : un clic génère un ZIP avec toutes les données de ce client, prêt à lui être transmis.
-247|Utilisateurs &amp; <em>rôles</em>
-248|Qui peut faire quoi dans rumo. Quatre rôles, pas cinquante cases à cocher. Assez pour donner à la réception, au housekeeping et au comptable chacun son rumo, sans une après-midi d'explications.
-249|Rôles
-250|Les quatre <em>rôles</em> dans rumo
-251|<strong>Propriétaire :</strong> tout. Tarifs, facturation, gestion des utilisateurs, intégrations, KPI
-252|<strong>Réceptionniste :</strong> réservations, arrivées et départs, facturation. Pas de tarifs, pas de gestion des utilisateurs, pas de choix d'intégrations
-253|<strong>Housekeeping :</strong> uniquement le statut des chambres et la liste de nettoyage. Pas de prix, pas de données clients au-delà du nom
-254|<strong>Comptable :</strong> droits de lecture seule sur les données de facturation, les rapports TVA, les exports
-255|Pas 47 cases à combiner. Quatre rôles qui fonctionnent en pratique. Vous voulez autre chose ? Envoyez-nous un message, nous verrons ensemble si cela rentre.
-256|Inviter
-257|<em>Inviter</em> un collègue
-258|Paramètres → utilisateurs → <em>+ inviter</em>. Encodez un mail, choisissez un rôle. Votre collègue reçoit un mail, choisit lui-même son mot de passe, la 2FA est activée par défaut. Retirer l'accès est un clic.
-259|Un comptable externe qui veut jeter un œil de temps en temps ? Donnez-lui le rôle <em>Comptable</em> et fixez une expiration à six mois. Il ne peut rien casser et disparaît automatiquement au terme.
-260|Audit
-261|Qui a fait quoi : le <em>journal d'audit</em>
-262|Chaque modification qui compte (annulation, ajustement de prix, remboursement, création d'utilisateur, modification de facture) est journalisée avec l'heure, l'utilisateur et l'ancienne/nouvelle valeur. Inaltérable, même pour le propriétaire.
-263|Pratique pour les questions internes (« qui a accordé cette remise ? »), les contrôles de fraude, ou quand le comptable veut vérifier quelque chose. Et cela vous protège des fausses réclamations, car vous pouvez toujours remonter.
-264|Dépannage
-265|Quand quelque chose ne marche pas. Pas « ouvrez un ticket et attendez trois jours », mais « cliquez ici, regardez là, et si c'est encore bizarre vous nous appelez ».
-266|Ma modification de prix n'est pas sur <em>Booking</em>
-267|Trois vérifications, dans cet ordre :
-268|<strong>Journal de statut rumo :</strong> la modification est-elle partie ? Sinon, cela vient de chez vous (conflit de navigateur, non enregistré)
-269|<strong>Statut d'envoi :</strong> la modification a-t-elle été transmise ? Sinon, cela vient de la connexion elle-même (mapping ou accès)
-270|<strong>Extranet Booking :</strong> arrivée ? Si oui, tout est en ordre et cela tient au cache de l'OTA (quelques minutes de patience)
-271|Cliquez sur la modification dans le journal de statut et vous obtenez le message d'erreur exact : mapping introuvable, jeton OTA expiré, prix sous le tarif minimum, ou autre chose. Pas résolu en cinq minutes ? Envoyez un WhatsApp, nous regardons tout de suite.
-272|La <em>taxe de séjour</em> sur la facture est fausse
-273|Les trois causes les plus fréquentes :
-274|La règle d'âge n'est pas appliquée correctement (certaines communes : pas de taxe sous 12 ou 18 ans, date de naissance manquante ou erronée)
-275|La mauvaise commune attribuée à votre hôtel (rare, mais cela arrive après un déménagement ou une fusion)
-276|La règle communale a changé et nous ne l'avons pas encore corrigée
-277|Ouvrez la réservation, cliquez sur la ligne de taxe : vous obtenez le détail du calcul (règle, base, âge, nombre de nuits). La règle elle-même n'est plus correcte ? Faites-nous signe. Nous mettons les règles communales à jour de façon centrale pour tous les hôtels rumo, pas hôtel par hôtel.
-278|Correction
-279|J'ai <em>facturé</em> une mauvaise nuit ou un mauvais prix
-280|<strong>Avant l'envoi de la facture :</strong> ouvrez la réservation, ajustez la ligne de prix, rumo recalcule automatiquement. La modification figure dans le journal d'audit avec l'ancienne et la nouvelle valeur.
-281|<strong>Après la facture :</strong> faites une note de crédit pour le montant erroné, puis une nouvelle facture pour le bon montant. Les deux sont liées dans la piste d'audit ; votre comptable voit la correction proprement sans que vous ayez à expliquer quoi que ce soit.
-282|OTA
-283|La connexion avec une OTA est <em>rompue</em>
-284|Symptôme : les nouvelles réservations n'arrivent pas, les prix ne se synchronisent plus, ou vous voyez un avertissement rouge dans rumo. Ouvrez <em>paramètres → canaux</em> et regardez le point coloré à côté de chaque OTA.
-285|Rouge = connexion rompue (souvent un jeton expiré ou un identifiant modifié dans l'extranet de l'OTA). Cliquez sur l'OTA, choisissez <em>reconnecter</em>. Pour les canaux OAuth (Airbnb, certaines configurations Booking), vous devez vous reconnecter à l'OTA et autoriser. Deux minutes de travail, pas besoin de ticket.
-286|rumo est lent ou <em>injoignable</em>
-287|Premier réflexe : consultez <a href="https://status.rumo.eu" style="color:var(--terra-dark);">status.rumo.eu</a>. C'est là que nous voyons les pannes avant de les signaler. Aucune panne visible mais cela ne fonctionne pas chez vous ? Rafraîchissement forcé (Ctrl+Maj+R / Cmd+Maj+R), autre onglet, autre navigateur, autre connexion réseau.
-288|Cela ne marche toujours pas ? Envoyez-nous un WhatsApp avec une capture de ce que vous voyez. Pas de file d'attente, pas de système de tickets, juste un message et nous regardons.
-289|Rudy, votre <em>assistant IA</em>
-290|Pas un chatbot. Pas un moteur de FAQ. Un véritable assistant qui exécute pour vous un certain nombre de tâches concrètes dans rumo, explique comment fonctionne le reste, et dit honnêtement ce que vous devez faire vous-même. Rudy travaille aux côtés du réceptionniste, pas avec le client : il ne parle jamais directement à vos clients.
-291|Qu'est-ce que Rudy ?
-292|Ce que <em>Rudy</em> sait faire, en un paragraphe
-293|Rudy lit ces articles, votre manuel et vos documents, et connaît rumo de l'intérieur. Concrètement, il vous enlève une poignée de choses chronophages : créer une réservation, établir un devis à partir d'un mail de demande d'un client, placer une liste de groupe avec les noms dans les bonnes chambres, et importer une liste de clients ou de réservations depuis un Excel ou un PDF. Il cherche aussi des informations (vos chiffres, une procédure dans le manuel), explique comment quelque chose fonctionne dans rumo, et rédige une réponse à un message client que vous envoyez ensuite.
-294|Vous le demandez simplement dans votre langue. Il propose, vous vérifiez et confirmez. Ce qu'il ne sait pas faire, il le dit honnêtement.
-295|Ce qu'il fait
-296|Ce que Rudy fait concrètement <em>pour vous</em>
-297|Une liste délimitée, pas une baguette magique. Concrètement :
-298|Créer une réservation (client, chambre, dates)
-299|Établir un devis à partir d'un mail de demande : il le prépare en option avec un lien de confirmation pour le client, et rédige le mail de réponse
-300|Remplir une liste de groupe ou de rooming collée dans les bonnes chambres (d'abord un aperçu ; il n'écrit qu'après votre OK)
-301|Importer des clients, des donneurs d'ordre, des entreprises ou des réservations depuis un Excel ou un PDF
-302|Lire des attestations de contrôle et des documents de prévention et les préparer dans une file d'attente, pour qu'il ne vous reste qu'à confirmer
-303|Chercher vos chiffres (chiffre d'affaires, occupation, taxe de séjour, montants ouverts) et répondre à une question à ce sujet
-304|Rédiger une réponse à un message client dans la boîte de réception ; c'est vous qui l'envoyez
-305|Pour tout ce qu'il enregistre, il vous montre d'abord un aperçu et attend votre confirmation. Il n'invente jamais de chiffres ni de faits : s'il ne sait pas, il le dit.
-306|Ce qu'il <em>ne</em> fait <em>pas</em>
-307|Ce que Rudy <em>ne</em> fait <em>pas</em>
-308|Deux catégories. D'abord des choses qu'il <strong>pourrait faire mais laisse volontairement</strong>, parce que ce n'est pas le travail d'un assistant :
-309|Pas de notes de crédit, de remboursements ni de pénalités automatiques : il vous les signale (ou à votre réceptionniste), avec une proposition
-310|Pas de politique tarifaire : il ne décide pas si votre prix est trop haut ou trop bas
-311|Ensuite, des choses qu'il ne <strong>peut simplement pas</strong> faire, et que vous faites donc vous-même :
-312|Pas de stop-sell ni d'open-sell, pas de min-stay, max-stay, CTA ou CTD. Les restrictions vers les OTA, vous les réglez vous-même dans le channel manager.
-313|Pas d'ajustement de prix ni d'envoi vers les OTA, et pas de modifications de prix en masse
-314|Pas d'envoi de liens de paiement aux clients : cela se fait depuis l'écran de paiement de la réservation
-315|Pas de contact direct avec le client : il rédige une réponse, c'est vous qui appuyez sur envoyer
-316|Pas d'actions dans les extranets des OTA (promo Genius, Mobile Rate, contenu de l'annonce)
-317|L'idée : Rudy fait les préparatifs chronophages, vous gardez les boutons qui comptent.
-318|Import
-319|Faire lire un <em>fichier</em> à Rudy
-320|Rudy peut lire un fichier Excel ou PDF et en extraire des réservations, des clients, des entreprises ou des tarifs. Il montre ce qu'il a trouvé et vous approuvez avant que quoi que ce soit ne soit enregistré.
-321|Il en va de même pour une liste de groupe collée : il rattache chaque nom à une chambre, vous vérifiez. Et les documents de prévention qui arrivent, il les classe dans le bon dossier.
-322|Comment demander
-323|Comment demander quelque chose à Rudy
-324|En langage courant. « Fais un devis pour cette demande » (avec le mail collé), « place cette liste de groupe dans les bonnes chambres », « quel était mon chiffre d'affaires la semaine dernière par canal », « quelle est notre procédure en cas d'arrivée tardive ». Pas de syntaxe de commande. Pas de menus à retenir.
-325|S'il hésite ou si la question est ambiguë, il pose la question. S'il ne peut pas, il le dit.
-326|Entraîner Rudy
-327|Lui donner de courts <em>faits sur l'hôtel</em>
-328|À côté de votre manuel, il y a une liste de faits courts que vous remplissez vous-même : les heures du petit-déjeuner, où se trouve le parking, s'il y a un ascenseur. Pratique pour ce qui est trop court pour en faire un article de manuel.
-329|Pour chaque fait, vous choisissez si Rudy peut aussi l'utiliser lorsqu'il rédige une réponse destinée à un client. Les informations internes restent ainsi internes.
-330|Aide-mémoire
-331|Demandez donc ceci à <em>Rudy</em>
-332|Une série d'exemples que Rudy sait traiter. En langage courant, sans syntaxe. Pour tout ce qu'il enregistre, il propose d'abord et vous approuvez.
-333|Vous demandez
-334|Ce que Rudy fait
-335|« Réserve la chambre 12 pour Janssens du 3 au 5 mai »
-336|Crée la réservation au bon prix. Vous vérifiez.
-337|« Fais un devis pour cette demande » (mail collé)
-338|Prépare une option avec un lien de confirmation, et rédige le mail de réponse dans la langue du client.
-339|« Place cette liste de rooming dans les bonnes chambres »
-340|Montre d'abord un aperçu : qui dans quelle chambre. Il n'enregistre qu'après votre OK.
-341|« Importe cet Excel avec des clients »
-342|Lit le fichier, montre ce qu'il reconnaît, importe après confirmation.
-343|« Voici 10 attestations de contrôle »
-344|Les lit et les prépare dans la file d'attente ; vous confirmez.
-345|« Quel était mon chiffre d'affaires la semaine dernière par canal ? »
-346|Affiche un tableau. Aucune action nécessaire.
-347|« Compare mon occupation ce mois-ci avec l'an dernier »
-348|Deux pourcentages et l'écart.
-349|« Quelle était ma taxe de séjour en mars ? »
-350|Le montant, tiré du rapport.
-351|« Quelles factures sont encore ouvertes ? »
-352|La liste des montants ouverts issue du rapport débiteurs.
-353|« Quelle est notre procédure en cas d'arrivée tardive ? »
-354|La cherche dans votre manuel et cite le bon article.
-355|« Rédige une réponse à ce message Booking.com »
-356|Propose une réponse dans la langue du client. Vous l'envoyez.
-357|« Envoie un lien de paiement à la réservation BR-1234 »
-358|<em>Il ne le fait pas lui-même.</em> Il explique où vous le faites sur la réservation.
-359|« Rembourse 80 € au client Janssens »
-360|<em>Il ne le fait pas lui-même.</em> Il envoie une notification à votre réceptionniste avec la proposition.
-361|Quelque chose n'est pas clair ?
-362|Il vous manque une <em>explication ?</em>
-363|Envoyez-nous un message. Nous complétons, et vous obtenez une réponse directe : pas de file d'attente, pas de système de tickets.
-364|Envoyez-nous un mail <span>→</span>
-365|Essayer vous-même
-366|Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.
-367|Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit.
-368|Essayez 14 jours gratuitement <span>→</span>
-369|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="overstappen.html">Migration des données offerte</a>
-370|<a href="https://wa.me/32485382828">WhatsApp</a>
-371|<a href="features.html#integraties">Booking.com</a>
-372|<a href="features.html#integraties">Airbnb</a>
-373|<a href="features.html#integraties">Exact Online</a>
-374|<a href="features.html#integraties">Peppol</a>
-375|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
-376|Menu
+215|La règle de votre commune, vous la configurez une fois dans les paramètres : un montant fixe par client et par nuit ou un pourcentage du prix de la chambre, avec le taux de TVA qu'elle porte et qui, selon le règlement, en est redevable. Ensuite rumo l'applique tout seul à chaque réservation, visible comme ligne distincte sur la facture.
+216|rumo ne connaît pas de lui-même les règlements des communes belges, et c'est voulu : ils diffèrent par commune et par année, et une table que nous tiendrions à jour vieillirait en silence. Si le tarif change, vous ajoutez la nouvelle valeur avec la date à partir de laquelle elle s'applique — le tarif d'une réservation découle de sa date d'arrivée, pas du moment où elle a été faite.
+217|Les enfants et les bébés ne comptent pas : la taxe ne porte que sur les adultes. Qui est réservé comme enfant ne paie rien, et c'est l'exonération d'âge que l'on voit dans la plupart des règlements.
+218|Pour la déclaration, le rapport est prêt sous Rapports → Conformité, sur la période que vous choisissez.
+219|Déclaration à la police
+220|Enregistrement des clients pour la police
+221|Depuis la loi sur l'enregistrement des voyageurs, vous êtes tenu de consigner pour chaque client une série de données : nom, date de naissance, numéro de pièce d'identité, adresse. Le portail client demande ces données à votre client pendant le pré-check-in, avant son arrivée. Vous n'avez rien à encoder.
+222|L'export vers la police est dans votre rumo. Mensuellement ou à la demande, dans le bon format.
+223|Statbel
+224|Déclaration mensuelle au <em>SPF Statbel</em>
+225|La Belgique impose une déclaration mensuelle pour tous les hébergements commerciaux à partir d'une certaine taille. rumo compte automatiquement les nuitées par nationalité, la durée moyenne de séjour, le nombre d'arrivées et le nombre de clients. Un clic et la déclaration est prête au format Statbel.
+226|Le dépôt reste votre responsabilité. Mais le comptage, le bon format, la ventilation par pays d'origine : c'est déjà fait.
+227|Déclaration TVA
+228|Ce que rumo fait pour votre <em>déclaration TVA</em>
+229|Soyons honnêtes : rumo ne dépose pas votre déclaration TVA et n'en produit pas non plus un fichier prêt à l'emploi. Cela reste votre travail ou celui de votre comptable. Ce que rumo fait, c'est garder la base juste : chaque ligne de facture reçoit le bon taux (6 % pour l'hébergement, 21 % pour le reste), et les chiffres et factures sont prêts à être transmis.
+230|Si vous travaillez avec l'add-on Scrada, vos factures et paiements arrivent automatiquement dans votre comptabilité, d'où part la déclaration. Sans cette connexion, vous transmettez les PDF ou les factures UBL à votre comptable. Dans les deux cas, les taux sont déjà correctement ventilés : il n'y a plus rien à démêler.
+231|Taxe de séjour bruxelloise &amp; rapport annuel
+232|Vie privée &amp; <em>données</em>
+233|Où se trouvent vos données clients, combien de temps, et qui peut y accéder. Des questions que votre client vous posera un jour, et auxquelles l'autorité RGPD veut déjà une réponse.
+234|Hébergement
+235|Où se trouvent mes <em>données clients</em>
+236|rumo tourne sur des serveurs situés dans l'UE (Francfort). Pas de cloud américain, pas de transfert de données hors EEE. Conforme au RGPD dès la conception, pas comme un ajout après coup.
+237|Les sauvegardes sont chiffrées et se trouvent sur un second site européen. Si le centre de données principal devenait inaccessible, votre rumo est de retour dans l'heure, avec des données vieilles de cinq minutes au maximum.
+238|Durée de conservation
+239|Combien de temps les données sont <em>conservées</em>
+240|<strong>Données de facturation et comptables :</strong> 7 ans (Code belge de la TVA)
+241|<strong>Données d'enregistrement des clients :</strong> selon le règlement de police, généralement 5 ans
+242|<strong>Consentement marketing :</strong> jusqu'à son retrait par le client
+243|<strong>Autres données à caractère personnel :</strong> jusqu'à 2 ans après le dernier séjour
+244|Ces délais viennent de la loi et de votre propre déclaration de confidentialité ; ce n'est pas quelque chose que rumo impose aujourd'hui aux données clients. Ce qui est nettoyé automatiquement, c'est ce que vous réglez vous-même : votre journal, vos changements de prix et vos connexions (un an par défaut), l'activité de vos canaux (90 jours par défaut) et vos messages internes. Ce nettoyage tourne chaque nuit et laisse une ligne dans le journal indiquant combien a disparu.
+245|RGPD
+246|Un client demande d'<em>effacer</em> ses données
+247|Soyons honnêtes : il n'existe aujourd'hui aucun bouton qui anonymise un client en un clic. Un profil client sans réservation peut être supprimé, et là il disparaît vraiment. S'il y a une réservation dessus, rumo refuse la suppression — une facture et un enregistrement policier ne peuvent pas disparaître comme cela, et détacher un profil de ses réservations ferait exactement cela.
+248|Ce qui existe, et qui répond déjà à la plupart des questions : les données clients sont masquées par défaut, chaque ouverture est journalisée, et le housekeeping et le F&amp;B ne les reçoivent pas du tout. Si vous recevez une vraie demande d'effacement sur un client avec un historique, transmettez-la-nous — c'est pour l'instant du travail manuel, pas un bouton en libre-service.
+249|Utilisateurs &amp; <em>rôles</em>
+250|Qui peut faire quoi dans rumo. Quatre rôles, pas cinquante cases à cocher. Assez pour donner à la réception, au housekeeping et au comptable chacun son rumo, sans une après-midi d'explications.
+251|Rôles
+252|Les <em>rôles</em> dans rumo
+253|<strong>Admin</strong> et <strong>manager :</strong> tout. Tarifs, facturation, rapports, paramètres, gestion des utilisateurs, connexions. Aujourd'hui ces deux-là peuvent exactement la même chose ; ils restent distincts pour le jour où ils divergeront
+254|<strong>Réceptionniste :</strong> le travail quotidien. Réservations, arrivées et départs, facturation et paiements, le calendrier, les profils clients, et dans le channel manager les gestes de tous les jours comme un stop-sell ou un prix pour une date. Pas de rapports, pas de paramètres, pas de gestion des utilisateurs, et les chiffres de chiffre d'affaires restent hors de vue
+255|<strong>Housekeeping :</strong> l'écran de nettoyage, les signalements, le manuel, l'hôtel de formation et le support. Pas de prix, et les données clients n'arrivent même pas jusqu'à cet écran
+256|<strong>F&amp;B :</strong> les mêmes cinq écrans, avec l'écran petit-déjeuner à la place du housekeeping
+257|Pas 47 cases à combiner. Une chose qui surprend : un réceptionniste <em>peut</em> toucher aux prix. C'est voulu — c'est lui qui est au comptoir quand il faut trancher. Vous préférez autrement ? Envoyez-nous un message.
+258|Inviter
+259|<em>Inviter</em> un collègue
+260|Paramètres → utilisateurs → <em>+ inviter</em>. Encodez un mail, choisissez un ou plusieurs rôles. Votre collègue reçoit un mail et choisit lui-même son mot de passe ou pose une passkey. Si le deuxième facteur est activé chez vous, il lui sera demandé à sa première connexion. Retirer l'accès est un clic.
+261|Il n'y a pas de date d'expiration par utilisateur : quelqu'un qui n'a plus sa place, vous le mettez en inactif ou vous le supprimez. Il n'y a pas non plus de rôle comptable distinct — donnez-lui l'accès dont il a besoin et retirez-le quand le travail est fait.
+262|Audit
+263|Qui a fait quoi : le <em>journal d'audit</em>
+264|Chaque modification qui compte (annulation, ajustement de prix, remboursement, création d'utilisateur, modification de facture) est journalisée avec l'heure, l'utilisateur et l'ancienne/nouvelle valeur. Inaltérable, même pour le propriétaire.
+265|Pratique pour les questions internes (« qui a accordé cette remise ? »), les contrôles de fraude, ou quand le comptable veut vérifier quelque chose. Et cela vous protège des fausses réclamations, car vous pouvez toujours remonter.
+266|Dépannage
+267|Quand quelque chose ne marche pas. Pas « ouvrez un ticket et attendez trois jours », mais « cliquez ici, regardez là, et si c'est encore bizarre vous nous appelez ».
+268|Ma modification de prix n'est pas sur <em>Booking</em>
+269|Trois vérifications, dans cet ordre :
+270|<strong>Journal de statut rumo :</strong> la modification est-elle partie ? Sinon, cela vient de chez vous (conflit de navigateur, non enregistré)
+271|<strong>Statut d'envoi :</strong> la modification a-t-elle été transmise ? Sinon, cela vient de la connexion elle-même (mapping ou accès)
+272|<strong>Extranet Booking :</strong> arrivée ? Si oui, tout est en ordre et cela tient au cache de l'OTA (quelques minutes de patience)
+273|Cliquez sur la modification dans le journal de statut et vous obtenez le message d'erreur exact : mapping introuvable, jeton OTA expiré, prix sous le tarif minimum, ou autre chose. Pas résolu en cinq minutes ? Envoyez un WhatsApp, nous regardons tout de suite.
+274|La <em>taxe de séjour</em> sur la facture est fausse
+275|Les trois causes les plus fréquentes :
+276|Un client est réservé comme adulte alors que c'est un enfant. La taxe ne compte que les adultes : cette seule mauvaise catégorie fait tout de suite une nuit de trop
+277|Une annulation ou un no-show qui compte encore. Qui n'a pas dormi là ne doit pas de taxe — vérifiez le statut de la chambre, pas celui de la réservation
+278|Le tarif dans vos paramètres n'est plus celui de votre commune
+279|Ouvrez la réservation et cliquez sur la ligne de taxe : vous obtenez le calcul, par chambre et par nuit. Le tarif lui-même n'est plus bon ? Vous le changez vous-même dans les paramètres — avec la date à partir de laquelle le nouveau s'applique, pour que les réservations antérieures restent telles quelles. Nous ne tenons aucune liste de tarifs communaux : il n'y a donc rien à attendre de nous.
+280|Correction
+281|J'ai <em>facturé</em> une mauvaise nuit ou un mauvais prix
+282|<strong>Avant l'envoi de la facture :</strong> ouvrez la réservation, ajustez la ligne de prix, rumo recalcule automatiquement. La modification figure dans le journal d'audit avec l'ancienne et la nouvelle valeur.
+283|<strong>Après la facture :</strong> faites une note de crédit pour le montant erroné, puis une nouvelle facture pour le bon montant. Les deux sont liées dans la piste d'audit ; votre comptable voit la correction proprement sans que vous ayez à expliquer quoi que ce soit.
+284|OTA
+285|La connexion avec une OTA est <em>rompue</em>
+286|Symptôme : les nouvelles réservations n'arrivent pas, les prix ne se synchronisent plus, ou vous voyez un avertissement rouge dans rumo. Ouvrez <em>paramètres → canaux</em> et regardez le point coloré à côté de chaque OTA.
+287|Rouge = connexion rompue (souvent un jeton expiré ou un identifiant modifié dans l'extranet de l'OTA). Cliquez sur l'OTA, choisissez <em>reconnecter</em>. Pour les canaux OAuth (Airbnb, certaines configurations Booking), vous devez vous reconnecter à l'OTA et autoriser. Deux minutes de travail, pas besoin de ticket.
+288|rumo est lent ou <em>injoignable</em>
+289|Premier réflexe : consultez <a href="https://status.rumo.eu" style="color:var(--terra-dark);">status.rumo.eu</a>. C'est là que nous voyons les pannes avant de les signaler. Aucune panne visible mais cela ne fonctionne pas chez vous ? Rafraîchissement forcé (Ctrl+Maj+R / Cmd+Maj+R), autre onglet, autre navigateur, autre connexion réseau.
+290|Cela ne marche toujours pas ? Envoyez-nous un WhatsApp avec une capture de ce que vous voyez. Pas de file d'attente, pas de système de tickets, juste un message et nous regardons.
+291|Rudy, votre <em>assistant IA</em>
+292|Pas un chatbot. Pas un moteur de FAQ. Un véritable assistant qui exécute pour vous un certain nombre de tâches concrètes dans rumo, explique comment fonctionne le reste, et dit honnêtement ce que vous devez faire vous-même. Rudy travaille aux côtés du réceptionniste, pas avec le client : il ne parle jamais directement à vos clients.
+293|Qu'est-ce que Rudy ?
+294|Ce que <em>Rudy</em> sait faire, en un paragraphe
+295|Rudy lit ces articles, votre manuel et vos documents, et connaît rumo de l'intérieur. Concrètement, il vous enlève une poignée de choses chronophages : créer une réservation, établir un devis à partir d'un mail de demande d'un client, placer une liste de groupe avec les noms dans les bonnes chambres, et importer une liste de clients ou de réservations depuis un Excel ou un PDF. Il cherche aussi des informations (vos chiffres, une procédure dans le manuel), explique comment quelque chose fonctionne dans rumo, et rédige une réponse à un message client que vous envoyez ensuite.
+296|Vous le demandez simplement dans votre langue. Il propose, vous vérifiez et confirmez. Ce qu'il ne sait pas faire, il le dit honnêtement.
+297|Ce qu'il fait
+298|Ce que Rudy fait concrètement <em>pour vous</em>
+299|Une liste délimitée, pas une baguette magique. Concrètement :
+300|Créer une réservation (client, chambre, dates)
+301|Établir un devis à partir d'un mail de demande : il le prépare en option avec un lien de confirmation pour le client, et rédige le mail de réponse
+302|Remplir une liste de groupe ou de rooming collée dans les bonnes chambres (d'abord un aperçu ; il n'écrit qu'après votre OK)
+303|Importer des clients, des donneurs d'ordre, des entreprises ou des réservations depuis un Excel ou un PDF
+304|Lire des attestations de contrôle et des documents de prévention et les préparer dans une file d'attente, pour qu'il ne vous reste qu'à confirmer
+305|Chercher vos chiffres (chiffre d'affaires, occupation, taxe de séjour, montants ouverts) et répondre à une question à ce sujet
+306|Rédiger une réponse à un message client dans la boîte de réception ; c'est vous qui l'envoyez
+307|Pour tout ce qu'il enregistre, il vous montre d'abord un aperçu et attend votre confirmation. Il n'invente jamais de chiffres ni de faits : s'il ne sait pas, il le dit.
+308|Ce qu'il <em>ne</em> fait <em>pas</em>
+309|Ce que Rudy <em>ne</em> fait <em>pas</em>
+310|Deux catégories. D'abord des choses qu'il <strong>pourrait faire mais laisse volontairement</strong>, parce que ce n'est pas le travail d'un assistant :
+311|Pas de notes de crédit, de remboursements ni de pénalités automatiques : il vous les signale (ou à votre réceptionniste), avec une proposition
+312|Pas de politique tarifaire : il ne décide pas si votre prix est trop haut ou trop bas
+313|Ensuite, des choses qu'il ne <strong>peut simplement pas</strong> faire, et que vous faites donc vous-même :
+314|Pas de stop-sell ni d'open-sell, pas de min-stay, max-stay, CTA ou CTD. Les restrictions vers les OTA, vous les réglez vous-même dans le channel manager.
+315|Pas d'ajustement de prix ni d'envoi vers les OTA, et pas de modifications de prix en masse
+316|Pas d'envoi de liens de paiement aux clients : cela se fait depuis l'écran de paiement de la réservation
+317|Pas de contact direct avec le client : il rédige une réponse, c'est vous qui appuyez sur envoyer
+318|Pas d'actions dans les extranets des OTA (promo Genius, Mobile Rate, contenu de l'annonce)
+319|L'idée : Rudy fait les préparatifs chronophages, vous gardez les boutons qui comptent.
+320|Import
+321|Faire lire un <em>fichier</em> à Rudy
+322|Rudy peut lire un fichier Excel ou PDF et en extraire des réservations, des clients, des entreprises ou des tarifs. Il montre ce qu'il a trouvé et vous approuvez avant que quoi que ce soit ne soit enregistré.
+323|Il en va de même pour une liste de groupe collée : il rattache chaque nom à une chambre, vous vérifiez. Et les documents de prévention qui arrivent, il les classe dans le bon dossier.
+324|Comment demander
+325|Comment demander quelque chose à Rudy
+326|En langage courant. « Fais un devis pour cette demande » (avec le mail collé), « place cette liste de groupe dans les bonnes chambres », « quel était mon chiffre d'affaires la semaine dernière par canal », « quelle est notre procédure en cas d'arrivée tardive ». Pas de syntaxe de commande. Pas de menus à retenir.
+327|S'il hésite ou si la question est ambiguë, il pose la question. S'il ne peut pas, il le dit.
+328|Entraîner Rudy
+329|Lui donner de courts <em>faits sur l'hôtel</em>
+330|À côté de votre manuel, il y a une liste de faits courts que vous remplissez vous-même : les heures du petit-déjeuner, où se trouve le parking, s'il y a un ascenseur. Pratique pour ce qui est trop court pour en faire un article de manuel.
+331|Pour chaque fait, vous choisissez si Rudy peut aussi l'utiliser lorsqu'il rédige une réponse destinée à un client. Les informations internes restent ainsi internes.
+332|Aide-mémoire
+333|Demandez donc ceci à <em>Rudy</em>
+334|Une série d'exemples que Rudy sait traiter. En langage courant, sans syntaxe. Pour tout ce qu'il enregistre, il propose d'abord et vous approuvez.
+335|Vous demandez
+336|Ce que Rudy fait
+337|« Réserve la chambre 12 pour Janssens du 3 au 5 mai »
+338|Crée la réservation au bon prix. Vous vérifiez.
+339|« Fais un devis pour cette demande » (mail collé)
+340|Prépare une option avec un lien de confirmation, et rédige le mail de réponse dans la langue du client.
+341|« Place cette liste de rooming dans les bonnes chambres »
+342|Montre d'abord un aperçu : qui dans quelle chambre. Il n'enregistre qu'après votre OK.
+343|« Importe cet Excel avec des clients »
+344|Lit le fichier, montre ce qu'il reconnaît, importe après confirmation.
+345|« Voici 10 attestations de contrôle »
+346|Les lit et les prépare dans la file d'attente ; vous confirmez.
+347|« Quel était mon chiffre d'affaires la semaine dernière par canal ? »
+348|Affiche un tableau. Aucune action nécessaire.
+349|« Compare mon occupation ce mois-ci avec l'an dernier »
+350|Deux pourcentages et l'écart.
+351|« Quelle était ma taxe de séjour en mars ? »
+352|Le montant, tiré du rapport.
+353|« Quelles factures sont encore ouvertes ? »
+354|La liste des montants ouverts issue du rapport débiteurs.
+355|« Quelle est notre procédure en cas d'arrivée tardive ? »
+356|La cherche dans votre manuel et cite le bon article.
+357|« Rédige une réponse à ce message Booking.com »
+358|Propose une réponse dans la langue du client. Vous l'envoyez.
+359|« Envoie un lien de paiement à la réservation BR-1234 »
+360|<em>Il ne le fait pas lui-même.</em> Il explique où vous le faites sur la réservation.
+361|« Rembourse 80 € au client Janssens »
+362|<em>Il ne le fait pas lui-même.</em> Il envoie une notification à votre réceptionniste avec la proposition.
+363|Quelque chose n'est pas clair ?
+364|Il vous manque une <em>explication ?</em>
+365|Envoyez-nous un message. Nous complétons, et vous obtenez une réponse directe : pas de file d'attente, pas de système de tickets.
+366|Envoyez-nous un mail <span>→</span>
+367|Essayer vous-même
+368|Pas d'appel de démo.<br>Juste <em>14 jours</em> pour jouer.
+369|Pas de carte de crédit, pas d'engagement, pas d'« account manager » qui vous appelle chaque semaine. Un environnement de démo rempli de fausses réservations. Cela ne vous convient pas ? Alors il disparaît sans bruit.
+370|Essayez 14 jours gratuitement <span>→</span>
+371|Sans carte de crédit · Résiliable au mois après 6 mois · <a href="overstappen.html">Migration des données offerte</a>
+372|<a href="https://wa.me/32485382828">WhatsApp</a>
+373|<a href="features.html#integraties">Booking.com</a>
+374|<a href="features.html#integraties">Airbnb</a>
+375|<a href="features.html#integraties">Exact Online</a>
+376|<a href="features.html#integraties">Peppol</a>
+377|<span>© 2026 Rumo · Gand, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+378|Menu
