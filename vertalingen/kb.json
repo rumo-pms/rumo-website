@@ -115,9 +115,9 @@
     "en": "You get a mail from us with a personal link. Click, choose a password, done. No separate hotel ID, no \"ask your administrator\". If you are the owner yourself, you are the administrator too.",
     "fr": "Vous recevez de nous un mail avec un lien personnel. Vous cliquez, vous choisissez un mot de passe, c'est fait. Pas d'identifiant d'hôtel séparé, pas de « demandez à votre administrateur ». Si vous êtes le propriétaire, vous êtes aussi l'administrateur."
   },
-  "<em>Vergeet niet:</em> twee-factor staat standaard aan voor nieuwe accounts. Je telefoon hangt aan je rumo, niet andersom.": {
-    "en": "<em>Do not forget:</em> two-factor is on by default for new accounts. Your phone hangs on your rumo, not the other way round.",
-    "fr": "<em>N'oubliez pas :</em> le deuxième facteur est activé par défaut pour les nouveaux comptes. Votre téléphone dépend de votre rumo, pas l'inverse."
+  "<em>Vergeet niet:</em> een tweede factor is een instelling van het hotel, niet van je eigen account. Een nieuw hotel start met de verplichting aan; een hotel van voor die standaard houdt wat het had staan. Staat ze aan, dan wordt iedereen die er nog geen heeft erom gevraagd bij de volgende aanmelding.": {
+    "en": "<em>Do not forget:</em> a second factor is a setting of the hotel, not of your own account. A new hotel starts with it required; a hotel from before that default keeps whatever it had. With it on, anyone who does not have one yet is asked for it at their next sign-in.",
+    "fr": "<em>N'oubliez pas :</em> un deuxième facteur est un réglage de l'hôtel, pas de votre propre compte. Un nouvel hôtel démarre avec l'obligation activée ; un hôtel antérieur à ce réglage par défaut garde ce qu'il avait. Si elle est active, toute personne qui n'en a pas encore se la voit demander à sa prochaine connexion."
   },
   "Setup": {
     "en": "Setup",
@@ -143,9 +143,13 @@
     "en": "Playing with made-up reservations",
     "fr": "Jouer avec de fausses réservations"
   },
-  "Je startomgeving zit standaard vol met dummy-reservaties zodat je kan klikken zonder iets stuk te maken. Klaar om écht te beginnen? Eén klik op \"Reset data\" en alles is leeg. Je eigen kamers blijven staan.": {
-    "en": "Your starting environment is full of dummy reservations by default so that you can click without breaking anything. Ready to start for real? One click on \"Reset data\" and everything is empty. Your own rooms stay.",
-    "fr": "Votre environnement de départ est rempli par défaut de réservations fictives pour que vous puissiez cliquer sans rien casser. Prêt à commencer pour de vrai ? Un clic sur « Reset data » et tout est vide. Vos propres chambres restent."
+  "Een proefperiode start niet leeg maar als een afgewerkt demohotel: een paar kamertypes, een paar tarieven en enkele weken boekingen op de kalender, zodat er iets te zien is vanaf je eerste aanmelding. Elk van die boekingen draagt het label <em>Demo</em>; een reservatie die je zelf maakt nooit, dus je haalt ze niet door elkaar.": {
+    "en": "A trial does not start empty but as a finished demo hotel: a few room types, a few rates and a few weeks of bookings on the calendar, so there is something to look at from your first sign-in. Every one of those bookings carries the label <em>Demo</em>; a reservation you make yourself never does, so you cannot mix them up.",
+    "fr": "Une période d'essai ne démarre pas à vide mais comme un hôtel de démonstration terminé : quelques types de chambres, quelques tarifs et quelques semaines de réservations dans le calendrier, pour qu'il y ait quelque chose à regarder dès la première connexion. Chacune de ces réservations porte l'étiquette <em>Demo</em> ; une réservation que vous créez vous-même, jamais : impossible de les confondre."
+  },
+  "Er is geen knop die alles in één keer leegmaakt. Je eigen kamers en tarieven komen er later bij, in het gesprek met Rudy, op het moment dat je echt van start gaat.": {
+    "en": "There is no button that empties everything in one go. Your own rooms and rates come later, in the conversation with Rudy, at the moment you really start.",
+    "fr": "Il n'y a pas de bouton qui vide tout d'un coup. Vos propres chambres et tarifs arrivent plus tard, dans la conversation avec Rudy, au moment où vous démarrez pour de bon."
   },
   "Migratie": {
     "en": "Migration",
@@ -203,9 +207,9 @@
     "en": "<strong>Checking in:</strong> open today's arrivals list. Click a reservation open, check whether the pre-check-in is complete, assign a room if that has not happened yet, status to <em>checked in</em>. Done.",
     "fr": "<strong>Arrivée :</strong> ouvrez la liste des arrivées du jour. Ouvrez une réservation, vérifiez si le pré-check-in est complet, attribuez une chambre si ce n'est pas encore fait, statut sur <em>arrivé</em>. Terminé."
   },
-  "<strong>Uitchecken:</strong> open de departures-lijst, neem de openstaande posten erbij (minibar, ontbijten, extra's), ontvang betaling, factuur volgt automatisch. rumo waarschuwt expliciet als er nog een openstaand saldo is voor je effectief uitcheckt.": {
-    "en": "<strong>Checking out:</strong> open the departures list, add the outstanding items (minibar, breakfasts, extras), take payment, the invoice follows automatically. rumo warns you explicitly if there is still an outstanding balance before you actually check out.",
-    "fr": "<strong>Départ :</strong> ouvrez la liste des départs, ajoutez les postes ouverts (minibar, petits-déjeuners, extras), encaissez, la facture suit automatiquement. rumo vous avertit explicitement s'il reste un solde ouvert avant que vous ne validiez le départ."
+  "<strong>Uitchecken:</strong> open de departures-lijst, neem de openstaande posten erbij (minibar, ontbijten, extra's), ontvang betaling, factuur volgt automatisch. Blijft er iets openstaan, dan waarschuwt rumo je, maar tegenhouden doet hij niet: uitchecken met een openstaand saldo mag, bijvoorbeeld op factuur aan een bedrijf.": {
+    "en": "<strong>Checking out:</strong> open the departures list, add the outstanding items (minibar, breakfasts, extras), take payment, the invoice follows automatically. If something is still open, rumo warns you, but it does not hold you back: checking out with an outstanding balance is allowed, on an invoice to a company for instance.",
+    "fr": "<strong>Départ :</strong> ouvrez la liste des départs, ajoutez les postes ouverts (minibar, petits-déjeuners, extras), encaissez, la facture suit automatiquement. S'il reste quelque chose d'ouvert, rumo vous prévient, mais il ne vous retient pas : partir avec un solde ouvert est permis, sur facture à une entreprise par exemple."
   },
   "Groepen": {
     "en": "Groups",
@@ -279,9 +283,9 @@
     "en": "Paying online or leaving a card as a guarantee",
     "fr": "Le paiement en ligne ou le dépôt d'une carte en garantie"
   },
-  "De link is geldig <em>tot 2 weken na check-out</em>, voor het geval een gast nog iets moet aanvullen of de factuur wil downloaden.": {
-    "en": "The link is valid <em>until 2 weeks after check-out</em>, in case a guest still has to add something or wants to download the invoice.",
-    "fr": "Le lien est valable <em>jusqu'à 2 semaines après le départ</em>, au cas où un client doit encore compléter quelque chose ou veut télécharger la facture."
+  "De link is geldig <em>tot 30 dagen na check-out</em>, voor het geval een gast nog iets moet aanvullen of de factuur wil downloaden.": {
+    "en": "The link is valid <em>until 30 days after check-out</em>, in case a guest still has to add something or wants to download the invoice.",
+    "fr": "Le lien est valable <em>jusqu'à 30 jours après le départ</em>, au cas où un client doit encore compléter quelque chose ou veut télécharger la facture."
   },
   "Annuleringen": {
     "en": "Cancellations",
@@ -395,9 +399,9 @@
     "en": "A <em>cleaning list</em> for the team",
     "fr": "Une <em>liste de nettoyage</em> pour l'équipe"
   },
-  "Elke ochtend genereert rumo een kuislijst op basis van check-outs, stay-overs en speciale verzoeken (extra handdoeken, allergiekussens, vroege check-in). Je kan kamers verslepen om volgorde of prioriteit aan te passen.": {
-    "en": "Every morning rumo generates a cleaning list based on check-outs, stay-overs and special requests (extra towels, allergy pillows, early check-in). You can drag rooms to adjust the order or the priority.",
-    "fr": "Chaque matin, rumo génère une liste de nettoyage sur la base des départs, des séjours en cours et des demandes particulières (serviettes supplémentaires, oreillers anti-allergiques, arrivée anticipée). Vous pouvez glisser les chambres pour ajuster l'ordre ou la priorité."
+  "Elke ochtend genereert rumo een kuislijst op basis van check-outs, stay-overs en speciale verzoeken (extra handdoeken, allergiekussens, vroege check-in). De volgorde zet je niet zelf: de lijst valt uiteen in tabbladen — vertrekkers, blijvers, aankomsten en leegstaande kamers — en dat is waar de rangorde vandaan komt.": {
+    "en": "Every morning rumo generates a cleaning list based on check-outs, stay-overs and special requests (extra towels, allergy pillows, early check-in). You do not set the order yourself: the list falls into tabs — departures, stayovers, arrivals and vacant rooms — and that is where the ranking comes from.",
+    "fr": "Chaque matin, rumo génère une liste de nettoyage sur la base des départs, des séjours en cours et des demandes particulières (serviettes supplémentaires, oreillers anti-allergiques, arrivée anticipée). Vous ne fixez pas l'ordre vous-même : la liste se répartit en onglets — départs, séjours en cours, arrivées et chambres vides — et c'est de là que vient le classement."
   },
   "De lijst is printbaar of toonbaar op tablet. Doorvinkbaar terwijl het team werkt, met live zichtbare voortgang aan de receptie. Zo weet je welke kamers je vroege gasten kan geven zonder eerst te bellen.": {
     "en": "The list can be printed or shown on a tablet. Tickable while the team works, with progress visible live at the desk. That way you know which rooms you can give your early guests without ringing first.",

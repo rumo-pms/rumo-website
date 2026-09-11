@@ -27,349 +27,350 @@
 27|First login
 28|Logging in to rumo for the first time
 29|You get a mail from us with a personal link. Click, choose a password, done. No separate hotel ID, no "ask your administrator". If you are the owner yourself, you are the administrator too.
-30|<em>Do not forget:</em> two-factor is on by default for new accounts. Your phone hangs on your rumo, not the other way round.
+30|<em>Do not forget:</em> a second factor is a setting of the hotel, not of your own account. A new hotel starts with it required; a hotel from before that default keeps whatever it had. With it on, anyone who does not have one yet is asked for it at their next sign-in.
 31|Setup
 32|<em>Setting up</em> your rooms and room types
 33|Room types first (Standard, Deluxe, Junior Suite, …), then individual rooms. A room type has a rate and a maximum occupancy; an individual room hangs on such a type. The same pattern Booking.com and the other OTAs expect.
 34|Tip: keep room types <strong>limited</strong>. Three or four is usually enough. Twenty room types gives you twenty synchronisation problems.
 35|Demo data
 36|Playing with made-up reservations
-37|Your starting environment is full of dummy reservations by default so that you can click without breaking anything. Ready to start for real? One click on "Reset data" and everything is empty. Your own rooms stay.
-38|Migration
-39|Coming from another PMS
-40|You pull an export out of your current system and read it into your own rumo. Existing reservations, guest profiles and your history come along, and your old system keeps running in the meantime until you switch over. So your file stays with you: we need to receive nothing of it. Most hotels are fully across within a few days, without double entry.
-41|Coming from a dog-eared notebook? That is fine too: then you start with an empty calendar and put the coming bookings in. Just ask and we will go through it together.
-42|<a class="kb-verder" href="overstappen.html">How the switch works, step by step <span>&rarr;</span></a>
-43|Reservations &amp; <em>guest portal</em>
-44|The part you are in every day. Creating, changing, checking in and out, invoicing. Plus the guest portal: the link your guest gets to fill in their own pre-check-in.
-45|Creating
-46|Creating a reservation at the <em>desk</em>
-47|Walk-in, phone, mail: press <strong>+ New</strong> or drag an empty strip on the calendar. Choose room type, dates, number of people. rumo pulls the modifier price for that period automatically; you can adjust it. Guest details can follow later through the pre-check-in link, or straight away by typing them in.
-48|For a walk-in: tick <em>"check in immediately"</em> and the guest is in-house at once and the room status jumps to <strong>occupied</strong>.
-49|Daily
-50|Checking in and <em>checking out</em>
-51|<strong>Checking in:</strong> open today's arrivals list. Click a reservation open, check whether the pre-check-in is complete, assign a room if that has not happened yet, status to <em>checked in</em>. Done.
-52|<strong>Checking out:</strong> open the departures list, add the outstanding items (minibar, breakfasts, extras), take payment, the invoice follows automatically. rumo warns you explicitly if there is still an outstanding balance before you actually check out.
-53|Groups
-54|A group of several <em>rooms at once</em>
-55|Create one main reservation and add several rooms to it. All under the same booking reference. Dates can differ per room (a wedding where the couple stays one night longer, for instance).
-56|For invoicing you choose: one collective invoice in the organiser's name, or separate invoices per room or guest. Both are possible, without having to enter the booking again.
-57|Changing
-58|Changing, splitting or <em>moving</em> a reservation
-59|Shifting dates or swapping a room is simply a matter of dragging on the calendar. Drag between rooms within the same type, or between types. rumo recalculates the price and proposes a new line. You decide whether it may go through.
-60|Cost items (minibar, breakfasts, extras) can be <strong>moved between reservations</strong> by searching for a booking reference. No date filter, no restrictions: just find the right reservation and drag the line.
-61|Identity
-62|<em>Scanning</em> an ID or passport at check-in
-63|If the guest did not fill in their details beforehand, you scan their identity card or passport at the desk and name, date of birth and nationality land in the file straight away.
-64|That is the same input as the one from the guest portal, so it also feeds the police registration and the government statistics. Typed once, used three times.
-65|Online check-in
-66|The guest portal for your guest
-67|Every guest gets a personal link in the confirmation mail. With it they fill in themselves:
-68|Pre-check-in details (ID, address, date of birth)
-69|Confirming or declining a quote
-70|Paying online or leaving a card as a guarantee
-71|The link is valid <em>until 2 weeks after check-out</em>, in case a guest still has to add something or wants to download the invoice.
-72|Cancellations
-73|<em>Cancelling</em> a reservation: direct vs. OTA
-74|<strong>Booked directly:</strong> cancel in rumo. You decide yourself whether a cancellation fee is charged and whether a credit note is made.
-75|<strong>Booked through an OTA:</strong> the cancellation has to happen at the OTA (Booking.com, Airbnb, Expedia). rumo synchronises the status automatically as soon as the OTA passes it on. That is a choice by the OTAs, not a shortcoming of rumo. They do not let PMSs write their cancellations back directly.
-76|Quotes
-77|Sending a quote and having it confirmed
-78|Create a reservation with status <em>option</em>, give it an expiry date, and send the guest a link through the guest portal. The guest confirms online and possibly pays right away. Only then does it become a real reservation. No more yes/no/maybe mails.
-79|Calendar
-80|What you can do on the <em>calendar</em>
-81|The calendar shows your rooms one under the other and the days alongside. You choose whether you look at one day, a week or a date range of your own.
-82|Dragging does three things, depending on where to: pulling at the edge extends or shortens a stay, moving to another row moves the booking to another room, and left or right shifts the dates. Every booking also has a pair of scissors to cut a stay in two.
-83|The colours stand for the room status: in house, clean, still to be cleaned, blocked. Click a name and you are in the guest file.
-84|Full but you do not want to lose the request? Then you put it on the waiting list instead of refusing it.
-85|No-show
-86|What to do with a no-show
-87|You mark the reservation as a no-show. rumo keeps the room day in the occupancy statistics (so your revenue is right) and proposes charging the standard no-show fee. Or not: that stays your choice, not the system's.
-88|Housekeeping &amp; <em>room status</em>
-89|The bridge between what the guest sees and what the team does. The status of every room, the cleaning schedule, blocks for maintenance. All on one screen, usable on a tablet in the corridor too.
-90|Status
-91|The four <em>room statuses</em>
-92|Four core statuses, not fifteen.
-93|<strong>Dirty:</strong> to be cleaned, after a check-out or on request during a stay
-94|<strong>Clean:</strong> ready for the next guest
-95|<strong>In-house:</strong> occupied by a guest
-96|<strong>Blocked:</strong> not available (maintenance, own use)
-97|rumo sets the status to dirty automatically on every check-out. Housekeeping marks clean from the mobile view in the corridor, no separate app.
-98|Planning
-99|A <em>cleaning list</em> for the team
-100|Every morning rumo generates a cleaning list based on check-outs, stay-overs and special requests (extra towels, allergy pillows, early check-in). You can drag rooms to adjust the order or the priority.
-101|The list can be printed or shown on a tablet. Tickable while the team works, with progress visible live at the desk. That way you know which rooms you can give your early guests without ringing first.
-102|Add-on
-103|What <em>Advanced Housekeeping</em> adds
-104|Without the add-on a room has four statuses. With the add-on <strong>inspected</strong> is added, between clean and ready for the guest. That way nobody checks anyone into a room that has not been looked over.
-105|You also get cleaning checklists that can differ per day, separate extra tasks and a note per room, and a timer that measures how long a clean really takes. That last one comes back in a time report per person and per room.
-106|Switch the add-on off and the basics keep working: clean and dirty do fine without it.
-107|Blocks
-108|Blocking a room for <em>maintenance</em>
-109|Drag a block on the calendar, choose <em>block</em>, and give a reason (leak, renovation, own use). The room is taken out of the pool for OTA sale during that period. You see the block as a striped zone on the calendar.
-110|You block a room yourself on the calendar. Rudy does not line this up for you, but he can explain in plain language where you have to be and what happens then.
-111|Channel <em>manager</em>
-112|How rumo and the OTAs talk to each other, so that one change at your end goes neatly to Booking, Expedia, Airbnb and the rest. Below is what you need to know about it.
-113|How it works
-114|What goes <em>back and forth</em>
-115|Out to the channels go your prices, your availability, your restrictions (min-stay, max-stay, closed on arrival or departure) and the link between your room types and the channel's. Back come new bookings and cancellations, as soon as the OTA reports them.
-116|In practice: you change a price in rumo and within seconds it is on every connected channel. A new booking on Booking.com is in your calendar just as fast. Every change has its own status line: sent, forwarded, arrived.
-117|<em>Connecting</em> a new OTA
-118|For every channel there is a fixed path: allow rumo as a provider in the OTA's extranet, pass on your property ID, and then link your room types to the channel's in rumo. With Airbnb that goes through a login connection, with Booking through an agreement they have to activate.
-119|We do the first connection <strong>together</strong>. From the second on it usually goes by itself. Rudy points out the steps, but choices in an OTA's extranet (a Genius promo, a Mobile Rate, your listing text) he leaves to you: those are decisions, not actions.
-120|Sync
-121|When is a change visible at the OTA?
-122|Usually within <em>a few seconds</em>. In busy periods it can take half a minute. If it takes longer, it is down to the channel itself, and you see that in your status log. If something is stuck, you can push it again by hand.
-123|One important nuance: <strong>cancellations, no-shows and price changes after booking</strong> you do not send back to the OTA from rumo. Most OTAs simply do not accept that type of change. You do it in their extranet, and the status then comes back to rumo by itself.
-124|Commission
-125|Why you get no <em>commission invoice</em> from Expedia
-126|Booking.com is a broker: the guest is your customer and the commission comes afterwards as an invoice. Expedia Collect is a reseller: it keeps its share before the money reaches you, so there is never a commission invoice and there is nothing to deduct.
-127|Put your fixed percentage on that anyway and you deduct that same commission a second time, and the channel looks more expensive than it is.
-128|<a class="kb-verder" href="uitgelegd/ota-commissie.html">The whole story, with a worked example <span>&rarr;</span></a>
-129|Conflicts
-130|A double booking, now what?
-131|Theoretically impossible thanks to real-time sync, but in practice it happens once in a while (two OTAs selling the last room at the same time). rumo warns you immediately. You decide which guest you upgrade and which you move, not the algorithms.
-132|In the pipeline
-133|Per OTA: Booking.com, Airbnb, Expedia
-134|Rates &amp; <em>packages</em>
-135|One base rate, and the rest is derived. No entering four different rate plans by hand for one room. No 23 screens to set a weekend price.
-136|Base model
-137|How rumo models prices
-138|You start from a <em>base rate</em> per room type. On top come modifiers: occupancy (1, 2, 3 people), child price, length of stay, channel uplift, season. You adjust the modifier, not the four derived rates.
-139|That is different from most channel managers, where you have to maintain a separate line for every occupancy. We think that is unnecessary work.
-140|Occupancy
-141|Rates per occupancy (1, 2, 3 people)
-142|For a room where 1, 2 or 3 people can stay: set one base rate and two modifiers. For example <em>−€30 for single occupancy</em> and <em>+€40 for the third guest</em>. rumo works out the three rates and sends them all to the OTAs.
-143|Packages
-144|Building a <em>package</em> (room + breakfast + dinner)
-145|A package is a rate with extras included. "Romantic weekend" = room + breakfast + four-course menu, for one price. On the invoice the three items are split out neatly (handy for VAT); on the OTA rate guests see one amount.
-146|Periods
-147|Season and weekend prices
-148|Select a date range on the calendar, choose the modifier ("+15% for the summer season"), done. Works on all room types at once or on one. Can also be per weekday: a different price on Friday/Saturday than on Monday/Tuesday.
-149|Worked example
-150|How a price on <em>Booking.com</em> comes about
-151|Concretely, with figures. Junior Suite, base rate €140 per night for 2 people. A guest books 2 nights Saturday-Sunday, with 3 people, through Booking.com:
-152|Base rate: <strong>€140</strong>
-153|+ Weekend (+10%): <strong>€154</strong>
-154|+ Third person (+€40): <strong>€194</strong>
-155|+ OTA uplift Booking (+12%): <strong>€217</strong>
-156|× 2 nights: <strong>€434</strong>
-157|That is what the guest sees on Booking. rumo shows you the same stacking when you hover over a price in the calendar. So you always know <em>why</em> a rate is what it is, and which modifier to adjust if you want to change it.
-158|Discount per channel &amp; promo codes
-159|Invoicing &amp; <em>Peppol</em>
-160|Accounting-correct invoicing without you having to think about it. VAT split per line, every invoice as UBL or PDF, and Peppol sending for B2B through the Peppol add-on.
-161|How Peppol works in rumo
-162|Compulsory for B2B invoices in Belgium from 2026. As standard, rumo turns every invoice into a UBL file or a PDF you can download and forward. Automatically <em>sending</em> over the Peppol network, to your customer's Peppol ID, is in the <strong>Peppol add-on</strong>. With that add-on on it happens without a separate tool and without manual sending.
-163|Private individuals simply get a PDF by mail. rumo recognises the difference and does the right thing.
-164|VAT
-165|VAT split 6% hospitality / 21%
-166|The right rate per invoice line: room and breakfast at 6%, alcohol and other services at 21%. With packages the split is applied automatically to the composed lines.
-167|At the end of the month or the quarter you export a VAT report for your accountant. With base, VAT amount and totals per rate.
-168|Credit notes
-169|Making a credit note
-170|Invoices in rumo cannot be deleted; nor should they be, and that is exactly what your accountant likes. Want to correct something? Make a credit note. rumo automatically links it to the original invoice. Audit trail complete.
-171|Documents
-172|Which document rumo picks <em>itself</em>
-173|rumo makes four kinds of document: an invoice, a proforma, a credit note and a receipt for private individuals. You do not have to work out which type it becomes: that follows from who pays and whether a company number is known.
-174|A credit note always hangs on the invoice it corrects, so that you can see later which two belong together.
-175|Lines of the bill can be moved to another reservation. That is what you need with a group where the organiser pays the rooms and every guest their own consumptions.
-176|Passing on to Octopus, Exact Online, Yuki
-177|A direct connection with the three most used accounting packages in BE/NL. Invoices, credit notes and payments land in your bookkeeping automatically. From now on your accountant gets fewer mails from you, and that is pleasant for both of you.
-178|Paying
-179|Which <em>payment methods</em> rumo supports
-180|<strong>Stripe</strong> for card and Bancontact, both online (through a payment link) and on a connected card terminal. Stripe also covers keeping a card on file and charging it later.
-181|<strong>Cash</strong> you register manually as a cash payment on the booking
-182|<strong>Bank transfer</strong> you register manually, and you confirm it as soon as the money is actually in your account
-183|<strong>Pre-authorisation</strong> (card guarantee without charging right away) through Stripe, for late arrivals or OTA bookings without a deposit
-184|Every payment lands on the booking immediately and is settled automatically against the right invoice line. No more manual matching.
-185|Deposits
-186|Deposits and <em>partial invoices</em>
-187|You collect a deposit through a payment link (Stripe) or register it manually after a transfer. rumo puts it on the booking as <em>"received, still to be settled"</em>. At check-out it is deducted from the final amount automatically.
-188|For longer stays, packages or groups you can send partial invoices (50% on booking, 50% on arrival, for instance). Every partial invoice is a real invoice, with its own number and its own Peppol sending. At check-out the final invoice is drawn up for the remaining balance.
-189|Statistics &amp; <em>reports</em>
-190|The figures you base decisions on. Occupancy, revenue, channel mix, comparison with last year. Clickable down to reservation level, exportable for your accountant or for your own analysis.
-191|KPIs
-192|<em>Reading</em> occupancy, ADR and RevPAR
-193|Three figures every hotelier should know. rumo shows them per day, week, month, year, with a comparison to the same period last year.
-194|<strong>Occupancy:</strong> room nights sold / room nights available
-195|<strong>ADR</strong> (Average Daily Rate): room revenue / nights sold
-196|<strong>RevPAR</strong> (Revenue per Available Room): occupancy × ADR, or room revenue per available room night
-197|Hover over a figure for the arithmetic. Click to drill down to the individual reservations that make it up.
-198|Running monthly and <em>yearly reports</em>
-199|One click on <em>period report</em> gives you: revenue per channel, revenue per room type, occupancy per day, daily cash flow, VAT split per rate, average length of stay. Export as PDF for your insurer or accountant, or as XLS for further analysis in Excel or Google Sheets.
-200|For the monthly close: one page you can print, sign and put in the cupboard for the tax office. No more manual summaries.
-201|Pace
-202|Your <em>booking curve</em> against last year
-203|Pace puts side by side how much you had already booked on this day last year and how much now. That says something different from your occupancy: it is about the <em>speed</em> at which a period fills up, not about how full it eventually gets.
-204|Next to Pace there are tabs for your debtors (who still has to pay) and for the nationality of your guests. Does your hotel also serve food? Then there is a separate F&amp;B revenue report.
-205|Everything can be exported to CSV, Excel or PDF.
-206|Channel mix
-207|Which OTA brings you the most <em>net</em>?
-208|Per channel: number of bookings, average rate, average length of stay and the share of cancellations. Plus the commission, which at Booking and Airbnb comes along with the booking and therefore does not have to be estimated. So you see <em>net yield per channel</em>, not only gross revenue.
-209|Often an eye-opener: an OTA with a lot of volume but 22% commission sometimes yields less than your own website at 0%. With that figure in hand you can decide where your marketing euro lands best.
-210|Belgian <em>compliance</em>
-211|The part where most international PMSs drop the ball. Municipal tax, police registration, the Brussels accommodation levy. We do it, because we live here.
-212|City tax
-213|Municipal tax / city tax
-214|A different rate per municipality, sometimes per night, sometimes per guest, sometimes exempt below a certain age. rumo knows the rule for your municipality and applies it automatically to every reservation. Visible on the invoice as a separate line, which is how your guest wants to see it.
-215|At the end of the year you get an export per municipality, ready to file. No more counting by hand.
-216|Police registration
-217|Guest registration for the police
-218|Since the law on guest registration you are obliged to record a number of details for every guest: name, date of birth, ID number, address. The guest portal asks your guest for those details during the pre-check-in, before they arrive. You have to type nothing.
-219|The export to the police is in your rumo. Monthly or on request, in the right format.
-220|Statbel
-221|Monthly <em>FPS Statbel</em> declaration
-222|Belgium requires a monthly declaration for all commercial accommodation above a certain size. rumo automatically counts overnight stays per nationality, average length of stay, number of arrivals and the number of guests. One click and the declaration is ready in the Statbel format.
-223|Filing stays your responsibility. But the counting, the right format, the split per country of origin: that has already happened.
-224|VAT return
-225|What rumo does for your <em>VAT return</em>
-226|Honestly: rumo does not file your VAT return itself and does not make a ready-made return file for it either. That stays the work of you or your accountant. What rumo does do is keep the basis right: every invoice line gets the correct rate (6% accommodation, 21% for the rest), and the figures and invoices are ready to hand over.
-227|If you work with the Scrada add-on, your invoices and payments land in your bookkeeping automatically, which is where the return starts. Without that connection you pass the PDFs or the UBL invoices to your accountant. In both cases the rates are already split correctly, so there is nothing left to untangle.
-228|Brussels accommodation levy &amp; annual report
-229|Privacy &amp; <em>data</em>
-230|Where your guest data sits, for how long, and who can get at it. Questions your guest is going to ask you one day, and that the GDPR supervisor already wants answered.
-231|Hosting
-232|Where is my <em>guest data</em>
-233|rumo runs on servers inside the EU (Frankfurt). No American cloud, no data transfer outside the EEA. GDPR-compliant by design, not as an afterthought.
-234|Backups are encrypted and sit at a second EU location. Should the main data centre be unreachable, your rumo is back within the hour, with data at most five minutes old.
-235|Retention
-236|How long data is <em>kept</em>
-237|<strong>Invoice and accounting data:</strong> 10 years (VAT and company law)
-238|<strong>Guest registration data:</strong> according to police regulations, usually 5 years
-239|<strong>Marketing consent:</strong> until withdrawn by the guest
-240|<strong>Other personal data:</strong> up to 2 years after the last stay
-241|After the retention period personal data is anonymised automatically. The accounting figures stay (compulsory), the name and details disappear.
-242|GDPR
-243|A guest asks for their data to be <em>erased</em>
-244|GDPR right to be forgotten. Find the guest in rumo, click <em>anonymise</em>. Personal data is replaced by a hash. Financial records stay (legally required for 10 years) but can no longer be traced to a person.
-245|For data portability: one click generates a ZIP with all that guest's data, ready to send on to the guest themselves.
-246|Users &amp; <em>roles</em>
-247|Who may do what in rumo. Four roles, not fifty tick boxes. Enough to give a receptionist, housekeeping and an accountant each their own rumo, without an afternoon of explaining.
-248|Roles
-249|The four <em>roles</em> in rumo
-250|<strong>Owner:</strong> everything. Rates, invoicing, user management, integrations, KPIs
-251|<strong>Receptionist:</strong> reservations, checking in and out, invoicing. No rates, no user management, no integration choices
-252|<strong>Housekeeping:</strong> room status and cleaning list only. No prices, no guest data beyond a name
-253|<strong>Accountant:</strong> read-only rights on invoice data, VAT reports, exports
-254|No 47 tick boxes to combine. Four roles that work in practice. Want something outside that? Send us a message and we will look at whether it fits.
-255|Inviting
-256|<em>Inviting</em> a colleague
-257|Settings → users → <em>+ invite</em>. Enter an email, choose a role. Your colleague gets a mail, chooses their own password, 2FA is on by default. Withdrawing access again is one click.
-258|An external accountant who wants to look in now and then? Give them the <em>Accountant</em> role and set expiry to six months. They cannot break anything and drop away automatically after the term.
-259|Audit
-260|Who did what: the <em>audit log</em>
-261|Every change that matters (cancellation, price adjustment, refund, user creation, invoice change) is logged with the time, the user and the old/new value. Unchangeable, not even by the owner.
-262|Handy for internal questions ("who gave that discount?"), fraud checks, or when the accountant wants to trace something. And it protects you against false claims, because you can always look back.
-263|Troubleshooting
-264|When something does not work. Not "open a ticket and wait three days", but "click here, look there, and if it is still odd you ring us".
-265|My price change is not on <em>Booking</em>
-266|Three checks, in this order:
-267|<strong>rumo status log:</strong> has the change left? If not, it is at your end (browser conflict, not saved)
-268|<strong>Sending status:</strong> has the change been forwarded? If not, it is in the connection itself (mapping or access)
-269|<strong>Booking extranet:</strong> arrived? If so, all is well and it is in the OTA cache (a few minutes' patience)
-270|Click the change in the status log and you get the exact error: mapping not found, OTA token expired, price below min rate, or something else. Not solved in five minutes? Send a WhatsApp and we will look straight away.
-271|The <em>city tax</em> on the invoice is wrong
-272|The three most common causes:
-273|The age rule is not applied correctly (some municipalities: no tax under 12 or 18, date of birth missing or wrong)
-274|The wrong municipality assigned to your hotel (rare, but it happens after a move or a merger)
-275|The municipal rule has changed and we have not patched it yet
-276|Open the booking, click the tax line, and you get the calculation details (rule, base, age, number of nights). Is the rule itself out of date? Give us a shout. We update municipal rules centrally for all rumo hotels, not per hotel.
-277|Correction
-278|I have <em>charged</em> a wrong night or price
-279|<strong>Before the invoice has been sent:</strong> open the booking, adjust the price line, rumo recalculates automatically. The change is in the audit log with the old and the new value.
-280|<strong>After the invoice:</strong> make a credit note for the wrong amount and then a new invoice for the right amount. Both hang together in the audit trail; your accountant sees the correction neatly without you having to explain anything.
-281|OTA
-282|The connection with an OTA is <em>broken</em>
-283|Symptom: new bookings do not come in, prices do not synchronise, or you get a red warning in rumo. Open <em>settings → channels</em> and look at the coloured dot next to each OTA.
-284|Red = connection broken (often an expired token or a credential changed in the OTA extranet). Click the OTA, choose <em>reconnect</em>. With OAuth channels (Airbnb, some Booking set-ups) you have to log in to the OTA again and authorise. Two minutes' work, no support ticket needed.
-285|rumo is slow or <em>unreachable</em>
-286|First reflex: check <a href="https://status.rumo.eu" style="color:var(--terra-dark);">status.rumo.eu</a>. That is where we see outages before we report them. No outage visible but it does not work for you? Hard refresh (Ctrl+Shift+R / Cmd+Shift+R), another tab, another browser, another network connection.
-287|Still not working? Send us a WhatsApp with a screenshot of what you see. No queue, no ticket system, just a message and we will look.
-288|Rudy, your <em>AI assistant</em>
-289|No chatbot. No FAQ search. A real assistant who carries out a number of concrete tasks for you in rumo, explains how the rest works, and says honestly what you have to do yourself. Rudy works alongside the receptionist, not with the guest: he never talks to your guests directly.
-290|What is Rudy?
-291|What <em>Rudy</em> can do, in one paragraph
-292|Rudy reads these articles, your handbook and your documents, and knows rumo from the inside. Concretely he takes a handful of time-consuming things off your hands: creating a reservation, making a quote out of a request mail from a guest, putting a group list with names into the right rooms, and importing a list of guests or bookings from an Excel or a PDF. He also looks things up (your figures, a procedure in the handbook), explains how something in rumo works, and drafts an answer to a guest message that you then send.
-293|You simply ask in your own language. He proposes, you check and confirm. What he cannot do himself, he says honestly.
-294|What he does
-295|What Rudy concretely <em>does for you</em>
-296|A defined list, not a magic wand. Concretely:
-297|Creating a reservation (guest, room, dates)
-298|Making a quote out of a request mail: he lines it up as an option with a confirmation link for the guest, and drafts a reply mail with it
-299|Filling a pasted group or rooming list into the right rooms (a preview first; only after your OK does he write)
-300|Importing guests, bookers, companies or bookings from an Excel or a PDF
-301|Reading in inspection certificates and prevention documents and lining them up in a queue, so that all you have to do is confirm them
-302|Looking up your figures (revenue, occupancy, city tax, outstanding amounts) and answering a question about them
-303|Drafting an answer to a guest message in the Inbox; you send it
-304|With everything he writes away he shows you a preview first and waits for your confirmation. He never invents figures or facts: if he does not know something, he says so.
-305|What he does <em>not</em> do
-306|What Rudy does <em>not</em> do
-307|Two kinds. First, things he <strong>could do but deliberately leaves alone</strong>, because it is not work for an assistant:
-308|No automatic credit notes, refunds or penalty charges; he reports those to you (or your receptionist), with a proposal
-309|No pricing policy: he does not decide whether your price is too high or too low
-310|Second, things he simply <strong>cannot</strong> do, and that you therefore do yourself:
-311|No stop-sell or open-sell, no min-stay, max-stay, CTA or CTD. You set restrictions to the OTAs yourself in the channel manager.
-312|No adjusting prices or pushing them to the OTAs, and no bulk price changes
-313|No sending payment links to guests; you do that from the payment screen of the booking
-314|No talking to the guest directly: he drafts an answer, you press send
-315|No actions in the OTA extranets (Genius promo, Mobile Rate, listing content)
-316|The idea: Rudy does the time-consuming preparation, you keep the buttons that matter.
-317|Import
-318|Letting Rudy read a <em>file</em>
-319|Rudy can read an Excel or PDF file and pull bookings, guests, companies or rates out of it. He shows what he found and you approve before anything is written away.
-320|The same goes for a pasted group list: he links every name to a room, you check. And prevention documents that come in he sorts into the right folder of your file.
-321|How to ask
-322|How you ask Rudy something
-323|Just plain language. "Make a quote for this request" (with the mail pasted in), "put this group list into the right rooms", "what was my revenue last week per channel", "what is our procedure for a late arrival". No command syntax. No menus to remember.
-324|If he is unsure or the question is ambiguous, he asks. If he cannot do something, he says so.
-325|Train Rudy
-326|Giving him short <em>hotel facts</em>
-327|Next to your handbook there is a list of short facts you fill in yourself: the breakfast hours, where the parking is, whether there is a lift. Handy for what is too short to write a handbook article about.
-328|Per fact you choose whether Rudy may also use it when he drafts an answer for a guest. That way internal information stays internal.
-329|Cheatsheet
-330|Try asking <em>Rudy</em> this
-331|A series of examples Rudy can handle. Plain language, no syntax. With everything he writes away he proposes first and you approve.
-332|You ask
-333|What Rudy does
-334|"Book room 12 for Janssens from 3 to 5 May"
-335|Creates the reservation with the right price. You check.
-336|"Make a quote for this request" (mail pasted in)
-337|Lines up an option with a confirmation link, and drafts the reply mail in the guest's language.
-338|"Put this rooming list into the right rooms"
-339|Shows a preview first: who in which room. Only after your OK does he write it away.
-340|"Import this Excel with guests"
-341|Reads the file, shows what he recognises, imports after confirmation.
-342|"Here are 10 inspection certificates"
-343|Reads them in and lines them up in the queue; you confirm.
-344|"What was my revenue last week per channel?"
-345|Shows a table. No action needed.
-346|"Compare my occupancy this month with last year"
-347|Two percentages plus the difference.
-348|"What was my city tax in March?"
-349|The amount, taken from the report.
-350|"Which invoices are still open?"
-351|The list of outstanding amounts from the debtors report.
-352|"What is our procedure for a late arrival?"
-353|Looks it up in your handbook and quotes the right article.
-354|"Draft an answer to this Booking.com message"
-355|Proposes an answer in the guest's language. You send it.
-356|"Send a payment link to booking BR-1234"
-357|<em>He does not do that himself.</em> Explains where you do that on the booking.
-358|"Give guest Janssens a refund of €80"
-359|<em>He does not do that himself.</em> Sends a notification to your receptionist with the proposal.
-360|Something unclear?
-361|Missing a <em>piece of explanation?</em>
-362|Send us a message. We add to it, and you get an answer straight away: no queue, no ticket system.
-363|Send us an email <span>→</span>
-364|Try it yourself
-365|No demo call.<br>Just <em>14 days</em> to play.
-366|No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.
-367|Try it free for 14 days <span>→</span>
-368|No credit card · Cancellable monthly after 6 months · <a href="overstappen.html">Free data migration</a>
-369|<a href="https://wa.me/32485382828">WhatsApp</a>
-370|<a href="features.html#integraties">Booking.com</a>
-371|<a href="features.html#integraties">Airbnb</a>
-372|<a href="features.html#integraties">Exact Online</a>
-373|<a href="features.html#integraties">Peppol</a>
-374|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
-375|Menu
+37|A trial does not start empty but as a finished demo hotel: a few room types, a few rates and a few weeks of bookings on the calendar, so there is something to look at from your first sign-in. Every one of those bookings carries the label <em>Demo</em>; a reservation you make yourself never does, so you cannot mix them up.
+38|There is no button that empties everything in one go. Your own rooms and rates come later, in the conversation with Rudy, at the moment you really start.
+39|Migration
+40|Coming from another PMS
+41|You pull an export out of your current system and read it into your own rumo. Existing reservations, guest profiles and your history come along, and your old system keeps running in the meantime until you switch over. So your file stays with you: we need to receive nothing of it. Most hotels are fully across within a few days, without double entry.
+42|Coming from a dog-eared notebook? That is fine too: then you start with an empty calendar and put the coming bookings in. Just ask and we will go through it together.
+43|<a class="kb-verder" href="overstappen.html">How the switch works, step by step <span>&rarr;</span></a>
+44|Reservations &amp; <em>guest portal</em>
+45|The part you are in every day. Creating, changing, checking in and out, invoicing. Plus the guest portal: the link your guest gets to fill in their own pre-check-in.
+46|Creating
+47|Creating a reservation at the <em>desk</em>
+48|Walk-in, phone, mail: press <strong>+ New</strong> or drag an empty strip on the calendar. Choose room type, dates, number of people. rumo pulls the modifier price for that period automatically; you can adjust it. Guest details can follow later through the pre-check-in link, or straight away by typing them in.
+49|For a walk-in: tick <em>"check in immediately"</em> and the guest is in-house at once and the room status jumps to <strong>occupied</strong>.
+50|Daily
+51|Checking in and <em>checking out</em>
+52|<strong>Checking in:</strong> open today's arrivals list. Click a reservation open, check whether the pre-check-in is complete, assign a room if that has not happened yet, status to <em>checked in</em>. Done.
+53|<strong>Checking out:</strong> open the departures list, add the outstanding items (minibar, breakfasts, extras), take payment, the invoice follows automatically. If something is still open, rumo warns you, but it does not hold you back: checking out with an outstanding balance is allowed, on an invoice to a company for instance.
+54|Groups
+55|A group of several <em>rooms at once</em>
+56|Create one main reservation and add several rooms to it. All under the same booking reference. Dates can differ per room (a wedding where the couple stays one night longer, for instance).
+57|For invoicing you choose: one collective invoice in the organiser's name, or separate invoices per room or guest. Both are possible, without having to enter the booking again.
+58|Changing
+59|Changing, splitting or <em>moving</em> a reservation
+60|Shifting dates or swapping a room is simply a matter of dragging on the calendar. Drag between rooms within the same type, or between types. rumo recalculates the price and proposes a new line. You decide whether it may go through.
+61|Cost items (minibar, breakfasts, extras) can be <strong>moved between reservations</strong> by searching for a booking reference. No date filter, no restrictions: just find the right reservation and drag the line.
+62|Identity
+63|<em>Scanning</em> an ID or passport at check-in
+64|If the guest did not fill in their details beforehand, you scan their identity card or passport at the desk and name, date of birth and nationality land in the file straight away.
+65|That is the same input as the one from the guest portal, so it also feeds the police registration and the government statistics. Typed once, used three times.
+66|Online check-in
+67|The guest portal for your guest
+68|Every guest gets a personal link in the confirmation mail. With it they fill in themselves:
+69|Pre-check-in details (ID, address, date of birth)
+70|Confirming or declining a quote
+71|Paying online or leaving a card as a guarantee
+72|The link is valid <em>until 30 days after check-out</em>, in case a guest still has to add something or wants to download the invoice.
+73|Cancellations
+74|<em>Cancelling</em> a reservation: direct vs. OTA
+75|<strong>Booked directly:</strong> cancel in rumo. You decide yourself whether a cancellation fee is charged and whether a credit note is made.
+76|<strong>Booked through an OTA:</strong> the cancellation has to happen at the OTA (Booking.com, Airbnb, Expedia). rumo synchronises the status automatically as soon as the OTA passes it on. That is a choice by the OTAs, not a shortcoming of rumo. They do not let PMSs write their cancellations back directly.
+77|Quotes
+78|Sending a quote and having it confirmed
+79|Create a reservation with status <em>option</em>, give it an expiry date, and send the guest a link through the guest portal. The guest confirms online and possibly pays right away. Only then does it become a real reservation. No more yes/no/maybe mails.
+80|Calendar
+81|What you can do on the <em>calendar</em>
+82|The calendar shows your rooms one under the other and the days alongside. You choose whether you look at one day, a week or a date range of your own.
+83|Dragging does three things, depending on where to: pulling at the edge extends or shortens a stay, moving to another row moves the booking to another room, and left or right shifts the dates. Every booking also has a pair of scissors to cut a stay in two.
+84|The colours stand for the room status: in house, clean, still to be cleaned, blocked. Click a name and you are in the guest file.
+85|Full but you do not want to lose the request? Then you put it on the waiting list instead of refusing it.
+86|No-show
+87|What to do with a no-show
+88|You mark the reservation as a no-show. rumo keeps the room day in the occupancy statistics (so your revenue is right) and proposes charging the standard no-show fee. Or not: that stays your choice, not the system's.
+89|Housekeeping &amp; <em>room status</em>
+90|The bridge between what the guest sees and what the team does. The status of every room, the cleaning schedule, blocks for maintenance. All on one screen, usable on a tablet in the corridor too.
+91|Status
+92|The four <em>room statuses</em>
+93|Four core statuses, not fifteen.
+94|<strong>Dirty:</strong> to be cleaned, after a check-out or on request during a stay
+95|<strong>Clean:</strong> ready for the next guest
+96|<strong>In-house:</strong> occupied by a guest
+97|<strong>Blocked:</strong> not available (maintenance, own use)
+98|rumo sets the status to dirty automatically on every check-out. Housekeeping marks clean from the mobile view in the corridor, no separate app.
+99|Planning
+100|A <em>cleaning list</em> for the team
+101|Every morning rumo generates a cleaning list based on check-outs, stay-overs and special requests (extra towels, allergy pillows, early check-in). You do not set the order yourself: the list falls into tabs — departures, stayovers, arrivals and vacant rooms — and that is where the ranking comes from.
+102|The list can be printed or shown on a tablet. Tickable while the team works, with progress visible live at the desk. That way you know which rooms you can give your early guests without ringing first.
+103|Add-on
+104|What <em>Advanced Housekeeping</em> adds
+105|Without the add-on a room has four statuses. With the add-on <strong>inspected</strong> is added, between clean and ready for the guest. That way nobody checks anyone into a room that has not been looked over.
+106|You also get cleaning checklists that can differ per day, separate extra tasks and a note per room, and a timer that measures how long a clean really takes. That last one comes back in a time report per person and per room.
+107|Switch the add-on off and the basics keep working: clean and dirty do fine without it.
+108|Blocks
+109|Blocking a room for <em>maintenance</em>
+110|Drag a block on the calendar, choose <em>block</em>, and give a reason (leak, renovation, own use). The room is taken out of the pool for OTA sale during that period. You see the block as a striped zone on the calendar.
+111|You block a room yourself on the calendar. Rudy does not line this up for you, but he can explain in plain language where you have to be and what happens then.
+112|Channel <em>manager</em>
+113|How rumo and the OTAs talk to each other, so that one change at your end goes neatly to Booking, Expedia, Airbnb and the rest. Below is what you need to know about it.
+114|How it works
+115|What goes <em>back and forth</em>
+116|Out to the channels go your prices, your availability, your restrictions (min-stay, max-stay, closed on arrival or departure) and the link between your room types and the channel's. Back come new bookings and cancellations, as soon as the OTA reports them.
+117|In practice: you change a price in rumo and within seconds it is on every connected channel. A new booking on Booking.com is in your calendar just as fast. Every change has its own status line: sent, forwarded, arrived.
+118|<em>Connecting</em> a new OTA
+119|For every channel there is a fixed path: allow rumo as a provider in the OTA's extranet, pass on your property ID, and then link your room types to the channel's in rumo. With Airbnb that goes through a login connection, with Booking through an agreement they have to activate.
+120|We do the first connection <strong>together</strong>. From the second on it usually goes by itself. Rudy points out the steps, but choices in an OTA's extranet (a Genius promo, a Mobile Rate, your listing text) he leaves to you: those are decisions, not actions.
+121|Sync
+122|When is a change visible at the OTA?
+123|Usually within <em>a few seconds</em>. In busy periods it can take half a minute. If it takes longer, it is down to the channel itself, and you see that in your status log. If something is stuck, you can push it again by hand.
+124|One important nuance: <strong>cancellations, no-shows and price changes after booking</strong> you do not send back to the OTA from rumo. Most OTAs simply do not accept that type of change. You do it in their extranet, and the status then comes back to rumo by itself.
+125|Commission
+126|Why you get no <em>commission invoice</em> from Expedia
+127|Booking.com is a broker: the guest is your customer and the commission comes afterwards as an invoice. Expedia Collect is a reseller: it keeps its share before the money reaches you, so there is never a commission invoice and there is nothing to deduct.
+128|Put your fixed percentage on that anyway and you deduct that same commission a second time, and the channel looks more expensive than it is.
+129|<a class="kb-verder" href="uitgelegd/ota-commissie.html">The whole story, with a worked example <span>&rarr;</span></a>
+130|Conflicts
+131|A double booking, now what?
+132|Theoretically impossible thanks to real-time sync, but in practice it happens once in a while (two OTAs selling the last room at the same time). rumo warns you immediately. You decide which guest you upgrade and which you move, not the algorithms.
+133|In the pipeline
+134|Per OTA: Booking.com, Airbnb, Expedia
+135|Rates &amp; <em>packages</em>
+136|One base rate, and the rest is derived. No entering four different rate plans by hand for one room. No 23 screens to set a weekend price.
+137|Base model
+138|How rumo models prices
+139|You start from a <em>base rate</em> per room type. On top come modifiers: occupancy (1, 2, 3 people), child price, length of stay, channel uplift, season. You adjust the modifier, not the four derived rates.
+140|That is different from most channel managers, where you have to maintain a separate line for every occupancy. We think that is unnecessary work.
+141|Occupancy
+142|Rates per occupancy (1, 2, 3 people)
+143|For a room where 1, 2 or 3 people can stay: set one base rate and two modifiers. For example <em>−€30 for single occupancy</em> and <em>+€40 for the third guest</em>. rumo works out the three rates and sends them all to the OTAs.
+144|Packages
+145|Building a <em>package</em> (room + breakfast + dinner)
+146|A package is a rate with extras included. "Romantic weekend" = room + breakfast + four-course menu, for one price. On the invoice the three items are split out neatly (handy for VAT); on the OTA rate guests see one amount.
+147|Periods
+148|Season and weekend prices
+149|Select a date range on the calendar, choose the modifier ("+15% for the summer season"), done. Works on all room types at once or on one. Can also be per weekday: a different price on Friday/Saturday than on Monday/Tuesday.
+150|Worked example
+151|How a price on <em>Booking.com</em> comes about
+152|Concretely, with figures. Junior Suite, base rate €140 per night for 2 people. A guest books 2 nights Saturday-Sunday, with 3 people, through Booking.com:
+153|Base rate: <strong>€140</strong>
+154|+ Weekend (+10%): <strong>€154</strong>
+155|+ Third person (+€40): <strong>€194</strong>
+156|+ OTA uplift Booking (+12%): <strong>€217</strong>
+157|× 2 nights: <strong>€434</strong>
+158|That is what the guest sees on Booking. rumo shows you the same stacking when you hover over a price in the calendar. So you always know <em>why</em> a rate is what it is, and which modifier to adjust if you want to change it.
+159|Discount per channel &amp; promo codes
+160|Invoicing &amp; <em>Peppol</em>
+161|Accounting-correct invoicing without you having to think about it. VAT split per line, every invoice as UBL or PDF, and Peppol sending for B2B through the Peppol add-on.
+162|How Peppol works in rumo
+163|Compulsory for B2B invoices in Belgium from 2026. As standard, rumo turns every invoice into a UBL file or a PDF you can download and forward. Automatically <em>sending</em> over the Peppol network, to your customer's Peppol ID, is in the <strong>Peppol add-on</strong>. With that add-on on it happens without a separate tool and without manual sending.
+164|Private individuals simply get a PDF by mail. rumo recognises the difference and does the right thing.
+165|VAT
+166|VAT split 6% hospitality / 21%
+167|The right rate per invoice line: room and breakfast at 6%, alcohol and other services at 21%. With packages the split is applied automatically to the composed lines.
+168|At the end of the month or the quarter you export a VAT report for your accountant. With base, VAT amount and totals per rate.
+169|Credit notes
+170|Making a credit note
+171|Invoices in rumo cannot be deleted; nor should they be, and that is exactly what your accountant likes. Want to correct something? Make a credit note. rumo automatically links it to the original invoice. Audit trail complete.
+172|Documents
+173|Which document rumo picks <em>itself</em>
+174|rumo makes four kinds of document: an invoice, a proforma, a credit note and a receipt for private individuals. You do not have to work out which type it becomes: that follows from who pays and whether a company number is known.
+175|A credit note always hangs on the invoice it corrects, so that you can see later which two belong together.
+176|Lines of the bill can be moved to another reservation. That is what you need with a group where the organiser pays the rooms and every guest their own consumptions.
+177|Passing on to Octopus, Exact Online, Yuki
+178|A direct connection with the three most used accounting packages in BE/NL. Invoices, credit notes and payments land in your bookkeeping automatically. From now on your accountant gets fewer mails from you, and that is pleasant for both of you.
+179|Paying
+180|Which <em>payment methods</em> rumo supports
+181|<strong>Stripe</strong> for card and Bancontact, both online (through a payment link) and on a connected card terminal. Stripe also covers keeping a card on file and charging it later.
+182|<strong>Cash</strong> you register manually as a cash payment on the booking
+183|<strong>Bank transfer</strong> you register manually, and you confirm it as soon as the money is actually in your account
+184|<strong>Pre-authorisation</strong> (card guarantee without charging right away) through Stripe, for late arrivals or OTA bookings without a deposit
+185|Every payment lands on the booking immediately and is settled automatically against the right invoice line. No more manual matching.
+186|Deposits
+187|Deposits and <em>partial invoices</em>
+188|You collect a deposit through a payment link (Stripe) or register it manually after a transfer. rumo puts it on the booking as <em>"received, still to be settled"</em>. At check-out it is deducted from the final amount automatically.
+189|For longer stays, packages or groups you can send partial invoices (50% on booking, 50% on arrival, for instance). Every partial invoice is a real invoice, with its own number and its own Peppol sending. At check-out the final invoice is drawn up for the remaining balance.
+190|Statistics &amp; <em>reports</em>
+191|The figures you base decisions on. Occupancy, revenue, channel mix, comparison with last year. Clickable down to reservation level, exportable for your accountant or for your own analysis.
+192|KPIs
+193|<em>Reading</em> occupancy, ADR and RevPAR
+194|Three figures every hotelier should know. rumo shows them per day, week, month, year, with a comparison to the same period last year.
+195|<strong>Occupancy:</strong> room nights sold / room nights available
+196|<strong>ADR</strong> (Average Daily Rate): room revenue / nights sold
+197|<strong>RevPAR</strong> (Revenue per Available Room): occupancy × ADR, or room revenue per available room night
+198|Hover over a figure for the arithmetic. Click to drill down to the individual reservations that make it up.
+199|Running monthly and <em>yearly reports</em>
+200|One click on <em>period report</em> gives you: revenue per channel, revenue per room type, occupancy per day, daily cash flow, VAT split per rate, average length of stay. Export as PDF for your insurer or accountant, or as XLS for further analysis in Excel or Google Sheets.
+201|For the monthly close: one page you can print, sign and put in the cupboard for the tax office. No more manual summaries.
+202|Pace
+203|Your <em>booking curve</em> against last year
+204|Pace puts side by side how much you had already booked on this day last year and how much now. That says something different from your occupancy: it is about the <em>speed</em> at which a period fills up, not about how full it eventually gets.
+205|Next to Pace there are tabs for your debtors (who still has to pay) and for the nationality of your guests. Does your hotel also serve food? Then there is a separate F&amp;B revenue report.
+206|Everything can be exported to CSV, Excel or PDF.
+207|Channel mix
+208|Which OTA brings you the most <em>net</em>?
+209|Per channel: number of bookings, average rate, average length of stay and the share of cancellations. Plus the commission, which at Booking and Airbnb comes along with the booking and therefore does not have to be estimated. So you see <em>net yield per channel</em>, not only gross revenue.
+210|Often an eye-opener: an OTA with a lot of volume but 22% commission sometimes yields less than your own website at 0%. With that figure in hand you can decide where your marketing euro lands best.
+211|Belgian <em>compliance</em>
+212|The part where most international PMSs drop the ball. Municipal tax, police registration, the Brussels accommodation levy. We do it, because we live here.
+213|City tax
+214|Municipal tax / city tax
+215|A different rate per municipality, sometimes per night, sometimes per guest, sometimes exempt below a certain age. rumo knows the rule for your municipality and applies it automatically to every reservation. Visible on the invoice as a separate line, which is how your guest wants to see it.
+216|At the end of the year you get an export per municipality, ready to file. No more counting by hand.
+217|Police registration
+218|Guest registration for the police
+219|Since the law on guest registration you are obliged to record a number of details for every guest: name, date of birth, ID number, address. The guest portal asks your guest for those details during the pre-check-in, before they arrive. You have to type nothing.
+220|The export to the police is in your rumo. Monthly or on request, in the right format.
+221|Statbel
+222|Monthly <em>FPS Statbel</em> declaration
+223|Belgium requires a monthly declaration for all commercial accommodation above a certain size. rumo automatically counts overnight stays per nationality, average length of stay, number of arrivals and the number of guests. One click and the declaration is ready in the Statbel format.
+224|Filing stays your responsibility. But the counting, the right format, the split per country of origin: that has already happened.
+225|VAT return
+226|What rumo does for your <em>VAT return</em>
+227|Honestly: rumo does not file your VAT return itself and does not make a ready-made return file for it either. That stays the work of you or your accountant. What rumo does do is keep the basis right: every invoice line gets the correct rate (6% accommodation, 21% for the rest), and the figures and invoices are ready to hand over.
+228|If you work with the Scrada add-on, your invoices and payments land in your bookkeeping automatically, which is where the return starts. Without that connection you pass the PDFs or the UBL invoices to your accountant. In both cases the rates are already split correctly, so there is nothing left to untangle.
+229|Brussels accommodation levy &amp; annual report
+230|Privacy &amp; <em>data</em>
+231|Where your guest data sits, for how long, and who can get at it. Questions your guest is going to ask you one day, and that the GDPR supervisor already wants answered.
+232|Hosting
+233|Where is my <em>guest data</em>
+234|rumo runs on servers inside the EU (Frankfurt). No American cloud, no data transfer outside the EEA. GDPR-compliant by design, not as an afterthought.
+235|Backups are encrypted and sit at a second EU location. Should the main data centre be unreachable, your rumo is back within the hour, with data at most five minutes old.
+236|Retention
+237|How long data is <em>kept</em>
+238|<strong>Invoice and accounting data:</strong> 10 years (VAT and company law)
+239|<strong>Guest registration data:</strong> according to police regulations, usually 5 years
+240|<strong>Marketing consent:</strong> until withdrawn by the guest
+241|<strong>Other personal data:</strong> up to 2 years after the last stay
+242|After the retention period personal data is anonymised automatically. The accounting figures stay (compulsory), the name and details disappear.
+243|GDPR
+244|A guest asks for their data to be <em>erased</em>
+245|GDPR right to be forgotten. Find the guest in rumo, click <em>anonymise</em>. Personal data is replaced by a hash. Financial records stay (legally required for 10 years) but can no longer be traced to a person.
+246|For data portability: one click generates a ZIP with all that guest's data, ready to send on to the guest themselves.
+247|Users &amp; <em>roles</em>
+248|Who may do what in rumo. Four roles, not fifty tick boxes. Enough to give a receptionist, housekeeping and an accountant each their own rumo, without an afternoon of explaining.
+249|Roles
+250|The four <em>roles</em> in rumo
+251|<strong>Owner:</strong> everything. Rates, invoicing, user management, integrations, KPIs
+252|<strong>Receptionist:</strong> reservations, checking in and out, invoicing. No rates, no user management, no integration choices
+253|<strong>Housekeeping:</strong> room status and cleaning list only. No prices, no guest data beyond a name
+254|<strong>Accountant:</strong> read-only rights on invoice data, VAT reports, exports
+255|No 47 tick boxes to combine. Four roles that work in practice. Want something outside that? Send us a message and we will look at whether it fits.
+256|Inviting
+257|<em>Inviting</em> a colleague
+258|Settings → users → <em>+ invite</em>. Enter an email, choose a role. Your colleague gets a mail, chooses their own password, 2FA is on by default. Withdrawing access again is one click.
+259|An external accountant who wants to look in now and then? Give them the <em>Accountant</em> role and set expiry to six months. They cannot break anything and drop away automatically after the term.
+260|Audit
+261|Who did what: the <em>audit log</em>
+262|Every change that matters (cancellation, price adjustment, refund, user creation, invoice change) is logged with the time, the user and the old/new value. Unchangeable, not even by the owner.
+263|Handy for internal questions ("who gave that discount?"), fraud checks, or when the accountant wants to trace something. And it protects you against false claims, because you can always look back.
+264|Troubleshooting
+265|When something does not work. Not "open a ticket and wait three days", but "click here, look there, and if it is still odd you ring us".
+266|My price change is not on <em>Booking</em>
+267|Three checks, in this order:
+268|<strong>rumo status log:</strong> has the change left? If not, it is at your end (browser conflict, not saved)
+269|<strong>Sending status:</strong> has the change been forwarded? If not, it is in the connection itself (mapping or access)
+270|<strong>Booking extranet:</strong> arrived? If so, all is well and it is in the OTA cache (a few minutes' patience)
+271|Click the change in the status log and you get the exact error: mapping not found, OTA token expired, price below min rate, or something else. Not solved in five minutes? Send a WhatsApp and we will look straight away.
+272|The <em>city tax</em> on the invoice is wrong
+273|The three most common causes:
+274|The age rule is not applied correctly (some municipalities: no tax under 12 or 18, date of birth missing or wrong)
+275|The wrong municipality assigned to your hotel (rare, but it happens after a move or a merger)
+276|The municipal rule has changed and we have not patched it yet
+277|Open the booking, click the tax line, and you get the calculation details (rule, base, age, number of nights). Is the rule itself out of date? Give us a shout. We update municipal rules centrally for all rumo hotels, not per hotel.
+278|Correction
+279|I have <em>charged</em> a wrong night or price
+280|<strong>Before the invoice has been sent:</strong> open the booking, adjust the price line, rumo recalculates automatically. The change is in the audit log with the old and the new value.
+281|<strong>After the invoice:</strong> make a credit note for the wrong amount and then a new invoice for the right amount. Both hang together in the audit trail; your accountant sees the correction neatly without you having to explain anything.
+282|OTA
+283|The connection with an OTA is <em>broken</em>
+284|Symptom: new bookings do not come in, prices do not synchronise, or you get a red warning in rumo. Open <em>settings → channels</em> and look at the coloured dot next to each OTA.
+285|Red = connection broken (often an expired token or a credential changed in the OTA extranet). Click the OTA, choose <em>reconnect</em>. With OAuth channels (Airbnb, some Booking set-ups) you have to log in to the OTA again and authorise. Two minutes' work, no support ticket needed.
+286|rumo is slow or <em>unreachable</em>
+287|First reflex: check <a href="https://status.rumo.eu" style="color:var(--terra-dark);">status.rumo.eu</a>. That is where we see outages before we report them. No outage visible but it does not work for you? Hard refresh (Ctrl+Shift+R / Cmd+Shift+R), another tab, another browser, another network connection.
+288|Still not working? Send us a WhatsApp with a screenshot of what you see. No queue, no ticket system, just a message and we will look.
+289|Rudy, your <em>AI assistant</em>
+290|No chatbot. No FAQ search. A real assistant who carries out a number of concrete tasks for you in rumo, explains how the rest works, and says honestly what you have to do yourself. Rudy works alongside the receptionist, not with the guest: he never talks to your guests directly.
+291|What is Rudy?
+292|What <em>Rudy</em> can do, in one paragraph
+293|Rudy reads these articles, your handbook and your documents, and knows rumo from the inside. Concretely he takes a handful of time-consuming things off your hands: creating a reservation, making a quote out of a request mail from a guest, putting a group list with names into the right rooms, and importing a list of guests or bookings from an Excel or a PDF. He also looks things up (your figures, a procedure in the handbook), explains how something in rumo works, and drafts an answer to a guest message that you then send.
+294|You simply ask in your own language. He proposes, you check and confirm. What he cannot do himself, he says honestly.
+295|What he does
+296|What Rudy concretely <em>does for you</em>
+297|A defined list, not a magic wand. Concretely:
+298|Creating a reservation (guest, room, dates)
+299|Making a quote out of a request mail: he lines it up as an option with a confirmation link for the guest, and drafts a reply mail with it
+300|Filling a pasted group or rooming list into the right rooms (a preview first; only after your OK does he write)
+301|Importing guests, bookers, companies or bookings from an Excel or a PDF
+302|Reading in inspection certificates and prevention documents and lining them up in a queue, so that all you have to do is confirm them
+303|Looking up your figures (revenue, occupancy, city tax, outstanding amounts) and answering a question about them
+304|Drafting an answer to a guest message in the Inbox; you send it
+305|With everything he writes away he shows you a preview first and waits for your confirmation. He never invents figures or facts: if he does not know something, he says so.
+306|What he does <em>not</em> do
+307|What Rudy does <em>not</em> do
+308|Two kinds. First, things he <strong>could do but deliberately leaves alone</strong>, because it is not work for an assistant:
+309|No automatic credit notes, refunds or penalty charges; he reports those to you (or your receptionist), with a proposal
+310|No pricing policy: he does not decide whether your price is too high or too low
+311|Second, things he simply <strong>cannot</strong> do, and that you therefore do yourself:
+312|No stop-sell or open-sell, no min-stay, max-stay, CTA or CTD. You set restrictions to the OTAs yourself in the channel manager.
+313|No adjusting prices or pushing them to the OTAs, and no bulk price changes
+314|No sending payment links to guests; you do that from the payment screen of the booking
+315|No talking to the guest directly: he drafts an answer, you press send
+316|No actions in the OTA extranets (Genius promo, Mobile Rate, listing content)
+317|The idea: Rudy does the time-consuming preparation, you keep the buttons that matter.
+318|Import
+319|Letting Rudy read a <em>file</em>
+320|Rudy can read an Excel or PDF file and pull bookings, guests, companies or rates out of it. He shows what he found and you approve before anything is written away.
+321|The same goes for a pasted group list: he links every name to a room, you check. And prevention documents that come in he sorts into the right folder of your file.
+322|How to ask
+323|How you ask Rudy something
+324|Just plain language. "Make a quote for this request" (with the mail pasted in), "put this group list into the right rooms", "what was my revenue last week per channel", "what is our procedure for a late arrival". No command syntax. No menus to remember.
+325|If he is unsure or the question is ambiguous, he asks. If he cannot do something, he says so.
+326|Train Rudy
+327|Giving him short <em>hotel facts</em>
+328|Next to your handbook there is a list of short facts you fill in yourself: the breakfast hours, where the parking is, whether there is a lift. Handy for what is too short to write a handbook article about.
+329|Per fact you choose whether Rudy may also use it when he drafts an answer for a guest. That way internal information stays internal.
+330|Cheatsheet
+331|Try asking <em>Rudy</em> this
+332|A series of examples Rudy can handle. Plain language, no syntax. With everything he writes away he proposes first and you approve.
+333|You ask
+334|What Rudy does
+335|"Book room 12 for Janssens from 3 to 5 May"
+336|Creates the reservation with the right price. You check.
+337|"Make a quote for this request" (mail pasted in)
+338|Lines up an option with a confirmation link, and drafts the reply mail in the guest's language.
+339|"Put this rooming list into the right rooms"
+340|Shows a preview first: who in which room. Only after your OK does he write it away.
+341|"Import this Excel with guests"
+342|Reads the file, shows what he recognises, imports after confirmation.
+343|"Here are 10 inspection certificates"
+344|Reads them in and lines them up in the queue; you confirm.
+345|"What was my revenue last week per channel?"
+346|Shows a table. No action needed.
+347|"Compare my occupancy this month with last year"
+348|Two percentages plus the difference.
+349|"What was my city tax in March?"
+350|The amount, taken from the report.
+351|"Which invoices are still open?"
+352|The list of outstanding amounts from the debtors report.
+353|"What is our procedure for a late arrival?"
+354|Looks it up in your handbook and quotes the right article.
+355|"Draft an answer to this Booking.com message"
+356|Proposes an answer in the guest's language. You send it.
+357|"Send a payment link to booking BR-1234"
+358|<em>He does not do that himself.</em> Explains where you do that on the booking.
+359|"Give guest Janssens a refund of €80"
+360|<em>He does not do that himself.</em> Sends a notification to your receptionist with the proposal.
+361|Something unclear?
+362|Missing a <em>piece of explanation?</em>
+363|Send us a message. We add to it, and you get an answer straight away: no queue, no ticket system.
+364|Send us an email <span>→</span>
+365|Try it yourself
+366|No demo call.<br>Just <em>14 days</em> to play.
+367|No credit card, no obligations, no "account manager" ringing you every week. A demo environment full of made-up reservations. Not for you? Then it quietly disappears.
+368|Try it free for 14 days <span>→</span>
+369|No credit card · Cancellable monthly after 6 months · <a href="overstappen.html">Free data migration</a>
+370|<a href="https://wa.me/32485382828">WhatsApp</a>
+371|<a href="features.html#integraties">Booking.com</a>
+372|<a href="features.html#integraties">Airbnb</a>
+373|<a href="features.html#integraties">Exact Online</a>
+374|<a href="features.html#integraties">Peppol</a>
+375|<span>© 2026 Rumo · Ghent, BE</span> <span><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+376|Menu
