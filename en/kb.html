@@ -417,7 +417,7 @@
       <p class="lead" style="margin-top:1rem;font-size:1rem;">This is how you do something <strong>in rumo</strong>. Looking for how the trade itself works, whatever software you use? That is <a href="explained/index.html">Explained</a>.</p>
     </div>
     <div class="page-header-side">
-      12 categories<br> <strong>53 pieces</strong>
+      <span data-kb-telling="categorieen">21</span> categories<br> <strong><span data-kb-telling="artikels">94</span> pieces</strong>
     </div>
   </div>
   <div class="page-header-ribbon">
@@ -455,14 +455,23 @@
         <ul>
           <li><a href="#aan-de-slag" class="active">Getting started<span class="kb-nav-count">4</span></a></li>
           <li><a href="#reservaties">Reservations<span class="kb-nav-count">10</span></a></li>
+          <li><a href="#profielen">Guests &amp; companies<span class="kb-nav-count">4</span></a></li>
+          <li><a href="#allotments">Groups &amp; allotments<span class="kb-nav-count">4</span></a></li>
           <li><a href="#housekeeping">Housekeeping<span class="kb-nav-count">4</span></a></li>
+          <li><a href="#fnb">Breakfast &amp; F&amp;B<span class="kb-nav-count">3</span></a></li>
+          <li><a href="#deurcodes">Door codes<span class="kb-nav-count">4</span></a></li>
           <li><a href="#channels">Channel manager<span class="kb-nav-count">5</span></a></li>
           <li><a href="#tarieven">Rates<span class="kb-nav-count">5</span></a></li>
           <li><a href="#facturatie">Invoicing &amp; Peppol<span class="kb-nav-count">7</span></a></li>
           <li><a href="#statistieken">Statistics<span class="kb-nav-count">4</span></a></li>
           <li><a href="#belgie">Belgian compliance<span class="kb-nav-count">4</span></a></li>
           <li><a href="#privacy">Privacy &amp; data<span class="kb-nav-count">3</span></a></li>
+          <li><a href="#handboek">Handbook<span class="kb-nav-count">4</span></a></li>
+          <li><a href="#preventie">Prevention<span class="kb-nav-count">4</span></a></li>
+          <li><a href="#trainingshotel">Training hotel<span class="kb-nav-count">3</span></a></li>
           <li><a href="#gebruikers">Users &amp; roles<span class="kb-nav-count">3</span></a></li>
+          <li><a href="#instellingen">Settings<span class="kb-nav-count">4</span></a></li>
+          <li><a href="#support">Help from Rumo<span class="kb-nav-count">3</span></a></li>
           <li><a href="#troubleshooting">Troubleshooting<span class="kb-nav-count">5</span></a></li>
           <li><a href="#rudy">Rudy<span class="kb-nav-count">7</span></a></li>
         </ul>
@@ -622,6 +631,104 @@
           </div>
         </div>
 
+        <!-- ─────────────── GASTEN & BEDRIJVEN ─────────────── -->
+        <div class="kb-group" id="profielen">
+          <h2 class="kb-group-title">Guests &amp; <em>companies</em></h2>
+          <p class="kb-group-intro">Who has stayed before, which company gets the invoice, and which rate goes with it. The file behind your bookings.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Three kinds</div>
+              <h3 class="kb-article-title">Guest, booker or <em>company</em></h3>
+              <div class="kb-article-body">
+                <p>Three tabs, and the difference matters. The <strong>guest</strong> is whoever sleeps there. The <strong>booker</strong> is whoever made the booking — often the same person, but not with a company or a travel agency. The <strong>company</strong> is the legal entity that gets the invoice.</p>
+                <p>Search works per word: type as many as you like, in any order, and every word has to match something on the profile. "maria smit" and "smit maria" both find Maria Smit. It starts searching from two characters, and it answers with at most a hundred matches at a time — see that limit and your search is too broad, not your file too small.</p>
+                <p>Every profile has a free notes field. That is a memory aid for whoever opens the profile, not a way to select a group of guests: it is not searched and there are no labels.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Price agreements</div>
+              <h3 class="kb-article-title">A <em>fixed rate</em> for a company or a regular guest</h3>
+              <div class="kb-article-body">
+                <p>A booker and a company can both carry a price agreement: a discount percentage or a fixed nightly rate, as one agreement for everything or per room type. That is what gives a corporate client their negotiated rate by itself, without reception having to remember it or retype it.</p>
+                <p><strong>If the booker is linked to a company and both have an agreement, the company's wins. Completely.</strong> Also for a room type the company left blank and the booker did not. That is deliberate: one change on the company has to reach every booker under it. If the booker's own agreement could still slip in, every rate change would mean checking all its bookers one by one.</p>
+                <p>A new reservation gets the rate straight away. On an existing one you are asked first whether the prices should be recalculated — otherwise a booking that has already been discussed would quietly change amount.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Your own booking page</div>
+              <h3 class="kb-article-title">A corporate client who books <em>themselves</em> at their rate</h3>
+              <div class="kb-article-body">
+                <p>A booker can unlock their agreed rate on your own booking page with no account and no password: their email address plus the booker code from their profile is the whole sign-in. It is a lookup, not a session — it holds for that one booking and nothing is remembered afterwards.</p>
+                <p>The discount is worked out again on the server, for the payment and for the reservation that is written. Nothing comes from the guest's browser, so an agreement cannot be claimed by someone who does not have one.</p>
+                <p>Three consequences: a promo code does not combine with a negotiated rate — the agreement wins and the code is refused. Remove the agreement while somebody is mid-booking and that booking is refused with an invitation to start again, rather than quietly going through at the public price. And the sign-in fills in only the name and the email address typed: the rest of the profile stays on the server, because a booker code is short and therefore guessable.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Duplicates</div>
+              <h3 class="kb-article-title">The same guest is in there <em>four times</em></h3>
+              <div class="kb-article-body">
+                <p>That is normal, not a malfunction. The main cause: OTAs never give you your guest's real address. Booking.com and Airbnb send a fresh relay address with every booking, so a returning guest arrives looking like a stranger every time.</p>
+                <p>rumo spots those duplicates itself and shows one card per person, not per combination: four profiles of the same Maria Smit are one card saying "Maria Smit · 4 profiles", with the fields that tell them apart. So the counter counts people.</p>
+                <p><strong>Nothing is ever merged by itself.</strong> Two real people can share a name. Merge them yourself and the reservations and invoices move to the profile you keep while the others disappear; anything already checked in keeps the name recorded at the time, because that is the legal register. A merge cannot be undone, so read the confirmation.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── GROEPEN & ALLOTMENTS ─────────────── -->
+        <div class="kb-group" id="allotments">
+          <h2 class="kb-group-title">Groups &amp; <em>allotments</em></h2>
+          <p class="kb-group-intro">Holding rooms for a conference, a company or a travel agency. What you hold, what comes back, and who gets the bill.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Setting up</div>
+              <h3 class="kb-article-title">Recording a <em>block of rooms</em></h3>
+              <div class="kb-article-body">
+                <p>An allotment holds rooms aside for one party. You record which room type it is and how many of them you hold, between which dates, at which rate, and by when the agreement stops. That last one is the cut-off.</p>
+                <p>Everyone with the page may read: admin, manager and reception. <strong>Creating, changing and deleting is admin and manager.</strong> A receptionist sees the whole picture — the blocks, the pickup, the billing — but does not change the contract. That is enforced on the server, so it holds however you reach the screen.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Availability</div>
+              <h3 class="kb-article-title">What an allotment does to your <em>availability</em></h3>
+              <div class="kb-article-body">
+                <p>Rooms you hold come off what goes out to the channels <em>and</em> off what your own booking page still offers. Hold five twins with two booked out of the block, and three stay withheld on Booking.com, on the other channels and on your own site.</p>
+                <p>Three conditions have to hold: the allotment is active, the rooms have not been released yet, and the day falls inside the stay dates. An allotment without dates withholds nothing. Once the block is fully booked it withholds nothing either, because there is nothing left to hold.</p>
+                <p>One exception: whoever comes through the group's own booking link may use the block up. That is what it is being held for.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Cut-off</div>
+              <h3 class="kb-article-title">What happens at the <em>cut-off</em></h3>
+              <div class="kb-article-body">
+                <p>The cut-off is the moment the agreement stops: whatever the group has not booked by then goes back on general sale. Once a day, in the early hours, rumo looks for allotments whose cut-off has passed and that have not been released, and releases them. The rooms reappear in what goes out to the channels, and every release lands in the history.</p>
+                <p>The cut-off day itself is still yours: the bell shows those allotments so a manager can release earlier. Releasing is one-way — it is recorded once, and a second pass changes nothing.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Facturatie</div>
+              <h3 class="kb-article-title">One invoice for the <em>company</em>, or one per guest</h3>
+              <div class="kb-article-body">
+                <p>An allotment bills in one of two ways. <strong>Individual</strong> is the default: every reservation gets its own invoice, like any other booking. <strong>Central</strong> makes one invoice for the whole contract, in the company's name.</p>
+                <p>On that central invoice go the rooms of every linked reservation (except cancelled ones and no-shows), the extras marked as centrally billed on their reservation, and the city tax only if you set the scope to everything. That is how you send the room to the company and the minibar to the guest. Every line keeps its own detail — room number, guest name, room type, rate, dates and booking reference — so the company can check the invoice against who slept where.</p>
+                <p>Watch the payment terms: on central billing they are <em>not</em> enforced. The company is invoiced afterwards, so there is nothing to collect at booking time. Set <em>prepaid</em> there and it stays what you typed and does nothing. If you want money up front from a company, that is an invoice you send and follow up.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
         <!-- ─────────────── HOUSEKEEPING ─────────────── -->
         <div class="kb-group" id="housekeeping">
           <h2 class="kb-group-title">Housekeeping &amp; <em>room status</em></h2>
@@ -669,6 +776,96 @@
               <div class="kb-article-body">
                 <p>Drag a block on the calendar, choose <em>block</em>, and give a reason (leak, renovation, own use). The room is taken out of the pool for OTA sale during that period. You see the block as a striped zone on the calendar.</p>
                 <p>You block a room yourself on the calendar. Rudy does not line this up for you, but he can explain in plain language where you have to be and what happens then.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── ONTBIJT & F&B ─────────────── -->
+        <div class="kb-group" id="fnb">
+          <h2 class="kb-group-title">Breakfast &amp; <em>F&amp;B</em></h2>
+          <p class="kb-group-intro">How many covers there are tomorrow, which rooms they belong to, and what the kitchen needs to know about each of them. An overview, not a till.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">The count</div>
+              <h3 class="kb-article-title">Which day does a <em>meal</em> belong to?</h3>
+              <div class="kb-article-body">
+                <p>This is the rule that surprises people, and it follows the stay, not the calendar. <strong>Breakfast is the morning after a night:</strong> whoever arrives today has breakfast tomorrow, whoever leaves tomorrow still has one that morning. <strong>Dinner is the evening of a night,</strong> so whoever leaves gets none. <strong>Lunch is only for those in house:</strong> not on the arrival day and not on the departure day.</p>
+                <p>One cover is one person, one meal, one day. If the meal sits in the rate plan, every guest in the room counts every day. If it is an extra, the booked quantity is spread over the right days: a breakfast for two of the four mornings occupies exactly those two.</p>
+                <p>There are three meals: breakfast, lunch and dinner. Which of them your hotel runs you set in the settings. At least one is always on — switching the last one off does not work and falls back to breakfast.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Allergies</div>
+              <h3 class="kb-article-title">What the kitchen <em>has to know</em> about a room</h3>
+              <div class="kb-article-body">
+                <p>Every room on a reservation can carry F&amp;B labels and a free note. There is no separate diet or allergy field: an allergy is recorded as a label or a note, and it shows up in red on the kitchen list and on the print-out.</p>
+                <p>A catalogue item can also be marked as a <em>meal note</em> rather than a meal. That gives the kitchen a line ("late breakfast", "no pork") without adding a cover. A room with only notes is on the list all the same, with zero covers.</p>
+                <p>Ticking off who has been is possible, and two people working the same service see each other's ticks appear without refreshing. It is an aid for the floor and nothing more: it changes no counts, it is not billed and it does not reach the report.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Walk-ins</div>
+              <h3 class="kb-article-title">Somebody sits down <em>unexpectedly</em></h3>
+              <div class="kb-article-body">
+                <p>A walk-in here is a guest who is in house and had not booked that meal. You add one from that meal's own tab: pick the room, the number of people, done. It lands as an ordinary billable extra on their reservation, for that one day, and a mistake can be undone straight away.</p>
+                <p>Two limits. Rooms that already have the meal are not offered, so you cannot double-book anyone. And a restaurant guest who is not staying at the hotel cannot be recorded here: every walk-in hangs on a booking.</p>
+                <p>The price comes from the first catalogue item ticked for that meal. If that item does not exist, the walk-in cannot be added at all.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── DEURCODES ─────────────── -->
+        <div class="kb-group" id="deurcodes">
+          <h2 class="kb-group-title">Door codes &amp; <em>keys</em></h2>
+          <p class="kb-group-intro">A numeric code instead of a card. When the guest gets it, what reception sees, and what happens when the network drops. Paid add-on.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">The idea</div>
+              <h3 class="kb-article-title">One code per <em>room</em>, not per guest</h3>
+              <div class="kb-article-body">
+                <p>Each room has one fixed identity in the lock system, and that carries that room's key. rumo never creates or deletes those identities; it only changes the code on them. A guest arrives and the room's code becomes their code. They leave and it is replaced by one nobody knows, which locks them out immediately.</p>
+                <p>Two consequences. There is <strong>one code per room at a time</strong>, so two guests of the same booking with two rooms have two different codes. And the lock's own log says "room 101", not the guest's name — rumo knows who held the code at any moment, the lock does not.</p>
+                <p>This is the <strong>Key Management</strong> add-on, not a standard part. Without it there is no key icon on a reservation, no tab in the settings and no card in the guest portal. Today rumo works with Salto KS; Dormakaba is announced but not connected yet.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Timing</div>
+              <h3 class="kb-article-title">When the guest <em>gets</em> their code</h3>
+              <div class="kb-article-body">
+                <p>The code appears when two things are true: the previous guest has been checked out, and housekeeping has set the room to clean or inspected. Not before — a code that exists earlier opens a door with somebody still behind it.</p>
+                <p>On top of that you can require the guest to check in online first, to pay their balance, or both. Those are guest-portal settings, separate from the settings for checking in and paying themselves. Until then the portal explains what is missing.</p>
+                <p>The code is <strong>never sent by email</strong>. An email cannot be taken back and sits in a mailbox for years; a portal link can be withdrawn and the card can close again.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">At the desk</div>
+              <h3 class="kb-article-title">What <em>reception</em> sees and can do</h3>
+              <div class="kb-article-body">
+                <p>On a reservation, every room row has a key icon that opens the door-code panel. The code is there in full, with no extra click — somebody with a guest on the phone should not have to hunt for six digits. If there is no code yet, it says why: the room is still held by another booking (named), the room is being prepared, the arrival day has not come, or the lock system did not answer.</p>
+                <p>There is a button for a new code. It replaces that room's code immediately, for everyone who has it, even if the guest is already inside — so the guest has to be told the new one. It only works from the booking that currently holds the code; from another reservation it is refused, otherwise you would quietly change the code of whoever is actually in the room.</p>
+                <p>Opening a door remotely is possible too, and that is recorded in rumo with the name of whoever pressed the button. The lock system itself only ever sees "rumo".</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">When it fails</div>
+              <h3 class="kb-article-title">No network, no <em>new</em> codes</h3>
+              <div class="kb-article-body">
+                <p>A digital key is not a replacement for a way in that needs no electricity. Keep a set of tags at reception and keep the mechanical override your installer supplied within reach.</p>
+                <p>If the connection is gone for longer, the codes issued in the meantime never reached the locks. Issue them again afterwards or hand out tags.</p>
+                <p>The button in the portal that opens a door needs the phone, rumo, the vendor and the gateway all at once, so it is the first thing to fail. That is why the card always says "not working? use your code" — and if the code does not work either, it is the desk.</p>
               </div>
             </article>
 
@@ -1029,6 +1226,146 @@
           </div>
         </div>
 
+        <!-- ─────────────── HANDBOEK ─────────────── -->
+        <div class="kb-group" id="handboek">
+          <h2 class="kb-group-title">Handbook &amp; <em>announcements</em></h2>
+          <p class="kb-group-intro">Your own procedures in one searchable place, and short notices that disappear by themselves. Everyone reads; writing is for managers and admins.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Categories</div>
+              <h3 class="kb-article-title">Not everything is <em>for everyone</em></h3>
+              <div class="kb-article-body">
+                <p>Articles live in categories, and a category can be shielded per role. A "Reception" category open only to receptionists does not appear for housekeeping — and Rudy does not quote from it to them either. A category with no shielding is for everyone. Admins and managers always see everything.</p>
+                <p>That matters more than it sounds: a housekeeper looking at forty reception articles also scrolls past the four that are meant for her.</p>
+                <p><strong>Deleting a category deletes everything in it</strong>, articles and attachments included. The order inside a category is yours to set, on a phone too.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Read</div>
+              <h3 class="kb-article-title">Change a procedure and it is <em>unread again</em></h3>
+              <div class="kb-article-body">
+                <p>Somebody confirms per article that they have read it, and that confirmation hangs on the <em>version</em> that stood there at the time. Change the article and it comes back on the list of exactly those people.</p>
+                <p>Not as a punishment, but because it is true: they read something that is no longer there. And that is the most dangerous kind of not-knowing, because whoever knew the old version will not go back and look on their own.</p>
+                <p>The old confirmation is kept. That is your proof that they did know the previous version, and that is exactly what you want to be able to show when something ever happens.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Writing</div>
+              <h3 class="kb-article-title">Photos, attachments and a <em>video</em></h3>
+              <div class="kb-article-body">
+                <p>You type an article straight into rumo. A photo goes in the text or hangs on it as an attachment; PDFs and images open in the screen itself, up to 25 MB each.</p>
+                <p>A photo is not decoration here. A sentence describes a standard, a photo <em>is</em> the standard. That saves you half an hour of discussion per new colleague.</p>
+                <p>A video you add as a link to YouTube or Vimeo, and it plays in the article itself. Uploading a video file is not possible, and that has one consequence you should know: the video sits at YouTube, not in rumo. If somebody sets it to private, your procedure is empty without you noticing.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Announcements</div>
+              <h3 class="kb-article-title">The department decides who <em>sees it</em></h3>
+              <div class="kb-article-body">
+                <p>Next to the handbook sit announcements: a note to the team rather than a procedure to look up. Each has a department and optionally an expiry date, and an expired announcement disappears by itself — it stays through its expiry day and is gone the day after.</p>
+                <p>The department is not a label but the audience. Pick Housekeeping and housekeeping sees it and nobody else. Managers and admins always see everything, whatever was chosen: they write them. If there is a department rumo does not know — an old announcement from before — it goes to everyone rather than to nobody.</p>
+                <p>Announcements work on the same principle as articles: they stay in the bell until confirmed, and an edited announcement comes back.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── PREVENTIE ─────────────── -->
+        <div class="kb-group" id="preventie">
+          <h2 class="kb-group-title">Prevention &amp; <em>safety</em></h2>
+          <p class="kb-group-intro">Inspections, certificates, registers and who came to work in your building. What expires, where the paper is, and what you did. Paid add-on.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Installations</div>
+              <h3 class="kb-article-title">The status follows from the <em>expiry date</em></h3>
+              <div class="kb-article-body">
+                <p>Per installation you record what it is, how many there are, when it was last inspected, until when the current certificate is valid, who maintains it and who inspects it. Those last two are deliberately separate names, because that is the question you ask a year from now.</p>
+                <p>You do not set the status yourself: expired, within thirty days, or in order — that follows from the date. An installation <em>without</em> a date gets no status, and that is not the same as being in order: it is simply never flagged. So fill one in even when you have to estimate.</p>
+                <p><strong>rumo does not know the statutory interval for your installation.</strong> What you fill in is what it works with, and you take that from the certificate in your hand. An expired inspection blocks nothing in rumo — the warning and the paper trail are the value; what it really costs you sits with your insurer.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Tasks</div>
+              <h3 class="kb-article-title">A task remembers the date, a <em>checklist</em> leaves proof</h3>
+              <div class="kb-article-body">
+                <p>Tasks are the recurring routines: check the emergency lighting, test the fire alarm, flush the rarely used taps. Each task has a frequency and a next due date; ticking one off sets today as the last execution and moves the next one on.</p>
+                <p>Two things to know. Monthly means thirty days and annually 365 — not calendar months, so a task done on the 31st drifts. And a task keeps only its <em>most recent</em> execution: there is no history of past rounds.</p>
+                <p>If you want to be able to show <em>that</em> you did it, use a checklist. That leaves a trail: who carried it out, what came out per point, and a signature. A finished round becomes a PDF with your documents by itself, and that is what makes it usable as evidence.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Contractors</div>
+              <h3 class="kb-article-title">Who <em>came to work</em> in your building</h3>
+              <div class="kb-article-body">
+                <p>Contractors do not have to be typed in by reception. The visit register carries a sign-in link with a QR code: hang it at the service entrance or send it with the work order, and the contractor registers themselves without a rumo login.</p>
+                <p>They fill in their name and company, phone, licence plate, when they arrive and leave, what kind of work and where, who their contact is, and which risk classes apply. They also state whether a work permit is needed and whether they were given a <strong>master key</strong> — one that opens every room. Then they sign for the safety instructions, on screen.</p>
+                <p>Those visit records are deleted automatically after two years. That is a privacy measure and it is not configurable, so export anything you want to keep before then.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Warnings</div>
+              <h3 class="kb-article-title">Thirty, fourteen, seven and <em>one day</em></h3>
+              <div class="kb-article-body">
+                <p>A nightly job looks at the expiry dates of your documents and warns thirty, fourteen, seven and one day ahead. It runs in the early morning, on your hotel's own clock.</p>
+                <p>The bell is worked out live when you open it: installations expiring within thirty days, tasks that are overdue, checklists that are due, an evacuation drill older than a year, open incidents, and documents waiting in the queue. The bell is for managers and admins.</p>
+                <p>Three honest limitations. These warnings are <strong>in the app only</strong>: no email and no push notification goes out for an expiring certificate, so somebody has to open rumo. The nightly job only watches documents. And the installations counter has no lower bound, so something that expired two years ago keeps being counted under "soon" — read that number as "needs attention".</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── TRAININGSHOTEL ─────────────── -->
+        <div class="kb-group" id="trainingshotel">
+          <h2 class="kb-group-title">The <em>training hotel</em></h2>
+          <p class="kb-group-intro">A practice copy of your own hotel, with made-up guests and the wires to the outside cut. Free, and it does not count as a second hotel.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">What is switched off</div>
+              <h3 class="kb-article-title">What <em>cannot</em> get out</h3>
+              <div class="kb-article-body">
+                <p>That is the first question to ask about any practice environment, and here the answer is four things. <strong>Mail</strong> to guests is blocked: no confirmation, no invoice, no pre-check-in link. You can set the mails to go to a short list of your own colleagues so you see them arrive; "everyone" is not an option in a training hotel.</p>
+                <p><strong>The channel manager</strong> cannot be connected, so no availability and no price ever leaves for Booking.com, and no OTA booking comes in. <strong>Payments</strong> do not move: the screens, the payment links and the invoices all work, only the money stays put. And <strong>the door locks</strong> are not carried over, so a practice check-in never opens a real door.</p>
+                <p>Your own web address does not come along either, and the public booking page is closed by default. The guest portal does stay open, so the whole guest flow can be rehearsed.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Practising</div>
+              <h3 class="kb-article-title">Rudy gives the assignment, the <em>database</em> marks it</h3>
+              <div class="kb-article-body">
+                <p>Training is a conversation with Rudy. He proposes one exercise, says in two sentences why it matters, and gives the assignment. You do it in the app, not in the chat. Then he looks in the data to see whether it is really there.</p>
+                <p><strong>He looks at the result, not at your clicks.</strong> An exercise is finished when the situation in rumo is right: the booking is checked in, the bill is at zero, the credit note exists. How you got there is your business, and there is usually more than one right route. Rudy does not decide whether you passed either: he asks the database and reads back what it said. He cannot tick off work that is not there, and he cannot refuse work that is.</p>
+                <p>A few exercises are on your honour — reading the colour legend, moving around the calendar, walking through the guest portal. Those leave nothing in the data, so there is nothing to look up. Rudy says so plainly rather than pretending to check.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">What you get</div>
+              <h3 class="kb-article-title">You only see what applies <em>to you</em></h3>
+              <div class="kb-article-body">
+                <p>The course falls into four chapters: reception, the guest portal, housekeeping and F&amp;B. Which you see depends on your role — a housekeeper gets the cleaning chapter and a receptionist does not, and somebody with both gets both. The exercises are also filtered by the add-ons your hotel has and by what is actually configured.</p>
+                <p>An exercise never names a room number or a rate: those differ per hotel. It says "today's arrival", and rumo picks a real one from the practice data when the exercise starts. If there is nothing suitable in there, it says so rather than sending you after something that cannot be done.</p>
+                <p>Skipping is always allowed, anything can be done again, and stopping halfway is fine: come back later and Rudy picks up where you left off. <strong>Your progress is your own</strong> — nobody else sees it, managers included. No score, no certificate, no report. And the assignments come in your language: Dutch, French or English.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
         <!-- ─────────────── GEBRUIKERS & ROLLEN ─────────────── -->
         <div class="kb-group" id="gebruikers">
           <h2 class="kb-group-title">Users &amp; <em>roles</em></h2>
@@ -1065,6 +1402,95 @@
               <div class="kb-article-body">
                 <p>Every change that matters (cancellation, price adjustment, refund, user creation, invoice change) is logged with the time, the user and the old/new value. Unchangeable, not even by the owner.</p>
                 <p>Handy for internal questions ("who gave that discount?"), fraud checks, or when the accountant wants to trace something. And it protects you against false claims, because you can always look back.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── INSTELLINGEN ─────────────── -->
+        <div class="kb-group" id="instellingen">
+          <h2 class="kb-group-title">Settings &amp; your <em>subscription</em></h2>
+          <p class="kb-group-intro">Where your hotel is set up, how saving works, and what happens when you switch an add-on on or off.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Saving</div>
+              <h3 class="kb-article-title">What happens when you <em>save</em></h3>
+              <div class="kb-article-body">
+                <p>Settings is for managers and admins; reception, housekeeping and F&amp;B do not see it. Your edits stay on your screen until you save: a bar appears at the bottom the moment something is unsaved, and moving away with unsaved work asks first.</p>
+                <p>Three things that protect your configuration. <strong>Only what you touched is written</strong>, so two people can work in different parts without erasing each other. <strong>The confirmation waits for the server</strong>: only once it has accepted does it say saved. And if a colleague — or Rudy — worked in the same list meanwhile, saving on top of a change you never saw is refused, with a message saying what happened.</p>
+                <p>One category deserves extra care: lists that are replaced as a whole. Room types, rate plans, cancellation policies, extras, email templates and the channel manager's rates. Saving there means: this list is the list from now on, so anything missing from it is gone.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">City tax</div>
+              <h3 class="kb-article-title">A rate that changes <em>next month</em></h3>
+              <div class="kb-article-body">
+                <p>City tax you set up under the general details: on or off, what it is called, a fixed amount per guest per night or a percentage of the room price, which VAT rate it carries, and whether it appears as its own line on the invoice.</p>
+                <p>If your municipality changes the amount, you do not have to wait until it applies: you add a <strong>scheduled change</strong> with the date it takes effect, as many as you need. Which rate a booking gets follows from its <em>arrival date</em>, not from when it was booked. Enter January's increase in November and every stay from January picks it up, including bookings already in the house.</p>
+                <p>The amount is never frozen onto a booking: it is recalculated wherever it is shown, invoiced or charged. So a rate change reaches every stay that has not been invoiced yet.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Add-ons</div>
+              <h3 class="kb-article-title">Trying an add-on for <em>five days</em></h3>
+              <div class="kb-article-body">
+                <p>Five add-ons can be started as a free five-day trial instead of paying for them straight away: Prevention, Upsell, Advanced Housekeeping, Smart Pricing and the OTA inbox. Switching one on starts the trial directly; there is no separate button to skip it.</p>
+                <p>If nothing else happens, the add-on switches itself off after five days, with no charge. About a day before that, admins and managers get a push notification in case it has been forgotten. There is a button to confirm the add-on right away, but none to stop early: not wanting it after all means letting it run out. Each trial is a one-time offer per hotel.</p>
+                <p>Three add-ons have none. White Label and Key Management do not, because a trial ending while guests are in house does not hide a tab but takes down a booking domain or a door key in use at that moment. Peppol and Full Scrada do not, because switching either on immediately sends something real to the outside world — an invoice on the Peppol network or a booking into your accounts — that you do not take back when the trial ends.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Trial</div>
+              <h3 class="kb-article-title">What happens when your <em>trial</em> runs out</h3>
+              <div class="kb-article-body">
+                <p>A hotel on trial is a complete rumo: nothing is switched off and nothing is crippled, and everything you set up during the trial is kept if you become a customer. The end date can be moved in either direction — an extra week is a question, and stopping earlier is possible too.</p>
+                <p>Once that date passes, the hotel goes <strong>read-only</strong> rather than dark: everyone can still log in and read everything — reservations, invoices, guests — but nothing new is created and nothing changes. That lasts fourteen days. It is your window to decide, to get your data out, or to become a customer. After it, the hotel closes.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ─────────────── HULP VAN RUMO ─────────────── -->
+        <div class="kb-group" id="support">
+          <h2 class="kb-group-title">Help from <em>Rumo</em></h2>
+          <p class="kb-group-intro">One door: you ask Rudy, and you ask Rudy for a person whenever you want one. No email address, no ticket number to remember.</p>
+
+          <div class="kb-articles">
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Where</div>
+              <h3 class="kb-article-title">Asking a question, and <em>handing it over</em></h3>
+              <div class="kb-article-body">
+                <p>Every question starts with Rudy, and under every answer sits the way to a person. One line and somebody at Rumo takes it over. It is the same thread: what you wrote stays, there is nothing to retype or paste.</p>
+                <p>Once it is a support conversation, only people write in it. No assistant any more, not even Rudy — what you hand over is by definition the part he could not solve.</p>
+                <p>Questions still running sit at the bottom of that same chat list. The <strong>Support</strong> page is the archive: everything you ever asked, answered and closed ones included. You do not start a question there, you look something up. Every role may ask, housekeeping and F&amp;B included — somebody who cannot ask for help works around the problem instead, and that problem was the thing worth reporting.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Answer time</div>
+              <h3 class="kb-article-title">Within <em>24 hours</em>, and what that means</h3>
+              <div class="kb-article-body">
+                <p>The promise is an answer within twenty-four hours, and that means twenty-four hours on the clock: a question asked at 14:30 is answered by 14:30 the next day. It counts until the <em>first</em> answer, not until everything is solved.</p>
+                <p>Days Rumo is not there do not count. The desk works Monday to Friday, so a question asked on Friday at 14:30 is due Monday at 14:30. Belgian public holidays work the same way, and Rumo can also mark a single day closed. Outside those days the clock keeps running, evenings and nights included: it measures how long you have been waiting, not how long Rumo has been at its desk.</p>
+                <p>There is no promise on how long a <em>fix</em> takes. That is deliberate: a bug that needs three weeks of work is not a broken promise; an unanswered question is.</p>
+              </div>
+            </article>
+
+            <article class="kb-article">
+              <div class="kb-article-kicker">Looking in</div>
+              <h3 class="kb-article-title">Letting Rumo look at <em>your</em> hotel</h3>
+              <div class="kb-article-body">
+                <p>Half of support is Rumo asking you to open a screen and read out what it says. That can be skipped, if you allow it. Handing a conversation to a person gives that permission with it; there is no second dialog with a tick box. A line in your conversation says it happened, with the link to withdraw it.</p>
+                <p>Two things that surprise people. The permission can be <strong>wider than the person who gave it</strong>: whoever looks in at Rumo sees your hotel the way an admin does, even when the question came from a housekeeper. And it hangs <strong>on the conversation, not on the person</strong>: nobody gets standing access, and permission on one ticket says nothing about the next.</p>
+                <p>What nobody at Rumo can do, permission or no permission, is <em>change something</em>. Not a booking, not a price, not a setting: every attempt is refused, on every screen. The permission ends when the ticket closes, and there is no timer — a ticket that stays open for weeks keeps it alive for weeks. Withdrawing is always possible, and your own log names which screen whoever at Rumo opened, with their name and the time.</p>
               </div>
             </article>
 
@@ -1341,6 +1767,18 @@ document.querySelectorAll('.kb-nav a[href^="#"]').forEach(function (a) {
   var teller = a.querySelector('.kb-nav-count');
   if (groep && teller) teller.textContent = groep.querySelectorAll('.kb-article').length;
 });
+
+// De twee getallen in de kop tellen we hier ook, om dezelfde reden als de
+// tellers hierboven: een hardgecodeerd "12 categorieën" klopte al niet meer
+// twee artikels later, en niemand ziet dat.
+(function () {
+  var cats = document.querySelectorAll('.kb-group').length;
+  var arts = document.querySelectorAll('.kb-article').length;
+  var c = document.querySelector('[data-kb-telling="categorieen"]');
+  var a = document.querySelector('[data-kb-telling="artikels"]');
+  if (c) c.textContent = cats;
+  if (a) a.textContent = arts;
+})();
 
 document.documentElement.dataset.fadeReady = '1';
 

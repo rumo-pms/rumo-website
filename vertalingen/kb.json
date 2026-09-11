@@ -23,9 +23,9 @@
     "en": "This is how you do something <strong>in rumo</strong>. Looking for how the trade itself works, whatever software you use? That is <a href=\"uitgelegd/index.html\">Explained</a>.",
     "fr": "Ici, vous trouvez comment faire quelque chose <strong>dans rumo</strong>. Vous cherchez comment le métier fonctionne, quel que soit le logiciel ? C'est <a href=\"uitgelegd/index.html\">Expliqué</a>."
   },
-  "12 categorieën<br> <strong>53 stukjes</strong>": {
-    "en": "12 categories<br> <strong>53 pieces</strong>",
-    "fr": "12 catégories<br> <strong>53 passages</strong>"
+  "<span data-kb-telling=\"categorieen\">21</span> categorieën<br> <strong><span data-kb-telling=\"artikels\">94</span> stukjes</strong>": {
+    "en": "<span data-kb-telling=\"categorieen\">21</span> categories<br> <strong><span data-kb-telling=\"artikels\">94</span> pieces</strong>",
+    "fr": "<span data-kb-telling=\"categorieen\">21</span> catégories<br> <strong><span data-kb-telling=\"artikels\">94</span> passages</strong>"
   },
   "<span>Korter dan een handleiding</span> <span>Eerlijk wat Rudy mag</span> <span>Belgische compliance erin</span>": {
     "en": "<span>Shorter than a manual</span> <span>Honest about what Rudy may do</span> <span>Belgian compliance included</span>",
@@ -55,9 +55,25 @@
     "en": "<a href=\"#reservaties\">Reservations<span class=\"kb-nav-count\">10</span></a>",
     "fr": "<a href=\"#reservaties\">Réservations<span class=\"kb-nav-count\">10</span></a>"
   },
+  "<a href=\"#profielen\">Gasten &amp; bedrijven<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#profielen\">Guests &amp; companies<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#profielen\">Clients &amp; entreprises<span class=\"kb-nav-count\">4</span></a>"
+  },
+  "<a href=\"#allotments\">Groepen &amp; allotments<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#allotments\">Groups &amp; allotments<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#allotments\">Groupes &amp; allotements<span class=\"kb-nav-count\">4</span></a>"
+  },
   "<a href=\"#housekeeping\">Housekeeping<span class=\"kb-nav-count\">4</span></a>": {
     "en": "<a href=\"#housekeeping\">Housekeeping<span class=\"kb-nav-count\">4</span></a>",
     "fr": "<a href=\"#housekeeping\">Housekeeping<span class=\"kb-nav-count\">4</span></a>"
+  },
+  "<a href=\"#fnb\">Ontbijt &amp; F&amp;B<span class=\"kb-nav-count\">3</span></a>": {
+    "en": "<a href=\"#fnb\">Breakfast &amp; F&amp;B<span class=\"kb-nav-count\">3</span></a>",
+    "fr": "<a href=\"#fnb\">Petit-déjeuner &amp; F&amp;B<span class=\"kb-nav-count\">3</span></a>"
+  },
+  "<a href=\"#deurcodes\">Deurcodes<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#deurcodes\">Door codes<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#deurcodes\">Codes de porte<span class=\"kb-nav-count\">4</span></a>"
   },
   "<a href=\"#channels\">Channel manager<span class=\"kb-nav-count\">5</span></a>": {
     "en": "<a href=\"#channels\">Channel manager<span class=\"kb-nav-count\">5</span></a>",
@@ -83,9 +99,29 @@
     "en": "<a href=\"#privacy\">Privacy &amp; data<span class=\"kb-nav-count\">3</span></a>",
     "fr": "<a href=\"#privacy\">Vie privée &amp; données<span class=\"kb-nav-count\">3</span></a>"
   },
+  "<a href=\"#handboek\">Handboek<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#handboek\">Handbook<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#handboek\">Manuel<span class=\"kb-nav-count\">4</span></a>"
+  },
+  "<a href=\"#preventie\">Preventie<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#preventie\">Prevention<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#preventie\">Prévention<span class=\"kb-nav-count\">4</span></a>"
+  },
+  "<a href=\"#trainingshotel\">Trainingshotel<span class=\"kb-nav-count\">3</span></a>": {
+    "en": "<a href=\"#trainingshotel\">Training hotel<span class=\"kb-nav-count\">3</span></a>",
+    "fr": "<a href=\"#trainingshotel\">Hôtel de formation<span class=\"kb-nav-count\">3</span></a>"
+  },
   "<a href=\"#gebruikers\">Gebruikers &amp; rollen<span class=\"kb-nav-count\">3</span></a>": {
     "en": "<a href=\"#gebruikers\">Users &amp; roles<span class=\"kb-nav-count\">3</span></a>",
     "fr": "<a href=\"#gebruikers\">Utilisateurs &amp; rôles<span class=\"kb-nav-count\">3</span></a>"
+  },
+  "<a href=\"#instellingen\">Instellingen<span class=\"kb-nav-count\">4</span></a>": {
+    "en": "<a href=\"#instellingen\">Settings<span class=\"kb-nav-count\">4</span></a>",
+    "fr": "<a href=\"#instellingen\">Paramètres<span class=\"kb-nav-count\">4</span></a>"
+  },
+  "<a href=\"#support\">Hulp van Rumo<span class=\"kb-nav-count\">3</span></a>": {
+    "en": "<a href=\"#support\">Help from Rumo<span class=\"kb-nav-count\">3</span></a>",
+    "fr": "<a href=\"#support\">Aide de Rumo<span class=\"kb-nav-count\">3</span></a>"
   },
   "<a href=\"#troubleshooting\">Troubleshooting<span class=\"kb-nav-count\">5</span></a>": {
     "en": "<a href=\"#troubleshooting\">Troubleshooting<span class=\"kb-nav-count\">5</span></a>",
@@ -351,6 +387,170 @@
     "en": "You mark the reservation as a no-show. rumo keeps the room day in the occupancy statistics (so your revenue is right) and proposes charging the standard no-show fee. Or not: that stays your choice, not the system's.",
     "fr": "Vous marquez la réservation comme no-show. rumo garde la nuitée dans les statistiques d'occupation (pour que votre chiffre d'affaires soit juste) et propose d'appliquer les frais de no-show standard. Ou non : cela reste votre choix, pas celui du système."
   },
+  "Gasten &amp; <em>bedrijven</em>": {
+    "en": "Guests &amp; <em>companies</em>",
+    "fr": "Clients &amp; <em>entreprises</em>"
+  },
+  "Wie er al eens geweest is, welk bedrijf de rekening krijgt, en welk tarief daarbij hoort. Het bestand achter je boekingen.": {
+    "en": "Who has stayed before, which company gets the invoice, and which rate goes with it. The file behind your bookings.",
+    "fr": "Qui est déjà venu, quelle entreprise reçoit la facture, et quel tarif va avec. Le fichier derrière vos réservations."
+  },
+  "Drie soorten": {
+    "en": "Three kinds",
+    "fr": "Trois sortes"
+  },
+  "Gast, boeker of <em>bedrijf</em>": {
+    "en": "Guest, booker or <em>company</em>",
+    "fr": "Client, donneur d'ordre ou <em>entreprise</em>"
+  },
+  "Drie tabbladen, en het verschil doet ertoe. De <strong>gast</strong> is wie er slaapt. De <strong>boeker</strong> is wie de boeking maakte — vaak dezelfde persoon, maar bij een bedrijf of een reisbureau niet. Het <strong>bedrijf</strong> is de rechtspersoon die de factuur krijgt.": {
+    "en": "Three tabs, and the difference matters. The <strong>guest</strong> is whoever sleeps there. The <strong>booker</strong> is whoever made the booking — often the same person, but not with a company or a travel agency. The <strong>company</strong> is the legal entity that gets the invoice.",
+    "fr": "Trois onglets, et la différence compte. Le <strong>client</strong> est celui qui dort. Le <strong>donneur d'ordre</strong> est celui qui a réservé — souvent la même personne, mais pas avec une entreprise ou une agence. L'<strong>entreprise</strong> est la personne morale qui reçoit la facture."
+  },
+  "Zoeken gaat per woord: je typt er zoveel je wil, in gelijk welke volgorde, en elk woord moet ergens op het profiel passen. \"maria smit\" en \"smit maria\" vinden allebei Maria Smit. Vanaf twee tekens begint hij te zoeken, en hij antwoordt met maximaal honderd treffers tegelijk — zie je die grens, dan is je zoekterm te breed, niet je bestand te klein.": {
+    "en": "Search works per word: type as many as you like, in any order, and every word has to match something on the profile. \"maria smit\" and \"smit maria\" both find Maria Smit. It starts searching from two characters, and it answers with at most a hundred matches at a time — see that limit and your search is too broad, not your file too small.",
+    "fr": "La recherche fonctionne mot par mot : tapez-en autant que vous voulez, dans n'importe quel ordre, et chaque mot doit correspondre à quelque chose sur le profil. « maria smit » et « smit maria » trouvent tous deux Maria Smit. La recherche démarre à deux caractères et répond avec cent résultats au maximum — si vous voyez cette limite, c'est votre recherche qui est trop large, pas votre fichier trop petit."
+  },
+  "Elk profiel heeft een vrij notitieveld. Dat is een geheugensteun voor wie het profiel opent, geen manier om een groep gasten te selecteren: er wordt niet in gezocht en er zijn geen labels.": {
+    "en": "Every profile has a free notes field. That is a memory aid for whoever opens the profile, not a way to select a group of guests: it is not searched and there are no labels.",
+    "fr": "Chaque profil a un champ de notes libre. C'est un aide-mémoire pour qui ouvre le profil, pas un moyen de sélectionner un groupe de clients : il n'est pas indexé et il n'y a pas d'étiquettes."
+  },
+  "Prijsafspraken": {
+    "en": "Price agreements",
+    "fr": "Accords tarifaires"
+  },
+  "Een <em>vast tarief</em> voor een bedrijf of een vaste gast": {
+    "en": "A <em>fixed rate</em> for a company or a regular guest",
+    "fr": "Un <em>tarif fixe</em> pour une entreprise ou un habitué"
+  },
+  "Een boeker en een bedrijf kunnen allebei een prijsafspraak dragen: een kortingspercentage of een vaste nachtprijs, als één afspraak voor alles of per kamertype apart. Daarmee krijgt een bedrijfsklant zijn onderhandelde tarief vanzelf, zonder dat de receptie het moet onthouden of overtypen.": {
+    "en": "A booker and a company can both carry a price agreement: a discount percentage or a fixed nightly rate, as one agreement for everything or per room type. That is what gives a corporate client their negotiated rate by itself, without reception having to remember it or retype it.",
+    "fr": "Un donneur d'ordre et une entreprise peuvent tous deux porter un accord tarifaire : un pourcentage de remise ou un prix de nuit fixe, comme accord unique ou par type de chambre. C'est ce qui donne à un client entreprise son tarif négocié tout seul, sans que la réception doive s'en souvenir ou le retaper."
+  },
+  "<strong>Hangt de boeker aan een bedrijf en hebben ze allebei een afspraak, dan wint die van het bedrijf. Volledig.</strong> Ook voor een kamertype waar het bedrijf niets voor invulde en de boeker wel. Dat is met opzet: één aanpassing op het bedrijf moet elke boeker eronder bereiken. Kon de afspraak van de boeker er nog tussen kruipen, dan zou je bij elke tariefwijziging alle boekers apart moeten nagaan.": {
+    "en": "<strong>If the booker is linked to a company and both have an agreement, the company's wins. Completely.</strong> Also for a room type the company left blank and the booker did not. That is deliberate: one change on the company has to reach every booker under it. If the booker's own agreement could still slip in, every rate change would mean checking all its bookers one by one.",
+    "fr": "<strong>Si le donneur d'ordre est rattaché à une entreprise et que les deux ont un accord, celui de l'entreprise l'emporte. Entièrement.</strong> Y compris pour un type de chambre que l'entreprise a laissé vide et pas lui. C'est voulu : une modification sur l'entreprise doit atteindre chaque donneur d'ordre en dessous. Si son accord pouvait encore s'intercaler, chaque changement de tarif obligerait à vérifier tous ses donneurs d'ordre un par un."
+  },
+  "Een nieuwe reservatie krijgt het tarief meteen. Op een bestaande wordt eerst gevraagd of je de prijzen wil herrekenen — anders zou een boeking die al besproken is stilletjes van bedrag veranderen.": {
+    "en": "A new reservation gets the rate straight away. On an existing one you are asked first whether the prices should be recalculated — otherwise a booking that has already been discussed would quietly change amount.",
+    "fr": "Une nouvelle réservation reçoit le tarif tout de suite. Sur une réservation existante, on vous demande d'abord s'il faut recalculer les prix — sinon une réservation déjà discutée changerait de montant en silence."
+  },
+  "Eigen boekingspagina": {
+    "en": "Your own booking page",
+    "fr": "Votre page de réservation"
+  },
+  "Een bedrijfsklant die <em>zelf</em> boekt aan zijn tarief": {
+    "en": "A corporate client who books <em>themselves</em> at their rate",
+    "fr": "Un client entreprise qui réserve <em>lui-même</em> à son tarif"
+  },
+  "Een boeker kan zijn afgesproken tarief openen op je eigen boekingspagina zonder account en zonder wachtwoord: zijn e-mailadres plus de boekerscode van zijn profiel is de hele aanmelding. Het is een opzoeking, geen sessie — ze geldt voor die ene boeking en er wordt achteraf niets onthouden.": {
+    "en": "A booker can unlock their agreed rate on your own booking page with no account and no password: their email address plus the booker code from their profile is the whole sign-in. It is a lookup, not a session — it holds for that one booking and nothing is remembered afterwards.",
+    "fr": "Un donneur d'ordre peut ouvrir son tarif convenu sur votre page de réservation sans compte et sans mot de passe : son adresse mail plus le code de son profil, c'est toute la connexion. C'est une consultation, pas une session — elle vaut pour cette réservation-là et rien n'est retenu ensuite."
+  },
+  "De korting wordt op de server opnieuw berekend, voor de betaling én voor de reservatie die weggeschreven wordt. Er komt niets uit de browser van de gast, dus een afspraak kan niet geclaimd worden door iemand die er geen heeft.": {
+    "en": "The discount is worked out again on the server, for the payment and for the reservation that is written. Nothing comes from the guest's browser, so an agreement cannot be claimed by someone who does not have one.",
+    "fr": "La remise est recalculée sur le serveur, pour le paiement et pour la réservation enregistrée. Rien ne vient du navigateur du client : un accord ne peut donc pas être revendiqué par quelqu'un qui n'en a pas."
+  },
+  "Drie gevolgen: een promocode gaat niet samen met een onderhandeld tarief, de afspraak wint en de code wordt geweigerd. Haal je de afspraak weg terwijl iemand aan het boeken is, dan wordt die boeking geweigerd met de vraag opnieuw te beginnen, in plaats van stilletjes door te gaan aan de publieke prijs. En de aanmelding vult alleen de naam en het ingetikte e-mailadres in: de rest van het profiel blijft op de server, want een boekerscode is kort en dus raadbaar.": {
+    "en": "Three consequences: a promo code does not combine with a negotiated rate — the agreement wins and the code is refused. Remove the agreement while somebody is mid-booking and that booking is refused with an invitation to start again, rather than quietly going through at the public price. And the sign-in fills in only the name and the email address typed: the rest of the profile stays on the server, because a booker code is short and therefore guessable.",
+    "fr": "Trois conséquences : un code promo ne se combine pas avec un tarif négocié — l'accord gagne et le code est refusé. Retirez l'accord pendant que quelqu'un réserve et cette réservation est refusée avec une invitation à recommencer, plutôt que de passer en silence au prix public. Et la connexion ne remplit que le nom et l'adresse mail tapée : le reste du profil reste sur le serveur, car un code de donneur d'ordre est court, donc devinable."
+  },
+  "Dubbels": {
+    "en": "Duplicates",
+    "fr": "Doublons"
+  },
+  "Dezelfde gast staat er <em>vier keer</em> in": {
+    "en": "The same guest is in there <em>four times</em>",
+    "fr": "Le même client y figure <em>quatre fois</em>"
+  },
+  "Dat is normaal, geen storing. De hoofdoorzaak: OTA's geven je nooit het echte adres van je gast. Booking.com en Airbnb sturen bij elke boeking een vers doorstuuradres mee, dus een terugkerende gast komt telkens binnen als een onbekende.": {
+    "en": "That is normal, not a malfunction. The main cause: OTAs never give you your guest's real address. Booking.com and Airbnb send a fresh relay address with every booking, so a returning guest arrives looking like a stranger every time.",
+    "fr": "C'est normal, pas une panne. La cause principale : les OTA ne vous donnent jamais la vraie adresse de votre client. Booking.com et Airbnb envoient une adresse relais neuve à chaque réservation, donc un client fidèle arrive chaque fois comme un inconnu."
+  },
+  "rumo spoort die dubbels zelf op en toont één kaart per persoon, niet per combinatie: vier profielen van dezelfde Maria Smit zijn één kaart die zegt \"Maria Smit · 4 profielen\", met de velden die ze uit elkaar houden. De teller telt dus mensen.": {
+    "en": "rumo spots those duplicates itself and shows one card per person, not per combination: four profiles of the same Maria Smit are one card saying \"Maria Smit · 4 profiles\", with the fields that tell them apart. So the counter counts people.",
+    "fr": "rumo repère ces doublons lui-même et montre une carte par personne, pas par combinaison : quatre profils de la même Maria Smit font une carte disant « Maria Smit · 4 profils », avec les champs qui les distinguent. Le compteur compte donc des personnes."
+  },
+  "<strong>Er wordt nooit vanzelf samengevoegd.</strong> Twee echte mensen kunnen dezelfde naam hebben. Voeg jij ze samen, dan verhuizen de reservaties en de facturen naar het profiel dat je houdt en verdwijnen de andere; wat al ingecheckt was, houdt de naam die toen genoteerd werd, want dat is het wettelijke register. Samenvoegen kan niet ongedaan gemaakt worden, dus lees de bevestiging.": {
+    "en": "<strong>Nothing is ever merged by itself.</strong> Two real people can share a name. Merge them yourself and the reservations and invoices move to the profile you keep while the others disappear; anything already checked in keeps the name recorded at the time, because that is the legal register. A merge cannot be undone, so read the confirmation.",
+    "fr": "<strong>Rien n'est jamais fusionné tout seul.</strong> Deux personnes réelles peuvent porter le même nom. Si vous fusionnez, les réservations et les factures passent au profil que vous gardez et les autres disparaissent ; ce qui était déjà enregistré garde le nom noté à l'époque, car c'est le registre légal. Une fusion ne s'annule pas : lisez la confirmation."
+  },
+  "Groepen &amp; <em>allotments</em>": {
+    "en": "Groups &amp; <em>allotments</em>",
+    "fr": "Groupes &amp; <em>allotements</em>"
+  },
+  "Kamers vasthouden voor een congres, een bedrijf of een reisbureau. Wat je vasthoudt, wat er terugkomt, en wie de rekening krijgt.": {
+    "en": "Holding rooms for a conference, a company or a travel agency. What you hold, what comes back, and who gets the bill.",
+    "fr": "Garder des chambres pour un congrès, une entreprise ou une agence. Ce que vous gardez, ce qui revient, et qui reçoit la note."
+  },
+  "Opzetten": {
+    "en": "Setting up",
+    "fr": "Mise en place"
+  },
+  "Een <em>blok kamers</em> vastleggen": {
+    "en": "Recording a <em>block of rooms</em>",
+    "fr": "Fixer un <em>bloc de chambres</em>"
+  },
+  "Een allotment houdt kamers apart voor één partij. Je legt vast om welk kamertype het gaat en hoeveel kamers je ervan houdt, tussen welke datums, aan welk tarief, en tegen wanneer de afspraak stopt. Dat laatste is de cut-off.": {
+    "en": "An allotment holds rooms aside for one party. You record which room type it is and how many of them you hold, between which dates, at which rate, and by when the agreement stops. That last one is the cut-off.",
+    "fr": "Un allotement garde des chambres pour une seule partie. Vous fixez de quel type il s'agit et combien vous en gardez, entre quelles dates, à quel tarif, et pour quand l'accord s'arrête. Ce dernier point est le cut-off."
+  },
+  "Lezen mag iedereen die de pagina heeft: admin, manager en receptie. <strong>Aanmaken, wijzigen en verwijderen is admin en manager.</strong> Een receptionist ziet het hele plaatje — de blokken, de pickup, de facturatie — maar wijzigt het contract niet. Dat wordt op de server afgedwongen, dus het geldt hoe je het scherm ook bereikt.": {
+    "en": "Everyone with the page may read: admin, manager and reception. <strong>Creating, changing and deleting is admin and manager.</strong> A receptionist sees the whole picture — the blocks, the pickup, the billing — but does not change the contract. That is enforced on the server, so it holds however you reach the screen.",
+    "fr": "Tout le monde ayant la page peut lire : admin, manager et réception. <strong>Créer, modifier et supprimer est réservé aux admins et aux managers.</strong> Un réceptionniste voit tout — les blocs, le pickup, la facturation — mais ne modifie pas le contrat. C'est imposé côté serveur, quelle que soit la manière dont vous arrivez à l'écran."
+  },
+  "Beschikbaarheid": {
+    "en": "Availability",
+    "fr": "Disponibilité"
+  },
+  "Wat een allotment met je <em>beschikbaarheid</em> doet": {
+    "en": "What an allotment does to your <em>availability</em>",
+    "fr": "Ce qu'un allotement fait à votre <em>disponibilité</em>"
+  },
+  "Kamers die je vasthoudt, gaan af van wat er naar de kanalen vertrekt <em>en</em> van wat je eigen boekingspagina nog aanbiedt. Hou je vijf twins en zijn er twee uit het blok geboekt, dan blijven er drie achtergehouden op Booking.com, op de andere kanalen en op je eigen site.": {
+    "en": "Rooms you hold come off what goes out to the channels <em>and</em> off what your own booking page still offers. Hold five twins with two booked out of the block, and three stay withheld on Booking.com, on the other channels and on your own site.",
+    "fr": "Les chambres que vous gardez sont retirées de ce qui part vers les canaux <em>et</em> de ce que votre propre page de réservation propose encore. Gardez cinq twins dont deux sont réservées dans le bloc, et trois restent retenues sur Booking.com, sur les autres canaux et sur votre site."
+  },
+  "Drie voorwaarden moeten kloppen: het allotment is actief, de kamers zijn nog niet vrijgegeven, en de dag valt binnen de verblijfsdatums. Een allotment zonder datums houdt niets achter. Is het blok volgeboekt, dan houdt het ook niets meer achter, want er is niets meer om te houden.": {
+    "en": "Three conditions have to hold: the allotment is active, the rooms have not been released yet, and the day falls inside the stay dates. An allotment without dates withholds nothing. Once the block is fully booked it withholds nothing either, because there is nothing left to hold.",
+    "fr": "Trois conditions doivent tenir : l'allotement est actif, les chambres ne sont pas encore libérées, et le jour tombe dans les dates du séjour. Un allotement sans dates ne retient rien. Une fois le bloc complet, il ne retient plus rien non plus : il n'y a plus rien à garder."
+  },
+  "Eén uitzondering: wie via de eigen boekingslink van de groep komt, mag het blok wél opgebruiken. Daar dient het tenslotte voor.": {
+    "en": "One exception: whoever comes through the group's own booking link may use the block up. That is what it is being held for.",
+    "fr": "Une exception : qui passe par le lien de réservation propre au groupe peut bien entamer le bloc. C'est précisément à cela qu'il sert."
+  },
+  "Cut-off": {
+    "en": "Cut-off",
+    "fr": "Cut-off"
+  },
+  "Wat er gebeurt op de <em>cut-off</em>": {
+    "en": "What happens at the <em>cut-off</em>",
+    "fr": "Ce qui se passe au <em>cut-off</em>"
+  },
+  "De cut-off is het moment waarop de afspraak stopt: wat de groep tegen dan niet geboekt heeft, gaat terug in de gewone verkoop. Eén keer per dag, in de vroege uurtjes, zoekt rumo de allotments waarvan de cut-off voorbij is en die nog niet vrijgegeven zijn, en geeft ze vrij. De kamers verschijnen weer in wat er naar de kanalen gaat, en elke vrijgave komt in de historiek te staan.": {
+    "en": "The cut-off is the moment the agreement stops: whatever the group has not booked by then goes back on general sale. Once a day, in the early hours, rumo looks for allotments whose cut-off has passed and that have not been released, and releases them. The rooms reappear in what goes out to the channels, and every release lands in the history.",
+    "fr": "Le cut-off est le moment où l'accord s'arrête : ce que le groupe n'a pas réservé d'ici là repart en vente ordinaire. Une fois par jour, aux premières heures, rumo cherche les allotements dont le cut-off est passé et qui n'ont pas encore été libérés, et les libère. Les chambres réapparaissent dans ce qui part vers les canaux, et chaque libération entre dans l'historique."
+  },
+  "De dag van de cut-off zelf is nog van jou: de bel toont die allotments zodat een manager vroeger kan vrijgeven. Vrijgeven is eenrichting — het wordt één keer genoteerd, en een tweede keer verandert niets.": {
+    "en": "The cut-off day itself is still yours: the bell shows those allotments so a manager can release earlier. Releasing is one-way — it is recorded once, and a second pass changes nothing.",
+    "fr": "Le jour du cut-off lui-même reste le vôtre : la cloche montre ces allotements pour qu'un manager libère plus tôt. Libérer va dans un seul sens — c'est noté une fois, et un second passage ne change rien."
+  },
+  "Eén factuur voor het <em>bedrijf</em>, of per gast": {
+    "en": "One invoice for the <em>company</em>, or one per guest",
+    "fr": "Une facture pour l'<em>entreprise</em>, ou une par client"
+  },
+  "Een allotment factureert op een van twee manieren. <strong>Individueel</strong> is de standaard: elke reservatie krijgt haar eigen factuur, zoals elke andere boeking. <strong>Centraal</strong> maakt één factuur voor het hele contract, op naam van het bedrijf.": {
+    "en": "An allotment bills in one of two ways. <strong>Individual</strong> is the default: every reservation gets its own invoice, like any other booking. <strong>Central</strong> makes one invoice for the whole contract, in the company's name.",
+    "fr": "Un allotement se facture de deux façons. <strong>Individuelle</strong> est la valeur par défaut : chaque réservation reçoit sa facture, comme n'importe quelle autre. <strong>Centrale</strong> fait une facture pour tout le contrat, au nom de l'entreprise."
+  },
+  "Op die centrale factuur komen de kamers van alle gekoppelde reservaties (behalve geannuleerde en no-shows), de extra's die op hun reservatie als centraal aangeduid staan, en de stadstaks alleen als je de scope op alles zet. Zo stuur je de kamer naar het bedrijf en de minibar naar de gast. Elke lijn houdt zijn eigen detail — kamernummer, naam van de gast, kamertype, tarief, datums en boekingsreferentie — zodat het bedrijf de factuur kan naleggen tegen wie waar geslapen heeft.": {
+    "en": "On that central invoice go the rooms of every linked reservation (except cancelled ones and no-shows), the extras marked as centrally billed on their reservation, and the city tax only if you set the scope to everything. That is how you send the room to the company and the minibar to the guest. Every line keeps its own detail — room number, guest name, room type, rate, dates and booking reference — so the company can check the invoice against who slept where.",
+    "fr": "Sur cette facture centrale arrivent les chambres de toutes les réservations liées (sauf annulées et no-shows), les extras marqués comme facturés centralement sur leur réservation, et la taxe de séjour uniquement si vous mettez la portée sur tout. C'est ainsi que la chambre part chez l'entreprise et le minibar chez le client. Chaque ligne garde son détail — numéro de chambre, nom du client, type de chambre, tarif, dates et référence — pour que l'entreprise puisse confronter la facture à qui a dormi où."
+  },
+  "Let op met de betaalvoorwaarden: bij centrale facturatie worden ze <em>niet</em> afgedwongen. Het bedrijf krijgt achteraf een factuur, dus er valt bij het boeken niets te innen. Zet je daar <em>vooruitbetaling</em>, dan blijft dat staan en doet het niets. Wil je geld op voorhand van een bedrijf, dan is dat een factuur die je stuurt en opvolgt.": {
+    "en": "Watch the payment terms: on central billing they are <em>not</em> enforced. The company is invoiced afterwards, so there is nothing to collect at booking time. Set <em>prepaid</em> there and it stays what you typed and does nothing. If you want money up front from a company, that is an invoice you send and follow up.",
+    "fr": "Attention aux conditions de paiement : en facturation centrale, elles ne sont <em>pas</em> imposées. L'entreprise est facturée après coup, il n'y a donc rien à encaisser au moment de réserver. Mettez-y <em>prépayé</em> et cela reste ce que vous avez tapé, sans effet. Si vous voulez de l'argent d'avance d'une entreprise, c'est une facture que vous envoyez et relancez."
+  },
   "Housekeeping &amp; <em>kamerstatus</em>": {
     "en": "Housekeeping &amp; <em>room status</em>",
     "fr": "Housekeeping &amp; <em>statut des chambres</em>"
@@ -442,6 +642,162 @@
   "Een kamer blokkeren doe je zelf op de kalender. Rudy zet dit niet voor je klaar, maar hij kan je wel in gewone taal uitleggen waar je moet zijn en wat er dan gebeurt.": {
     "en": "You block a room yourself on the calendar. Rudy does not line this up for you, but he can explain in plain language where you have to be and what happens then.",
     "fr": "Bloquer une chambre, vous le faites vous-même sur le calendrier. Rudy ne le prépare pas pour vous, mais il peut vous expliquer en langage courant où aller et ce qui se passe ensuite."
+  },
+  "Ontbijt &amp; <em>F&amp;B</em>": {
+    "en": "Breakfast &amp; <em>F&amp;B</em>",
+    "fr": "Petit-déjeuner &amp; <em>F&amp;B</em>"
+  },
+  "Hoeveel couverts er morgen staan, bij welke kamers ze horen, en wat de keuken over elk van hen moet weten. Een overzicht, geen kassa.": {
+    "en": "How many covers there are tomorrow, which rooms they belong to, and what the kitchen needs to know about each of them. An overview, not a till.",
+    "fr": "Combien de couverts demain, à quelles chambres ils appartiennent, et ce que la cuisine doit savoir sur chacun. Un aperçu, pas une caisse."
+  },
+  "De telling": {
+    "en": "The count",
+    "fr": "Le comptage"
+  },
+  "Welke dag hoort een <em>maaltijd</em> bij?": {
+    "en": "Which day does a <em>meal</em> belong to?",
+    "fr": "À quel jour appartient un <em>repas</em> ?"
+  },
+  "Dit is de regel die mensen verrast, en hij volgt het verblijf, niet de kalender. <strong>Ontbijt is de ochtend ná een nacht:</strong> wie vandaag aankomt ontbijt pas morgen, wie morgen vertrekt ontbijt die ochtend nog wel. <strong>Diner is de avond ván een nacht,</strong> dus wie vertrekt krijgt er geen meer. <strong>Lunch is alleen voor wie in huis is:</strong> niet op de aankomstdag en niet op de vertrekdag.": {
+    "en": "This is the rule that surprises people, and it follows the stay, not the calendar. <strong>Breakfast is the morning after a night:</strong> whoever arrives today has breakfast tomorrow, whoever leaves tomorrow still has one that morning. <strong>Dinner is the evening of a night,</strong> so whoever leaves gets none. <strong>Lunch is only for those in house:</strong> not on the arrival day and not on the departure day.",
+    "fr": "C'est la règle qui surprend, et elle suit le séjour, pas le calendrier. <strong>Le petit-déjeuner est le matin après une nuit :</strong> qui arrive aujourd'hui déjeune demain, qui part demain déjeune encore ce matin-là. <strong>Le dîner est le soir d'une nuit,</strong> donc qui part n'en a plus. <strong>Le déjeuner est pour ceux qui sont en maison :</strong> ni le jour d'arrivée ni le jour de départ."
+  },
+  "Eén couvert is één persoon, één maaltijd, één dag. Zit de maaltijd in het tariefplan, dan telt elke gast in de kamer elke dag mee. Is het een extra, dan wordt de geboekte hoeveelheid over de juiste dagen gespreid: een ontbijt voor twee van de vier ochtenden bezet precies die twee.": {
+    "en": "One cover is one person, one meal, one day. If the meal sits in the rate plan, every guest in the room counts every day. If it is an extra, the booked quantity is spread over the right days: a breakfast for two of the four mornings occupies exactly those two.",
+    "fr": "Un couvert, c'est une personne, un repas, un jour. Si le repas est dans le plan tarifaire, chaque client de la chambre compte chaque jour. Si c'est un extra, la quantité réservée est répartie sur les bons jours : un petit-déjeuner pour deux des quatre matins occupe exactement ces deux-là."
+  },
+  "Drie maaltijden bestaan er: ontbijt, lunch en diner. Welke jouw hotel draait, zet je bij de instellingen. Minstens één staat altijd aan — de laatste uitzetten lukt niet en valt terug op ontbijt.": {
+    "en": "There are three meals: breakfast, lunch and dinner. Which of them your hotel runs you set in the settings. At least one is always on — switching the last one off does not work and falls back to breakfast.",
+    "fr": "Il existe trois repas : petit-déjeuner, déjeuner et dîner. Ceux que votre hôtel sert se règlent dans les paramètres. Au moins un est toujours actif — désactiver le dernier ne fonctionne pas et retombe sur le petit-déjeuner."
+  },
+  "Allergieën": {
+    "en": "Allergies",
+    "fr": "Allergies"
+  },
+  "Wat de keuken over een kamer <em>moet weten</em>": {
+    "en": "What the kitchen <em>has to know</em> about a room",
+    "fr": "Ce que la cuisine <em>doit savoir</em> sur une chambre"
+  },
+  "Elke kamer op een reservatie kan F&amp;B-labels dragen en een vrije notitie. Er is geen apart dieet- of allergieveld: een allergie noteer je als label of als notitie, en ze komt in het rood op de keukenlijst en op de printlijst te staan.": {
+    "en": "Every room on a reservation can carry F&amp;B labels and a free note. There is no separate diet or allergy field: an allergy is recorded as a label or a note, and it shows up in red on the kitchen list and on the print-out.",
+    "fr": "Chaque chambre d'une réservation peut porter des étiquettes F&amp;B et une note libre. Il n'y a pas de champ régime ou allergie distinct : une allergie se note comme étiquette ou comme note, et elle apparaît en rouge sur la liste de cuisine et sur l'impression."
+  },
+  "Een catalogusitem kan ook als <em>maaltijdnotitie</em> aangeduid staan in plaats van als maaltijd. Dat geeft de keuken een regel (\"laat ontbijt\", \"geen varkensvlees\") zonder een couvert bij te tellen. Een kamer met alleen notities staat dus wel op de lijst, met nul couverts.": {
+    "en": "A catalogue item can also be marked as a <em>meal note</em> rather than a meal. That gives the kitchen a line (\"late breakfast\", \"no pork\") without adding a cover. A room with only notes is on the list all the same, with zero covers.",
+    "fr": "Un article du catalogue peut aussi être marqué comme <em>note de repas</em> plutôt que comme repas. Cela donne une ligne à la cuisine (« petit-déjeuner tardif », « sans porc ») sans ajouter de couvert. Une chambre qui n'a que des notes figure donc bien sur la liste, avec zéro couvert."
+  },
+  "Aanvinken wie er geweest is, kan, en twee mensen die dezelfde dienst draaien zien elkaars vinkjes verschijnen zonder te verversen. Het is een hulp voor op de vloer en verder niets: het verandert geen tellingen, het wordt niet gefactureerd en het komt niet in het rapport.": {
+    "en": "Ticking off who has been is possible, and two people working the same service see each other's ticks appear without refreshing. It is an aid for the floor and nothing more: it changes no counts, it is not billed and it does not reach the report.",
+    "fr": "Cocher qui est passé est possible, et deux personnes qui font le même service voient les coches de l'autre apparaître sans rafraîchir. C'est une aide pour la salle et rien de plus : cela ne change aucun comptage, ce n'est pas facturé et cela n'arrive pas dans le rapport."
+  },
+  "Walk-ins": {
+    "en": "Walk-ins",
+    "fr": "Walk-ins"
+  },
+  "Iemand schuift <em>onverwacht</em> aan": {
+    "en": "Somebody sits down <em>unexpectedly</em>",
+    "fr": "Quelqu'un s'installe à l'<em>improviste</em>"
+  },
+  "Een walk-in is hier een gast die in huis is en die maaltijd niet geboekt had. Je voegt hem toe vanaf het tabblad van die maaltijd: kamer kiezen, aantal personen, klaar. Het landt als een gewone, factureerbare extra op zijn reservatie, voor die ene dag, en een vergissing kan je meteen ongedaan maken.": {
+    "en": "A walk-in here is a guest who is in house and had not booked that meal. You add one from that meal's own tab: pick the room, the number of people, done. It lands as an ordinary billable extra on their reservation, for that one day, and a mistake can be undone straight away.",
+    "fr": "Un walk-in, ici, est un client en maison qui n'avait pas réservé ce repas. Vous l'ajoutez depuis l'onglet de ce repas : choisir la chambre, le nombre de personnes, terminé. Cela atterrit comme un extra facturable ordinaire sur sa réservation, pour ce jour-là, et une erreur s'annule tout de suite."
+  },
+  "Twee grenzen. Kamers die de maaltijd al hebben, worden niet aangeboden, dus je boekt niemand dubbel. En een restaurantgast die niet in het hotel slaapt, kan je hier niet noteren: elke walk-in hangt aan een boeking.": {
+    "en": "Two limits. Rooms that already have the meal are not offered, so you cannot double-book anyone. And a restaurant guest who is not staying at the hotel cannot be recorded here: every walk-in hangs on a booking.",
+    "fr": "Deux limites. Les chambres qui ont déjà le repas ne sont pas proposées : impossible de réserver quelqu'un deux fois. Et un client de restaurant qui ne dort pas à l'hôtel ne peut pas être noté ici : chaque walk-in dépend d'une réservation."
+  },
+  "De prijs komt van het eerste catalogusitem dat voor die maaltijd aangevinkt staat. Bestaat dat item niet, dan kan de walk-in helemaal niet toegevoegd worden.": {
+    "en": "The price comes from the first catalogue item ticked for that meal. If that item does not exist, the walk-in cannot be added at all.",
+    "fr": "Le prix vient du premier article du catalogue coché pour ce repas. Si cet article n'existe pas, le walk-in ne peut pas être ajouté du tout."
+  },
+  "Deurcodes &amp; <em>sleutels</em>": {
+    "en": "Door codes &amp; <em>keys</em>",
+    "fr": "Codes de porte &amp; <em>clés</em>"
+  },
+  "Een cijfercode in plaats van een kaartje. Wanneer de gast hem krijgt, wat de receptie ziet, en wat er gebeurt als het netwerk wegvalt. Betalende add-on.": {
+    "en": "A numeric code instead of a card. When the guest gets it, what reception sees, and what happens when the network drops. Paid add-on.",
+    "fr": "Un code chiffré au lieu d'une carte. Quand le client le reçoit, ce que voit la réception, et ce qui se passe quand le réseau tombe. Add-on payant."
+  },
+  "Het idee": {
+    "en": "The idea",
+    "fr": "L'idée"
+  },
+  "Eén code per <em>kamer</em>, niet per gast": {
+    "en": "One code per <em>room</em>, not per guest",
+    "fr": "Un code par <em>chambre</em>, pas par client"
+  },
+  "Elke kamer heeft één vaste identiteit in het slotsysteem, en die draagt de sleutel van die kamer. rumo maakt of verwijdert die identiteiten niet; hij verandert alleen de code erop. Komt er een gast, dan wordt de code van de kamer zijn code. Vertrekt hij, dan wordt ze vervangen door een code die niemand kent, en staat hij er meteen buiten.": {
+    "en": "Each room has one fixed identity in the lock system, and that carries that room's key. rumo never creates or deletes those identities; it only changes the code on them. A guest arrives and the room's code becomes their code. They leave and it is replaced by one nobody knows, which locks them out immediately.",
+    "fr": "Chaque chambre a une identité fixe dans le système de serrures, et celle-ci porte la clé de cette chambre. rumo ne crée ni ne supprime jamais ces identités ; il ne change que le code dessus. Un client arrive et le code de la chambre devient le sien. Il part et il est remplacé par un code que personne ne connaît, ce qui le met dehors immédiatement."
+  },
+  "Twee gevolgen. Er is <strong>één code per kamer tegelijk</strong>, dus twee gasten van dezelfde boeking met twee kamers hebben twee verschillende codes. En het logboek van het slot zegt \"kamer 101\", niet de naam van de gast — rumo weet wie de code op dat moment had, het slot niet.": {
+    "en": "Two consequences. There is <strong>one code per room at a time</strong>, so two guests of the same booking with two rooms have two different codes. And the lock's own log says \"room 101\", not the guest's name — rumo knows who held the code at any moment, the lock does not.",
+    "fr": "Deux conséquences. Il y a <strong>un code par chambre à la fois</strong> : deux clients de la même réservation avec deux chambres ont donc deux codes différents. Et le journal de la serrure dit « chambre 101 », pas le nom du client — rumo sait qui détenait le code à chaque instant, la serrure non."
+  },
+  "Dit is de add-on <strong>Sleutelbeheer</strong>, geen standaardonderdeel. Zonder de add-on is er geen sleutelicoon op een reservatie, geen tabblad bij de instellingen en geen kaart in het gastenportaal. Vandaag werkt rumo met Salto KS; Dormakaba is aangekondigd maar nog niet aangesloten.": {
+    "en": "This is the <strong>Key Management</strong> add-on, not a standard part. Without it there is no key icon on a reservation, no tab in the settings and no card in the guest portal. Today rumo works with Salto KS; Dormakaba is announced but not connected yet.",
+    "fr": "C'est l'add-on <strong>Gestion des clés</strong>, pas un élément standard. Sans lui, pas d'icône de clé sur une réservation, pas d'onglet dans les paramètres et pas de carte dans le portail client. Aujourd'hui rumo fonctionne avec Salto KS ; Dormakaba est annoncé mais pas encore raccordé."
+  },
+  "Timing": {
+    "en": "Timing",
+    "fr": "Calendrier"
+  },
+  "Wanneer de gast zijn code <em>krijgt</em>": {
+    "en": "When the guest <em>gets</em> their code",
+    "fr": "Quand le client <em>reçoit</em> son code"
+  },
+  "De code verschijnt wanneer twee dingen waar zijn: de vorige gast is uitgecheckt, én housekeeping heeft de kamer op schoon of geïnspecteerd gezet. Niet vroeger — een code die er eerder is, opent een deur waar nog iemand achter zit.": {
+    "en": "The code appears when two things are true: the previous guest has been checked out, and housekeeping has set the room to clean or inspected. Not before — a code that exists earlier opens a door with somebody still behind it.",
+    "fr": "Le code apparaît quand deux choses sont vraies : le client précédent est parti, et le housekeeping a mis la chambre en propre ou inspectée. Pas avant — un code qui existe plus tôt ouvre une porte derrière laquelle quelqu'un se trouve encore."
+  },
+  "Daarbovenop kan je eisen dat de gast eerst online incheckt, zijn saldo betaalt, of allebei. Dat zijn instellingen van het gastenportaal, los van de instellingen voor inchecken en betalen zelf. Tot het zover is, legt het portaal uit wat er ontbreekt.": {
+    "en": "On top of that you can require the guest to check in online first, to pay their balance, or both. Those are guest-portal settings, separate from the settings for checking in and paying themselves. Until then the portal explains what is missing.",
+    "fr": "Par-dessus cela, vous pouvez exiger que le client s'enregistre d'abord en ligne, paie son solde, ou les deux. Ce sont des réglages du portail client, distincts de ceux du check-in et du paiement eux-mêmes. En attendant, le portail explique ce qui manque."
+  },
+  "De code gaat <strong>nooit per mail</strong>. Een mail kan je niet terugnemen en blijft jaren in een mailbox staan; een portaallink kan je intrekken en de kaart kan weer dicht.": {
+    "en": "The code is <strong>never sent by email</strong>. An email cannot be taken back and sits in a mailbox for years; a portal link can be withdrawn and the card can close again.",
+    "fr": "Le code n'est <strong>jamais envoyé par mail</strong>. Un mail ne se reprend pas et reste des années dans une boîte ; un lien de portail se révoque et la carte peut se refermer."
+  },
+  "Aan de balie": {
+    "en": "At the desk",
+    "fr": "Au comptoir"
+  },
+  "Wat de <em>receptie</em> ziet en kan": {
+    "en": "What <em>reception</em> sees and can do",
+    "fr": "Ce que la <em>réception</em> voit et peut faire"
+  },
+  "Op een reservatie heeft elke kamerrij een sleutelicoon dat het deurcodepaneel opent. Daar staat de code voluit, zonder extra klik — wie een gast aan de lijn heeft, moet niet naar zes cijfers gaan zoeken. Is er nog geen code, dan staat erbij waarom: de kamer is nog bezet door een andere boeking (met naam erbij), de kamer wordt klaargemaakt, de aankomstdag is nog niet daar, of het slotsysteem antwoordde niet.": {
+    "en": "On a reservation, every room row has a key icon that opens the door-code panel. The code is there in full, with no extra click — somebody with a guest on the phone should not have to hunt for six digits. If there is no code yet, it says why: the room is still held by another booking (named), the room is being prepared, the arrival day has not come, or the lock system did not answer.",
+    "fr": "Sur une réservation, chaque ligne de chambre porte une icône de clé qui ouvre le panneau du code. Le code y figure en entier, sans clic supplémentaire — qui a un client au téléphone ne doit pas chercher six chiffres. S'il n'y a pas encore de code, la raison est indiquée : la chambre est encore tenue par une autre réservation (nommée), la chambre est en préparation, le jour d'arrivée n'est pas là, ou le système de serrures n'a pas répondu."
+  },
+  "Er is een knop voor een nieuwe code. Die vervangt de code van die kamer meteen, voor iedereen die ze heeft, ook als de gast al binnen is — dus de gast moet de nieuwe krijgen. Hij werkt alleen vanaf de boeking die de code op dat moment houdt; vanaf een andere reservatie wordt hij geweigerd, anders verander je stilletjes de code van wie er echt ligt.": {
+    "en": "There is a button for a new code. It replaces that room's code immediately, for everyone who has it, even if the guest is already inside — so the guest has to be told the new one. It only works from the booking that currently holds the code; from another reservation it is refused, otherwise you would quietly change the code of whoever is actually in the room.",
+    "fr": "Il y a un bouton pour un nouveau code. Il remplace le code de cette chambre immédiatement, pour tous ceux qui l'ont, même si le client est déjà à l'intérieur — il faut donc lui donner le nouveau. Il ne fonctionne que depuis la réservation qui détient le code à ce moment ; depuis une autre, il est refusé, sinon vous changeriez en silence le code de celui qui occupe réellement la chambre."
+  },
+  "Een deur op afstand openen kan ook, en dat wordt in rumo genoteerd met de naam van wie op de knop drukte. Het slotsysteem zelf ziet namelijk alleen \"rumo\".": {
+    "en": "Opening a door remotely is possible too, and that is recorded in rumo with the name of whoever pressed the button. The lock system itself only ever sees \"rumo\".",
+    "fr": "Ouvrir une porte à distance est possible aussi, et c'est noté dans rumo avec le nom de qui a appuyé. Le système de serrures, lui, ne voit jamais que « rumo »."
+  },
+  "Als het uitvalt": {
+    "en": "When it fails",
+    "fr": "Quand ça tombe"
+  },
+  "Geen netwerk, geen <em>nieuwe</em> codes": {
+    "en": "No network, no <em>new</em> codes",
+    "fr": "Pas de réseau, pas de <em>nouveaux</em> codes"
+  },
+  "Een digitale sleutel is geen vervanging voor een weg naar binnen die geen elektriciteit nodig heeft. Hou een setje tags aan de balie en hou de mechanische noodoplossing van je installateur bij de hand.": {
+    "en": "A digital key is not a replacement for a way in that needs no electricity. Keep a set of tags at reception and keep the mechanical override your installer supplied within reach.",
+    "fr": "Une clé numérique ne remplace pas une entrée qui n'a pas besoin d'électricité. Gardez un jeu de badges à la réception et gardez à portée la solution mécanique de secours de votre installateur."
+  },
+  "Valt de verbinding langer weg, dan hebben de codes die ondertussen uitgereikt werden de sloten nooit bereikt. Geef ze achteraf opnieuw uit of deel tags uit.": {
+    "en": "If the connection is gone for longer, the codes issued in the meantime never reached the locks. Issue them again afterwards or hand out tags.",
+    "fr": "Si la connexion manque plus longtemps, les codes délivrés entre-temps n'ont jamais atteint les serrures. Redélivrez-les ensuite ou distribuez des badges."
+  },
+  "De knop in het portaal om een deur te openen heeft de telefoon, rumo, de leverancier én de gateway tegelijk nodig, dus dat is het eerste wat sneuvelt. Daarom staat op die kaart altijd \"werkt het niet? gebruik je code\" — en werkt de code ook niet, dan is het de balie.": {
+    "en": "The button in the portal that opens a door needs the phone, rumo, the vendor and the gateway all at once, so it is the first thing to fail. That is why the card always says \"not working? use your code\" — and if the code does not work either, it is the desk.",
+    "fr": "Le bouton du portail qui ouvre une porte a besoin du téléphone, de rumo, du fournisseur et de la passerelle en même temps : c'est donc la première chose à lâcher. D'où la mention permanente sur la carte « cela ne marche pas ? utilisez votre code » — et si le code ne marche pas non plus, c'est la réception."
   },
   "Channel <em>manager</em>": {
     "en": "Channel <em>manager</em>",
@@ -991,6 +1347,246 @@
     "en": "What does exist, and what answers most of the questions: guest data is shielded by default, every time somebody clicks it open that lands in the log, and housekeeping and F&amp;B are not sent it at all. If you get a real erasure request on a guest with history, pass it to us — for now that is handwork, not a self-service button.",
     "fr": "Ce qui existe, et qui répond déjà à la plupart des questions : les données clients sont masquées par défaut, chaque ouverture est journalisée, et le housekeeping et le F&amp;B ne les reçoivent pas du tout. Si vous recevez une vraie demande d'effacement sur un client avec un historique, transmettez-la-nous — c'est pour l'instant du travail manuel, pas un bouton en libre-service."
   },
+  "Handboek &amp; <em>aankondigingen</em>": {
+    "en": "Handbook &amp; <em>announcements</em>",
+    "fr": "Manuel &amp; <em>annonces</em>"
+  },
+  "Je eigen procedures op één doorzoekbare plek, en korte mededelingen die vanzelf verdwijnen. Iedereen leest; schrijven is voor managers en admins.": {
+    "en": "Your own procedures in one searchable place, and short notices that disappear by themselves. Everyone reads; writing is for managers and admins.",
+    "fr": "Vos propres procédures au même endroit, consultables, et de courtes annonces qui disparaissent d'elles-mêmes. Tout le monde lit ; écrire est réservé aux managers et aux admins."
+  },
+  "Niet alles hoort <em>voor iedereen</em>": {
+    "en": "Not everything is <em>for everyone</em>",
+    "fr": "Tout n'est pas <em>pour tout le monde</em>"
+  },
+  "Artikels leven in categorieën, en een categorie kan je afschermen per rol. Een categorie \"Receptie\" die alleen voor receptionisten openstaat, verschijnt niet bij housekeeping — en Rudy citeert er bij hen ook niet uit. Een categorie zonder afscherming is voor iedereen. Admins en managers zien altijd alles.": {
+    "en": "Articles live in categories, and a category can be shielded per role. A \"Reception\" category open only to receptionists does not appear for housekeeping — and Rudy does not quote from it to them either. A category with no shielding is for everyone. Admins and managers always see everything.",
+    "fr": "Les articles vivent dans des catégories, et une catégorie peut être fermée par rôle. Une catégorie « Réception » ouverte aux seuls réceptionnistes n'apparaît pas chez le housekeeping — et Rudy n'en cite rien chez eux non plus. Une catégorie sans restriction est pour tout le monde. Les admins et les managers voient toujours tout."
+  },
+  "Dat is belangrijker dan het klinkt: een housekeeper die veertig receptieartikels ziet staan, scrollt ook voorbij de vier die wél voor haar zijn.": {
+    "en": "That matters more than it sounds: a housekeeper looking at forty reception articles also scrolls past the four that are meant for her.",
+    "fr": "C'est plus important qu'il n'y paraît : une femme de chambre qui voit quarante articles de réception passe aussi à côté des quatre qui la concernent."
+  },
+  "<strong>Een categorie verwijderen verwijdert alles wat erin zit</strong>, inclusief de artikels en hun bijlagen. De volgorde binnen een categorie zet je zelf, ook op een telefoon.": {
+    "en": "<strong>Deleting a category deletes everything in it</strong>, articles and attachments included. The order inside a category is yours to set, on a phone too.",
+    "fr": "<strong>Supprimer une catégorie supprime tout ce qu'elle contient</strong>, articles et pièces jointes compris. L'ordre au sein d'une catégorie, c'est vous qui le fixez, sur un téléphone aussi."
+  },
+  "Gelezen": {
+    "en": "Read",
+    "fr": "Lu"
+  },
+  "Wijzig je een procedure, dan is ze <em>weer ongelezen</em>": {
+    "en": "Change a procedure and it is <em>unread again</em>",
+    "fr": "Modifiez une procédure et elle est <em>de nouveau non lue</em>"
+  },
+  "Iemand bevestigt per artikel dat hij het gelezen heeft, en die bevestiging hangt aan de <em>versie</em> die er toen stond. Pas je het artikel aan, dan komt het terug op de lijst van precies die mensen.": {
+    "en": "Somebody confirms per article that they have read it, and that confirmation hangs on the <em>version</em> that stood there at the time. Change the article and it comes back on the list of exactly those people.",
+    "fr": "Chacun confirme article par article qu'il l'a lu, et cette confirmation est attachée à la <em>version</em> qui existait alors. Modifiez l'article et il revient dans la liste de ces personnes-là exactement."
+  },
+  "Niet als straf, maar omdat het waar is: ze hebben iets gelezen dat er niet meer staat. En dat is de gevaarlijkste vorm van niet-weten, want wie de oude versie kende gaat niet uit zichzelf opnieuw kijken.": {
+    "en": "Not as a punishment, but because it is true: they read something that is no longer there. And that is the most dangerous kind of not-knowing, because whoever knew the old version will not go back and look on their own.",
+    "fr": "Non comme punition, mais parce que c'est vrai : elles ont lu quelque chose qui n'existe plus. Et c'est la forme la plus dangereuse de ne pas savoir, car celui qui connaissait l'ancienne version ne va pas revérifier de lui-même."
+  },
+  "De oude bevestiging blijft bewaard. Dat is je bewijs dat ze de vórige versie wél kenden, en dat is precies wat je wil kunnen aantonen wanneer er ooit iets gebeurt.": {
+    "en": "The old confirmation is kept. That is your proof that they did know the previous version, and that is exactly what you want to be able to show when something ever happens.",
+    "fr": "L'ancienne confirmation est conservée. C'est votre preuve qu'elles connaissaient bien la version précédente, et c'est exactement ce que vous voulez pouvoir montrer le jour où il se passe quelque chose."
+  },
+  "Schrijven": {
+    "en": "Writing",
+    "fr": "Écrire"
+  },
+  "Foto's, bijlagen en een <em>filmpje</em>": {
+    "en": "Photos, attachments and a <em>video</em>",
+    "fr": "Photos, pièces jointes et une <em>vidéo</em>"
+  },
+  "Je tikt een artikel rechtstreeks in rumo in. Een foto zet je in de tekst of hang je eraan als bijlage; pdf's en afbeeldingen gaan open in het scherm zelf, tot 25 MB per stuk.": {
+    "en": "You type an article straight into rumo. A photo goes in the text or hangs on it as an attachment; PDFs and images open in the screen itself, up to 25 MB each.",
+    "fr": "Vous tapez un article directement dans rumo. Une photo se place dans le texte ou s'attache comme pièce jointe ; les PDF et les images s'ouvrent dans l'écran même, jusqu'à 25 Mo pièce."
+  },
+  "Een foto is hier geen versiering. Een zin beschrijft een norm, een foto <em>is</em> de norm. Dat scheelt je een half uur discussie per nieuwe medewerker.": {
+    "en": "A photo is not decoration here. A sentence describes a standard, a photo <em>is</em> the standard. That saves you half an hour of discussion per new colleague.",
+    "fr": "Ici, une photo n'est pas une décoration. Une phrase décrit une norme, une photo <em>est</em> la norme. Cela vous épargne une demi-heure de discussion par nouveau collègue."
+  },
+  "Een filmpje voeg je toe als link naar YouTube of Vimeo, en dat speelt af in het artikel zelf. Een videobestand uploaden kan niet, en dat heeft één gevolg dat je moet weten: dat filmpje staat bij YouTube, niet in rumo. Zet iemand het daar op privé, dan is je procedure leeg zonder dat je het merkt.": {
+    "en": "A video you add as a link to YouTube or Vimeo, and it plays in the article itself. Uploading a video file is not possible, and that has one consequence you should know: the video sits at YouTube, not in rumo. If somebody sets it to private, your procedure is empty without you noticing.",
+    "fr": "Une vidéo s'ajoute sous forme de lien vers YouTube ou Vimeo, et elle se lit dans l'article. Téléverser un fichier vidéo n'est pas possible, et cela a une conséquence à connaître : cette vidéo est chez YouTube, pas dans rumo. Si quelqu'un la met en privé, votre procédure est vide sans que vous le remarquiez."
+  },
+  "Aankondigingen": {
+    "en": "Announcements",
+    "fr": "Annonces"
+  },
+  "De afdeling bepaalt wie het <em>ziet</em>": {
+    "en": "The department decides who <em>sees it</em>",
+    "fr": "Le département décide qui la <em>voit</em>"
+  },
+  "Naast het handboek staan aankondigingen: een berichtje aan het team in plaats van een procedure om op te zoeken. Elk heeft een afdeling en eventueel een vervaldatum, en een vervallen aankondiging verdwijnt vanzelf — ze blijft staan tot en met haar vervaldag en is de dag erna weg.": {
+    "en": "Next to the handbook sit announcements: a note to the team rather than a procedure to look up. Each has a department and optionally an expiry date, and an expired announcement disappears by itself — it stays through its expiry day and is gone the day after.",
+    "fr": "À côté du manuel se trouvent les annonces : un mot à l'équipe plutôt qu'une procédure à consulter. Chacune a un département et éventuellement une date d'expiration, et une annonce expirée disparaît d'elle-même — elle reste jusqu'au jour d'expiration inclus et n'est plus là le lendemain."
+  },
+  "De afdeling is geen etiket maar de doelgroep. Kies je Housekeeping, dan ziet housekeeping ze en de rest niet. Managers en admins zien altijd alles, wat er ook gekozen is: zij schrijven ze. Staat er een afdeling in die rumo niet kent — een oude aankondiging van vroeger — dan gaat ze naar iedereen in plaats van naar niemand.": {
+    "en": "The department is not a label but the audience. Pick Housekeeping and housekeeping sees it and nobody else. Managers and admins always see everything, whatever was chosen: they write them. If there is a department rumo does not know — an old announcement from before — it goes to everyone rather than to nobody.",
+    "fr": "Le département n'est pas une étiquette mais le public. Choisissez Housekeeping et le housekeeping la voit, personne d'autre. Les managers et les admins voient toujours tout, quel que soit le choix : ce sont eux qui les écrivent. S'il y a un département que rumo ne connaît pas — une vieille annonce d'avant — elle part vers tout le monde plutôt que vers personne."
+  },
+  "Aankondigingen werken op hetzelfde principe als artikels: ze blijven in de bel tot ze bevestigd zijn, en een gewijzigde aankondiging komt terug.": {
+    "en": "Announcements work on the same principle as articles: they stay in the bell until confirmed, and an edited announcement comes back.",
+    "fr": "Les annonces fonctionnent sur le même principe que les articles : elles restent dans la cloche jusqu'à confirmation, et une annonce modifiée revient."
+  },
+  "Preventie &amp; <em>veiligheid</em>": {
+    "en": "Prevention &amp; <em>safety</em>",
+    "fr": "Prévention &amp; <em>sécurité</em>"
+  },
+  "Keuringen, attesten, registers en wie er in je gebouw kwam werken. Wat vervalt, waar het papier ligt, en wat je gedaan hebt. Betalende add-on.": {
+    "en": "Inspections, certificates, registers and who came to work in your building. What expires, where the paper is, and what you did. Paid add-on.",
+    "fr": "Contrôles, attestations, registres et qui est venu travailler dans votre bâtiment. Ce qui expire, où se trouve le papier, et ce que vous avez fait. Add-on payant."
+  },
+  "Installaties": {
+    "en": "Installations",
+    "fr": "Installations"
+  },
+  "De status volgt uit de <em>vervaldatum</em>": {
+    "en": "The status follows from the <em>expiry date</em>",
+    "fr": "Le statut découle de la <em>date d'échéance</em>"
+  },
+  "Per installatie leg je vast wat het is, hoeveel er zijn, wanneer ze laatst gekeurd werd, tot wanneer het huidige attest geldt, wie ze onderhoudt en wie ze keurt. Die laatste twee zijn met opzet aparte namen, want dat is de vraag die je binnen een jaar stelt.": {
+    "en": "Per installation you record what it is, how many there are, when it was last inspected, until when the current certificate is valid, who maintains it and who inspects it. Those last two are deliberately separate names, because that is the question you ask a year from now.",
+    "fr": "Par installation, vous notez ce que c'est, combien il y en a, quand elle a été contrôlée pour la dernière fois, jusqu'à quand l'attestation vaut, qui l'entretient et qui la contrôle. Ces deux derniers sont volontairement des noms distincts, car c'est la question que vous poserez dans un an."
+  },
+  "De status zet je niet zelf: vervallen, binnen dertig dagen, of in orde — dat volgt uit de datum. Een installatie <em>zonder</em> datum krijgt geen status, en dat is niet hetzelfde als in orde: ze wordt gewoon nooit gesignaleerd. Vul er dus ook een in als je hem moet schatten.": {
+    "en": "You do not set the status yourself: expired, within thirty days, or in order — that follows from the date. An installation <em>without</em> a date gets no status, and that is not the same as being in order: it is simply never flagged. So fill one in even when you have to estimate.",
+    "fr": "Vous ne réglez pas le statut : échue, sous trente jours, ou en ordre — cela découle de la date. Une installation <em>sans</em> date n'a pas de statut, et ce n'est pas la même chose qu'être en ordre : elle n'est simplement jamais signalée. Mettez-en donc une, quitte à l'estimer."
+  },
+  "<strong>rumo kent de wettelijke termijn van jouw installatie niet.</strong> Wat jij invult is waarmee gewerkt wordt, en dat haal je van het attest dat je in handen hebt. Een vervallen keuring blokkeert niets in rumo — de waarschuwing en het papieren spoor zijn de waarde; wat het echt kost, ligt bij je verzekeraar.": {
+    "en": "<strong>rumo does not know the statutory interval for your installation.</strong> What you fill in is what it works with, and you take that from the certificate in your hand. An expired inspection blocks nothing in rumo — the warning and the paper trail are the value; what it really costs you sits with your insurer.",
+    "fr": "<strong>rumo ne connaît pas le délai légal de votre installation.</strong> Ce que vous encodez est ce avec quoi il travaille, et vous le prenez sur l'attestation que vous avez en main. Un contrôle échu ne bloque rien dans rumo — l'avertissement et la trace écrite sont la valeur ; ce que cela coûte vraiment se règle chez votre assureur."
+  },
+  "Taken": {
+    "en": "Tasks",
+    "fr": "Tâches"
+  },
+  "Een taak onthoudt de datum, een <em>checklist</em> laat bewijs na": {
+    "en": "A task remembers the date, a <em>checklist</em> leaves proof",
+    "fr": "Une tâche retient la date, une <em>checklist</em> laisse une preuve"
+  },
+  "Taken zijn de terugkerende routines: de noodverlichting nakijken, het brandalarm testen, de zelden gebruikte kranen doorspoelen. Elke taak heeft een frequentie en een volgende vervaldag; afvinken zet vandaag als laatste uitvoering en schuift de volgende op.": {
+    "en": "Tasks are the recurring routines: check the emergency lighting, test the fire alarm, flush the rarely used taps. Each task has a frequency and a next due date; ticking one off sets today as the last execution and moves the next one on.",
+    "fr": "Les tâches sont les routines récurrentes : vérifier l'éclairage de secours, tester l'alarme incendie, rincer les robinets peu utilisés. Chaque tâche a une fréquence et une prochaine échéance ; la cocher inscrit aujourd'hui comme dernière exécution et repousse la suivante."
+  },
+  "Twee dingen om te weten. Maandelijks betekent dertig dagen en jaarlijks 365 — geen kalendermaanden, dus een taak die je op de 31ste doet, schuift op. En een taak houdt alleen zijn <em>laatste</em> uitvoering bij: er is geen geschiedenis van vorige rondes.": {
+    "en": "Two things to know. Monthly means thirty days and annually 365 — not calendar months, so a task done on the 31st drifts. And a task keeps only its <em>most recent</em> execution: there is no history of past rounds.",
+    "fr": "Deux choses à savoir. Mensuel veut dire trente jours et annuel 365 — pas des mois calendrier, donc une tâche faite le 31 se décale. Et une tâche ne garde que sa <em>dernière</em> exécution : il n'y a pas d'historique des rondes passées."
+  },
+  "Wil je kunnen aantonen <em>dat</em> je het gedaan hebt, gebruik dan een checklist. Die laat een spoor na: wie ze uitvoerde, wat er per punt uitkwam, en een handtekening. Een afgewerkte ronde wordt vanzelf een pdf bij je documenten, en dat is wat ze bruikbaar maakt als bewijs.": {
+    "en": "If you want to be able to show <em>that</em> you did it, use a checklist. That leaves a trail: who carried it out, what came out per point, and a signature. A finished round becomes a PDF with your documents by itself, and that is what makes it usable as evidence.",
+    "fr": "Si vous voulez pouvoir prouver <em>que</em> vous l'avez fait, utilisez une checklist. Elle laisse une trace : qui l'a exécutée, ce que chaque point a donné, et une signature. Une ronde terminée devient d'elle-même un PDF dans vos documents, et c'est ce qui la rend utilisable comme preuve."
+  },
+  "Aannemers": {
+    "en": "Contractors",
+    "fr": "Entrepreneurs"
+  },
+  "Wie er in je gebouw <em>kwam werken</em>": {
+    "en": "Who <em>came to work</em> in your building",
+    "fr": "Qui est <em>venu travailler</em> dans votre bâtiment"
+  },
+  "Aannemers hoeven niet door de receptie ingetikt te worden. Het bezoekregister draagt een aanmeldlink met een QR-code: hang die aan de dienstingang of stuur ze mee met de werkbon, en de aannemer registreert zichzelf zonder rumo-login.": {
+    "en": "Contractors do not have to be typed in by reception. The visit register carries a sign-in link with a QR code: hang it at the service entrance or send it with the work order, and the contractor registers themselves without a rumo login.",
+    "fr": "Les entrepreneurs ne doivent pas être encodés par la réception. Le registre des visites porte un lien d'inscription avec un code QR : affichez-le à l'entrée de service ou envoyez-le avec le bon de travail, et l'entrepreneur s'enregistre lui-même sans login rumo."
+  },
+  "Hij vult zijn naam en firma in, telefoon, nummerplaat, wanneer hij komt en gaat, wat voor werk en waar, wie zijn contactpersoon is, en welke risicoklassen er spelen. Hij geeft ook aan of er een werkvergunning nodig is en of hij een <strong>loper</strong> meekreeg — een sleutel die op elke kamer past. Daarna tekent hij voor de veiligheidsinstructies, op het scherm.": {
+    "en": "They fill in their name and company, phone, licence plate, when they arrive and leave, what kind of work and where, who their contact is, and which risk classes apply. They also state whether a work permit is needed and whether they were given a <strong>master key</strong> — one that opens every room. Then they sign for the safety instructions, on screen.",
+    "fr": "Il indique son nom et sa société, son téléphone, sa plaque, quand il arrive et repart, quel travail et où, qui est son contact, et quelles classes de risque s'appliquent. Il déclare aussi si un permis de travail est nécessaire et s'il a reçu un <strong>passe</strong> — une clé qui ouvre toutes les chambres. Puis il signe pour les consignes de sécurité, à l'écran."
+  },
+  "Die bezoekregistraties worden na twee jaar automatisch gewist. Dat is een privacymaatregel en ze is niet instelbaar, dus exporteer wat je wil houden voor het zover is.": {
+    "en": "Those visit records are deleted automatically after two years. That is a privacy measure and it is not configurable, so export anything you want to keep before then.",
+    "fr": "Ces enregistrements de visite sont effacés automatiquement après deux ans. C'est une mesure de protection des données et elle n'est pas réglable : exportez ce que vous voulez garder avant."
+  },
+  "Waarschuwingen": {
+    "en": "Warnings",
+    "fr": "Avertissements"
+  },
+  "Dertig, veertien, zeven en <em>één dag</em>": {
+    "en": "Thirty, fourteen, seven and <em>one day</em>",
+    "fr": "Trente, quatorze, sept et <em>un jour</em>"
+  },
+  "Een nachtelijke taak kijkt naar de vervaldatums van je documenten en waarschuwt dertig, veertien, zeven en één dag vooraf. Ze draait in de vroege ochtend, in de tijd van jouw hotel.": {
+    "en": "A nightly job looks at the expiry dates of your documents and warns thirty, fourteen, seven and one day ahead. It runs in the early morning, on your hotel's own clock.",
+    "fr": "Une tâche nocturne regarde les dates d'échéance de vos documents et prévient trente, quatorze, sept et un jour à l'avance. Elle tourne au petit matin, à l'heure de votre hôtel."
+  },
+  "De bel wordt live berekend wanneer je hem opent: installaties die binnen de dertig dagen vervallen, taken die te laat zijn, checklists die aan de beurt zijn, een evacuatieoefening ouder dan een jaar, open incidenten, en documenten die in de wachtrij staan. De bel is voor managers en admins.": {
+    "en": "The bell is worked out live when you open it: installations expiring within thirty days, tasks that are overdue, checklists that are due, an evacuation drill older than a year, open incidents, and documents waiting in the queue. The bell is for managers and admins.",
+    "fr": "La cloche est calculée en direct quand vous l'ouvrez : les installations qui échoient sous trente jours, les tâches en retard, les checklists à faire, un exercice d'évacuation vieux de plus d'un an, les incidents ouverts, et les documents en file d'attente. La cloche est réservée aux managers et aux admins."
+  },
+  "Drie eerlijke beperkingen. Deze waarschuwingen zijn <strong>alleen in de app</strong>: er vertrekt geen mail en geen pushbericht voor een vervallend attest, dus iemand moet rumo openen. De nachtelijke taak kijkt alleen naar documenten. En de teller van de installaties heeft geen ondergrens, dus iets dat twee jaar geleden verviel, blijft meegeteld worden onder \"binnenkort\" — lees dat getal als \"vraagt aandacht\".": {
+    "en": "Three honest limitations. These warnings are <strong>in the app only</strong>: no email and no push notification goes out for an expiring certificate, so somebody has to open rumo. The nightly job only watches documents. And the installations counter has no lower bound, so something that expired two years ago keeps being counted under \"soon\" — read that number as \"needs attention\".",
+    "fr": "Trois limites honnêtes. Ces avertissements sont <strong>dans l'application uniquement</strong> : aucun mail ni notification push ne part pour une attestation qui expire, quelqu'un doit donc ouvrir rumo. La tâche nocturne ne regarde que les documents. Et le compteur des installations n'a pas de plancher : quelque chose d'échu il y a deux ans continue d'être compté sous « bientôt » — lisez ce nombre comme « demande de l'attention »."
+  },
+  "Het <em>trainingshotel</em>": {
+    "en": "The <em>training hotel</em>",
+    "fr": "L'<em>hôtel de formation</em>"
+  },
+  "Een oefenkopie van je eigen hotel, met verzonnen gasten en de draden naar buiten doorgeknipt. Gratis, en het telt niet als een tweede hotel.": {
+    "en": "A practice copy of your own hotel, with made-up guests and the wires to the outside cut. Free, and it does not count as a second hotel.",
+    "fr": "Une copie d'entraînement de votre propre hôtel, avec des clients inventés et les fils vers l'extérieur coupés. Gratuit, et il ne compte pas comme un deuxième hôtel."
+  },
+  "Wat er uit staat": {
+    "en": "What is switched off",
+    "fr": "Ce qui est coupé"
+  },
+  "Wat er <em>niet</em> naar buiten kan": {
+    "en": "What <em>cannot</em> get out",
+    "fr": "Ce qui ne <em>peut pas</em> sortir"
+  },
+  "Dat is de eerste vraag die je over elke oefenomgeving moet stellen, en hier is het antwoord vier dingen. <strong>Mail</strong> naar gasten is geblokkeerd: geen bevestiging, geen factuur, geen pre-checkinlink. Je kan wel instellen dat de mails naar een lijstje eigen collega's gaan, zodat je ze ziet passeren; \"iedereen\" is geen optie in een trainingshotel.": {
+    "en": "That is the first question to ask about any practice environment, and here the answer is four things. <strong>Mail</strong> to guests is blocked: no confirmation, no invoice, no pre-check-in link. You can set the mails to go to a short list of your own colleagues so you see them arrive; \"everyone\" is not an option in a training hotel.",
+    "fr": "C'est la première question à poser sur tout environnement d'entraînement, et ici la réponse tient en quatre points. Le <strong>courrier</strong> aux clients est bloqué : pas de confirmation, pas de facture, pas de lien de pré-check-in. Vous pouvez régler que les mails partent vers une courte liste de collègues, pour les voir passer ; « tout le monde » n'est pas une option dans un hôtel de formation."
+  },
+  "<strong>De channel manager</strong> kan niet aangesloten worden, dus er vertrekt nooit beschikbaarheid of een prijs naar Booking.com, en er komt geen OTA-boeking binnen. <strong>Betalingen</strong> bewegen niet: de schermen, de betaallinks en de facturen werken wel, alleen het geld blijft staan. En <strong>de deursloten</strong> worden niet overgenomen, dus een oefencheck-in opent nooit een echte deur.": {
+    "en": "<strong>The channel manager</strong> cannot be connected, so no availability and no price ever leaves for Booking.com, and no OTA booking comes in. <strong>Payments</strong> do not move: the screens, the payment links and the invoices all work, only the money stays put. And <strong>the door locks</strong> are not carried over, so a practice check-in never opens a real door.",
+    "fr": "<strong>Le channel manager</strong> ne peut pas être raccordé : aucune disponibilité ni aucun prix ne part vers Booking.com, et aucune réservation OTA n'arrive. Les <strong>paiements</strong> ne bougent pas : les écrans, les liens de paiement et les factures fonctionnent, seul l'argent reste en place. Et <strong>les serrures</strong> ne sont pas reprises : un check-in d'exercice n'ouvre jamais une vraie porte."
+  },
+  "Je eigen webadres verhuist ook niet mee, en de publieke boekingspagina staat standaard dicht. Het gastenportaal blijft wél open, zodat je de hele gastenflow kan doorlopen.": {
+    "en": "Your own web address does not come along either, and the public booking page is closed by default. The guest portal does stay open, so the whole guest flow can be rehearsed.",
+    "fr": "Votre propre adresse web ne suit pas non plus, et la page de réservation publique est fermée par défaut. Le portail client, lui, reste ouvert, pour que tout le parcours client puisse être répété."
+  },
+  "Oefenen": {
+    "en": "Practising",
+    "fr": "S'exercer"
+  },
+  "Rudy geeft de opdracht, de <em>database</em> keurt ze": {
+    "en": "Rudy gives the assignment, the <em>database</em> marks it",
+    "fr": "Rudy donne la consigne, la <em>base de données</em> corrige"
+  },
+  "Trainen is een gesprek met Rudy. Hij stelt één oefening voor, zegt in twee zinnen waarom ze ertoe doet, en geeft de opdracht. Jij voert ze uit in de app, niet in de chat. Daarna kijkt hij in de gegevens of het er echt staat.": {
+    "en": "Training is a conversation with Rudy. He proposes one exercise, says in two sentences why it matters, and gives the assignment. You do it in the app, not in the chat. Then he looks in the data to see whether it is really there.",
+    "fr": "S'entraîner, c'est une conversation avec Rudy. Il propose un exercice, dit en deux phrases pourquoi il compte, et donne la consigne. Vous l'exécutez dans l'application, pas dans le chat. Ensuite il regarde dans les données si c'est bien là."
+  },
+  "<strong>Hij kijkt naar het resultaat, niet naar je klikken.</strong> Een oefening is klaar wanneer de situatie in rumo klopt: de boeking staat ingecheckt, de rekening staat op nul, de creditnota bestaat. Hoe je daar geraakt bent, is jouw zaak, en er is meestal meer dan één juiste weg. Rudy beslist ook niet zelf of je geslaagd bent: hij vraagt het aan de database en leest terug wat die zei. Hij kan geen vinkje geven voor werk dat er niet staat, en geen werk weigeren dat er wel staat.": {
+    "en": "<strong>He looks at the result, not at your clicks.</strong> An exercise is finished when the situation in rumo is right: the booking is checked in, the bill is at zero, the credit note exists. How you got there is your business, and there is usually more than one right route. Rudy does not decide whether you passed either: he asks the database and reads back what it said. He cannot tick off work that is not there, and he cannot refuse work that is.",
+    "fr": "<strong>Il regarde le résultat, pas vos clics.</strong> Un exercice est terminé quand la situation dans rumo est juste : la réservation est enregistrée, la note est à zéro, la note de crédit existe. Comment vous y êtes arrivé vous regarde, et il y a le plus souvent plus d'un bon chemin. Rudy ne décide pas non plus lui-même si vous avez réussi : il le demande à la base de données et relit ce qu'elle a dit. Il ne peut pas valider un travail absent, ni refuser un travail présent."
+  },
+  "Een paar oefeningen zijn op je eer — de kleurenlegende lezen, door de kalender bewegen, het gastenportaal doorlopen. Die laten niets achter in de gegevens, dus valt er niets op te zoeken. Rudy zegt dat gewoon in plaats van te doen alsof hij controleert.": {
+    "en": "A few exercises are on your honour — reading the colour legend, moving around the calendar, walking through the guest portal. Those leave nothing in the data, so there is nothing to look up. Rudy says so plainly rather than pretending to check.",
+    "fr": "Quelques exercices sont sur l'honneur — lire la légende des couleurs, se déplacer dans le calendrier, parcourir le portail client. Ceux-là ne laissent rien dans les données : il n'y a donc rien à vérifier. Rudy le dit franchement plutôt que de faire semblant de contrôler."
+  },
+  "Wat je krijgt": {
+    "en": "What you get",
+    "fr": "Ce que vous recevez"
+  },
+  "Je ziet alleen wat <em>voor jou</em> geldt": {
+    "en": "You only see what applies <em>to you</em>",
+    "fr": "Vous ne voyez que ce qui vous <em>concerne</em>"
+  },
+  "De cursus valt uiteen in vier hoofdstukken: receptie, het gastenportaal, housekeeping en F&amp;B. Welke je ziet, hangt af van je rol — een housekeeper krijgt het kuishoofdstuk en een receptionist niet, en wie allebei doet, krijgt allebei. De oefeningen worden ook gefilterd op de add-ons die je hotel heeft en op wat er echt ingesteld staat.": {
+    "en": "The course falls into four chapters: reception, the guest portal, housekeeping and F&amp;B. Which you see depends on your role — a housekeeper gets the cleaning chapter and a receptionist does not, and somebody with both gets both. The exercises are also filtered by the add-ons your hotel has and by what is actually configured.",
+    "fr": "Le cours se divise en quatre chapitres : réception, portail client, housekeeping et F&amp;B. Lesquels vous voyez dépend de votre rôle — une femme de chambre reçoit le chapitre nettoyage et un réceptionniste non, et qui fait les deux reçoit les deux. Les exercices sont aussi filtrés selon les add-ons de votre hôtel et selon ce qui est réellement configuré."
+  },
+  "Een oefening noemt nooit een kamernummer of een tarief: die verschillen per hotel. Ze zegt \"de aankomst van vandaag\", en rumo kiest er een uit de oefendata wanneer de oefening start. Zit er niets geschikts in, dan zegt ze dat in plaats van je achter iets aan te sturen dat niet kan.": {
+    "en": "An exercise never names a room number or a rate: those differ per hotel. It says \"today's arrival\", and rumo picks a real one from the practice data when the exercise starts. If there is nothing suitable in there, it says so rather than sending you after something that cannot be done.",
+    "fr": "Un exercice ne nomme jamais un numéro de chambre ni un tarif : cela diffère par hôtel. Il dit « l'arrivée d'aujourd'hui », et rumo en choisit une vraie dans les données d'entraînement au démarrage. S'il n'y a rien de convenable, il le dit plutôt que de vous envoyer après quelque chose d'impossible."
+  },
+  "Overslaan mag altijd, alles opnieuw doen ook, en halverwege stoppen kan: kom later terug en Rudy pikt op waar je gebleven was. <strong>Je voortgang is van jou</strong> — niemand anders ziet ze, managers inbegrepen. Geen score, geen attest, geen rapport. En de opdrachten komen in jouw taal: Nederlands, Frans of Engels.": {
+    "en": "Skipping is always allowed, anything can be done again, and stopping halfway is fine: come back later and Rudy picks up where you left off. <strong>Your progress is your own</strong> — nobody else sees it, managers included. No score, no certificate, no report. And the assignments come in your language: Dutch, French or English.",
+    "fr": "Passer est toujours permis, tout peut être refait, et s'arrêter en cours de route aussi : revenez plus tard et Rudy reprend là où vous en étiez. <strong>Votre progression vous appartient</strong> — personne d'autre ne la voit, managers compris. Ni score, ni certificat, ni rapport. Et les consignes arrivent dans votre langue : néerlandais, français ou anglais."
+  },
   "Gebruikers &amp; <em>rollen</em>": {
     "en": "Users &amp; <em>roles</em>",
     "fr": "Utilisateurs &amp; <em>rôles</em>"
@@ -1058,6 +1654,154 @@
   "Handig bij interne vragen (\"wie heeft die korting gegeven?\"), fraude-controle, of als de boekhouder iets wil natrekken. En het beschermt jou tegen valse claims, want je kan altijd terugkijken.": {
     "en": "Handy for internal questions (\"who gave that discount?\"), fraud checks, or when the accountant wants to trace something. And it protects you against false claims, because you can always look back.",
     "fr": "Pratique pour les questions internes (« qui a accordé cette remise ? »), les contrôles de fraude, ou quand le comptable veut vérifier quelque chose. Et cela vous protège des fausses réclamations, car vous pouvez toujours remonter."
+  },
+  "Instellingen &amp; je <em>abonnement</em>": {
+    "en": "Settings &amp; your <em>subscription</em>",
+    "fr": "Paramètres &amp; votre <em>abonnement</em>"
+  },
+  "Waar je hotel opgezet wordt, hoe opslaan werkt, en wat er gebeurt wanneer je een add-on aan- of uitzet.": {
+    "en": "Where your hotel is set up, how saving works, and what happens when you switch an add-on on or off.",
+    "fr": "Où votre hôtel se configure, comment fonctionne l'enregistrement, et ce qui se passe quand vous activez ou désactivez un add-on."
+  },
+  "Opslaan": {
+    "en": "Saving",
+    "fr": "Enregistrer"
+  },
+  "Wat er gebeurt als je <em>bewaart</em>": {
+    "en": "What happens when you <em>save</em>",
+    "fr": "Ce qui se passe quand vous <em>enregistrez</em>"
+  },
+  "Instellingen is voor managers en admins; receptie, housekeeping en F&amp;B zien het niet. Je wijzigingen blijven op je scherm tot je bewaart: onderaan verschijnt een balk zodra er iets openstaat, en wegklikken met onbewaard werk vraagt eerst.": {
+    "en": "Settings is for managers and admins; reception, housekeeping and F&amp;B do not see it. Your edits stay on your screen until you save: a bar appears at the bottom the moment something is unsaved, and moving away with unsaved work asks first.",
+    "fr": "Les paramètres sont pour les managers et les admins ; la réception, le housekeeping et le F&amp;B ne les voient pas. Vos modifications restent à l'écran jusqu'à l'enregistrement : une barre apparaît en bas dès qu'il y a quelque chose en attente, et quitter avec du travail non enregistré demande confirmation."
+  },
+  "Drie dingen die je configuratie beschermen. <strong>Alleen wat je aanraakte wordt geschreven</strong>, dus twee mensen kunnen in verschillende delen werken zonder elkaar te wissen. <strong>De bevestiging wacht op de server</strong>: pas als die aanvaard heeft, staat er bewaard. En werkte een collega — of Rudy — ondertussen in dezelfde lijst, dan wordt bewaren bovenop een wijziging die jij nooit zag, geweigerd, met de melding erbij wat er gebeurd is.": {
+    "en": "Three things that protect your configuration. <strong>Only what you touched is written</strong>, so two people can work in different parts without erasing each other. <strong>The confirmation waits for the server</strong>: only once it has accepted does it say saved. And if a colleague — or Rudy — worked in the same list meanwhile, saving on top of a change you never saw is refused, with a message saying what happened.",
+    "fr": "Trois choses qui protègent votre configuration. <strong>Seul ce que vous avez touché est écrit</strong> : deux personnes peuvent travailler dans des parties différentes sans s'effacer. <strong>La confirmation attend le serveur</strong> : ce n'est qu'une fois accepté qu'il est écrit enregistré. Et si un collègue — ou Rudy — a travaillé entre-temps dans la même liste, enregistrer par-dessus une modification que vous n'avez jamais vue est refusé, avec un message disant ce qui s'est passé."
+  },
+  "Eén categorie verdient extra aandacht: lijsten die als geheel vervangen worden. Kamertypes, tariefplannen, annulatievoorwaarden, extra's, mailsjablonen en de tarieven van de channel manager. Bewaren betekent daar: deze lijst is voortaan de lijst, dus wat er niet in staat, is weg.": {
+    "en": "One category deserves extra care: lists that are replaced as a whole. Room types, rate plans, cancellation policies, extras, email templates and the channel manager's rates. Saving there means: this list is the list from now on, so anything missing from it is gone.",
+    "fr": "Une catégorie mérite une attention particulière : les listes remplacées en bloc. Types de chambres, plans tarifaires, conditions d'annulation, extras, modèles de mails et les tarifs du channel manager. Y enregistrer signifie : cette liste est désormais la liste, donc ce qui n'y figure pas a disparu."
+  },
+  "Een tarief dat <em>volgende maand</em> verandert": {
+    "en": "A rate that changes <em>next month</em>",
+    "fr": "Un tarif qui change le <em>mois prochain</em>"
+  },
+  "De stadstaks zet je op bij de algemene gegevens: aan of uit, hoe ze heet, een vast bedrag per gast per nacht of een percentage van de kamerprijs, welk btw-tarief ze draagt, en of ze als aparte lijn op de factuur komt.": {
+    "en": "City tax you set up under the general details: on or off, what it is called, a fixed amount per guest per night or a percentage of the room price, which VAT rate it carries, and whether it appears as its own line on the invoice.",
+    "fr": "La taxe de séjour se règle dans les données générales : active ou non, son nom, un montant fixe par client et par nuit ou un pourcentage du prix de la chambre, le taux de TVA qu'elle porte, et si elle apparaît comme ligne distincte sur la facture."
+  },
+  "Verandert je gemeente het bedrag, dan hoef je niet te wachten tot het zover is: je voegt een <strong>geplande wijziging</strong> toe met de datum vanaf wanneer ze geldt, zoveel als je wil. Welk tarief een boeking krijgt, hangt af van de <em>aankomstdatum</em>, niet van wanneer er geboekt werd. Voer je in november de verhoging van januari in, dan pikt elk verblijf vanaf januari ze op, ook boekingen die al in huis zitten.": {
+    "en": "If your municipality changes the amount, you do not have to wait until it applies: you add a <strong>scheduled change</strong> with the date it takes effect, as many as you need. Which rate a booking gets follows from its <em>arrival date</em>, not from when it was booked. Enter January's increase in November and every stay from January picks it up, including bookings already in the house.",
+    "fr": "Si votre commune change le montant, pas besoin d'attendre : vous ajoutez une <strong>modification programmée</strong> avec la date à partir de laquelle elle s'applique, autant que nécessaire. Le tarif d'une réservation découle de sa <em>date d'arrivée</em>, pas du moment de la réservation. Encodez en novembre la hausse de janvier et chaque séjour à partir de janvier la reprend, y compris les réservations déjà en maison."
+  },
+  "Het bedrag wordt nooit op een boeking vastgevroren: het wordt herrekend waar het getoond, gefactureerd of aangerekend wordt. Een tariefwijziging bereikt dus elk verblijf dat nog niet gefactureerd is.": {
+    "en": "The amount is never frozen onto a booking: it is recalculated wherever it is shown, invoiced or charged. So a rate change reaches every stay that has not been invoiced yet.",
+    "fr": "Le montant n'est jamais figé sur une réservation : il est recalculé partout où il est affiché, facturé ou encaissé. Un changement de tarif atteint donc chaque séjour qui n'a pas encore été facturé."
+  },
+  "Add-ons": {
+    "en": "Add-ons",
+    "fr": "Add-ons"
+  },
+  "Een add-on <em>vijf dagen</em> proberen": {
+    "en": "Trying an add-on for <em>five days</em>",
+    "fr": "Essayer un add-on <em>cinq jours</em>"
+  },
+  "Vijf add-ons kan je als gratis proefperiode van vijf dagen starten in plaats van er meteen voor te betalen: Preventie, Upsell, Geavanceerde housekeeping, Slimme prijszetting en de OTA-inbox. Aanzetten start de proef meteen; er is geen aparte knop om ze over te slaan.": {
+    "en": "Five add-ons can be started as a free five-day trial instead of paying for them straight away: Prevention, Upsell, Advanced Housekeeping, Smart Pricing and the OTA inbox. Switching one on starts the trial directly; there is no separate button to skip it.",
+    "fr": "Cinq add-ons peuvent démarrer comme essai gratuit de cinq jours au lieu d'être payés tout de suite : Prévention, Upsell, Housekeeping avancé, Tarification intelligente et la boîte OTA. L'activer démarre l'essai directement ; il n'y a pas de bouton séparé pour le sauter."
+  },
+  "Gebeurt er verder niets, dan zet de add-on zichzelf na vijf dagen weer uit, zonder aanrekening. Ongeveer een dag daarvoor krijgen admins en managers een pushbericht, voor het geval het vergeten is. Er is wel een knop om de add-on meteen te bevestigen, maar geen om vroeger te stoppen: hem toch niet willen, betekent hem laten uitgaan. Elke proefperiode is eenmalig per hotel.": {
+    "en": "If nothing else happens, the add-on switches itself off after five days, with no charge. About a day before that, admins and managers get a push notification in case it has been forgotten. There is a button to confirm the add-on right away, but none to stop early: not wanting it after all means letting it run out. Each trial is a one-time offer per hotel.",
+    "fr": "Si rien d'autre n'arrive, l'add-on se désactive tout seul après cinq jours, sans facturation. Environ un jour avant, les admins et les managers reçoivent une notification, au cas où cela aurait été oublié. Il y a un bouton pour confirmer l'add-on tout de suite, mais aucun pour arrêter plus tôt : ne plus en vouloir, c'est le laisser s'éteindre. Chaque essai est unique par hôtel."
+  },
+  "Drie add-ons hebben er geen. White Label en Sleutelbeheer niet, omdat een proef die afloopt terwijl er gasten in huis zijn geen tabblad verbergt maar een boekingsdomein neerhaalt of een deursleutel die op dat moment gebruikt wordt. Peppol en Volledige Scrada niet, omdat aanzetten onmiddellijk iets echts naar buiten stuurt — een factuur op het Peppol-netwerk of een boeking in je boekhouding — dat je niet terugneemt als de proef afloopt.": {
+    "en": "Three add-ons have none. White Label and Key Management do not, because a trial ending while guests are in house does not hide a tab but takes down a booking domain or a door key in use at that moment. Peppol and Full Scrada do not, because switching either on immediately sends something real to the outside world — an invoice on the Peppol network or a booking into your accounts — that you do not take back when the trial ends.",
+    "fr": "Trois add-ons n'en ont pas. White Label et Gestion des clés, parce qu'un essai qui se termine avec des clients en maison ne masque pas un onglet mais fait tomber un domaine de réservation ou une clé de porte en cours d'utilisation. Peppol et Scrada complet, parce que les activer envoie immédiatement quelque chose de réel vers l'extérieur — une facture sur le réseau Peppol ou une écriture dans votre comptabilité — qui ne se reprend pas à la fin de l'essai."
+  },
+  "Proefperiode": {
+    "en": "Trial",
+    "fr": "Période d'essai"
+  },
+  "Wat er gebeurt als je <em>proefperiode</em> afloopt": {
+    "en": "What happens when your <em>trial</em> runs out",
+    "fr": "Ce qui se passe quand votre <em>période d'essai</em> se termine"
+  },
+  "Een hotel op proef is een volledige rumo: er staat niets uit en niets is gekortwiekt, en alles wat je tijdens de proef opzet, blijft staan als je klant wordt. De einddatum kan in beide richtingen verzet worden — een week extra is een vraag, en vroeger stoppen kan ook.": {
+    "en": "A hotel on trial is a complete rumo: nothing is switched off and nothing is crippled, and everything you set up during the trial is kept if you become a customer. The end date can be moved in either direction — an extra week is a question, and stopping earlier is possible too.",
+    "fr": "Un hôtel en essai est un rumo complet : rien n'est désactivé ni bridé, et tout ce que vous configurez pendant l'essai est conservé si vous devenez client. La date de fin peut être déplacée dans les deux sens — une semaine de plus est une question, et arrêter plus tôt est possible aussi."
+  },
+  "Passeert die datum, dan gaat het hotel <strong>op alleen-lezen</strong> in plaats van op zwart: iedereen kan nog inloggen en alles lezen — reservaties, facturen, gasten — maar er komt niets bij en er verandert niets. Dat duurt veertien dagen. Dat is je venster om te beslissen, je gegevens eruit te halen, of klant te worden. Daarna gaat het hotel dicht.": {
+    "en": "Once that date passes, the hotel goes <strong>read-only</strong> rather than dark: everyone can still log in and read everything — reservations, invoices, guests — but nothing new is created and nothing changes. That lasts fourteen days. It is your window to decide, to get your data out, or to become a customer. After it, the hotel closes.",
+    "fr": "Une fois cette date passée, l'hôtel passe en <strong>lecture seule</strong> plutôt que dans le noir : tout le monde peut encore se connecter et tout lire — réservations, factures, clients — mais rien ne se crée et rien ne change. Cela dure quatorze jours. C'est votre fenêtre pour décider, sortir vos données, ou devenir client. Ensuite l'hôtel ferme."
+  },
+  "Hulp van <em>Rumo</em>": {
+    "en": "Help from <em>Rumo</em>",
+    "fr": "Aide de <em>Rumo</em>"
+  },
+  "Eén deur: je vraagt het aan Rudy, en je vraagt Rudy om een mens wanneer je er een wil. Geen mailadres, geen ticketnummer om te onthouden.": {
+    "en": "One door: you ask Rudy, and you ask Rudy for a person whenever you want one. No email address, no ticket number to remember.",
+    "fr": "Une seule porte : vous demandez à Rudy, et vous demandez à Rudy un humain quand vous en voulez un. Pas d'adresse mail, pas de numéro de ticket à retenir."
+  },
+  "Waar": {
+    "en": "Where",
+    "fr": "Où"
+  },
+  "Een vraag stellen, en ze <em>doorgeven</em>": {
+    "en": "Asking a question, and <em>handing it over</em>",
+    "fr": "Poser une question, et la <em>transmettre</em>"
+  },
+  "Elke vraag begint bij Rudy, en onder elk antwoord staat de weg naar een mens. Eén regel en iemand bij Rumo neemt het over. Dat is dezelfde draad: wat je schreef blijft staan, er valt niets over te typen of te plakken.": {
+    "en": "Every question starts with Rudy, and under every answer sits the way to a person. One line and somebody at Rumo takes it over. It is the same thread: what you wrote stays, there is nothing to retype or paste.",
+    "fr": "Chaque question commence chez Rudy, et sous chaque réponse se trouve le chemin vers un humain. Une ligne et quelqu'un chez Rumo reprend. C'est le même fil : ce que vous avez écrit reste, il n'y a rien à retaper ni à coller."
+  },
+  "Zodra het een supportgesprek is, schrijven er alleen mensen in. Geen assistent meer, ook Rudy niet — wat je doorgeeft is per definitie het stuk dat hij niet opgelost kreeg.": {
+    "en": "Once it is a support conversation, only people write in it. No assistant any more, not even Rudy — what you hand over is by definition the part he could not solve.",
+    "fr": "Dès que c'est une conversation de support, seuls des humains y écrivent. Plus d'assistant, Rudy compris — ce que vous transmettez est par définition la partie qu'il n'a pas pu résoudre."
+  },
+  "Vragen die nog lopen, staan onderaan diezelfde chatlijst. De <strong>Support</strong>-pagina is het archief: alles wat je ooit vroeg, ook beantwoord en afgesloten. Daar start je geen vraag, je zoekt er iets op. Elke rol mag een vraag stellen, housekeeping en F&amp;B inbegrepen — wie niet om hulp kan vragen, werkt rond het probleem heen, en dat probleem was net het meldenswaardige.": {
+    "en": "Questions still running sit at the bottom of that same chat list. The <strong>Support</strong> page is the archive: everything you ever asked, answered and closed ones included. You do not start a question there, you look something up. Every role may ask, housekeeping and F&amp;B included — somebody who cannot ask for help works around the problem instead, and that problem was the thing worth reporting.",
+    "fr": "Les questions encore en cours figurent en bas de cette même liste de discussions. La page <strong>Support</strong> est l'archive : tout ce que vous avez déjà demandé, réponses et dossiers clos compris. On n'y démarre pas une question, on y cherche quelque chose. Chaque rôle peut poser une question, housekeeping et F&amp;B compris — qui ne peut pas demander d'aide contourne le problème, et ce problème était justement ce qu'il fallait signaler."
+  },
+  "Antwoordtijd": {
+    "en": "Answer time",
+    "fr": "Délai de réponse"
+  },
+  "Binnen <em>24 uur</em>, en wat dat betekent": {
+    "en": "Within <em>24 hours</em>, and what that means",
+    "fr": "Sous <em>24 heures</em>, et ce que cela veut dire"
+  },
+  "De belofte is een antwoord binnen vierentwintig uur, en dat is vierentwintig uur op de klok: een vraag van 14u30 is de volgende dag om 14u30 beantwoord. Ze telt tot het <em>eerste</em> antwoord, niet tot alles opgelost is.": {
+    "en": "The promise is an answer within twenty-four hours, and that means twenty-four hours on the clock: a question asked at 14:30 is answered by 14:30 the next day. It counts until the <em>first</em> answer, not until everything is solved.",
+    "fr": "La promesse est une réponse sous vingt-quatre heures, et cela veut dire vingt-quatre heures à l'horloge : une question posée à 14h30 reçoit sa réponse le lendemain à 14h30. Elle compte jusqu'à la <em>première</em> réponse, pas jusqu'à ce que tout soit résolu."
+  },
+  "Dagen waarop Rumo er niet is, tellen niet mee. De helpdesk werkt van maandag tot vrijdag, dus een vraag van vrijdag 14u30 is maandag 14u30 aan de beurt. Belgische feestdagen werken hetzelfde, en Rumo kan ook een losse dag als gesloten markeren. Buiten die dagen loopt de klok gewoon door, avonden en nachten inbegrepen: ze meet hoe lang jij wacht, niet hoe lang Rumo aan zijn bureau zit.": {
+    "en": "Days Rumo is not there do not count. The desk works Monday to Friday, so a question asked on Friday at 14:30 is due Monday at 14:30. Belgian public holidays work the same way, and Rumo can also mark a single day closed. Outside those days the clock keeps running, evenings and nights included: it measures how long you have been waiting, not how long Rumo has been at its desk.",
+    "fr": "Les jours où Rumo n'est pas là ne comptent pas. La permanence travaille du lundi au vendredi : une question du vendredi 14h30 est due le lundi à 14h30. Les jours fériés belges fonctionnent pareil, et Rumo peut aussi marquer une journée isolée comme fermée. En dehors de ces jours, l'horloge continue, soirs et nuits compris : elle mesure votre attente, pas le temps passé au bureau."
+  },
+  "Op hoe lang een <em>oplossing</em> duurt, staat geen belofte. Dat is met opzet: een bug die drie weken werk is, is geen gebroken belofte; een onbeantwoorde vraag wel.": {
+    "en": "There is no promise on how long a <em>fix</em> takes. That is deliberate: a bug that needs three weeks of work is not a broken promise; an unanswered question is.",
+    "fr": "Sur la durée d'une <em>correction</em>, il n'y a pas de promesse. C'est voulu : un bug qui demande trois semaines n'est pas une promesse rompue ; une question sans réponse, si."
+  },
+  "Meekijken": {
+    "en": "Looking in",
+    "fr": "Regarder"
+  },
+  "Rumo in <em>jouw</em> hotel laten kijken": {
+    "en": "Letting Rumo look at <em>your</em> hotel",
+    "fr": "Laisser Rumo regarder dans <em>votre</em> hôtel"
+  },
+  "De helft van support is Rumo die vraagt of je een scherm wil openen en voorlezen wat er staat. Dat kan overgeslagen worden, als je het toelaat. Een gesprek doorgeven aan een mens geeft die toestemming meteen mee; er is geen tweede venster met een vinkje. Een regel in je gesprek zegt dat het gebeurd is, met de link om het weer in te trekken.": {
+    "en": "Half of support is Rumo asking you to open a screen and read out what it says. That can be skipped, if you allow it. Handing a conversation to a person gives that permission with it; there is no second dialog with a tick box. A line in your conversation says it happened, with the link to withdraw it.",
+    "fr": "La moitié du support, c'est Rumo qui vous demande d'ouvrir un écran et de lire ce qui s'y trouve. Cela peut être évité, si vous l'autorisez. Transmettre une conversation à un humain donne cette autorisation avec elle ; il n'y a pas de seconde fenêtre à cocher. Une ligne dans votre conversation le dit, avec le lien pour la retirer."
+  },
+  "Twee dingen die mensen verrassen. De toestemming kan <strong>ruimer zijn dan wie ze gaf</strong>: wie bij Rumo meekijkt, ziet je hotel zoals een admin het ziet, ook als de vraag van een housekeeper kwam. En ze hangt <strong>aan het gesprek, niet aan de persoon</strong>: niemand krijgt blijvende toegang, en toestemming in het ene ticket zegt niets over het volgende.": {
+    "en": "Two things that surprise people. The permission can be <strong>wider than the person who gave it</strong>: whoever looks in at Rumo sees your hotel the way an admin does, even when the question came from a housekeeper. And it hangs <strong>on the conversation, not on the person</strong>: nobody gets standing access, and permission on one ticket says nothing about the next.",
+    "fr": "Deux choses qui surprennent. L'autorisation peut être <strong>plus large que la personne qui l'a donnée</strong> : qui regarde chez Rumo voit votre hôtel comme un admin le voit, même si la question venait d'une femme de chambre. Et elle tient <strong>à la conversation, pas à la personne</strong> : personne ne reçoit d'accès permanent, et une autorisation sur un ticket ne dit rien du suivant."
+  },
+  "Wat niemand bij Rumo kan, met of zonder toestemming, is <em>iets veranderen</em>. Geen boeking, geen prijs, geen instelling: elke poging wordt geweigerd, op elk scherm. De toestemming eindigt wanneer het ticket sluit, en er is geen timer — een ticket dat weken openblijft, houdt ze weken levend. Intrekken kan altijd, en in je eigen logboek staat welk scherm wie bij Rumo geopend heeft, met naam en tijdstip.": {
+    "en": "What nobody at Rumo can do, permission or no permission, is <em>change something</em>. Not a booking, not a price, not a setting: every attempt is refused, on every screen. The permission ends when the ticket closes, and there is no timer — a ticket that stays open for weeks keeps it alive for weeks. Withdrawing is always possible, and your own log names which screen whoever at Rumo opened, with their name and the time.",
+    "fr": "Ce que personne chez Rumo ne peut faire, autorisation ou pas, c'est <em>changer quelque chose</em>. Ni une réservation, ni un prix, ni un réglage : chaque tentative est refusée, sur chaque écran. L'autorisation se termine à la clôture du ticket, et il n'y a pas de minuterie — un ticket ouvert des semaines la garde vivante des semaines. La retirer est toujours possible, et votre propre journal indique quel écran a été ouvert par qui chez Rumo, avec le nom et l'heure."
   },
   "Troubleshooting": {
     "en": "Troubleshooting",
