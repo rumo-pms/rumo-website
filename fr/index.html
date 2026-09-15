@@ -715,28 +715,49 @@ nav.on-video .nav-cta { background:var(--paper) !important; color:var(--ink) !im
 }
 
 /* ── Beweging ──────────────────────────────────────────────────────────────
-   Eén balk verhuist van kamer 103 naar 105 en terug, met een korte pauze. Dat
-   is de kernhandeling van een PMS-kalender, dus het toont iets in plaats van
-   dat het alleen beweegt. */
+   Twee balken verhuizen heen en terug, elk op hun eigen duur (14s / 10s) zodat
+   ze niet gelijk lopen: Marie Sato tussen kamer 103 en 105, Victor De Smedt
+   tussen 104 en 102. De heenweg en de terugweg zijn spiegelbeelden van elkaar,
+   zodat de lus naadloos sluit in plaats van terug te springen. Dat toont de
+   kernhandeling van een PMS-kalender — een gast verplaatsen — in plaats van
+   dat er alleen iets beweegt. */
 .av-boeking.sleept {
-  animation:avSleep 7s cubic-bezier(.65,0,.35,1) infinite;
+  animation:avSleep 14s cubic-bezier(.65,0,.35,1) infinite;
   z-index:3;
 }
 @keyframes avSleep {
-  0%, 18%   { transform:translate(0,0) scale(1); box-shadow:0 1px 2px rgba(27,25,23,0.05); }
-  26%       { transform:translate(0,-3px) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
-  44%, 62%  { transform:translate(0, 88px) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
-  70%, 100% { transform:translate(0, 88px) scale(1); box-shadow:0 1px 2px rgba(27,25,23,0.05); }
+  0%, 9%    { transform:translate(0,0) scale(1); box-shadow:0 1px 2px rgba(27,25,23,0.05); }
+  13%       { transform:translate(0,-3px) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
+  22%, 31%  { transform:translate(0,88px) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
+  35%, 59%  { transform:translate(0,88px) scale(1); box-shadow:0 1px 2px rgba(27,25,23,0.05); }
+  63%       { transform:translate(0,85px) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
+  72%, 81%  { transform:translate(0,0) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
+  85%, 100% { transform:translate(0,0) scale(1); box-shadow:0 1px 2px rgba(27,25,23,0.05); }
 }
-/* De plek waar hij vandaan komt, licht op terwijl hij weg is. */
+.av-boeking.sleept2 {
+  animation:avSleep2 10s cubic-bezier(.65,0,.35,1) infinite;
+  z-index:3;
+}
+@keyframes avSleep2 {
+  0%, 9%    { transform:translate(0,0) scale(1); box-shadow:0 1px 2px rgba(27,25,23,0.05); }
+  13%       { transform:translate(0,-3px) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
+  22%, 31%  { transform:translate(0,-88px) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
+  35%, 59%  { transform:translate(0,-88px) scale(1); box-shadow:0 1px 2px rgba(27,25,23,0.05); }
+  63%       { transform:translate(0,-85px) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
+  72%, 81%  { transform:translate(0,0) scale(1.015); box-shadow:0 10px 22px rgba(27,25,23,0.18); }
+  85%, 100% { transform:translate(0,0) scale(1); box-shadow:0 1px 2px rgba(27,25,23,0.05); }
+}
+/* De plek waar iemand vandaan komt, licht op terwijl die weg is. */
 .av-gat { position:absolute; top:6px; height:32px; border-radius:7px;
   border:1px dashed rgba(27,25,23,0.18); opacity:0;
-  animation:avGat 7s linear infinite; }
-@keyframes avGat { 0%,26% { opacity:0 } 34%,66% { opacity:1 } 74%,100% { opacity:0 } }
+  animation:avGat 14s linear infinite; }
+.av-gat.v2 { animation-duration:10s; }
+@keyframes avGat { 0%,13% { opacity:0 } 22%,63% { opacity:1 } 72%,100% { opacity:0 } }
 
 @media (prefers-reduced-motion: reduce) {
-  .av-boeking.sleept, .av-gat { animation:none; }
-  .av-boeking.sleept { transform:translate(0, 88px); }
+  .av-boeking.sleept, .av-boeking.sleept2, .av-gat { animation:none; }
+  .av-boeking.sleept  { transform:translate(0, 88px); }
+  .av-boeking.sleept2 { transform:translate(0,-88px); }
 }
 @media (max-width:900px) {
   .appvenster { font-size:11px; --kamerkol:52px; }
@@ -1397,7 +1418,8 @@ footer {
           <div class="av-rij">
             <div class="av-kamer"><b>104</b><span class="type">Twin</span></div>
             <span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span><span class="av-cel"></span>
-            <span class="av-boeking blauw" style="left:calc(var(--kamerkol) + var(--k) * 5 + 3px); width:calc(var(--k) * 2 - 6px)">Victor De Smedt</span>
+            <span class="av-gat v2" style="left:calc(var(--kamerkol) + var(--k) * 5 + 3px); width:calc(var(--k) * 2 - 6px)"></span>
+            <span class="av-boeking blauw sleept2" style="left:calc(var(--kamerkol) + var(--k) * 5 + 3px); width:calc(var(--k) * 2 - 6px)">Victor De Smedt</span>
           </div>
 
           <div class="av-rij">
