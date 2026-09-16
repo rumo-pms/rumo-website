@@ -44,6 +44,43 @@
     gap:2.5rem;
     align-items:start;
   }
+  .plans-stack {
+    display:flex;
+    flex-direction:column;
+    gap:1.75rem;
+  }
+  .calc-tier-toggle {
+    display:flex;
+    gap:0.5rem;
+    margin-bottom:1.5rem;
+  }
+  .calc-tier-btn {
+    flex:1;
+    padding:0.65rem;
+    border-radius:10px;
+    border:1px solid var(--line);
+    background:var(--paper-panel);
+    font-family:'Inter', sans-serif;
+    font-size:0.85rem;
+    font-weight:500;
+    color:var(--ink-soft);
+    cursor:pointer;
+    text-align:center;
+    transition:border-color 0.15s, color 0.15s, background 0.15s;
+  }
+  .calc-tier-btn.active {
+    border-color:var(--terra-dark);
+    background:var(--rose-soft);
+    color:var(--terra-dark);
+  }
+  .calc-plus-note {
+    font-size:0.85rem;
+    color:var(--ink-soft);
+    background:var(--sand);
+    border-radius:10px;
+    padding:0.75rem 1rem;
+    margin-bottom:1.5rem;
+  }
 
   /* Plan card */
   .plan {
@@ -52,6 +89,10 @@
     overflow:hidden;
     border:1px solid var(--line);
     box-shadow:0 16px 40px rgba(27,25,23,0.05);
+  }
+  .plan.featured {
+    border:2px solid var(--terra-dark);
+    box-shadow:0 20px 48px rgba(185,107,74,0.16);
   }
   .plan-top {
     padding:2.5rem 2.5rem 2rem;
@@ -510,20 +551,24 @@
 <!-- ═══════════════════════ PRICING ═══════════════════════ -->
 <section class="pricing">
   <div class="wrap">
+
     <div class="pricing-layout">
+
+    <div class="plans-stack">
+
+      <!-- BASIC -->
       <div class="plan fade-up">
         <div class="plan-top">
-          <div class="plan-name">Basispakket</div>
+          <div class="plan-name">Basic</div>
           <div class="plan-price">
             <div class="plan-amount"><em>€12</em></div>
             <div class="plan-unit">/ kamer / maand</div>
           </div>
           <div class="plan-note">Eerste 6 maanden vooraf · Geen setupkosten · Daarna maandelijks opzegbaar</div>
-          <div class="plan-min">Minimum €99/maand</div>
-          <div class="plan-desc">Alles wat je nodig hebt om je hotel professioneel te beheren. Van dashboard tot rapporten, van booking engine tot gastcommunicatie. <em>Zeventien modules</em>, geen extra kosten.</div>
+          <div class="plan-desc">Toegang tot alle features inbegrepen in het basispakket. Add-ons zet je apart aan wanneer je ze nodig hebt.</div>
         </div>
         <div class="plan-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
-          <span>Bekijk alle 17 modules</span>
+          <span>Bekijk alle 17 features</span>
           <span class="arr">▼</span>
         </div>
         <ul class="plan-features">
@@ -533,7 +578,7 @@
           <li>Booking engine voor directe boekingen op je website</li>
           <li>Channel manager (Booking.com, Airbnb, Expedia)</li>
           <li>Kamertypes, tariefplannen en allotments</li>
-          <li>Facturatie met Peppol en UBL 2.1 export</li>
+          <li>Facturatie en UBL 2.1 export</li>
           <li>Rapporten: bezetting, omzet, ADR, RevPAR, bronanalyse</li>
           <li>Guest portal: pre-check-in, offerte bevestigen, online betalen</li>
           <li>rumo Pay (Bancontact, Visa, Mastercard, iDEAL)</li>
@@ -542,44 +587,77 @@
           <li>Gastprofielen, bedrijfsprofielen en bookerprofielen</li>
           <li>Automatische e-mails in 4 talen (NL, FR, DE, EN)</li>
           <li>Wachtlijst met automatische optiereservering</li>
-          <li>Koppeling met Exact Online, Yuki, Octopus</li>
-          <li>Onbeperkt support, in het Nederlands</li>
+          <li>Support via chat, antwoord binnen 24u</li>
         </ul>
         <div class="plan-cta">
           <a href="index.html#demo" class="btn-ink">14 dagen gratis uitproberen <span>→</span></a>
         </div>
       </div>
 
-      <div class="fade-up" style="transition-delay:0.1s">
-        <div class="calc">
-          <div class="calc-title">Bereken jouw prijs</div>
-          <div class="calc-sub">Schuif naar jouw aantal kamers</div>
-          <div class="calc-slider-label">
-            <span>Aantal kamers</span>
-            <strong id="room-count">20</strong>
+      <!-- PLUS -->
+      <div class="plan featured fade-up" style="transition-delay:0.06s">
+        <div class="plan-top">
+          <div class="plan-name">Plus</div>
+          <div class="plan-price">
+            <div class="plan-amount"><em>€19</em></div>
+            <div class="plan-unit">/ kamer / maand</div>
           </div>
-          <input type="range" class="calc-slider" id="room-slider" min="5" max="55" value="20">
-          <div class="calc-range"><span>5</span><span>55</span></div>
-          <div class="calc-addons-block">
-            <div class="calc-addons-title">Add-ons toevoegen</div>
-            <label class="calc-addon"><input type="checkbox" id="addon-whitelabel" data-price="45"><span class="label">White Label</span><span class="cost">+€45/m</span></label>
-            <label class="calc-addon"><input type="checkbox" id="addon-property" data-price="29"><span class="label">Preventie &amp; Welzijn</span><span class="cost">+€29/m</span></label>
-            <label class="calc-addon"><input type="checkbox" id="addon-smartpricing" data-price="45"><span class="label">Smart Pricing</span><span class="cost">+€45/m</span></label>
-            <label class="calc-addon"><input type="checkbox" id="addon-salto" data-price="45"><span class="label">Sleutelbeheer</span><span class="cost">+€45/m</span></label>
-            <label class="calc-addon"><input type="checkbox" id="addon-peppol" data-price="9"><span class="label">Peppol Automatisch</span><span class="cost">+€9/m</span></label>
-            <label class="calc-addon"><input type="checkbox" id="addon-upsell" data-price="45"><span class="label">Upsell</span><span class="cost">+€45/m</span></label>
-            <label class="calc-addon"><input type="checkbox" id="addon-housekeeping" data-price="45"><span class="label">Advanced Housekeeping</span><span class="cost">+€45/m</span></label>
-            <label class="calc-addon"><input type="checkbox" id="addon-scrada" data-price="45"><span class="label">Boekhoudkoppeling</span><span class="cost">+€45/m</span></label>
-          </div>
-          <div class="calc-result">
-            <div class="calc-row"><span><span id="calc-rooms">20</span> kamers × €12</span><span id="calc-base">€240</span></div>
-            <div class="calc-row" id="calc-addons-row" style="display:none"><span><span id="calc-addon-count">0</span> add-on(s)</span><span id="calc-addons-total">€0</span></div>
-            <div class="calc-row total"><span>Per maand</span><span id="calc-total">€240</span></div>
-          </div>
-          <div class="calc-fine">Excl. 21% btw · Excl. transactiekosten rumo Pay</div>
+          <div class="plan-note">Eerste 6 maanden vooraf · Geen setupkosten · Daarna maandelijks opzegbaar</div>
+          <div class="plan-desc">Alles van Basic, plus elke add-on gratis inbegrepen. Eén factuur, geen losse knoppen.</div>
+        </div>
+        <ul class="plan-features open" style="border-top:1px solid var(--line)">
+          <li>Alle 17 features uit Basic</li>
+          <li>Alle 8 add-ons gratis inbegrepen, je zet aan wat je gebruikt</li>
+          <li>Support via chat, antwoord binnen 2u</li>
+        </ul>
+        <div class="plan-cta">
+          <a href="index.html#demo" class="btn-ink">14 dagen gratis uitproberen <span>→</span></a>
         </div>
       </div>
+
     </div>
+
+    <div class="calc-wrap fade-up" style="transition-delay:0.12s; align-self:start;">
+      <div class="calc">
+        <div class="calc-title">Bereken jouw prijs</div>
+        <div class="calc-sub">Kies je pakket en je aantal kamers</div>
+
+        <div class="calc-tier-toggle">
+          <button type="button" class="calc-tier-btn active" id="tier-basic">Basic</button>
+          <button type="button" class="calc-tier-btn" id="tier-plus">Plus</button>
+        </div>
+
+        <div class="calc-slider-label">
+          <span>Aantal kamers</span>
+          <strong id="room-count">20</strong>
+        </div>
+        <input type="range" class="calc-slider" id="room-slider" min="5" max="55" value="20">
+        <div class="calc-range"><span>5</span><span>55</span></div>
+
+        <div class="calc-plus-note" id="calc-plus-note" style="display:none">Bij Plus zitten alle 8 add-ons hieronder al inbegrepen.</div>
+
+        <div class="calc-addons-block" id="calc-addons-block">
+          <div class="calc-addons-title">Add-ons toevoegen</div>
+          <label class="calc-addon"><input type="checkbox" id="addon-whitelabel" data-price="45"><span class="label">White Label</span><span class="cost">+€45/m</span></label>
+          <label class="calc-addon"><input type="checkbox" id="addon-property" data-price="29"><span class="label">Preventie &amp; Welzijn</span><span class="cost">+€29/m</span></label>
+          <label class="calc-addon"><input type="checkbox" id="addon-smartpricing" data-price="45"><span class="label">Smart Pricing</span><span class="cost">+€45/m</span></label>
+          <label class="calc-addon"><input type="checkbox" id="addon-salto" data-price="45"><span class="label">Sleutelbeheer</span><span class="cost">+€45/m</span></label>
+          <label class="calc-addon"><input type="checkbox" id="addon-peppol" data-price="9"><span class="label">Peppol Automatisch</span><span class="cost">+€9/m</span></label>
+          <label class="calc-addon"><input type="checkbox" id="addon-upsell" data-price="45"><span class="label">Upsell</span><span class="cost">+€45/m</span></label>
+          <label class="calc-addon"><input type="checkbox" id="addon-housekeeping" data-price="45"><span class="label">Advanced Housekeeping</span><span class="cost">+€45/m</span></label>
+          <label class="calc-addon"><input type="checkbox" id="addon-scrada" data-price="45"><span class="label">Boekhoudkoppeling</span><span class="cost">+€45/m</span></label>
+        </div>
+        <div class="calc-result">
+          <div class="calc-row"><span><span id="calc-rooms">20</span> kamers × €<span id="calc-rate">12</span></span><span id="calc-base">€240</span></div>
+          <div class="calc-row" id="calc-addons-row" style="display:none"><span><span id="calc-addon-count">0</span> add-on(s)</span><span id="calc-addons-total">€0</span></div>
+          <div class="calc-row total"><span>Per maand</span><span id="calc-total">€240</span></div>
+        </div>
+        <div class="calc-fine">Minimum €99/maand · Excl. 21% btw · Excl. transactiekosten rumo Pay</div>
+      </div>
+    </div>
+
+    </div>
+
   </div>
 </section>
 
@@ -778,24 +856,41 @@ document.documentElement.dataset.fadeReady = '1';
 const slider = document.getElementById('room-slider');
 const roomCount = document.getElementById('room-count');
 const calcRooms = document.getElementById('calc-rooms');
+const calcRate = document.getElementById('calc-rate');
 const calcBase = document.getElementById('calc-base');
 const calcTotal = document.getElementById('calc-total');
 const calcAddonsRow = document.getElementById('calc-addons-row');
 const calcAddonCount = document.getElementById('calc-addon-count');
 const calcAddonsTotal = document.getElementById('calc-addons-total');
+const calcAddonsBlock = document.getElementById('calc-addons-block');
+const calcPlusNote = document.getElementById('calc-plus-note');
+const tierBasicBtn = document.getElementById('tier-basic');
+const tierPlusBtn = document.getElementById('tier-plus');
 const addonCheckboxes = Array.from(document.querySelectorAll('.calc-addon input[type="checkbox"]'));
-const PRICE_PER_ROOM = 12, MINIMUM = 99;
+const PRICE_BASIC = 12, PRICE_PLUS = 19, MINIMUM = 99;
+let tier = 'basic';
+
+function setTier(t) {
+  tier = t;
+  tierBasicBtn.classList.toggle('active', t === 'basic');
+  tierPlusBtn.classList.toggle('active', t === 'plus');
+  calcAddonsBlock.style.display = t === 'plus' ? 'none' : '';
+  calcPlusNote.style.display = t === 'plus' ? '' : 'none';
+  updateCalc();
+}
 
 function updateCalc() {
   const rooms = parseInt(slider.value);
-  const rawBase = rooms * PRICE_PER_ROOM;
+  const rate = tier === 'plus' ? PRICE_PLUS : PRICE_BASIC;
+  const rawBase = rooms * rate;
   const base = Math.max(rawBase, MINIMUM);
-  const checked = addonCheckboxes.filter(cb => cb.checked);
+  const checked = tier === 'plus' ? [] : addonCheckboxes.filter(cb => cb.checked);
   const addonsTotal = checked.reduce((s, cb) => s + parseInt(cb.dataset.price), 0);
   const total = base + addonsTotal;
 
   roomCount.textContent = rooms;
   calcRooms.textContent = rooms;
+  calcRate.textContent = rate;
   calcBase.textContent = '€' + base + (rawBase < MINIMUM ? ' (min.)' : '');
 
   if (checked.length > 0) {
@@ -807,8 +902,11 @@ function updateCalc() {
   }
   calcTotal.textContent = '€' + total;
 }
+tierBasicBtn.addEventListener('click', () => setTier('basic'));
+tierPlusBtn.addEventListener('click', () => setTier('plus'));
 slider.addEventListener('input', updateCalc);
 addonCheckboxes.forEach(cb => cb.addEventListener('change', updateCalc));
+updateCalc();
 </script>
 </body>
 </html>
